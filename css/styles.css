@@ -19720,3 +19720,18 @@ a:hover {
  .footer .footer-brand img {
   height: 3rem;
  }
+ .carousel-inner {
+  min-height: 300px; 
+  overflow: visible;
+ }
+ .carousel-indicators {
+  bottom: -60px;
+  margin-bottom: 0;
+ }
+ .carousel-indicators [data-bs-target] {
+  background-color: #7147E8;
+  opacity: 0.25;
+ }
+ .carousel-indicators .active {
+  opacity: 1;
+}
