@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>OpenMetaData</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <script data-search-pseudo-elements="" defer="" src="js/all.min.js"></script>
+    <script src="js/feather.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBLK284YQW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LBLK284YQW');
+    </script>
+</head>
+
+<body>
+    <div id="layoutDefault">
+        <div id="layoutDefault_content">
+            <main>
+                <!-- Navbar-->
+                <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top">
+                    <div class="container px-5">
+                        <a class="navbar-brand text-primary" href="index.html"><img src="images/omd-logo.svg"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto me-lg-5">
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://sandbox.open-metadata.org/signin">Sandbox</a></li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://docs.open-metadata.org/">Documentation</a></li>
+                                <li class="nav-item"><a class="nav-link" href="http://blog.open-metadata.org/">Blog</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link"
+                                        href="https://github.com/open-metadata/OpenMetadata">Github</a></li>
+                            </ul>
+                            <a class="btn fw-500 ms-lg-4 btn-primary"
+                                href="https://github.com/open-metadata/OpenMetadata/reelases">
+                                Download
+                                <i class="ms-2" data-feather="download-cloud"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page Header-->
+                <header class="page-header-ui page-header-ui-light bg-white">
+                    <div class="page-header-ui-content pt-5">
+                        <div class="container px-5">
+                            <div class="row gx-5 align-items-center">
+                                <div class="col-lg-6" data-aos="fade-up">
+                                    <h1 class="page-header-ui-title">OpenMetadata</h1>
+                                    <p class="page-header-ui-text mb-5">Open Standard for Metadata, a Single place to Discover,
+                                      Collaborate and Get your data right.</p>
+                                    <div class="d-flex flex-column flex-sm-row">
+                                        <a class="btn btn-lg btn-primary fw-500 me-sm-3 mb-3 mb-sm-0"
+                                            href="https://docs.open-metadata.org">
+                                            Getting Started
+                                            <i class="ms-2" data-feather="arrow-right"></i>
+                                        </a>
+                                        <a class="btn btn-lg btn-primary-soft text-primary fw-500"
+                                            href="https://communityinviter.com/apps/open-metadata/openmetadata">Join our
+                                            Slack</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100"><img
+                                        class="img-fluid" src="images/programming.svg" alt="..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="svg-border-rounded text-light">
+                        <!-- Rounded SVG Border-->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                        </svg>
+                    </div>
+                </header>
+                <section class="bg-light py-10" id="explore">
+                    <div class="container px-5">
+                        <div class="row gx-5 align-items-center justify-content-center">
+                            <div class="col-md-9 col-lg-6 order-1 order-lg-0" data-aos="fade-right">
+                                <div class="content-skewed content-skewed-right"><img
+                                        class="content-skewed-item img-fluid shadow-lg rounded-3"
+                                        src="images/omd-landing-screen.png" /></div>
+                            </div>
+                            <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0" data-aos="fade-left">
+                                <div class="mb-5">
+                                    <h2 class="mb-4">Open Standard for Metadata</h2>
+                                    <ul>
+                                        <li><strong>Metadata Schema Specifications</strong> - defines core abstractions
+                                            and vocabulary
+                                            for metadata with Types, Entities, Relationships between entities</li>
+                                        <li><strong>Metadata APIs</strong> - for producing and consuming metadata</li>
+                                        <li><strong>Metadata Store</strong> - stores metadata graph that connects data
+                                            assets, user and tool generated metadata</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="bg-light py-10" id="explore">
+                        <div class="container px-5">
+                            <div class="row gx-5 align-items-center justify-content-center">
+                                <div class="col-md-9 col-lg-6 order-1 order-lg-0" data-aos="fade-right">
+                                    <div class="content-skewed content-skewed-right"><img
+                                            class="content-skewed-item img-fluid shadow-lg rounded-3"
+                                            src="images/omd-landing-screen.png" /></div>
+                                </div>
+                                <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0" data-aos="fade-left">
+                                    <div class="mb-5">
+                                        <h2 class="mb-4">Discover, Collaborate and Get your Data right with OpenMetaData</h2>
+                                        <ul>
+                                          <li><strong>Data Collaboration Workspace</strong> - for users to discover, and
+                                         collaborate on data</li>
+                                         <li><strong>Bots for Automation</strong> - to automate mundane data tasks</li>
+                                        </ul>
+                                        <div class="text-center"><a class="btn btn-primary fw-500"
+                                                href="https://sandbox.open-metadata.org/signin" target="_blank">Try our
+                                                Sandbox</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="svg-border-rounded text-white">
+                        <!-- Rounded SVG Border-->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                        </svg>
+                    </div>
+                </section>
+                <section class="bg-white py-10">
+                    <div class="container px-5">
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="text-center mb-10">
+                                    <h1>Documentation</h1>
+                                    <!-- <p class="lead">Our professional documentation includes usage instructions and other
+                                        tips to help guide your development process as you build your project.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-lg-4 text-center mb-5">
+                                <!-- <div class="display-1 fw-700 text-gray-400">70+</div> -->
+                                <div class="h2">OpenMetadata APIs</div>
+                                <p>Learn about OpenMetadata Schema Specifications and Metadata APIs point. <br /><a
+                                        href="https://docs.open-metadata.org/openmetadata-apis/schemas"
+                                        target="_blank">Click
+                                        here</a></p>
+                            </div>
+                            <div class="col-lg-4 text-center mb-5">
+                                <!-- <div class="display-1 fw-700 text-gray-400">35+</div> -->
+                                <div class="h2">Install OpenMetadata</div>
+                                <p>Run using docker or install from source. <br /><a
+                                        href="https://docs.open-metadata.org/install/run-openmetadata"
+                                        target="_blank">Click
+                                        here</a></p>
+                            </div>
+                            <div class="col-lg-4 text-center mb-5">
+                                <!-- <div class="display-1 fw-700 text-gray-400">100+</div> -->
+                                <div class="h2">Metadata Ingestion</div>
+                                <p>Configure our readily available connectors to connect to various data stores.
+                                    <br /><a href="https://docs.open-metadata.org/install/metadata-ingestion"
+                                        target="_blank">Click
+                                        here</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center"><a class="btn btn-primary fw-500"
+                                href="https://docs.open-metadata.org/" target="_blank">Read Our Documentation</a>
+                        </div>
+                    </div>
+                    <div class="svg-border-rounded text-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                        </svg>
+                    </div>
+                </section>
+
+                <!-- <section class="bg-light py-10">
+                    <div class="container px-5">
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="text-center">
+                                    <div class="text-xs text-uppercase-expanded text-primary mb-2">Application Features
+                                    </div>
+                                    <h2 class="mb-5">Why are we different from others?</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5">
+                            <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                                <a class="card text-center text-decoration-none h-100 lift" href="#">
+                                    <div class="card-body py-5">
+                                        <div class="icon-stack icon-stack-lg bg-green-soft text-green mb-4"><i
+                                                data-feather="layers"></i></div>
+                                        <h5>Pipelines</h5>
+                                        <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+                                <a class="card text-center text-decoration-none h-100 lift" href="#">
+                                    <div class="card-body py-5">
+                                        <div class="icon-stack icon-stack-lg bg-red-soft text-red mb-4"><i
+                                                data-feather="tool"></i></div>
+                                        <h5>Data Quality</h5>
+                                        <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="150">
+                                <a class="card text-center text-decoration-none h-100 lift" href="#">
+                                    <div class="card-body py-5">
+                                        <div class="icon-stack icon-stack-lg bg-yellow-soft text-yellow mb-4"><i
+                                                data-feather="layout"></i></div>
+                                        <h5>Catalog</h5>
+                                        <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0" data-aos="fade-up">
+                                <a class="card text-center text-decoration-none h-100 lift" href="#">
+                                    <div class="card-body py-5">
+                                        <div class="icon-stack icon-stack-lg bg-purple-soft text-purple mb-4"><i
+                                                data-feather="book"></i></div>
+                                        <h5>Integrations</h5>
+                                        <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                                <a class="card text-center text-decoration-none h-100 lift" href="#">
+                                    <div class="card-body py-5">
+                                        <div class="icon-stack icon-stack-lg bg-blue-soft text-blue mb-4"><i
+                                                data-feather="code"></i></div>
+                                        <h5>Machine Learning</h5>
+                                        <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                                <a class="card text-center text-decoration-none h-100 lift" href="#">
+                                    <div class="card-body py-5">
+                                        <div class="icon-stack icon-stack-lg bg-orange-soft text-orange mb-4"><i
+                                                data-feather="package"></i></div>
+                                        <h5>Lineage</h5>
+                                        <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="svg-border-rounded text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                        </svg>
+                    </div>
+                </section> -->
+
+                <section class="bg-light py-10">
+                    <div class="container px-5">
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="text-center mb-10">
+                                    <h2>Blog</h2>
+                                    <p class="lead">Blog Content will be here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-5 mb-5">
+                            <!-- <div class="col-lg-4 mb-5">
+                                <a class="card lift h-100" href="#">
+                                    <img class="card-img-top" src="images/blog01.jpg" />
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-2">
+                                            Apache Pinot’s Graduation</h4>
+                                        <p class="card-text">We are pleased to announce that Apache Pinot has graduated
+                                            and is now a top-level Apache Software Foundation (ASF) project!</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
+                                        <div class="small text-primary">Read more</div>
+                                        <div class="small text-primary"><i data-feather="arrow-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <a class="card lift h-100" href="#">
+                                    <img class="card-img-top" src="images/blog02.jpg" />
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-2">
+                                            The Business Value</h4>
+                                        <p class="card-text">When one hears “decision maker,” it’s natural to think,
+                                            “C-suite,” or “executive.” But these days, we’re all decision-makers.</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
+                                        <div class="small text-primary">Read more</div>
+                                        <div class="small text-primary"><i data-feather="arrow-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-5">
+                                <a class="card lift h-100" href="#">
+                                    <img class="card-img-top" src="images/blog03.jpg" />
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-2">What is User-Facing Analytics?</h4>
+                                        <p class="card-text">Companies today are generating and collecting massive
+                                            amounts of data.</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
+                                        <div class="small text-primary">Read more</div>
+                                        <div class="small text-primary"><i data-feather="arrow-right"></i></div>
+                                    </div>
+                                </a>
+                            </div> -->
+                            <div class="text-center"><a class="btn btn-primary fw-500"
+                                    href="http://blog.open-metadata.org/" target="_blank">Read
+                                    All Blogs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="svg-border-rounded text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                        </svg>
+                    </div>
+                </section>
+
+
+            </main>
+        </div>
+        <div id="layoutDefault_footer">
+            <footer class="footer pt-10 pb-5 mt-auto bg-white footer-light">
+                <div class="container px-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-3">
+                            <div class="footer-brand"><img src="images/omd-logo.svg"></div>
+                            <div class="mb-3">Open Standard for Metadata
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row gx-5">
+                                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 invisible">
+                                    <div class="text-uppercase-expanded text-xs mb-4">Product</div>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><a href="#!">Landing</a></li>
+                                        <li class="mb-2"><a href="#!">Pages</a></li>
+                                        <li class="mb-2"><a href="#!">Sections</a></li>
+                                        <li class="mb-2"><a href="#!">Documentation</a></li>
+                                        <li><a href="#!">Changelog</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                    <div class="text-uppercase-expanded text-xs mb-4">Docs</div>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><a href="https://docs.open-metadata.org/" target="_blank">What
+                                                is OpenMetadata?</a></li>
+                                        <li class="mb-2"><a
+                                                href="https://docs.open-metadata.org/openmetadata-apis/schemas"
+                                                target="_blank">Schemas</a></li>
+                                        <li class="mb-2"><a href="https://docs.open-metadata.org/openmetadata-apis/apis"
+                                                target="_blank">APIs</a></li>
+                                        <li class="mb-2"><a href="https://docs.open-metadata.org/install/run-locally"
+                                                target="_blank">Install</a></li>
+                                        <li><a href="https://docs.open-metadata.org/install/metadata-ingestion"
+                                                target="_blank">Ingestion</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-5 mb-md-0 invisible">
+                                    <div class="text-uppercase-expanded text-xs mb-4">Includes</div>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><a href="#!">Utilities</a></li>
+                                        <li class="mb-2"><a href="#!">Components</a></li>
+                                        <li class="mb-2"><a href="#!">Layouts</a></li>
+                                        <li class="mb-2"><a href="#!">Code Samples</a></li>
+                                        <li class="mb-2"><a href="#!">Products</a></li>
+                                        <li class="mb-2"><a href="#!">Affiliates</a></li>
+                                        <li><a href="#!">Updates</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="text-uppercase-expanded text-xs mb-4">Community</div>
+                                    <!-- <div class="icon-list-social mb-5">
+                                        <a class="icon-list-social-link"
+                                            href="https://communityinviter.com/apps/open-metadata/openmetadata"
+                                            target="_blank"><i class="fab fa-slack"></i></a>
+                                        <a class="icon-list-social-link"
+                                            href="https://github.com/open-metadata/openmetadata" target="_blank"><i
+                                                class="fab fa-github"></i></a>
+                                        <a class="icon-list-social-link" href="https://twitter.com/open_metadata"
+                                            target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a class="icon-list-social-link" href="mailto:dev@open-metadata.org"><i
+                                                class="fas fa-envelope"></i></a>
+                                    </div> -->
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><a
+                                                href="https://communityinviter.com/apps/open-metadata/openmetadata"
+                                                target="_blank"><i class="fab fa-slack"></i> Slack</a></li>
+                                        <li class="mb-2"><a href="https://github.com/open-metadata/openmetadata"
+                                                target="_blank"><i class="fab fa-github"></i> Github</a></li>
+                                        <li class="mb-2"><a href="https://twitter.com/open_metadata" target="_blank"><i
+                                                    class="fab fa-twitter"></i> Twitter</a></li>
+                                        <li><a href="mailto:dev@open-metadata.org"><i class="fas fa-envelope"></i>
+                                                Mailing List</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5" />
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-md-6 small">Copyright © OpenMetadata 2021</div>
+                        <!-- <div class="col-md-6 text-md-end small">
+                            <a href="#!">Privacy Policy</a>
+                            ·
+                            <a href="#!">Terms &amp; Conditions</a>
+                        </div> -->
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>
