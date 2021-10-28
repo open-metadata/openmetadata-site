@@ -1,227 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>OpenMetadata</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <script data-search-pseudo-elements="" defer="" src="js/all.min.js"></script>
+    <script
+      data-search-pseudo-elements=""
+      defer=""
+      src="js/all.min.js"
+    ></script>
     <script src="js/feather.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBLK284YQW"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LBLK284YQW"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-LBLK284YQW');
+      gtag("config", "G-LBLK284YQW");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="layoutDefault">
-        <div id="layoutDefault_content">
-            <main>
-                <!-- Navbar-->
-                <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top">
-                    <div class="container px-5">
-                        <a class="navbar-brand text-primary" href="index.html"><img src="images/omd-logo.svg"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto me-lg-5">
-                                <li class="nav-item"><a class="nav-link"
-                                        href="https://sandbox.open-metadata.org/signin">Sandbox</a></li>
-                                <li class="nav-item"><a class="nav-link"
-                                        href="https://docs.open-metadata.org/">Documentation</a></li>
-                                <li class="nav-item"><a class="nav-link" href="http://blog.open-metadata.org/">Blog</a>
+      <div id="layoutDefault_content">
+        <main>
+          <!-- Navbar-->
+          <nav
+            class="
+              navbar navbar-marketing navbar-expand-lg
+              bg-transparent
+              navbar-light
+              fixed-top
+            "
+          >
+            <div class="container px-5">
+              <a class="navbar-brand text-primary" href="index.html"
+                ><img src="images/omd-logo.svg"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i data-feather="menu"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-lg-5">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://sandbox.open-metadata.org/signin"
+                      >Sandbox</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://docs.open-metadata.org/"
+                      >Documentation</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://blog.open-metadata.org/"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/open-metadata/OpenMetadata"
+                      >Github</a
+                    >
+                  </li>
+                </ul>
+                <a
+                  class="btn fw-500 ms-lg-4 btn-primary"
+                  href="https://github.com/open-metadata/OpenMetadata/releases"
+                >
+                  Download
+                  <i class="ms-2" data-feather="download-cloud"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <!-- Page Header-->
+          <header class="page-header-ui page-header-ui-light bg-white">
+            <div class="page-header-ui-content pt-5">
+              <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                  <div class="col-lg-6" data-aos="fade-up">
+                    <h1 class="page-header-ui-title">
+                      Open Standard for Metadata
+                    </h1>
+                    <p class="page-header-ui-text mb-5">
+                      A Single place to Discover, Collaborate, and Get your data
+                      right.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row">
+                      <a
+                        class="
+                          btn btn-md btn-primary
+                          fw-500
+                          me-sm-3
+                          mb-3 mb-sm-0
+                        "
+                        href="https://docs.open-metadata.org"
+                      >
+                        Getting Started
+                        <i class="ms-2" data-feather="arrow-right"></i>
+                      </a>
+                      <a
+                        class="btn btn-md btn-primary-soft text-primary fw-500 me-sm-3"
+                        href="https://openmetadata.slack.com/join/shared_invite/zt-udl8ris3-Egq~YtJU_yJgJTtROo00dQ#/shared-invite/email"
+                        >Join our Slack</a
+                      >
+                      <a
+                        class="btn btn-md btn-primary-soft text-primary fw-500"
+                        href="https://www.meetup.com/openmetadata-meetup-group"
+                        >Join our Meetup</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-6 d-none d-lg-block"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/home-section.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-light">
+              <!-- Rounded SVG Border-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </header>
+
+          <section class="bg-light py-10" id="explore">
+            <div class="container px-5">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div
+                    id="carouselExampleIndicators"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div
+                          class="
+                            row
+                            gx-5
+                            align-items-center
+                            justify-content-center
+                          "
+                        >
+                          <div
+                            class="col-md-9 col-lg-6 order-1 order-lg-0"
+                            data-aos="fade-right"
+                          >
+                            <div class="content-skewed content-skewed-right">
+                              <img
+                                class="
+                                  content-skewed-item
+                                  img-fluid
+                                  shadow-lg
+                                  rounded-3
+                                "
+                                src="images/carousal-01.jpeg"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0"
+                            data-aos="fade-left"
+                          >
+                            <div class="mb-5">
+                              <h2 class="mb-4">Open Standard for Metadata</h2>
+                              <ul>
+                                <li>
+                                  <strong
+                                    >Metadata Schema Specifications</strong
+                                  >
+                                  - Types, Entities, and Relationships
                                 </li>
-                                <li class="nav-item"><a class="nav-link"
-                                        href="https://github.com/open-metadata/OpenMetadata">Github</a></li>
-                            </ul>
-                            <a class="btn fw-500 ms-lg-4 btn-primary"
-                                href="https://github.com/open-metadata/OpenMetadata/releases">
-                                Download
-                                <i class="ms-2" data-feather="download-cloud"></i>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-                <!-- Page Header-->
-                <header class="page-header-ui page-header-ui-light bg-white">
-                    <div class="page-header-ui-content pt-5">
-                        <div class="container px-5">
-                            <div class="row gx-5 align-items-center">
-                                <div class="col-lg-6" data-aos="fade-up">
-                                    <h1 class="page-header-ui-title">Open Standard for Metadata</h1>
-                                    <p class="page-header-ui-text mb-5">A Single place to Discover, Collaborate, and Get
-                                        your data right.</p>
-                                    <div class="d-flex flex-column flex-sm-row">
-                                        <a class="btn btn-lg btn-primary fw-500 me-sm-3 mb-3 mb-sm-0"
-                                            href="https://docs.open-metadata.org">
-                                            Getting Started
-                                            <i class="ms-2" data-feather="arrow-right"></i>
-                                        </a>
-                                        <a class="btn btn-lg btn-primary-soft text-primary fw-500"
-                                            href="https://openmetadata.slack.com/join/shared_invite/zt-udl8ris3-Egq~YtJU_yJgJTtROo00dQ#/shared-invite/email">Join our
-                                            Slack</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100"><img
-                                        class="img-fluid" src="images/home-section.png" alt="..." />
-                                </div>
+                                <li>
+                                  <strong>Metadata APIs</strong> - REST APIs for
+                                  producing and consuming metadata
+                                </li>
+                                <li>
+                                  <strong>Metadata store</strong> - Metadata
+                                  graph that connects all your metadata
+                                </li>
+                              </ul>
+                              <div class="text-center">
+                                <a
+                                  class="btn btn-primary fw-500"
+                                  href="http://sandbox.open-metadata.org/signin"
+                                  target="_blank"
+                                  >Try our Sandbox</a
+                                >
+                              </div>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="svg-border-rounded text-light">
-                        <!-- Rounded SVG Border-->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
-                    </div>
-                </header>
-
-                <section class="bg-light py-10" id="explore">
-                    <div class="container px-5">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="0" class="active" aria-current="true"
-                                            aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                        <div class="row gx-5 align-items-center justify-content-center">
-                            <div class="col-md-9 col-lg-6 order-1 order-lg-0" data-aos="fade-right">
-                                <div class="content-skewed content-skewed-right"><img
-                                        class="content-skewed-item img-fluid shadow-lg rounded-3"
-                                        src="images/carousal-01.jpeg" /></div>
+                      </div>
+                      <div class="carousel-item">
+                        <div
+                          class="
+                            row
+                            gx-5
+                            align-items-center
+                            justify-content-center
+                          "
+                        >
+                          <div
+                            class="col-md-9 col-lg-6 order-1 order-lg-0"
+                            data-aos="fade-right"
+                          >
+                            <div class="content-skewed content-skewed-right">
+                              <img
+                                class="
+                                  content-skewed-item
+                                  img-fluid
+                                  shadow-lg
+                                  rounded-3
+                                "
+                                src="images/carousal-02.jpeg"
+                              />
                             </div>
-                                                <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0"
-                                                    data-aos="fade-left">
-                                <div class="mb-5">
-                                    <h2 class="mb-4">Open Standard for Metadata</h2>
-                                    <ul>
-                                                            <li><strong>Metadata Schema Specifications</strong> - Types,
-                                                                Entities, and
-                                                                Relationships</li>
-                                                            <li><strong>Metadata APIs</strong> - REST APIs for producing
-                                                                and consuming metadata</li>
-                                                            <li><strong>Metadata store</strong> - Metadata graph that
-                                                                connects all your
-                                                                metadata</li>
-                                    </ul>
-                                                        <div class="text-center"><a class="btn btn-primary fw-500"
-                                                                href="http://sandbox.open-metadata.org/signin"
-                                                                target="_blank">Try our
-                                                                Sandbox</a>
-                                </div>
+                          </div>
+                          <div
+                            class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0"
+                            data-aos="fade-left"
+                          >
+                            <div class="mb-5">
+                              <h2 class="mb-4">
+                                Discover and Collaborate on data with your team
+                              </h2>
+                              <ul>
+                                <li>
+                                  <strong
+                                    >A single place for all your data</strong
+                                  >
+                                  - Discover, understand, and enrich
+                                </li>
+                                <li>
+                                  <strong>Data Collaboration Workspace</strong>
+                                  - For teams to come together around data
+                                </li>
+                              </ul>
+                              <div class="text-center">
+                                <a
+                                  class="btn btn-primary fw-500"
+                                  href="http://sandbox.open-metadata.org/signin"
+                                  target="_blank"
+                                  >Try our Sandbox</a
+                                >
+                              </div>
                             </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                                        </div>
-                                        <div class="carousel-item">
-                            <div class="row gx-5 align-items-center justify-content-center">
-                                <div class="col-md-9 col-lg-6 order-1 order-lg-0" data-aos="fade-right">
-                                    <div class="content-skewed content-skewed-right"><img
-                                            class="content-skewed-item img-fluid shadow-lg rounded-3"
-                                            src="images/carousal-02.jpeg" /></div>
-                                </div>
-                                                <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0"
-                                                    data-aos="fade-left">
-                                    <div class="mb-5">
-                                                        <h2 class="mb-4">Discover and Collaborate on data with your team
-                                                        </h2>
-                                        <ul>
-                                                            <li><strong>A single place for all your data</strong> -
-                                                                Discover, understand, and enrich</li>
-                                                            <li><strong>Data Collaboration Workspace</strong> - For
-                                                                teams to come together around data</li>
-                                        </ul>
-                                        <div class="text-center"><a class="btn btn-primary fw-500"
-                                                                href="http://sandbox.open-metadata.org/signin"
-                                                                target="_blank">Try our
-                                                Sandbox</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="svg-border-rounded text-white">
-                        <!-- Rounded SVG Border-->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
-                    </div>
-                </section>
-                <section class="bg-white py-10">
-                    <div class="container px-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="text-center mb-10">
-                                    <h2>Documentation</h2>
-                                    <!-- <p class="lead">Our professional documentation includes usage instructions and other
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-white">
+              <!-- Rounded SVG Border-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+          <section class="bg-white py-10">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-10">
+                    <h2>Documentation</h2>
+                    <!-- <p class="lead">Our professional documentation includes usage instructions and other
                                         tips to help guide your development process as you build your project.</p> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-5">
-                            <div class="col-lg-4 text-center mb-5">
-                                <!-- <div class="display-1 fw-700 text-gray-400">70+</div> -->
-                                <div class="h5">OpenMetadata APIs</div>
-                                <p>Learn about OpenMetadata Schema Specifications and Metadata APIs point. <br /><a
-                                        href="https://docs.open-metadata.org/openmetadata-apis/schemas"
-                                        target="_blank">Click
-                                        here</a></p>
-                            </div>
-                            <div class="col-lg-4 text-center mb-5">
-                                <!-- <div class="display-1 fw-700 text-gray-400">35+</div> -->
-                                <div class="h5">Install OpenMetadata</div>
-                                <p>Run using docker or install from source. <br /><a
-                                        href="https://docs.open-metadata.org/install/run-openmetadata"
-                                        target="_blank">Click
-                                        here</a></p>
-                            </div>
-                            <div class="col-lg-4 text-center mb-5">
-                                <!-- <div class="display-1 fw-700 text-gray-400">100+</div> -->
-                                <div class="h5">Metadata Ingestion</div>
-                                <p>Configure our readily available connectors to connect to various data stores.
-                                    <br /><a href="https://docs.open-metadata.org/install/metadata-ingestion"
-                                        target="_blank">Click
-                                        here</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="text-center"><a class="btn btn-primary fw-500"
-                                href="https://docs.open-metadata.org/" target="_blank">Read Our Documentation</a>
-                        </div>
-                    </div>
-                    <div class="svg-border-rounded text-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
-                    </div>
-                </section>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-5">
+                <div class="col-lg-4 text-center mb-5">
+                  <!-- <div class="display-1 fw-700 text-gray-400">70+</div> -->
+                  <div class="h5">OpenMetadata APIs</div>
+                  <p>
+                    Learn about OpenMetadata Schema Specifications and Metadata
+                    APIs point. <br /><a
+                      href="https://docs.open-metadata.org/openmetadata-apis/schemas"
+                      target="_blank"
+                      >Click here</a
+                    >
+                  </p>
+                </div>
+                <div class="col-lg-4 text-center mb-5">
+                  <!-- <div class="display-1 fw-700 text-gray-400">35+</div> -->
+                  <div class="h5">Install OpenMetadata</div>
+                  <p>
+                    Run using docker or install from source. <br /><a
+                      href="https://docs.open-metadata.org/install/run-openmetadata"
+                      target="_blank"
+                      >Click here</a
+                    >
+                  </p>
+                </div>
+                <div class="col-lg-4 text-center mb-5">
+                  <!-- <div class="display-1 fw-700 text-gray-400">100+</div> -->
+                  <div class="h5">Metadata Ingestion</div>
+                  <p>
+                    Configure our readily available connectors to connect to
+                    various data stores. <br /><a
+                      href="https://docs.open-metadata.org/install/metadata-ingestion"
+                      target="_blank"
+                      >Click here</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="text-center">
+                <a
+                  class="btn btn-primary fw-500"
+                  href="https://docs.open-metadata.org/"
+                  target="_blank"
+                  >Read Our Documentation</a
+                >
+              </div>
+            </div>
+            <div class="svg-border-rounded text-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
 
-                <!-- <section class="bg-light py-10">
+          <!-- <section class="bg-light py-10">
                     <div class="container px-5">
                         <div class="row gx-5 justify-content-center">
                             <div class="col-lg-6">
@@ -309,75 +486,151 @@
                     </div>
                 </section> -->
 
-                <section class="bg-light py-10">
-                    <div class="container px-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="text-center mb-5">
-                                    <h2>Blog</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-5 mb-5">
-                            <div class="col-lg-4 mb-5">
-                                <a class="card lift h-100" href="https://blog.open-metadata.org/announcing-openmetadata-20399b816e60" target="_blank">
-                                    <img class="card-img-top" src="images/blog01.jpg" />
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-2">
-                                            Announcing OpenMetadata</h4>
-                                        <p class="card-text">Open-source project to supercharge your Metadata initiative</p>
-                                    </div>
-                                    <div
-                                        class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
-                                        <div class="small text-primary">Read more</div>
-                                        <div class="small text-primary"><i data-feather="arrow-right"></i></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 mb-5">
-                                <a class="card lift h-100" href="https://blog.open-metadata.org/openmetadata-0-4-0-release-dashboards-topics-data-reliability-14e8672ae0f5" target="_blank">
-                                    <img class="card-img-top" src="images/v0.4.0.jpg" />
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-2">
-                                            OpenMetadata 0.4.0 Release</h4>
-                                        <p class="card-text">New feature releases which includes Dashboards, Topics, Data Reliability</p>
-                                    </div>
-                                    <div
-                                        class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
-                                        <div class="small text-primary">Read more</div>
-                                        <div class="small text-primary"><i data-feather="arrow-right"></i></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="text-center"><a class="btn btn-primary fw-500"
-                                    href="http://blog.open-metadata.org/" target="_blank">Read
-                                    All Blogs</a>
-                            </div>
-                        </div>
+          <section class="bg-light py-10">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-5">
+                    <h2>Blog</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-5 mb-5">
+                <div class="col-lg-4 mb-5">
+                  <a
+                    class="card lift h-100"
+                    href="https://blog.open-metadata.org/openmetadata-0-5-0-1144a4000644"
+                    target="_blank"
+                  >
+                    <img class="card-img-top" src="images/v0.5.0.jpeg" />
+                    <div class="card-body">
+                      <h4 class="card-title mb-2">
+                        OpenMetadata 0.5.0 Release is here
+                      </h4>
+                      <p class="card-text">
+                        Lineage, Pipelines, Complex Types, Data Profiler and so much more
+                      </p>
                     </div>
-                    <div class="svg-border-rounded text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
+                    <div
+                      class="
+                        card-footer
+                        bg-transparent
+                        border-top
+                        d-flex
+                        align-items-center
+                        justify-content-between
+                      "
+                    >
+                      <div class="small text-primary">Read more</div>
+                      <div class="small text-primary">
+                        <i data-feather="arrow-right"></i>
+                      </div>
                     </div>
-                </section>
-
-
-            </main>
-        </div>
-        <div id="layoutDefault_footer">
-            <footer class="footer pt-10 pb-5 mt-auto bg-white footer-light">
-                <div class="container px-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-3">
-                            <div class="footer-brand"><img src="images/omd-logo.svg"></div>
-                            <div class="mb-3">Open Standard for Metadata
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="row gx-5">
-                                <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 invisible">
+                  </a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <a
+                    class="card lift h-100"
+                    href="https://blog.open-metadata.org/openmetadata-benchmarking-3120782f8a12"
+                    target="_blank"
+                  >
+                    <img class="card-img-top" src="images/Blog-Benchmarking.jpeg" />
+                    <div class="card-body">
+                      <h4 class="card-title mb-2">
+                        OpenMetadata Benchmarking
+                      </h4>
+                      <p class="card-text">
+                        See how the application responds with 1.8M entities (1.1M+ table, 550k dashboards, charts, 100k topics)
+                      </p>
+                    </div>
+                    <div
+                      class="
+                        card-footer
+                        bg-transparent
+                        border-top
+                        d-flex
+                        align-items-center
+                        justify-content-between
+                      "
+                    >
+                      <div class="small text-primary">Read more</div>
+                      <div class="small text-primary">
+                        <i data-feather="arrow-right"></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <a
+                    class="card lift h-100"
+                    href="https://blog.open-metadata.org/openmetadata-0-4-0-release-dashboards-topics-data-reliability-14e8672ae0f5"
+                    target="_blank"
+                  >
+                    <img class="card-img-top" src="images/v0.4.0.jpg" />
+                    <div class="card-body">
+                      <h4 class="card-title mb-2">
+                        OpenMetadata 0.4.0 Release
+                      </h4>
+                      <p class="card-text">
+                        New feature releases which includes Dashboards, Topics,
+                        Data Reliability
+                      </p>
+                    </div>
+                    <div
+                      class="
+                        card-footer
+                        bg-transparent
+                        border-top
+                        d-flex
+                        align-items-center
+                        justify-content-between
+                      "
+                    >
+                      <div class="small text-primary">Read more</div>
+                      <div class="small text-primary">
+                        <i data-feather="arrow-right"></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="text-center">
+                  <a
+                    class="btn btn-primary fw-500"
+                    href="http://blog.open-metadata.org/"
+                    target="_blank"
+                    >Read All Blogs</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div id="layoutDefault_footer">
+        <footer class="footer pt-10 pb-5 mt-auto bg-white footer-light">
+          <div class="container px-5">
+            <div class="row gx-5">
+              <div class="col-lg-3">
+                <div class="footer-brand">
+                  <img src="images/omd-logo.svg" />
+                </div>
+                <div class="mb-3">Open Standard for Metadata</div>
+              </div>
+              <div class="col-lg-9">
+                <div class="row gx-5">
+                  <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 invisible">
                                     <div class="text-uppercase-expanded text-xs mb-4">Product</div>
                                     <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><a href="#!">Landing</a></li>
@@ -387,23 +640,47 @@
                                         <li><a href="#!">Changelog</a></li>
                                     </ul>
                                 </div> -->
-                                <div class="col-lg-3 offset-lg-3 col-md-6 mb-5 mb-lg-0">
-                                    <div class="text-uppercase-expanded text-xs mb-4">Docs</div>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a href="https://docs.open-metadata.org/" target="_blank">What
-                                                is OpenMetadata?</a></li>
-                                        <li class="mb-2"><a
-                                                href="https://docs.open-metadata.org/openmetadata-apis/schemas"
-                                                target="_blank">Schemas</a></li>
-                                        <li class="mb-2"><a href="https://docs.open-metadata.org/openmetadata-apis/apis"
-                                                target="_blank">APIs</a></li>
-                                        <li class="mb-2"><a href="https://docs.open-metadata.org/install/run-locally"
-                                                target="_blank">Install</a></li>
-                                        <li><a href="https://docs.open-metadata.org/install/metadata-ingestion"
-                                                target="_blank">Ingestion</a></li>
-                                    </ul>
-                                </div>
-                                <!-- <div class="col-lg-3 col-md-6 mb-5 mb-md-0 invisible">
+                  <div class="col-lg-3 offset-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="text-uppercase-expanded text-xs mb-4">Docs</div>
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <a
+                          href="https://docs.open-metadata.org/"
+                          target="_blank"
+                          >What is OpenMetadata?</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://docs.open-metadata.org/openmetadata-apis/schemas"
+                          target="_blank"
+                          >Schemas</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://docs.open-metadata.org/openmetadata-apis/apis"
+                          target="_blank"
+                          >APIs</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://docs.open-metadata.org/install/run-locally"
+                          target="_blank"
+                          >Install</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://docs.open-metadata.org/install/metadata-ingestion"
+                          target="_blank"
+                          >Ingestion</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <div class="col-lg-3 col-md-6 mb-5 mb-md-0 invisible">
                                     <div class="text-uppercase-expanded text-xs mb-4">Includes</div>
                                     <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><a href="#!">Utilities</a></li>
@@ -415,9 +692,11 @@
                                         <li><a href="#!">Updates</a></li>
                                     </ul>
                                 </div> -->
-                                <div class="col-lg-3 offset-lg-3 col-md-6">
-                                    <div class="text-uppercase-expanded text-xs mb-4">Community</div>
-                                    <!-- <div class="icon-list-social mb-5">
+                  <div class="col-lg-3 offset-lg-3 col-md-6">
+                    <div class="text-uppercase-expanded text-xs mb-4">
+                      Community
+                    </div>
+                    <!-- <div class="icon-list-social mb-5">
                                         <a class="icon-list-social-link"
                                             href="https://communityinviter.com/apps/open-metadata/openmetadata"
                                             target="_blank"><i class="fab fa-slack"></i></a>
@@ -429,44 +708,60 @@
                                         <a class="icon-list-social-link" href="mailto:dev@open-metadata.org"><i
                                                 class="fas fa-envelope"></i></a>
                                     </div> -->
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a
-                                                href="https://openmetadata.slack.com/join/shared_invite/zt-udl8ris3-Egq~YtJU_yJgJTtROo00dQ#/shared-invite/email"
-                                                target="_blank"><i class="fab fa-slack"></i> Slack</a></li>
-                                        <li class="mb-2"><a href="https://github.com/open-metadata/openmetadata"
-                                                target="_blank"><i class="fab fa-github"></i> Github</a></li>
-                                        <li class="mb-2"><a href="https://twitter.com/open_metadata" target="_blank"><i
-                                                    class="fab fa-twitter"></i> Twitter</a></li>
-                                        <li><a href="https://groups.google.com/g/openmetadata-users"><i class="fas fa-envelope"></i>
-                                                Mailing List</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="my-5" />
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-md-6 small">Copyright © OpenMetadata 2021</div>
-                        <!-- <div class="col-md-6 text-md-end small">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <a
+                          href="https://openmetadata.slack.com/join/shared_invite/zt-udl8ris3-Egq~YtJU_yJgJTtROo00dQ#/shared-invite/email"
+                          target="_blank"
+                          ><i class="fab fa-slack"></i> Slack</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://github.com/open-metadata/openmetadata"
+                          target="_blank"
+                          ><i class="fab fa-github"></i> Github</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://twitter.com/open_metadata"
+                          target="_blank"
+                          ><i class="fab fa-twitter"></i> Twitter</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://groups.google.com/g/openmetadata-users"
+                          ><i class="fas fa-envelope"></i> Mailing List</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-5" />
+            <div class="row gx-5 align-items-center">
+              <div class="col-md-6 small">Copyright © OpenMetadata 2021</div>
+              <!-- <div class="col-md-6 text-md-end small">
                             <a href="#!">Privacy Policy</a>
                             ·
                             <a href="#!">Terms &amp; Conditions</a>
                         </div> -->
-                    </div>
-                </div>
-            </footer>
-        </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
     <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="js/aos.js"></script>
     <script>
-        AOS.init({
-            disable: 'mobile',
-            duration: 600,
-            once: true,
-        });
+      AOS.init({
+        disable: "mobile",
+        duration: 600,
+        once: true,
+      });
     </script>
-</body>
-
+  </body>
 </html>
