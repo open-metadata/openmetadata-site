@@ -19711,6 +19711,33 @@ a:hover {
   background-color: #dbd1f9;
   border-color: #dbd1f9;
 }
+
+.btn-outline-primary {
+  color: #7147E8;
+  border-color: #7147E8;
+}
+.btn-outline-primary:hover {
+  color: #7147E8;
+  background-color: #f1f5fa;
+  border-color: #7147E8;
+}
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 97, 242, 0.5);
+}
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+  color: #7147E8;
+  background-color: #f1f5fa;
+  border-color: #7147E8;
+}
+.btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 97, 242, 0.5);
+}
+.btn-outline-primary:disabled, .btn-outline-primary.disabled {
+  color: #ccd2db;
+  background-color: transparent;
+}
+
+
 .footer.footer-light {
   color: #6B7280;
 }
@@ -19757,4 +19784,10 @@ a:hover {
   position: absolute;
   right: 1em;
   top: 1em;
+}
+.bg-ready {
+  background-image: url('../images/bg-workstation.jpg')
+}
+.bg-cloud {
+  background-image: url('../images/bg-cloud.jpg')
 }
