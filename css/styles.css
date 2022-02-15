@@ -19791,3 +19791,6 @@ a:hover {
 .bg-cloud {
   background-image: url('../images/bg-cloud.jpg')
 }
+.btn-quick-cta {
+  min-width: 7rem;
+}
