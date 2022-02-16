@@ -1,654 +1,1103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>OpenMetaData</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <script data-search-pseudo-elements="" defer="" src="js/all.min.js"></script>
+    <script
+      data-search-pseudo-elements=""
+      defer=""
+      src="js/all.min.js"
+    ></script>
     <script src="js/feather.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBLK284YQW"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LBLK284YQW"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-LBLK284YQW');
+      gtag("config", "G-LBLK284YQW");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="layoutDefault">
-        <div id="layoutDefault_content">
-            <main>
-                <!-- Navbar-->
-                <nav class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top">
-                    <div class="container px-5">
-                        <a class="navbar-brand text-primary" href="index.html"><img src="images/omd-logo.svg"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto me-lg-5">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://sandbox.open-metadata.org/signin">Sandbox</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://docs.open-metadata.org/">Documentation</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="http://blog.open-metadata.org/">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="https://github.com/open-metadata/OpenMetadata">GitHub</a>
-                                </li>
-                            </ul>
-                            <a class="btn fw-500 btn-primary rounded-pill" href="https://forms.gle/xkXZvbPWfmzx3TX76"
-                                target="_blank">
-                                <i class="fas fa-cloud"></i>
-                            </a>
-                        </div>
+      <div id="layoutDefault_content">
+        <main>
+          <!-- Navbar-->
+          <nav
+            class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top"
+          >
+            <div class="container px-5">
+              <a class="navbar-brand text-primary" href="index.html"
+                ><img src="images/omd-logo.svg"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i data-feather="menu"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-lg-5">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://sandbox.open-metadata.org/signin"
+                      >Sandbox</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://docs.open-metadata.org/"
+                      >Documentation</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://blog.open-metadata.org/"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/open-metadata/OpenMetadata"
+                      >GitHub</a
+                    >
+                  </li>
+                </ul>
+                <a
+                  class="btn fw-500 btn-primary rounded-pill"
+                  href="https://forms.gle/xkXZvbPWfmzx3TX76"
+                  target="_blank"
+                >
+                  <i class="fas fa-cloud"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <!-- Page Header-->
+          <header class="page-header-ui page-header-ui-light bg-white">
+            <div class="page-header-ui-content pt-5">
+              <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                  <div class="col-lg-6" data-aos="fade-up">
+                    <h1 class="page-header-ui-title fw-700">OpenMetadata</h1>
+                    <h3 class="page-header-ui-subtitle text-primary">
+                      A Single Place to Discover, Collaborate and get your Data
+                      Right
+                    </h3>
+                    <p class="page-header-ui-text mb-5">
+                      Unlock the value of data assets with an end-to-end
+                      metadata management solution that includes data discovery,
+                      governance, data quality, observability, and people
+                      collaboration.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row">
+                      <a
+                        class="btn btn-lg btn-primary btn-home-slack fw-500 mb-3 mb-sm-0 me-sm-3"
+                        href="https://sandbox.open-metadata.org/"
+                      >
+                        Explore Sandbox
+                      </a>
+                      <a
+                        class="btn btn-lg btn-outline-primary btn-home-slack fw-500"
+                        href="https://openmetadata.slack.com/"
+                      >
+                        <img src="images/icon-slack.svg" height="18" />&nbsp;
+                        Join our Slack</a
+                      >
                     </div>
-                </nav>
-                <!-- Page Header-->
-                <header class="page-header-ui page-header-ui-light bg-white">
-                    <div class="page-header-ui-content pt-5">
-                        <div class="container px-5">
-                            <div class="row gx-5 align-items-center">
-                                <div class="col-lg-6" data-aos="fade-up">
-                                    <h1 class="page-header-ui-title fw-700">OpenMetadata</h1>
-                                    <h3 class="page-header-ui-subtitle text-primary">A Single Place to Discover,
-                                        Collaborate and get your Data Right</h3>
-                                    <p class="page-header-ui-text mb-5">Unlock the value of data assets with an
-                                        end-to-end metadata management solution that includes data discovery,
-                                        governance, data quality, observability, and people collaboration.</p>
-                                    <div class="d-flex flex-column flex-sm-row">
-                                        <a class="btn btn-lg btn-primary btn-home-slack fw-500 mb-3 mb-sm-0 me-sm-3"
-                                            href="https://sandbox.open-metadata.org/">
-                                            Explore Sandbox
-                                        </a>
-                                        <a class="btn btn-lg btn-outline-primary btn-home-slack fw-500"
-                                            href="https://openmetadata.slack.com/">
-                                            <img src="images/icon-slack.svg" height="18" />&nbsp;
-                                            Join our
-                                            Slack</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-up" data-aos-delay="100"><img
-                                        class="img-fluid" src="images/home-section.png" alt="..." />
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div
+                    class="col-lg-6 d-none d-lg-block"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="images/home-section.png"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </header>
+
+          <section class="bg-light py-10">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center text-center mb-4">
+                <div class="col-lg-8">
+                  <div class="display-5 mb-3 text-dark">Why OpenMetadata?</div>
+                  <h4>
+                    Get to know OpenMetadata in less than 3 minutes. Watch the
+                    data discovery, data profiler, and lineage features in
+                    action.
+                  </h4>
+                </div>
+              </div>
+              <div class="row gx-5 justify-content-center z-1">
+                <div class="col-lg-8" data-aos="fade-up">
+                  <div class="card lift mb-n15">
+                    <div class="card-body p-2">
+                      <div class="video bg-img-cover rounded">
+                        <iframe
+                          width="100%"
+                          height="350"
+                          src="https://www.youtube.com/embed/3xaHf3A2PgU"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
                     </div>
-                    <div class="svg-border-rounded text-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="bg-img-cover overlay overlay-light overlay-90 py-10 bg-ready"
+            id="getting-started"
+          >
+            <div class="container px-5 z-1">
+              <div class="row gx-5 justify-content-center text-center">
+                <div class="col-lg-8">
+                  <div class="display-5 mb-3 text-dark">Ready to Start?</div>
+                  <h4>
+                    Run this command to get OpenMetadata up & running with
+                    Docker.
+                  </h4>
+                  <div class="copy-code my-4 text-start">
+                    <button type="button" class="btn btn-outline-light btn-sm">
+                      <i class="me-2" data-feather="copy"></i> Copy
+                    </button>
+                    pip3 install --upgrade 'openmetadata-ingestion[docker]'<br />
+                    metadata docker --start
+                  </div>
+                  <a
+                    class="btn btn-primary fw-500"
+                    href="https://docs.open-metadata.org/install/run-in-production"
+                    >Deploy in Production</a
+                  >
+                  <a
+                    class="btn btn-primary fw-500"
+                    href="https://docs.open-metadata.org/install/kubernetes"
+                    >Deploy in Kubernetes</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+
+          <section class="bg-white py-10">
+            <div class="container px-5">
+              <div class="row gx-5 text-center">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                  <img src="images/icon-git.svg" class="mb-4" />
+                  <h3>Let’s Build on GitHub</h3>
+                  <p>
+                    Contribute code, try out good starting issues, and join the
+                    momentum.
+                  </p>
+                  <a
+                    class="btn btn-sm btn-primary btn-quick-cta fw-500"
+                    href="https://github.com/open-metadata/OpenMetadata"
+                    >Explore</a
+                  >
+                </div>
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                  <img src="images/icon-doc.svg" class="mb-4" />
+                  <h3>Refer Documentation</h3>
+                  <p>
+                    Benefit with the step-by-step guides to start implementing
+                    and get started.
+                  </p>
+                  <a
+                    class="btn btn-sm btn-primary btn-quick-cta fw-500"
+                    href="https://docs.open-metadata.org/"
+                    >Visit</a
+                  >
+                </div>
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                  <img src="images/icon-slack.svg" class="mb-4" />
+                  <h3>Connect on Slack</h3>
+                  <p>
+                    Ask questions, get help, discuss features, and connect with
+                    contributors & users.
+                  </p>
+                  <a
+                    class="btn btn-sm btn-primary btn-quick-cta fw-500"
+                    href="https://openmetadata.slack.com/"
+                    >Connect</a
+                  >
+                </div>
+                <div class="col-lg-3">
+                  <img src="images/icon-join.svg" class="mb-4" />
+                  <h3>Join our Community</h3>
+                  <p>
+                    Attend meetings, share your thoughts, and know where we are
+                    heading.
+                  </p>
+                  <a
+                    class="btn btn-sm btn-primary btn-quick-cta fw-500"
+                    href="./community.html"
+                    >Join Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+
+          <section class="bg-light py-10" id="features">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-5">
+                    <h2 class="section-header fw-600">Features</h2>
+                    <!-- <p class="lead">There are many variations of passages of Lorem Ipsum available.</p> -->
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row gx-5 align-items-center justify-content-center mb-5"
+              >
+                <div class="col-lg-5">
+                  <h2>All Data in One Place</h2>
+                  <p>
+                    A central store to integrate metadata from different sources
+                    in the data ecosystem. Uses standardized Schemas and APIs.
+                    Brings together the power of multiple applications -
+                    <strong
+                      >data discovery, quality, observability, profiling, user
+                      collaboration, lineage,</strong
+                    >
+                    and much more.
+                  </p>
+                  <p>Helping data engineers win their time back!</p>
+                  <a
+                    class="small text-arrow-icon"
+                    href="https://docs.open-metadata.org/features"
+                  >
+                    Learn More
+                    <i data-feather="arrow-right"></i>
+                  </a>
+                </div>
+                <div class="col-lg-7" data-aos="slide-left">
+                  <div class="mb-4">
+                    <img
+                      class="img-fluid shadow-lg rounded-3"
+                      src="images/feature01.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row gx-5 align-items-center justify-content-center mb-5"
+              >
+                <div class="col-lg-7" data-aos="slide-right">
+                  <div class="mb-4">
+                    <img
+                      class="img-fluid shadow-lg rounded-3"
+                      src="images/feature02.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <h2>Data Collaboration</h2>
+                  <p class="lead">
+                    Fosters collaboration among the producers and consumers of
+                    data with all the data evolution in one place.
+                  </p>
+                  <div class="row gx-5">
+                    <div class="col-md-12 mb-4">
+                      <h6><strong>Activity Feeds</strong></h6>
+                      <p class="mb-2 small">
+                        View a summary of all the metadata change events. Keep
+                        track of what’s going on with your data.
+                      </p>
                     </div>
-                </header>
-
-                <section class="bg-light py-10">
-                    <div class="container px-5">
-                        <div class="row gx-5 justify-content-center text-center mb-4">
-                            <div class="col-lg-8">
-                                <div class="display-5 mb-3 text-dark">Why OpenMetadata?</div>
-                                <h4>Get to know OpenMetadata in less than 3 minutes. Watch the data discovery, data
-                                    profiler, and lineage features in action.</h4>
-                            </div>
-                        </div>
-                        <div class="row gx-5 justify-content-center z-1">
-                            <div class="col-lg-8" data-aos="fade-up">
-                                <div class="card lift mb-n15">
-                                    <div class="card-body p-2">
-                                        <div class="video bg-img-cover rounded">
-                                            <iframe width="100%" height="350"
-                                                src="https://www.youtube.com/embed/3xaHf3A2PgU"
-                                                title="YouTube video player" frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                                allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-12 mb-4">
+                      <h6><strong>Webhooks & Slack Integration</strong></h6>
+                      <p class="mb-2 small mb-0">
+                        With webhooks, register URLs to receive metadata event
+                        notifications. Set up Slack notifications to publish
+                        metadata events.
+                      </p>
+                      <a
+                        class="small text-arrow-icon"
+                        href="https://docs.open-metadata.org/features"
+                      >
+                        Learn More
+                        <i data-feather="arrow-right"></i>
+                      </a>
                     </div>
-                </section>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="row gx-5 align-items-center justify-content-center mb-5"
+              >
+                <div class="col-lg-5">
+                  <h2>Metadata Versioning</h2>
+                  <p>
+                    Captures the changes in technical and business metadata as
+                    versions of an entity. Facilitates
+                    <strong
+                      >data governance, people collaboration, and simplifies
+                      debugging.</strong
+                    >
+                  </p>
+                  <p>Serves as an organizational memory of data!</p>
+                  <a
+                    class="small text-arrow-icon"
+                    href="https://docs.open-metadata.org/features"
+                  >
+                    Learn More
+                    <i data-feather="arrow-right"></i>
+                  </a>
+                </div>
+                <div class="col-lg-7" data-aos="slide-left">
+                  <div class="mb-4">
+                    <img
+                      class="img-fluid shadow-lg rounded-3"
+                      src="images/feature03.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-7" data-aos="slide-right">
+                  <div class="mb-4">
+                    <img
+                      class="img-fluid shadow-lg rounded-3"
+                      src="images/feature04.jpg"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <h2>Data Lineage</h2>
+                  <p>
+                    Supports a comprehensive lineage for
+                    <strong>all data assets</strong> by capturing the relation
+                    between entities. Traces the path of data across tables,
+                    pipelines, and dashboards.
+                    <strong>Manual lineage</strong> helps augment the lineage
+                    captured from machine metadata with user knowledge.
+                  </p>
+                  <p>View the lineage at each entity level!</p>
+                  <a
+                    class="small text-arrow-icon"
+                    href="https://docs.open-metadata.org/features"
+                  >
+                    Learn More
+                    <i data-feather="arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-white">
+              <!-- Rounded SVG Border-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
 
-                <section class="bg-img-cover overlay overlay-light overlay-90 py-10 bg-ready" id="getting-started">
-                    <div class="container px-5 z-1">
-                        <div class="row gx-5 justify-content-center text-center">
-                            <div class="col-lg-8">
-                                <div class="display-5 mb-3 text-dark">Ready to Start?</div>
-                                <h4>Run this command to get OpenMetadata up & running with Docker.</h4>
-                                <div class="copy-code my-4 text-start">
-                                    <button type="button" class="btn btn-outline-light btn-sm"><i class="me-2"
-                                            data-feather="copy"></i> Copy</button>
-                                    pip3 install --upgrade 'openmetadata-ingestion[docker]'<br />
-                                    metadata docker --start
-                                </div>
-                                <a class="btn btn-primary fw-500"
-                                    href="https://docs.open-metadata.org/install/run-in-production">Deploy in
-                                    Production</a>
-                                <a class="btn btn-primary fw-500"
-                                    href="https://docs.open-metadata.org/install/kubernetes">Deploy in Kubernetes</a>
-                            </div>
-                        </div>
+          <section class="bg-white pb-15 pt-10" id="integrations">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-5">
+                    <h2 class="section-header fw-600">Integrations</h2>
+                    <p class="lead">
+                      OpenMetadata's ingestion framework supports connectors for
+                      a wide range of services, and the list is constantly
+                      growing...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-5">
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/airflow.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Airflow</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/amundsen.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Amundsen</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/athena.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Athena</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/atlas.png" class="media-img mb-2" />
+                  <h5>Atlas</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/bigquery.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>BigQuery</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/dbt.png" class="media-img mb-2" />
+                  <h5>dbt</h5>
+                </div>
 
-                    </div>
-                    <div class="svg-border-rounded text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
-                    </div>
-                </section>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/deltalake.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Delta Lake</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/druid.png" class="media-img mb-2" />
+                  <h5>Druid</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/elasticsearch.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Elasticsearch</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/glue.png" class="media-img mb-2" />
+                  <h5>Glue</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/hive.png" class="media-img mb-2" />
+                  <h5>Hive</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/ibmdb2.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>IBM Db2</h5>
+                </div>
 
-                <section class="bg-white py-10">
-                    <div class="container px-5">
-                        <div class="row gx-5 text-center">
-                            <div class="col-lg-3 mb-5 mb-lg-0">
-                                <img src="images/icon-git.svg" class="mb-4" />
-                                <h3>Let’s Build on GitHub</h3>
-                                <p>Contribute code, try out good starting issues, and join the momentum.</p>
-                                <a class="btn btn-sm btn-primary btn-quick-cta fw-500"
-                                    href="https://github.com/open-metadata/OpenMetadata">Explore</a>
-                            </div>
-                            <div class="col-lg-3 mb-5 mb-lg-0">
-                                <img src="images/icon-doc.svg" class="mb-4" />
-                                <h3>Refer Documentation</h3>
-                                <p>Benefit with the step-by-step guides to start implementing and get started.</p>
-                                <a class="btn btn-sm btn-primary btn-quick-cta fw-500"
-                                    href="https://docs.open-metadata.org/">Visit</a>
-                            </div>
-                            <div class="col-lg-3 mb-5 mb-lg-0">
-                                <img src="images/icon-slack.svg" class="mb-4" />
-                                <h3>Connect on Slack</h3>
-                                <p>Ask questions, get help, discuss features, and connect with contributors & users.
-                                </p>
-                                <a class="btn btn-sm btn-primary btn-quick-cta fw-500"
-                                    href="https://openmetadata.slack.com/">Connect</a>
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="images/icon-join.svg" class="mb-4" />
-                                <h3>Join our Community</h3>
-                                <p>Attend meetings, share your thoughts, and know where we are heading.</p>
-                                <a class="btn btn-sm btn-primary btn-quick-cta fw-500"
-                                    href="https://github.com/open-metadata/OpenMetadata/discussions">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="svg-border-rounded text-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
-                    </div>
-                </section>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/kafka.png" class="media-img mb-2" />
+                  <h5>Kafka</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/looker.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Looker</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/mariadb.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>MariaDB</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/metabase.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Metabase</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/mssql.png" class="media-img mb-2" />
+                  <h5>MSSQL</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/mysql.png" class="media-img mb-2" />
+                  <h5>MySQL</h5>
+                </div>
 
-                <section class="bg-light py-10" id="features">
-                    <div class="container px-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="text-center mb-5">
-                                    <h2 class="section-header fw-600">Features</h2>
-                                    <!-- <p class="lead">There are many variations of passages of Lorem Ipsum available.</p> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-5 align-items-center justify-content-center mb-5">
-                            <div class="col-lg-5">
-                                <h2>All Data in One Place</h2>
-                                <p>A central store to integrate metadata from different sources in the data
-                                    ecosystem. Uses standardized Schemas and APIs. Brings together the power of multiple
-                                    applications - <strong>data discovery, quality, observability, profiling, user
-                                        collaboration,
-                                        lineage,</strong> and much more.</p>
-                                <p>Helping data engineers win their time back!</p>
-                                <a class="small text-arrow-icon" href="https://docs.open-metadata.org/features">
-                                    Learn More
-                                    <i data-feather="arrow-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-lg-7" data-aos="slide-left">
-                                <div class="mb-4"><img class="img-fluid shadow-lg rounded-3"
-                                        src="images/feature01.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-5 align-items-center justify-content-center mb-5">
-                            <div class="col-lg-7" data-aos="slide-right">
-                                <div class="mb-4"><img class="img-fluid shadow-lg rounded-3"
-                                        src="images/feature02.jpg" />
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <h2>Data Collaboration</h2>
-                                <p class="lead">Fosters collaboration among the producers and consumers of data with all
-                                    the data evolution in one place.</p>
-                                <div class="row gx-5">
-                                    <div class="col-md-12 mb-4">
-                                        <h6><strong>Activity Feeds</strong></h6>
-                                        <p class="mb-2 small">View a summary of all the metadata change events. Keep
-                                            track of what’s going on with your data.
-                                        </p>
-                                    </div>
-                                    <div class="col-md-12 mb-4">
-                                        <h6><strong>Webhooks & Slack Integration</strong></h6>
-                                        <p class="mb-2 small mb-0">With webhooks, register URLs to receive metadata
-                                            event notifications. Set up Slack notifications to publish metadata events.
-                                        </p>
-                                        <a class="small text-arrow-icon" href="https://docs.open-metadata.org/features">
-                                            Learn More
-                                            <i data-feather="arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-5 align-items-center justify-content-center mb-5">
-                            <div class="col-lg-5">
-                                <h2>Metadata Versioning</h2>
-                                <p>Captures the changes in technical and business metadata as versions of an entity.
-                                    Facilitates <strong>data governance, people collaboration, and simplifies
-                                        debugging.</strong></p>
-                                <p>Serves as an organizational memory of data!</p>
-                                <a class="small text-arrow-icon" href="https://docs.open-metadata.org/features">
-                                    Learn More
-                                    <i data-feather="arrow-right"></i>
-                                </a>
-                            </div>
-                            <div class="col-lg-7" data-aos="slide-left">
-                                <div class="mb-4"><img class="img-fluid shadow-lg rounded-3"
-                                        src="images/feature03.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-5 align-items-center justify-content-center">
-                            <div class="col-lg-7" data-aos="slide-right">
-                                <div class="mb-4"><img class="img-fluid shadow-lg rounded-3"
-                                        src="images/feature04.jpg" />
-                                </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <h2>Data Lineage</h2>
-                                <p>Supports a comprehensive lineage for <strong>all data assets</strong> by capturing
-                                    the
-                                    relation between entities. Traces the path of data across tables, pipelines, and
-                                    dashboards. <strong>Manual lineage</strong> helps augment the lineage captured from
-                                    machine metadata
-                                    with user knowledge.</p>
-                                <p>View the lineage at each entity level!</p>
-                                <a class="small text-arrow-icon" href="https://docs.open-metadata.org/features">
-                                    Learn More
-                                    <i data-feather="arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="svg-border-rounded text-white">
-                        <!-- Rounded SVG Border-->
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
-                    </div>
-                </section>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/oracle.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Oracle</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/postgres.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Postgres</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/perfect.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Prefect</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/presto.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Presto</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/pulsar.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Pulsar</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/redash.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Redash</h5>
+                </div>
 
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/redshift.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Redshift</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/salesforce.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Salesforce</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/snowflake.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Snowflake</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/superset.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Superset</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/tableu.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Tableau</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/trino.png" class="media-img mb-2" />
+                  <h5>Trino</h5>
+                </div>
 
-                <section class="bg-white pb-15 pt-10" id="integrations">
-                    <div class="container px-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="text-center mb-5">
-                                    <h2 class="section-header fw-600">Integrations</h2>
-                                    <p class="lead">OpenMetadata's ingestion framework supports connectors for a wide
-                                        range of services, and the list is constantly growing...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-5">
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/airflow.png" class="media-img mb-2" />
-                                <h5>Airflow</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/amundsen.png" class="media-img mb-2" />
-                                <h5>Amundsen</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/athena.png" class="media-img mb-2" />
-                                <h5>Athena</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/atlas.png" class="media-img mb-2" />
-                                <h5>Atlas</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/bigquery.png" class="media-img mb-2" />
-                                <h5>BigQuery</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/dbt.png" class="media-img mb-2" />
-                                <h5>dbt</h5>
-                            </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/vertica.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Vertica</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/mlflow.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>MLflow</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/sqlalchemy.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>SQLAlchemy</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img src="images/services/ldap.png" class="media-img mb-2" />
+                  <h5>LDAP</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/clickhouse.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>ClickHouse</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/databrick.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Databricks</h5>
+                </div>
 
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/deltalake.png" class="media-img mb-2" />
-                                <h5>Delta Lake</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/druid.png" class="media-img mb-2" />
-                                <h5>Druid</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/elasticsearch.png" class="media-img mb-2" />
-                                <h5>Elasticsearch</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/glue.png" class="media-img mb-2" />
-                                <h5>Glue</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/hive.png" class="media-img mb-2" />
-                                <h5>Hive</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/ibmdb2.png" class="media-img mb-2" />
-                                <h5>IBM Db2</h5>
-                            </div>
-
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/kafka.png" class="media-img mb-2" />
-                                <h5>Kafka</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/looker.png" class="media-img mb-2" />
-                                <h5>Looker</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/mariadb.png" class="media-img mb-2" />
-                                <h5>MariaDB</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/metabase.png" class="media-img mb-2" />
-                                <h5>Metabase</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/mssql.png" class="media-img mb-2" />
-                                <h5>MSSQL</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/mysql.png" class="media-img mb-2" />
-                                <h5>MySQL</h5>
-                            </div>
-
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/oracle.png" class="media-img mb-2" />
-                                <h5>Oracle</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/postgres.png" class="media-img mb-2" />
-                                <h5>Postgres</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/perfect.png" class="media-img mb-2" />
-                                <h5>Prefect</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/presto.png" class="media-img mb-2" />
-                                <h5>Presto</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/pulsar.png" class="media-img mb-2" />
-                                <h5>Pulsar</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/redash.png" class="media-img mb-2" />
-                                <h5>Redash</h5>
-                            </div>
-
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/redshift.png" class="media-img mb-2" />
-                                <h5>Redshift</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/salesforce.png" class="media-img mb-2" />
-                                <h5>Salesforce</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/snowflake.png" class="media-img mb-2" />
-                                <h5>Snowflake</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/superset.png" class="media-img mb-2" />
-                                <h5>Superset</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/tableu.png" class="media-img mb-2" />
-                                <h5>Tableau</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/trino.png" class="media-img mb-2" />
-                                <h5>Trino</h5>
-                            </div>
-
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/vertica.png" class="media-img mb-2" />
-                                <h5>Vertica</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/mlflow.png" class="media-img mb-2" />
-                                <h5>MLflow</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/sqlalchemy.png" class="media-img mb-2" />
-                                <h5>SQLAlchemy</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/ldap.png" class="media-img mb-2" />
-                                <h5>LDAP</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/clickhouse.png" class="media-img mb-2" />
-                                <h5>ClickHouse</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/databrick.png" class="media-img mb-2" />
-                                <h5>Databricks</h5>
-                            </div>
-
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/singlestore.png" class="media-img mb-2" />
-                                <h5>SingleStore</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/azuresql.png" class="media-img mb-2" />
-                                <h5>Azure SQL</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/iceberg.png" class="media-img mb-2" />
-                                <h5>Apache Iceberg</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/powerbi.png" class="media-img mb-2" />
-                                <h5>Power BI</h5>
-                            </div>
-                            <div class="col-lg-2 col-md-3 mb-4 text-center" data-aos="fade-up">
-                                <img src="images/services/dynamodb.png" class="media-img mb-2" />
-                                <h5>DynamoDB</h5>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- <div class="svg-border-rounded text-light">
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/singlestore.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>SingleStore</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/azuresql.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Azure SQL</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/iceberg.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Apache Iceberg</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/powerbi.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>Power BI</h5>
+                </div>
+                <div
+                  class="col-lg-2 col-md-3 mb-4 text-center"
+                  data-aos="fade-up"
+                >
+                  <img
+                    src="images/services/dynamodb.png"
+                    class="media-img mb-2"
+                  />
+                  <h5>DynamoDB</h5>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="svg-border-rounded text-light">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
                             fill="currentColor">
                             <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
                         </svg>
                     </div> -->
-                </section>
+          </section>
 
-
-
-                <section class="bg-img-cover overlay overlay-light overlay-80 pt-10 pb-5 bg-cloud">
-                    <div class="container px-5 z-1">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="text-center mb-10">
-                                    <h2 class="section-header fw-600 mb-5">OpenMetadata on Cloud</h2>
-                                    <p class="fs-4">OpenMetadata's cloud hosted solution is coming soon. Stay tuned!</p>
-                                    <p class="fs-4 mb-5">Interested in being an early adopter of the SaaS offering?
-                                        Apply for
-                                        the waitlist
-                                        and we’ll reach out to you shortly.</p>
-                                    <p><a class="btn btn-primary fw-500" href="https://forms.gle/xkXZvbPWfmzx3TX76"
-                                            target="_blank">Sign Up for the Waitlist!</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- <div class="svg-border-rounded text-white">
+          <section
+            class="bg-img-cover overlay overlay-light overlay-80 pt-10 pb-5 bg-cloud"
+          >
+            <div class="container px-5 z-1">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-10">
+                    <h2 class="section-header fw-600 mb-5">
+                      OpenMetadata on Cloud
+                    </h2>
+                    <p class="fs-4">
+                      OpenMetadata's cloud hosted solution is coming soon. Stay
+                      tuned!
+                    </p>
+                    <p class="fs-4 mb-5">
+                      Interested in being an early adopter of the SaaS offering?
+                      Apply for the waitlist and we’ll reach out to you shortly.
+                    </p>
+                    <p>
+                      <a
+                        class="btn btn-primary fw-500"
+                        href="https://forms.gle/xkXZvbPWfmzx3TX76"
+                        target="_blank"
+                        >Sign Up for the Waitlist!</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="svg-border-rounded text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
                             fill="currentColor">
                             <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
                         </svg>
                     </div> -->
-                </section>
+          </section>
 
-                <section class="bg-white pb-5 pt-10" id="blogs">
-                    <div class="container px-5">
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="text-center mb-5">
-                                    <h2 class="section-header fw-600">Blogs</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-5 mb-5">
-                            <div class="col-lg-4 mb-5">
-                                <a class="card lift h-100"
-                                    href="https://blog.open-metadata.org/openmetadata-0-8-0-release-ca09bd2fbf54"
-                                    target="_blank">
-                                    <img class="card-img-top" src="https://open-metadata.org/images/v0.8.0.jpg">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-2">
-                                            OpenMetadata 0.8.0 Release
-                                        </h4>
-                                        <p class="card-text">
-                                            Event Notification via Webhooks, Slack Integration,
-                                            Access Control Policy, and Manual Lineage.
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
-                                        <div class="small text-primary">Read more</div>
-                                        <div class="small text-primary">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-arrow-right">
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                <polyline points="12 5 19 12 12 19"></polyline>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 mb-5">
-                                <a class="card lift h-100"
-                                    href="https://blog.open-metadata.org/openmetadata-0-7-0-release-9f741b8d5089"
-                                    target="_blank">
-                                    <img class="card-img-top" src="https://open-metadata.org/images/v0.7.0.jpg">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-2">
-                                            OpenMetadata 0.7.0 Release
-                                        </h4>
-                                        <p class="card-text">
-                                            Activity Feeds, DBT Integration, StorageLocation
-                                            Integration, and more
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
-                                        <div class="small text-primary">Read more</div>
-                                        <div class="small text-primary">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-arrow-right">
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                <polyline points="12 5 19 12 12 19"></polyline>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 mb-5">
-                                <a class="card lift h-100"
-                                    href="https://blog.open-metadata.org/why-openmetadata-is-the-right-choice-for-you-59e329163cac"
-                                    target="_blank">
-                                    <img class="card-img-top" src="https://open-metadata.org/images/why-om.png">
-                                    <div class="card-body">
-                                        <h4 class="card-title mb-2">
-                                            Why OpenMetadata is the Right Choice for you
-                                        </h4>
-                                        <p class="card-text">
-                                            What generation of metadata systems is OpenMetadata? Are
-                                            you pull-based, push-based, or hybrid?
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
-                                        <div class="small text-primary">Read more</div>
-                                        <div class="small text-primary">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-arrow-right">
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                <polyline points="12 5 19 12 12 19"></polyline>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="text-center">
-                                <a class="btn btn-primary fw-500" href="http://blog.open-metadata.org/"
-                                    target="_blank">Read All Blogs</a>
-                            </div>
-                        </div>
+          <section class="bg-white pb-5 pt-10" id="blogs">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-5">
+                    <h2 class="section-header fw-600">Blogs</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-5 mb-5">
+                <div class="col-lg-4 mb-5">
+                  <a
+                    class="card lift h-100"
+                    href="https://blog.open-metadata.org/openmetadata-0-8-0-release-ca09bd2fbf54"
+                    target="_blank"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="https://open-metadata.org/images/v0.8.0.jpg"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title mb-2">
+                        OpenMetadata 0.8.0 Release
+                      </h4>
+                      <p class="card-text">
+                        Event Notification via Webhooks, Slack Integration,
+                        Access Control Policy, and Manual Lineage.
+                      </p>
                     </div>
-                    <div class="svg-border-rounded text-dark">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                    <div
+                      class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between"
+                    >
+                      <div class="small text-primary">Read more</div>
+                      <div class="small text-primary">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-arrow-right"
+                        >
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
                         </svg>
+                      </div>
                     </div>
-                </section>
+                  </a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <a
+                    class="card lift h-100"
+                    href="https://blog.open-metadata.org/openmetadata-0-7-0-release-9f741b8d5089"
+                    target="_blank"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="https://open-metadata.org/images/v0.7.0.jpg"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title mb-2">
+                        OpenMetadata 0.7.0 Release
+                      </h4>
+                      <p class="card-text">
+                        Activity Feeds, DBT Integration, StorageLocation
+                        Integration, and more
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between"
+                    >
+                      <div class="small text-primary">Read more</div>
+                      <div class="small text-primary">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-arrow-right"
+                        >
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 mb-5">
+                  <a
+                    class="card lift h-100"
+                    href="https://blog.open-metadata.org/why-openmetadata-is-the-right-choice-for-you-59e329163cac"
+                    target="_blank"
+                  >
+                    <img
+                      class="card-img-top"
+                      src="https://open-metadata.org/images/why-om.png"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title mb-2">
+                        Why OpenMetadata is the Right Choice for you
+                      </h4>
+                      <p class="card-text">
+                        What generation of metadata systems is OpenMetadata? Are
+                        you pull-based, push-based, or hybrid?
+                      </p>
+                    </div>
+                    <div
+                      class="card-footer bg-transparent border-top d-flex align-items-center justify-content-between"
+                    >
+                      <div class="small text-primary">Read more</div>
+                      <div class="small text-primary">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-arrow-right"
+                        >
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
 
-            </main>
-        </div>
-        <div id="layoutDefault_footer">
-            <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
-                <div class="container px-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-3">
-                            <div class="footer-brand"><img src="images/omd-logo-footer.svg"></div>
-                            <div class="mb-3">Open Standard for Metadata with a Centralized Metadata Store. Discover,
-                                Collaborate and get your Data Right.</div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="row gx-5">
-                                <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 invisible">
+                <div class="text-center">
+                  <a
+                    class="btn btn-primary fw-500"
+                    href="http://blog.open-metadata.org/"
+                    target="_blank"
+                    >Read All Blogs</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-dark">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div id="layoutDefault_footer">
+        <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+          <div class="container px-5">
+            <div class="row gx-5">
+              <div class="col-lg-3">
+                <div class="footer-brand">
+                  <img src="images/omd-logo-footer.svg" />
+                </div>
+                <div class="mb-3">
+                  Open Standard for Metadata with a Centralized Metadata Store.
+                  Discover, Collaborate and get your Data Right.
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <div class="row gx-5">
+                  <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 invisible">
                                     <div class="text-uppercase-expanded text-xs mb-4">Product</div>
                                     <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><a href="#!">Landing</a></li>
@@ -658,23 +1107,47 @@
                                         <li><a href="#!">Changelog</a></li>
                                     </ul>
                                 </div> -->
-                                <div class="col-lg-3 offset-lg-3 col-md-6 mb-5 mb-lg-0">
-                                    <div class="text-uppercase-expanded text-xs mb-4">Docs</div>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a href="https://docs.open-metadata.org/" target="_blank">What
-                                                is OpenMetadata?</a></li>
-                                        <li class="mb-2"><a
-                                                href="https://docs.open-metadata.org/openmetadata-apis/schemas"
-                                                target="_blank">Schemas</a></li>
-                                        <li class="mb-2"><a href="https://docs.open-metadata.org/openmetadata-apis/apis"
-                                                target="_blank">APIs</a></li>
-                                        <li class="mb-2"><a href="https://docs.open-metadata.org/install/run-locally"
-                                                target="_blank">Install</a></li>
-                                        <li><a href="https://docs.open-metadata.org/install/metadata-ingestion"
-                                                target="_blank">Ingestion</a></li>
-                                    </ul>
-                                </div>
-                                <!-- <div class="col-lg-3 col-md-6 mb-5 mb-md-0 invisible">
+                  <div class="col-lg-3 offset-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <div class="text-uppercase-expanded text-xs mb-4">Docs</div>
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <a
+                          href="https://docs.open-metadata.org/"
+                          target="_blank"
+                          >What is OpenMetadata?</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://docs.open-metadata.org/openmetadata-apis/schemas"
+                          target="_blank"
+                          >Schemas</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://docs.open-metadata.org/openmetadata-apis/apis"
+                          target="_blank"
+                          >APIs</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://docs.open-metadata.org/install/run-locally"
+                          target="_blank"
+                          >Install</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://docs.open-metadata.org/install/metadata-ingestion"
+                          target="_blank"
+                          >Ingestion</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <div class="col-lg-3 col-md-6 mb-5 mb-md-0 invisible">
                                     <div class="text-uppercase-expanded text-xs mb-4">Includes</div>
                                     <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><a href="#!">Utilities</a></li>
@@ -686,9 +1159,11 @@
                                         <li><a href="#!">Updates</a></li>
                                     </ul>
                                 </div> -->
-                                <div class="col-lg-3 offset-lg-3 col-md-6">
-                                    <div class="text-uppercase-expanded text-xs mb-4">Community</div>
-                                    <!-- <div class="icon-list-social mb-5">
+                  <div class="col-lg-3 offset-lg-3 col-md-6">
+                    <div class="text-uppercase-expanded text-xs mb-4">
+                      Community
+                    </div>
+                    <!-- <div class="icon-list-social mb-5">
                                         <a class="icon-list-social-link"
                                             href="https://communityinviter.com/apps/open-metadata/openmetadata"
                                             target="_blank"><i class="fab fa-slack"></i></a>
@@ -700,44 +1175,60 @@
                                         <a class="icon-list-social-link" href="mailto:dev@open-metadata.org"><i
                                                 class="fas fa-envelope"></i></a>
                                     </div> -->
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a
-                                                href="https://communityinviter.com/apps/open-metadata/openmetadata"
-                                                target="_blank"><i class="fab fa-slack"></i> Slack</a></li>
-                                        <li class="mb-2"><a href="https://github.com/open-metadata/openmetadata"
-                                                target="_blank"><i class="fab fa-github"></i> Github</a></li>
-                                        <li class="mb-2"><a href="https://twitter.com/open_metadata" target="_blank"><i
-                                                    class="fab fa-twitter"></i> Twitter</a></li>
-                                        <li><a href="mailto:dev@open-metadata.org"><i class="fas fa-envelope"></i>
-                                                Mailing List</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="my-5" />
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-md-6 small">Copyright © OpenMetadata 2021</div>
-                        <!-- <div class="col-md-6 text-md-end small">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2">
+                        <a
+                          href="https://communityinviter.com/apps/open-metadata/openmetadata"
+                          target="_blank"
+                          ><i class="fab fa-slack"></i> Slack</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://github.com/open-metadata/openmetadata"
+                          target="_blank"
+                          ><i class="fab fa-github"></i> Github</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a
+                          href="https://twitter.com/open_metadata"
+                          target="_blank"
+                          ><i class="fab fa-twitter"></i> Twitter</a
+                        >
+                      </li>
+                      <li>
+                        <a href="mailto:dev@open-metadata.org"
+                          ><i class="fas fa-envelope"></i> Mailing List</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-5" />
+            <div class="row gx-5 align-items-center">
+              <div class="col-md-6 small">Copyright © OpenMetadata 2021</div>
+              <!-- <div class="col-md-6 text-md-end small">
                             <a href="#!">Privacy Policy</a>
                             ·
                             <a href="#!">Terms &amp; Conditions</a>
                         </div> -->
-                    </div>
-                </div>
-            </footer>
-        </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
     <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="js/aos.js"></script>
     <script>
-        AOS.init({
-            disable: 'mobile',
-            duration: 600,
-            once: true,
-        });
+      AOS.init({
+        disable: "mobile",
+        duration: 600,
+        once: true,
+      });
     </script>
-</body>
-
+  </body>
 </html>
