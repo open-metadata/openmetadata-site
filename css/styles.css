@@ -19824,3 +19824,6 @@ a:hover {
   right: 5.5em;
   top: 1em;
 }
+#integrations a:hover {
+  text-decoration: none;
+}
