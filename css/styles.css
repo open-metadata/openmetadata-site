@@ -19776,6 +19776,9 @@ a:hover {
 .btn-home-slack {
   font-size: 1.125rem;
 }
+.btn-home-gitstar {
+  padding: 0.5rem 1.125rem;
+}
 .page-header-ui .page-header-ui-content .page-header-ui-subtitle {
   font-size: 1.75rem;
 }
