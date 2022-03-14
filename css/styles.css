@@ -19807,6 +19807,12 @@ a:hover {
 .btn-quick-cta {
   min-width: 7rem;
 }
+.feature-strip {
+  background-color: #EEEAF8;
+    width: 100%;
+    padding: 12px 8px;
+    text-align: center;
+}
 
 /* Copy Clipboard by Sachin */
 .om-copied-text {
@@ -19830,3 +19836,4 @@ a:hover {
 #integrations a:hover {
   text-decoration: none;
 }
+
