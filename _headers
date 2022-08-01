@@ -1,0 +1,5 @@
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self' open-metadata.org; *.open-metadata.org
+Permissions-Policy: geolocation=*
+Referrer-Policy: no-referrer
