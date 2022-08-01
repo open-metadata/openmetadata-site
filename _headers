@@ -1,6 +1,5 @@
 /*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
-  Content-Security-Policy: default-src * open-metadata.org; style-src 'self' 'unsafe-inline'; script-src * 'unsafe-eval' 'unsafe-inline';img-src 'self' open-metadata.org data;
   Permissions-Policy: geolocation=*
   Referrer-Policy: no-referrer
