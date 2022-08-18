@@ -1,0 +1,248 @@
+[
+        {
+            "name":"Jayadevan",
+            "description":"Thank you for this great product. It will add a lot of value to our organization where we are trying to set up a glossary, tag tables and columns etc.",
+            "date":"May 13th, 2022",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+               "github":"https://github.com/jayadevanm"
+            }
+        },
+        {
+            "name":"RK",
+            "description":"This looks to be a great project! My compliments for endeavoring to fill the gap in this area.",
+            "date":"June 13th, 2022",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+               "github":"https://github.com/rk186009 "
+            }
+        },
+        {
+            "name":"Brady Peneton",
+            "description":"Members of the OpenMetadata team contacted me and their tool and its features impressed me. It was impressively easy to set up and I'm ready to dive in and see what I can accomplish!",
+            "date":"June 30th, 2022",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+               "email":"brdy724@gmail.com ",
+               "slack":"https://openmetadata.slack.com/team/U03NEG1GF4Y"
+            }
+        },
+        {
+            "name":"Cristian Calugaru",
+            "description":"I like the fact that you guys have kept the architecture clean and simple for now. With Datahub it's a bit bloated - the amount of moving parts you need to run even for a simple use case ",
+            "date":"May 12th, 2022",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+               "email":"cristian.calugaru@forter.com ",
+               "slack":"https://openmetadata.slack.com/team/U03FSKC80BA ",
+               "linkedin":"https://uk.linkedin.com/in/cristicalugaru",
+               "company":"Forter"
+    
+            }
+        },
+        {
+            "name":"Srivamsi S",
+            "description":"OpenMetadata displays all its resources and one can explore what all is present.… Authentication with SSO is a huge plus point and the lineage UI is quite mature here…. OpenMetadata community would catch up with connectors very soon IMO. I appreciate the work done by the community to document…. OpenMetadata has a lot of flexibility and scope.",
+            "date":"October 22nd, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"(Student at Symbiosis School, Nashik)",
+               "email":"sakirepalli.srivamsi@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02K2328W8Z",
+               "linkedin":"https://www.linkedin.com/in/srivamsi-sakirepalli-22343b51/"
+    
+            }
+        },
+        {
+            "name":"Matthew Deadman",
+            "description":"OpenMetadata seems to be the most compelling solution so far, and its philosophy really resonates with many of the issues I experienced building out and scaling data cataloging tools at Shopify.",
+            "date":"December 21st, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Wealthsimple",
+               "email":"mdeadman@wealthsimple.com",
+               "slack":"https://openmetadata.slack.com/team/U02R4GWSS0L",
+               "linkedin":"https://www.linkedin.com/in/matthew-deadman-7330b5110/"
+    
+            }
+        },
+        {
+            "name":"Steven Slivnick",
+            "description":"The UI is incredibly impressive and user friendly.",
+            "date":"January 12th, 2022",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Similarweb",
+               "email":"steven@similarweb.com",
+               "slack":"https://openmetadata.slack.com/team/U02TECXRZMH",
+               "linkedin":"https://www.linkedin.com/in/stevenslivnick/"
+    
+            }
+        },
+        {
+            "name":"Eric Hausig",
+            "description":"Product demo was very impressive. I am very impressed with the product and how far you've come in such a short period.",
+            "date":"January 14 & 28, 2022",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Haulynx / Xpress Technologies",
+               "email":"eric.hausig@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02U3NUUY2F",
+               "linkedin":"https://www.linkedin.com/in/eric-hausig-4995463/"
+            }
+        },
+        {
+            "name":"Matthew Karsten",
+            "description":"Fantastic project initiative. I'd like to be part because you are solving such a huge pain point across many industries",
+            "date":"August 18th, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Purple Squirrel Media",
+               "email":"purplesquirreltalent@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02BD3Q37JS",
+               "linkedin":"https://www.linkedin.com/in/purplesquirrelmedia/"
+    
+            }
+        },
+        {
+            "name":"Murali Raja Muniraju",
+            "description":"I truly believe the mission OpenMetadata is a wonderful one in a data federated world. I am delighted to learn more.",
+            "date":"October 9th, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Rubrik",
+               "email":"murali.rajam@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02GT07K53R",
+               "linkedin":"https://www.linkedin.com/in/muralirajam/"
+    
+            }
+        },
+        {
+            "name":"Satish",
+            "description":"I have been working on some metadata projects and found OpenMetadata to be a compelling & interesting project.",
+            "date":"October 16th, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+               "email":"satysh@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02JCMQ5GMP"
+            }
+        },
+        {
+            "name":"Deepak Alur",
+            "description":"Great job guys (Suresh & Harsha) on the Data Engineering Blog and found it very illuminating. Many of my curiosities were satisfied including the vision and architecture behind Open Metadata. Highly recommend it if you haven't checked it out.",
+            "date":"November 18th, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"One Medical",
+               "email":"alur.deepak@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02H07U8U05",
+               "linkedin":"https://www.linkedin.com/in/deepakalur/"
+            }
+        },
+        {
+            "name":"Martin Sahlen",
+            "description":"Having been in this space ourselves for quite a while already we have seen many initiatives in the OSS space of metadata tools, data catalogs and everything in between. They all come with their share of legacy it seems, but OpenMetadata IMHO has by far the most mature and flexible data model. We're excited to be part of the community and also contribute to the project in any way we can!.",
+            "date":"December 22nd, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Alvin",
+               "email":"martin@alvin.ai",
+               "slack":"https://openmetadata.slack.com/team/U02PC21CR7T",
+               "linkedin":"https://www.linkedin.com/in/martinsahlen/"
+            }
+        },
+        {
+            "name":"Andreas Oberhack",
+            "description":"It seems that you really take your community seriously.",
+            "date":"January 21st, 2022",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"One Medical",
+               "email":"oberhack@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02MYCT8F4G",
+               "linkedin":"https://www.linkedin.com/in/andreas-oberhack-2a967364/"
+            }
+        },
+        {
+            "name":"Krishna Sadasivam",
+            "description":"Excited to be part of this smart/talented community.",
+            "date":"September 21st, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Vibi Labs",
+               "email":"opensource.krishna@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02CNBVLWAU",
+               "linkedin":"https://www.linkedin.com/in/ksivam/"
+            }
+        },
+        {
+            "name":"Enrique Gutierrez",
+            "description":"I think this project is the missing piece I've been waiting for to exist.",
+            "date":"September 24th, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"ASSET Rail",
+               "email":"egutierrez@assetrail.nl",
+               "slack":"https://openmetadata.slack.com/team/U02FCJRFVFY",
+               "linkedin":"https://www.linkedin.com/in/enrique-guti%C3%A9rrez-a60575a7/"
+            }
+        },
+        {
+            "name":"Eric Simmerman",
+            "description":"Impressed by the OpenMetadata mission!",
+            "date":"October 9th, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Qualytics",
+               "email":"eric@qualytics.co",
+               "slack":"https://openmetadata.slack.com/team/U02HD1C92BT",
+               "linkedin":"https://www.linkedin.com/in/ericsimmerman/"
+            }
+        },
+        {
+            "name":"Vijay Mariadassou",
+            "description":"I was very intrigued by the promise of Open Metadata.",
+            "date":"October 21st, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+               "email":"vijaypm.ometa@mariadassou.com",
+               "slack":"https://openmetadata.slack.com/team/U02J0LP73PY"
+            }
+        },
+        {
+            "name":"Enzo Altamiranda",
+            "description":"Heard about you on the Data Engineering podcast, really cool project.",
+            "date":"November 11th, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"ZIMPERIUM",
+               "email":"enzo.alt@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02LZ9CHQMQ",
+               "linkedin":"https://www.linkedin.com/in/enzoalt/"
+            }
+        },
+        {
+            "name":"Kriti Kathuria",
+            "description":"I love how OpenMetadata is not just limited to metadata, but all data reliability and data movement systems.",
+            "date":"November 13th, 2021",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Postman (previous company)",
+               "email":"kathuriakritihp@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02LRDRQCMD",
+               "linkedin":"https://www.linkedin.com/in/kriti-kathuria/"
+            }
+        },
+        {
+            "name":"Francesco Mucio",
+            "description":"I am enjoying playing with some test data and see what I can achieve. I am very interested in capturing lineage information and data ownership. Happy to dig into these topics with OpenMetadata (and the support from the community here)",
+            "date":"January 3rd, 2022",
+            "image":"https://p7.hiclipart.com/preview/518/320/1007/computer-icons-mobile-app-development-android-my-account-icon.jpg",
+            "social":{
+                "company":"Picsart",
+               "email":"francescomucio@gmail.com",
+               "slack":"https://openmetadata.slack.com/team/U02FK8LFWJF",
+               "linkedin":"https://www.linkedin.com/in/mucio/"
+            }
+        }
+]

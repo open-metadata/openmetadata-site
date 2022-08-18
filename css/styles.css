@@ -20982,3 +20982,23 @@ a:hover {
     margin-top: 48px;
   }
 }
+
+
+
+
+
+/* **********************  Testimonials  ************************ */
+
+.swiper-button-next,
+.swiper-button-prev{
+    background: #7147e8;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 18px;
+    color:var(--bs-white)
+}
