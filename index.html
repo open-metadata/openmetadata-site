@@ -55,6 +55,10 @@
     <title>
       OpenMetadata: Data Discovery, Profiling, Collaboration, Lineage.
     </title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
@@ -1537,8 +1541,42 @@
                         </svg>
                     </div> -->
           </section>
-
-          <section class="bg-white pb-5 pt-10" id="blogs">
+          <section class="bg-white py-10">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-5">
+                    <h2 class="section-header fw-600">Testimonials</h2>
+                    <!-- <p class="lead">
+                      OpenMetadata's ingestion framework supports connectors for
+                      a wide range of services, and the list is constantly
+                      growing...
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="testimonialContainer"></div>
+                  <!-- <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div> -->
+              </div>
+            </div>
+            <div class="svg-border-rounded text-light">
+              <!-- Rounded SVG Border-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+          <section class="bg-light pb-5 pt-10" id="blogs">
             <div class="container px-5">
               <div class="row gx-5 justify-content-center">
                 <div class="col-lg-8">
@@ -1828,7 +1866,9 @@
       </div>
     </div>
     <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/testimonials.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/clipboard.js"></script>
     <script>

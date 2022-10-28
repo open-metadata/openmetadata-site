@@ -1,0 +1,16 @@
+[
+        {
+            "name":"Akash Nawani",
+            "description":"One of the best solutions for metadata management. Solves some of the tough problems for data teams such as: asset documentation, collaboration, discovery & quality, while supporting a wide range of integrations with 3p tools like Airflow, Snowflake, dbt, Redash etc. Super thankful to the OM community for prompt support.",
+            "date":"May 13th, 2022",
+            "image":"../images/testimonials/kb.jpg",
+             "company":"Khatabook"
+        },
+        {
+            "name":"Shaun",
+            "description":"It is an excellent tool to help create a data-centric culture by providing metadata management, metadata-based communication, and data lineage management functions.",
+            "date":"June 13th, 2022",
+            "image":"../images/testimonials/bucketplace.png",
+            "company":"Bucketplace"
+        }
+]
