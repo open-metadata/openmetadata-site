@@ -21012,6 +21012,22 @@ a:hover {
 
 /* **********************  Testimonials  ************************ */
 
+
+.testimonial-card{
+  min-height: 358px;
+}
+
+.testimonial-card .card-body .card-team-img{
+  box-shadow: 0 0 0.5rem 0 rgba(33, 40, 50, 0.2);
+  background: white;
+  object-fit: contain;
+  padding: 4px
+}
+
+.testimonial-card .card-body .card-team-position{
+  color: #69707a;
+}
+
 .swiper-button-next,
 .swiper-button-prev{
     background: #7147e8;
