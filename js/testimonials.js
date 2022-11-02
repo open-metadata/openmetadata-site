@@ -12,8 +12,7 @@ const fetchTestimonials = async () => {
                         <img class="card-team-img mb-3"
                         src=${image}
                         alt=${company}/>
-                      <div class="card-team-name"><strong>${name}</strong></div>
-                       <div class="card-team-position mb-3"><strong>${company}</strong></div>
+                      <div class="card-team-name mb-3"><strong>${company}</strong></div>
                       <p class="mb-0">
                       ${description}
                       </p>
