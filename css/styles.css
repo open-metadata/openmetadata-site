@@ -21014,7 +21014,7 @@ a:hover {
 
 
 .testimonial-card{
-  min-height: 358px;
+  min-height: 378px;
 }
 
 .testimonial-card .card-body .card-team-img{
@@ -21026,6 +21026,14 @@ a:hover {
 
 .testimonial-card .card-body .card-team-position{
   color: #69707a;
+}
+
+.testimonial-card .card-body .card-name{
+  padding-top: 20px;
+  margin-left: auto;
+  font-style: italic;
+  font-weight: 500;
+  opacity: .6;
 }
 
 .swiper-button-next,
