@@ -21014,7 +21014,7 @@ a:hover {
 
 
 .testimonial-card{
-  min-height: 378px;
+  min-height: 424px;
 }
 
 .testimonial-card .card-body .card-team-img{
@@ -21029,8 +21029,8 @@ a:hover {
 }
 
 .testimonial-card .card-body .card-name{
-  padding-top: 20px;
-  margin-left: auto;
+  padding: 20px 0 0 0;
+  /* margin-left: auto; */
   font-style: italic;
   font-weight: 500;
   opacity: .6;
@@ -21048,4 +21048,12 @@ a:hover {
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
     font-size: 18px;
     color:var(--bs-white)
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 0px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 0;
 }
