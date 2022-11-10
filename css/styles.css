@@ -21028,9 +21028,13 @@ a:hover {
   color: #69707a;
 }
 
+.testimonial-card .card-body .card-description{
+  text-align: left;
+}
+
 .testimonial-card .card-body .card-name{
   padding: 20px 0 0 0;
-  /* margin-left: auto; */
+  margin-left: auto;
   font-style: italic;
   font-weight: 500;
   opacity: .6;
