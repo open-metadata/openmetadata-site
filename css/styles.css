@@ -21014,7 +21014,7 @@ a:hover {
 
 
 .testimonial-card{
-  min-height: 358px;
+  min-height: 424px;
 }
 
 .testimonial-card .card-body .card-team-img{
@@ -21028,16 +21028,44 @@ a:hover {
   color: #69707a;
 }
 
+.testimonial-card .card-body .card-description{
+  text-align: left;
+}
+
+.testimonial-card .card-body .card-name{
+  padding: 20px 0 0 0;
+  margin-left: auto;
+  font-style: italic;
+  font-weight: 500;
+  opacity: .6;
+}
+
 .swiper-button-next,
 .swiper-button-prev{
     background: #7147e8;
     width: 40px;
     height:40px;
     border-radius: 50%;
+    top: 60%;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
     font-size: 18px;
     color:var(--bs-white)
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: -10px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: -10px;
+}
+
+
+@media (max-width:550px){
+  .testimonial-card{
+    min-height: 542px;
+  }
 }

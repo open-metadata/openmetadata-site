@@ -12,5 +12,12 @@
             "date":"June 13th, 2022",
             "image":"../images/testimonials/bucketplace.png",
             "company":"Bucketplace"
+        },
+        {
+            "name":"Abhijit Singh",
+            "description":"Open Metadata helped us in democratizing the data which was kept in silos, now we are more analytically productive and it’s helping our data lake to be more accessible to the general audience using user management features, also the feed makes it more collaborative to work. This is a step towards democratizing data, for the community by the community. Thanks to OM team for building such a great product.",
+            "date":"Nov 9th, 2022",
+            "image":"../images/testimonials/intelligaia.svg",
+            "company":"Intelligaia"
         }
 ]
