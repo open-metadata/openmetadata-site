@@ -21046,6 +21046,7 @@ a:hover {
     width: 40px;
     height:40px;
     border-radius: 50%;
+    top: 60%;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
@@ -21055,9 +21056,16 @@ a:hover {
 }
 
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
-  left: 0px;
+  left: -10px;
 }
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
-  right: 0;
+  right: -10px;
+}
+
+
+@media (max-width:550px){
+  .testimonial-card{
+    min-height: 542px;
+  }
 }
