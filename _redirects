@@ -1,1 +1,1 @@
-/schema/*  https://github.com/open-metadata/OpenMetadata/blob/main/catalog-rest-service/src/main/resources/json/schema/:splat 200
+/schema/*  https://github.com/open-metadata/OpenMetadata/blob/main/openmetadata-spec/src/main/resources/json/schema/:splat 200
