@@ -19,5 +19,11 @@
             "date":"Nov 9th, 2022",
             "image":"../images/testimonials/intelligaia.svg",
             "company":"Intelligaia"
+        },
+        {
+            "name":"Sandeep Penmetsa",
+            "description":"Open Metadata played a pivotal role in Data Centralization. The metadata management helped multiple teams(Ops/Analytics) in understanding the nitty-gritty details at a column level. The overall support and documentation was super quick and helpful. Excited to integrate other frameworks like GreatExpectations and Prefect",
+            "image":"../images/testimonials/physicsWallah.png",
+            "company":"Physics Wallah"
         }
 ]
