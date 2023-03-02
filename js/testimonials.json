@@ -28,7 +28,7 @@
   },
   {
     "name": "Praveen Singh",
-    "description": "In the data world, the scope of metadata is ever-expanding. In today's era where metadata for a large organisation itself becomes big data, it's difficult to curate, organize and manage metadata. OpenMetadata has been a wonderful discovery for the data team at PayU Finance. We truly rely on OpenMetadata to be our Enterprise Metadata Manager. It doesn't only help us quickly solve for discovery, data quality, and observability, but also on collaboration between teams data assets. The OpenMetadata team supported us at each step to move OpenMetadata to our production environment.",
+    "description": "In the data world, the scope of metadata is ever-expanding. In today's era where metadata for a large organisation itself becomes big data, it's difficult to curate, organize and manage metadata. OpenMetadata has been a wonderful discovery for the data team at PayU Finance. We truly rely on OpenMetadata to be our Enterprise Metadata Manager. It doesn't only help us quickly solve for discovery, data quality, and observability, but also on collaboration between teams and data assets. The OpenMetadata team supported us at each step to move OpenMetadata to our production environment.",
     "image": "../images/testimonials/payu-finance.png",
     "company": "PayU Finance"
   }
