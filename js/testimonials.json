@@ -4,32 +4,42 @@
     "description": "One of the best solutions for metadata management. Solves some of the tough problems for data teams such as: asset documentation, collaboration, discovery & quality, while supporting a wide range of integrations with 3p tools like Airflow, Snowflake, dbt, Redash etc. Super thankful to the OM community for prompt support.",
     "date": "May 13th, 2022",
     "image": "../images/testimonials/kb.jpg",
-    "company": "Khatabook"
+    "company": "Khatabook",
+    "url": "https://khatabook.com/",
+    "title": "Lead - Data Platform"
   },
   {
     "name": "Shaun",
     "description": "It is an excellent tool to help create a data-centric culture by providing metadata management, metadata-based communication, and data lineage management functions.",
     "date": "June 13th, 2022",
     "image": "../images/testimonials/bucketplace.png",
-    "company": "Bucketplace"
+    "company": "Bucketplace",
+    "url": "http://bucketplace.net",
+    "title": "Data Engineer"
   },
   {
     "name": "Abhijit Singh",
     "description": "Open Metadata helped us in democratizing the data which was kept in silos, now we are more analytically productive and it’s helping our data lake to be more accessible to the general audience using user management features, also the feed makes it more collaborative to work. This is a step towards democratizing data, for the community by the community. Thanks to OM team for building such a great product.",
     "date": "Nov 9th, 2022",
     "image": "../images/testimonials/intelligaia.svg",
-    "company": "Intelligaia"
+    "company": "Intelligaia",
+    "url": "https://intelligaia.com/",
+    "title": "Product Manager - Data"
   },
   {
     "name": "Sandeep Penmetsa",
     "description": "Open Metadata played a pivotal role in Data Centralization. The metadata management helped multiple teams (Ops/Analytics) in understanding the nitty-gritty details at a column level. The overall support and documentation was super quick and helpful. Excited to integrate other frameworks like Great Expectations and Prefect",
     "image": "../images/testimonials/physicsWallah.jpg",
-    "company": "Physics Wallah"
+    "company": "Physics Wallah",
+    "url": "https://www.pw.live/",
+    "title": "Associate Director"
   },
   {
     "name": "Praveen Singh",
     "description": "In the data world, the scope of metadata is ever-expanding. In today's era where metadata for a large organisation itself becomes big data, it's difficult to curate, organize and manage metadata. OpenMetadata has been a wonderful discovery for the data team at PayU Finance. We truly rely on OpenMetadata to be our Enterprise Metadata Manager. It doesn't only help us quickly solve for discovery, data quality, and observability, but also on collaboration between teams and data assets. The OpenMetadata team supported us at each step to move OpenMetadata to our production environment.",
     "image": "../images/testimonials/payu-finance.png",
-    "company": "PayU Finance"
+    "company": "PayU Finance",
+    "url": "https://www.payufin.in/",
+    "title": "Director of Data Engineering"
   }
 ]
