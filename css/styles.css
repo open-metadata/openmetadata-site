@@ -2950,7 +2950,9 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0;
 }
 .input-group
-  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -21006,66 +21008,71 @@ a:hover {
   color: #ffffff;
 }
 
-
-
-
-
 /* **********************  Testimonials  ************************ */
 
-
-.testimonial-card{
+.testimonial-card {
   min-height: 424px;
 }
 
-.testimonial-card .card-body .card-team-img{
+.testimonial-card .card-body .card-team-img {
   box-shadow: 0 0 0.5rem 0 rgba(33, 40, 50, 0.2);
   background: white;
   object-fit: contain;
-  padding: 4px
+  padding: 4px;
 }
 
-.testimonial-card .card-body .card-team-position{
+.testimonial-card .card-body .card-team-position {
   color: #69707a;
 }
 
-.testimonial-card .card-body .card-description{
+.testimonial-card .card-body .card-description {
   text-align: left;
 }
 
-.testimonial-card .card-body .card-name{
-  padding: 20px 0 0 0;
+.testimonial-card .card-body .card-footer-custom {
+  padding: 4px 0 0 0;
   margin-left: auto;
+  margin-bottom: 0;
+}
+.text-italic {
   font-style: italic;
+}
+.font-500 {
   font-weight: 500;
-  opacity: .6;
+}
+.opacity-6 {
+  opacity: 0.6;
 }
 
 .swiper-button-next,
-.swiper-button-prev{
-    background: #7147e8;
-    width: 40px;
-    height:40px;
-    border-radius: 50%;
-    top: 60%;
+.swiper-button-prev {
+  background: #7147e8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 60%;
 }
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
-    font-size: 18px;
-    color:var(--bs-white)
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  font-size: 18px;
+  color: var(--bs-white);
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next{
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
   left: -10px;
 }
 
-.swiper-button-next, .swiper-rtl .swiper-button-prev{
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
   right: -10px;
 }
 
-
-@media (max-width:550px){
-  .testimonial-card{
+@media (max-width: 550px) {
+  .testimonial-card {
     min-height: 542px;
   }
 }
