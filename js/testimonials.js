@@ -35,7 +35,7 @@ const fetchTestimonials = async () => {
                         <img class="card-team-img mb-3"
                         src=${image}
                         alt=${company}/>
-                      <div class="card-team-name mb-3"><strong><a href=${url}>${company}</a></strong></div>
+                      <div class="card-team-name mb-3"><strong><a href=${url} target="_blank">${company}</a></strong></div>
                       ${getDescription(description)}           
                       <p class="card-footer-custom font-500"><strong>- ${name}</strong></p>
                       <p class="card-footer-custom opacity-6 text-italic">${title}</p>
