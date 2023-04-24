@@ -1,5 +1,5 @@
 const testimonialContainer = document.querySelector('#testimonialContainer');
-const testimonialSize = 360;
+const testimonialSize = 60;
 
 const readMoreDescription = (btn) =>{
   let testimonial = btn.parentElement;
@@ -9,15 +9,12 @@ const readMoreDescription = (btn) =>{
 }
 
 const getDescription = (text) => {
-  const showDots = text.length > testimonialSize
+  const textArr = text.split(' ');
+  const showDots = textArr.length > testimonialSize
   return `<div>
-    <span class="mb-0 card-description main">
-        ${text.slice(0,testimonialSize)}
-    </span>
+    <span class="mb-0 card-description main">${textArr.slice(0,testimonialSize).join(' ')}</span>
     ${showDots ? `<span class="dots">...</span>` : ''}
-    <span class="mb-0 card-description hide more">
-    ${text.slice(testimonialSize)} 
-   </span>
+    <span class="mb-0 card-description hide more">${textArr.slice(testimonialSize).join(' ')}</span>
   ${showDots ? `<span class="read-more-button" onclick="readMoreDescription(this)">Read more</span>` : ''}  
   </div>`
 }
