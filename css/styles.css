@@ -21071,6 +21071,15 @@ a:hover {
   right: -10px;
 }
 
+.testimonial-card .read-more-button{
+  color: #7147e8;
+  cursor: pointer;
+}
+
+.hide{
+  display: none;
+}
+
 @media (max-width: 550px) {
   .testimonial-card {
     min-height: 542px;
