@@ -20,6 +20,16 @@
   <lastmod>2022-05-19T06:20:43+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://open-metadata.org/cn/index.html</loc>
+  <lastmod>2023-04-28T06:23:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://open-metadata.org/cn/community.html</loc>
+  <lastmod>2023-04-28T06:23:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 
 </urlset>
