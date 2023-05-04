@@ -19,7 +19,7 @@
   },
   {
     "name": "Abhijit Singh",
-    "description": "Open Metadata helped us in democratizing the data which was kept in silos, now we are more analytically productive and it’s helping our data lake to be more accessible to the general audience using user management features, also the feed makes it more collaborative to work. This is a step towards democratizing data, for the community by the community. Thanks to OM team for building such a great product.",
+    "description": "OpenMetadata helped us in democratizing the data which was kept in silos, now we are more analytically productive and it’s helping our data lake to be more accessible to the general audience using user management features, also the feed makes it more collaborative to work. This is a step towards democratizing data, for the community by the community. Thanks to OM team for building such a great product.",
     "date": "Nov 9th, 2022",
     "image": "../images/testimonials/intelligaia.svg",
     "company": "Intelligaia",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Sandeep Penmetsa",
-    "description": "Open Metadata played a pivotal role in Data Centralization. The metadata management helped multiple teams (Ops/Analytics) in understanding the nitty-gritty details at a column level. The overall support and documentation was super quick and helpful. Excited to integrate other frameworks like Great Expectations and Prefect",
+    "description": "OpenMetadata played a pivotal role in Data Centralization. The metadata management helped multiple teams (Ops/Analytics) in understanding the nitty-gritty details at a column level. The overall support and documentation was super quick and helpful. Excited to integrate other frameworks like Great Expectations and Prefect",
     "image": "../images/testimonials/physicsWallah.jpg",
     "company": "Physics Wallah",
     "url": "https://www.pw.live/",
@@ -44,10 +44,18 @@
   },
   {
     "name": "Rinat Abdurkhmanov",
-    "description": "We came across Open Metadata as an alternative to heavy, expensive and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. It allowed us not only to cut down the costs but also to quickly and effortlessly adapt the product to the needs of our company which includes hundreds of systems and data sources that require categorization and analysis. Open metadata is a fast-growing product that allows to impact its development through contribution and flawless community  interaction. </br> The best thing so far is how easy it is to implement the solution and start working on your data right away. Every business user is able to track and take care of their metadata and build trustworthy, data-driven products for our customers.  Open metadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community to help you out on your way to befriend your company’s knowledge.",
+    "description": "We came across OpenMetadata as an alternative to heavy, expensive and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. It allowed us not only to cut down the costs but also to quickly and effortlessly adapt the product to the needs of our company which includes hundreds of systems and data sources that require categorization and analysis. Open metadata is a fast-growing product that allows to impact its development through contribution and flawless community  interaction. </br> The best thing so far is how easy it is to implement the solution and start working on your data right away. Every business user is able to track and take care of their metadata and build trustworthy, data-driven products for our customers.  Open metadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community to help you out on your way to befriend your company’s knowledge.",
     "image": "../images/testimonials/beeline.png",
     "company": "beeline",
     "url": "http://beeline.ru/",
     "title": "Chief Data Officer"
+  },
+  {
+    "name": "Cade Parker",
+    "description": "As a data scientist working in a large organization, I can confidently say that OpenMetadata has been a game-changer for us. The lineage and collaboration features have made it much easier to understand where our data is coming from and how it's being used, which has saved us countless hours of troubleshooting and debugging. Additionally, the collaboration features have allowed us to share metadata and insights with colleagues in other departments, which has led to some exciting new discoveries and innovations. Overall, I highly recommend OpenMetadata to any organization looking to streamline their data management processes and improve collaboration across teams.",
+    "image": "../images/testimonials/zen-business.png",
+    "company": "ZenBusiness",
+    "url": "https://www.zenbusiness.com ",
+    "title": "Senior Engineering Manager"
   }
 ]
