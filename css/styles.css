@@ -20960,10 +20960,11 @@ a:hover {
   min-width: 7rem;
 }
 .saas-strip {
-  background-color: #f0f6fa;
+  background-color: #202832;
   width: 100%;
   padding: 12px 8px;
   text-align: center;
+  color: #ffffff;
 }
 
 /* Copy Clipboard by Sachin */
@@ -21000,7 +21001,7 @@ a:hover {
 }
 
 .btn-saas {
-  background: #00a3ff;
+  background: #028376;
   color: #ffffff;
 }
 .btn-saas:hover,
@@ -21071,12 +21072,12 @@ a:hover {
   right: -10px;
 }
 
-.testimonial-card .read-more-button{
+.testimonial-card .read-more-button {
   color: #7147e8;
   cursor: pointer;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
