@@ -21081,6 +21081,27 @@ a:hover {
   display: none;
 }
 
+@media (min-width: 992px) {
+  .col-lg-2\.5 {
+      flex: 0 0 auto;
+      width: 20%;
+  }
+}
+
+.testimonial-image {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+}
+.testimonial-image.khatabook,
+.testimonial-image.intelligaia,
+.testimonial-image.payuFinance,
+.testimonial-image.vtex,
+.testimonial-image.zoitech {
+  width: 9rem;
+  height: 9rem;
+}
+
 @media (max-width: 550px) {
   .testimonial-card {
     min-height: 542px;

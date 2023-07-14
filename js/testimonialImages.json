@@ -1,0 +1,48 @@
+[
+  {
+    "name": "khatabook",
+    "image": "../images/testimonials/kb.jpg",
+    "url": "https://khatabook.com/"
+  },
+  {
+    "name": "payuFinance",
+    "image": "../images/testimonials/payu-finance.png",
+    "url": "https://www.payufin.in/"
+  },
+  {
+    "name": "intelligaia",
+    "image": "../images/testimonials/intelligaia.svg",
+    "url": "https://intelligaia.com/"
+  },
+  {
+    "name": "vtex",
+    "image": "../images/testimonials/vtex.svg",
+    "url": "https://vtex.com"
+  },
+  {
+    "name": "zoitech",
+    "image": "../images/testimonials/zoitech.png",
+    "url": "https://www.zoi.tech/"
+  },
+  {
+    "name": "bucketplace",
+    "image": "../images/testimonials/bucketplace.png",
+    "url": "http://bucketplace.net"
+  },
+  {
+    "name": "physicsWallah",
+    "image": "../images/testimonials/physicsWallah.jpg",
+    "url": "https://www.pw.live/"
+  },
+  {
+    "name": "beeline",
+    "image": "../images/testimonials/beeline.png",
+    "url": "http://beeline.ru/"
+  },
+
+  {
+    "name": "zenBusiness",
+    "image": "../images/testimonials/zen-business.png",
+    "url": "https://www.zenbusiness.com"
+  }
+]

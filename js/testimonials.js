@@ -1,4 +1,7 @@
 const testimonialContainer = document.querySelector('#testimonialContainer');
+const testimonialImagesContainer = document.querySelector(
+  '#testimonialImagesContainer'
+);
 
 const fetchTestimonials = async () => {
   const res = await fetch('./js/testimonials.json');
@@ -23,7 +26,25 @@ const fetchTestimonials = async () => {
     .join('');
 };
 
+const fetchTestimonialImages = async () => {
+  const res = await fetch('./js/testimonialImages.json');
+  const data = await res.json();
+
+  testimonialImagesContainer.innerHTML = data
+    .map(({ name, image, url }, index) => {
+      return `<div class="col-lg-2.5 col-md-6 col-6" key=${index} >
+                <a href=${url} target="_blank">
+                  <img class="testimonial-image ${name}"
+                  src=${image}
+                  alt=${name}/>
+                </a>
+              </div>`;
+    })
+    .join('');
+};
+
 fetchTestimonials();
+fetchTestimonialImages();
 
 var swiper = new Swiper('.mySwiper', {
   grabCursor: true,
