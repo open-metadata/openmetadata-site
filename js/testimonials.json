@@ -55,7 +55,15 @@
     "description": "As a data scientist working in a large organization, I can confidently say that OpenMetadata has been a game-changer for us. The lineage and collaboration features have made it much easier to understand where our data is coming from and how it's being used, which has saved us countless hours of troubleshooting and debugging. Additionally, the collaboration features have allowed us to share metadata and insights with colleagues in other departments, which has led to some exciting new discoveries and innovations. Overall, I highly recommend OpenMetadata to any organization looking to streamline their data management processes and improve collaboration across teams.",
     "image": "../images/testimonials/zen-business.png",
     "company": "ZenBusiness",
-    "url": "https://www.zenbusiness.com ",
+    "url": "https://www.zenbusiness.com",
     "title": "Senior Engineering Manager"
+  },
+  {
+    "name": "Haithem Souala",
+    "description": "The integration of OpenMetadata with DBT and Metabase endowed us with abundant data and metadata insights concerning our analytical data entities (such as tables and views), as well as Metabase dashboards. OpenMetadata further offers a visually comprehensive data lineage, depicting the origins, modifications, and destinations of various data assets. OpenMetadata excels notably in its robust search interface, facilitating the discovery of business glossary terms and data assets.",
+    "image": "../images/testimonials/woop-logo.png",
+    "company": "Woop",
+    "url": "https://www.woopit.fr/",
+    "title": "Head of Data"
   }
 ]
