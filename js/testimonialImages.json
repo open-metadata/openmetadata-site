@@ -44,5 +44,20 @@
     "name": "zenBusiness",
     "image": "../images/testimonials/zen-business.png",
     "url": "https://www.zenbusiness.com"
+  },
+  {
+    "name": "Woop",
+    "image": "../images/testimonials/woop-logo.png",
+    "url": "https://www.woopit.fr/"
+  },
+  {
+    "name": "lahaus",
+    "image": "../images/testimonials/lahaus-logo.svg",
+    "url": "https://www.lahaus.com/"
+  },
+  {
+    "name": "loggi",
+    "image": "../images/testimonials/loggi-logo.svg",
+    "url": "https://www.loggi.com/"
   }
 ]
