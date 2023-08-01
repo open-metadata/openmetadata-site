@@ -65,5 +65,13 @@
     "company": "Woop",
     "url": "https://www.woopit.fr/",
     "title": "Head of Data"
+  },
+  {
+    "name": "Erica Bertan",
+    "description": "Open Metadata has been useful since day one in the company. From stakeholders to engineers, everyone used to claim it was difficult to find tables for specific information needed, or even to know who they could reach out to in order to get more information about models and dashboards. Since we adopted OM, all our data components are centralized in one place and our internal users have been given good feedback about the experience. Keep up the great work!",
+    "image": "../images/testimonials/loggi-logo.svg",
+    "company": "Loggi",
+    "url": "https://www.loggi.com",
+    "title": "Data Engineer"
   }
 ]
