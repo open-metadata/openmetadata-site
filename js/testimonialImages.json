@@ -59,5 +59,10 @@
     "name": "loggi",
     "image": "../images/testimonials/loggi-logo.svg",
     "url": "https://www.loggi.com/"
+  },
+  {
+    "name": "moove",
+    "image": "../images/testimonials/moove-logo.png",
+    "url": "https://www.moove.io/"
   }
 ]
