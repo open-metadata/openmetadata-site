@@ -21107,3 +21107,6 @@ a:hover {
     min-height: 542px;
   }
 }
+.text-left{
+  text-align: left !important;
+}
