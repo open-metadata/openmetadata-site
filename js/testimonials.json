@@ -73,5 +73,13 @@
     "company": "Loggi",
     "url": "https://www.loggi.com",
     "title": "Data Engineer"
+  },
+  {
+    "name": "Laila Patel",
+    "description": "OpenMetadata has been an invaluable tool for our organization. With its user-friendly interface and powerful features, we have streamlined our data management and governance processes. OpenMetadata's collaborative features have fostered better communication and collaboration among our teams, ensuring everyone is on the same page regarding data assets. Furthermore, the extensive integration options and APIs have allowed us to seamlessly integrate OpenMetadata into our existing data infrastructure, making the implementation process smooth and efficient. The platform's strong data lineage and discovery capabilities have been a game-changer, helping us gain deeper insights into our data and ensuring data compliance. Overall, OpenMetadata has exceeded our expectations and has become an integral part of our data governance strategy. We highly recommend it to any organization seeking to enhance their data management, governance, and data-driven decision-making processes.",
+    "image": "../images/testimonials/moove-logo.png",
+    "company": "Moove",
+    "url": "https://www.moove.io/",
+    "title": "Data Governance Specialist"
   }
 ]
