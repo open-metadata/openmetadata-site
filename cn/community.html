@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="加入 OpenMetadata 会议、在线研讨会，或通过连接 Slack 获取数据探索、数据治理、数据质控、数据可观测性以及人员协作方面的更新信息。"
+    />
+    <meta
+      name="keywords"
+      content="元数据，数据探索，数据协作，元数据血缘，数据治理，数据目录，开源"
+    />
+    <meta name="author" content="open-metadata" />
+
+    <!-- Open Graph tags start -->
+    <meta property="og:title" content="OpenMetadata Community" />
+    <meta
+      property="og:description"
+      content="加入 OpenMetadata 会议、在线研讨会，或通过连接 Slack 获取数据探索、数据治理、数据质控、数据可观测性以及人员协作方面的更新信息。"
+    />
+    <meta
+      property="og:image"
+      content="https://open-metadata.org/images/favicon.png"
+    />
+    <meta property="og:type" content="metadata tool" />
+    <meta property="og:url" content="https://open-metadata.org" />
+    <!-- Open Graph tags end -->
+
+    <!-- Twitter Card start -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="https://open-metadata.org" />
+    <meta name="twitter:title" content="OpenMetadata 社区" />
+    <meta
+      name="twitter:description"
+      content="加入 OpenMetadata 会议、在线研讨会，或通过连接 Slack 获取数据探索、数据治理、数据质控、数据可观测性以及人员协作方面的更新信息。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://open-metadata.org/images/favicon.png"
+    />
+
+    <!-- Twitter Card end -->
+
+    <title>OpenMetadata 社区</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+    <script
+      data-search-pseudo-elements=""
+      defer=""
+      src="../js/all.min.js"
+    ></script>
+    <script src="../js/feather.min.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LBLK284YQW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-LBLK284YQW');
+    </script>
+  </head>
+
+  <body>
+    <script src="../js/piwik.js" defer></script>
+    <div id="layoutDefault">
+      <div id="layoutDefault_content">
+        <main>
+          <!-- Navbar-->
+          <nav
+            class="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top"
+          >
+            <div class="container px-5">
+              <a class="navbar-brand text-primary" href="index.html">
+                <img alt="omd-logo" src="../images/omd-logo.svg" loading="lazy" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i data-feather="menu"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-lg-5">
+                  <li class="nav-item">
+                    <a class="nav-link" href="community.html">社区</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://sandbox.open-metadata.org/signin"
+                      target="_blank"
+                      >沙盒</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://docs.open-metadata.org/"
+                      target="_blank"
+                      >文档</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="http://blog.open-metadata.org/"
+                      target="_blank"
+                      >博客</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://github.com/open-metadata/OpenMetadata"
+                      target="_blank"
+                      >GitHub</a
+                    >
+                  </li>
+                </ul>
+                <a
+                  class="btn fw-500 btn-primary rounded-pill"
+                  href="https://forms.gle/xkXZvbPWfmzx3TX76"
+                  target="_blank"
+                >
+                  <i class="fas fa-cloud"></i>
+                </a>
+              </div>
+            </div>
+          </nav>
+          <!-- Page Header-->
+
+          <header class="page-header-ui page-header-ui-light bg-white">
+            <div class="page-header-ui-content pt-5">
+              <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                  <div
+                    class="col-lg-6 d-none d-lg-block"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="../images/community.png"
+                      alt="community"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-lg-6" data-aos="fade-up">
+                    <h1 class="page-header-ui-title fw-700">
+                      在 Slack 上见面问候
+                    </h1>
+                    <p class="page-header-ui-text mb-2">
+                      这里是除
+                      <a
+                        class="text-primary"
+                        href="https://github.com/open-metadata/OpenMetadata"
+                        target="_blank"
+                        >GitHub</a
+                      >
+                      之外，OpenMetadata 支持者的主要聚集地。
+                    </p>
+                    <p>
+                      追踪持续成长的元数据世界所有的交流和讨论，了解其他用户的需求，
+                      并发现 OpenMetadata 贡献者是如何帮到他们的。
+                    </p>
+                    <p>
+                      学习、参与并运用到机构内的需求中！
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row">
+                      <a
+                        class="btn btn-lg btn-outline-primary btn-home-slack fw-500"
+                        href="http://slack.open-metadata.org/"
+                        target="_blank"
+                      >
+                        <img
+                          src="../images/icon-slack.svg"
+                          height="18"
+                          alt="slack"
+                          loading="lazy"
+                        />&nbsp; 加入我们的 Slack</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </header>
+
+          <section class="bg-light py-10">
+            <div class="container px-5">
+              <div class="row gx-5 align-items-center justify-content-center">
+                <div class="col-lg-6">
+                  <h2 class="section-header fw-600 mb-4">月度会议</h2>
+                  <p class="lead">
+                    加入我们月度 Zoom 会议<strong>（每个月的最后一个星期四）</strong>，
+                    了解 OpenMetadata 的最新进展，获取最新的功能特性信息。
+                    观看实时演示，提出问题并分享您的反馈。
+                  </p>
+                  <p class="lead mb-4">
+                    持续关注元数据管理的最新信息！
+                  </p>
+                  <a
+                    class="btn btn-primary fw-500"
+                    href="https://www.meetup.com/openmetadata-meetup-group/"
+                    target="_blank"
+                    >加入 OpenMetadata 会议群</a
+                  >
+                </div>
+                <div class="col-lg-6">
+                  <img
+                    src="../images/meetups.png"
+                    class="img-fluid"
+                    alt="meetups"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-white">
+              <!-- Rounded SVG Border-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+
+          <section class="bg-white py-10">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mb-5">
+                    <h2 class="section-header fw-600">OpenMetadata 在线研讨会</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-5">
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <iframe
+                        width="100%"
+                        height="260"
+                        src="https://www.youtube.com/embed/fDUj30Ub9VE"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                      <p class="fw-600 mb-0 mt-2">
+                        Mini-Webinar on Custom Connectors: We will showcase a
+                        demo on how you can build your own custom connectors in
+                        OpenMetadata.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <iframe
+                        width="100%"
+                        height="260"
+                        src="https://www.youtube.com/embed/Epd9G6igLUM"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                      <p class="fw-600 mb-0 mt-2">
+                        How to Improve Data Culture using OpenMetadata: Enhance
+                        your data platform governance, Drive and monitor
+                        OpenMetadata platform usage, Engage your users with Data
+                        Insight KPIs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="row gx-5 justify-content-center">
+              <div class="col-lg-8" data-aos="fade-up">
+                <img src="../images/webinar.png" class="img-fluid" />
+              </div>
+            </div> -->
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                  <div class="text-center mt-5">
+                    <p class="lead">
+                      在此可以看到覆盖关于数据血缘、数据质控和分析、元数据提取、数据探索的视频，有您应该知道的所有内容。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+
+          <section class="bg-light py-10">
+            <div class="container px-5">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-header fw-600 mb-4">
+                    错过了一次会议？随时观看回放
+                  </h2>
+                  <p>
+                    您可以在
+                    <a
+                      href="https://www.youtube.com/c/OpenMetadataChannel"
+                      target="_blank"
+                      >YouTube</a
+                    >
+                    观看我们之前所有会议的录像视频。
+                  </p>
+                  <p class="mb-5">
+                    您还可以在此找到一些关于 OpenMetadata 功能特性的短视频。以下是一些最新的视频！
+                  </p>
+                  <div class="row gx-5">
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-body">
+                          <iframe
+                            width="100%"
+                            height="260"
+                            src="https://www.youtube.com/embed/HYt7EopZrJc"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe>
+                          <p class="fw-600 mb-0 mt-2">January 19th, 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-body">
+                          <iframe
+                            width="100%"
+                            height="260"
+                            src="https://www.youtube.com/embed/oNbMnTW5AkE"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe>
+                          <p class="fw-600 mb-0 mt-2">
+                            OpenMetadata 0.13.0 Release
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="svg-border-rounded text-dark">
+              <!-- Rounded SVG Border-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path
+                  d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"
+                ></path>
+              </svg>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div id="layoutDefault_footer">
+        <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+          <div class="container px-5">
+            <div class="row gx-5">
+              <div class="col-lg-3">
+                <div class="footer-brand">
+                  <img
+                    src="../images/omd-logo-footer.svg"
+                    alt="omd-footer-logo"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="mb-3">
+                  开放标准的元数据管理平台，赋能数据探索、数据协作，并优化管理您的数据。
+                </div>
+              </div>
+              <div class="col-lg-3 offset-lg-1 col-md-6 mb-4 mb-lg-0">
+                <div class="text-uppercase-expanded text-xs mb-4">文档</div>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <a href="https://docs.open-metadata.org/" target="_blank"
+                      >什么是 OpenMetadata？</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="https://docs.open-metadata.org/metadata-standard/schemas"
+                      target="_blank"
+                      >Schemas</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="https://docs.open-metadata.org/metadata-standard/apis"
+                      target="_blank"
+                      >APIs</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="https://docs.open-metadata.org/deploy/deploy-on-kubernetes"
+                      target="_blank"
+                      >安装部署</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.open-metadata.org/integrations/metadata-ingestion"
+                      target="_blank"
+                      >元数据提取</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="text-uppercase-expanded text-xs mb-4">
+                  社区
+                </div>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2">
+                    <a href="http://slack.open-metadata.org/" target="_blank"
+                      ><i class="fab fa-slack"></i> Slack</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="https://github.com/open-metadata/openmetadata"
+                      target="_blank"
+                      ><i class="fab fa-github"></i> GitHub</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a href="https://twitter.com/open_metadata" target="_blank"
+                      ><i class="fab fa-twitter"></i> Twitter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.meetup.com/openmetadata-meetup-group/"
+                      target="_blank"
+                      ><i class="fab fa-meetup"></i> Meetup</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <div class="text-uppercase-expanded text-xs mb-2">
+                  Deployed By
+                </div>
+                <img
+                  src="../images/netlify.png"
+                  width="120"
+                  alt="netlify-png"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <hr class="my-5" />
+            <div class="row gx-5 align-items-center">
+              <div class="col-md-6 small">
+                Copyright &copy; OpenMetadata
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </div>
+              <!-- <div class="col-md-6 text-md-end small">
+                            <a href="#!">Privacy Policy</a>
+                            ·
+                            <a href="#!">Terms &amp; Conditions</a>
+                        </div> -->
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/aos.js"></script>
+    <script>
+      AOS.init({
+        disable: 'mobile',
+        duration: 600,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
