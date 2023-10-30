@@ -260,17 +260,18 @@
               <div class="row gx-5 justify-content-center text-center">
                 <div class="col-lg-6">
                   <div class="display-6 text-primary fw-500">
-                    1.1.0 Released - Try Now!
+                    1.2.0 Released - Try Now!
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div>
-                    <strong>OpenMetadata 1.1.0 Released</strong> UI Overhaul,
-                    New Connectors, Improved Lineage Parsing, PII Masking, and
-                    lots more.
-                    <strong>OpenMetadata 1.1.0 Release</strong>
+                    <strong>OpenMetadata 1.2.0 Released</strong> Domains and
+                    Data Products, Search Indexes, Elasticsearch connector,
+                    Store Procedure, Knowledge Center, Cost analysis,
+                    Customizable Landing Pages and lots more.
+                    <strong>OpenMetadata 1.2.0 Release</strong>
                     <a
-                      href="https://blog.open-metadata.org/openmetadata-1-1-0-release-97c1fb603bcf"
+                      href="https://github.com/open-metadata/OpenMetadata/releases/tag/1.2.0-release"
                       target="_blank"
                       >Read more here</a
                     >.
@@ -398,20 +399,20 @@
                       <i class="me-2" data-feather="copy"></i> Copy
                     </button>
                     <span id="om-start-command"
-                      >pip3 install --upgrade
-                      'openmetadata-ingestion[docker]'<br />
-                      metadata docker --start</span
+                      >mkdir openmetadata-docker && cd openmetadata-docker <br>
+                      wget -O https://github.com/open-metadata/OpenMetadata/releases/download/1.2.0-release/docker-compose.yml <br>
+                      docker compose -f docker-compose.yml up --detach</span
                     >
                   </div>
                   <a
                     class="btn btn-primary fw-500"
-                    href="https://docs.open-metadata.org/deploy/deploy-on-kubernetes"
+                    href="https://docs.open-metadata.org/deployment"
                     target="_blank"
                     >Deploy in Production</a
                   >
                   <a
                     class="btn btn-primary fw-500"
-                    href="https://docs.open-metadata.org/deploy/deploy-on-kubernetes"
+                    href="https://docs.open-metadata.org/deployment/kubernetes"
                     target="_blank"
                     >Deploy in Kubernetes</a
                   >
@@ -557,7 +558,7 @@
                   <p>Helping data engineers win their time back!</p>
                   <a
                     class="small text-arrow-icon"
-                    href="https://docs.open-metadata.org/overview/features"
+                    href="https://docs.open-metadata.org/v1.2.x/features"
                     target="_blank"
                   >
                     Learn More
@@ -567,8 +568,8 @@
                 <div class="col-lg-7" data-aos="slide-left">
                   <div class="mb-4">
                     <img
-                      class="img-fluid shadow-lg rounded-3"
-                      src="images/feature01.png"
+                      class="img-fluid rounded-3"
+                      src="images/data-discovery.png"
                       alt="feature01"
                       loading="lazy"
                     />
@@ -581,8 +582,8 @@
                 <div class="col-lg-7" data-aos="slide-right">
                   <div class="mb-4">
                     <img
-                      class="img-fluid shadow-lg rounded-3"
-                      src="images/feature02.png"
+                      class="img-fluid rounded-3"
+                      src="images/data-collaboration.png"
                       alt="feature02"
                       loading="lazy"
                     />
@@ -611,7 +612,7 @@
                       </p>
                       <a
                         class="small text-arrow-icon"
-                        href="https://docs.open-metadata.org/overview/features#activity-feeds"
+                        href="https://docs.open-metadata.org/v1.2.x/features/discovery-collaboration"
                         target="_blank"
                       >
                         Learn More
@@ -637,7 +638,7 @@
                   <p>Serves as an organizational memory of data!</p>
                   <a
                     class="small text-arrow-icon"
-                    href="https://docs.open-metadata.org/overview/features#metadata-versioning"
+                    href="https://docs.open-metadata.org/v1.2.x/connectors/ingestion/versioning"
                     target="_blank"
                   >
                     Learn More
@@ -647,8 +648,8 @@
                 <div class="col-lg-7" data-aos="slide-left">
                   <div class="mb-4">
                     <img
-                      class="img-fluid shadow-lg rounded-3"
-                      src="images/feature03.jpg"
+                      class="img-fluid rounded-3"
+                      src="images/data-versioning.png"
                       alt="feature03"
                       loading="lazy"
                     />
@@ -659,8 +660,8 @@
                 <div class="col-lg-7" data-aos="slide-right">
                   <div class="mb-4">
                     <img
-                      class="img-fluid shadow-lg rounded-3"
-                      src="images/feature04.png"
+                      class="img-fluid rounded-3"
+                      src="images/data-lineage.png"
                       alt="feature04"
                       loading="lazy"
                     />
@@ -679,7 +680,7 @@
                   <p>View the lineage at each entity level!</p>
                   <a
                     class="small text-arrow-icon"
-                    href="https://docs.open-metadata.org/overview/features#data-lineage"
+                    href="https://docs.open-metadata.org/v1.2.x/connectors/ingestion/workflows/lineage"
                     target="_blank"
                   >
                     Learn More
@@ -723,7 +724,7 @@
                   data-aos="fade-up"
                 >
                   <a
-                    href="https://docs.open-metadata.org/deployment/airflow"
+                    href="https://docs.open-metadata.org/connectors/pipeline/airflow"
                     target="_blank"
                   >
                     <img
@@ -932,7 +933,7 @@
                   data-aos="fade-up"
                 >
                   <a
-                    href="https://docs.open-metadata.org/connectors/ingestion/workflows/metadata/dbt"
+                    href="https://docs.open-metadata.org/connectors/ingestion/workflows/dbt"
                     target="_blank"
                   >
                     <img
