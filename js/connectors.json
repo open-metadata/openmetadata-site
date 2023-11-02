@@ -175,6 +175,11 @@
         "src": "../images/services/sqllite.png",
         "alt": "service-sqlite",
         "name": "SQL Lite"
+      },
+      {
+        "src": "../images/services/iceberg.png",
+        "alt": "service-iceberg",
+        "name": "Apache Iceberg"
       }
     ]
   },
@@ -349,11 +354,6 @@
         "src": "../images/services/sqlalchemy.png",
         "alt": "service-sqlalchemy",
         "name": "SQLAlchemy"
-      },
-      {
-        "src": "../images/services/iceberg.png",
-        "alt": "service-iceberg",
-        "name": "Apache Iceberg"
       }
     ]
   }
