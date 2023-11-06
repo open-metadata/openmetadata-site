@@ -331,18 +331,6 @@
     ]
   },
   {
-    "connector": "Ingestion",
-    "services": [
-      {
-        "href": "https://docs.open-metadata.org/connectors/ingestion/workflows/dbt",
-        "src": "../images/services/dbt.png",
-        "alt": "service-dbt",
-        "name": "dbt"
-      }
-    ]
-  },
-
-  {
     "connector": "Others",
     "services": [
       {
