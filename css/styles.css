@@ -21083,8 +21083,8 @@ a:hover {
 
 @media (min-width: 992px) {
   .col-lg-2\.5 {
-      flex: 0 0 auto;
-      width: 20%;
+    flex: 0 0 auto;
+    width: 20%;
   }
 }
 
@@ -21097,7 +21097,10 @@ a:hover {
 .testimonial-image.intelligaia,
 .testimonial-image.payuFinance,
 .testimonial-image.vtex,
-.testimonial-image.zoitech, .testimonial-image.lahaus, .testimonial-image.loggi, .testimonial-image.moove{
+.testimonial-image.zoitech,
+.testimonial-image.lahaus,
+.testimonial-image.loggi,
+.testimonial-image.moove {
   width: 9rem;
   height: 9rem;
 }
@@ -21107,6 +21110,13 @@ a:hover {
     min-height: 542px;
   }
 }
-.text-left{
+.text-left {
   text-align: left !important;
+}
+#connector-categories-tab-container {
+  border-right: 1px solid #c5ccd6;
+}
+
+.selected-connector-category > h5 {
+  color: #7147e8;
 }
