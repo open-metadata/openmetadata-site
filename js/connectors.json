@@ -33,6 +33,12 @@
         "name": "ClickHouse"
       },
       {
+        "name": "Couchbase",
+        "href": "https://docs.open-metadata.org/connectors/database/couchbase",
+        "alt": "service-couchbase",
+        "src": "../images/services/couchbase.svg"
+      },
+      {
         "href": "https://docs.open-metadata.org/connectors/database/deltalake",
         "src": "../images/services/deltalake.png",
         "alt": "service-deltalake",
@@ -75,6 +81,12 @@
         "name": "Google Cloud Service"
       },
       {
+        "href": "https://docs.open-metadata.org/connectors/database/greenplum",
+        "name": "Greenplum",
+        "src": "../images/services/greenplum.png",
+        "alt": "service-greenplum"
+      },
+      {
         "href": "https://docs.open-metadata.org/connectors/database/hive",
         "src": "../images/services/hive.png",
         "alt": "service-hive",
@@ -109,6 +121,18 @@
         "src": "../images/services/mysql.png",
         "alt": "service-mysql",
         "name": "MySQL"
+      },
+      {
+        "name": "MongoDB",
+        "href": "https://docs.open-metadata.org/connectors/database/mongodb",
+        "src": "../images/services/mongodb.png",
+        "alt": "service-mongodb"
+      },
+      {
+        "name": "SAP HANA",
+        "href": "https://docs.open-metadata.org/connectors/database/sap-hana",
+        "src": "../images/services/sap-hana.png",
+        "alt": "service-sap-hana"
       },
       {
         "href": "https://docs.open-metadata.org/connectors/database/oracle",
@@ -165,13 +189,13 @@
         "name": "Vertica"
       },
       {
-        "href": "https://docs.open-metadata.org/main-concepts/metadata-standard/schemas/entity/services/connections/database/pinotdbconnection",
+        "href": "https://docs.open-metadata.org/connectors/database/pinotdb ",
         "src": "../images/services/pinot.png",
         "alt": "service-pinot",
-        "name": "Pinot"
+        "name": "Pinot DB"
       },
       {
-        "href": "#",
+        "href": "https://docs.open-metadata.org/connectors/database/sqlite ",
         "src": "../images/services/sqllite.png",
         "alt": "service-sqlite",
         "name": "SQL Lite"
@@ -179,7 +203,7 @@
       {
         "src": "../images/services/iceberg.png",
         "alt": "service-iceberg",
-        "name": "Apache Iceberg"
+        "name": "Iceberg"
       }
     ]
   },
@@ -199,7 +223,7 @@
         "name": "Redpanda"
       },
       {
-        "href": "https://docs.open-metadata.org/main-concepts/metadata-standard/schemas/entity/services/connections/messaging/pulsarconnection",
+        "href": "https://docs.open-metadata.org/connectors/messaging/pulsar",
         "src": "../images/services/pulsar.png",
         "alt": "service-pulsar",
         "name": "pulsar"
@@ -208,7 +232,8 @@
       {
         "src": "../images/services/service-icon-kinesis.png",
         "alt": "service-icon-kinesis",
-        "name": "AWS Kinesis"
+        "name": "Kinesis",
+        "href": "https://docs.open-metadata.org/connectors/messaging/kinesis"
       }
     ]
   },
@@ -220,6 +245,18 @@
         "src": "../images/services/looker.png",
         "alt": "service-looker",
         "name": "Looker"
+      },
+      {
+        "name": "Qlik Sense",
+        "href": "https://docs.open-metadata.org/connectors/dashboard/qliksense",
+        "src": "../images/services/qliksense.png",
+        "alt": "service-qliksense"
+      },
+      {
+        "name": "Lightdash",
+        "href": "https://docs.open-metadata.org/connectors/dashboard/lightdash",
+        "src": "../images/services/lightdash.png",
+        "alt": "service-lightdash"
       },
       {
         "href": "https://docs.open-metadata.org/connectors/dashboard/metabase",
@@ -260,7 +297,8 @@
       {
         "src": "../images/services/service-icon-quicksight.png",
         "alt": "service-icon-quicksight",
-        "name": "AWS QuickSight"
+        "name": "QuickSight",
+        "href": "https://docs.open-metadata.org/connectors/dashboard/quicksight"
       }
     ]
   },
@@ -294,7 +332,14 @@
       {
         "src": "../images/services/apachenifi.png",
         "alt": "service-apachenifi",
-        "name": "Apache NiFi"
+        "name": "NiFi",
+        "href": "https://docs.open-metadata.org/connectors/pipeline/nifi"
+      },
+      {
+        "name": "Spline",
+        "href": "https://docs.open-metadata.org/connectors/pipeline/spline",
+        "src": "../images/services/spline.png",
+        "alt": "service-spline"
       }
     ]
   },
@@ -310,7 +355,8 @@
       {
         "src": "../images/services/service-icon-sagemaker.png",
         "alt": "service-icon-sagemaker",
-        "name": "AWS SageMaker"
+        "name": "SageMaker",
+        "href": "https://docs.open-metadata.org/connectors/ml-model/sagemaker"
       }
     ]
   },
@@ -324,9 +370,21 @@
         "name": "Amundsen"
       },
       {
+        "href": "https://docs.open-metadata.org/v1.2.x/connectors/metadata/atlas",
         "src": "../images/services/atlas.png",
         "alt": "service-atlas",
         "name": "Atlas"
+      }
+    ]
+  },
+  {
+    "connector": "Search",
+    "services": [
+      {
+        "name": "Elasticsearch",
+        "href": "https://docs.open-metadata.org/connectors/search/elasticsearch",
+        "src": "../images/services/elasticsearch.png",
+        "alt": "service-elasticsearch"
       }
     ]
   },
