@@ -4,6 +4,10 @@ const selectedTab = integrationCategory.getAttribute('data-selected');
 let connectors = [];
 let allServices = [];
 
+function sortServicesByName(services) {
+  return services.sort((a, b) => a.name.localeCompare(b.name));
+}
+
 const filterServices = (connectorCategory) => {
   let filteredServices = allServices;
   const selectedConnectorCategory = connectors.find(
@@ -14,7 +18,7 @@ const filterServices = (connectorCategory) => {
     filteredServices = selectedConnectorCategory.services;
   }
 
-  const connectorsElement = filteredServices
+  const connectorsElement = sortServicesByName(filteredServices)
     .map((service) => {
       return `<div
                   class="col-lg-2 col-md-3 col-sm-4 mb-4 text-center"
