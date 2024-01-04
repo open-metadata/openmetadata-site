@@ -21100,10 +21100,14 @@ a:hover {
 .testimonial-image.zoitech,
 .testimonial-image.lahaus,
 .testimonial-image.loggi,
-.testimonial-image.moove,
+.testimonial-image.moove{
+  width: 11rem;
+  height: 11rem;
+}
+
 .testimonial-image.inDrive {
-  width: 9rem;
-  height: 9rem;
+  width: 14rem;
+  height: 11rem;
 }
 
 @media (max-width: 550px) {
