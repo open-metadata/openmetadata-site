@@ -64,5 +64,10 @@
     "name": "moove",
     "image": "../images/testimonials/moove-logo.png",
     "url": "https://www.moove.io/"
+  },
+  {
+    "name": "inDrive",
+    "image": "../images/testimonials/inDrive-logo.png",
+    "url": "https://indrive.com/en/home/"
   }
 ]
