@@ -45,6 +45,12 @@
         "name": "Delta Lake"
       },
       {
+        "href": "https://docs.open-metadata.org/v1.2.x/connectors/database/doris",
+        "src": "../images/services/service-icon-doris.png",
+        "alt": "service-doris",
+        "name": "Doris"
+      },
+      {
         "href": "https://docs.open-metadata.org/connectors/database/druid",
         "src": "../images/services/druid.png",
         "alt": "service-druid",
@@ -163,6 +169,12 @@
         "src": "../images/services/salesforce.png",
         "alt": "service-salesforce",
         "name": "Salesforce"
+      },
+      {
+        "href": "https://docs.open-metadata.org/connectors/database/sas",
+        "src": "../images/services/service-icon-sas.svg",
+        "alt": "service-sas-viya",
+        "name": "SAS Viya"
       },
       {
         "href": "https://docs.open-metadata.org/connectors/database/snowflake",
