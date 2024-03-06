@@ -5,6 +5,7 @@ import Testimonials from "./Testimonials";
 import TeamsSection from "./TeamsSection";
 import CopyCode from "@/components/CopyCode/CopyCode.component";
 import Features from "@/components/Features/Features.component";
+import Blogs from "@/components/Blogs/Blogs.component";
 import SaasTrial from "@/components/SaaSTrial/SaasTrial.component";
 
 const inter = Inter({subsets: ["latin"]});
