@@ -1,5 +1,4 @@
 import Image from "next/image";
-import {Inter} from "next/font/google";
 import Head from "next/head";
 import Testimonials from "../components/TeamsSection/Testimonials";
 import TeamsSection from "../components/TeamsSection/TeamsSection";
@@ -7,8 +6,8 @@ import CopyCode from "@/components/CopyCode/CopyCode.component";
 import Features from "@/components/Features/Features.component";
 import Blogs from "@/components/Blogs/Blogs.component";
 import SaasTrial from "@/components/SaaSTrial/SaasTrial.component";
-
-const inter = Inter({subsets: ["latin"]});
+import YoutubeEmbed from "@/components/common/YouTubeEmbed";
+import Footer from "@/components/Footer/Footer.component";
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
             {/* Navbar*/}
             <nav className="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top flex-column">
               <div className="container px-10">
-                <a className="navbar-brand text-primary" href="index.html">
+                <a className="navbar-brand text-primary" href="/">
                   <Image
                     height={56}
                     width={140}
@@ -45,7 +44,7 @@ export default function Home() {
                 <div className="navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ms-auto me-lg-5">
                     <li className="nav-item">
-                      <a className="nav-link" href="community.html">
+                      <a className="nav-link" href="community">
                         Community
                       </a>
                     </li>
@@ -267,14 +266,7 @@ export default function Home() {
                     <div className="card">
                       <div className="card-body p-2">
                         <div className="video bg-img-cover rounded">
-                          <iframe
-                            width="100%"
-                            height={350}
-                            src="https://www.youtube.com/embed/pF8L_mAtexo"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen={false}
-                          />
+                          <YoutubeEmbed videoId="pF8L_mAtexo" height="350" />
                         </div>
                       </div>
                     </div>
@@ -499,128 +491,7 @@ export default function Home() {
             <Blogs />
           </main>
         </div>
-        <div id="layoutDefault_footer">
-          <footer className="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
-            <div className="container px-10">
-              <div className="row gx-5">
-                <div className="col-lg-3">
-                  <div className="footer-brand">
-                    <Image
-                      width={100}
-                      height={100}
-                      src="/assets/omd-logo-footer.svg"
-                      alt="omd-footer-logo"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    Open Standard for Metadata with a Centralized Metadata
-                    Store. Discover, Collaborate and get your Data Right.
-                  </div>
-                </div>
-                <div className="col-lg-3 offset-lg-1 col-md-6 mb-4 mb-lg-0">
-                  <div className="text-uppercase-expanded text-xs mb-4">
-                    Docs
-                  </div>
-                  <ul className="list-unstyled mb-0">
-                    <li className="mb-2">
-                      <a href="https://docs.open-metadata.org/" target="_blank">
-                        What is OpenMetadata?
-                      </a>
-                    </li>
-                    <li className="mb-2">
-                      <a
-                        href="https://docs.open-metadata.org/main-concepts/metadata-standard/schemas"
-                        target="_blank"
-                      >
-                        Schemas
-                      </a>
-                    </li>
-                    <li className="mb-2">
-                      <a
-                        href="https://docs.open-metadata.org/main-concepts/metadata-standard/apis"
-                        target="_blank"
-                      >
-                        APIs
-                      </a>
-                    </li>
-                    <li className="mb-2">
-                      <a
-                        href="https://docs.open-metadata.org/deployment/kubernetes"
-                        target="_blank"
-                      >
-                        Install
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://docs.open-metadata.org/connectors/ingestion"
-                        target="_blank"
-                      >
-                        Ingestion
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                  <div className="text-uppercase-expanded text-xs mb-4">
-                    Community
-                  </div>
-                  <ul className="list-unstyled mb-0">
-                    <li className="mb-2">
-                      <a
-                        href="https://slack.open-metadata.org/"
-                        target="_blank"
-                      >
-                        <i className="fab fa-slack" /> Slack
-                      </a>
-                    </li>
-                    <li className="mb-2">
-                      <a
-                        href="https://github.com/open-metadata/openmetadata"
-                        target="_blank"
-                      >
-                        <i className="fab fa-github" /> GitHub
-                      </a>
-                    </li>
-                    <li className="mb-2">
-                      <a
-                        href="https://twitter.com/open_metadata"
-                        target="_blank"
-                      >
-                        <i className="fab fa-twitter" /> Twitter
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.meetup.com/openmetadata-meetup-group/"
-                        target="_blank"
-                      >
-                        <i className="fab fa-meetup" /> Meetup
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-lg-2">
-                  <div className="text-uppercase-expanded text-xs mb-2">
-                    Deployed By
-                  </div>
-                  <Image
-                    height={120}
-                    src="/assets/netlify.png"
-                    width={120}
-                    alt="netlify-png"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <hr className="my-5" />
-              <div className="row gx-5 align-items-center">
-                <div className="col-md-6 small">Copyright © OpenMetadata</div>
-              </div>
-            </div>
-          </footer>
-        </div>
+        <Footer />
       </div>
       {/* Social Media Engagement - Off page SEO */}
     </>
