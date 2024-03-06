@@ -7,8 +7,7 @@ import CopyCode from "@/components/CopyCode/CopyCode.component";
 import Features from "@/components/Features/Features.component";
 import Blogs from "@/components/Blogs/Blogs.component";
 import SaasTrial from "@/components/SaaSTrial/SaasTrial.component";
-
-const inter = Inter({subsets: ["latin"]});
+import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
             {/* Navbar*/}
             <nav className="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top flex-column">
               <div className="container px-10">
-                <a className="navbar-brand text-primary" href="index.html">
+                <a className="navbar-brand text-primary" href="/">
                   <Image
                     height={56}
                     width={140}
@@ -45,7 +44,7 @@ export default function Home() {
                 <div className="navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav ms-auto me-lg-5">
                     <li className="nav-item">
-                      <a className="nav-link" href="community.html">
+                      <a className="nav-link" href="community">
                         Community
                       </a>
                     </li>
@@ -267,14 +266,7 @@ export default function Home() {
                     <div className="card">
                       <div className="card-body p-2">
                         <div className="video bg-img-cover rounded">
-                          <iframe
-                            width="100%"
-                            height={350}
-                            src="https://www.youtube.com/embed/pF8L_mAtexo"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen={false}
-                          />
+                          <YoutubeEmbed videoId="pF8L_mAtexo" height="350" />
                         </div>
                       </div>
                     </div>
