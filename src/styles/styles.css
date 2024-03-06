@@ -116,10 +116,6 @@ h4,
   font-size: 1.2rem !important;
 }
 
-h5,
-.h5 {
-  font-size: 1.1rem;
-}
 
 h6,
 .h6 {
@@ -19864,10 +19860,6 @@ body {
   justify-content: space-between;
 }
 
-.media-img {
-  height: 5rem;
-  width: 5rem;
-}
 
 @media (min-width: 992px) {
   .dropdown-lg,

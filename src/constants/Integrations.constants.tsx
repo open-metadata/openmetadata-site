@@ -1,0 +1,418 @@
+export const INTEGRATION_SERVICES = [
+  {
+    connector: "Database",
+    services: [
+      {
+        href: "https://docs.open-metadata.org/connectors/database/athena",
+        src: "/assets/services/athena.png",
+        alt: "service-athena",
+        name: "Athena",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/datalake",
+        src: "/assets/services/amazon-s3.png",
+        alt: "service-amazon-s3",
+        name: "Amazon S3",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/azuresql",
+        src: "/assets/services/azuresql.png",
+        alt: "service-azuresql",
+        name: "Azure SQL",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/bigquery",
+        src: "/assets/services/bigquery.png",
+        alt: "service-bigquery",
+        name: "BigQuery",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/clickhouse",
+        src: "/assets/services/clickhouse.png",
+        alt: "service-clickhouse",
+        name: "ClickHouse",
+      },
+      {
+        name: "Couchbase",
+        href: "https://docs.open-metadata.org/connectors/database/couchbase",
+        alt: "service-couchbase",
+        src: "/assets/services/couchbase.svg",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/deltalake",
+        src: "/assets/services/deltalake.png",
+        alt: "service-deltalake",
+        name: "Delta Lake",
+      },
+      {
+        href: "https://docs.open-metadata.org/v1.2.x/connectors/database/doris",
+        src: "/assets/services/service-icon-doris.png",
+        alt: "service-doris",
+        name: "Doris",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/druid",
+        src: "/assets/services/druid.png",
+        alt: "service-druid",
+        name: "Druid",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/databricks",
+        src: "/assets/services/databrick.png",
+        alt: "service-databrick",
+        name: "Databricks",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/domo-database",
+        src: "/assets/services/service-icon-domo.png",
+        alt: "service-domo",
+        name: "Domo",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/dynamodb",
+        src: "/assets/services/dynamodb.png",
+        alt: "service-dynamodb",
+        name: "DynamoDB",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/glue",
+        src: "/assets/services/glue.png",
+        alt: "service-glue",
+        name: "Glue",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/datalake",
+        src: "/assets/services/gcp.png",
+        alt: "service-gcp",
+        name: "Google Cloud Service",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/greenplum",
+        name: "Greenplum",
+        src: "/assets/services/greenplum.png",
+        alt: "service-greenplum",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/hive",
+        src: "/assets/services/hive.png",
+        alt: "service-hive",
+        name: "Hive",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/db2",
+        src: "/assets/services/ibmdb2.png",
+        alt: "service-ibmdb2",
+        name: "IBM Db2",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/impala",
+        src: "/assets/services/service-icon-impala.png",
+        alt: "service-impala",
+        name: "Impala",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/mariadb",
+        src: "/assets/services/mariadb.png",
+        alt: "service-mariadb",
+        name: "MariaDB",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/mssql",
+        src: "/assets/services/mssql.png",
+        alt: "service-mssql",
+        name: "MSSQL",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/mysql",
+        src: "/assets/services/mysql.png",
+        alt: "service-mysql",
+        name: "MySQL",
+      },
+      {
+        name: "MongoDB",
+        href: "https://docs.open-metadata.org/connectors/database/mongodb",
+        src: "/assets/services/mongodb.png",
+        alt: "service-mongodb",
+      },
+      {
+        name: "SAP HANA",
+        href: "https://docs.open-metadata.org/connectors/database/sap-hana",
+        src: "/assets/services/sap-hana.png",
+        alt: "service-sap-hana",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/oracle",
+        src: "/assets/services/oracle.png",
+        alt: "service-oracle",
+        name: "Oracle",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/postgres",
+        src: "/assets/services/postgres.png",
+        alt: "service-postgres",
+        name: "Postgres",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/presto",
+        src: "/assets/services/presto.png",
+        alt: "service-presto",
+        name: "Presto",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/redshift",
+        src: "/assets/services/redshift.png",
+        alt: "service-redshift",
+        name: "Redshift",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/salesforce",
+        src: "/assets/services/salesforce.png",
+        alt: "service-salesforce",
+        name: "Salesforce",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/sas",
+        src: "/assets/services/service-icon-sas.svg",
+        alt: "service-sas-viya",
+        name: "SAS Viya",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/snowflake",
+        src: "/assets/services/snowflake.png",
+        alt: "service-snowflake",
+        name: "Snowflake",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/singlestore",
+        src: "/assets/services/singlestore.png",
+        alt: "service-singlestore",
+        name: "SingleStore",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/trino",
+        src: "/assets/services/trino.png",
+        alt: "service-trino",
+        name: "Trino",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/vertica",
+        src: "/assets/services/vertica.png",
+        alt: "service-vertica",
+        name: "Vertica",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/pinotdb ",
+        src: "/assets/services/pinot.png",
+        alt: "service-pinot",
+        name: "Pinot DB",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/database/sqlite ",
+        src: "/assets/services/sqllite.png",
+        alt: "service-sqlite",
+        name: "SQL Lite",
+      },
+      {
+        src: "/assets/services/iceberg.png",
+        alt: "service-iceberg",
+        name: "Iceberg",
+      },
+    ],
+  },
+  {
+    connector: "Messaging",
+    services: [
+      {
+        href: "https://docs.open-metadata.org/connectors/messaging/kafka",
+        src: "/assets/services/kafka.png",
+        alt: "service-kafka",
+        name: "Kafka",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/messaging/redpanda",
+        src: "/assets/services/redpanda.png",
+        alt: "service-redpanda",
+        name: "Redpanda",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/messaging/pulsar",
+        src: "/assets/services/pulsar.png",
+        alt: "service-pulsar",
+        name: "pulsar",
+      },
+
+      {
+        src: "/assets/services/service-icon-kinesis.png",
+        alt: "service-icon-kinesis",
+        name: "Kinesis",
+        href: "https://docs.open-metadata.org/connectors/messaging/kinesis",
+      },
+    ],
+  },
+  {
+    connector: "Dashboard",
+    services: [
+      {
+        href: "https://docs.open-metadata.org/connectors/dashboard/looker",
+        src: "/assets/services/looker.png",
+        alt: "service-looker",
+        name: "Looker",
+      },
+      {
+        name: "Qlik Sense",
+        href: "https://docs.open-metadata.org/connectors/dashboard/qliksense",
+        src: "/assets/services/qliksense.png",
+        alt: "service-qliksense",
+      },
+      {
+        name: "Lightdash",
+        href: "https://docs.open-metadata.org/connectors/dashboard/lightdash",
+        src: "/assets/services/lightdash.png",
+        alt: "service-lightdash",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/dashboard/metabase",
+        src: "/assets/services/metabase.png",
+        alt: "service-metabase",
+        name: "Metabase",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/dashboard/mode",
+        src: "/assets/services/mode.png",
+        alt: "service-mode",
+        name: "Mode",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/dashboard/powerbi",
+        src: "/assets/services/powerbi.png",
+        alt: "service-powerbi",
+        name: "Power BI",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/dashboard/redash",
+        src: "/assets/services/redash.png",
+        alt: "service-redash",
+        name: "Redash",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/dashboard/superset",
+        src: "/assets/services/superset.png",
+        alt: "service-superset",
+        name: "Superset",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/dashboard/tableau",
+        src: "/assets/services/tableu.png",
+        alt: "service-tablue",
+        name: "Tableau",
+      },
+      {
+        src: "/assets/services/service-icon-quicksight.png",
+        alt: "service-icon-quicksight",
+        name: "QuickSight",
+        href: "https://docs.open-metadata.org/connectors/dashboard/quicksight",
+      },
+    ],
+  },
+  {
+    connector: "Pipeline",
+    services: [
+      {
+        href: "https://docs.open-metadata.org/connectors/pipeline/airflow",
+        src: "/assets/services/airflow.png",
+        alt: "service-airflow",
+        name: "Airflow",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/pipeline/airbyte",
+        src: "/assets/services/airbyte.png",
+        alt: "service-airbyte",
+        name: "Airbyte",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/pipeline/dagster",
+        src: "/assets/services/dagster.png",
+        alt: "service-dagster",
+        name: "Dagster",
+      },
+      {
+        href: "https://docs.open-metadata.org/connectors/pipeline/fivetran",
+        src: "/assets/services/fivetran.png",
+        alt: "service-Fivetran",
+        name: "Fivetran",
+      },
+      {
+        src: "/assets/services/apachenifi.png",
+        alt: "service-apachenifi",
+        name: "NiFi",
+        href: "https://docs.open-metadata.org/connectors/pipeline/nifi",
+      },
+      {
+        name: "Spline",
+        href: "https://docs.open-metadata.org/connectors/pipeline/spline",
+        src: "/assets/services/spline.png",
+        alt: "service-spline",
+      },
+    ],
+  },
+  {
+    connector: "Mlmodel",
+    services: [
+      {
+        href: "https://docs.open-metadata.org/connectors/ml-model/mlflow",
+        src: "/assets/services/mlflow.png",
+        alt: "service-mlflow",
+        name: "MLflow",
+      },
+      {
+        src: "/assets/services/service-icon-sagemaker.png",
+        alt: "service-icon-sagemaker",
+        name: "SageMaker",
+        href: "https://docs.open-metadata.org/connectors/ml-model/sagemaker",
+      },
+    ],
+  },
+  {
+    connector: "Metadata",
+    services: [
+      {
+        href: "https://docs.open-metadata.org/connectors/metadata/amundsen",
+        src: "/assets/services/amundsen.png",
+        alt: "service-amundsen",
+        name: "Amundsen",
+      },
+      {
+        href: "https://docs.open-metadata.org/v1.2.x/connectors/metadata/atlas",
+        src: "/assets/services/atlas.png",
+        alt: "service-atlas",
+        name: "Atlas",
+      },
+    ],
+  },
+  {
+    connector: "Search",
+    services: [
+      {
+        name: "Elasticsearch",
+        href: "https://docs.open-metadata.org/connectors/search/elasticsearch",
+        src: "/assets/services/elasticsearch.png",
+        alt: "service-elasticsearch",
+      },
+    ],
+  },
+  {
+    connector: "Others",
+    services: [
+      {
+        src: "/assets/services/ldap.png",
+        alt: "service-ldap",
+        name: "LDAP",
+      },
+      {
+        src: "/assets/services/sqlalchemy.png",
+        alt: "service-sqlalchemy",
+        name: "SQLAlchemy",
+      },
+    ],
+  },
+];

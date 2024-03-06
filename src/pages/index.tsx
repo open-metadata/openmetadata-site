@@ -8,6 +8,7 @@ import Blogs from "@/components/Blogs/Blogs.component";
 import SaasTrial from "@/components/SaaSTrial/SaasTrial.component";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Footer from "@/components/Footer/Footer.component";
+import Integrations from "@/components/Integrations/Integrations";
 
 export default function Home() {
   return (
@@ -455,37 +456,7 @@ export default function Home() {
                 </svg>
               </div>
             </section>
-            <section className="bg-white pb-15 pt-10" id="integrations">
-              <div className="px-10">
-                <div className="row gx-5 justify-content-center">
-                  <div className="col-lg-8">
-                    <div className="text-center mb-5">
-                      <h2 className="section-header fw-600">Integrations</h2>
-                      <p className="lead">
-                        OpenMetadata's ingestion framework supports connectors
-                        for a wide range of services, and the list is constantly
-                        growing...
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div
-                    className="col-lg-2"
-                    id="connector-categories-tab-container"
-                  >
-                    <div
-                      className="row"
-                      id="integration-category"
-                      data-selected="All connectors"
-                    />
-                  </div>
-                  <div className="col-lg-10">
-                    <div className="row" id="integration-container" />
-                  </div>
-                </div>
-              </div>
-            </section>
+            <Integrations />
             <SaasTrial />
 
             <Blogs />
