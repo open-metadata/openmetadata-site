@@ -1,4 +1,4 @@
-function copyToClipBoard() {
+export function copyToClipBoard() {
   const content = document.querySelector("#om-start-command").textContent;
   let text = document.querySelector(".om-copied-text");
 

@@ -131,7 +131,7 @@ h1,
 
 h1,
 .h1 {
-  font-size: calc(1.275rem + 0.3vw);
+  font-size: calc(1.275rem + 0.3vw) !important;
 }
 @media (min-width: 1200px) {
   h1,
@@ -142,12 +142,12 @@ h1,
 
 h2,
 .h2 {
-  font-size: calc(1.265rem + 0.18vw);
+  font-size: calc(1.265rem + 0.18vw) !important;
 }
 @media (min-width: 1200px) {
   h2,
   .h2 {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
 }
 
@@ -164,7 +164,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
 }
 
 h5,
@@ -20935,7 +20935,7 @@ a:hover {
   font-size: 1.75rem;
 }
 .section-header {
-  font-size: 2rem;
+  font-size: 2rem !important;
 }
 .copy-code {
   position: relative;
@@ -20951,10 +20951,10 @@ a:hover {
   top: 1em;
 }
 .bg-ready {
-  background-image: url('../images/bg-workstation.jpg');
+  background-image: url('../../public/assets/bg-workstation.jpg');
 }
 .bg-cloud {
-  background-image: url('../images/bg-cloud.jpg');
+  background-image: url('../../public/assets/bg-cloud.jpg');
 }
 .btn-quick-cta {
   min-width: 7rem;
