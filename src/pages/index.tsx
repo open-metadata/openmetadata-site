@@ -21,7 +21,7 @@ export default function Home() {
           <main>
             {/* Navbar*/}
             <nav className="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top flex-column">
-              <div className="container px-5">
+              <div className="container px-10">
                 <a className="navbar-brand text-primary" href="index.html">
                   <Image
                     height={56}
@@ -130,7 +130,7 @@ export default function Home() {
             {/* Page Header*/}
             <header className="page-header-ui page-header-ui-light bg-white">
               <div className="page-header-ui-content pt-5">
-                <div className="container px-5">
+                <div className="container px-10">
                   <div className="row gx-5 align-items-center">
                     <div className="col-lg-7" data-aos="fade-up">
                       <h1 className="text-4xl fw-700 mb-4 mt-4">
@@ -212,7 +212,7 @@ export default function Home() {
               </div>
             </header>
             <section className="bg-banner py-6">
-              <div className="container px-5 z-[1]">
+              <div className="container px-10 z-[1]">
                 <div className="row gx-5 justify-content-center text-center">
                   <div className="col-lg-6">
                     <div className="text-primary text-4xl font-normal">
@@ -250,7 +250,7 @@ export default function Home() {
               </div>
             </section>
             <section className="bg-light py-10">
-              <div className="container px-5">
+              <div className="container px-10">
                 <div className="row gx-5 justify-content-center text-center mb-4">
                   <div className="col-lg-8">
                     <div className="display-5 mb-3 text-dark">
@@ -294,7 +294,7 @@ export default function Home() {
               </div>
             </section>
             <section className="bg-white pb-5 py-10">
-              <div className="container position-relative px-5">
+              <div className="container position-relative px-10">
                 <div className="row gx-5 justify-content-center">
                   <div className="col-lg-12">
                     <div className="text-center mb-5">
@@ -319,7 +319,7 @@ export default function Home() {
               className="bg-img-cover overlay overlay-light overlay-90 py-10 bg-ready"
               id="getting-started"
             >
-              <div className="container px-5 z-1">
+              <div className="container px-10 z-1">
                 <CopyCode />
               </div>
               <div className="svg-border-rounded text-white">
@@ -464,7 +464,7 @@ export default function Home() {
               </div>
             </section>
             <section className="bg-white pb-15 pt-10" id="integrations">
-              <div className="px-5">
+              <div className="px-10">
                 <div className="row gx-5 justify-content-center">
                   <div className="col-lg-8">
                     <div className="text-center mb-5">
@@ -496,183 +496,12 @@ export default function Home() {
             </section>
             <SaasTrial />
 
-            <section className="bg-light pb-5 pt-10" id="blogs">
-              <div className="container px-5">
-                <div className="row gx-5 justify-content-center">
-                  <div className="col-lg-8">
-                    <div className="text-center mb-5">
-                      <h2 className="section-header fw-600">Blogs</h2>
-                    </div>
-                  </div>
-                </div>
-                <div className="row gx-5 mb-5">
-                  <div className="col-lg-4 mb-5">
-                    <a
-                      className="card lift h-100"
-                      href="https://blog.open-metadata.org/openmetadata-release-1-3-ac801834ee80"
-                      target="_blank"
-                    >
-                      <Image
-                        height={100}
-                        width={100}
-                        className="card-img-top"
-                        src="/assets/release-1.3.0.webp"
-                        alt="data-quality-blog"
-                        loading="lazy"
-                      />
-                      <div className="card-body">
-                        <h4 className="card-title mb-2">
-                          OpenMetadata Release 1.3
-                        </h4>
-                        <p className="card-text">
-                          Intuitive Lineage UI, Data Observability Alerts, Data
-                          Quality Incident Manager, Custom Metrics for Profiler,
-                          Knowledge Center Improvements, and lots more
-                        </p>
-                      </div>
-                      <div className="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
-                        <div className="small text-primary">Read more</div>
-                        <div className="small text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={24}
-                            height={24}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="feather feather-arrow-right"
-                          >
-                            <line x1={5} y1={12} x2={19} y2={12} />
-                            <polyline points="12 5 19 12 12 19" />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="col-lg-4 mb-5">
-                    <a
-                      className="card lift h-100"
-                      href="https://blog.open-metadata.org/leveraging-the-power-of-openmetadata-data-quality-framework-385ba2d8eaf"
-                      target="_blank"
-                    >
-                      <Image
-                        height={100}
-                        width={100}
-                        className="card-img-top"
-                        src="/assets/om-data-quality.png"
-                        alt="release-om-data-quality"
-                        loading="lazy"
-                      />
-                      <div className="card-body">
-                        <h4 className="card-title mb-2">
-                          Leveraging the Power of OpenMetadata Data Quality
-                          Framework
-                        </h4>
-                        <p className="card-text">
-                          OpenMetadata offers the possibility to execute data
-                          quality tests directly from the UI, making it a
-                          powerful tool for everyone in the company.
-                        </p>
-                      </div>
-                      <div className="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
-                        <div className="small text-primary">Read more</div>
-                        <div className="small text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={24}
-                            height={24}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="feather feather-arrow-right"
-                          >
-                            <line x1={5} y1={12} x2={19} y2={12} />
-                            <polyline points="12 5 19 12 12 19" />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="col-lg-4 mb-5">
-                    <a
-                      className="card lift h-100"
-                      href="https://blog.open-metadata.org/openmetadata-release-1-2-531f0e3c6d9a"
-                      target="_blank"
-                    >
-                      <Image
-                        height={100}
-                        width={100}
-                        className="card-img-top"
-                        src="/assets/release-1.2.webp"
-                        alt="data-quality-blog"
-                        loading="lazy"
-                      />
-                      <div className="card-body">
-                        <h4 className="card-title mb-2">
-                          OpenMetadata Release 1.2
-                        </h4>
-                        <p className="card-text">
-                          Domains, Data Products, Search Index, Stored
-                          Procedures, Glossary Approval Workflow, Customizable
-                          Landing Page, Applications, Knowledge Center, Cost
-                          Analysis, and lots more.
-                        </p>
-                      </div>
-                      <div className="card-footer bg-transparent border-top d-flex align-items-center justify-content-between">
-                        <div className="small text-primary">Read more</div>
-                        <div className="small text-primary">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width={24}
-                            height={24}
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth={2}
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="feather feather-arrow-right"
-                          >
-                            <line x1={5} y1={12} x2={19} y2={12} />
-                            <polyline points="12 5 19 12 12 19" />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="text-center">
-                    <a
-                      className="btn btn-primary fw-500"
-                      href="http://blog.open-metadata.org/"
-                      target="_blank"
-                    >
-                      Read All Blogs
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="svg-border-rounded text-dark">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 144.54 17.34"
-                  preserveAspectRatio="none"
-                  fill="currentColor"
-                >
-                  <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0" />
-                </svg>
-              </div>
-            </section>
+            <Blogs />
           </main>
         </div>
         <div id="layoutDefault_footer">
           <footer className="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
-            <div className="container px-5">
+            <div className="container px-10">
               <div className="row gx-5">
                 <div className="col-lg-3">
                   <div className="footer-brand">
