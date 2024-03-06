@@ -5,6 +5,7 @@ import Head from "next/head";
 import Script from "next/script";
 import Testimonials from "./Testimonials";
 import TeamsSection from "./TeamsSection";
+import CopyCode from "@/components/CopyCode/CopyCode.component";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -313,60 +314,7 @@ export default function Home() {
               id="getting-started"
             >
               <div className="container px-5 z-1">
-                <div className="row gx-5 justify-content-center text-center">
-                  <div className="col-lg-8">
-                    <div className="display-5 mb-3 text-dark">
-                      Ready to Start?
-                    </div>
-                    <h4>
-                      Run this command to get OpenMetadata up &amp; running with
-                      Docker.
-                    </h4>
-                    <div className="copy-code my-4 text-start">
-                      <span className="om-copied-text">Copied!</span>
-                      <button
-                        type="button"
-                        className="btn btn-outline-light btn-sm"
-                        id="om-command-copy-button"
-                        onClick={() => copyToClipBoard()}
-                        title="Copy"
-                      >
-                        <Image
-                          width={20}
-                          height={20}
-                          src="/assets/icons/copy.svg"
-                          alt="copy"
-                        />{" "}
-                        Copy
-                      </button>
-                      <span id="om-start-command">
-                        mkdir openmetadata-docker &amp;&amp; cd
-                        openmetadata-docker
-                        <br />
-                        wget -O
-                        https://github.com/open-metadata/OpenMetadata/releases/download/1.2.0-release/docker-compose.yml
-                        <br />
-                        docker compose -f docker-compose.yml up --detach
-                      </span>
-                    </div>
-                    <div>
-                      <a
-                        className="btn btn-primary fw-500 mr-2"
-                        href="https://docs.open-metadata.org/deployment"
-                        target="_blank"
-                      >
-                        Deploy in Production
-                      </a>
-                      <a
-                        className="btn btn-primary fw-500"
-                        href="https://docs.open-metadata.org/deployment/kubernetes"
-                        target="_blank"
-                      >
-                        Deploy in Kubernetes
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <CopyCode />
               </div>
               <div className="svg-border-rounded text-white">
                 <svg
