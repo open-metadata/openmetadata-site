@@ -1,12 +1,11 @@
 import Image from "next/image";
 import {Inter} from "next/font/google";
 import Head from "next/head";
-
-import Script from "next/script";
 import Testimonials from "./Testimonials";
 import TeamsSection from "./TeamsSection";
 import CopyCode from "@/components/CopyCode/CopyCode.component";
 import Features from "@/components/Features/Features.component";
+import SaasTrial from "@/components/SaaSTrial/SaasTrial.component";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -494,49 +493,8 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            <section className="bg-img-cover overlay overlay-light overlay-80 pt-10 pb-5 bg-cloud">
-              <div className="container px-5 z-1">
-                <div className="row gx-5 justify-content-center">
-                  <div className="col-lg-8">
-                    <div className="text-center mb-10">
-                      <h2 className="section-header fw-600 mb-5">
-                        OpenMetadata on Cloud
-                      </h2>
-                      <p className="fs-4">
-                        Benefit from the OpenMetadata SaaS Trial Offer!
-                      </p>
-                      <p className="fs-4 mb-5">
-                        Explore the all-in-one platform for data discovery,
-                        governance, lineage, observability, quality, &amp;
-                        collaboration for centralized metadata management.{" "}
-                        <br />
-                        Go ahead and access the full suite of features to
-                        rebuild trust in your data.
-                      </p>
-                      <p>
-                        <a
-                          className="btn btn-primary fw-500"
-                          href="https://getcollate.io"
-                          target="_blank"
-                        >
-                          Sign Up for the SaaS Trial
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="svg-border-rounded text-light">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 144.54 17.34"
-                  preserveAspectRatio="none"
-                  fill="currentColor"
-                >
-                  <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0" />
-                </svg>
-              </div>
-            </section>
+            <SaasTrial />
+
             <section className="bg-light pb-5 pt-10" id="blogs">
               <div className="container px-5">
                 <div className="row gx-5 justify-content-center">

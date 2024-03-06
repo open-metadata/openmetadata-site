@@ -11122,17 +11122,6 @@ fieldset:disabled .btn {
   line-height: 2 !important;
 }
 
-.text-start {
-  text-align: left !important;
-}
-
-.text-end {
-  text-align: right !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
 
 .text-decoration-none {
   text-decoration: none !important;
