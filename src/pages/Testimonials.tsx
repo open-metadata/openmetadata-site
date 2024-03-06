@@ -115,7 +115,7 @@ const Testimonials = () => {
                   />
                   <div className="card-team-name mb-3">
                     <strong>
-                      <a href={url} target="_blank">
+                      <a className="text-primary" href={url} target="_blank">
                         {company}
                       </a>
                     </strong>

@@ -6,11 +6,11 @@ import Script from "next/script";
 import Testimonials from "./Testimonials";
 import TeamsSection from "./TeamsSection";
 import CopyCode from "@/components/CopyCode/CopyCode.component";
+import Features from "@/components/Features/Features.component";
 
 const inter = Inter({subsets: ["latin"]});
 
 export default function Home() {
-  const icon = "/assets/icons/cloud-icon.svg";
   return (
     <>
       <Head>
@@ -87,16 +87,22 @@ export default function Home() {
                     </li>
                   </ul>
                   <a
-                    className="btn fw-500 btn-primary rounded-pill"
+                    className="btn fw-500 btn-primary rounded-full h-[42px]"
                     href="https://getcollate.io"
                     target="_blank"
                   >
-                    <Image
-                      height={24}
-                      width={24}
-                      src={icon}
-                      alt="omd-logo-svg"
-                    />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="#fff"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -127,10 +133,10 @@ export default function Home() {
                 <div className="container px-5">
                   <div className="row gx-5 align-items-center">
                     <div className="col-lg-7" data-aos="fade-up">
-                      <h1 className="page-header-ui-title fw-700 mb-4 mt-4">
+                      <h1 className="text-4xl fw-700 mb-4 mt-4">
                         OpenMetadata
                       </h1>
-                      <h3 className="page-header-ui-subtitle text-primary">
+                      <h3 className="text-3xl text-primary font-medium mb-2">
                         A Single Place to Discover, Collaborate and get your
                         Data Right
                       </h3>
@@ -287,7 +293,7 @@ export default function Home() {
                 </svg>
               </div>
             </section>
-            <section className="bg-white pb-5">
+            <section className="bg-white pb-5 py-10">
               <div className="container position-relative px-5">
                 <div className="row gx-5 justify-content-center">
                   <div className="col-lg-12">
@@ -328,7 +334,7 @@ export default function Home() {
               </div>
             </section>
             <section className="bg-white py-10">
-              <div className="container px-5">
+              <div className="container px-10">
                 <div className="flex flex-row gap-5 justify-center text-center">
                   <div className="col-lg-3 mb-5 mb-lg-0 text-center">
                     <Image
@@ -340,7 +346,7 @@ export default function Home() {
                       alt="git-svg"
                       loading="lazy"
                     />
-                    <h3>Let’s Build on GitHub</h3>
+                    <h3 className="mb-2">Let’s Build on GitHub</h3>
                     <p className="mb-4">
                       Contribute code, try out good starting issues, and join
                       the momentum.
@@ -363,7 +369,7 @@ export default function Home() {
                       alt="doc-svg"
                       loading="lazy"
                     />
-                    <h3>Refer to our Docs</h3>
+                    <h3 className="mb-2">Refer to our Docs</h3>
                     <p className="mb-4">
                       Benefit with the step-by-step implementation guides and
                       get started.
@@ -386,7 +392,7 @@ export default function Home() {
                       alt="slack-icon-svg"
                       loading="lazy"
                     />
-                    <h3>Connect on Slack</h3>
+                    <h3 className="mb-2">Connect on Slack</h3>
                     <p className="mb-4">
                       Ask questions, get help, discuss features, and connect
                       with contributors &amp; users.
@@ -409,7 +415,7 @@ export default function Home() {
                       alt="join-us-svg"
                       loading="lazy"
                     />
-                    <h3>Join our Community</h3>
+                    <h3 className="mb-2">Join our Community</h3>
                     <p className="mb-4">
                       Attend meetings, share your thoughts, and know where we
                       are heading.
@@ -435,7 +441,7 @@ export default function Home() {
               </div>
             </section>
             <section className="bg-light py-10" id="features">
-              <div className="container px-5">
+              <div className="container px-10">
                 <div className="row gx-5 justify-content-center">
                   <div className="col-lg-8">
                     <div className="text-center mb-5">
@@ -443,162 +449,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="row gx-5 align-items-center justify-content-center mb-5">
-                  <div className="col-lg-5">
-                    <h2>All Data in One Place</h2>
-                    <p>
-                      A central store to integrate metadata from different
-                      sources in the data ecosystem. Uses standardized Schemas
-                      and APIs. Brings together the power of multiple
-                      applications -
-                      <strong>
-                        data discovery, quality, observability, profiling, user
-                        collaboration, lineage,
-                      </strong>
-                      and much more.
-                    </p>
-                    <p>Helping data engineers win their time back!</p>
-                    <a
-                      className="small text-arrow-icon"
-                      href="https://docs.open-metadata.org/v1.2.x/features"
-                      target="_blank"
-                    >
-                      Learn More
-                      <i data-feather="arrow-right" />
-                    </a>
-                  </div>
-                  <div className="col-lg-7" data-aos="slide-left">
-                    <div className="mb-4">
-                      <Image
-                        quality={100}
-                        height={300}
-                        width={300}
-                        className="w-16 md:w-32 lg:w-96"
-                        src="/assets/data-discovery.png"
-                        alt="feature01"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="row gx-5 align-items-center justify-content-center mb-5">
-                  <div className="col-lg-7" data-aos="slide-right">
-                    <div className="mb-4">
-                      <Image
-                        height={100}
-                        width={100}
-                        className="img-fluid rounded-3"
-                        src="/assets/data-collaboration.png"
-                        alt="feature02"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-5">
-                    <h2>Data Collaboration</h2>
-                    <p className="lead">
-                      Fosters collaboration among the producers and consumers of
-                      data with all the data evolution in one place.
-                    </p>
-                    <div className="row gx-5">
-                      <div className="col-md-12 mb-4">
-                        <h6>
-                          <strong>Activity Feeds</strong>
-                        </h6>
-                        <p className="mb-2 small">
-                          View a summary of all the metadata change events. Keep
-                          track of what’s going on with your data.
-                        </p>
-                      </div>
-                      <div className="col-md-12 mb-4">
-                        <h6>
-                          <strong>Webhooks &amp; Slack Integration</strong>
-                        </h6>
-                        <p className="mb-2 small mb-0">
-                          With webhooks, register URLs to receive metadata event
-                          notifications. Set up Slack notifications to publish
-                          metadata events.
-                        </p>
-                        <a
-                          className="small text-arrow-icon"
-                          href="https://docs.open-metadata.org/v1.2.x/features/discovery-collaboration"
-                          target="_blank"
-                        >
-                          Learn More
-                          <i data-feather="arrow-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="row gx-5 align-items-center justify-content-center mb-5">
-                  <div className="col-lg-5">
-                    <h2>Metadata Versioning</h2>
-                    <p>
-                      Captures the changes in technical and business metadata as
-                      versions of an entity. Facilitates
-                      <strong>
-                        data governance, people collaboration, and simplifies
-                        debugging.
-                      </strong>
-                    </p>
-                    <p>Serves as an organizational memory of data!</p>
-                    <a
-                      className="small text-arrow-icon"
-                      href="https://docs.open-metadata.org/v1.2.x/connectors/ingestion/versioning"
-                      target="_blank"
-                    >
-                      Learn More
-                      <i data-feather="arrow-right" />
-                    </a>
-                  </div>
-                  <div className="col-lg-7" data-aos="slide-left">
-                    <div className="mb-4">
-                      <Image
-                        height={100}
-                        width={100}
-                        className="img-fluid rounded-3"
-                        src="/assets/data-versioning.png"
-                        alt="feature03"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="row gx-5 align-items-center justify-content-center">
-                  <div className="col-lg-7" data-aos="slide-right">
-                    <div className="mb-4">
-                      <Image
-                        height={100}
-                        width={100}
-                        className="img-fluid rounded-3"
-                        src="/assets/data-lineage.png"
-                        alt="feature04"
-                        loading="lazy"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-5">
-                    <h2>Data Lineage</h2>
-                    <p>
-                      Supports a comprehensive lineage for
-                      <strong>all data assets</strong> by capturing the relation
-                      between entities. Traces the path of data across tables,
-                      pipelines, and dashboards.
-                      <strong>Manual lineage</strong> helps augment the lineage
-                      captured from machine metadata with user knowledge.
-                    </p>
-                    <p>View the lineage at each entity level!</p>
-                    <a
-                      className="small text-arrow-icon"
-                      href="https://docs.open-metadata.org/v1.2.x/connectors/ingestion/workflows/lineage"
-                      target="_blank"
-                    >
-                      Learn More
-                      <i data-feather="arrow-right" />
-                    </a>
-                  </div>
-                </div>
+                <Features />
               </div>
               <div className="svg-border-rounded text-white">
                 {/* Rounded SVG Border*/}
