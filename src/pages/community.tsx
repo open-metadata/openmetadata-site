@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer/Footer.component";
+import Navbar from "@/components/Navbar/Navbar.component";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Head from "next/head";
 import Image from "next/image";
@@ -12,96 +13,9 @@ export default function Community() {
       <div id="layoutDefault">
         <div id="layoutDefault_content">
           <main>
-            <nav className="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top flex-column">
-              <div className="container px-10">
-                <a className="navbar-brand text-primary" href="/">
-                  <Image
-                    alt="omd-logo-svg"
-                    width={1000}
-                    className="w-full"
-                    height={1000}
-                    src="/assets/omd-logo.svg"
-                  />
-                </a>
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <i data-feather="menu" />
-                </button>
-                <div className="navbar-collapse" id="navbarSupportedContent">
-                  <ul className="navbar-nav ms-auto me-lg-5">
-                    <li className="nav-item">
-                      <a className="nav-link" href="community">
-                        Community
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link"
-                        href="https://sandbox.open-metadata.org/signin"
-                        target="_blank"
-                      >
-                        Sandbox
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link"
-                        href="https://docs.open-metadata.org/"
-                        target="_blank"
-                      >
-                        Documentation
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link"
-                        href="http://blog.open-metadata.org/"
-                        target="_blank"
-                      >
-                        Blog
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        className="nav-link"
-                        href="https://github.com/open-metadata/OpenMetadata"
-                        target="_blank"
-                      >
-                        GitHub
-                      </a>
-                    </li>
-                  </ul>
-                  <a
-                    className="btn fw-500 btn-primary rounded-full h-[42px]"
-                    href="https://getcollate.io"
-                    target="_blank"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="#fff"
-                      className="w-5 h-5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </nav>
-
-            <header className="page-header-ui page-header-ui-light bg-white">
-              <div className="page-header-ui-content pt-5">
+            <Navbar />
+            <header className="page-header-ui page-header-ui-light bg-white max-lg:mt-0">
+              <div className="page-header-ui-content pt-5 max-lg:pt-0">
                 <div className="container px-10">
                   <div className="row gx-5 align-items-center">
                     <div
@@ -144,7 +58,7 @@ export default function Community() {
                         Learn, engage, and get going with your organization’s
                         needs!
                       </p>
-                      <div className="flex flex-col sm:flex-row">
+                      <div className="flex flex-col sm:flex-row max-lg:mt-3">
                         <a
                           className="btn btn-lg btn-outline-primary btn-home-slack font-semibold"
                           href="https://slack.open-metadata.org/"
@@ -236,7 +150,7 @@ export default function Community() {
                   </div>
                 </div>
                 <div className="row gx-5">
-                  <div className="col">
+                  <div className="col max-lg:mb-4">
                     <div className="card">
                       <div className="card-body">
                         <YoutubeEmbed videoId="ihwtuNHt1kI" height="260" />
@@ -315,7 +229,7 @@ export default function Community() {
                       what’s most recent. Take a look!
                     </p>
                     <div className="row gx-5">
-                      <div className="col">
+                      <div className="col-lg-6 mb-4">
                         <div className="card">
                           <div className="card-body">
                             <YoutubeEmbed videoId="7jgtfdpOKwo" height="260" />

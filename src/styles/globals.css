@@ -16,14 +16,6 @@
   }
 }
 
-body {
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 h3{
   font-size: 1.3rem;
 }
