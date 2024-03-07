@@ -29,13 +29,15 @@ function Navbar() {
     >
       <div className="lg:container mx-auto flex justify-between items-center">
         <div className="flex items-center p-4 lg:p-0">
-          <Image
-            height={56}
-            width={140}
-            src="/assets/omd-logo.svg"
-            alt="omd-logo-svg"
-            loading="lazy"
-          />
+          <a className="navbar-brand text-primary" href="/">
+            <Image
+              height={56}
+              width={140}
+              src="/assets/omd-logo.svg"
+              alt="omd-logo-svg"
+              loading="lazy"
+            />
+          </a>
         </div>
 
         <div
