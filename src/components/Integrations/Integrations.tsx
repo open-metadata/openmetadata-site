@@ -1,4 +1,5 @@
 import {INTEGRATION_SERVICES} from "@/constants/Integrations.constants";
+import Image from "next/image";
 import React, {useEffect, useState} from "react";
 
 interface Service {
@@ -49,11 +50,12 @@ const Integrations: React.FC = () => {
         data-aos="fade-up"
       >
         <a href={service.href ?? "#"} target="_blank" className="text-center">
-          <img
-            src={service.src}
-            className="w-20 h-20 mb-2"
+          <Image
             alt={service.alt}
-            loading="lazy"
+            width={1000}
+            className="w-20 h-20 mb-2"
+            height={1000}
+            src={service.src}
             style={{display: "block", margin: "auto"}}
           />
           <h5 className="mb-2">{service.name}</h5>

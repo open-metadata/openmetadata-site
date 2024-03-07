@@ -4,19 +4,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import {TESTIMONIALS_LIST} from "@/constants/Testimonials.constants";
 
 const Testimonials = () => {
-  const [testimonials, setTestimonials] = useState([]);
-
-  useEffect(() => {
-    const fetchTestimonialsData = async () => {
-      const res = await fetch("/js/testimonials.json");
-      const data = await res.json();
-      setTestimonials(data);
-    };
-
-    fetchTestimonialsData();
-  }, []);
   const slider = React.useRef(null);
   function SampleNextArrow(props) {
     const {className, onClick} = props;
@@ -100,7 +90,7 @@ const Testimonials = () => {
   return (
     <div>
       <Slider {...testimonialSettings} ref={slider}>
-        {testimonials.map(
+        {TESTIMONIALS_LIST.map(
           ({name, image, description, company, url, title}, index) => (
             <div key={index}>
               <div className="testimonial-card card card-team">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -8,11 +9,12 @@ const Footer = () => {
           <div className="row gx-5">
             <div className="col-lg-3">
               <div className="footer-brand">
-                <img
-                  className="image-fluid"
-                  src="/assets/omd-logo-footer.svg"
+                <Image
                   alt="omd-footer-logo"
-                  loading="lazy"
+                  width={120}
+                  height={48}
+                  className="object-cover object-center block image-fluid"
+                  src="/assets/omd-logo-footer.svg"
                 />
               </div>
               <div className="mb-3">
@@ -221,11 +223,11 @@ const Footer = () => {
               <div className="text-uppercase-expanded text-xs mb-2">
                 Developed By
               </div>
-              <img
-                src="/assets/netlify.png"
-                width="120"
+              <Image
                 alt="netlify"
-                loading="lazy"
+                width={120}
+                height={48}
+                src="/assets/netlify.png"
               />
             </div>
           </div>

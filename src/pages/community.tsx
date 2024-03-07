@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer/Footer.component";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Community() {
   return (
@@ -14,11 +15,12 @@ export default function Community() {
             <nav className="navbar navbar-marketing navbar-expand-lg bg-transparent navbar-light fixed-top flex-column">
               <div className="container px-10">
                 <a className="navbar-brand text-primary" href="/">
-                  <img
-                    className="w-full"
-                    src="/assets/omd-logo.svg"
+                  <Image
                     alt="omd-logo-svg"
-                    loading="lazy"
+                    width={1000}
+                    className="w-full"
+                    height={1000}
+                    src="/assets/omd-logo.svg"
                   />
                 </a>
                 <button
@@ -107,11 +109,12 @@ export default function Community() {
                       data-aos="fade-up"
                       data-aos-delay="100"
                     >
-                      <img
-                        className="img-fluid"
-                        src="/assets/community.png"
+                      <Image
                         alt="community"
-                        loading="lazy"
+                        width={1000}
+                        className="w-full"
+                        height={1000}
+                        src="/assets/community.png"
                       />
                     </div>
                     <div className="col-lg-6" data-aos="fade-up">
@@ -147,11 +150,12 @@ export default function Community() {
                           href="https://slack.open-metadata.org/"
                           target="_blank"
                         >
-                          <img
-                            className="h-5 w-5 mr-2"
-                            src="/assets/icon-slack.svg"
+                          <Image
                             alt="slack"
-                            loading="lazy"
+                            width={1000}
+                            className="h-5 w-5 mr-2"
+                            height={1000}
+                            src="/assets/icon-slack.svg"
                           />
                           Join our Slack
                         </a>
@@ -199,11 +203,11 @@ export default function Community() {
                     </a>
                   </div>
                   <div className="col-lg-6">
-                    <img
-                      src="/assets/meetups.png"
-                      className="img-fluid"
+                    <Image
                       alt="meetups"
-                      loading="lazy"
+                      width={1000}
+                      height={1000}
+                      src="/assets/meetups.png"
                     />
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface BlogCardProps {
@@ -20,8 +21,10 @@ const BlogCard: React.FC<BlogCardProps> = ({
         href={blogLink}
         target="_blank"
       >
-        <img
-          alt="blog"
+        <Image
+          alt={title}
+          width={1000}
+          height={1000}
           className="object-cover object-center w-full h-full block"
           src={imageLink}
         />

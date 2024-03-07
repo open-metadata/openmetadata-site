@@ -1,20 +1,12 @@
 import {useEffect, useState} from "react";
 
 import Image from "next/image";
+import {
+  TEAMS_LIST,
+  TESTIMONIALS_LIST,
+} from "@/constants/Testimonials.constants";
 
 const TeamsSection = () => {
-  const [testimonialImages, setTestimonialImages] = useState([]);
-
-  useEffect(() => {
-    const fetchTestimonialImagesData = async () => {
-      const res = await fetch("/js/testimonialImages.json");
-      const data = await res.json();
-      setTestimonialImages(data);
-    };
-
-    fetchTestimonialImagesData();
-  }, []);
-
   return (
     <div className="container position-relative px-5">
       <div className="row gx-5 justify-content-center">
@@ -28,7 +20,7 @@ const TeamsSection = () => {
       </div>
 
       <div id="testimonialImagesContainer" className="grid grid-cols-5 gap-4">
-        {testimonialImages.map(({name, image, url}, index) => (
+        {TEAMS_LIST.map(({name, image, url}, index) => (
           <div key={index}>
             <a href={url} target="_blank">
               <Image

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Features = () => {
@@ -40,20 +41,24 @@ const Features = () => {
           </a>
         </div>
         <div className="order-2 md:order-1">
-          <img
-            className="w-full"
-            src="/assets/data-discovery.png"
-            alt="feature01"
-          />
+          <div className="mb-4 w-full">
+            <Image
+              alt="feature01"
+              width={1000}
+              height={1000}
+              src="/assets/data-discovery.png"
+            />
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-2 gap-5 items-center justify-center mb-5">
         <div className="order-1 md:order-2">
-          <div className="mb-4">
-            <img
-              className="w-full"
-              src="/assets/data-collaboration.png"
+          <div className="mb-4 w-full">
+            <Image
               alt="feature02"
+              width={1000}
+              height={1000}
+              src="/assets/data-collaboration.png"
             />
           </div>
         </div>
@@ -70,14 +75,14 @@ const Features = () => {
               </h6>
               <p className="mb-2 small">
                 View a summary of all the metadata change events. Keep track of
-                what’s going on with your data.
+                what's going on with your data.
               </p>
             </div>
             <div className="col-md-12 mb-4">
               <h6>
                 <strong>Webhooks &amp; Slack Integration</strong>
               </h6>
-              <p className="mb-2 small mb-0">
+              <p className="mb-2 small">
                 With webhooks, register URLs to receive metadata event
                 notifications. Set up Slack notifications to publish metadata
                 events.
@@ -142,20 +147,24 @@ const Features = () => {
           </a>
         </div>
         <div className="order-2 md:order-1">
-          <img
-            className="w-full"
-            src="/assets/data-versioning.png"
-            alt="feature03"
-          />
+          <div className="mb-4 w-full">
+            <Image
+              alt="feature03"
+              width={1000}
+              height={1000}
+              src="/assets/data-versioning.png"
+            />
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-2 gap-5 items-center justify-center mb-5">
         <div className="order-1 md:order-2">
-          <div className="mb-4">
-            <img
-              className="w-full"
-              src="/assets/data-lineage.png"
+          <div className="mb-4 w-full">
+            <Image
               alt="feature04"
+              width={1000}
+              height={1000}
+              src="/assets/data-lineage.png"
             />
           </div>
         </div>
