@@ -1,15 +1,11 @@
 import Footer from "@/components/Footer/Footer.component";
 import Navbar from "@/components/Navbar/Navbar.component";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
-import Head from "next/head";
 import Image from "next/image";
 
 export default function Community() {
   return (
     <>
-      <Head>
-        <script type="text/javascript" src="/js/scripts.js" async />
-      </Head>
       <div id="layoutDefault">
         <div id="layoutDefault_content">
           <main>
