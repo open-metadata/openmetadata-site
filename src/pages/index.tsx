@@ -232,97 +232,105 @@ export default function Home() {
           </section>
           <section className="bg-white py-10">
             <div className="container px-10">
-              <div className="flex flex-row gap-5 justify-center text-center">
-                <div className="col-lg-3 mb-5 mb-lg-0 text-center">
-                  <Image
-                    style={{display: "inline-flex"}}
-                    width={80}
-                    src="/assets/icon-git.svg"
-                    height={80}
-                    className="mb-4"
-                    alt="git-svg"
-                    loading="lazy"
-                  />
-                  <h3 className="mb-2">Let’s Build on GitHub</h3>
-                  <p className="mb-4">
-                    Contribute code, try out good starting issues, and join the
-                    momentum.
-                  </p>
-                  <a
-                    className="btn btn-sm btn-primary btn-quick-cta fw-500"
-                    href="https://github.com/open-metadata/OpenMetadata"
-                    target="_blank"
-                  >
-                    Explore
-                  </a>
+              <div className="row justify-content-center text-center">
+                <div className="col-lg-3 col-md-6 mb-5">
+                  <div className="mb-4">
+                    <Image
+                      style={{display: "inline-flex"}}
+                      width={80}
+                      src="/assets/icon-git.svg"
+                      height={80}
+                      className="mb-4"
+                      alt="git-svg"
+                      loading="lazy"
+                    />
+                    <h3 className="mb-2">Let’s Build on GitHub</h3>
+                    <p className="mb-4">
+                      Contribute code, try out good starting issues, and join
+                      the momentum.
+                    </p>
+                    <a
+                      className="btn btn-sm btn-primary btn-quick-cta fw-500"
+                      href="https://github.com/open-metadata/OpenMetadata"
+                      target="_blank"
+                    >
+                      Explore
+                    </a>
+                  </div>
                 </div>
-                <div className="col-lg-3 mb-5 mb-lg-0">
-                  <Image
-                    style={{display: "inline-flex"}}
-                    width={80}
-                    src="/assets/icon-doc.svg"
-                    height={80}
-                    className="mb-4"
-                    alt="doc-svg"
-                    loading="lazy"
-                  />
-                  <h3 className="mb-2">Refer to our Docs</h3>
-                  <p className="mb-4">
-                    Benefit with the step-by-step implementation guides and get
-                    started.
-                  </p>
-                  <a
-                    className="btn btn-sm btn-primary btn-quick-cta fw-500"
-                    href="https://docs.open-metadata.org/"
-                    target="_blank"
-                  >
-                    Visit
-                  </a>
+                <div className="col-lg-3 col-md-6 mb-5">
+                  <div className="mb-4">
+                    <Image
+                      style={{display: "inline-flex"}}
+                      width={80}
+                      src="/assets/icon-doc.svg"
+                      height={80}
+                      className="mb-4"
+                      alt="doc-svg"
+                      loading="lazy"
+                    />
+                    <h3 className="mb-2">Refer to our Docs</h3>
+                    <p className="mb-4">
+                      Benefit with the step-by-step implementation guides and
+                      get started.
+                    </p>
+                    <a
+                      className="btn btn-sm btn-primary btn-quick-cta fw-500"
+                      href="https://docs.open-metadata.org/"
+                      target="_blank"
+                    >
+                      Visit
+                    </a>
+                  </div>
                 </div>
-                <div className="col-lg-3 mb-5 mb-lg-0">
-                  <Image
-                    style={{display: "inline-flex"}}
-                    src="/assets/icon-slack.svg"
-                    width={80}
-                    height={80}
-                    className="mb-4"
-                    alt="slack-icon-svg"
-                    loading="lazy"
-                  />
-                  <h3 className="mb-2">Connect on Slack</h3>
-                  <p className="mb-4">
-                    Ask questions, get help, discuss features, and connect with
-                    contributors &amp; users.
-                  </p>
-                  <a
-                    className="btn btn-sm btn-primary btn-quick-cta fw-500"
-                    href="https://slack.open-metadata.org/"
-                    target="_blank"
-                  >
-                    Connect
-                  </a>
+                <div className="col-lg-3 col-md-6 mb-5">
+                  <div className="mb-4">
+                    <Image
+                      style={{display: "inline-flex"}}
+                      src="/assets/icon-slack.svg"
+                      width={80}
+                      height={80}
+                      className="mb-4"
+                      alt="slack-icon-svg"
+                      loading="lazy"
+                    />
+                    <h3 className="mb-2">Connect on Slack</h3>
+                    <p className="mb-4">
+                      Ask questions, get help, discuss features, and connect
+                      with contributors &amp; users.
+                    </p>
+                    <a
+                      className="btn btn-sm btn-primary btn-quick-cta fw-500"
+                      href="https://slack.open-metadata.org/"
+                      target="_blank"
+                    >
+                      Connect
+                    </a>
+                  </div>
                 </div>
-                <div className="col-lg-3 mb-4">
-                  <Image
-                    style={{display: "inline-flex"}}
-                    width={80}
-                    className="mb-4"
-                    src="/assets/icon-join.svg"
-                    height={80}
-                    alt="join-us-svg"
-                    loading="lazy"
-                  />
-                  <h3 className="mb-2">Join our Community</h3>
-                  <p className="mb-4">
-                    Attend meetings, share your thoughts, and know where we are
-                    heading.
-                  </p>
-                  <a
-                    className="btn btn-sm btn-primary btn-quick-cta fw-500"
-                    href="community.html"
-                  >
-                    Join Now
-                  </a>
+                <div className="col-lg-3 col-md-6">
+                  <div className="mb-4">
+                    <Image
+                      style={{display: "inline-flex"}}
+                      width={80}
+                      className="mb-4"
+                      src="/assets/icon-join.svg"
+                      height={80}
+                      alt="join-us-svg"
+                      loading="lazy"
+                    />
+                    <h3 className="mb-2">Join our Community</h3>
+                    <p className="mb-4">
+                      Attend meetings, share your thoughts, and know where we
+                      are heading.
+                    </p>
+                    <a
+                      className="btn btn-sm btn-primary btn-quick-cta fw-500"
+                      href="community.html"
+                    >
+                      Join Now
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -337,6 +345,7 @@ export default function Home() {
               </svg>
             </div>
           </section>
+
           <section className="bg-light py-10" id="features">
             <div className="container px-10">
               <div className="row gx-5 justify-content-center">
