@@ -17,10 +17,10 @@ const CopyCode: React.FC = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="max-w-3xl text-center">
+      <div className="lg:max-w-3xl text-center max-lg:w-full ">
         <div className="text-3xl text-gray-900 mb-3">Ready to Start?</div>
         <h4>Run this command to get OpenMetadata up & running with Docker.</h4>
-        <div className="relative bg-[#212832] text-white p-4 rounded-[0.35rem] my-4 text-start font-mono">
+        <div className="relative bg-[#212832] text-white p-4 rounded-[0.35rem] my-4 text-start font-mono items-center">
           {copiedText}
           <button
             type="button"
@@ -45,9 +45,9 @@ const CopyCode: React.FC = () => {
                 />
               </svg>
             </span>
-            <span className="group-hover:text-black">Copy</span>
+            <span className="group-hover:text-black max-sm:hidden">Copy</span>
           </button>
-          <span>
+          <span style={{overflowWrap: "anywhere"}}>
             mkdir openmetadata-docker &amp;&amp; cd openmetadata-docker
             <br />
             wget -O
@@ -58,7 +58,7 @@ const CopyCode: React.FC = () => {
         </div>
         <div>
           <a
-            className="btn btn-primary fw-500 mr-2"
+            className="btn btn-primary fw-500 mr-2 max-sm:mb-2"
             href="https://docs.open-metadata.org/deployment"
             target="_blank"
             rel="noopener noreferrer"
