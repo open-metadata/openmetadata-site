@@ -5,6 +5,16 @@ const Features = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center mb-5">
+        <div className="order-2 md:order-1">
+          <div className="mb-4 w-full">
+            <Image
+              alt="feature01"
+              width={1000}
+              height={1000}
+              src="/assets/data-discovery.png"
+            />
+          </div>
+        </div>
         <div className="order-1 md:order-2">
           <h2 className="text-2xl font-bold mb-4">All Data in One Place</h2>
           <p className="mb-4">
@@ -40,19 +50,10 @@ const Features = () => {
             </svg>
           </a>
         </div>
-        <div className="order-2 md:order-1">
-          <div className="mb-4 w-full">
-            <Image
-              alt="feature01"
-              width={1000}
-              height={1000}
-              src="/assets/data-discovery.png"
-            />
-          </div>
-        </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-5 items-center justify-center mb-5">
-        <div className="order-1 md:order-2">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center mb-5">
+        <div className="order-1 sm:order-1">
           <div className="mb-4 w-full">
             <Image
               alt="feature02"
@@ -62,7 +63,7 @@ const Features = () => {
             />
           </div>
         </div>
-        <div className="order-2 md:order-1">
+        <div className="order-2 md:order-2">
           <h2>Data Collaboration</h2>
           <p className="lead">
             Fosters collaboration among the producers and consumers of data with
@@ -112,6 +113,16 @@ const Features = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center mb-5">
+        <div className="order-2 md:order-1">
+          <div className="mb-4 w-full">
+            <Image
+              alt="feature03"
+              width={1000}
+              height={1000}
+              src="/assets/data-versioning.png"
+            />
+          </div>
+        </div>
         <div className="order-1 md:order-2">
           <h2 className="text-2xl font-bold mb-4">Metadata Versioning</h2>
           <p className="mb-4">
@@ -146,19 +157,10 @@ const Features = () => {
             </svg>
           </a>
         </div>
-        <div className="order-2 md:order-1">
-          <div className="mb-4 w-full">
-            <Image
-              alt="feature03"
-              width={1000}
-              height={1000}
-              src="/assets/data-versioning.png"
-            />
-          </div>
-        </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-5 items-center justify-center mb-5">
-        <div className="order-1 md:order-2">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center mb-5">
+        <div className="order-1 md:order-1">
           <div className="mb-4 w-full">
             <Image
               alt="feature04"
@@ -168,7 +170,7 @@ const Features = () => {
             />
           </div>
         </div>
-        <div className="order-2 md:order-1">
+        <div className="order-2 md:order-2">
           <h2>Data Lineage</h2>
           <p>
             Supports a comprehensive lineage for
