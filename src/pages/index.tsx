@@ -14,6 +14,9 @@ import Navbar from "@/components/Navbar/Navbar.component";
 export default function Home() {
   return (
     <>
+      <Head>
+        <link rel="preload" href="/assets/home-section.png" as="image" />
+      </Head>
       <div id="layoutDefault">
         <div id="layoutDefault_content">
           <Navbar />
@@ -99,7 +102,7 @@ export default function Home() {
                       className="object-contain"
                       src="/assets/home-section.png"
                       alt="home-section-img"
-                      loading="lazy"
+                      loading="eager"
                     />
                   </div>
                 </div>

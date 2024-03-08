@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://open-metadata.org/
+
+# Sitemaps
+Sitemap: https://open-metadata.org/sitemap.xml
