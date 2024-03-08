@@ -1,9 +1,12 @@
 import Footer from "@/components/Footer/Footer.component";
 import Navbar from "@/components/Navbar/Navbar.component";
-import YoutubeEmbed from "@/components/common/YouTubeEmbed";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 
 export default function Community() {
+  const YoutubeEmbed = dynamic(() =>
+    import("@/components/common/YouTubeEmbed").then((res) => res.default)
+  );
   return (
     <>
       <div id="layoutDefault">
