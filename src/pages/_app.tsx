@@ -27,7 +27,7 @@ export default function App({Component, pageProps}: AppProps) {
         id="gtag-init"
         strategy="afterInteractive"
       />
-
+      <Script src={"/js/piwik.js"} defer />
       <Component {...pageProps} />
     </>
   );

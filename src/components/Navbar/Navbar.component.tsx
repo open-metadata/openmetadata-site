@@ -6,7 +6,7 @@ function Navbar() {
   const [scrolledNav, setScrolledNav] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 25) {
       setScrolledNav(true);
     } else {
       setScrolledNav(false);
@@ -23,12 +23,12 @@ function Navbar() {
 
   return (
     <nav
-      className={`px-4 lg:px-40 fixed top-0 z-50 w-full duration-300 ${
+      className={`relative top-0 z-50 w-full duration-300 ${
         scrolledNav ? "bg-white shadow-custom" : "bg-background"
       }`}
     >
-      <div className="lg:container mx-auto flex justify-between items-center">
-        <div className="flex items-center p-4 lg:p-0">
+      <div className="lg:container mx-auto flex justify-between items-center lg:py-4 lg:px-32 max-lg:contents">
+        <div className="flex items-center lg:p-0 max-lg:justify-around">
           <a className="navbar-brand text-primary" href="/">
             <Image
               height={56}
@@ -38,35 +38,35 @@ function Navbar() {
               loading="lazy"
             />
           </a>
-        </div>
 
-        <div
-          className="p-4 hamburger lg:hidden"
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-6 h-6"
+          <div
+            className="p-4 hamburger lg:hidden"
+            onClick={() => setOpen((prev) => !prev)}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
         </div>
 
         <div
           className={`${
             open ? "block" : "hidden"
-          } h-auto lg:flex lg:items-center absolute top-full left-0 right-0 bg-white lg:relative lg:top-auto lg:left-auto lg:right-auto pb-4`}
+          } h-auto lg:flex bg-white lg:items-center relative top-full left-0 right-0 lg:relative lg:top-auto lg:left-auto lg:right-auto max-lg:pb-4`}
         >
           <ul className="navbar-nav ml-auto mr-4 lg:mr-0 lg:flex-row">
-            <li className="nav-item lg:mr-5 max-lg:pl-10">
+            <li className="nav-item lg:mr-7 max-lg:pl-10">
               <a className="nav-link" href="community">
                 Community
               </a>
@@ -81,7 +81,7 @@ function Navbar() {
                 Sandbox
               </a>
             </li>
-            <li className="nav-item mr-5 max-lg:pl-10">
+            <li className="nav-item mr-7 max-lg:pl-10">
               <a
                 className="nav-link"
                 href="https://docs.open-metadata.org/"
@@ -91,7 +91,7 @@ function Navbar() {
                 Documentation
               </a>
             </li>
-            <li className="nav-item mr-5 max-lg:pl-10">
+            <li className="nav-item mr-7 max-lg:pl-10">
               <a
                 className="nav-link"
                 href="http://blog.open-metadata.org/"
@@ -101,7 +101,7 @@ function Navbar() {
                 Blog
               </a>
             </li>
-            <li className="nav-item mr-5 max-lg:pl-10">
+            <li className="nav-item mr-7 max-lg:pl-10">
               <a
                 className="nav-link"
                 href="https://github.com/open-metadata/OpenMetadata"
@@ -113,7 +113,7 @@ function Navbar() {
             </li>
           </ul>
           <a
-            className="btn fw-500 btn-primary rounded-full h-[42px] max-lg:ml-10"
+            className="btn fw-500 btn-primary rounded-full h-[42px] max-lg:ml-10 lg:ml-4"
             href="https://getcollate.io"
             target="_blank"
           >

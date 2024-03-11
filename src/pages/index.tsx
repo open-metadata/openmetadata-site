@@ -19,10 +19,12 @@ export default function Home() {
       </Head>
       <div id="layoutDefault">
         <div id="layoutDefault_content">
-          <Navbar />
-          <header className="page-header-ui page-header-ui-light bg-white max-lg:mt-0">
+          <div
+            style={{position: "fixed", top: 0, right: 0, left: 0, zIndex: 1030}}
+          >
+            <Navbar />
             <div className="saas-strip max-lg:px-10">
-              <div className="row gx-5 align-items-center">
+              <div className="row gx-5 align-items-center lg:px-20">
                 <div className="col-lg-9 max-lg:mb-3">
                   <strong>OpenMetadata SaaS Trial Offer!</strong> Go ahead &amp;
                   access the full suite of features to rebuild trust in your
@@ -39,6 +41,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+          <header className="page-header-ui page-header-ui-light bg-white max-lg:mt-0">
             <div className="page-header-ui-content pt-5">
               <div className="container px-10">
                 <div className="row gx-5 align-items-center">
@@ -173,7 +177,7 @@ export default function Home() {
               <div className="row gx-5 justify-content-center z-1">
                 <div className="col-lg-8" data-aos="fade-up">
                   <div className="card">
-                    <div className="card-body p-2">
+                    <div className="card-body p-0">
                       <div className="video bg-img-cover rounded">
                         <YoutubeEmbed videoId="pF8L_mAtexo" />
                       </div>
