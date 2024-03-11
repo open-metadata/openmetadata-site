@@ -1,11 +1,66 @@
 import Footer from "@/components/Footer/Footer.component";
 import Navbar from "@/components/Navbar/Navbar.component";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Community() {
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          name="description"
+          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+        />
+        <meta
+          name="keywords"
+          content="best open-source data catalog community, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool"
+        />
+        <meta name="author" content="open-metadata" />
+
+        {/* Open Graph tags start  */}
+        <meta
+          property="og:title"
+          content="OpenMetadata: Join the #1 Open Source Data Community"
+        />
+        <meta
+          property="og:description"
+          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+        />
+        <meta
+          property="og:image"
+          content="https://open-metadata.org/images/favicon.png"
+        />
+        <meta property="og:type" content="metadata tool" />
+        <meta property="og:url" content="https://open-metadata.org" />
+        {/* {/* Open Graph tags end  */}
+
+        {/* {/* Twitter Card start  */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="https://open-metadata.org" />
+        <meta
+          name="twitter:title"
+          content="OpenMetadata: Join the #1 Open Source Data Community"
+        />
+        <meta
+          name="twitter:description"
+          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+        />
+        <meta
+          name="twitter:image"
+          content="https://open-metadata.org/images/favicon.png"
+        />
+
+        {/* {/* Twitter Card end  */}
+
+        <title>OpenMetadata: Join the #1 Open Source Data Community</title>
+      </Head>
       <div id="layoutDefault">
         <div id="layoutDefault_content">
           <main>
@@ -29,10 +84,10 @@ export default function Community() {
                     </div>
                     <div className="col-lg-6" data-aos="fade-up">
                       <h1 className="page-header-ui-title font-semibold">
-                        Meet & Greet on Slack
+                        Meet &amp; Greet on Slack
                       </h1>
                       <p className="page-header-ui-text mb-2">
-                        That’s where the OpenMetadata enthusiasts are;
+                        That's where the OpenMetadata enthusiasts are;
                         <br />
                         apart from&nbsp;
                         <a
@@ -51,7 +106,7 @@ export default function Community() {
                         their lives easier.
                       </p>
                       <p>
-                        Learn, engage, and get going with your organization’s
+                        Learn, engage, and get going with your organization's
                         needs!
                       </p>
                       <div className="flex flex-col sm:flex-row max-lg:mt-3">
@@ -96,7 +151,7 @@ export default function Community() {
                     <p className="text-lg">
                       Join us&nbsp;
                       <strong>every month</strong> over Zoom to learn about
-                      OpenMetadata’s progress. Catch up with some exciting news
+                      OpenMetadata's progress. Catch up with some exciting news
                       on the upcoming features. Benefit from the informative
                       webinars, watch live demos, ask questions, and share your
                       feedback.
@@ -152,7 +207,7 @@ export default function Community() {
                         <YoutubeEmbed videoId="ihwtuNHt1kI" />
                         <p className="font-semibold mb-0 mt-2">
                           Here's a Webinar on Data Quality Simplified:
-                          Effortlessly Build, Deploy, Monitor, & Configure
+                          Effortlessly Build, Deploy, Monitor, &amp; Configure
                           Alerts with our No-Code Platform. Watch Teddy
                           Crépineau, Founding Software Engineer at Collate demo
                           the easy-to-use and extensible data quality features
@@ -181,8 +236,8 @@ export default function Community() {
                     <div className="text-center mt-5">
                       <p className="text-lg">
                         Watch out for an end-to-end coverage on everything you
-                        need to know about Data Lineage, Data Quality &
-                        Profiler, Roles & Policies, Custom Connectors, Data
+                        need to know about Data Lineage, Data Quality &amp;
+                        Profiler, Roles &amp; Policies, Custom Connectors, Data
                         Culture, Storage Services, Setting up Integrations for
                         Metadata Ingestion, Data Discovery, and a lot more.
                       </p>
@@ -221,8 +276,8 @@ export default function Community() {
                       .
                     </p>
                     <p className="mb-5">
-                      You’ll also find some short feature videos there. Here’s
-                      what’s most recent. Take a look!
+                      You'll also find some short feature videos there. Here's
+                      what's most recent. Take a look!
                     </p>
                     <div className="row gx-5">
                       <div className="col-lg-6 mb-4">

@@ -109,7 +109,12 @@ const Testimonials = () => {
                       </a>
                     </strong>
                   </div>
-                  <div className="text-left">{description}</div>
+                  <div
+                    className="text-left"
+                    dangerouslySetInnerHTML={{
+                      __html: description.replace(/\n/g, "<br />"),
+                    }}
+                  />
                   <p className="card-footer-custom font-500">
                     <strong>- {name}</strong>
                   </p>
