@@ -47,7 +47,7 @@ const Integrations: React.FC = () => {
       <div
         key={service.name}
         className="col-lg-2 col-md-3 col-sm-4 mb-4 flex justify-center items-center"
-        // data-aos="fade-up"
+        data-aos="fade-up"
       >
         <a href={service.href ?? "#"} target="_blank" className="text-center">
           <Image

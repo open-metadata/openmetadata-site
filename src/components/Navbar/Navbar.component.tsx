@@ -40,7 +40,7 @@ function Navbar() {
           </a>
 
           <div
-            className="p-4 hamburger lg:hidden"
+            className="p-4 hamburger lg:hidden cursor-pointer"
             onClick={() => setOpen((prev) => !prev)}
           >
             <svg
