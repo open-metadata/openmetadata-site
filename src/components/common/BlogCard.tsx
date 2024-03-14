@@ -39,15 +39,15 @@ const BlogCard: React.FC<BlogCardProps> = ({
       <div className="flex justify-between items-center border-top px-5 py-3">
         <Link
           rel="noopener noreferrer"
-          aria-label="Read More"
+          aria-label="Read More here"
           className="text-primary inline-flex items-center text-[14px] hover:no-underline"
           href={blogLink}
           target="_blank"
         >
-          Read more
+          Read more here
         </Link>
         <a
-          aria-label="Read More"
+          aria-label="Read More here"
           href={blogLink}
           target="_blank"
           className="text-primary inline-flex items-center"

@@ -49,7 +49,7 @@ export const FeatureItem = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learn More
+              Learn More here
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -77,7 +77,7 @@ export const FeatureItem = ({
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learn More
+              Learn More here
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
