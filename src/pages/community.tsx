@@ -65,7 +65,7 @@ export default function Community() {
         <div id="layoutDefault_content">
           <main>
             <Navbar />
-            <header className="page-header-ui page-header-ui-light bg-white max-lg:mt-0">
+            <header className="page-header-ui page-header-ui-light bg-white lg:pt-0 max-lg:mt-0">
               <div className="page-header-ui-content pt-5 max-lg:pt-0">
                 <div className="container px-10">
                   <div className="row gx-5 align-items-center">
@@ -83,7 +83,7 @@ export default function Community() {
                       />
                     </div>
                     <div className="col-lg-6" data-aos="fade-up">
-                      <h1 className="page-header-ui-title font-semibold">
+                      <h1 className="page-header-ui-title font-bold leading-[60px]">
                         Meet &amp; Greet on Slack
                       </h1>
                       <p className="page-header-ui-text mb-2">
@@ -145,10 +145,10 @@ export default function Community() {
               <div className="container px-10">
                 <div className="row gx-5 align-items-center justify-content-center">
                   <div className="col-lg-6">
-                    <h2 className="section-header font-semibold mb-4">
+                    <h2 className="section-header font-semibold mb-4 leading-10">
                       Monthly Meetups
                     </h2>
-                    <p className="text-lg">
+                    <p className="text-[18px]">
                       Join us&nbsp;
                       <strong>every month</strong> over Zoom to learn about
                       OpenMetadata's progress. Catch up with some exciting news
@@ -156,11 +156,11 @@ export default function Community() {
                       webinars, watch live demos, ask questions, and share your
                       feedback.
                     </p>
-                    <p className="text-lg mb-4">
+                    <p className="text-[18px] mb-4">
                       Stay tuned for the latest in Metadata management!
                     </p>
                     <a
-                      className="btn btn-primary font-semibold"
+                      className="btn btn-primary"
                       href="https://www.meetup.com/openmetadata-meetup-group/"
                       target="_blank"
                     >
@@ -234,7 +234,7 @@ export default function Community() {
                 <div className="row gx-5 justify-content-center">
                   <div className="col-lg-8">
                     <div className="text-center mt-5">
-                      <p className="text-lg">
+                      <p className="text-[18px]">
                         Watch out for an end-to-end coverage on everything you
                         need to know about Data Lineage, Data Quality &amp;
                         Profiler, Roles &amp; Policies, Custom Connectors, Data
@@ -261,7 +261,7 @@ export default function Community() {
               <div className="container px-10">
                 <div className="row gx-5 justify-content-center">
                   <div className="col-lg-12 text-center">
-                    <h2 className="section-header font-semibold mb-4">
+                    <h2 className="section-header font-semibold mb-4 leading-8">
                       Missed a Meeting? Access it Anytime
                     </h2>
                     <p>

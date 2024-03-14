@@ -24,7 +24,7 @@ const CopyCode: React.FC = () => {
           {copiedText}
           <button
             type="button"
-            className="btn-sm group py-2 px-3 right-4 top-4 absolute border-white border-1 rounded flex gap-1 items-center hover:bg-slate-200 hover:color"
+            className="btn-sm group py-2 px-2 right-4 top-4 absolute border-white border-1 rounded flex gap-1 items-center hover:bg-slate-200 hover:color"
             id="om-command-copy-button"
             onClick={() => onCopyToClipBoard()}
             title="Copy"
@@ -36,7 +36,7 @@ const CopyCode: React.FC = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-5 h-5 group-hover:stroke-black"
+                className="w-4 h-4 group-hover:stroke-black"
               >
                 <path
                   strokeLinecap="round"

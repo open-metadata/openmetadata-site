@@ -15,7 +15,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-white mb-4 flex flex-col transition-shadow hover:shadow-lg cursor-pointer">
+    <div className="bg-white mb-4 flex flex-col hover:shadow-lg cursor-pointer hover:-translate-y-1 transition ease-in-out">
       <a
         className="block relative h-48 rounded overflow-hidden"
         href={blogLink}

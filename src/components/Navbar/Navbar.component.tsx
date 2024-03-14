@@ -27,8 +27,8 @@ function Navbar() {
         scrolledNav ? "bg-white shadow-custom" : "bg-background"
       }`}
     >
-      <div className="lg:container mx-auto flex justify-between items-center lg:py-4 lg:px-32 max-lg:contents">
-        <div className="flex items-center lg:p-0 max-lg:justify-around">
+      <div className=" mx-auto flex justify-between items-center lg:py-4 lg:px-32 max-lg:contents">
+        <div className="flex items-center lg:pl-12 max-lg:justify-around">
           <a className="navbar-brand text-primary" href="/">
             <Image
               height={56}
@@ -113,7 +113,7 @@ function Navbar() {
             </li>
           </ul>
           <a
-            className="btn fw-500 btn-primary rounded-full h-[42px] max-lg:ml-10 lg:ml-4"
+            className="btn fw-500 btn-primary rounded-full h-[42px] max-lg:ml-10 lg:mx-4"
             href="https://getcollate.io"
             target="_blank"
           >

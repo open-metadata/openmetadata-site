@@ -20817,7 +20817,7 @@ a:hover {
 /* **********************  Testimonials  ************************ */
 
 .testimonial-card {
-  min-height: 424px;
+  min-height: 500px;
 }
 
 .testimonial-card .card-body .card-team-img {
@@ -20917,9 +20917,15 @@ a:hover {
 
 @media (max-width: 550px) {
   .testimonial-card {
-    min-height: 542px;
+    min-height: 600px;
   }
 }
+@media (max-width: 430px) {
+  .testimonial-card {
+    min-height: 1000px !important;
+  }
+}
+
 .text-left {
   text-align: left !important;
 }

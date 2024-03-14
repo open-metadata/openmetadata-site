@@ -73,7 +73,7 @@ export default function Home() {
             style={{position: "fixed", top: 0, right: 0, left: 0, zIndex: 1030}}
           >
             <Navbar />
-            <div className="saas-strip max-lg:px-10">
+            <div className="saas-strip max-lg:px-10 lg:px-12">
               <div className="row gx-5 align-items-center lg:px-20">
                 <div className="col-lg-9 max-lg:mb-3">
                   <strong>OpenMetadata SaaS Trial Offer!</strong> Go ahead &amp;
@@ -92,13 +92,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <header className="page-header-ui page-header-ui-light bg-white max-lg:mt-0">
+          <header className="page-header-ui page-header-ui-light bg-white max-lg:mt-20">
             <div className="page-header-ui-content pt-5">
               <div className="container px-10">
                 <div className="row gx-5 align-items-center">
                   <div className="col-lg-7" data-aos="fade-up">
-                    <h1 className="text-4xl fw-700 mb-4 mt-4">OpenMetadata</h1>
-                    <h3 className="text-3xl text-primary font-medium mb-2">
+                    <h1 className="text-[40px] leading-[48px] fw-700 mb-4 mt-4">
+                      OpenMetadata
+                    </h1>
+                    <h3 className="text-[28px] leading-8 text-primary font-medium mb-2">
                       A Single Place to Discover, Collaborate and get your Data
                       Right
                     </h3>
@@ -227,7 +229,7 @@ export default function Home() {
               <div className="row gx-5 justify-content-center z-1">
                 <div className="col-lg-8" data-aos="fade-up">
                   <div className="card">
-                    <div className="card-body p-0">
+                    <div className="card-body p-2">
                       <div className="video bg-img-cover rounded">
                         <YoutubeEmbed videoId="pF8L_mAtexo" />
                       </div>
@@ -301,7 +303,7 @@ export default function Home() {
                       alt="git-svg"
                       loading="lazy"
                     />
-                    <h3 className="mb-2">Let’s Build on GitHub</h3>
+                    <h3 className="mb-2 font-medium">Let’s Build on GitHub</h3>
                     <p className="mb-4">
                       Contribute code, try out good starting issues, and join
                       the momentum.
@@ -326,7 +328,7 @@ export default function Home() {
                       alt="doc-svg"
                       loading="lazy"
                     />
-                    <h3 className="mb-2">Refer to our Docs</h3>
+                    <h3 className="mb-2 font-medium">Refer to our Docs</h3>
                     <p className="mb-4">
                       Benefit with the step-by-step implementation guides and
                       get started.
@@ -351,7 +353,7 @@ export default function Home() {
                       alt="slack-icon-svg"
                       loading="lazy"
                     />
-                    <h3 className="mb-2">Connect on Slack</h3>
+                    <h3 className="mb-2 font-medium">Connect on Slack</h3>
                     <p className="mb-4">
                       Ask questions, get help, discuss features, and connect
                       with contributors &amp; users.
@@ -376,7 +378,7 @@ export default function Home() {
                       alt="join-us-svg"
                       loading="lazy"
                     />
-                    <h3 className="mb-2">Join our Community</h3>
+                    <h3 className="mb-2 font-medium">Join our Community</h3>
                     <p className="mb-4">
                       Attend meetings, share your thoughts, and know where we
                       are heading.

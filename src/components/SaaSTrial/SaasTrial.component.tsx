@@ -1,7 +1,7 @@
 import React from "react";
 const SaasTrial = () => {
   return (
-    <section className="bg-cloud bg-img-cover  overlay overlay-light overlay-80  relative pt-10 pb-5 overflow-hidden">
+    <section className="bg-cloud bg-img-cover overlay overlay-light overlay-80  relative pt-10 pb-5 overflow-hidden">
       <div className="container px-5 z-10 relative">
         <div className="row gx-5 justify-center">
           <div className="col-lg-8">
@@ -22,7 +22,7 @@ const SaasTrial = () => {
                 <a
                   href="https://getcollate.io"
                   target="_blank"
-                  className="btn-sm btn-primary px-3 py-3 rounded-md transition duration-300 ease-in-out  text-white hover:no-underline	"
+                  className="btn-md btn-primary px-3 py-3 rounded-md transition duration-300 ease-in-out  text-white hover:no-underline	"
                 >
                   Sign Up for the SaaS Trial
                 </a>
@@ -31,14 +31,14 @@ const SaasTrial = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full text-light z-0">
+      <div className="svg-border-rounded text-light">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 144.54 17.34"
           preserveAspectRatio="none"
-          className="fill-current"
+          fill="currentColor"
         >
-          <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0" />
+          <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
         </svg>
       </div>
     </section>
