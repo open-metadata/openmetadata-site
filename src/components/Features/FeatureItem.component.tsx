@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {useEffect, useState} from "react";
 
 interface FeatureItemProps {
@@ -42,7 +43,7 @@ export const FeatureItem = ({
           <div className="order-2 md:order-2">
             <h2 className="text-2xl mb-4 font-medium">{heading}</h2>
             {description}
-            <a
+            <Link
               className="text-primary inline-flex items-center"
               href={learnMoreLink}
               target="_blank"
@@ -62,7 +63,7 @@ export const FeatureItem = ({
                   d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </>
       ) : (
@@ -70,7 +71,7 @@ export const FeatureItem = ({
           <div className="order-1 md:order-2 w-11/12">
             <h2 className="text-2xl mb-4 font-medium">{heading}</h2>
             <p className="mb-4">{description}</p>
-            <a
+            <Link
               className="text-primary inline-flex items-center"
               href={learnMoreLink}
               target="_blank"
@@ -90,7 +91,7 @@ export const FeatureItem = ({
                   d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="order-2 md:order-1">
             <div className="mb-4 w-full" data-aos="fade-left">

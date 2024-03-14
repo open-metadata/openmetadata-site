@@ -10,6 +10,7 @@ import Footer from "@/components/Footer/Footer.component";
 import Integrations from "@/components/Integrations/Integrations";
 import Navbar from "@/components/Navbar/Navbar.component";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -184,21 +185,19 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-lg-6">
-                  <div>
-                    <strong>OpenMetadata 1.3.0 Released</strong> Intuitive
-                    Lineage UI, Data Observability Alerts, Data Quality Incident
-                    Manager, Custom Metrics for Profiler, Knowledge Center
-                    Improvements, and lots more.
-                    <strong>OpenMetadata 1.3.0 Release </strong>
-                    <a
-                      style={{color: "#7147e8"}}
-                      href="https://blog.open-metadata.org/openmetadata-release-1-3-ac801834ee80"
-                      target="_blank"
-                    >
-                      Read more here
-                    </a>
-                    .
-                  </div>
+                  <strong>OpenMetadata 1.3.0 Released</strong> Intuitive Lineage
+                  UI, Data Observability Alerts, Data Quality Incident Manager,
+                  Custom Metrics for Profiler, Knowledge Center Improvements,
+                  and lots more.
+                  <strong>OpenMetadata 1.3.0 Release </strong>
+                  <Link
+                    className="text-primary"
+                    href="https://blog.open-metadata.org/openmetadata-release-1-3-ac801834ee80"
+                    target="_blank"
+                  >
+                    Read more here
+                  </Link>
+                  .
                 </div>
               </div>
             </div>

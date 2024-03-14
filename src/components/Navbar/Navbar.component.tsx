@@ -113,6 +113,7 @@ function Navbar() {
             </li>
           </ul>
           <a
+            aria-label="Visit Collate website"
             className="btn fw-500 btn-primary rounded-full h-[42px] max-lg:ml-10 lg:mx-4"
             href="https://getcollate.io"
             target="_blank"

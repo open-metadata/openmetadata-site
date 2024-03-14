@@ -30,7 +30,6 @@ const Testimonials = () => {
       </div>
     );
   }
-
   function SamplePrevArrow(props) {
     const {onClick} = props;
     return (
@@ -67,46 +66,49 @@ const Testimonials = () => {
   };
 
   return (
-    <div>
-      <Slider {...testimonialSettings} ref={slider}>
-        {TESTIMONIALS_LIST.map(
-          ({name, image, description, company, url, title}, index) => (
-            <div key={index}>
-              <div className="testimonial-card card card-team">
-                <div className="card-body">
-                  <Image
-                    width={200}
-                    height={200}
-                    className="card-team-img mb-3"
-                    src={image}
-                    alt={company}
-                  />
-                  <div className="card-team-name mb-3">
-                    <strong>
-                      <a className="text-primary" href={url} target="_blank">
-                        {company}
-                      </a>
-                    </strong>
-                  </div>
-                  <div
-                    className="text-left"
-                    dangerouslySetInnerHTML={{
-                      __html: description.replace(/\n/g, "<br />"),
-                    }}
-                  />
-                  <p className="card-footer-custom font-500">
-                    <strong>- {name}</strong>
-                  </p>
-                  <p className="card-footer-custom opacity-6 text-italic">
-                    {title}
-                  </p>
+    <Slider {...testimonialSettings} ref={slider}>
+      {TESTIMONIALS_LIST.map(
+        ({name, image, description, company, url, title}, index) => (
+          <div key={index}>
+            <div className="testimonial-card card card-team">
+              <div className="card-body">
+                <Image
+                  width={200}
+                  height={200}
+                  className="card-team-img mb-3"
+                  src={image}
+                  alt={company}
+                />
+                <div className="card-team-name mb-3">
+                  <strong>
+                    <a
+                      tabIndex="-1"
+                      className="text-primary"
+                      href={url}
+                      target="_blank"
+                    >
+                      {company}
+                    </a>
+                  </strong>
                 </div>
+                <div
+                  className="text-left"
+                  dangerouslySetInnerHTML={{
+                    __html: description.replace(/\n/g, "<br />"),
+                  }}
+                />
+                <p className="card-footer-custom font-500">
+                  <strong>- {name}</strong>
+                </p>
+                <p className="card-footer-custom opacity-6 text-italic">
+                  {title}
+                </p>
               </div>
             </div>
-          )
-        )}
-      </Slider>
-    </div>
+          </div>
+        )
+      )}
+    </Slider>
   );
 };
 

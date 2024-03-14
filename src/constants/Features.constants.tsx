@@ -33,9 +33,7 @@ export const FEATURES_DATA = [
         </p>
         <div className="row gx-5">
           <div className="col-md-12 mb-4">
-            <h6>
-              <strong>Activity Feeds</strong>
-            </h6>
+            <strong>Activity Feeds</strong>
             <p className="mb-2 small">
               View a summary of all the metadata change events. Keep track of
               what's going on with your data.
