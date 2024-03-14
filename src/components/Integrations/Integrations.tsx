@@ -44,11 +44,7 @@ const Integrations: React.FC = () => {
     }
 
     return sortServicesByName(filteredServices).map((service) => (
-      <div
-        key={service.name}
-        className="col-lg-2 col-md-3 col-sm-4 mb-4 flex justify-center items-center"
-        data-aos="fade-up"
-      >
+      <div key={service.name} className="mb-4 flex" data-aos="fade-up">
         <a href={service.href ?? "#"} target="_blank" className="text-center">
           <Image
             alt={service.alt}
@@ -118,7 +114,10 @@ const Integrations: React.FC = () => {
             </div>
           </div>
           <div className="col-lg-10">
-            <div className="row" id="integration-container">
+            <div
+              className="grid grid-cols-6 max-md:grid-cols-3  mt-6 md:mt-0 lg:mt-0 place-items-center"
+              id="integration-container"
+            >
               {filterServices(selectedTab)}
             </div>
           </div>
