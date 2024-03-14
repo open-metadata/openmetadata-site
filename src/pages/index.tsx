@@ -259,12 +259,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div
-                className="row gx-5 justify-content-center"
-                id="testimonialImagesContainer"
-              >
-                <Testimonials />
-              </div>
+              <Testimonials />
             </div>
           </section>
           <section className="bg-white pb-5">
