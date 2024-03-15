@@ -40,9 +40,7 @@ export const FEATURES_DATA = [
             </p>
           </div>
           <div className="col-md-12 mb-4">
-            <h6>
-              <strong>Webhooks &amp; Slack Integration</strong>
-            </h6>
+            <strong>Webhooks &amp; Slack Integration</strong>
             <p className="mb-2 small">
               With webhooks, register URLs to receive metadata event
               notifications. Set up Slack notifications to publish metadata
