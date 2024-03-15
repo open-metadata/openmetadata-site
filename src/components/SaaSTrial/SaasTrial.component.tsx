@@ -1,7 +1,10 @@
 import React from "react";
 const SaasTrial = () => {
   return (
-    <section className="bg-cloud bg-img-cover overlay overlay-light overlay-80  relative pt-10 pb-5 overflow-hidden">
+    <section
+      className="bg-cloud bg-img-cover overlay overlay-light overlay-80  relative pt-10 pb-5 overflow-hidden"
+      rel="preload"
+    >
       <div className="container px-5 z-10 relative">
         <div className="row gx-5 justify-center">
           <div className="col-lg-8">
