@@ -177,21 +177,19 @@ export default function Home() {
             </div>
           </header>
           <section className="bg-banner py-6">
-            <div className="container px-10 z-[1]">
-              <div className="row gx-5 justify-content-center text-center">
-                <div className="col-lg-6">
-                  <div className="text-primary text-4xl font-normal">
-                    1.3.0 Released - Try Now!
-                  </div>
+            <div className="container px-10 z-1">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center lg:justify-items-start text-center lg:text-left">
+                <div className="text-primary text-4xl font-normal">
+                  1.3.0 Released - Try Now!
                 </div>
-                <div className="col-lg-6">
+                <div className="text-center">
                   <strong>OpenMetadata 1.3.0 Released</strong> Intuitive Lineage
                   UI, Data Observability Alerts, Data Quality Incident Manager,
                   Custom Metrics for Profiler, Knowledge Center Improvements,
                   and lots more.
                   <br />
                   <strong>OpenMetadata 1.3.0 Release </strong>
-                  <Link
+                  <a
                     rel="noopener noreferrer"
                     aria-label="Read More here"
                     className="text-primary"
@@ -199,7 +197,7 @@ export default function Home() {
                     target="_blank"
                   >
                     Read more here
-                  </Link>
+                  </a>
                   .
                 </div>
               </div>
@@ -215,6 +213,7 @@ export default function Home() {
               </svg>
             </div>
           </section>
+
           <section className="bg-light py-10">
             <div className="container px-10">
               <div className="row gx-5 justify-content-center text-center mb-4">
