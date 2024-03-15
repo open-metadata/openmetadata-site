@@ -192,7 +192,7 @@ export default function Home() {
                   <Link
                     rel="noopener noreferrer"
                     aria-label="Read More here"
-                    className="text-primary"
+                    className="text-primary font-medium"
                     href="https://blog.open-metadata.org/openmetadata-release-1-3-ac801834ee80"
                     target="_blank"
                   >
