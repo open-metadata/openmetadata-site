@@ -75,6 +75,7 @@ export default function Community() {
                       data-aos-delay="100"
                     >
                       <Image
+                        loading="eager"
                         alt="community"
                         width={1000}
                         className="w-full"
