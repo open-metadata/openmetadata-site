@@ -176,7 +176,7 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <section className="bg-banner py-6">
+          <section className="bg-banner py-6" rel="preload">
             <div className="container px-10 z-1">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center lg:justify-items-start text-center lg:text-left">
                 <div className="text-primary text-4xl font-normal">
