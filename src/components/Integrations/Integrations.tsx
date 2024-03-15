@@ -15,51 +15,54 @@ interface Connector {
 }
 
 const Integrations: React.FC = () => {
+  const [allServices, setAllServices] = useState<Service[]>([]);
   const [selectedTab, setSelectedTab] = useState<string>("All connectors");
 
-  const filteredServices = useMemo(() => {
-    if (selectedTab === "All connectors") {
-      return INTEGRATION_SERVICES.reduce(
-        (acc: Service[], connector: Connector) => {
-          acc.push(...connector.services);
-          return acc;
-        },
-        []
+  useEffect(() => {
+    const services: Service[] = [];
+    INTEGRATION_SERVICES.forEach((connector: Connector) => {
+      connector.services.forEach((service: Service) => {
+        services.push(service);
+      });
+    });
+    setAllServices(services);
+  }, []);
+
+  const sortServicesByName = (services: Service[]): Service[] => {
+    return services.sort((a, b) => a.name.localeCompare(b.name));
+  };
+
+  const filterServices = (connectorCategory?: string) => {
+    let filteredServices: Service[] = allServices;
+    if (connectorCategory && connectorCategory !== "All connectors") {
+      const selectedConnectorCategory = INTEGRATION_SERVICES.find(
+        (connector) => connector.connector === connectorCategory
       );
-    } else {
-      const selectedConnector = INTEGRATION_SERVICES.find(
-        (connector) => connector.connector === selectedTab
-      );
-      return selectedConnector ? selectedConnector.services : [];
+      if (selectedConnectorCategory) {
+        filteredServices = selectedConnectorCategory.services;
+      }
     }
-  }, [selectedTab]);
+
+    return sortServicesByName(filteredServices).map((service) => (
+      <div key={service.name} className="mb-4 flex" data-aos="fade-up">
+        <a href={service.href ?? "#"} target="_blank" className="text-center">
+          <Image
+            alt={service.alt}
+            width={1000}
+            className="w-20 h-20 mb-2"
+            height={1000}
+            src={service.src}
+            style={{display: "block", margin: "auto"}}
+          />
+          <h5 className="mb-2">{service.name}</h5>
+        </a>
+      </div>
+    ));
+  };
 
   const handleTabClick = (category: string) => {
     setSelectedTab(category);
   };
-
-  const handleCategoryClick = (
-    e: React.MouseEvent<HTMLDivElement, MouseEvent>
-  ) => {
-    const category = (e.target as HTMLDivElement).getAttribute("data-tab");
-    if (category) handleTabClick(category);
-  };
-
-  const renderService = (service: Service) => (
-    <div key={service.name} className="mb-4 flex" data-aos="fade-up">
-      <a href={service.href ?? "#"} target="_blank" className="text-center">
-        <Image
-          alt={service.alt}
-          width={1000}
-          className="w-20 h-20 mb-2"
-          height={1000}
-          src={service.src}
-          style={{display: "block", margin: "auto"}}
-        />
-        <h5 className="mb-2">{service.name}</h5>
-      </a>
-    </div>
-  );
 
   return (
     <section className="bg-white pb-15 pt-10" id="integrations">
@@ -81,7 +84,6 @@ const Integrations: React.FC = () => {
               className="flex flex-col"
               id="integration-category"
               data-selected={selectedTab}
-              onClick={handleCategoryClick}
             >
               <div
                 key="All connectors"
@@ -90,6 +92,7 @@ const Integrations: React.FC = () => {
                 }`}
                 role="button"
                 data-tab="All connectors"
+                onClick={() => handleTabClick("All connectors")}
               >
                 <h5>All connectors</h5>
               </div>
@@ -103,6 +106,7 @@ const Integrations: React.FC = () => {
                   }`}
                   role="button"
                   data-tab={connector.connector}
+                  onClick={() => handleTabClick(connector.connector)}
                 >
                   <h5>{connector.connector}</h5>
                 </div>
@@ -111,10 +115,10 @@ const Integrations: React.FC = () => {
           </div>
           <div className="col-lg-10">
             <div
-              className="grid grid-cols-6 max-md:grid-cols-3 mt-6 md:mt-0 lg:mt-0 place-items-center"
+              className="grid grid-cols-6 max-md:grid-cols-3  mt-6 md:mt-0 lg:mt-0 place-items-center"
               id="integration-container"
             >
-              {filteredServices.map(renderService)}
+              {filterServices(selectedTab)}
             </div>
           </div>
         </div>
