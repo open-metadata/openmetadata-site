@@ -191,6 +191,11 @@ export default function Community() {
 
             <section className="bg-white py-10">
               <div className="container px-10">
+                <div className="text-center mb-5">
+                  <h2 className="section-header font-semibold">
+                    OpenMetadata Webinars
+                  </h2>
+                </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
                   <div className="max-w-lg">
                     <div className="card">
