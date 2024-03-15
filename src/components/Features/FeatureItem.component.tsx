@@ -33,7 +33,7 @@ export const FeatureItem = ({
           <div className="order-2 md:order-1 w-11/12">
             <div className="mb-4 w-full" data-aos="fade-right">
               <picture>
-                <source src={imageSrc} type="image/webp" />
+                <source srcSet={imageSrc} type="image/webp" />
                 <img
                   height={"100%"}
                   width={"100%"}
@@ -101,7 +101,7 @@ export const FeatureItem = ({
           <div className="order-2 md:order-1">
             <div className="mb-4 w-full" data-aos="fade-left">
               <picture>
-                <source src={imageSrc} type="image/webp" />
+                <source srcSet={imageSrc} type="image/webp" />
                 <img
                   height={"100%"}
                   width={"100%"}
