@@ -154,8 +154,8 @@ export default function Home() {
                     data-aos-delay="100"
                   >
                     <Image
-                      height={1000}
-                      width={1000}
+                      height={800}
+                      width={800}
                       className="object-contain"
                       src="/assets/home-section.webp"
                       alt="home-section-img"
