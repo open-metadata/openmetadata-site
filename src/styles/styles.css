@@ -20775,10 +20775,10 @@ a:hover {
   font-size: 2rem !important;
 }
 .bg-ready {
-  background-image: url('../../public/assets/bg-workstation.jpg');
+  background-image: url('../../public/assets/bg-workstation.webp');
 }
 .bg-cloud {
-  background-image: url('../../public/assets/bg-cloud.jpg');
+  background-image: url('../../public/assets/bg-cloud.webp');
 }
 .btn-quick-cta {
   min-width: 7rem;
