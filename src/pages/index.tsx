@@ -176,30 +176,31 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <section className="bg-banner py-6" rel="preload">
-            <div className="container px-10 z-1">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center lg:justify-items-start text-center lg:text-left">
-                <div className="text-primary text-4xl font-normal">
-                  1.3.0 Released - Try Now!
-                </div>
-                <div className="text-center">
-                  <strong>OpenMetadata 1.3.0 Released</strong> Intuitive Lineage
-                  UI, Data Observability Alerts, Data Quality Incident Manager,
-                  Custom Metrics for Profiler, Knowledge Center Improvements,
-                  and lots more.
-                  <br />
-                  <strong>OpenMetadata 1.3.0 Release </strong>
-                  <Link
-                    rel="noopener noreferrer"
-                    aria-label="Read More here"
-                    className="text-primary font-medium"
-                    href="https://blog.open-metadata.org/openmetadata-release-1-3-ac801834ee80"
-                    target="_blank"
-                  >
-                    Read more here
-                  </Link>
-                  .
-                </div>
+          <section
+            className="bg-banner py-6 lg:px-40 max-md:px-10"
+            rel="preload"
+          >
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center lg:justify-items-start text-center lg:text-left">
+              <div className="text-primary text-4xl font-normal">
+                1.3.0 Released - Try Now!
+              </div>
+              <div className="text-center">
+                <strong>OpenMetadata 1.3.0 Released</strong> Intuitive Lineage
+                UI, Data Observability Alerts, Data Quality Incident Manager,
+                Custom Metrics for Profiler, Knowledge Center Improvements, and
+                lots more.
+                <br />
+                <strong>OpenMetadata 1.3.0 Release </strong>
+                <Link
+                  rel="noopener noreferrer"
+                  aria-label="Read More here"
+                  className="text-primary font-medium"
+                  href="https://blog.open-metadata.org/openmetadata-release-1-3-ac801834ee80"
+                  target="_blank"
+                >
+                  Read more here
+                </Link>
+                .
               </div>
             </div>
             <div className="svg-border-rounded text-light">
