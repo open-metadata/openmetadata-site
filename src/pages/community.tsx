@@ -92,7 +92,7 @@ export default function Community() {
                         <br />
                         apart from&nbsp;
                         <a
-                          className="text-primary"
+                          className="text-primary font-medium"
                           href="https://github.com/open-metadata/OpenMetadata"
                           target="_blank"
                         >
@@ -262,7 +262,7 @@ export default function Community() {
                     <p>
                       You can watch all of our previous meetings on&nbsp;
                       <a
-                        className="text-primary"
+                        className="text-primary font-medium"
                         href="https://www.youtube.com/c/OpenMetadataChannel"
                         target="_blank"
                       >
