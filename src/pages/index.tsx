@@ -184,7 +184,7 @@ export default function Home() {
               <div className="text-primary text-[40px] font-medium">
                 1.3.0 Released - Try Now!
               </div>
-              <div className="text-center">
+              <p className="text-center">
                 <strong>OpenMetadata 1.3.0 Released</strong> Intuitive Lineage
                 UI, Data Observability Alerts, Data Quality Incident Manager,
                 Custom Metrics for Profiler, Knowledge Center Improvements, and
@@ -200,7 +200,7 @@ export default function Home() {
                   Read more here
                 </Link>
                 .
-              </div>
+              </p>
             </div>
             <div className="svg-border-rounded text-light">
               <svg
