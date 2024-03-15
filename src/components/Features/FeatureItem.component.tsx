@@ -33,8 +33,10 @@ export const FeatureItem = ({
           <div className="order-2 md:order-1 w-11/12">
             <div className="mb-4 w-full" data-aos="fade-right">
               <img
+                height={"100%"}
+                width={"100%"}
                 loading="eager"
-                className="fluid w-full h-full"
+                className="fluid"
                 alt={imageAlt}
                 src={imageSrc}
               />
@@ -96,8 +98,10 @@ export const FeatureItem = ({
           <div className="order-2 md:order-1">
             <div className="mb-4 w-full" data-aos="fade-left">
               <img
+                height={"100%"}
+                width={"100%"}
                 loading="eager"
-                className="fluid w-full h-full"
+                className="fluid"
                 alt={imageAlt}
                 src={imageSrc}
               />
