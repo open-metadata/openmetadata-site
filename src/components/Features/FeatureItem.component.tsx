@@ -27,10 +27,10 @@ export const FeatureItem = ({
   if (!mounted) return <></>;
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2  items-center justify-center mb-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center mb-5 justify-items-center">
       {imageOnLeft ? (
         <>
-          <div className="order-2 md:order-1 w-11/12">
+          <div className="order-2 md:order-1 w-full">
             <div className="mb-4 w-full" data-aos="fade-right">
               <picture>
                 <source srcSet={imageSrc} type="image/webp" />
@@ -45,7 +45,7 @@ export const FeatureItem = ({
               </picture>
             </div>
           </div>
-          <div className="order-2 md:order-2">
+          <div className="order-2 md:order-2 w-10/12">
             <h2 className="text-2xl mb-4 font-medium">{heading}</h2>
             {description}
             <Link
@@ -73,7 +73,7 @@ export const FeatureItem = ({
         </>
       ) : (
         <>
-          <div className="order-1 md:order-2 w-11/12">
+          <div className="order-1 md:order-2 w-10/12">
             <h2 className="text-2xl mb-4 font-medium">{heading}</h2>
             <p className="mb-4">{description}</p>
             <Link
@@ -98,7 +98,7 @@ export const FeatureItem = ({
               </svg>
             </Link>
           </div>
-          <div className="order-2 md:order-1">
+          <div className="order-2 md:order-1 w-full">
             <div className="mb-4 w-full" data-aos="fade-left">
               <picture>
                 <source srcSet={imageSrc} type="image/webp" />
