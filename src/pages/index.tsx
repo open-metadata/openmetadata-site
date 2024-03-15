@@ -189,7 +189,7 @@ export default function Home() {
                   and lots more.
                   <br />
                   <strong>OpenMetadata 1.3.0 Release </strong>
-                  <a
+                  <Link
                     rel="noopener noreferrer"
                     aria-label="Read More here"
                     className="text-primary"
@@ -197,7 +197,7 @@ export default function Home() {
                     target="_blank"
                   >
                     Read more here
-                  </a>
+                  </Link>
                   .
                 </div>
               </div>
@@ -304,13 +304,13 @@ export default function Home() {
                       Contribute code, try out good starting issues, and join
                       the momentum.
                     </p>
-                    <a
+                    <Link
                       className="btn btn-sm btn-primary btn-quick-cta fw-500"
                       href="https://github.com/open-metadata/OpenMetadata"
                       target="_blank"
                     >
                       Explore
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-5">
@@ -329,13 +329,13 @@ export default function Home() {
                       Benefit with the step-by-step implementation guides and
                       get started.
                     </p>
-                    <a
+                    <Link
                       className="btn btn-sm btn-primary btn-quick-cta fw-500"
                       href="https://docs.open-metadata.org/"
                       target="_blank"
                     >
                       Visit
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6 mb-5">
@@ -354,13 +354,13 @@ export default function Home() {
                       Ask questions, get help, discuss features, and connect
                       with contributors &amp; users.
                     </p>
-                    <a
+                    <Link
                       className="btn btn-sm btn-primary btn-quick-cta fw-500"
                       href="https://slack.open-metadata.org/"
                       target="_blank"
                     >
                       Connect
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6">
@@ -379,12 +379,12 @@ export default function Home() {
                       Attend meetings, share your thoughts, and know where we
                       are heading.
                     </p>
-                    <a
+                    <Link
                       className="btn btn-sm btn-primary btn-quick-cta fw-500"
                       href="community.html"
                     >
                       Join Now
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
