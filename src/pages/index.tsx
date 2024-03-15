@@ -98,14 +98,14 @@ export default function Home() {
               <div className="container px-10">
                 <div className="row gx-5 align-items-center">
                   <div className="col-lg-7" data-aos="fade-up">
-                    <h1 className="text-[40px] leading-[48px] fw-700 mb-4 mt-4">
+                    <h1 className="text-[40px] leading-[48px] fw-700 mb-6 mt-4">
                       OpenMetadata
                     </h1>
                     <h3 className="text-[28px] leading-8 text-primary font-medium mb-2">
                       A Single Place to Discover, Collaborate and get your Data
                       Right
                     </h3>
-                    <p className="page-header-ui-text mb-4">
+                    <p className="page-header-ui-text mb-6">
                       Unlock the value of data assets with an end-to-end
                       metadata management solution that includes data discovery,
                       governance, data quality, observability, and people
@@ -180,8 +180,8 @@ export default function Home() {
             className="bg-banner py-6 lg:px-40 max-md:px-10"
             rel="preload"
           >
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center lg:justify-items-start text-center lg:text-left">
-              <div className="text-primary text-4xl font-normal">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center lg:justify-items-start text-center">
+              <div className="text-primary text-[40px] font-medium">
                 1.3.0 Released - Try Now!
               </div>
               <div className="text-center">
@@ -189,8 +189,7 @@ export default function Home() {
                 UI, Data Observability Alerts, Data Quality Incident Manager,
                 Custom Metrics for Profiler, Knowledge Center Improvements, and
                 lots more.
-                <br />
-                <strong>OpenMetadata 1.3.0 Release </strong>
+                <strong> OpenMetadata 1.3.0 Release </strong>
                 <Link
                   rel="noopener noreferrer"
                   aria-label="Read More here"

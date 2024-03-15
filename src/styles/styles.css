@@ -6298,6 +6298,7 @@ fieldset:disabled .btn {
   color: #4c4c4c;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
+  font-weight: 500;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {

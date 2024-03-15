@@ -23,11 +23,11 @@ function Navbar() {
 
   return (
     <nav
-      className={`relative top-0 z-50 w-full duration-300 ${
+      className={`relative top-0 z-50 w-full duration-300 lg:pr-10 ${
         scrolledNav ? "bg-white shadow-custom" : "bg-background"
       }`}
     >
-      <div className=" mx-auto flex justify-between items-center lg:py-4 lg:px-32 max-lg:contents">
+      <div className=" mx-auto flex justify-between items-center lg:py-4 lg:px-32 max-lg:contents lg:gap-3">
         <div className="flex items-center lg:pl-12 max-lg:justify-around">
           <a className="navbar-brand text-primary" href="/">
             <Image
@@ -65,7 +65,7 @@ function Navbar() {
             open ? "block" : "hidden"
           } h-auto lg:flex bg-white lg:items-center relative top-full left-0 right-0 lg:relative lg:top-auto lg:left-auto lg:right-auto max-lg:pb-4`}
         >
-          <ul className="navbar-nav ml-auto mr-4 lg:mr-0 lg:flex-row">
+          <ul className="navbar-nav ml-auto mr-4 lg:mr-10 lg:flex-row">
             <li className="nav-item lg:mr-7 max-lg:pl-10">
               <a className="nav-link" href="community">
                 Community
@@ -101,7 +101,7 @@ function Navbar() {
                 Blog
               </a>
             </li>
-            <li className="nav-item mr-7 max-lg:pl-10">
+            <li className="nav-item max-lg:pl-10">
               <a
                 className="nav-link"
                 href="https://github.com/open-metadata/OpenMetadata"
