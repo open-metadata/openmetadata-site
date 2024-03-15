@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="preload" href="/assets/home-section.png" as="image" />
+        <link rel="preload" href="/assets/home-section.webp" as="image" />
         <meta charSet="utf-8" />
         <link rel="canonical" href="https://open-metadata.org/" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -157,7 +157,7 @@ export default function Home() {
                       height={1000}
                       width={1000}
                       className="object-contain"
-                      src="/assets/home-section.png"
+                      src="/assets/home-section.webp"
                       alt="home-section-img"
                       loading="eager"
                     />

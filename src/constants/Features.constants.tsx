@@ -1,6 +1,6 @@
 export const FEATURES_DATA = [
   {
-    imageSrc: "/assets/data-discovery.png",
+    imageSrc: "/assets/data-discovery.webp",
     imageAlt: "feature01",
     heading: "All Data in One Place",
     description: (
@@ -22,7 +22,7 @@ export const FEATURES_DATA = [
     imageOnLeft: false,
   },
   {
-    imageSrc: "/assets/data-collaboration.png",
+    imageSrc: "/assets/data-collaboration.webp",
     imageAlt: "feature02",
     heading: "Data Collaboration",
     description: (
@@ -55,7 +55,7 @@ export const FEATURES_DATA = [
     imageOnLeft: true,
   },
   {
-    imageSrc: "/assets/data-versioning.png",
+    imageSrc: "/assets/data-versioning.webp",
     imageAlt: "feature03",
     heading: "Metadata Versioning",
     description: (
@@ -77,7 +77,7 @@ export const FEATURES_DATA = [
     imageOnLeft: false,
   },
   {
-    imageSrc: "/assets/data-lineage.png",
+    imageSrc: "/assets/data-lineage.webp",
     imageAlt: "feature04",
     heading: "Data Lineage",
     description: (

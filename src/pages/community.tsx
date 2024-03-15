@@ -79,7 +79,7 @@ export default function Community() {
                         width={1000}
                         className="w-full"
                         height={1000}
-                        src="/assets/community.png"
+                        src="/assets/community.webp"
                       />
                     </div>
                     <div className="col-lg-6" data-aos="fade-up">
@@ -172,7 +172,7 @@ export default function Community() {
                       alt="meetups"
                       width={1000}
                       height={1000}
-                      src="/assets/meetups.png"
+                      src="/assets/meetups.webp"
                     />
                   </div>
                 </div>
@@ -191,17 +191,8 @@ export default function Community() {
 
             <section className="bg-white py-10">
               <div className="container px-10">
-                <div className="row gx-5 justify-content-center">
-                  <div className="col-lg-8">
-                    <div className="text-center mb-5">
-                      <h2 className="section-header font-semibold">
-                        OpenMetadata Webinars
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-                <div className="row gx-5">
-                  <div className="col max-lg:mb-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
+                  <div className="max-w-lg">
                     <div className="card">
                       <div className="card-body">
                         <YoutubeEmbed videoId="ihwtuNHt1kI" />
@@ -216,7 +207,7 @@ export default function Community() {
                       </div>
                     </div>
                   </div>
-                  <div className="col">
+                  <div className="max-w-lg">
                     <div className="card">
                       <div className="card-body">
                         <YoutubeEmbed videoId="lOQepnTdA58" />
@@ -231,17 +222,15 @@ export default function Community() {
                     </div>
                   </div>
                 </div>
-                <div className="row gx-5 justify-content-center">
-                  <div className="col-lg-8">
-                    <div className="text-center mt-5">
-                      <p className="text-[18px]">
-                        Watch out for an end-to-end coverage on everything you
-                        need to know about Data Lineage, Data Quality &amp;
-                        Profiler, Roles &amp; Policies, Custom Connectors, Data
-                        Culture, Storage Services, Setting up Integrations for
-                        Metadata Ingestion, Data Discovery, and a lot more.
-                      </p>
-                    </div>
+                <div className="mt-6 flex justify-center">
+                  <div className="col-lg-8 items-center justify-items-center text-center">
+                    <p className="text-[18px]">
+                      Watch out for an end-to-end coverage on everything you
+                      need to know about Data Lineage, Data Quality &amp;
+                      Profiler, Roles &amp; Policies, Custom Connectors, Data
+                      Culture, Storage Services, Setting up Integrations for
+                      Metadata Ingestion, Data Discovery, and a lot more.
+                    </p>
                   </div>
                 </div>
               </div>

@@ -10,7 +10,7 @@ export const BLOG_LIST = [
   {
     blogLink:
       "https://blog.open-metadata.org/leveraging-the-power-of-openmetadata-data-quality-framework-385ba2d8eaf",
-    imageLink: "/assets/om-data-quality.png",
+    imageLink: "/assets/om-data-quality.webp",
     title: "Leveraging the Power of OpenMetadata Data Quality Framework",
     description:
       "OpenMetadata offers the possibility to execute data quality tests directly from the UI, making it a powerful tool for everyone in the company.",

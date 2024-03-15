@@ -227,7 +227,7 @@ const Footer = () => {
                 alt="netlify"
                 width={120}
                 height={48}
-                src="/assets/netlify.png"
+                src="/assets/netlify.webp"
               />
             </div>
           </div>
