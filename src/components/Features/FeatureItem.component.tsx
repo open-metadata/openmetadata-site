@@ -34,7 +34,7 @@ export const FeatureItem = ({
             <div className="mb-4 w-full" data-aos="fade-right">
               <img
                 loading="eager"
-                className="fluid"
+                className="fluid w-full h-full"
                 alt={imageAlt}
                 src={imageSrc}
               />
@@ -97,7 +97,7 @@ export const FeatureItem = ({
             <div className="mb-4 w-full" data-aos="fade-left">
               <img
                 loading="eager"
-                className="fluid"
+                className="fluid w-full h-full"
                 alt={imageAlt}
                 src={imageSrc}
               />
