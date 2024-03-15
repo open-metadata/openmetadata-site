@@ -46,7 +46,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
         >
           Read more here
         </Link>
-        <a
+        <Link
           aria-label="Read More here"
           href={blogLink}
           target="_blank"
@@ -63,7 +63,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   );
