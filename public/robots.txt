@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /schema/
+Sitemap: https://open-metadata.org/sitemap.xml
