@@ -257,7 +257,7 @@ const Footer = () => {
           </div>
           <hr className="my-5" />
           <div className="row gx-5 align-items-center">
-            <div className="col-md-6 small">Copyright © OpenMetadata 2022</div>
+            <div className="col-md-6 small">Copyright © OpenMetadata {new Date().getFullYear()}</div>
           </div>
         </div>
       </footer>
