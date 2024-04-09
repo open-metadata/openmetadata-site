@@ -35,7 +35,7 @@ export default function Community() {
         />
         <meta
           property="og:image"
-          content="https://open-metadata.org/images/favicon.png"
+          content="https://open-metadata.org/assets/favicon.png"
         />
         <meta property="og:type" content="metadata tool" />
         <meta property="og:url" content="https://open-metadata.org" />
@@ -54,7 +54,7 @@ export default function Community() {
         />
         <meta
           name="twitter:image"
-          content="https://open-metadata.org/images/favicon.png"
+          content="https://open-metadata.org/assets/favicon.png"
         />
 
         {/* {/* Twitter Card end  */}
