@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -29,7 +30,7 @@ function Navbar() {
     >
       <div className=" mx-auto flex justify-between items-center lg:py-4 lg:px-32 max-lg:contents lg:gap-3">
         <div className="flex items-center lg:pl-12 max-lg:justify-around">
-          <a className="navbar-brand text-primary" href="/">
+          <Link className="navbar-brand text-primary" href="/">
             <Image
               height={56}
               width={140}
@@ -37,7 +38,7 @@ function Navbar() {
               alt="omd-logo-svg"
               loading="lazy"
             />
-          </a>
+          </Link>
 
           <div
             className="p-4 hamburger lg:hidden cursor-pointer"
@@ -67,52 +68,52 @@ function Navbar() {
         >
           <ul className="navbar-nav ml-auto mr-4 lg:mr-10 lg:flex-row">
             <li className="nav-item lg:mr-7 max-lg:pl-10">
-              <a className="nav-link" href="community">
+              <Link className="nav-link" href="community">
                 Community
-              </a>
+              </Link>
             </li>
             <li className="nav-item lg:mr-5 max-lg:pl-10">
-              <a
+              <Link
                 className="nav-link"
                 href="https://sandbox.open-metadata.org/signin"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Sandbox
-              </a>
+              </Link>
             </li>
             <li className="nav-item mr-7 max-lg:pl-10">
-              <a
+              <Link
                 className="nav-link"
                 href="https://docs.open-metadata.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Documentation
-              </a>
+              </Link>
             </li>
             <li className="nav-item mr-7 max-lg:pl-10">
-              <a
+              <Link
                 className="nav-link"
                 href="http://blog.open-metadata.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Blog
-              </a>
+              </Link>
             </li>
             <li className="nav-item max-lg:pl-10">
-              <a
+              <Link
                 className="nav-link"
                 href="https://github.com/open-metadata/OpenMetadata"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
-              </a>
+              </Link>
             </li>
           </ul>
-          <a
+          <Link
             aria-label="Visit Collate website"
             className="btn fw-500 btn-primary rounded-full h-[42px] max-lg:ml-10 lg:mx-4"
             href="https://getcollate.io"
@@ -126,7 +127,7 @@ function Navbar() {
             >
               <path d="M4.5 9.75a6 6 0 0 1 11.573-2.226 3.75 3.75 0 0 1 4.133 4.303A4.5 4.5 0 0 1 18 20.25H6.75a5.25 5.25 0 0 1-2.23-10.004 6.072 6.072 0 0 1-.02-.496Z" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

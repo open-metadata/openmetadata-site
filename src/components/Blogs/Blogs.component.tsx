@@ -1,6 +1,7 @@
 import React from "react";
 import {BLOG_LIST} from "@/constants/Blogs.constants";
 import BlogCard from "../common/BlogCard";
+import Link from "next/link";
 
 const Blogs = () => {
   return (
@@ -21,13 +22,13 @@ const Blogs = () => {
           ))}
         </div>
         <div className="text-center">
-          <a
+          <Link
             className="btn btn-primary fw-500"
             href="http://blog.open-metadata.org/"
             target="_blank"
           >
             Read All Blogs
-          </a>
+          </Link>
         </div>
         <div className="svg-border-rounded text-dark">
           <svg

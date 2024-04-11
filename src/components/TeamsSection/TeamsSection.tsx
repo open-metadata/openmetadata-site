@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import Image from "next/image";
 import {TEAMS_LIST} from "@/constants/Testimonials.constants";
+import Link from "next/link";
 
 const TeamsSection = () => {
   return (
@@ -21,7 +22,7 @@ const TeamsSection = () => {
       >
         {TEAMS_LIST.map(({name, image, url}, index) => (
           <div key={index}>
-            <a href={url} target="_blank">
+            <Link href={url} target="_blank">
               <Image
                 width={200}
                 height={200}
@@ -29,7 +30,7 @@ const TeamsSection = () => {
                 src={image}
                 alt={name}
               />
-            </a>
+            </Link>
           </div>
         ))}
       </div>
