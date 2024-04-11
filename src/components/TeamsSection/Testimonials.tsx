@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 import {TESTIMONIALS_LIST} from "@/constants/Testimonials.constants";
+import Link from "next/link";
 
 const Testimonials = () => {
   const slider = React.useRef(null);
@@ -81,14 +82,14 @@ const Testimonials = () => {
                 />
                 <div className="card-team-name mb-3">
                   <strong>
-                    <a
+                    <Link
                       tabIndex="-1"
                       className="text-primary"
                       href={url}
                       target="_blank"
                     >
                       {company}
-                    </a>
+                    </Link>
                   </strong>
                 </div>
                 <div

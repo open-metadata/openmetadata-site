@@ -1,5 +1,6 @@
 import {INTEGRATION_SERVICES} from "@/constants/Integrations.constants";
 import Image from "next/image";
+import Link from "next/link";
 import React, {useEffect, useMemo, useState} from "react";
 
 interface Service {
@@ -45,7 +46,11 @@ const Integrations: React.FC = () => {
 
     return sortServicesByName(filteredServices).map((service) => (
       <div key={service.name} className="mb-4 flex" data-aos="fade-up">
-        <a href={service.href ?? "#"} target="_blank" className="text-center">
+        <Link
+          href={service.href ?? "#"}
+          target="_blank"
+          className="text-center"
+        >
           <Image
             alt={service.alt}
             width={1000}
@@ -55,7 +60,7 @@ const Integrations: React.FC = () => {
             style={{display: "block", margin: "auto"}}
           />
           <h5 className="mb-2">{service.name}</h5>
-        </a>
+        </Link>
       </div>
     ));
   };

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 const SaasTrial = () => {
   return (
@@ -22,13 +23,13 @@ const SaasTrial = () => {
                 of features to rebuild trust in your data.
               </p>
               <p>
-                <a
+                <Link
                   href="https://getcollate.io"
                   target="_blank"
                   className="btn-md btn-primary px-3 py-3 rounded-md transition duration-300 ease-in-out  text-white hover:no-underline	"
                 >
                   Sign Up for the SaaS Trial
-                </a>
+                </Link>
               </p>
             </div>
           </div>

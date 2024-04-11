@@ -1,5 +1,6 @@
 import {COPY_CODE_TEXT} from "@/constants/CopyCode.constants";
 import {useClipboard} from "@/hooks/useClipBoard";
+import Link from "next/link";
 import React, {useMemo} from "react";
 
 const CopyCode: React.FC = () => {
@@ -60,22 +61,22 @@ const CopyCode: React.FC = () => {
           </span>
         </div>
         <div>
-          <a
+          <Link
             className="btn btn-primary fw-500 mr-2 max-sm:mb-2"
             href="https://docs.open-metadata.org/deployment"
             target="_blank"
             rel="noopener noreferrer"
           >
             Deploy in Production
-          </a>
-          <a
+          </Link>
+          <Link
             className="btn btn-primary fw-500"
             href="https://docs.open-metadata.org/deployment/kubernetes"
             target="_blank"
             rel="noopener noreferrer"
           >
             Deploy in Kubernetes
-          </a>
+          </Link>
         </div>
       </div>
     </div>
