@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar/Navbar.component";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Community() {
   return (
@@ -35,7 +36,7 @@ export default function Community() {
         />
         <meta
           property="og:image"
-          content="https://open-metadata.org/images/favicon.png"
+          content="https://open-metadata.org/assets/favicon.png"
         />
         <meta property="og:type" content="metadata tool" />
         <meta property="og:url" content="https://open-metadata.org" />
@@ -54,7 +55,7 @@ export default function Community() {
         />
         <meta
           name="twitter:image"
-          content="https://open-metadata.org/images/favicon.png"
+          content="https://open-metadata.org/assets/favicon.png"
         />
 
         {/* {/* Twitter Card end  */}
@@ -95,13 +96,13 @@ export default function Community() {
                       That's where the OpenMetadata enthusiasts are;
                       <br />
                       apart from&nbsp;
-                      <a
+                      <Link
                         className="text-primary font-medium"
                         href="https://github.com/open-metadata/OpenMetadata"
                         target="_blank"
                       >
                         GitHub
-                      </a>
+                      </Link>
                       , of course.
                     </p>
                     <p>
@@ -115,7 +116,7 @@ export default function Community() {
                       needs!
                     </p>
                     <div className="flex flex-col sm:flex-row max-lg:mt-3">
-                      <a
+                      <Link
                         className="btn btn-lg btn-outline-primary btn-home-slack font-semibold"
                         href="https://slack.open-metadata.org/"
                         target="_blank"
@@ -128,7 +129,7 @@ export default function Community() {
                           src="/assets/icon-slack.svg"
                         />
                         Join our Slack
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -164,13 +165,13 @@ export default function Community() {
                   <p className="text-[18px]">
                     Stay tuned for the latest in Metadata management!
                   </p>
-                  <a
+                  <Link
                     className="btn btn-primary"
                     href="https://www.meetup.com/openmetadata-meetup-group/"
                     target="_blank"
                   >
                     Join OpenMetadata Meetup Group
-                  </a>
+                  </Link>
                 </div>
                 <div className="col-lg-6">
                   <Image
@@ -265,13 +266,13 @@ export default function Community() {
                   </h2>
                   <p>
                     You can watch all of our previous meetings on&nbsp;
-                    <a
+                    <Link
                       className="text-primary font-medium"
                       href="https://www.youtube.com/c/OpenMetadataChannel"
                       target="_blank"
                     >
                       YouTube
-                    </a>
+                    </Link>
                     .
                   </p>
                   <p className="mb-5">

@@ -45,7 +45,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://open-metadata.org/images/favicon.png"
+          content="https://open-metadata.org/assets/favicon.png"
         />
         <meta property="og:type" content="metadata tool" />
         <meta property="og:url" content="https://open-metadata.org" />
@@ -64,7 +64,7 @@ export default function Home() {
         />
         <meta
           name="twitter:image"
-          content="https://open-metadata.org/images/favicon.png"
+          content="https://open-metadata.org/assets/favicon.png"
         />
         <title>OpenMetadata: Join the #1 Open Source Data Community</title>
       </Head>
@@ -82,13 +82,13 @@ export default function Home() {
                   data.
                 </div>
                 <div className="col-lg-3">
-                  <a
+                  <Link
                     className="btn btn-md btn-saas btn-quick-cta fw-700"
                     href="https://getcollate.io"
                     target="_blank"
                   >
                     Sign Up for the SaaS Trial
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -112,14 +112,14 @@ export default function Home() {
                       collaboration.
                     </p>
                     <div className="d-flex flex-column flex-sm-row">
-                      <a
+                      <Link
                         className="btn btn-primary btn-home-slack fw-500 mb-3 mb-sm-0 me-sm-3"
                         href="https://sandbox.open-metadata.org/"
                         target="_blank"
                       >
                         Explore Sandbox
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="btn btn-outline-primary btn-home-slack fw-500 mb-3 mb-sm-0 me-sm-3"
                         href="https://slack.open-metadata.org/"
                         target="_blank"
@@ -132,8 +132,8 @@ export default function Home() {
                           loading="lazy"
                         />
                         &nbsp; Join our Slack
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="btn btn-outline-primary btn-home-gitstar fw-500"
                         href="https://github.com/open-metadata/OpenMetadata/stargazers"
                       >
@@ -145,7 +145,7 @@ export default function Home() {
                           title="GitHub Stars"
                           loading="lazy"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div

@@ -17,7 +17,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
 }) => {
   return (
     <div className="bg-white mb-4 flex flex-col hover:shadow-lg cursor-pointer hover:-translate-y-1 transition ease-in-out">
-      <a
+      <Link
         className="block relative h-48 rounded overflow-hidden"
         href={blogLink}
         target="_blank"
@@ -29,7 +29,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           className="object-cover object-center w-full h-full block"
           src={imageLink}
         />
-      </a>
+      </Link>
       <div className="flex flex-col flex-grow p-4">
         <h3 className="text-gray-900 text-lg font-medium title-font mb-2">
           {title}
