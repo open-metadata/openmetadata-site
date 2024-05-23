@@ -1,9 +1,9 @@
-import Footer from "@/components/Footer/Footer.component";
-import Navbar from "@/components/Navbar/Navbar.component";
-import YoutubeEmbed from "@/components/common/YouTubeEmbed";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+import Footer from '@/components/Footer/Footer.component';
+import Navbar from '@/components/Navbar/Navbar.component';
+import YoutubeEmbed from '@/components/common/YouTubeEmbed';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Community() {
   return (
@@ -65,7 +65,13 @@ export default function Community() {
       <div id="layoutDefault">
         <div id="layoutDefault_content">
           <div
-            style={{position: "fixed", top: 0, right: 0, left: 0, zIndex: 1030}}
+            style={{
+              position: 'fixed',
+              top: 0,
+              right: 0,
+              left: 0,
+              zIndex: 1030,
+            }}
           >
             <Navbar />
           </div>
@@ -280,22 +286,22 @@ export default function Community() {
                     what's most recent. Take a look!
                   </p>
                   <div className="row gx-5">
+                    <div className="col">
+                      <div className="card">
+                        <div className="card-body">
+                          <YoutubeEmbed videoId="2ZieuqK-UbA" />
+                          <p className="font-semibold mb-0 mt-2">
+                            May 8th, 2024
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
                           <YoutubeEmbed videoId="7jgtfdpOKwo" />
                           <p className="font-semibold mb-0 mt-2">
                             Feb 1st, 2024
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="card">
-                        <div className="card-body">
-                          <YoutubeEmbed videoId="W4R8BUiHyK4" />
-                          <p className="font-semibold mb-0 mt-2">
-                            Dec 18th, 2023
                           </p>
                         </div>
                       </div>
