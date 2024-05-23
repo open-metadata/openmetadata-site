@@ -1,16 +1,16 @@
-import Image from "next/image";
-import Testimonials from "../components/TeamsSection/Testimonials";
-import TeamsSection from "../components/TeamsSection/TeamsSection";
-import CopyCode from "@/components/CopyCode/CopyCode.component";
-import Features from "@/components/Features/Features.component";
-import Blogs from "@/components/Blogs/Blogs.component";
-import SaasTrial from "@/components/SaaSTrial/SaasTrial.component";
-import YoutubeEmbed from "@/components/common/YouTubeEmbed";
-import Footer from "@/components/Footer/Footer.component";
-import Integrations from "@/components/Integrations/Integrations";
-import Navbar from "@/components/Navbar/Navbar.component";
-import Head from "next/head";
-import Link from "next/link";
+import Image from 'next/image';
+import Testimonials from '../components/TeamsSection/Testimonials';
+import TeamsSection from '../components/TeamsSection/TeamsSection';
+import CopyCode from '@/components/CopyCode/CopyCode.component';
+import Features from '@/components/Features/Features.component';
+import Blogs from '@/components/Blogs/Blogs.component';
+import SaasTrial from '@/components/SaaSTrial/SaasTrial.component';
+import YoutubeEmbed from '@/components/common/YouTubeEmbed';
+import Footer from '@/components/Footer/Footer.component';
+import Integrations from '@/components/Integrations/Integrations';
+import Navbar from '@/components/Navbar/Navbar.component';
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -71,7 +71,13 @@ export default function Home() {
       <div id="layoutDefault">
         <div id="layoutDefault_content">
           <div
-            style={{position: "fixed", top: 0, right: 0, left: 0, zIndex: 1030}}
+            style={{
+              position: 'fixed',
+              top: 0,
+              right: 0,
+              left: 0,
+              zIndex: 1030,
+            }}
           >
             <Navbar />
             <div className="saas-strip max-lg:px-10 lg:px-12">
@@ -182,19 +188,20 @@ export default function Home() {
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center lg:justify-items-start text-center">
               <div className="text-primary text-[40px] font-medium">
-                1.3.0 Released - Try Now!
+                1.4.0 Released - Try Now!
               </div>
               <p className="text-center">
-                <strong>OpenMetadata 1.3.0 Released</strong> Intuitive Lineage
-                UI, Data Observability Alerts, Data Quality Incident Manager,
-                Custom Metrics for Profiler, Knowledge Center Improvements, and
-                lots more.
-                <strong> OpenMetadata 1.3.0 Release </strong>
+                <strong>OpenMetadata 1.4.0 Released</strong> Enhanced Lineage
+                UI, Advanced Data Quality Reports, KPI-Driven Data Insights,
+                Faster Metadata Ingestion, Expanded Bulk Import/Export, Flexible
+                Custom Properties, Improved Activity Feed UI, Custom Themes, and
+                New Health Endpoints.
+                <strong> OpenMetadata 1.4.0 Release </strong>
                 <Link
                   rel="noopener noreferrer"
                   aria-label="Read More here"
                   className="text-primary font-medium"
-                  href="https://blog.open-metadata.org/openmetadata-release-1-3-ac801834ee80"
+                  href="https://github.com/open-metadata/OpenMetadata/releases/tag/1.4.0-release"
                   target="_blank"
                 >
                   Read more here
@@ -291,7 +298,7 @@ export default function Home() {
                 <div className="col-lg-3 col-md-6 mb-5">
                   <div className="mb-4">
                     <Image
-                      style={{display: "inline-flex"}}
+                      style={{ display: 'inline-flex' }}
                       width={80}
                       src="/assets/icon-git.svg"
                       height={80}
@@ -316,7 +323,7 @@ export default function Home() {
                 <div className="col-lg-3 col-md-6 mb-5">
                   <div className="mb-4">
                     <Image
-                      style={{display: "inline-flex"}}
+                      style={{ display: 'inline-flex' }}
                       width={80}
                       src="/assets/icon-doc.svg"
                       height={80}
@@ -341,7 +348,7 @@ export default function Home() {
                 <div className="col-lg-3 col-md-6 mb-5">
                   <div className="mb-4">
                     <Image
-                      style={{display: "inline-flex"}}
+                      style={{ display: 'inline-flex' }}
                       src="/assets/icon-slack.svg"
                       width={80}
                       height={80}
@@ -366,7 +373,7 @@ export default function Home() {
                 <div className="col-lg-3 col-md-6">
                   <div className="mb-4">
                     <Image
-                      style={{display: "inline-flex"}}
+                      style={{ display: 'inline-flex' }}
                       width={80}
                       className="mb-4"
                       src="/assets/icon-join.svg"
