@@ -201,7 +201,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   aria-label="Read More here"
                   className="text-primary font-medium"
-                  href="https://github.com/open-metadata/OpenMetadata/releases/tag/1.4.0-release"
+                  href="https://blog.open-metadata.org/openmetadata-release-1-4-0-f6fb11ec34d7"
                   target="_blank"
                 >
                   Read more here
