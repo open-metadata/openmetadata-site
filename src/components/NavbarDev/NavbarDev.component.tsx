@@ -24,7 +24,7 @@ const NavbarDev = () => {
 
   return (
     <nav
-      className={`relative top-0 z-50 w-full duration-300 ${
+      className={`relative top-0 z-50 w-full duration-400 ${
         scrolledNav ? "bg-white shadow-custom" : "bg-background"
       }`}
     >
