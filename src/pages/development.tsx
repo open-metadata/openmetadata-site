@@ -1,3 +1,4 @@
+import Achievement from "@/components/Achievement/Achievement";
 import Header from "@/components/Header/Header";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import Head from "next/head";
@@ -87,6 +88,7 @@ const Development = () => {
           </div>
         </div>
         <Header />
+        <Achievement />
       </div>
     </>
   );
