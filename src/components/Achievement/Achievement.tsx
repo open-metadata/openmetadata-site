@@ -17,19 +17,19 @@ const Achievement = () => {
               className="flex flex-col justify-center h-full text-center lg:text-left"
               data-aos="fade-right"
             >
-              <h2 className="text-4xl font-semibold md:text-5xl md:leading-[55px]">
+              <h2 className="text-4xl font-semibold md:text-[52px] md:leading-[62px]">
                 Fastest Growing{" "}
                 <span className="text-[#7147E8]">
                   Open Source Metadata Platform
                 </span>
               </h2>
-              <p className="text-lg font-light mt-3">
+              <p className="text-2xl font-light mt-3">
                 Driven by an active community of thousands globally,
                 OpenMetadata is becoming a standard for modern data catalogs.
               </p>
             </div>
           </div>
-          <div className="bg-[#D3ECF7] shadow-md bg-opacity-70 px-4 py-16 sm:px-10 md:rounded-lg lg:rounded-r-lg">
+          <div className="bg-[#D3ECF7] shadow-md bg-opacity-70 px-4 py-16 sm:px-10 lg:rounded-r-lg">
             <div data-aos="fade-left" className="grid grid-cols-2 gap-2">
               {ACHIEVEMENT_LIST.map((item) => (
                 <div
@@ -39,13 +39,13 @@ const Achievement = () => {
                   <Image
                     src={item.icon}
                     alt={item.name}
-                    width={30}
-                    height={30}
+                    width={35}
+                    height={35}
                   />
-                  <div className="text-[#382374] tracking-wider font-bold text-[30px]">
+                  <div className="text-[#382374] tracking-wider font-bold sm:text-[32px] lg:text-[42px]">
                     {item.count}+
                   </div>
-                  <div className="uppercase font-light max-w-[80%] sm:tracking-widest">
+                  <div className="uppercase font-light max-w-[78%] sm:tracking-widest text-[18px]">
                     {item.name}
                   </div>
                 </div>
