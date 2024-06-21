@@ -17,11 +17,11 @@ const Header = () => {
         <div className="pt-20 pb-16 text-center px-4 lg:px-0">
           <h1
             data-aos="fade-up"
-            className="text-4xl text-[#292929] lg:leading-[54px] lg:text-5xl"
+            className="text-4xl text-[#292929] lg:leading-[54px] lg:text-[52px]"
           >
             Open and unified metadata platform for data{" "}
             <span className="text-[#7147E8]">
-              discovery, observbility and governance
+              discovery, observability and governance
             </span>
           </h1>
           <p

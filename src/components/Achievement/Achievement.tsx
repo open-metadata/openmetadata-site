@@ -42,7 +42,7 @@ const Achievement = () => {
                     width={35}
                     height={35}
                   />
-                  <div className="text-[#382374] tracking-wider font-bold sm:text-[24px] lg:text-[42px]">
+                  <div className="text-[#382374] tracking-wider font-bold sm:text-[32px] lg:text-[42px]">
                     {item.count}+
                   </div>
                   <div className="uppercase font-light max-w-[78%] sm:tracking-widest text-[18px]">
