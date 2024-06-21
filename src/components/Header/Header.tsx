@@ -51,7 +51,7 @@ const Header = () => {
               Join Slack
             </Link>
             <Link
-              href="#"
+              href="http://getcollate.io/contact"
               className="uppercase flex items-center gap-2 font-bold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-10 py-3 rounded-sm hover:no-underline hover:bg-[#6540c8] sm:text-xl"
             >
               <Image

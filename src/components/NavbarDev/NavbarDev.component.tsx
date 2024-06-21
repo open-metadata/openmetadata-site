@@ -68,7 +68,9 @@ const NavbarDev = () => {
         >
           <ul className="font-semibold sm:text-lg ml-auto lg:mr-10 flex flex-col lg:items-center lg:flex-row lg:text-[14px] xl:text-[16px]">
             <li className="lg:mr-7 max-lg:pl-10">
-              <Link href="#">Get Started</Link>
+              <Link href="https://sandbox.open-metadata.org/signin">
+                Get Started
+              </Link>
             </li>
             <li className="mr-7 max-lg:pl-10">
               <Link
@@ -92,7 +94,7 @@ const NavbarDev = () => {
               </Link>
             </li>
             <li className="lg:mr-7 max-lg:pl-10">
-              <Link href="#">Contact Us</Link>
+              <Link href="http://getcollate.io/contact">Contact Us</Link>
             </li>
             <li className="max-lg:pl-10">
               <Link
