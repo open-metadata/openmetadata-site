@@ -5845,6 +5845,20 @@ fieldset:disabled .btn {
   border-radius: 0.25rem;
 }
 
+.slider-container {
+  position: relative;
+  .slide-item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide-item img {
+    display: block;
+  }
+}
+
+
 .fade {
   transition: opacity 0.15s linear;
 }
