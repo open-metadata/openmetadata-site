@@ -17,13 +17,13 @@ const Achievement = () => {
               className="flex flex-col justify-center h-full text-center lg:text-left"
               data-aos="fade-right"
             >
-              <h2 className="text-4xl font-semibold md:text-5xl md:leading-[55px]">
+              <h2 className="text-4xl font-semibold md:text-[52px] md:leading-[62px]">
                 Fastest Growing{" "}
                 <span className="text-[#7147E8]">
                   Open Source Metadata Platform
                 </span>
               </h2>
-              <p className="text-lg font-light mt-3">
+              <p className="text-2xl font-light mt-3">
                 Driven by an active community of thousands globally,
                 OpenMetadata is becoming a standard for modern data catalogs.
               </p>
