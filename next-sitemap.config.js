@@ -1,14 +1,6 @@
-const siteUrl = "https://open-metadata.org/";
-
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl,
-  generateRobotsTxt: true,
-  robotsTxtOptions: {
-    policies: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-    ],
-  },
+  siteUrl: 'https://open-metadata.org',
+  generateRobotsTxt: false,
+  generateIndexSitemap: false,
 };
