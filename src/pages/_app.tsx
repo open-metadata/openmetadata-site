@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import '../styles/cve-style.css';
 import type { AppProps } from 'next/app';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import '@fontsource/metropolis';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
