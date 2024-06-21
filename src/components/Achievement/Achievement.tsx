@@ -39,13 +39,13 @@ const Achievement = () => {
                   <Image
                     src={item.icon}
                     alt={item.name}
-                    width={30}
-                    height={30}
+                    width={35}
+                    height={35}
                   />
-                  <div className="text-[#382374] tracking-wider font-bold text-[30px]">
+                  <div className="text-[#382374] tracking-wider font-bold sm:text-[24px] lg:text-[42px]">
                     {item.count}+
                   </div>
-                  <div className="uppercase font-light max-w-[78%] sm:tracking-widest">
+                  <div className="uppercase font-light max-w-[78%] sm:tracking-widest text-[18px]">
                     {item.name}
                   </div>
                 </div>
