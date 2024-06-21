@@ -4,7 +4,7 @@ import Clients from "./Clients";
 
 const Header = () => {
   return (
-    <div className="mt-44 w-full max-w-[1440px] mx-auto">
+    <div className="mt-40 w-full max-w-[1440px] mx-auto">
       <div className="flex justify-between items-start gap-10">
         <Image
           className="hidden lg:block"
