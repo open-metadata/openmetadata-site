@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="mt-32 w-full max-w-[1440px] mx-auto">
+    <div className="w-full max-w-[1440px] mx-auto">
       <div className="flex justify-between gap-10">
         <Image
           className="hidden lg:block"
@@ -13,7 +13,7 @@ const Header = () => {
           alt="left-box-svg"
           loading="lazy"
         />
-        <div className="pt-24 pb-16 text-center px-4 lg:px-0">
+        <div className="mt-32 pt-24 pb-16 text-center px-4 lg:px-0">
           <h1
             data-aos="fade-up"
             className="text-4xl text-[#292929] lg:leading-[54px] lg:text-5xl"
@@ -71,10 +71,11 @@ const Header = () => {
               height={900}
             />
             <div className="absolute top-28">
-              <Image
+              <Image 
+                className="mx-auto text-center"
                 data-aos="zoom-in"
                 height={500}
-                width={1000}
+                width={1300}
                 src="/assets/header/header.svg"
                 alt="header-svg"
                 loading="lazy"
