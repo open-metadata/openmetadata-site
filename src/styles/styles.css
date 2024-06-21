@@ -5847,17 +5847,13 @@ fieldset:disabled .btn {
 
 .slider-container {
   position: relative;
-  .slide-item {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .slide-item img {
-    display: block;
-  }
 }
 
+.slide-item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
 
 .fade {
   transition: opacity 0.15s linear;
