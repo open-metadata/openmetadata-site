@@ -29,7 +29,7 @@ const Achievement = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#D3ECF7] shadow-md bg-opacity-70 px-4 py-16 sm:px-10 md:rounded-lg lg:rounded-r-lg">
+          <div className="bg-[#D3ECF7] shadow-md bg-opacity-70 px-4 py-16 sm:px-10 lg:rounded-r-lg">
             <div data-aos="fade-left" className="grid grid-cols-2 gap-2">
               {ACHIEVEMENT_LIST.map((item) => (
                 <div
@@ -45,7 +45,7 @@ const Achievement = () => {
                   <div className="text-[#382374] tracking-wider font-bold text-[30px]">
                     {item.count}+
                   </div>
-                  <div className="uppercase font-light max-w-[80%] sm:tracking-widest">
+                  <div className="uppercase font-light max-w-[78%] sm:tracking-widest">
                     {item.name}
                   </div>
                 </div>

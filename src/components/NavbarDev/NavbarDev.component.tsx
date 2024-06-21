@@ -28,12 +28,12 @@ const NavbarDev = () => {
         scrolledNav ? "bg-white shadow-custom" : "bg-background"
       }`}
     >
-      <div className="mx-auto flex justify-between items-center lg:py-2 lg:px-5 lg:gap-3 max-lg:contents xl:px-12">
-        <div className="px-5 py-2 flex items-center lg:pl-4 justify-between">
-          <Link className="text-primary text-center" href="/">
+      <div className="mx-auto flex justify-between items-center lg:py-2 lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
+        <div className="px-5 py-2 flex items-center justify-between lg:pl-4">
+          <Link className="text-primary" href="/">
             <Image
               height={56}
-              width={140}
+              width={145}
               src="/assets/omd-logo.svg"
               alt="omd-logo-svg"
               loading="lazy"
@@ -66,7 +66,7 @@ const NavbarDev = () => {
             open ? "block" : "hidden"
           } h-auto lg:flex bg-white lg:items-center relative top-full left-5 right-0 lg:relative lg:top-auto lg:left-auto lg:right-auto max-lg:pb-4`}
         >
-          <ul className="font-bold sm:text-lg ml-auto lg:mr-10 flex flex-col lg:items-center lg:flex-row lg:text-[14px] xl:text-[16px]">
+          <ul className="font-semibold sm:text-lg ml-auto lg:mr-10 flex flex-col lg:items-center lg:flex-row lg:text-[14px] xl:text-[16px]">
             <li className="lg:mr-7 max-lg:pl-10">
               <Link href="#">Get Started</Link>
             </li>

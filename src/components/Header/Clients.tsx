@@ -6,7 +6,7 @@ import { CLIENT_LIST } from "@/constants/Clients.constants";
 
 const Clients = () => {
   const settings = {
-    className: "slider variable-width",
+    className: "slider slick-track variable-width",
     arrows: false,
     dots: false,
     infinite: true,
@@ -52,10 +52,10 @@ const Clients = () => {
   };
 
   return (
-    <div className="slider-container mt-10 mb-24 px-4 md:px-16">
+    <div className="slider-container mt-[44px] mb-12 px-4 md:px-16">
       <Slider {...settings}>
         {CLIENT_LIST.map((client) => (
-          <div key={client.name} className="slide-item opacity-50">
+          <div key={client.name} className={`slide-item opacity-50 w-${client.width}px`}>
             <Image
               src={client.logo}
               alt={client.name}

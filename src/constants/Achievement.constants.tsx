@@ -3,7 +3,7 @@ const ICON_ROUTE = '/assets/achievement'
 export const ACHIEVEMENT_LIST = [
     {
         icon: `${ICON_ROUTE}/deployment.svg`,
-        count: '1,000',
+        count: '1,500',
         name: 'Enterprise Deployments'
     },
     {
