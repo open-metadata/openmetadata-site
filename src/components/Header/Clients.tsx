@@ -46,7 +46,7 @@ const Clients = () => {
     <div className="slider-container mt-10 mb-24 px-4 md:px-16">
       <Slider {...settings}>
         {CLIENT_LIST.map((client) => (
-          <div key={client.name} className="slide-item">
+          <div key={client.name} className="slide-item opacity-50">
             <Image
               src={client.logo}
               alt={client.name}
