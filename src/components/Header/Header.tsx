@@ -33,7 +33,7 @@ const Header = () => {
           </p>
           <div
             data-aos="fade-up"
-            className="flex flex-col sm:flex-row justify-center gap-3 items-center my-5"
+            className="flex flex-col sm:flex-row justify-center gap-3 items-center mt-5"
           >
             <Link
               className="uppercase flex items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] px-10 py-3 rounded-sm hover:no-underline hover:rounded-md sm:text-lg"
@@ -63,15 +63,24 @@ const Header = () => {
               Try Openmetadata
             </Link>
           </div>
-          <Image
-            data-aos="zoom-in"
-            className="hidden md:block"
-            height={800}
-            width={1200}
-            src="/assets/header/header.svg"
-            alt="header-svg"
-            loading="lazy"
-          />
+          <div className="relative hidden md:block">
+            <Image
+              src="/assets/header/shadow.svg"
+              alt="shadow-svg"
+              width={1300}
+              height={900}
+            />
+            <div className="absolute top-28">
+              <Image
+                data-aos="zoom-in"
+                height={500}
+                width={1000}
+                src="/assets/header/header.svg"
+                alt="header-svg"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
         <Image
           className="hidden lg:block"
