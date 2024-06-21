@@ -1,3 +1,4 @@
+import Header from "@/components/Header/Header";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import Head from "next/head";
 import Image from "next/image";
@@ -85,6 +86,7 @@ const Development = () => {
             </span>
           </div>
         </div>
+        <Header />
       </div>
     </>
   );
