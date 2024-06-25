@@ -1,5 +1,6 @@
 import Achievement from "@/components/Achievement/Achievement";
 import Header from "@/components/Header/Header";
+import IntegrationsDev from "@/components/IntegrationsDev/IntegrationsDev";
 import KeyDataAssets from "@/components/KeyDataAssets/KeyDataAssets";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import Services from "@/components/Service/Service";
@@ -93,6 +94,7 @@ const Development = () => {
         <Achievement />
         <Services />
         <KeyDataAssets />
+        <IntegrationsDev />
       </div>
     </>
   );
