@@ -21,7 +21,7 @@ const TryOpenMetadata = () => {
               className="border border-[#D0C2F7] bg-white p-5 rounded-sm shadow-md relative"
             >
               {item.isNew && (
-                <div className="tag absolute right-0 text-[#333333] font-bold bg-[#E2DAFA] w-[150px] text-center py-2 rotate-45 text-[20px]">
+                <div className="tag absolute right-3 top-[26px] text-[#333333] font-bold bg-[#E2DAFA] text-center py-2 px-2 rotate-45 text-[20px]">
                   NEW!
                 </div>
               )}
