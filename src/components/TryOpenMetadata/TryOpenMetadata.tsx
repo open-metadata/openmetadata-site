@@ -18,8 +18,14 @@ const TryOpenMetadata = () => {
             <div
               data-aos="zoom-in"
               key={item.header}
-              className='border border-[#D0C2F7] bg-white p-5 rounded-sm shadow-md'
+              className="border border-[#D0C2F7] bg-white p-5 rounded-sm shadow-md relative"
             >
+              {item.isNew && (
+                <div className="tag absolute right-0 text-[#333333] font-bold bg-[#E2DAFA] w-[150px] text-center py-2 rotate-45 text-[20px]">
+                  NEW!
+                </div>
+              )}
+
               <Image
                 className="w-[70px] h-[60px]"
                 src={item.icon}
@@ -27,6 +33,7 @@ const TryOpenMetadata = () => {
                 width={100}
                 height={100}
               />
+
               <p className="text-[#333333] font-medium mt-8 text-[24px] lg:text-[28px] xl:text-[36px]">
                 {item.header}
               </p>
