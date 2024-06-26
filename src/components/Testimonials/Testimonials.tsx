@@ -62,18 +62,18 @@ const Testimonials = () => {
                   <p className="text-[#170E2E] sm:columns-2 lg:text-[20px]">
                     {item.description}
                   </p>
-                  <div className="mt-5 mx-auto flex items-center justify-center sm:gap-3 md:gap-5 lg:max-w-[600px]">
-                    <Link href={item.url} target="_blank">
+                  <div className="mt-5 mx-auto flex items-center justify-center lg:max-w-[600px]">
+                    <Link href={item.url} target="_blank" className="w-[250px] relative flex items-center">
                       <Image
-                        className={item.imgSize}
+                        className={`text-right ${item.imgSize} absolute right-0`}
                         width={100}
                         height={100}
                         src={item.image}
                         alt={item.company}
                       />
                     </Link>
-                    <div className="bg-[#E2DAFA] w-[6px] rounded-full h-[100px]"></div>
-                    <div>
+                    <div className="bg-[#E2DAFA] w-[6px] rounded-full h-[100px] mx-4"></div>
+                    <div className="w-[250px]">
                       <p className="text-[#382374] text-[20px] font-medium">
                         {item.name}
                       </p>
