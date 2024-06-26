@@ -4,6 +4,7 @@ import IntegrationsDev from "@/components/IntegrationsDev/IntegrationsDev";
 import KeyDataAssets from "@/components/KeyDataAssets/KeyDataAssets";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import Services from "@/components/Service/Service";
+import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -95,6 +96,7 @@ const Development = () => {
         <Services />
         <KeyDataAssets />
         <IntegrationsDev />
+        <TryOpenMetadata />
       </div>
     </>
   );

@@ -98,6 +98,36 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.tag {
+  display: block;
+  z-index: 1;
+  top: 0;
+  position: relative;
+}
+
+.tag::before,
+.tag::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  background-color: #E2DAFA;
+}
+
+.tag::before {
+  transform: skew(45deg);
+  left: 34px;
+}
+
+.tag::after {
+  transform: skew(-45deg);
+  right: 34px;
+  left: auto;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
