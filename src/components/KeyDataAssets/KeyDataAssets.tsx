@@ -8,7 +8,7 @@ const KeyDataAssets = () => {
   const handleTabClick = (tab: string) => setOpenTab(tab)
 
   return (
-    <div className="mx-auto mt-32 max-w-[1440px] px-4 md:px-16">
+    <div className="custom-container mt-32 px-4 md:px-16">
       <div
         data-aos="fade-up"
         className="flex justify-between overflow-x-scroll gap-3 pb-3 lg:gap-5"

@@ -4,7 +4,7 @@ import Link from "next/link";
 const NavbarStrip = () => {
   return (
     <div className="bg-[#0B3547] text-center mx-auto text-[#D3ECF7] py-3 text-[16px] max-lg:px-4 lg:px-12">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="custom-container">
         <Image
           className="mx-auto md:inline"
           height={45}

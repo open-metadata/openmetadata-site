@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const TryOpenMetadata = () => {
   return (
-    <div className="bg-gradient-to-b from-[#F1EDFD] to-white mt-20">
-      <div className="mx-auto max-w-[1440px] pt-16 px-4 md:px-16">
+    <div className="shadow-bg mt-20">
+      <div className="custom-container pt-16 px-4 md:px-16">
         <h3
           data-aos="fade-up"
           className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]"

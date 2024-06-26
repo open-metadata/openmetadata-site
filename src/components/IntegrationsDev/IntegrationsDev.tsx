@@ -39,7 +39,7 @@ const IntegrationsDev = () => {
   };
 
   return (
-    <div className="mx-auto mt-20 max-w-[1440px] px-4 md:px-16">
+    <div className="custom-container mt-20 px-4 md:px-16">
       <h3
         data-aos="fade-up"
         className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]"

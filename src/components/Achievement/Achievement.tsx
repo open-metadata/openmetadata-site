@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Achievement = () => {
   return (
-    <div className="bg-gradient-to-b from-[#F1EDFD] to-white">
-      <div className="max-w-[1440px] mx-auto py-16 grid gap-8 sm:px-0 md:px-16 md:py-18 lg:grid-cols-2 lg:gap-0">
+    <div className="shadow-bg">
+      <div className="custom-container py-16 grid gap-8 sm:px-0 md:px-16 md:py-18 lg:grid-cols-2 lg:gap-0">
         <div className="rounded-l-lg px-4 md:px-12 lg:shadow-lg lg:bg-white xl:px-24">
           <div
             className="flex flex-col justify-center h-full text-center lg:text-left"

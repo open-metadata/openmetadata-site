@@ -42,7 +42,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="mx-auto relative z-[12] max-w-[1440px]">
+    <div className="custom-container relative z-[12]">
       <div className="flex justify-between">
         <Image
           className="hidden mt-5 lg:block"
