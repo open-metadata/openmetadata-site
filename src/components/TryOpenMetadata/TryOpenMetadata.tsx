@@ -13,12 +13,12 @@ const TryOpenMetadata = () => {
           Different ways to try out{" "}
           <span className="text-[#7147E8]">OpenMetadata</span>
         </h3>
-        <div className="mt-[48px] grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="mt-[48px] grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {TRY_OPENMETADATA.map((item) => (
             <div
               data-aos="zoom-in"
               key={item.header}
-              className="border border-[#D0C2F7] bg-white p-5 rounded-sm shadow-md relative"
+              className="border border-[#D0C2F7] bg-white p-5 rounded shadow-md relative"
             >
               {item.isNew && (
                 <div className="tag absolute right-3 top-[26px] text-[#333333] font-bold bg-[#E2DAFA] text-center py-2 px-2 rotate-45 text-[20px]">

@@ -53,11 +53,12 @@ const IntegrationsDev = () => {
         OpenMetadata's ingestion framework supports connectors for a wide range
         of services, and the list is constantly growing...
       </p>
-      <div className="mt-8 sm:shadow-lg sm:rounded-lg sm:flex sm:h-[655px] md:h-[712px]">
+      <div className="mt-8 sm:shadow-primary sm:rounded-2xl sm:flex sm:h-[655px] md:h-[710px]">
         <div className="flex text-[#5E3BC1] overflow-x-scroll text-center sm:border-[#E3DAFA] sm:flex-col sm:border-r md:text-[20px] lg:max-w-[20%] xl:max-w-[25%]">
           <div
             className={`px-5 py-4 cursor-pointer text-nowrap ${
-              selectedTab === "All Connectors" && "font-semibold bg-[#EDF3FD]"
+              selectedTab === "All Connectors" &&
+              "font-semibold bg-[#EDF3FD] rounded-tl-2xl"
             } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
             onClick={() => handleTabClick("All Connectors")}
           >
@@ -69,6 +70,12 @@ const IntegrationsDev = () => {
               className={`px-5 py-4 cursor-pointer ${
                 selectedTab === service.connector &&
                 "font-semibold bg-[#EDF3FD]"
+              } ${
+                selectedTab === "Others" &&
+                service.connector === "Others" &&
+                "rounded-bl-2xl"
+              } ${
+                service.connector === "Others" && "border-none"
               } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
               onClick={() => handleTabClick(service.connector)}
             >
