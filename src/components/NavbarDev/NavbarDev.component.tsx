@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const NavbarDev = () => {
   const [open, setOpen] = useState(false);
@@ -15,17 +15,17 @@ const NavbarDev = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
+    window.addEventListener('scroll', changeBackground);
 
     return () => {
-      window.removeEventListener("scroll", changeBackground);
+      window.removeEventListener('scroll', changeBackground);
     };
   }, []);
 
   return (
     <nav
       className={`relative top-0 z-50 w-full duration-400 custom-container ${
-        scrolledNav ? "bg-white shadow-custom" : "bg-background"
+        scrolledNav ? 'bg-white shadow-custom' : 'bg-white'
       }`}
     >
       <div className="mx-auto flex justify-between items-center lg:py-2 lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
@@ -36,7 +36,7 @@ const NavbarDev = () => {
               width={145}
               src="/assets/omd-logo.svg"
               alt="omd-logo-svg"
-              loading="lazy"
+              loading="eager"
             />
           </Link>
 
@@ -63,7 +63,7 @@ const NavbarDev = () => {
 
         <div
           className={`${
-            open ? "block" : "hidden"
+            open ? 'block' : 'hidden'
           } h-auto lg:flex bg-white items-center relative top-full text-center lg:relative lg:top-auto lg:left-auto lg:right-auto max-lg:pb-4`}
         >
           <ul className="font-semibold ml-auto flex flex-col gap-4 items-center sm:text-lg lg:flex-row lg:mr-10 lg:text-[16px]">
@@ -98,7 +98,9 @@ const NavbarDev = () => {
               </Link>
             </li>
             <li>
-              <Link href="http://getcollate.io/contact">Contact Us</Link>
+              <Link href="http://getcollate.io/contact" target="_blank">
+                Contact Us
+              </Link>
             </li>
             <li className="mb-4 lg:mb-0">
               <Link
@@ -107,11 +109,12 @@ const NavbarDev = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  height={20}
-                  width={75}
+                  width={72}
+                  height={40}
+                  className="object-cover"
                   src="/assets/github.svg"
-                  alt="github-icon-svg"
-                  loading="lazy"
+                  alt="github-icon"
+                  loading="eager"
                 />
               </Link>
             </li>

@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import Clients from "./Clients";
+import Image from 'next/image';
+import Link from 'next/link';
+import Clients from './Clients';
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
             data-aos="fade-up"
             className="text-4xl text-[#292929] lg:leading-[54px] lg:text-[52px]"
           >
-            Open and unified metadata platform for data{" "}
+            Open and unified metadata platform for data{' '}
             <span className="text-[#7147E8]">
               discovery, observability and governance
             </span>
@@ -47,10 +47,11 @@ const Header = () => {
                 width={24}
                 height={24}
                 loading="lazy"
-              />{" "}
+              />{' '}
               Join Slack
             </Link>
             <Link
+              target="_blank"
               href="http://getcollate.io/contact"
               className="uppercase flex items-center gap-2 font-bold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-10 py-3 rounded-sm hover:no-underline hover:bg-[#6540c8] sm:text-xl"
             >
@@ -60,7 +61,7 @@ const Header = () => {
                 width={24}
                 height={24}
                 loading="lazy"
-              />{" "}
+              />{' '}
               Try Openmetadata
             </Link>
           </div>
