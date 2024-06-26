@@ -55,12 +55,17 @@ const Clients = () => {
     <div className="slider-container mt-[44px] mb-12 px-4 md:px-16">
       <Slider {...settings}>
         {CLIENT_LIST.map((client) => (
-          <div key={client.name} className={`slide-item opacity-50 w-${client.width}px`}>
+          <div
+            key={client.name}
+            className={`slide-item opacity-50 h-[50px] ${
+              client.width ? "w-[50px]" : "w-[120px]"
+            }`}
+          >
             <Image
               src={client.logo}
               alt={client.name}
-              width={client.width}
-              height={40}
+              width={client.width ? client.width : 100}
+              height={100}
             />
           </div>
         ))}

@@ -1,10 +1,12 @@
 import AboutOpenMetadata from "@/components/AboutOpenMetadata/AboutOpenMetadata";
 import Achievement from "@/components/Achievement/Achievement";
+import FooterDev from "@/components/FooterDev/FooterDev";
 import Header from "@/components/Header/Header";
 import IntegrationsDev from "@/components/IntegrationsDev/IntegrationsDev";
 import KeyDataAssets from "@/components/KeyDataAssets/KeyDataAssets";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import Services from "@/components/Service/Service";
+import Testimonials from "@/components/Testimonials/Testimonials";
 import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
 import Head from "next/head";
 import Image from "next/image";
@@ -98,7 +100,9 @@ const Development = () => {
         <KeyDataAssets />
         <IntegrationsDev />
         <TryOpenMetadata />
+        <Testimonials />
         <AboutOpenMetadata />
+        <FooterDev />
       </div>
     </>
   );

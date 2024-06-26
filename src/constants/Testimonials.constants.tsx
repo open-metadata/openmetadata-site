@@ -8,6 +8,7 @@ export const TESTIMONIALS_LIST = [
     company: "Khatabook",
     url: "https://khatabook.com/",
     title: "Lead - Data Platform",
+    imgSize: 'w-[250px] h-[40px]'
   },
   {
     name: "Seungwan Jo",
@@ -18,6 +19,7 @@ export const TESTIMONIALS_LIST = [
     company: "Bucketplace",
     url: "http://bucketplace.net",
     title: "Data Engineer",
+    imgSize: 'w-[50px] h-[50px]'
   },
   {
     name: "Abhijit Singh",
@@ -28,6 +30,7 @@ export const TESTIMONIALS_LIST = [
     company: "Intelligaia",
     url: "https://intelligaia.com/",
     title: "Product Manager - Data",
+    imgSize: 'w-[250px] h-[40px]'
   },
   {
     name: "Sandeep Penmetsa",
@@ -37,6 +40,7 @@ export const TESTIMONIALS_LIST = [
     company: "Physics Wallah",
     url: "https://www.pw.live/",
     title: "Associate Director",
+    imgSize: 'w-[50px] h-[50px]'
   },
   {
     name: "Praveen Singh",
@@ -46,15 +50,17 @@ export const TESTIMONIALS_LIST = [
     company: "PayU Finance",
     url: "https://www.payufin.in/",
     title: "Director of Data Engineering",
+    imgSize: 'w-[200px] h-[40px]'
   },
   {
     name: "Rinat Abdurakhmanov",
     description:
-      "We came across OpenMetadata as an alternative to heavy, expensive and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. It allowed us not only to cut down the costs but also to quickly and effortlessly adapt the product to the needs of our company which includes hundreds of systems and data sources that require categorization and analysis. Open metadata is a fast-growing product that allows to impact its development through contribution and flawless community  interaction. </br></br> The best thing so far is how easy it is to implement the solution and start working on your data right away. Every business user is able to track and take care of their metadata and build trustworthy, data-driven products for our customers.  Open metadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community to help you out on your way to befriend your company’s knowledge.",
+      "We came across OpenMetadata as an alternative to heavy, expensive and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. It allowed us not only to cut down the costs but also to quickly and effortlessly adapt the product to the needs of our company which includes hundreds of systems and data sources that require categorization and analysis. Open metadata is a fast-growing product that allows to impact its development through contribution and flawless community  interaction. The best thing so far is how easy it is to implement the solution and start working on your data right away. Every business user is able to track and take care of their metadata and build trustworthy, data-driven products for our customers.  Open metadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community to help you out on your way to befriend your company’s knowledge.",
     image: "/assets/testimonials/beeline.webp",
     company: "beeline",
     url: "http://beeline.ru/",
     title: "Chief Data Officer",
+    imgSize: 'w-[50px] h-[50px]'
   },
   {
     name: "Cade Parker",
@@ -64,6 +70,7 @@ export const TESTIMONIALS_LIST = [
     company: "ZenBusiness",
     url: "https://www.zenbusiness.com",
     title: "Senior Engineering Manager",
+    imgSize: 'w-[50px] h-[50px]'
   },
   {
     name: "Haithem Souala",
@@ -73,6 +80,7 @@ export const TESTIMONIALS_LIST = [
     company: "Woop",
     url: "https://www.woopit.fr/",
     title: "Head of Data",
+    imgSize: 'w-[200px] h-[40px]'
   },
   {
     name: "Erica Bertan",
@@ -82,24 +90,27 @@ export const TESTIMONIALS_LIST = [
     company: "Loggi",
     url: "https://www.loggi.com",
     title: "Data Engineer",
+    imgSize: 'w-[200px] h-[50px]'
   },
   {
     name: "Laila Patel",
     description:
-      "OpenMetadata has been an invaluable tool for our organization. With its user-friendly interface and powerful features, we have streamlined our data management and governance processes. OpenMetadata's collaborative features have fostered better communication and collaboration among our teams, ensuring everyone is on the same page regarding data assets. <br/><br/> Furthermore, the extensive integration options and APIs have allowed us to seamlessly integrate OpenMetadata into our existing data infrastructure, making the implementation process smooth and efficient. The platform's strong data lineage and discovery capabilities have been a game-changer, helping us gain deeper insights into our data and ensuring data compliance. <br/><br/> Overall, OpenMetadata has exceeded our expectations and has become an integral part of our data governance strategy. We highly recommend it to any organization seeking to enhance their data management, governance, and data-driven decision-making processes.",
+      "OpenMetadata has been an invaluable tool for our organization. With its user-friendly interface and powerful features, we have streamlined our data management and governance processes. OpenMetadata's collaborative features have fostered better communication and collaboration among our teams, ensuring everyone is on the same page regarding data assets. Furthermore, the extensive integration options and APIs have allowed us to seamlessly integrate OpenMetadata into our existing data infrastructure, making the implementation process smooth and efficient. The platform's strong data lineage and discovery capabilities have been a game-changer, helping us gain deeper insights into our data and ensuring data compliance. Overall, OpenMetadata has exceeded our expectations and has become an integral part of our data governance strategy. We highly recommend it to any organization seeking to enhance their data management, governance, and data-driven decision-making processes.",
     image: "/assets/testimonials/moove-logo.webp",
     company: "Moove",
     url: "https://www.moove.io/",
     title: "Data Governance Specialist",
+    imgSize: 'w-[200px] h-[60px]'
   },
   {
     name: "Liubov Pasechnik",
     description:
-      "OpenMetadata helps us to reduce the gap between business users and technical users. The first step in any data-driven digital transformation is to manage your data as an enterprise asset: take inventory of it, assess and maximize its value, providing transparency, and credibility. <br/><br/> Data is distributed and diverse across many various departments, services and DWH layers, so it's crucial for us to have a tool with powerful advanced search to filter search results, detailed data lineage and integrated business glossary module.",
+      "OpenMetadata helps us to reduce the gap between business users and technical users. The first step in any data-driven digital transformation is to manage your data as an enterprise asset: take inventory of it, assess and maximize its value, providing transparency, and credibility. Data is distributed and diverse across many various departments, services and DWH layers, so it's crucial for us to have a tool with powerful advanced search to filter search results, detailed data lineage and integrated business glossary module.",
     image: "/assets/testimonials/inDrive-logo.webp",
     company: "inDrive",
     url: "https://indrive.com/en/home/",
     title: "Senior Data Steward (Data Governance Analyst)",
+    imgSize: 'w-[250px] h-[70px]'
   },
 ];
 export const TEAMS_LIST = [

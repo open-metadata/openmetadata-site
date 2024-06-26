@@ -4,12 +4,10 @@ export const CLIENT_LIST = [
     {
         name: "inDrive",
         logo: `${LOGO_ROUTE}/inDrive.svg`,
-        width: 130
     },
     {
         name: "Intelligaia",
         logo: `${LOGO_ROUTE}/intelligaia.svg`,
-        width: 130
     },
     {
         name: "Beeline",
@@ -19,12 +17,10 @@ export const CLIENT_LIST = [
     {
         name: "Khatabook",
         logo: `${LOGO_ROUTE}/khatabook.svg`,
-        width: 130
     },
     {
         name: "Lahaus",
         logo: `${LOGO_ROUTE}/lahaus.svg`,
-        width: 130
     },
     {
         name: "Bucketplace",
@@ -34,11 +30,9 @@ export const CLIENT_LIST = [
     {
         name: "Loggi",
         logo: `${LOGO_ROUTE}/loggi.svg`,
-        width: 130
     },
     {
         name: "Moove",
         logo: `${LOGO_ROUTE}/moove.svg`,
-        width: 130
     },
 ]

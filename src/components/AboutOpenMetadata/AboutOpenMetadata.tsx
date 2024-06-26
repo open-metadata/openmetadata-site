@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const AboutOpenMetadata = () => {
   return (
-    <div className="mx-auto relative z-[12] mt-28 max-w-[1440px] px-4 md:px-16">
+    <div className="mx-auto relative z-[12] my-28 max-w-[1440px] px-4 md:px-16">
       <h3 className="text-[#292929] font-medium text-center text-[32px] lg:text-[44px]">
         Learn More <span className="text-[#7147E8]">About OpenMetadata</span>
       </h3>
