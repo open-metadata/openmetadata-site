@@ -8,7 +8,7 @@ export const TESTIMONIALS_LIST = [
     company: "Khatabook",
     url: "https://khatabook.com/",
     title: "Lead - Data Platform",
-    imgSize: 'w-[250px] h-[40px]'
+    imgSize: 'w-[250px] h-[39px]'
   },
   {
     name: "Seungwan Jo",
@@ -30,7 +30,7 @@ export const TESTIMONIALS_LIST = [
     company: "Intelligaia",
     url: "https://intelligaia.com/",
     title: "Product Manager - Data",
-    imgSize: 'w-[250px] h-[40px]'
+    imgSize: 'w-[250px] h-[39px]'
   },
   {
     name: "Sandeep Penmetsa",
@@ -90,7 +90,7 @@ export const TESTIMONIALS_LIST = [
     company: "Loggi",
     url: "https://www.loggi.com",
     title: "Data Engineer",
-    imgSize: 'w-[200px] h-[50px]'
+    imgSize: 'w-[200px] h-[39px]'
   },
   {
     name: "Laila Patel",
@@ -100,7 +100,7 @@ export const TESTIMONIALS_LIST = [
     company: "Moove",
     url: "https://www.moove.io/",
     title: "Data Governance Specialist",
-    imgSize: 'w-[200px] h-[60px]'
+    imgSize: 'w-[200px] h-[39px]'
   },
   {
     name: "Liubov Pasechnik",

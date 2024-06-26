@@ -27,7 +27,7 @@ const KeyDataAssets = () => {
       </div>
       <h3
         data-aos="fade-up"
-        className="mt-9 text-center text-[#292929] font-medium text-[34px] lg:text-[48px]"
+        className="mt-9 text-center text-[#292929] font-medium text-[36px] lg:text-[48px]"
       >
         Enable teams to find{" "}
         <span className="text-[#7147E8]">key data assets</span>

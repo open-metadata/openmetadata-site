@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const TryOpenMetadata = () => {
   return (
-    <div className="mx-auto max-w-[1440px] relative mt-20">
-      <div className="mx-auto relative z-[11] pt-16 px-4 md:px-16">
+    <div className="bg-gradient-to-b from-[#F1EDFD] to-white mt-20">
+      <div className="mx-auto max-w-[1440px] pt-16 px-4 md:px-16">
         <h3
           data-aos="fade-up"
-          className="text-[#292929] font-medium text-center text-[32px] lg:text-[44px]"
+          className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]"
         >
           Different ways to try out{" "}
           <span className="text-[#7147E8]">OpenMetadata</span>
@@ -50,14 +50,6 @@ const TryOpenMetadata = () => {
             </div>
           ))}
         </div>
-      </div>
-      <div className="absolute top-0 z-[10]">
-        <Image
-          src="/assets/shadow-bg.webp"
-          alt="shadow-bg"
-          width={1440}
-          height={400}
-        />
       </div>
     </div>
   );

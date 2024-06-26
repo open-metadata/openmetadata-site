@@ -24,7 +24,7 @@ const NavbarDev = () => {
 
   return (
     <nav
-      className={`relative top-0 z-50 w-full duration-400 ${
+      className={`relative top-0 z-50 w-full duration-400 max-w-[1440px] mx-auto ${
         scrolledNav ? "bg-white shadow-custom" : "bg-background"
       }`}
     >
@@ -68,7 +68,11 @@ const NavbarDev = () => {
         >
           <ul className="font-semibold ml-auto flex flex-col gap-4 items-center sm:text-lg lg:flex-row lg:mr-10 lg:text-[16px]">
             <li>
-              <Link href="https://sandbox.open-metadata.org/signin">
+              <Link
+                href="https://sandbox.open-metadata.org/signin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Get Started
               </Link>
             </li>

@@ -10,6 +10,7 @@ const Testimonials = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const settings = {
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
