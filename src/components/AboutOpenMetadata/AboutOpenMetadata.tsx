@@ -11,26 +11,32 @@ const AboutOpenMetadata = () => {
       <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {ABOUT_OPENMETADATA.map((item) => (
           <div key={item.header} className="shadow-xl rounded-md">
-            <Image
-              className="w-full h-[180px] rounded-t-md"
-              src={item.image}
-              alt={item.header}
-              width={100}
-              height={100}
-            />
-            <div className="px-5 py-7 flex flex-col items-between">
-              <p className="text-[24px] text-[#4B2F9B] font-semibold -mb-2">{item.header}</p>
-              <p className="text-[#170E2E] font-medium my-3 min-h-[46px]">{item.description}</p>
-              <Link href={item.href} target="_blank" className="flex gap-2 mt-2 uppercase text-[#5E3BC1] font-bold justify-self-end">
-                {item.linkText}{" "}
-                <Image
-                  src="/assets/aboutOpenMetadata/arrow.svg"
-                  alt="Arrow-svg"
-                  width={20}
-                  height={5}
-                />
-              </Link>
-            </div>
+            <Link href={item.href} target="_blank" className="hover:no-underline">
+              <Image
+                className="w-full h-[180px] rounded-t-md"
+                src={item.image}
+                alt={item.header}
+                width={100}
+                height={100}
+              />
+              <div className="px-5 py-7 flex flex-col items-between">
+                <p className="text-[24px] text-[#4B2F9B] font-semibold -mb-2">
+                  {item.header}
+                </p>
+                <p className="text-[#170E2E] font-medium my-3 min-h-[46px]">
+                  {item.description}
+                </p>
+                <div className="flex gap-2 mt-2 uppercase text-[#5E3BC1] font-bold justify-self-end">
+                  {item.linkText}{" "}
+                  <Image
+                    src="/assets/aboutOpenMetadata/arrow.svg"
+                    alt="Arrow-svg"
+                    width={20}
+                    height={5}
+                  />
+                </div>
+              </div>
+            </Link>
           </div>
         ))}
       </div>

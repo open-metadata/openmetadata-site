@@ -31,7 +31,11 @@ const FooterDev = () => {
           </div>
           <ul className="tracking-[1px]">
             <li className="mb-2">
-              <Link href="https://docs.open-metadata.org/" target="_blank">
+              <Link
+                href="https://docs.open-metadata.org/"
+                target="_blank"
+                className="hover:text-gray-500"
+              >
                 What is OpenMetadata?
               </Link>
             </li>
@@ -39,6 +43,7 @@ const FooterDev = () => {
               <Link
                 href="https://docs.open-metadata.org/openmetadata/schemas"
                 target="_blank"
+                className="hover:text-gray-500"
               >
                 Schemas
               </Link>
@@ -47,6 +52,7 @@ const FooterDev = () => {
               <Link
                 href="https://docs.open-metadata.org/openmetadata/apis"
                 target="_blank"
+                className="hover:text-gray-500"
               >
                 APIs
               </Link>
@@ -55,6 +61,7 @@ const FooterDev = () => {
               <Link
                 href="https://docs.open-metadata.org/install/run-openmetadata"
                 target="_blank"
+                className="hover:text-gray-500"
               >
                 Install
               </Link>
@@ -63,6 +70,7 @@ const FooterDev = () => {
               <Link
                 href="https://docs.open-metadata.org/install/metadata-ingestion"
                 target="_blank"
+                className="hover:text-gray-500"
               >
                 Ingestion
               </Link>
@@ -76,7 +84,7 @@ const FooterDev = () => {
           <ul>
             <li className="mb-2">
               <Link
-                className="inline-flex items-center gap-x-1"
+                className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://slack.open-metadata.org/"
                 target="_blank"
               >
@@ -125,7 +133,7 @@ const FooterDev = () => {
             </li>
             <li className="mb-2">
               <Link
-                className="inline-flex items-center gap-x-1"
+                className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://github.com/open-metadata/openmetadata"
                 target="_blank"
               >
@@ -174,7 +182,7 @@ const FooterDev = () => {
             </li>
             <li className="mb-2">
               <Link
-                className="inline-flex items-center gap-x-1"
+                className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://twitter.com/open_metadata"
                 target="_blank"
               >
@@ -199,7 +207,7 @@ const FooterDev = () => {
             </li>
             <li className="mb-2">
               <Link
-                className="inline-flex items-center gap-x-1"
+                className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://www.meetup.com/openmetadata-meetup-group/"
                 target="_blank"
               >
@@ -224,7 +232,7 @@ const FooterDev = () => {
             </li>
             <li>
               <Link
-                className="inline-flex items-center gap-x-1"
+                className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://www.youtube.com/@OpenMetadataChannel/videos"
                 target="_blank"
               >
