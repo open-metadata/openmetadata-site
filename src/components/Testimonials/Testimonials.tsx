@@ -10,7 +10,7 @@ const Testimonials = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -66,8 +66,8 @@ const Testimonials = () => {
                     <Link href={item.url} target="_blank">
                       <Image
                         className={item.imgSize}
-                        width={70}
-                        height={70}
+                        width={100}
+                        height={100}
                         src={item.image}
                         alt={item.company}
                       />

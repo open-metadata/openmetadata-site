@@ -8,7 +8,7 @@ export const TESTIMONIALS_LIST = [
     company: "Khatabook",
     url: "https://khatabook.com/",
     title: "Lead - Data Platform",
-    imgSize: 'w-[200px] h-[50px]'
+    imgSize: 'w-[250px] h-[40px]'
   },
   {
     name: "Seungwan Jo",
@@ -19,7 +19,7 @@ export const TESTIMONIALS_LIST = [
     company: "Bucketplace",
     url: "http://bucketplace.net",
     title: "Data Engineer",
-    imgSize: 'w-[60px] h-[50px]'
+    imgSize: 'w-[50px] h-[50px]'
   },
   {
     name: "Abhijit Singh",
@@ -30,7 +30,7 @@ export const TESTIMONIALS_LIST = [
     company: "Intelligaia",
     url: "https://intelligaia.com/",
     title: "Product Manager - Data",
-    imgSize: 'w-[200px] h-[50px]'
+    imgSize: 'w-[250px] h-[40px]'
   },
   {
     name: "Sandeep Penmetsa",
@@ -40,7 +40,7 @@ export const TESTIMONIALS_LIST = [
     company: "Physics Wallah",
     url: "https://www.pw.live/",
     title: "Associate Director",
-    imgSize: 'w-[60px] h-[50px]'
+    imgSize: 'w-[50px] h-[50px]'
   },
   {
     name: "Praveen Singh",
@@ -50,7 +50,7 @@ export const TESTIMONIALS_LIST = [
     company: "PayU Finance",
     url: "https://www.payufin.in/",
     title: "Director of Data Engineering",
-    imgSize: 'w-[200px] h-[50px]'
+    imgSize: 'w-[200px] h-[40px]'
   },
   {
     name: "Rinat Abdurakhmanov",
@@ -60,7 +60,7 @@ export const TESTIMONIALS_LIST = [
     company: "beeline",
     url: "http://beeline.ru/",
     title: "Chief Data Officer",
-    imgSize: 'w-[60px] h-[50px]'
+    imgSize: 'w-[50px] h-[50px]'
   },
   {
     name: "Cade Parker",
@@ -70,7 +70,7 @@ export const TESTIMONIALS_LIST = [
     company: "ZenBusiness",
     url: "https://www.zenbusiness.com",
     title: "Senior Engineering Manager",
-    imgSize: 'w-[60px] h-[60px]'
+    imgSize: 'w-[50px] h-[50px]'
   },
   {
     name: "Haithem Souala",
@@ -80,7 +80,7 @@ export const TESTIMONIALS_LIST = [
     company: "Woop",
     url: "https://www.woopit.fr/",
     title: "Head of Data",
-    imgSize: 'w-[200px] h-[50px]'
+    imgSize: 'w-[200px] h-[40px]'
   },
   {
     name: "Erica Bertan",
@@ -90,7 +90,7 @@ export const TESTIMONIALS_LIST = [
     company: "Loggi",
     url: "https://www.loggi.com",
     title: "Data Engineer",
-    imgSize: 'w-[200px] h-[60px]'
+    imgSize: 'w-[200px] h-[50px]'
   },
   {
     name: "Laila Patel",
@@ -110,7 +110,7 @@ export const TESTIMONIALS_LIST = [
     company: "inDrive",
     url: "https://indrive.com/en/home/",
     title: "Senior Data Steward (Data Governance Analyst)",
-    imgSize: 'w-[200px] h-[100px]'
+    imgSize: 'w-[250px] h-[70px]'
   },
 ];
 export const TEAMS_LIST = [
