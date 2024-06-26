@@ -1,5 +1,6 @@
 import AboutOpenMetadata from "@/components/AboutOpenMetadata/AboutOpenMetadata";
 import Achievement from "@/components/Achievement/Achievement";
+import FooterDev from "@/components/FooterDev/FooterDev";
 import Header from "@/components/Header/Header";
 import IntegrationsDev from "@/components/IntegrationsDev/IntegrationsDev";
 import KeyDataAssets from "@/components/KeyDataAssets/KeyDataAssets";
@@ -101,6 +102,7 @@ const Development = () => {
         <TryOpenMetadata />
         <Testimonials />
         <AboutOpenMetadata />
+        <FooterDev />
       </div>
     </>
   );
