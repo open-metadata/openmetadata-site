@@ -128,6 +128,37 @@ body {
   left: auto;
 }
 
+.slider-container.testimonial-content {
+  max-width: 330px;
+  margin: auto;
+  padding: 40px 0;
+}
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; 
+  background-color: white;
+}
+
+@media (min-width: 640px) {
+  .slider-container.testimonial-content {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slider-container.testimonial-content {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-container.testimonial-content {
+    max-width: 800px;
+  }
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -20364,8 +20395,8 @@ section {
   text-align: center;
 }
 .card-team .card-body .card-team-img {
-  height: 10rem;
-  width: 10rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 100%;
   margin-top: -4.5rem;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(33, 40, 50, 0.2);
