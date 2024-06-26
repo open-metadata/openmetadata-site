@@ -39,10 +39,10 @@ const IntegrationsDev = () => {
   };
 
   return (
-    <div className="mx-auto mt-20 max-w-[1440px] px-4 md:px-16">
+    <div className="custom-container mt-20 px-4 md:px-16">
       <h3
         data-aos="fade-up"
-        className="text-[#292929] font-medium text-center text-[32px] lg:text-[44px]"
+        className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]"
       >
         Integrations
       </h3>
@@ -54,7 +54,7 @@ const IntegrationsDev = () => {
         of services, and the list is constantly growing...
       </p>
       <div className="mt-8 sm:shadow-lg sm:rounded-lg sm:flex sm:h-[655px] md:h-[712px]">
-        <div className="flex text-[#5E3BC1] overflow-x-scroll text-center sm:overflow-x-auto sm:border-[#E3DAFA] sm:flex-col sm:border-r md:text-[20px] lg:max-w-[20%] xl:max-w-[25%]">
+        <div className="flex text-[#5E3BC1] overflow-x-scroll text-center sm:border-[#E3DAFA] sm:flex-col sm:border-r md:text-[20px] lg:max-w-[20%] xl:max-w-[25%]">
           <div
             className={`px-5 py-4 cursor-pointer text-nowrap ${
               selectedTab === "All Connectors" && "font-semibold bg-[#EDF3FD]"
@@ -66,23 +66,23 @@ const IntegrationsDev = () => {
           {INTEGRATION_SERVICES.map((service) => (
             <div
               key={service.connector}
-              className={`px-5 py-4 border-b border-[#E3DAFA] cursor-pointer ${
+              className={`px-5 py-4 cursor-pointer ${
                 selectedTab === service.connector &&
                 "font-semibold bg-[#EDF3FD]"
-              } lg:px-9 xl:px-12`}
+              } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
               onClick={() => handleTabClick(service.connector)}
             >
               {service.connector}
             </div>
           ))}
         </div>
-        <div className="py-8 gap-8 w-full overflow-y-scroll flex flex-wrap justify-center sm:px-8 sm:gap-4 sm:grid sm:grid-cols-3 sm:auto-rows-max md:grid-cols-4 lg:grid-cols-5 lg:px-12 xl:grid-cols-6">
+        <div className="py-8 gap-5 w-full overflow-y-scroll justify-center sm:px-8 sm:gap-4 grid grid-cols-3 sm:auto-rows-max md:grid-cols-4 lg:grid-cols-5 lg:px-12 xl:grid-cols-6">
           {services.map((item) => (
             <div key={item.name} className="max-h-[110px]">
               <Link
                 href={item.href ?? "#"}
                 target="_blank"
-                className="text-center flex flex-col items-center "
+                className="text-center flex flex-col items-center"
               >
                 <Image
                   alt={item.alt}

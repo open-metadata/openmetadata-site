@@ -4,8 +4,8 @@ import React from "react";
 
 const FooterDev = () => {
   return (
-    <footer className="py-16 mt-auto w-full bg-[#333333] text-white max-w-[1440px] mx-auto px-8 md:px-20">
-      <div className="sm:grid sm:items-center sm:gap-5 sm:grid-cols-2 lg:gap-2 lg:grid-cols-5 xl:grid-cols-6">
+    <footer className="py-16 mt-auto w-full bg-[#333333] text-white">
+      <div className="custom-container sm:grid sm:items-center sm:gap-5 sm:grid-cols-2 lg:gap-2 lg:grid-cols-5 xl:grid-cols-6 px-8 md:px-20">
         <div className="flex flex-col gap-5 col-span-2 xl:col-span-3">
           <div>
             <Image

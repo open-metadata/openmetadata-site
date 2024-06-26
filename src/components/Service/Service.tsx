@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="max-w-[1440px] mx-auto mt-5 px-4 md:px-16">
+    <div className="custom-container mt-5 px-4 md:px-16">
       <h2
         data-aos="fade-up"
         className="text-[#292929] text-4xl font-medium text-center lg:text-[52px]"
