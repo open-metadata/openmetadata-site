@@ -64,15 +64,15 @@ const NavbarDev = () => {
         <div
           className={`${
             open ? "block" : "hidden"
-          } h-auto lg:flex bg-white lg:items-center relative top-full left-5 right-0 lg:relative lg:top-auto lg:left-auto lg:right-auto max-lg:pb-4`}
+          } h-auto lg:flex bg-white items-center relative top-full text-center lg:relative lg:top-auto lg:left-auto lg:right-auto max-lg:pb-4`}
         >
-          <ul className="font-semibold sm:text-lg ml-auto lg:mr-10 flex flex-col lg:items-center lg:flex-row lg:text-[14px] xl:text-[16px]">
-            <li className="lg:mr-7 max-lg:pl-10">
+          <ul className="font-semibold ml-auto flex flex-col gap-4 items-center sm:text-lg lg:flex-row lg:mr-10 lg:text-[16px]">
+            <li>
               <Link href="https://sandbox.open-metadata.org/signin">
                 Get Started
               </Link>
             </li>
-            <li className="mr-7 max-lg:pl-10">
+            <li>
               <Link
                 href="https://docs.open-metadata.org/"
                 target="_blank"
@@ -81,10 +81,10 @@ const NavbarDev = () => {
                 Documentation
               </Link>
             </li>
-            <li className="lg:mr-7 max-lg:pl-10">
+            <li>
               <Link href="community">Community</Link>
             </li>
-            <li className="mr-7 max-lg:pl-10">
+            <li>
               <Link
                 href="http://blog.open-metadata.org/"
                 target="_blank"
@@ -93,10 +93,10 @@ const NavbarDev = () => {
                 Blog
               </Link>
             </li>
-            <li className="lg:mr-7 max-lg:pl-10">
+            <li>
               <Link href="http://getcollate.io/contact">Contact Us</Link>
             </li>
-            <li className="max-lg:pl-10">
+            <li className="mb-4 lg:mb-0">
               <Link
                 href="https://github.com/open-metadata/OpenMetadata"
                 target="_blank"

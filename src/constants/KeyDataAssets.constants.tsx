@@ -1,28 +1,33 @@
-const ICON_ROUTE = '/assets/keydata'
+import { CollaborationIcon } from "@/components/Icons/Collaboration";
+import { EyeIcon } from "@/components/Icons/Eye";
+import { FingerPrintIcon } from "@/components/Icons/FingerPrint";
+import { GovernanceIcon } from "@/components/Icons/Governance";
+import { QualityIcon } from "@/components/Icons/Quality";
+import { SearchIcon } from "@/components/Icons/Search";
 
 export const TABS = [
     {
         name: "Discovery",
-        icon: `${ICON_ROUTE}/search.svg`
+        icon: SearchIcon,
     },
     {
         name: "Lineage",
-        icon: `${ICON_ROUTE}/fingerprint.svg`
+        icon: FingerPrintIcon,
     },
     {
         name: "Observability",
-        icon: `${ICON_ROUTE}/eye.svg`
+        icon: EyeIcon,
     },
     {
         name: "Quality",
-        icon: `${ICON_ROUTE}/quality.svg`
+        icon: QualityIcon,
     },
     {
         name: "Collaboration",
-        icon: `${ICON_ROUTE}/collaboration.svg`
+        icon: CollaborationIcon,
     },
     {
         name: "Governance",
-        icon: `${ICON_ROUTE}/governance.svg`
+        icon: GovernanceIcon,
     },
 ]

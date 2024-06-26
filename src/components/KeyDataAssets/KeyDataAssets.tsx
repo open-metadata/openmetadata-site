@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { TABS } from "@/constants/KeyDataAssets.constants";
 import Image from "next/image";
 
 const KeyDataAssets = () => {
+  const [openTab, setOpenTab] = useState('Discovery')
+
+  const handleTabClick = (tab: string) => setOpenTab(tab)
+
   return (
     <div className="mx-auto mt-32 max-w-[1440px] px-4 md:px-16">
       <div
@@ -10,18 +15,13 @@ const KeyDataAssets = () => {
       >
         {TABS.map((item) => (
           <div
-            className={`flex items-center text-[#4B2F9B] border-2 border-[#4B2F9B] rounded-full px-8 py-1 ${
-              item.name === "Discovery" && "bg-[#4B2F9B] text-white"
+            className={`flex items-center cursor-pointer text-[#4B2F9B] border-2 border-[#4B2F9B] rounded-full px-8 py-1 ${
+              item.name === openTab && "bg-[#4B2F9B] text-white"
             }`}
+            onClick={() => handleTabClick(item.name)}
           >
-            <Image
-              className="w-[25px] h-[25px] mr-2"
-              src={item.icon}
-              alt={item.name}
-              width={25}
-              height={25}
-            />
-            <span className="lg:text-[20px] mr-4">{item.name}</span>
+            <item.icon color={openTab === item.name ? 'white' : '#4B2F9B'} />
+            <span className="lg:text-[20px] ml-2">{item.name}</span>
           </div>
         ))}
       </div>
