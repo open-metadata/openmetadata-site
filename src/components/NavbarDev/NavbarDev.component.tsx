@@ -66,7 +66,7 @@ const NavbarDev = () => {
             open ? 'block' : 'hidden'
           } h-auto lg:flex bg-white items-center relative top-full text-center lg:relative lg:top-auto lg:left-auto lg:right-auto max-lg:pb-4`}
         >
-          <ul className="font-semibold ml-auto flex flex-col gap-4 items-center sm:text-lg lg:flex-row lg:mr-10 lg:text-[16px]">
+          <ul className="font-semibold ml-auto flex flex-col gap-4 items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-10 lg:text-[16px]">
             <li>
               <Link
                 href="https://sandbox.open-metadata.org/signin"

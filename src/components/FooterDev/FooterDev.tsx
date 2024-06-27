@@ -4,8 +4,8 @@ import React from "react";
 
 const FooterDev = () => {
   return (
-    <footer className="py-16 mt-auto w-full bg-[#333333] text-white">
-      <div className="custom-container sm:grid sm:items-center sm:gap-5 sm:grid-cols-2 lg:gap-2 lg:grid-cols-5 xl:grid-cols-6 px-8 md:px-20">
+    <footer className="pt-16 pb-12 mt-auto w-full bg-[#333333] text-white">
+      <div className="custom-container sm:grid sm:gap-5 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 px-8 md:px-20">
         <div className="flex flex-col gap-5 col-span-2 xl:col-span-3">
           <div>
             <Image
@@ -20,12 +20,12 @@ const FooterDev = () => {
             Open Standard for Metadata with a centralized Metadata Store.
             Discover, collaborate and get your Data Right.
           </div>
-          <div className="text-[12px] font-normal">
+          <div className="text-[12px] font-normal mb-5">
             Copyright OpenMetadata {new Date().getFullYear()}
           </div>
         </div>
 
-        <div className="my-5 sm:my-0">
+        <div className="mb-5">
           <div className="text-uppercase text-[18px] font-medium tracking-[6px] mb-3">
             Docs
           </div>
@@ -82,7 +82,7 @@ const FooterDev = () => {
             Community
           </div>
           <ul>
-            <li className="mb-2">
+            <li className="mb-1">
               <Link
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://slack.open-metadata.org/"
@@ -131,7 +131,7 @@ const FooterDev = () => {
                 Slack
               </Link>
             </li>
-            <li className="mb-2">
+            <li className="mb-1">
               <Link
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://github.com/open-metadata/openmetadata"
@@ -180,7 +180,7 @@ const FooterDev = () => {
                 GitHub
               </Link>
             </li>
-            <li className="mb-2">
+            <li className="mb-1">
               <Link
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://twitter.com/open_metadata"
@@ -205,7 +205,7 @@ const FooterDev = () => {
                 Twitter
               </Link>
             </li>
-            <li className="mb-2">
+            <li className="mb-1">
               <Link
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://www.meetup.com/openmetadata-meetup-group/"
