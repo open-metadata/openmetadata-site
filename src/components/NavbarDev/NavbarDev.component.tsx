@@ -36,7 +36,7 @@ const NavbarDev = () => {
               width={145}
               src="/assets/omd-logo.svg"
               alt="omd-logo-svg"
-              loading="eager"
+              priority
             />
           </Link>
 
@@ -114,7 +114,7 @@ const NavbarDev = () => {
                   className="object-cover"
                   src="/assets/github.svg"
                   alt="github-icon"
-                  loading="eager"
+                  priority
                 />
               </Link>
             </li>

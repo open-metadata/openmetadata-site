@@ -66,6 +66,7 @@ const Clients = () => {
               alt={client.name}
               width={client.width ? client.width : 100}
               height={100}
+              priority
             />
           </div>
         ))}

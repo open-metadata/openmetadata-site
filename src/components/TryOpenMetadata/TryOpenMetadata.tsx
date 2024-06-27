@@ -28,6 +28,7 @@ const TryOpenMetadata = () => {
                 alt={item.header}
                 width={100}
                 height={100}
+                loading="lazy"
               />
 
               <p className="text-[#333333] font-medium mt-8 text-[24px] lg:text-[28px] xl:text-[36px]">

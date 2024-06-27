@@ -70,7 +70,7 @@ const Header = () => {
                 width={1200}
                 src="/assets/header/header.svg"
                 alt="header-svg"
-                loading="lazy"
+                priority
               />
             </div>
           </div>
