@@ -14,7 +14,7 @@ const Header = () => {
           alt="left-box-svg"
           loading="lazy"
         />
-        <div className="pt-20 pb-16 text-center px-4 lg:px-0">
+        <div className="pt-28 pb-16 text-center px-4 md:pt-20 lg:px-0">
           <h1
             data-aos="fade-up"
             className="text-4xl text-[#292929] lg:leading-[54px] lg:text-[52px]"

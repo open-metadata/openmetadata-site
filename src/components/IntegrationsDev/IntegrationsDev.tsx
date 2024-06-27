@@ -58,7 +58,7 @@ const IntegrationsDev = () => {
           <div
             className={`px-5 py-4 cursor-pointer text-nowrap ${
               selectedTab === "All Connectors" &&
-              "font-semibold bg-[#EDF3FD] rounded-tl-2xl"
+              "font-semibold bg-[#EDF3FD] sm:rounded-tl-2xl"
             } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
             onClick={() => handleTabClick("All Connectors")}
           >
@@ -73,7 +73,7 @@ const IntegrationsDev = () => {
               } ${
                 selectedTab === "Others" &&
                 service.connector === "Others" &&
-                "rounded-bl-2xl"
+                "sm:rounded-bl-2xl"
               } ${
                 service.connector === "Others" && "border-none"
               } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
