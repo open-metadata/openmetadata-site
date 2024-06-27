@@ -14,6 +14,7 @@ const FooterDev = () => {
               height={48}
               className="object-cover object-center block image-fluid"
               src="/assets/omd-logo-footer.svg"
+              priority
             />
           </div>
           <div className="font-normal text-base md:max-w-[80%] xl:max-w-[50%]">
@@ -265,6 +266,7 @@ const FooterDev = () => {
             width={200}
             height={47}
             src="/assets/netlify.webp"
+            priority
           />
         </div>
       </div>

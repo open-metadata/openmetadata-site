@@ -108,6 +108,7 @@ const Testimonials = () => {
                         height={100}
                         src={item.image}
                         alt={item.company}
+                        priority
                       />
                     </Link>
                     <div className="bg-[#E2DAFA] w-[4px] rounded-full h-[80px] mx-4"></div>

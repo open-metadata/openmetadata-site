@@ -91,6 +91,7 @@ const IntegrationsDev = () => {
                   className="w-12 h-12 mb-2"
                   height={1000}
                   src={item.src}
+                  loading="lazy"
                 />
                 <p className="mt-2">{item.name}</p>
               </Link>

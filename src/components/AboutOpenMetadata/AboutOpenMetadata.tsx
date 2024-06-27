@@ -11,13 +11,18 @@ const AboutOpenMetadata = () => {
       <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {ABOUT_OPENMETADATA.map((item) => (
           <div key={item.header} className="shadow-xl rounded-md">
-            <Link href={item.href} target="_blank" className="hover:no-underline">
+            <Link
+              href={item.href}
+              target="_blank"
+              className="hover:no-underline"
+            >
               <Image
                 className="w-full h-[180px] rounded-t-md"
                 src={item.image}
                 alt={item.header}
                 width={100}
                 height={100}
+                loading="lazy"
               />
               <div className="px-5 py-7 flex flex-col items-between">
                 <p className="text-[24px] text-[#4B2F9B] font-semibold -mb-2">

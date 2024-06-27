@@ -39,6 +39,7 @@ const KeyDataAssets = () => {
             alt="Key Assets"
             width={40}
             height={40}
+            loading="lazy"
           />
           <span className="text-wrap">
             <i>80+ Data Connectors for all your data sources</i>
@@ -51,6 +52,7 @@ const KeyDataAssets = () => {
             alt="Key Assets"
             width={40}
             height={40}
+            loading="lazy"
           />
           <span>
             <i>Search, facet and preview across your data estate</i>
@@ -63,6 +65,7 @@ const KeyDataAssets = () => {
             alt="Key Assets"
             width={40}
             height={40}
+            loading="lazy"
           />
           <span>
             <i>Collaborate with other data practitioners</i>
@@ -76,6 +79,7 @@ const KeyDataAssets = () => {
           alt="Key Data Assets"
           width={1000}
           height={600}
+          loading="lazy"
         />
       </div>
     </div>
