@@ -4,7 +4,7 @@ import Link from 'next/link';
 const NavbarStrip = () => {
   return (
     <div className="bg-[#0B3547] text-center mx-auto text-[#D3ECF7] py-3 text-[16px] max-lg:px-4 lg:px-12">
-      <div className="custom-container flex justify-center items-center gap-2 flex-col md:flex-row md:gap-4">
+      <div className="custom-container flex justify-center items-center sm:gap-2 flex-col md:flex-row md:gap-5">
         <Image
           className="md:inline"
           height={45}
@@ -13,7 +13,7 @@ const NavbarStrip = () => {
           alt="collate-logo-svg"
           loading="lazy"
         />
-        <span className="lg:text-[24px] font-normal leading-[32px]">
+        <span className="font-normal my-2 sm:my-0 lg:text-[24px] lg:leading-[32px]">
           Try OpenMetadata as a managed service for free, from Collate.
         </span>
         <span className="lg:relative">

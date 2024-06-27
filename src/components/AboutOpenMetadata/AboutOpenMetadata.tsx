@@ -26,7 +26,7 @@ const AboutOpenMetadata = () => {
                 <p className="text-[#170E2E] font-medium my-3 min-h-[46px]">
                   {item.description}
                 </p>
-                <div className="flex gap-2 mt-2 uppercase text-[#5E3BC1] font-bold justify-self-end">
+                <div className="flex gap-2 mt-2 uppercase text-[#5E3BC1] font-bold">
                   {item.linkText}{" "}
                   <Image
                     src="/assets/aboutOpenMetadata/arrow.svg"

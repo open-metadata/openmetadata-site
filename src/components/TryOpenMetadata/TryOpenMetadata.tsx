@@ -6,17 +6,13 @@ const TryOpenMetadata = () => {
   return (
     <div className="shadow-bg mt-20">
       <div className="custom-container pt-16 px-4 md:px-16">
-        <h3
-          data-aos="fade-up"
-          className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]"
-        >
+        <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]">
           Different ways to try out{" "}
           <span className="text-[#7147E8]">OpenMetadata</span>
         </h3>
         <div className="mt-[48px] grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {TRY_OPENMETADATA.map((item) => (
             <div
-              data-aos="zoom-in"
               key={item.header}
               className="border border-[#D0C2F7] bg-white p-5 rounded shadow-md relative"
             >

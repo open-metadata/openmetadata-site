@@ -85,7 +85,7 @@ const Testimonials = () => {
           alt="left-box-svg"
           loading="lazy"
         />
-        <div className="mt-32 mx-auto px-4 md:px-16 lg:px-10">
+        <div className="mt-32 mx-auto px-4 md:px-16 lg:px-0">
           <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]">
             Trusted <span className="text-[#7147E8]">Across Industries</span>
           </h3>
@@ -93,7 +93,7 @@ const Testimonials = () => {
             <Slider {...settings}>
               {TESTIMONIALS_LIST.map((item) => (
                 <div key={item.company}>
-                  <p className="text-[#170E2E] sm:columns-2 lg:text-[20px]">
+                  <p className="text-[#170E2E] sm:columns-2 sm:gap-x-4 lg:gap-x-8 lg:text-[20px]">
                     "{item.description}"
                   </p>
                   <div className="mt-5 mx-auto flex items-center justify-center lg:max-w-[600px]">
