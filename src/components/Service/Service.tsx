@@ -18,7 +18,7 @@ const Services = () => {
               alt={service.serviceName.header1 + service.serviceName.header2}
               width={800}
               height={500}
-              loading="lazy"
+              loading="eager"
             />
             <div className="text-center lg:text-left">
               <h3 className="font-medium lg:max-w-[85%] text-3xl xl:text-4xl">

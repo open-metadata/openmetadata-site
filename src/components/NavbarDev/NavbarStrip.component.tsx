@@ -11,7 +11,7 @@ const NavbarStrip = () => {
           width={45}
           src="/assets/collate.svg"
           alt="collate-logo-svg"
-          loading="lazy"
+          loading="eager"
         />
         <span className="font-normal my-2 sm:my-0 lg:text-[24px] lg:leading-[32px]">
           Try OpenMetadata as a managed service for free, from Collate.
