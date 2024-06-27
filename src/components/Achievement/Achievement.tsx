@@ -32,7 +32,7 @@ const Achievement = () => {
                     alt={item.name}
                     width={35}
                     height={35}
-                    loading="lazy"
+                    loading="eager"
                   />
                   <div className="text-[#382374] tracking-wider font-bold sm:text-[32px] lg:text-[40px]">
                     {item.count}+

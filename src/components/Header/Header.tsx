@@ -12,7 +12,7 @@ const Header = () => {
           width={140}
           src="/assets/header/left-box.svg"
           alt="left-box-svg"
-          loading="lazy"
+          loading="eager"
         />
         <div className="pt-28 pb-16 text-center px-4 md:pt-20 lg:px-0">
           <h1 className="text-4xl text-[#292929] font-medium lg:leading-[54px] lg:text-[52px]">
@@ -37,7 +37,7 @@ const Header = () => {
                 alt="message-icon-svg"
                 width={24}
                 height={24}
-                loading="lazy"
+                loading="eager"
               />{" "}
               Join Slack
             </Link>
@@ -51,7 +51,7 @@ const Header = () => {
                 alt="bolt-icon-svg"
                 width={24}
                 height={24}
-                loading="lazy"
+                loading="eager"
               />{" "}
               Try Openmetadata
             </Link>
@@ -62,7 +62,7 @@ const Header = () => {
               width={1200}
               src="/assets/header/shadow.svg"
               alt="shadow-svg"
-              loading="lazy"
+              loading="eager"
             />
             <div className="absolute top-24 md:top-36">
               <Image
@@ -70,7 +70,7 @@ const Header = () => {
                 width={1200}
                 src="/assets/header/header.svg"
                 alt="header-svg"
-                priority
+                loading="eager"
               />
             </div>
           </div>
@@ -81,7 +81,7 @@ const Header = () => {
           width={140}
           src="/assets/header/right-box.svg"
           alt="right-box-svg"
-          loading="lazy"
+          loading="eager"
         />
       </div>
       <Clients />
