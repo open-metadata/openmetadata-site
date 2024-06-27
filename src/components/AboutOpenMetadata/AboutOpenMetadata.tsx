@@ -8,7 +8,7 @@ const AboutOpenMetadata = () => {
       <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]">
         Learn More <span className="text-[#7147E8]">About OpenMetadata</span>
       </h3>
-      <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {ABOUT_OPENMETADATA.map((item) => (
           <div key={item.header} className="shadow-xl rounded-md">
             <Link href={item.href} target="_blank" className="hover:no-underline">

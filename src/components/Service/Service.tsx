@@ -11,7 +11,7 @@ const Services = () => {
         {SERVICE_LIST.map((service) => (
           <div
             key={service.serviceName.header1 + service.serviceName.header2}
-            className="my-[50px] grid gap-5 items-center lg:gap-10 lg:grid-cols-2"
+            className="my-[52px] grid items-center sm:gap-5 lg:gap-16 lg:grid-cols-2"
           >
             <Image
               src={service.icon}
@@ -20,14 +20,14 @@ const Services = () => {
               height={500}
             />
             <div className="text-center lg:text-left">
-              <h3 className="font-medium lg:max-w-[80%] text-3xl xl:text-4xl">
+              <h3 className="font-medium lg:max-w-[85%] text-3xl xl:text-4xl">
                 {service.serviceName.header1}
                 <span className="text-[#7147E8]">
                   {service.serviceName.header2}
                 </span>
                 {service.serviceName.header3 && service.serviceName.header3}
               </h3>
-              <p className="mt-2 font-normal text-[18px] lg:max-w-[90%] xl:text-[20px]">
+              <p className="mt-2 font-normal text-[18px] lg:max-w-[98%] xl:text-[20px]">
                 {service.description}
               </p>
             </div>

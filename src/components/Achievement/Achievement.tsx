@@ -8,7 +8,7 @@ const Achievement = () => {
         <div className="flex gap-8 rounded-2xl flex-col w-full lg:flex-row lg:gap-0 lg:shadow-secondary">
           <div className="rounded-l-2xl px-4 lg:max-w-[45%] md:px-12 lg:bg-white lg:px-[92px]">
             <div className="flex flex-col justify-center h-full text-center lg:text-left">
-              <h2 className="text-4xl font-semibold md:text-[46px] md:leading-[52px]">
+              <h2 className="text-4xl font-semibold md:text-[46px] md:leading-[56px]">
                 Fastest Growing{" "}
                 <span className="text-[#7147E8]">
                   Open Source Metadata Platform
