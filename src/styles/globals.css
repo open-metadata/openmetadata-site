@@ -53,10 +53,6 @@ p{
   @apply bg-gradient-to-b from-[#F1EDFD] to-white
 }
 
-.bg-gradient {
-  @apply bg-gradient-to-tr from-[#0B3547] to-[#176B8F]
-}
-
 @media (min-width: 576px) {
   .container-sm,
   .container {
