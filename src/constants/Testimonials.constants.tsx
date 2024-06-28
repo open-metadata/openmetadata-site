@@ -101,6 +101,15 @@ export const TESTIMONIALS_LIST = [
     url: "https://indrive.com/en/home/",
     title: "Senior Data Steward (Data Governance Analyst)",
   },
+  {
+    name: "Ton Sumawang",
+    description:
+      "We conducted a comprehensive proof of concept and prototyping selection process, evaluating all the leading commercial data governance and quality tools. We chose OpenMetadata due to its native integration with our data technology stack, enabling automated data cataloging, data quality, and data profiling. Furthermore, its cost-efficiency and proven effectiveness as an open-source system make it the best choice for our organization.",
+    image: "/assets/testimonials/savii.webp",
+    company: "SAVii",
+    url: "https://savii.io/ph",
+    title: "Head of Data Governance and Quality",
+  },
 ];
 export const TEAMS_LIST = [
   {
