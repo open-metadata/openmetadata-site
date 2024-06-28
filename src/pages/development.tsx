@@ -12,7 +12,7 @@ import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
 import Head from "next/head";
 
 const Development = () => {
-  const handleClick = () => {
+  const handleTryOpenMetadataClick = () => {
     const element = document.querySelector("#try-openmetadata");
     element?.scrollIntoView({ behavior: "smooth", block: "center" })
   }
@@ -74,10 +74,10 @@ const Development = () => {
       </Head>
       <div>
         <div className="mx-auto fixed top-0 w-full z-[1030]">
-          <NavbarDev onClick={handleClick} />
+          <NavbarDev onClick={handleTryOpenMetadataClick} />
           <NavbarStrip />
         </div>
-        <Header onClick={handleClick} />
+        <Header onClick={handleTryOpenMetadataClick} />
         <Achievement />
         <Services />
         <KeyDataAssets />
