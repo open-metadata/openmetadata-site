@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const NavbarDev = () => {
+const NavbarDev = ({ onClick }: { onClick: () => void }) => {
   const [open, setOpen] = useState(false);
   const [scrolledNav, setScrolledNav] = useState(false);
 
@@ -24,11 +24,11 @@ const NavbarDev = () => {
 
   return (
     <nav
-      className={`relative top-0 z-50 w-full duration-400 custom-container ${
+      className={`relative top-0 z-50 w-full duration-400 ${
         scrolledNav ? "bg-white shadow-custom" : "bg-white"
       }`}
     >
-      <div className="mx-auto flex justify-between items-center lg:py-2 lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
+      <div className="mx-auto custom-container flex justify-between items-center lg:py-2 lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
         <div className="px-5 py-2 flex items-center justify-between lg:pl-4">
           <Link className="text-primary" href="/">
             <Image
@@ -119,13 +119,12 @@ const NavbarDev = () => {
               </Link>
             </li>
           </ul>
-          <Link
-            aria-label="Visit Collate website"
-            className="rounded-sm scroll-smooth bg-[#7147E8] font-semibold px-5 py-[10px] text-white hover:no-underline hover:bg-[#6642c8] xl:px-7"
-            href="#try-openmetadata"
+          <button
+            onClick={onClick}
+            className="rounded-sm bg-[#7147E8] font-semibold px-5 py-[10px] text-white hover:no-underline hover:bg-[#6642c8] xl:px-7"
           >
             Try OpenMetadata
-          </Link>
+          </button>
         </div>
       </div>
     </nav>

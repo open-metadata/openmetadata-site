@@ -25,9 +25,9 @@ const KeyDataAssets = () => {
         ))}
       </div>
       <h3 className="mt-9 text-center text-[#292929] font-medium text-[36px] lg:text-[48px]">
-        {currentUsecase?.header.split(" ").slice(0, -3).join(" ")}{" "}
+        {currentUsecase?.header.text}{" "}
         <span className="text-[#7147E8]">
-          {currentUsecase?.header.split(" ").slice(-3).join(" ")}
+          {currentUsecase?.header.highlightedText}
         </span>
       </h3>
       <p className="font-normal text-center text-[#382374] mx-auto md:max-w-[75%] lg:max-w-[60%] sm:text-[20px]">

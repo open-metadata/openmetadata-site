@@ -10,7 +10,10 @@ export const TABS = [
     name: "Discovery",
     icon: SearchIcon,
     useCases: {
-      header: "Enable teams to find key data assets",
+      header: {
+        text: "Enable teams to find ",
+        highlightedText: "key data assets",
+      },
       description:
         "Get the right data to the right people to do their work. OpenMetadata delivers a single source of truth for all your data sources, data pipelines, and data products.",
       imgSrc: "/assets/discovery.webp",
@@ -25,7 +28,10 @@ export const TABS = [
     name: "Lineage",
     icon: FingerPrintIcon,
     useCases: {
-      header: "Know where your data comes from",
+      header: {
+        text: "Know where ",
+        highlightedText: "your data comes from",
+      },
       description:
         "Column-level lineage maps help you understand your overall data flow. Tier critical and sensitive data to manage its quality, observability and governance.",
       imgSrc: "/assets/lineage.webp",
@@ -40,7 +46,10 @@ export const TABS = [
     name: "Observability",
     icon: EyeIcon,
     useCases: {
-      header: "See changes to your data sooner",
+      header: {
+        text: "See changes to ",
+        highlightedText: "your data sooner",
+      },
       description:
         "Be the first to know about data schema changes, volume fluctuation, data distribution, pipeline issues, and test failures in order to proactively get ahead of the problem.",
       imgSrc: "/assets/observability.webp",
@@ -55,7 +64,10 @@ export const TABS = [
     name: "Quality",
     icon: QualityIcon,
     useCases: {
-      header: "Trusted and reliable data for the business",
+      header: {
+        text: "Trusted and reliable data ",
+        highlightedText: "for the business",
+      },
       description:
         "Proactively manage the data quality of your most business-critical data assets and ensure they receive priority operations and infrastructure.",
       imgSrc: "/assets/quality.webp",
@@ -70,7 +82,10 @@ export const TABS = [
     name: "Collaboration",
     icon: CollaborationIcon,
     useCases: {
-      header: "Transform your data culture and teams",
+      header: {
+        text: "Transform your ",
+        highlightedText: "data culture and teams",
+      },
       description:
         "Shared workspaces and workflows foster shared responsibilities and ownership among data producers and consumers across your organization.",
       imgSrc: "/assets/collaboration.webp",
@@ -85,7 +100,10 @@ export const TABS = [
     name: "Governance",
     icon: GovernanceIcon,
     useCases: {
-      header: "Collectively manage risk and compliance",
+      header: {
+        text: "Collectively manage ",
+        highlightedText: "risk and compliance",
+      },
       description:
         "Gain visibility and control across your entire data estate with a centralized metadata platform for managing data governance, compliance, security, and privacy.",
       imgSrc: "/assets/governance.webp",

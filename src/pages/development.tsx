@@ -12,6 +12,11 @@ import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
 import Head from "next/head";
 
 const Development = () => {
+  const handleClick = () => {
+    const element = document.querySelector("#try-openmetadata");
+    element?.scrollIntoView({ behavior: "smooth", block: "center" })
+  }
+
   return (
     <>
       <Head>
@@ -67,12 +72,12 @@ const Development = () => {
         />
         <title>OpenMetadata: Join the #1 Open Source Data Community</title>
       </Head>
-      <div className="scroll-smooth">
+      <div>
         <div className="mx-auto fixed top-0 w-full z-[1030]">
-          <NavbarDev />
+          <NavbarDev onClick={handleClick} />
           <NavbarStrip />
         </div>
-        <Header />
+        <Header onClick={handleClick} />
         <Achievement />
         <Services />
         <KeyDataAssets />
