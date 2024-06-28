@@ -69,7 +69,7 @@ const NavbarDev = () => {
           <ul className="font-semibold ml-auto flex flex-col gap-4 items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-10 lg:text-[16px]">
             <li>
               <Link
-                href="https://sandbox.open-metadata.org/signin"
+                href="https://docs.open-metadata.org/v1.3.x/how-to-guides"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -78,7 +78,7 @@ const NavbarDev = () => {
             </li>
             <li>
               <Link
-                href="https://docs.open-metadata.org/"
+                href="https://docs.open-metadata.org/v1.3.x"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -86,11 +86,11 @@ const NavbarDev = () => {
               </Link>
             </li>
             <li>
-              <Link href="community">Community</Link>
+              <Link href="https://open-metadata.org/community">Community</Link>
             </li>
             <li>
               <Link
-                href="http://blog.open-metadata.org/"
+                href="https://blog.open-metadata.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -121,9 +121,8 @@ const NavbarDev = () => {
           </ul>
           <Link
             aria-label="Visit Collate website"
-            className="rounded-sm bg-[#7147E8] font-semibold px-5 py-[10px] text-white hover:no-underline hover:bg-[#6642c8] xl:px-7"
-            href="https://getcollate.io"
-            target="_blank"
+            className="rounded-sm scroll-smooth bg-[#7147E8] font-semibold px-5 py-[10px] text-white hover:no-underline hover:bg-[#6642c8] xl:px-7"
+            href="#try-openmetadata"
           >
             Try OpenMetadata
           </Link>

@@ -42,9 +42,8 @@ const Header = () => {
               Join Slack
             </Link>
             <Link
-              target="_blank"
-              href="http://getcollate.io/contact"
-              className="uppercase flex items-center gap-2 font-bold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-10 py-3 rounded-sm hover:bg-[#6540c8] sm:text-xl"
+              href="#try-openmetadata"
+              className="uppercase scroll-smooth flex items-center gap-2 font-bold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-10 py-3 rounded-sm hover:bg-[#6540c8] sm:text-xl"
             >
               <Image
                 src="/assets/header/bolt.svg"
@@ -68,7 +67,7 @@ const Header = () => {
               <Image
                 height={600}
                 width={1200}
-                src="/assets/header/header.svg"
+                src="/assets/header/header.webp"
                 alt="header-svg"
                 loading="eager"
               />

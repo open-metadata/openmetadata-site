@@ -67,7 +67,7 @@ const Development = () => {
         />
         <title>OpenMetadata: Join the #1 Open Source Data Community</title>
       </Head>
-      <div>
+      <div className="scroll-smooth">
         <div className="mx-auto fixed top-0 w-full z-[1030]">
           <NavbarDev />
           <NavbarStrip />
