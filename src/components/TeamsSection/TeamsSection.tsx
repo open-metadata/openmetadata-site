@@ -21,7 +21,7 @@ const TeamsSection = () => {
         className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 max-md:justify-items-center max-md:items-center"
       >
         {TEAMS_LIST.map(({name, image, url}, index) => (
-          <div key={index}>
+          <div key={index} className="flex items-center justify-center">
             <Link href={url} target="_blank">
               <Image
                 width={200}
