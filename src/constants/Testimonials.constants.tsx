@@ -182,5 +182,9 @@ export const TEAMS_LIST = [
     name: "inDrive",
     image: "/assets/testimonials/inDrive-logo.webp",
     url: "https://indrive.com/en/home/",
+  },{
+    name: "SAVii",
+    image: "/assets/testimonials/savii.webp",
+    url: "https://savii.io/ph",
   },
 ];
