@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Clients from "./Clients";
 
-const Header = () => {
+const Header = ({ onClick }: { onClick: () => void }) => {
   return (
     <div className="mt-40 w-full custom-container">
       <div className="flex justify-between items-start gap-10">
@@ -41,9 +41,8 @@ const Header = () => {
               />{" "}
               Join Slack
             </Link>
-            <Link
-              target="_blank"
-              href="http://getcollate.io/contact"
+            <button
+              onClick={onClick}
               className="uppercase flex items-center gap-2 font-bold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-10 py-3 rounded-sm hover:bg-[#6540c8] sm:text-xl"
             >
               <Image
@@ -54,7 +53,7 @@ const Header = () => {
                 loading="eager"
               />{" "}
               Try Openmetadata
-            </Link>
+            </button>
           </div>
           <div className="relative -top-12 z-[10]">
             <Image
@@ -68,7 +67,7 @@ const Header = () => {
               <Image
                 height={600}
                 width={1200}
-                src="/assets/header/header.svg"
+                src="/assets/header/header.webp"
                 alt="header-svg"
                 loading="eager"
               />

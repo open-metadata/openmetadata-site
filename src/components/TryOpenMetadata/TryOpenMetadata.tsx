@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const TryOpenMetadata = () => {
   return (
-    <div className="shadow-bg mt-20">
+    <div className="shadow-bg mt-20" id="try-openmetadata">
       <div className="custom-container pt-16 px-4 md:px-16">
         <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]">
           Different ways to try out{" "}

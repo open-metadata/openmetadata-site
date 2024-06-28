@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const NavbarDev = () => {
+const NavbarDev = ({ onClick }: { onClick: () => void }) => {
   const [open, setOpen] = useState(false);
   const [scrolledNav, setScrolledNav] = useState(false);
 
@@ -24,11 +24,11 @@ const NavbarDev = () => {
 
   return (
     <nav
-      className={`relative top-0 z-50 w-full duration-400 custom-container ${
+      className={`relative top-0 z-50 w-full duration-400 ${
         scrolledNav ? "bg-white shadow-custom" : "bg-white"
       }`}
     >
-      <div className="mx-auto flex justify-between items-center lg:py-2 lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
+      <div className="mx-auto custom-container flex justify-between items-center lg:py-2 lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
         <div className="px-5 py-2 flex items-center justify-between lg:pl-4">
           <Link className="text-primary" href="/">
             <Image
@@ -69,7 +69,7 @@ const NavbarDev = () => {
           <ul className="font-semibold ml-auto flex flex-col gap-4 items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-10 lg:text-[16px]">
             <li>
               <Link
-                href="https://sandbox.open-metadata.org/signin"
+                href="https://docs.open-metadata.org/v1.3.x/how-to-guides"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -78,7 +78,7 @@ const NavbarDev = () => {
             </li>
             <li>
               <Link
-                href="https://docs.open-metadata.org/"
+                href="https://docs.open-metadata.org/v1.3.x"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -86,11 +86,11 @@ const NavbarDev = () => {
               </Link>
             </li>
             <li>
-              <Link href="community">Community</Link>
+              <Link href="https://open-metadata.org/community">Community</Link>
             </li>
             <li>
               <Link
-                href="http://blog.open-metadata.org/"
+                href="https://blog.open-metadata.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -119,14 +119,15 @@ const NavbarDev = () => {
               </Link>
             </li>
           </ul>
-          <Link
-            aria-label="Visit Collate website"
+          <button
+            onClick={() => {
+              onClick();
+              setOpen(false);
+            }}
             className="rounded-sm bg-[#7147E8] font-semibold px-5 py-[10px] text-white hover:no-underline hover:bg-[#6642c8] xl:px-7"
-            href="https://getcollate.io"
-            target="_blank"
           >
             Try OpenMetadata
-          </Link>
+          </button>
         </div>
       </div>
     </nav>
