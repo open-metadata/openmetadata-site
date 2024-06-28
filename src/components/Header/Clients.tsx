@@ -11,41 +11,31 @@ const Clients = () => {
     dots: false,
     infinite: true,
     slidesToShow: 8,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1284,
         settings: {
           slidesToShow: 6,
-          autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 3000,
         },
       },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
-          autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 3000,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
-          autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 3000,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 2,
-          autoplay: true,
-          speed: 2000,
-          autoplaySpeed: 3000,
         },
       },
     ],
