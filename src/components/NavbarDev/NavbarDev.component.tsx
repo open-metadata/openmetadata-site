@@ -120,7 +120,10 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
             </li>
           </ul>
           <button
-            onClick={onClick}
+            onClick={() => {
+              onClick();
+              setOpen(false);
+            }}
             className="rounded-sm bg-[#7147E8] font-semibold px-5 py-[10px] text-white hover:no-underline hover:bg-[#6642c8] xl:px-7"
           >
             Try OpenMetadata
