@@ -29,8 +29,8 @@ export const TABS = [
     icon: FingerPrintIcon,
     useCases: {
       header: {
-        text: "Know where ",
-        highlightedText: "your data comes from",
+        text: "Know where your ",
+        highlightedText: "data comes from",
       },
       description:
         "Column-level lineage maps help you understand your overall data flow. Tier critical and sensitive data to manage its quality, observability and governance.",
@@ -83,8 +83,8 @@ export const TABS = [
     icon: CollaborationIcon,
     useCases: {
       header: {
-        text: "Transform your ",
-        highlightedText: "data culture and teams",
+        text: "Transform your data ",
+        highlightedText: "culture and teams",
       },
       description:
         "Shared workspaces and workflows foster shared responsibilities and ownership among data producers and consumers across your organization.",
