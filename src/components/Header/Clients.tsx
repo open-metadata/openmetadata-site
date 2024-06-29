@@ -12,7 +12,9 @@ const Clients = () => {
     infinite: true,
     slidesToShow: 8,
     autoplay: true,
-    autoplaySpeed: 2000,
+    speed: 10000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1284,
