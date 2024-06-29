@@ -28,8 +28,8 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
         scrolledNav ? "bg-white shadow-custom" : "bg-white"
       }`}
     >
-      <div className="mx-auto custom-container flex justify-between items-center lg:py-2 lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
-        <div className="px-5 py-2 flex items-center justify-between lg:pl-4">
+      <div className="mx-auto custom-container flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
+        <div className="flex items-center justify-between px-4 py-3 lg:px-0 lg:py-0">
           <Link className="text-primary" href="/">
             <Image
               height={56}
@@ -41,7 +41,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
           </Link>
 
           <div
-            className="p-3 lg:hidden cursor-pointer"
+            className="lg:hidden cursor-pointer"
             onClick={() => setOpen((prev) => !prev)}
           >
             <svg

@@ -23,7 +23,7 @@ export const ABOUT_OPENMETADATA = [
         linkText: "Read"
     },
     {
-        image: `${IMAGE_ROUTE}/video-img.webp`,
+        image: `${IMAGE_ROUTE}/videos-img.webp`,
         header: 'Video',
         description: 'May Community Meeting',
         href: 'https://www.youtube.com/watch?v=2ZieuqK-UbA',
