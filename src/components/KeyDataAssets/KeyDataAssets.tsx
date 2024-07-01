@@ -30,7 +30,7 @@ const KeyDataAssets = () => {
           {currentUsecase?.header.highlightedText}
         </span>
       </h3>
-      <p className="font-normal text-center text-[#382374] mx-auto md:max-w-[75%] lg:max-w-[60%] sm:text-[20px]">
+      <p className="font-normal text-center text-[#382374] mx-auto md:max-w-[85%] lg:max-w-[60%] sm:text-[20px]">
         {currentUsecase?.description}
       </p>
       <div className="my-5 items-center text-[#382374] text-[18px] gap-5 sm:px-10 md:px-24 lg:flex xl:text-[22px]">

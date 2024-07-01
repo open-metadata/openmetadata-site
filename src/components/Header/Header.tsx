@@ -4,7 +4,7 @@ import Clients from "./Clients";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
-    <div className="mt-40 w-full custom-container">
+    <div className="mt-36 w-full custom-container">
       <div className="flex justify-between items-start gap-10">
         <Image
           className="hidden lg:block"
@@ -21,7 +21,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               discovery, observability and governance
             </span>
           </h1>
-          <p className="mt-3 max-w-[90%] mx-auto leadimg-[30px] sm:text-lg lg:text-[22px]">
+          <p className="mt-3 max-w-[90%] mx-auto leading-[30px] sm:text-lg lg:text-[22px]">
             A single place for all your data and all your data practitioners to
             build and manage high quality data assets. Built by Collate and the
             founders of Apache Hadoop, Apache Atlas, and Uber Databook.

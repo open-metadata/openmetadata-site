@@ -4,10 +4,10 @@ import Image from "next/image";
 const Services = () => {
   return (
     <div className="custom-container mt-5 px-4 md:px-16">
-      <h2 className="text-[#292929] text-4xl font-medium text-center lg:text-[52px]">
+      <h2 className="text-[#292929] text-4xl font-medium text-center lg:text-[48px]">
         Why <span className="text-[#7147E8]">OpenMetadata?</span>
       </h2>
-      <div className="mt-16">
+      <div className="mt-28">
         {SERVICE_LIST.map((service) => (
           <div
             key={service.serviceName.header1 + service.serviceName.header2}
@@ -21,7 +21,7 @@ const Services = () => {
               loading="eager"
             />
             <div className="text-center lg:text-left">
-              <h3 className="font-medium lg:max-w-[85%] text-3xl xl:text-4xl">
+              <h3 className="font-medium text-3xl leading-[46px] xl:text-[38px]">
                 {service.serviceName.header1}
                 <span className="text-[#7147E8]">
                   {service.serviceName.header2}
