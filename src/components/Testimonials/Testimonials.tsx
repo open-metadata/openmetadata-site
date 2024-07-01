@@ -86,7 +86,7 @@ const Testimonials = () => {
           loading="lazy"
         />
         <div className="mt-28 mx-auto px-4 md:px-16 lg:px-0">
-          <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[52px]">
+          <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[48px]">
             Trusted <span className="text-[#7147E8]">Across Industries</span>
           </h3>
           <div className="slider-container testimonial-content">

@@ -6,7 +6,7 @@ const TryOpenMetadata = () => {
   return (
     <div className="shadow-bg mt-20" id="try-openmetadata">
       <div className="custom-container py-16 px-4 md:px-16">
-        <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[52px]">
+        <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[48px]">
           Different ways to try out{" "}
           <span className="text-[#7147E8]">OpenMetadata</span>
         </h3>

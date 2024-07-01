@@ -4,7 +4,7 @@ import Image from "next/image";
 const Services = () => {
   return (
     <div className="custom-container mt-5 px-4 md:px-16">
-      <h2 className="text-[#292929] text-4xl font-medium text-center lg:text-[52px]">
+      <h2 className="text-[#292929] text-4xl font-medium text-center lg:text-[48px]">
         Why <span className="text-[#7147E8]">OpenMetadata?</span>
       </h2>
       <div className="mt-28">
