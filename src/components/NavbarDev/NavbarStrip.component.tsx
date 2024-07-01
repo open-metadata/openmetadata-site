@@ -19,7 +19,7 @@ const NavbarStrip = () => {
         <span className="lg:relative">
           <Link
             className="border-1 border-[#D3ECF7] px-4 py-2 lg:text-[24px] leading-[31.2px] hover:text-[#D3ECF7]"
-            href="https://cloud.getcollate.io/"
+            href="https://cloud.getcollate.io/signup"
             target="_blank"
           >
             Get Started
