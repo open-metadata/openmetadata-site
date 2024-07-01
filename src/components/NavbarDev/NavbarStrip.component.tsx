@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const NavbarStrip = () => {
   return (
-    <div className="bg-[#0B3547] text-center mx-auto text-[#D3ECF7] max-lg:px-4 lg:px-12">
+    <div className="bg-[#0B3547] text-center mx-auto text-[#D3ECF7] py-2 lg:px-12">
       <div className="custom-container flex justify-center items-center sm:gap-2 flex-col md:flex-row md:gap-5">
         <Image
           className="md:inline"
