@@ -53,6 +53,12 @@ p{
   @apply bg-gradient-to-b from-[#F1EDFD] to-white
 }
 
+@media (max-width: 767px) {
+  .slick-slider .slick-dots li {
+    margin: 0 0.2rem;
+  }
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {

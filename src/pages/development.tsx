@@ -14,7 +14,7 @@ import Head from "next/head";
 const Development = () => {
   const handleTryOpenMetadataClick = () => {
     const element = document.querySelector("#try-openmetadata");
-    element?.scrollIntoView({ behavior: "smooth", block: "center" })
+    element?.scrollIntoView({ behavior: "smooth", block: "end" })
   }
 
   return (
