@@ -9,7 +9,7 @@ import { TESTIMONIALS_LIST } from "@/constants/Testimonials.constants";
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="prev-slick-arrow absolute -bottom-8  z-[5] cursor-pointer -left-4 w-[10px] h-[14px] sm:-bottom-9 sm:w-[14px] sm:h-[20px] sm:left-14 md:left-32 lg:left-52"
+      className="prev-slick-arrow absolute -bottom-8  z-[5] cursor-pointer -left-4 w-[10px] h-[14px] sm:-bottom-9 sm:w-[14px] sm:h-[20px] sm:left-14 md:left-32 lg:left-48"
       onClick={onClick}
     >
       <Image
@@ -25,7 +25,7 @@ const PreviousArrow = ({ onClick }: CustomArrowProps) => {
 const NextArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="next-slick-arrow absolute -bottom-8  z-[5] cursor-pointer -right-2 w-[10px] h-[14px] sm:-bottom-9 sm:w-[14px] sm:h-[20px] sm:right-[60px] md:right-[136px] lg:right-[214px]"
+      className="next-slick-arrow absolute -bottom-8  z-[5] cursor-pointer -right-2 w-[10px] h-[14px] sm:-bottom-9 sm:w-[14px] sm:h-[20px] sm:right-[60px] md:right-[136px] lg:right-[200px]"
       onClick={onClick}
     >
       <Image
@@ -86,14 +86,14 @@ const Testimonials = () => {
           loading="lazy"
         />
         <div className="mt-28 mx-auto px-4 md:px-16 lg:px-0">
-          <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[44px]">
+          <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[52px]">
             Trusted <span className="text-[#7147E8]">Across Industries</span>
           </h3>
           <div className="slider-container testimonial-content">
             <Slider {...settings}>
               {TESTIMONIALS_LIST.map((item) => (
                 <div key={item.company}>
-                  <p className="text-[#170E2E] sm:columns-2 sm:gap-x-4 lg:gap-x-8 lg:text-[20px]">
+                  <p className="text-[#170E2E] sm:columns-2 sm:gap-x-4 lg:gap-x-8 lg:text-[22px]">
                     "{item.description}"
                   </p>
                   <div className="mt-5 mx-auto flex items-center justify-center lg:max-w-[600px]">

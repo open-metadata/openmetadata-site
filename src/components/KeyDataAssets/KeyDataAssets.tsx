@@ -24,13 +24,13 @@ const KeyDataAssets = () => {
           </div>
         ))}
       </div>
-      <h3 className="mt-9 text-center text-[#292929] font-medium text-[36px] lg:text-[48px]">
+      <h3 className="mt-9 text-center text-[#292929] font-medium text-[36px] lg:text-[52px]">
         {currentUsecase?.header.text}{" "}
         <span className="text-[#7147E8]">
           {currentUsecase?.header.highlightedText}
         </span>
       </h3>
-      <p className="font-normal text-center text-[#382374] mx-auto md:max-w-[75%] lg:max-w-[60%] sm:text-[20px]">
+      <p className="font-normal text-center text-[#382374] mx-auto md:max-w-[85%] lg:max-w-[70%] sm:text-[22px]">
         {currentUsecase?.description}
       </p>
       <div className="my-5 items-center text-[#382374] text-[18px] gap-5 sm:px-10 md:px-24 lg:flex xl:text-[22px]">
