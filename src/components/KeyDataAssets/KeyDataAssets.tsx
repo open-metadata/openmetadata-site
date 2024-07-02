@@ -55,10 +55,10 @@ const KeyDataAssets = () => {
           <Image
             className="mx-auto"
             src={currentUsecase.imgSrc}
-            alt="Key Data Assets"
+            alt={`Use case: ${openTab}`}
             width={1000}
             height={600}
-            loading="lazy"
+            priority
           />
         )}
       </div>

@@ -28,7 +28,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           </p>
           <div className="relative z-[11] flex flex-col sm:flex-row justify-center gap-3 items-center mt-12">
             <Link
-              className="uppercase flex items-center gap-2 text-[#7147E8] font-bold border-[1px] border-[#7147E8] px-16 py-3 rounded-sm sm:text-xl hover:text-[#6540c8]"
+              className="uppercase flex items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] px-14 py-[12px] rounded-sm sm:text-lg hover:text-[#6540c8]"
               href="https://slack.open-metadata.org/"
               target="_blank"
             >
@@ -43,7 +43,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
             </Link>
             <button
               onClick={onClick}
-              className="uppercase flex items-center gap-2 font-bold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-10 py-3 rounded-sm hover:bg-[#6540c8] sm:text-xl"
+              className="uppercase flex items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-9 py-[12px] rounded-sm hover:bg-[#6540c8] sm:text-lg"
             >
               <Image
                 src="/assets/header/bolt.svg"

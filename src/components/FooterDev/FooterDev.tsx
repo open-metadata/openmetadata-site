@@ -257,14 +257,14 @@ const FooterDev = () => {
             </li>
           </ul>
         </div>
-        <div className="mt-5 sm:mt-0">
-          <div className="text-uppercase text-[18px] text-nowrap tracking-[4px] mb-2">
+        <div className="mt-5 lg:ml-5 sm:mt-0">
+          <div className="text-uppercase text-[12px] text-nowrap tracking-[4px] mb-2">
             Developed By
           </div>
           <Image
             alt="netlify"
-            width={200}
-            height={47}
+            width={130}
+            height={35}
             src="/assets/netlify.webp"
             priority
           />
