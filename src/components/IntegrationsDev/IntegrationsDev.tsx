@@ -47,10 +47,10 @@ const IntegrationsDev = () => {
         OpenMetadata's ingestion framework supports connectors for a wide range
         of services, and the list is constantly growing...
       </p>
-      <div className="mt-8 sm:shadow-primary sm:rounded-2xl sm:flex sm:h-[655px] md:h-[710px]">
-        <div className="flex text-[#5E3BC1] overflow-x-scroll text-center sm:border-[#E3DAFA] sm:flex-col sm:border-r md:text-[20px] lg:max-w-[20%] xl:max-w-[25%]">
+      <div className="mt-8 sm:shadow-primary sm:rounded-2xl sm:flex sm:h-[800px] md:h-[850px]">
+        <div className="integration flex text-[#5E3BC1] text-center sm:border-[#E3DAFA] sm:flex-col sm:border-r md:text-[20px] lg:max-w-[20%] xl:max-w-[25%]">
           <div
-            className={`px-5 py-4 cursor-pointer text-nowrap ${
+            className={`px-5 py-[32px] cursor-pointer text-nowrap ${
               selectedTab === "All Connectors" &&
               "font-semibold bg-[#EDF3FD] sm:rounded-tl-2xl"
             } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
@@ -61,7 +61,7 @@ const IntegrationsDev = () => {
           {INTEGRATION_SERVICES.map((service) => (
             <div
               key={service.connector}
-              className={`px-5 py-4 cursor-pointer ${
+              className={`px-5 py-[32px] cursor-pointer ${
                 selectedTab === service.connector &&
                 "font-semibold bg-[#EDF3FD]"
               } ${
@@ -88,7 +88,7 @@ const IntegrationsDev = () => {
                 <Image
                   alt={item.alt}
                   width={1000}
-                  className="w-12 h-12 mb-2"
+                  className={`h-12 mb-2 w-12 ${item.name === "SAP HANA" && 'w-20'}`}
                   height={1000}
                   src={item.src}
                   loading="lazy"

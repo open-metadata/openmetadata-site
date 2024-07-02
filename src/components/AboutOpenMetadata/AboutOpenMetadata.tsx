@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const AboutOpenMetadata = () => {
   return (
-    <div className="custom-container relative z-[12] my-28 px-4 md:px-16">
+    <div className="custom-container relative z-[12] mt-24 mb-28 px-4 md:px-16">
       <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[48px]">
         Learn More <span className="text-[#7147E8]">About OpenMetadata</span>
       </h3>
-      <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-16 grid gap-[16px] sm:grid-cols-2 lg:grid-cols-4">
         {ABOUT_OPENMETADATA.map((item) => (
           <div key={item.header} className="shadow-xl rounded-md">
             <Link href={item.href} target="_blank">
@@ -22,7 +22,7 @@ const AboutOpenMetadata = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="px-5 py-7 flex flex-col items-between">
+              <div className="px-[40px] py-7 flex flex-col items-between">
                 <p className="text-[28px] text-[#4B2F9B] font-semibold -mb-2">
                   {item.header}
                 </p>

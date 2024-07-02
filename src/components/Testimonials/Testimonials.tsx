@@ -9,7 +9,7 @@ import { TESTIMONIALS_LIST } from "@/constants/Testimonials.constants";
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="prev-slick-arrow absolute -bottom-8  z-[5] cursor-pointer -left-4 w-[10px] h-[14px] sm:-bottom-9 sm:w-[14px] sm:h-[20px] sm:left-14 md:left-32 lg:left-48"
+      className="prev-slick-arrow absolute  z-[5] cursor-pointer -left-4 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:left-16 md:left-[120px] lg:left-48"
       onClick={onClick}
     >
       <Image
@@ -25,7 +25,7 @@ const PreviousArrow = ({ onClick }: CustomArrowProps) => {
 const NextArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="next-slick-arrow absolute -bottom-8  z-[5] cursor-pointer -right-2 w-[10px] h-[14px] sm:-bottom-9 sm:w-[14px] sm:h-[20px] sm:right-[60px] md:right-[136px] lg:right-[200px]"
+      className="next-slick-arrow absolute  z-[5] cursor-pointer -right-2 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[72px] md:right-[128px] lg:right-[200px]"
       onClick={onClick}
     >
       <Image
@@ -52,11 +52,19 @@ const Testimonials = () => {
     prevArrow: <PreviousArrow />,
     dotsClass: `slick-dots`,
     afterChange: (current: number) => setActiveSlide(current),
+    appendDots: (dots: number) => (
+      <div
+        style={{
+          top: '-60px',
+        }}
+      >
+        <ul> {dots} </ul>
+      </div>
+    ),
     customPaging: (i: number) => (
       <div
         className="w-[10px] h-[10px] sm:w-[12px] sm:h-[12px]"
         style={{
-          marginTop: "22px",
           borderRadius: "50%",
           backgroundColor: activeSlide === i ? "#7147E8" : "#D8D8D8",
         }}
@@ -64,14 +72,7 @@ const Testimonials = () => {
     ),
     autoplay: true,
     autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          adaptiveHeight: true,
-        },
-      },
-    ],
+    adaptiveHeight: true,
   };
 
   return (
@@ -86,7 +87,7 @@ const Testimonials = () => {
           loading="lazy"
         />
         <div className="mt-28 mx-auto px-4 md:px-16 lg:px-0">
-          <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[48px]">
+          <h3 className="text-[#292929] font-medium text-center text-[36px] mb-16 lg:text-[48px]">
             Trusted <span className="text-[#7147E8]">Across Industries</span>
           </h3>
           <div className="slider-container testimonial-content">

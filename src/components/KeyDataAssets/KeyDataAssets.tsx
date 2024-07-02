@@ -58,7 +58,7 @@ const KeyDataAssets = () => {
             alt="Key Data Assets"
             width={1000}
             height={600}
-            loading="lazy"
+            priority={openTab === currentUsecase.imgSrc}
           />
         )}
       </div>

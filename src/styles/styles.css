@@ -163,6 +163,12 @@ html {
   }
 }
 
+@media (max-width: 640px) {
+  .integration {
+    overflow-x: scroll;
+  }
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
