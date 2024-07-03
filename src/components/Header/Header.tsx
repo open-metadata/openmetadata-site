@@ -15,47 +15,47 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           loading="eager"
         />
         <div className="pt-28 pb-16 text-center px-4 md:pt-20 lg:px-0">
-          <h1 className="text-4xl text-[#292929] font-medium lg:leading-[54px] lg:text-[52px]">
+          <h1 className="text-4xl text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
             Open and unified metadata platform for data{" "}
             <span className="text-[#7147E8]">
               discovery, observability and governance
             </span>
           </h1>
-          <p className="mt-3 max-w-[90%] mx-auto leading-[30px] sm:text-lg lg:text-[22px]">
+          <p className="mt-3 max-w-[85%] mx-auto leading-[30px] sm:text-lg lg:text-[20px]">
             A single place for all your data and all your data practitioners to
             build and manage high quality data assets. Built by Collate and the
             founders of Apache Hadoop, Apache Atlas, and Uber Databook.
           </p>
           <div className="relative z-[11] flex flex-col sm:flex-row justify-center gap-3 items-center mt-12">
             <Link
-              className="uppercase flex items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] px-14 py-[12px] rounded-sm sm:text-lg hover:text-[#6540c8]"
+              className="uppercase flex items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] px-14 py-[14px] hover:text-[#6540c8]"
               href="https://slack.open-metadata.org/"
               target="_blank"
             >
               <Image
                 src="/assets/header/message-icon.svg"
                 alt="message-icon-svg"
-                width={24}
-                height={24}
+                width={18}
+                height={18}
                 loading="eager"
               />{" "}
               Join Slack
             </Link>
             <button
               onClick={onClick}
-              className="uppercase flex items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-9 py-[12px] rounded-sm hover:bg-[#6540c8] sm:text-lg"
+              className="uppercase flex items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-14 py-[14px] hover:bg-[#6540c8]"
             >
               <Image
                 src="/assets/header/bolt.svg"
                 alt="bolt-icon-svg"
-                width={24}
-                height={24}
+                width={18}
+                height={18}
                 loading="eager"
               />{" "}
               Try Openmetadata
             </button>
           </div>
-          <div className="relative -top-12 z-[10]">
+          <div className="relative -top-20 z-[10]">
             <Image
               height={800}
               width={1200}
@@ -63,7 +63,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               alt="shadow-svg"
               loading="eager"
             />
-            <div className="absolute top-24 md:top-36">
+            <div className="absolute top-24 md:top-32">
               <Image
                 height={600}
                 width={1200}

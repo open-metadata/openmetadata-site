@@ -34,7 +34,7 @@ const TryOpenMetadata = () => {
               <p className="text-[#333333] font-medium mt-8 text-[24px] lg:text-[28px] xl:text-[40px]">
                 {item.header}
               </p>
-              <p className="text-[#777777] font-medium border-b border-b-[#D0C2F7] pb-4 xl:text-[20px]">
+              <p className="text-[#777777] font-normal border-b -mt-4 border-b-[#D0C2F7] pb-4 xl:text-[20px]">
                 {item.description}
               </p>
               <Link
