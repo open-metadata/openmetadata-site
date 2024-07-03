@@ -28,12 +28,13 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
         scrolledNav ? "bg-white shadow-custom" : "bg-white"
       }`}
     >
-      <div className="mx-auto custom-container flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
-        <div className="flex items-center justify-between px-4 py-3 lg:px-0 lg:py-0">
+      <div className="mx-auto custom-container flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-[24px]">
+        <div className="flex items-center justify-between px-4 py-[12px] lg:px-0 lg:py-[10px]">
           <Link className="text-primary" href="/">
             <Image
-              height={56}
-              width={145}
+              className="w-[142px] h-[49px]"
+              height={50}
+              width={140}
               src="/assets/omd-logo.svg"
               alt="omd-logo-svg"
               loading="eager"
@@ -64,9 +65,9 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
         <div
           className={`${
             open ? "block" : "hidden"
-          } h-auto lg:flex bg-white items-center relative top-full text-center lg:relative lg:top-auto lg:left-auto lg:right-auto max-lg:pb-4`}
+          } h-auto lg:flex bg-white items-center relative top-full text-center lg:relative lg:top-auto lg:left-auto lg:mr-[8px] lg:right-auto max-lg:pb-4`}
         >
-          <ul className="font-semibold ml-auto flex flex-col gap-4 items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-10 lg:text-[16px]">
+          <ul className="font-medium ml-auto flex flex-col gap-[22px] items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-7 lg:text-[15px]">
             <li>
               <Link
                 href="https://docs.open-metadata.org/v1.3.x/how-to-guides"
@@ -109,8 +110,8 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  width={72}
-                  height={40}
+                  width={65}
+                  height={35}
                   className="object-cover"
                   src="/assets/github.svg"
                   alt="github-icon"
@@ -124,7 +125,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
               onClick();
               setOpen(false);
             }}
-            className="rounded-sm bg-[#7147E8] font-semibold px-5 py-[10px] text-white hover:no-underline hover:bg-[#6642c8] xl:px-7"
+            className="bg-[#7147E8] font-medium px-5 text-[14px] py-[10px] text-white hover:no-underline hover:bg-[#6642c8] xl:px-7"
           >
             Try OpenMetadata
           </button>
