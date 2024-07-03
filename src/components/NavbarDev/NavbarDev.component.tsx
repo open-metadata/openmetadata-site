@@ -29,9 +29,10 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
       }`}
     >
       <div className="mx-auto custom-container flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-7">
-        <div className="flex items-center justify-between px-4 py-3 lg:px-0 lg:py-0">
+        <div className="flex items-center justify-between px-[44px] py-3 lg:px-0 lg:py-0">
           <Link className="text-primary" href="/">
             <Image
+              className="w-[115px] h-[50px] md:w-[144px] md:h-[56px]"
               height={56}
               width={145}
               src="/assets/omd-logo.svg"
@@ -47,15 +48,13 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
+              viewBox="0 0 28 20"
+              width="28"
+              height="20"
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                fill="#323232"
+                d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"
               />
             </svg>
           </div>
