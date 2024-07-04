@@ -6,7 +6,7 @@ const TryOpenMetadata = () => {
   return (
     <div className="shadow-bg mt-20" id="try-openmetadata">
       <div className="custom-container py-16 px-4 md:px-16">
-        <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[48px]">
+        <h3 className="text-[#292929] font-medium tracking-[-0.02em] text-center text-[36px] lg:text-[48px]">
           Different ways to try out{" "}
           <span className="text-[#7147E8]">OpenMetadata</span>
         </h3>
@@ -31,16 +31,16 @@ const TryOpenMetadata = () => {
                 loading="lazy"
               />
 
-              <p className="text-[#333333] font-medium mt-8 text-[24px] lg:text-[28px] xl:text-[40px]">
+              <p className="text-[#333333] font-medium mt-8 tracking-[-0.03em] text-[24px] lg:text-[28px] xl:text-[32px]">
                 {item.header}
               </p>
-              <p className="text-[#777777] font-normal border-b -mt-4 border-b-[#D0C2F7] pb-4 xl:text-[20px]">
+              <p className="text-[#777777] font-normal tracking-[-0.02em] border-b -mt-2 border-b-[#D0C2F7] pb-4 xl:text-[20px]">
                 {item.description}
               </p>
               <Link
                 href={item.href}
                 target="_blank"
-                className="mt-[28px] w-full block text-center uppercase bg-[#7147E8] border-2 border-[#7147E8] text-white font-bold py-3 rounded-md lg:text-[20px] hover:no-underline hover:bg-[#6541c9]"
+                className="mt-[28px] w-full block text-center uppercase bg-[#7147E8] border-2 border-[#7147E8] text-white font-bold py-3 rounded-md lg:text-[18px] hover:no-underline hover:bg-[#6541c9]"
               >
                 {item.linkText}
               </Link>

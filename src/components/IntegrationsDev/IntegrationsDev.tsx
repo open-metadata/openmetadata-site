@@ -40,17 +40,17 @@ const IntegrationsDev = () => {
 
   return (
     <div className="custom-container mt-20 px-4 md:px-16">
-      <h3 className="text-[#292929] font-medium text-center text-[36px] lg:text-[48px]">
+      <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center text-[36px] lg:text-[48px]">
         Integrations
       </h3>
-      <p className="text-[#555555] font-normal text-center mx-auto text-[18px] lg:text-[22px] lg:max-w-[54%]">
+      <p className="text-[#555555] font-normal text-center mx-auto tracking-[-0.02em] text-[18px] lg:text-[20px] lg:max-w-[54%]">
         OpenMetadata's ingestion framework supports connectors for a wide range
         of services, and the list is constantly growing...
       </p>
-      <div className="mt-8 sm:shadow-primary sm:rounded-2xl sm:flex sm:h-[800px] md:h-[850px]">
+      <div className="mt-[48px] sm:shadow-primary sm:rounded-2xl sm:flex sm:h-[728px] md:h-[780px]">
         <div className="integration flex text-[#5E3BC1] text-center sm:border-[#E3DAFA] sm:flex-col sm:border-r md:text-[20px] lg:max-w-[20%] xl:max-w-[25%]">
           <div
-            className={`px-5 py-[28px] cursor-pointer text-nowrap ${
+            className={`px-5 py-[28px] cursor-pointer tracking-[-0.02em] text-nowrap ${
               selectedTab === "All Connectors" &&
               "font-semibold bg-[#EDF3FD] sm:rounded-tl-2xl"
             } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
@@ -61,7 +61,7 @@ const IntegrationsDev = () => {
           {INTEGRATION_SERVICES.map((service) => (
             <div
               key={service.connector}
-              className={`px-5 py-[28px] cursor-pointer ${
+              className={`px-5 py-[28px] tracking-[-0.02em] cursor-pointer ${
                 selectedTab === service.connector &&
                 "font-semibold bg-[#EDF3FD]"
               } ${

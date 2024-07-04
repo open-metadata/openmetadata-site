@@ -7,18 +7,18 @@ const NavbarStrip = () => {
       <div className="custom-container flex justify-center items-center sm:gap-2 flex-col md:flex-row md:gap-5">
         <Image
           className="md:inline"
-          height={24}
-          width={24}
+          height={36}
+          width={36}
           src="/assets/collate.svg"
           alt="collate-logo-svg"
           loading="eager"
         />
-        <span className="font-normal my-2 text-[16px] sm:my-0 lg:leading-[32px]">
+        <span className="font-normal my-2 text-[16px] tracking-[-0.02em] sm:my-0 lg:leading-[32px]">
           Try OpenMetadata as a managed service for free, from Collate.
         </span>
         <span className="lg:relative">
           <Link
-            className="border-1 border-[#D3ECF7] text-[16px] px-4 py-2 leading-[31.2px] hover:text-[#D3ECF7]"
+            className="border-1 border-[#D3ECF7] text-[16px] px-3 py-2 leading-[31.2px] hover:text-[#D3ECF7]"
             href="https://cloud.getcollate.io/signup"
             target="_blank"
           >
