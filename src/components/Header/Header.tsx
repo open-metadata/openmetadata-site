@@ -4,7 +4,7 @@ import Clients from "./Clients";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
-    <div className="mt-36 w-full custom-container">
+    <div className="w-full custom-container mt-24 lg:mt-36">
       <div className="flex justify-between items-start gap-10">
         <Image
           className="hidden lg:block"
@@ -14,21 +14,21 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           alt="left-box-svg"
           loading="eager"
         />
-        <div className="pt-28 pb-16 text-center px-4 md:pt-20 lg:px-0">
-          <h1 className="text-4xl text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
+        <div className="pt-28 pb-16 text-center px-6 md:pt-20 lg:px-0">
+          <h1 className="text-4xl leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
             Open and unified metadata platform for data{" "}
             <span className="text-[#7147E8]">
               discovery, observability and governance
             </span>
           </h1>
-          <p className="mt-3 max-w-[85%] mx-auto leading-[30px] sm:text-lg lg:text-[20px]">
+          <p className="mt-3 mx-auto sm:leading-[30px] max-w-[95%] sm:max-w-[85%] sm:text-lg lg:text-[20px]">
             A single place for all your data and all your data practitioners to
             build and manage high quality data assets. Built by Collate and the
             founders of Apache Hadoop, Apache Atlas, and Uber Databook.
           </p>
-          <div className="relative z-[11] flex flex-col sm:flex-row justify-center gap-3 items-center mt-12">
+          <div className="relative z-[11] flex flex-col-reverse sm:flex-row justify-center gap-3 items-center mt-12">
             <Link
-              className="uppercase flex items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] px-14 py-[14px] hover:text-[#6540c8]"
+              className="uppercase w-full flex justify-center items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:text-[#6540c8]"
               href="https://slack.open-metadata.org/"
               target="_blank"
             >
@@ -43,7 +43,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
             </Link>
             <button
               onClick={onClick}
-              className="uppercase flex items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-14 py-[14px] hover:bg-[#6540c8]"
+              className="uppercase w-full flex justify-center items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:bg-[#6540c8]"
             >
               <Image
                 src="/assets/header/bolt.svg"
@@ -55,7 +55,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               Try Openmetadata
             </button>
           </div>
-          <div className="relative -top-20 z-[10]">
+          <div className="relative z-[10] top-2 sm:-top-10 md:-top-20">
             <Image
               height={800}
               width={1200}
@@ -63,11 +63,20 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               alt="shadow-svg"
               loading="eager"
             />
-            <div className="absolute top-24 md:top-32">
+            <div className="absolute top-8 sm:top-24 md:top-32">
               <Image
+                className="hidden md:block"
                 height={600}
                 width={1200}
                 src="/assets/header/header.webp"
+                alt="header-svg"
+                loading="eager"
+              />
+              <Image
+                className="md:hidden"
+                height={200}
+                width={800}
+                src="/assets/header/header-mobile.webp"
                 alt="header-svg"
                 loading="eager"
               />
