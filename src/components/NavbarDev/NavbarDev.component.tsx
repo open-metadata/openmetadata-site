@@ -29,7 +29,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
       }`}
     >
       <div className="mx-auto custom-container flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-[24px]">
-        <div className="flex items-center justify-between px-4 py-[12px] lg:px-0 lg:py-[10px]">
+        <div className="flex items-center justify-between px-[30px] py-[14px] lg:px-0 lg:py-[10px]">
           <Link className="text-primary" href="/">
             <Image
               className="w-[142px] h-[49px]"
