@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { OmdFooterLogo } from "../Icons/OmdFooterLogo";
 
 const FooterDev = () => {
   return (
@@ -8,14 +9,7 @@ const FooterDev = () => {
       <div className="custom-container sm:grid sm:gap-5 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 px-8 md:px-20 xl:px-28">
         <div className="flex flex-col gap-5 col-span-2 xl:col-span-3">
           <div>
-            <Image
-              alt="omd-footer-logo"
-              width={120}
-              height={48}
-              className="object-cover object-center block image-fluid"
-              src="/assets/omd-logo-footer.svg"
-              priority
-            />
+            <OmdFooterLogo />
           </div>
           <div className="font-normal tracking-[-0.02em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
             Open Standard for Metadata with a centralized Metadata Store.

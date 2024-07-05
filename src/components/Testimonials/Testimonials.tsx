@@ -5,6 +5,8 @@ import Slider, { CustomArrowProps } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { TESTIMONIALS_LIST } from "@/constants/Testimonials.constants";
+import { ArrowRight } from "../Icons/ArrowRight";
+import { ArrowLeft } from "../Icons/ArrowLeft";
 
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
@@ -12,12 +14,7 @@ const PreviousArrow = ({ onClick }: CustomArrowProps) => {
       className="prev-slick-arrow absolute z-[5] cursor-pointer -left-4 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:left-16 md:left-[120px] lg:left-48"
       onClick={onClick}
     >
-      <Image
-        alt="previous button"
-        src="/assets/left-arrow.svg"
-        width={14}
-        height={20}
-      />
+      <ArrowLeft />
     </div>
   );
 };
@@ -28,12 +25,7 @@ const NextArrow = ({ onClick }: CustomArrowProps) => {
       className="next-slick-arrow absolute z-[5] cursor-pointer -right-2 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[72px] md:right-[128px] lg:right-[200px]"
       onClick={onClick}
     >
-      <Image
-        alt="next button"
-        src="/assets/right-arrow.svg"
-        width={14}
-        height={20}
-      />
+      <ArrowRight />
     </div>
   );
 };

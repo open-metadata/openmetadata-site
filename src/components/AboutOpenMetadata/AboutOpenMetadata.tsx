@@ -1,6 +1,7 @@
 import { ABOUT_OPENMETADATA } from "@/constants/AboutOpenMetadata.constants";
 import Image from "next/image";
 import Link from "next/link";
+import { Arrow } from "../Icons/Arrow";
 
 const AboutOpenMetadata = () => {
   return (
@@ -29,14 +30,9 @@ const AboutOpenMetadata = () => {
                 <p className="text-[#170E2E] font-medium my-3 min-h-[46px]">
                   {item.description}
                 </p>
-                <div className="flex gap-2 mt-2 uppercase text-[#5E3BC1] font-bold">
+                <div className="flex items-center gap-2 mt-2 uppercase text-[#5E3BC1] font-bold">
                   {item.linkText}{" "}
-                  <Image
-                    src="/assets/aboutOpenMetadata/arrow.svg"
-                    alt="Arrow-svg"
-                    width={20}
-                    height={5}
-                  />
+                  <Arrow />
                 </div>
               </div>
             </Link>

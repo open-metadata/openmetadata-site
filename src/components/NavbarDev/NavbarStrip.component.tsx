@@ -1,18 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
+import { CollateLogo } from '../Icons/CollateLogo';
 
 const NavbarStrip = () => {
   return (
     <div className="bg-[#0B3547] mx-auto text-[#D3ECF7] py-2 px-5 md:text-center lg:px-12">
       <div className="custom-container flex justify-center items-center gap-3">
-        <Image
-          className="w-9 h-9 md:inline"
-          height={36}
-          width={36}
-          src="/assets/collate.svg"
-          alt="collate-logo-svg"
-          loading="eager"
-        />
+        <CollateLogo />
         <div className="max-w-[80%] lg:flex lg:gap-3 lg:items-center">
           <span className="font-normal my-2 text-[14px] tracking-[-0.02em] sm:my-0 md:text-[16px] lg:leading-[32px]">
             Try OpenMetadata as a managed service for free, from Collate.
