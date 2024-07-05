@@ -37,7 +37,7 @@ const Achievement = () => {
                   <div className="text-[#382374] tracking-wider font-bold sm:text-[32px] lg:text-[32px]">
                     {item.count}+
                   </div>
-                  <div className="uppercase text-[#555555] font-normal max-w-[78%] sm:tracking-[0.2em]">
+                  <div className="uppercase text-[#555555] font-normal leading-[20px] max-w-[78%] sm:tracking-[0.2em]">
                     {item.name}
                   </div>
                 </div>
