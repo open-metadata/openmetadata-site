@@ -11,7 +11,7 @@ import { ArrowLeft } from "../Icons/ArrowLeft";
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="prev-slick-arrow absolute z-[5] cursor-pointer -left-4 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:left-16 md:left-[120px] lg:left-48"
+      className="prev-slick-arrow absolute z-[5] cursor-pointer w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:left-[80px] md:left-[120px] lg:left-[192px]"
       onClick={onClick}
     >
       <ArrowLeft />
@@ -22,7 +22,7 @@ const PreviousArrow = ({ onClick }: CustomArrowProps) => {
 const NextArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="next-slick-arrow absolute z-[5] cursor-pointer -right-2 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[72px] md:right-[128px] lg:right-[200px]"
+      className="next-slick-arrow absolute z-[5] cursor-pointer right-2 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[88px] md:right-[128px] lg:right-[200px]"
       onClick={onClick}
     >
       <ArrowRight />
@@ -79,8 +79,8 @@ const Testimonials = () => {
           alt="left-box-svg"
           loading="lazy"
         />
-        <div className="mt-9 mx-auto px-4 md:px-16 md:mt-28 lg:px-0">
-          <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center max-w-[80%] mx-auto text-[32px] leading-[40px] mb-16 lg:text-[48px]">
+        <div className="mt-9 mx-auto px-0 md:px-16 md:mt-28 lg:px-0">
+          <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center max-w-[75%] mx-auto text-[32px] leading-[40px] mb-16 lg:text-[48px]">
             Trusted <span className="text-[#7147E8]">Across Industries</span>
           </h3>
           <div className="slider-container testimonial-content">
@@ -105,12 +105,12 @@ const Testimonials = () => {
                         priority
                       />
                     </Link>
-                    <div className="bg-[#E2DAFA] w-[4px] rounded-full h-[80px] mx-4"></div>
+                    <div className="bg-[#E2DAFA] w-[5px] rounded-full h-[80px] mx-3 sm:mx-4"></div>
                     <div className="w-[250px] self-center">
-                      <p className="text-[#382374] tracking-[-0.02em] text-[20px] font-medium">
+                      <p className="text-[#382374] tracking-[-0.02em] text-[16px] font-medium">
                         {item.name}
                       </p>
-                      <p className="text-[#888888] tracking-[-0.02em] text-[16px] xl:-mt-4">
+                      <p className="text-[#888888] tracking-[-0.02em] text-[14px] xl:-mt-4">
                         {item.title}, {item.company}
                       </p>
                     </div>

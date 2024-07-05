@@ -47,12 +47,12 @@ const IntegrationsDev = () => {
         OpenMetadata's ingestion framework supports connectors for a wide range
         of services, and the list is constantly growing...
       </p>
-      <div className="mt-[48px] sm:shadow-primary sm:rounded-2xl sm:flex sm:h-[728px] md:h-[780px]">
+      <div className="mt-[48px] shadow-primary rounded-lg md:rounded-2xl sm:flex sm:h-[728px] md:h-[780px]">
         <div className="integration flex text-[#5E3BC1] text-center sm:border-[#E3DAFA] sm:flex-col sm:border-r md:text-[20px] lg:max-w-[20%] xl:max-w-[25%]">
           <div
             className={`px-5 py-[28px] cursor-pointer tracking-[-0.02em] text-nowrap ${
               selectedTab === "All Connectors" &&
-              "font-semibold bg-[#EDF3FD] sm:rounded-tl-2xl"
+              "font-semibold bg-[#EDF3FD] rounded-tl-lg md:rounded-tl-2xl"
             } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
             onClick={() => handleTabClick("All Connectors")}
           >
@@ -67,7 +67,7 @@ const IntegrationsDev = () => {
               } ${
                 selectedTab === "Others" &&
                 service.connector === "Others" &&
-                "sm:rounded-bl-2xl"
+                "rounded-tr-lg md:rounded-bl-2xl"
               } ${
                 service.connector === "Others" && "border-none"
               } sm:border-b sm:border-[#E3DAFA] lg:px-9 xl:px-12`}
@@ -77,7 +77,7 @@ const IntegrationsDev = () => {
             </div>
           ))}
         </div>
-        <div className="py-8 gap-5 w-full overflow-y-scroll justify-center sm:px-8 sm:gap-4 grid grid-cols-3 sm:auto-rows-max md:grid-cols-4 lg:grid-cols-5 lg:px-12 xl:grid-cols-6">
+        <div className="py-8 px-3 gap-5 w-full overflow-y-scroll justify-center sm:px-8 sm:gap-4 grid grid-cols-2 sm:auto-rows-max md:grid-cols-4 lg:grid-cols-5 lg:px-12 xl:grid-cols-6">
           {services.map((item) => (
             <div key={item.name} className="max-h-[110px]">
               <Link
@@ -93,7 +93,7 @@ const IntegrationsDev = () => {
                   src={item.src}
                   loading="lazy"
                 />
-                <p className="mt-2">{item.name}</p>
+                <p className="mt-2 text-nowrap text-[14px] md:text-[16px]">{item.name}</p>
               </Link>
             </div>
           ))}

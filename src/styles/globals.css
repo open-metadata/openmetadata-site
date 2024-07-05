@@ -77,9 +77,9 @@ p{
   }
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
   .slick-slider .slick-dots li {
-    margin: 0 0.2rem;
+    margin: 0 2px;
   }
 }
 
