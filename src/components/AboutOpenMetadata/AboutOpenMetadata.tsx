@@ -5,11 +5,11 @@ import { Arrow } from "../Icons/Arrow";
 
 const AboutOpenMetadata = () => {
   return (
-    <div className="custom-container relative z-[12] mt-24 mb-28 px-4 md:px-16 xl:px-24">
-      <h3 className="text-[#292929] font-medium tracking-[-0.02em] text-center text-[36px] lg:text-[48px]">
+    <div className="custom-container relative z-[12] mt-9 mb-16 md:mt-24 md:mb-28 px-6 md:px-16 xl:px-24">
+      <h3 className="text-[#292929] font-medium tracking-[-0.02em] text-center leading-[40px] text-[32px] lg:text-[48px]">
         Learn More <span className="text-[#7147E8]">About OpenMetadata</span>
       </h3>
-      <div className="mt-16 grid gap-[16px] sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid gap-[16px] sm:grid-cols-2 md:mt-16 lg:grid-cols-4">
         {ABOUT_OPENMETADATA.map((item) => (
           <div key={item.header} className="shadow-xl rounded-sm">
             <Link href={item.href} target="_blank">
@@ -24,7 +24,7 @@ const AboutOpenMetadata = () => {
                 />
               </div>
               <div className="px-[40px] py-7 flex flex-col items-between">
-                <p className="text-[28px] text-[#4B2F9B] tracking-[-0.01em] font-semibold -mb-2">
+                <p className="text-[24px] text-[#4B2F9B] tracking-[-0.01em] font-semibold -mb-2 md:text-[28px]">
                   {item.header}
                 </p>
                 <p className="text-[#170E2E] font-medium my-3 min-h-[46px]">

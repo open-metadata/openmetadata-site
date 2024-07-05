@@ -79,8 +79,8 @@ const Testimonials = () => {
           alt="left-box-svg"
           loading="lazy"
         />
-        <div className="mt-28 mx-auto px-4 md:px-16 lg:px-0">
-          <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center text-[36px] mb-16 lg:text-[48px]">
+        <div className="mt-9 mx-auto px-4 md:px-16 md:mt-28 lg:px-0">
+          <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center max-w-[80%] mx-auto text-[32px] leading-[40px] mb-16 lg:text-[48px]">
             Trusted <span className="text-[#7147E8]">Across Industries</span>
           </h3>
           <div className="slider-container testimonial-content">

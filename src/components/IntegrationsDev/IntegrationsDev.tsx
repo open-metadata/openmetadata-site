@@ -40,10 +40,10 @@ const IntegrationsDev = () => {
 
   return (
     <div className="custom-container mt-20 px-4 md:px-16">
-      <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center text-[36px] lg:text-[48px]">
+      <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center text-[32px] lg:text-[48px]">
         Integrations
       </h3>
-      <p className="text-[#555555] font-normal text-center mx-auto tracking-[-0.02em] text-[18px] lg:text-[20px] lg:max-w-[54%]">
+      <p className="text-[#382374] max-w-[80%] mt-2 font-normal text-center mx-auto tracking-[-0.02em] text-[16px] lg:mt-0 lg:text-[#555555] lg:text-[20px] lg:max-w-[54%]">
         OpenMetadata's ingestion framework supports connectors for a wide range
         of services, and the list is constantly growing...
       </p>

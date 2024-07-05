@@ -6,7 +6,7 @@ const TryOpenMetadata = () => {
   return (
     <div className="shadow-bg mt-20" id="try-openmetadata">
       <div className="custom-container py-16 px-4 md:px-16 xl:px-32">
-        <h3 className="text-[#292929] font-medium tracking-[-0.02em] text-center text-[36px] lg:text-[48px]">
+        <h3 className="text-[#292929] font-medium tracking-[-0.02em] text-center text-[32px] leading-[40px] max-w-[85%] mx-auto lg:text-[48px]">
           Different ways to try out{" "}
           <span className="text-[#7147E8]">OpenMetadata</span>
         </h3>
@@ -31,10 +31,10 @@ const TryOpenMetadata = () => {
                 loading="lazy"
               />
 
-              <p className="text-[#333333] font-medium mt-8 tracking-[-0.03em] text-[24px] lg:text-[28px] xl:text-[32px]">
+              <p className="text-[#333333] font-medium mt-8 tracking-[-0.03em] text-[32px]">
                 {item.header}
               </p>
-              <p className="text-[#777777] font-normal tracking-[-0.02em] border-b -mt-2 border-b-[#D0C2F7] pb-4 xl:text-[20px]">
+              <p className="text-[#777777] font-normal tracking-[-0.02em] border-b mt-2 border-b-[#D0C2F7] pb-4 text-[20px] lg:-mt-2">
                 {item.description}
               </p>
               <Link

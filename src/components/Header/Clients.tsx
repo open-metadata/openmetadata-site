@@ -45,7 +45,7 @@ const Clients = () => {
   };
 
   return (
-    <div className="slider-container mt-[16px] mb-12 px-4 md:px-16">
+    <div className="slider-container mt-[35%] mb-12 px-4 md:mt-[16px] md:px-16">
       <Slider {...settings}>
         {CLIENT_LIST.map((client) => (
           <div
