@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { OmdLogo } from "../Icons/OmdLogo";
+import { GitHubLogo } from "../Icons/GitHubLogo";
 
 const NavbarDev = ({ onClick }: { onClick: () => void }) => {
   const [open, setOpen] = useState(false);
@@ -31,14 +33,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
       <div className="mx-auto max-w-[1488px] flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-[24px] 2xl:px-0">
         <div className="flex items-center justify-between px-4 py-[12px] lg:px-0 lg:py-[10px]">
           <Link className="text-primary" href="/">
-            <Image
-              className="w-[142px] h-[49px]"
-              height={50}
-              width={140}
-              src="/assets/omd-logo.svg"
-              alt="omd-logo-svg"
-              loading="eager"
-            />
+            <OmdLogo />
           </Link>
 
           <div
@@ -109,14 +104,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  width={65}
-                  height={35}
-                  className="object-cover"
-                  src="/assets/github.svg"
-                  alt="github-icon"
-                  loading="eager"
-                />
+                <GitHubLogo />
               </Link>
             </li>
           </ul>

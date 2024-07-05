@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Clients from "./Clients";
+import { JoinSlackIcon } from "../Icons/JoinSlackIcon";
+import { BoltIcon } from "../Icons/BoltIcon";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
@@ -32,26 +34,14 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               href="https://slack.open-metadata.org/"
               target="_blank"
             >
-              <Image
-                src="/assets/header/message-icon.svg"
-                alt="message-icon-svg"
-                width={18}
-                height={18}
-                loading="eager"
-              />{" "}
+              <JoinSlackIcon />{" "}
               <span className="mt-[3px]">Join Slack</span>
             </Link>
             <button
               onClick={onClick}
               className="uppercase flex items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] px-14 py-[14px] hover:bg-[#6540c8]"
             >
-              <Image
-                src="/assets/header/bolt.svg"
-                alt="bolt-icon-svg"
-                width={18}
-                height={18}
-                loading="eager"
-              />{" "}
+              <BoltIcon />{" "}
               <span className="mt-[3px]">Try Openmetadata</span>
             </button>
           </div>
