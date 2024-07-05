@@ -52,7 +52,7 @@ const Testimonials = () => {
     nextArrow: <NextArrow />,
     prevArrow: <PreviousArrow />,
     dotsClass: `slick-dots`,
-    afterChange: (current: number) => setActiveSlide(current),
+    beforeChange: (_: number, next: number) => setActiveSlide(next),
     appendDots: (dots: React.ReactNode) => (
       <div
         style={{
