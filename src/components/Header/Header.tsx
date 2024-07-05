@@ -4,7 +4,7 @@ import Clients from "./Clients";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
-    <div className="mt-36 w-full custom-container">
+    <div className="mt-32 w-full custom-container">
       <div className="flex justify-between items-start gap-10">
         <Image
           className="hidden lg:block"
@@ -15,13 +15,13 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           loading="eager"
         />
         <div className="pt-28 pb-16 text-center px-4 md:pt-20 lg:px-0">
-          <h1 className="text-4xl text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
+          <h1 className="text-4xl text-[#292929] font-medium tracking-[-0.02em] lg:leading-[54px] lg:text-[50px]">
             Open and unified metadata platform for data{" "}
             <span className="text-[#7147E8]">
               discovery, observability and governance
             </span>
           </h1>
-          <p className="mt-3 max-w-[85%] mx-auto leading-[30px] sm:text-lg lg:text-[20px]">
+          <p className="mt-3 max-w-[85%] mx-auto leading-[30px] tracking-[-0.02em] sm:text-lg lg:text-[20px]">
             A single place for all your data and all your data practitioners to
             build and manage high quality data assets. Built by Collate and the
             founders of Apache Hadoop, Apache Atlas, and Uber Databook.
@@ -39,7 +39,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
                 height={18}
                 loading="eager"
               />{" "}
-              Join Slack
+              <span className="mt-[3px]">Join Slack</span>
             </Link>
             <button
               onClick={onClick}
@@ -52,7 +52,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
                 height={18}
                 loading="eager"
               />{" "}
-              Try Openmetadata
+              <span className="mt-[3px]">Try Openmetadata</span>
             </button>
           </div>
           <div className="relative -top-20 z-[10]">

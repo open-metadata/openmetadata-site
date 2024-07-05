@@ -20,33 +20,33 @@ const KeyDataAssets = () => {
             onClick={() => handleTabClick(item.name)}
           >
             <item.icon color={openTab === item.name ? "white" : "#4B2F9B"} />
-            <span className="lg:text-[16px] ml-2">{item.name}</span>
+            <span className="lg:text-[16px] mt-[2px] ml-2 tracking-[-0.01em]">
+              {item.name}
+            </span>
           </div>
         ))}
       </div>
-      <h3 className="mt-9 text-center text-[#292929] font-medium text-[36px] lg:text-[48px]">
+      <h3 className="mt-9 text-center text-[#292929] tracking-[-0.001em] font-medium text-[36px] lg:text-[48px]">
         {currentUsecase?.header.text}{" "}
         <span className="text-[#7147E8]">
           {currentUsecase?.header.highlightedText}
         </span>
       </h3>
-      <p className="font-normal text-center text-[#382374] mx-auto md:max-w-[85%] lg:max-w-[68%] sm:text-[20px]">
+      <p className="font-normal text-center text-[#382374] tracking-[-0.02em] mx-auto md:max-w-[85%] lg:max-w-[70%] sm:text-[20px]">
         {currentUsecase?.description}
       </p>
-      <div className="my-5 items-center text-[#382374] text-[18px] gap-5 sm:px-10 md:px-24 lg:flex xl:text-[20px]">
+      <div className="my-5 items-center text-[#382374] mx-auto text-[16px] gap-3 tracking-[0.01em] sm:px-10 md:px-24 lg:max-w-[85%] lg:flex">
         {currentUsecase?.cases.map((item) => (
-          <div key={item} className="flex items-center gap-3">
-            <Image
-              className="w-[40px] h-[40px]"
+          <div key={item} className="flex items-center gap-[10px]">
+            <Image 
+              className="w-[34px] h-[34px]"
               src="/assets/keydata/tick.svg"
               alt="Key Assets"
-              width={40}
-              height={40}
+              width={34}
+              height={34}
               loading="lazy"
             />
-            <span className="text-wrap">
-              <i>{item}</i>
-            </span>
+            <span className="text-wrap">{item}</span>
           </div>
         ))}
       </div>

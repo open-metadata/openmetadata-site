@@ -17,20 +17,20 @@ const FooterDev = () => {
               priority
             />
           </div>
-          <div className="font-normal text-[14px] md:max-w-[80%] xl:max-w-[40%]">
+          <div className="font-normal tracking-[-0.02em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
             Open Standard for Metadata with a centralized Metadata Store.
             Discover, collaborate and get your Data Right.
           </div>
-          <div className="text-[12px] font-normal mb-5">
+          <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
             Copyright OpenMetadata {new Date().getFullYear()}
           </div>
         </div>
 
         <div className="mb-5">
-          <div className="text-uppercase text-[16px] font-medium tracking-[6px] mb-3">
+          <div className="text-uppercase text-[16px] font-medium tracking-[4px] mb-3">
             Docs
           </div>
-          <ul className="tracking-[1px] text-[14px]">
+          <ul className="tracking-[-0.02em] text-[14px]">
             <li className="mb-2">
               <Link
                 href="https://docs.open-metadata.org/"
@@ -79,10 +79,10 @@ const FooterDev = () => {
           </ul>
         </div>
         <div>
-          <div className="text-uppercase text-[16px] font-medium tracking-[6px] mb-4">
+          <div className="text-uppercase text-[16px] font-medium tracking-[4px] mb-4">
             Community
           </div>
-          <ul className="text-[14px]">
+          <ul className="text-[14px] tracking-[-0.02em]">
             <li className="mb-1">
               <Link
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
@@ -258,12 +258,12 @@ const FooterDev = () => {
           </ul>
         </div>
         <div className="mt-5 lg:ml-5 sm:mt-0">
-          <div className="text-uppercase text-[10px] text-nowrap text-gray-400 font-medium tracking-[3px] mb-2">
+          <div className="text-uppercase text-[8px] text-nowrap text-gray-400 font-medium tracking-[3px] mb-2">
             Developed By
           </div>
           <Image
             alt="netlify"
-            width={120}
+            width={100}
             height={30}
             src="/assets/netlify.webp"
             priority

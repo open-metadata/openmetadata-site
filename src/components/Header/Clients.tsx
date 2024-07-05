@@ -7,12 +7,13 @@ import { CLIENT_LIST } from "@/constants/Clients.constants";
 const Clients = () => {
   const settings = {
     className: "slider slick-track variable-width",
+    pauseOnHover: false,
     arrows: false,
     dots: false,
     infinite: true,
     slidesToShow: 8,
     autoplay: true,
-    speed: 10000,
+    speed: 2000,
     autoplaySpeed: 0,
     cssEase: "linear",
     responsive: [
@@ -44,13 +45,13 @@ const Clients = () => {
   };
 
   return (
-    <div className="slider-container mt-[16px] mb-12 px-4 md:px-32">
+    <div className="slider-container mt-[16px] mb-12 px-4 md:px-16">
       <Slider {...settings}>
         {CLIENT_LIST.map((client) => (
           <div
             key={client.name}
-            className={`slide-item opacity-50 h-[50px] ${
-              client.width ? "w-[50px]" : "w-[120px]"
+            className={`slide-item opacity-50 h-[60px] ${
+              client.width ? "w-[70px]" : "w-[150px]"
             }`}
           >
             <Image
