@@ -4,7 +4,7 @@ import Clients from "./Clients";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
-    <div className="w-full custom-container mt-24 lg:mt-36">
+    <div className="w-full custom-container mt-20 md:mt-24 lg:mt-36">
       <div className="flex justify-between items-start gap-10">
         <Image
           className="hidden lg:block"
@@ -15,7 +15,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           loading="eager"
         />
         <div className="pt-28 pb-16 text-center px-6 md:pt-20 lg:px-0">
-          <h1 className="text-4xl leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
+          <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
             Open and unified metadata platform for data{" "}
             <span className="text-[#7147E8]">
               discovery, observability and governance
