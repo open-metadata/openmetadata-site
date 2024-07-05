@@ -80,7 +80,7 @@ export const TESTIMONIALS_LIST = [
     company: "Woop",
     url: "https://www.woopit.fr/",
     title: "Head of Data",
-    imgSize: 'w-[200px] h-[40px]'
+    imgSize: 'w-[200px] h-[70px]'
   },
   {
     name: "Erica Bertan",

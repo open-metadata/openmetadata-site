@@ -39,7 +39,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
                 height={18}
                 loading="eager"
               />{" "}
-              Join Slack
+              <span className="mt-[3px]">Join Slack</span>
             </Link>
             <button
               onClick={onClick}
@@ -52,7 +52,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
                 height={18}
                 loading="eager"
               />{" "}
-              Try Openmetadata
+              <span className="mt-[3px]">Try Openmetadata</span>
             </button>
           </div>
           <div className="relative z-[10] top-2 sm:-top-10 md:-top-20">

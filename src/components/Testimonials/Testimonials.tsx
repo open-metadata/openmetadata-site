@@ -9,7 +9,7 @@ import { TESTIMONIALS_LIST } from "@/constants/Testimonials.constants";
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="prev-slick-arrow absolute  z-[5] cursor-pointer -left-4 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:left-16 md:left-[120px] lg:left-48"
+      className="prev-slick-arrow absolute z-[5] cursor-pointer -left-4 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:left-16 md:left-[120px] lg:left-48"
       onClick={onClick}
     >
       <Image
@@ -25,7 +25,7 @@ const PreviousArrow = ({ onClick }: CustomArrowProps) => {
 const NextArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="next-slick-arrow absolute  z-[5] cursor-pointer -right-2 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[72px] md:right-[128px] lg:right-[200px]"
+      className="next-slick-arrow absolute z-[5] cursor-pointer -right-2 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[72px] md:right-[128px] lg:right-[200px]"
       onClick={onClick}
     >
       <Image
@@ -43,6 +43,7 @@ const Testimonials = () => {
 
   const settings = {
     arrows: true,
+    pauseOnHover: false,
     dots: true,
     infinite: true,
     speed: 500,
@@ -51,11 +52,11 @@ const Testimonials = () => {
     nextArrow: <NextArrow />,
     prevArrow: <PreviousArrow />,
     dotsClass: `slick-dots`,
-    afterChange: (current: number) => setActiveSlide(current),
-    appendDots: (dots: number) => (
+    beforeChange: (_: number, next: number) => setActiveSlide(next),
+    appendDots: (dots: React.ReactNode) => (
       <div
         style={{
-          top: '-60px',
+          top: "-60px",
         }}
       >
         <ul> {dots} </ul>
@@ -87,14 +88,14 @@ const Testimonials = () => {
           loading="lazy"
         />
         <div className="mt-28 mx-auto px-4 md:px-16 lg:px-0">
-          <h3 className="text-[#292929] font-medium text-center text-[36px] mb-16 lg:text-[48px]">
+          <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center text-[36px] mb-16 lg:text-[48px]">
             Trusted <span className="text-[#7147E8]">Across Industries</span>
           </h3>
           <div className="slider-container testimonial-content">
             <Slider {...settings}>
               {TESTIMONIALS_LIST.map((item) => (
                 <div key={item.company}>
-                  <p className="text-[#170E2E] sm:columns-2 sm:gap-x-4 lg:gap-x-8 lg:text-[22px]">
+                  <p className="text-[#170E2E] sm:columns-2 sm:gap-x-4 lg:gap-x-8 lg:text-[20px]">
                     "{item.description}"
                   </p>
                   <div className="mt-5 mx-auto flex items-center justify-center lg:max-w-[600px]">
@@ -105,8 +106,8 @@ const Testimonials = () => {
                     >
                       <Image
                         className={`text-right ${item.imgSize} absolute right-0`}
-                        width={100}
-                        height={100}
+                        width={70}
+                        height={70}
                         src={item.image}
                         alt={item.company}
                         priority
@@ -114,10 +115,10 @@ const Testimonials = () => {
                     </Link>
                     <div className="bg-[#E2DAFA] w-[4px] rounded-full h-[80px] mx-4"></div>
                     <div className="w-[250px] self-center">
-                      <p className="text-[#382374] text-[20px] font-medium">
+                      <p className="text-[#382374] tracking-[-0.02em] text-[20px] font-medium">
                         {item.name}
                       </p>
-                      <p className="text-[#888888] text-[16px] xl:-mt-4">
+                      <p className="text-[#888888] tracking-[-0.02em] text-[16px] xl:-mt-4">
                         {item.title}, {item.company}
                       </p>
                     </div>
