@@ -63,7 +63,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
           <ul className="font-medium ml-auto flex flex-col gap-[22px] items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-7 lg:text-[15px]">
             <li>
               <Link
-                href="https://docs.open-metadata.org/v1.3.x/how-to-guides"
+                href="https://docs.open-metadata.org/how-to-guides"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -72,7 +72,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
             </li>
             <li>
               <Link
-                href="https://docs.open-metadata.org/v1.3.x"
+                href="https://docs.open-metadata.org"
                 target="_blank"
                 rel="noopener noreferrer"
               >
