@@ -5,7 +5,7 @@ import { Arrow } from "../Icons/Arrow";
 
 const AboutOpenMetadata = () => {
   return (
-    <div className="custom-container relative z-[12] mt-9 mb-16 md:mt-24 md:mb-28 px-6 md:px-16 xl:px-24">
+    <div className="custom-container relative z-[12] mt-9 mb-16 md:mt-2 md:mb-28 px-6 md:px-16 xl:px-24">
       <h3 className="text-[#292929] font-medium mx-auto tracking-[-0.02em] text-center leading-[40px] text-[32px] lg:text-[48px]">
         Learn More <span className="text-[#7147E8]">About OpenMetadata</span>
       </h3>
