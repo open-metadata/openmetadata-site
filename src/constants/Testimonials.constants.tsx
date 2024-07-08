@@ -80,7 +80,7 @@ export const TESTIMONIALS_LIST = [
     company: "Woop",
     url: "https://www.woopit.fr/",
     title: "Head of Data",
-    imgSize: 'w-[200px] h-[70px]'
+    imgSize: 'w-[200px] h-[50px]'
   },
   {
     name: "Erica Bertan",
@@ -110,7 +110,7 @@ export const TESTIMONIALS_LIST = [
     company: "inDrive",
     url: "https://indrive.com/en/home/",
     title: "Senior Data Steward (Data Governance Analyst)",
-    imgSize: 'w-[250px] h-[70px]'
+    imgSize: 'w-[250px] h-[100px]'
   },
   {
     name: "Ton Sumawang",
