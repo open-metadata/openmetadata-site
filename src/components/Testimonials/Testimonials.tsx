@@ -63,8 +63,6 @@ const Testimonials = () => {
         }}
       />
     ),
-    autoplay: true,
-    autoplaySpeed: 3000,
     adaptiveHeight: true,
   };
 
