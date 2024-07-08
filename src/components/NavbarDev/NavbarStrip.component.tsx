@@ -3,7 +3,7 @@ import { CollateLogo } from '../Icons/CollateLogo';
 
 const NavbarStrip = () => {
   return (
-    <div className="bg-[#0B3547] mx-auto text-[#D3ECF7] py-3 px-8 md:text-center lg:px-12">
+    <div className="bg-[#0B3547] mx-auto text-[#D3ECF7] py-[12px] px-8 md:text-center lg:py-[8px] lg:px-12">
       <div className="custom-container flex justify-center items-center gap-3">
         <CollateLogo />
         <div className="max-w-[80%] lg:flex lg:gap-3 lg:items-center">

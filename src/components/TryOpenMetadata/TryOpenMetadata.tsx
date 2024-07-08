@@ -23,7 +23,7 @@ const TryOpenMetadata = () => {
               )}
 
               <Image
-                className="w-[70px] h-[60px]"
+                className="w-[80px] h-[70px]"
                 src={item.icon}
                 alt={item.header}
                 width={100}

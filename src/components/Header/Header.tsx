@@ -23,7 +23,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               discovery, observability and governance
             </span>
           </h1>
-          <p className="mt-3 mx-auto sm:leading-[30px] max-w-[95%] sm:max-w-[85%] sm:text-lg lg:text-[20px]">
+          <p className="mt-3 mx-auto sm:leading-[26px] max-w-[95%] sm:max-w-[75%] sm:text-lg lg:text-[19px]">
             A single place for all your data and all your data practitioners to
             build and manage high quality data assets. Built by Collate and the
             founders of Apache Hadoop, Apache Atlas, and Uber Databook.

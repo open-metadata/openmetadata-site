@@ -35,9 +35,9 @@ const KeyDataAssets = () => {
       <p className="font-normal text-center text-[#382374] tracking-[-0.02em] mx-auto mt-3 max-w-[86%] sm:mt-0 lg:max-w-[70%] sm:text-[20px]">
         {currentUsecase?.description}
       </p>
-      <div className="my-5 flex flex-col text-[#382374] mx-auto text-[16px] gap-3 tracking-[0.01em] sm:px-10 md:px-24 lg:max-w-[85%] lg:flex-row">
+      <div className="my-5 flex flex-col px-4 text-[#382374] mx-auto text-[16px] gap-3 tracking-[0.01em] sm:px-10 md:px-24 lg:max-w-[85%] lg:flex-row">
         {currentUsecase?.cases.map((item) => (
-          <div key={item} className="flex items-center gap-[10px]">
+          <div key={item} className="flex items-center gap-[14px] md:gap-[10px]">
             <Image 
               className="w-[34px] h-[34px]"
               src="/assets/keydata/tick.svg"
