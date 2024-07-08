@@ -12,7 +12,7 @@ const FooterDev = () => {
             <div>
               <OmdFooterLogo />
             </div>
-            <div className="font-normal tracking-[-0.02em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
+            <div className="font-normal tracking-[-0.005em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
               Open Standard for Metadata with a centralized Metadata Store.
               Discover, collaborate and get your Data Right.
             </div>
