@@ -60,8 +60,26 @@ p{
   text-underline-offset: 3px;
 }
 
-.side-block {
+.side-block-big {
   display: none;
+}
+
+@media (min-width: 1501px) {
+  .side-block-big {
+    display: block;
+  }
+}
+
+@media (max-width: 799px) {
+  .side-block {
+    display: none;
+  }
+}
+
+@media (min-width: 1500px) {
+  .side-block {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -71,7 +89,7 @@ p{
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px) and (max-width: 1500px) {
   .side-block {
     display: block;
   }

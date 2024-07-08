@@ -77,7 +77,15 @@ const Testimonials = () => {
           width={140}
           src="/assets/header/left-box.svg"
           alt="left-box-svg"
-          loading="lazy"
+          loading="eager"
+        />
+        <Image
+          className="side-block-big -translate-x-1/3"
+          height={20}
+          width={400}
+          src="/assets/header/left-box-big.svg"
+          alt="left-box-svg"
+          loading="eager"
         />
         <div className="mt-9 mx-auto px-0 md:px-16 md:mt-28 lg:px-0">
           <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center max-w-[75%] mx-auto text-[32px] leading-[40px] mb-16 lg:text-[48px]">
@@ -126,7 +134,15 @@ const Testimonials = () => {
           width={140}
           src="/assets/header/right-box.svg"
           alt="right-box-svg"
-          loading="lazy"
+          loading="eager"
+        />
+        <Image
+          className="side-block-big translate-x-1/3"
+          height={20}
+          width={400}
+          src="/assets/header/right-box-big.svg"
+          alt="right-box-svg"
+          loading="eager"
         />
       </div>
     </div>

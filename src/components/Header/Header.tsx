@@ -6,13 +6,21 @@ import { BoltIcon } from "../Icons/BoltIcon";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
-    <div className="w-full custom-container mt-20 md:mt-24 lg:mt-36">
-      <div className="flex justify-between items-start gap-4 xl:gap-10">
+    <div className="w-full max-w-[1500px] mx-auto mt-20 md:mt-24 lg:mt-36">
+      <div className="flex justify-between items-start gap-4 xl:gap-10 2xl:gap-0">
         <Image
           className="side-block"
           height={20}
           width={140}
           src="/assets/header/left-box.svg"
+          alt="left-box-svg"
+          loading="eager"
+        />
+        <Image
+          className="side-block-big -translate-x-1/3 h-[600px] -mt-10"
+          height={20}
+          width={200}
+          src="/assets/header/left-box-big.svg"
           alt="left-box-svg"
           loading="eager"
         />
@@ -23,7 +31,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               discovery, observability and governance
             </span>
           </h1>
-          <p className="mt-3 mx-auto sm:leading-[26px] max-w-[95%] sm:max-w-[75%] sm:text-lg lg:text-[19px]">
+          <p className="mt-3 mx-auto sm:leading-[26px] max-w-[95%] sm:max-w-[78%] sm:text-lg lg:text-[19px] 2xl:max-w-[90%]">
             A single place for all your data and all your data practitioners to
             build and manage high quality data assets. Built by Collate and the
             founders of Apache Hadoop, Apache Atlas, and Uber Databook.
@@ -76,8 +84,16 @@ const Header = ({ onClick }: { onClick: () => void }) => {
         <Image
           className="side-block"
           height={20}
-          width={140}
+          width={180}
           src="/assets/header/right-box.svg"
+          alt="right-box-svg"
+          loading="eager"
+        />
+        <Image
+          className="side-block-big translate-x-1/3 h-[700px]"
+          height={20}
+          width={340}
+          src="/assets/header/right-box-big.svg"
           alt="right-box-svg"
           loading="eager"
         />
