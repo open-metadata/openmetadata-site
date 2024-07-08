@@ -20,6 +20,9 @@ const IntegrationsDev = () => {
   const [selectedTab, setSelectedTab] = useState<string>("All Connectors");
   const [services, setServices] = useState<Service[]>(allServices);
   const [isDropdownVisible, setIsDropdownVisible] = useState<boolean>(false);
+  const [mobileServices, setMobileServices] = useState<Service[]>(
+    services.slice(0, 12)
+  );
 
   const handleTabClick = (tab: string) => {
     setSelectedTab(tab);
@@ -34,10 +37,20 @@ const IntegrationsDev = () => {
           a.name.localeCompare(b.name)
         );
         setServices(filteredServices);
+        setMobileServices(filteredServices.slice(0, 12));
       }
     } else {
       setServices(allServices);
+      setMobileServices(allServices.slice(0, 12));
     }
+  };
+
+  const handleLoadMoreClick = () => {
+    const moreServices = services.slice(
+      mobileServices.length,
+      mobileServices.length + 12
+    );
+    setMobileServices((prev) => [...prev, ...moreServices]);
   };
 
   return (
@@ -107,7 +120,7 @@ const IntegrationsDev = () => {
             </div>
           ))}
         </div>
-        <div className="py-8 px-3 gap-5 w-full overflow-y-scroll justify-center sm:px-8 sm:gap-4 grid grid-cols-2 sm:auto-rows-max md:grid-cols-3 lg:grid-cols-5 lg:px-12 xl:grid-cols-6">
+        <div className="py-8 px-3 gap-5 w-full hidden overflow-y-scroll justify-center sm:px-8 sm:gap-4 sm:grid grid-cols-2 sm:auto-rows-max md:grid-cols-3 lg:grid-cols-5 lg:px-12 xl:grid-cols-6">
           {services.map((item) => (
             <div key={item.name} className="max-h-[110px]">
               <Link
@@ -131,6 +144,41 @@ const IntegrationsDev = () => {
               </Link>
             </div>
           ))}
+        </div>
+        <div className="sm:hidden">
+          <div className="py-8 px-3 gap-5 w-full overflow-y-scroll justify-center grid grid-cols-2">
+            {mobileServices.map((item) => (
+              <div key={item.name} className="max-h-[110px]">
+                <Link
+                  href={item.href ?? "#"}
+                  target="_blank"
+                  className="text-center flex flex-col items-center"
+                >
+                  <Image
+                    alt={item.alt}
+                    width={1000}
+                    className={`h-12 mb-2 w-12 ${
+                      item.name === "SAP HANA" && "w-20"
+                    }`}
+                    height={1000}
+                    src={item.src}
+                    loading="lazy"
+                  />
+                  <p className="mt-2 text-nowrap text-[14px] sm:text-wrap md:text-[16px]">
+                    {item.name}
+                  </p>
+                </Link>
+              </div>
+            ))}
+          </div>
+          {services.length > mobileServices.length && (
+            <button
+              onClick={handleLoadMoreClick}
+              className="text-[20px] text-[#5E3BC1] font-normal mb-9 mx-auto w-full"
+            >
+              Load More
+            </button>
+          )}
         </div>
       </div>
     </div>

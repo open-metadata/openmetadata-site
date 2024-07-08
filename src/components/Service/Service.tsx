@@ -20,7 +20,7 @@ const Services = () => {
               height={500}
               loading="eager"
             />
-            <div className="text-left max-w-[84%] mx-auto md:max-w-[80%]">
+            <div className="text-left max-w-[84%] mx-auto md:max-w-[95%]">
               <h3 className="font-medium text-[24px] tracking-[-0.02em] leading-[30px] md:leading-[40px] md:text-3xl lg:max-w-[90%] xl:text-[34px]">
                 {service.serviceName.header1}
                 <span className="text-[#7147E8]">

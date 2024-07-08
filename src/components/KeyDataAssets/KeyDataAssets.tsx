@@ -10,7 +10,7 @@ const KeyDataAssets = () => {
   const currentUsecase = TABS.find((item) => item.name === openTab)?.useCases;
 
   return (
-    <div className="custom-container mt-36 px-5 md:mt-48 md:px-16 xl:px-32">
+    <div className="custom-container mt-36 px-5 md:mt-32 md:px-16 xl:px-32">
       <div className="flex justify-between overflow-x-scroll gap-3 pb-3 lg:gap-5">
         {TABS.map((item) => (
           <div

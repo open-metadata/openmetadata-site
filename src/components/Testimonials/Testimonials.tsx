@@ -72,7 +72,7 @@ const Testimonials = () => {
     <div className="custom-container relative z-[12]">
       <div className="flex justify-between">
         <Image
-          className="hidden lg:block"
+          className="side-block"
           height={20}
           width={140}
           src="/assets/header/left-box.svg"
@@ -121,7 +121,7 @@ const Testimonials = () => {
           </div>
         </div>
         <Image
-          className="hidden lg:block"
+          className="side-block"
           height={20}
           width={140}
           src="/assets/header/right-box.svg"

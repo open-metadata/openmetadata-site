@@ -7,16 +7,16 @@ import { BoltIcon } from "../Icons/BoltIcon";
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
     <div className="w-full custom-container mt-20 md:mt-24 lg:mt-36">
-      <div className="flex justify-between items-start gap-10">
+      <div className="flex justify-between items-start gap-4 xl:gap-10">
         <Image
-          className="hidden lg:block"
+          className="side-block"
           height={20}
           width={140}
           src="/assets/header/left-box.svg"
           alt="left-box-svg"
           loading="eager"
         />
-        <div className="pt-28 pb-16 text-center px-6 md:pt-20 lg:px-0">
+        <div className="pt-32 pb-16 text-center px-6 md:pt-20 lg:px-0">
           <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
             Open and unified metadata platform for data{" "}
             <span className="text-[#7147E8]">
@@ -74,7 +74,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           </div>
         </div>
         <Image
-          className="hidden lg:block"
+          className="side-block"
           height={20}
           width={140}
           src="/assets/header/right-box.svg"
