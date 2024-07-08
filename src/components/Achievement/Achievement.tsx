@@ -4,7 +4,7 @@ import Image from "next/image";
 const Achievement = () => {
   return (
     <div className="shadow-bg">
-      <div className="custom-container py-16 px-5 md:px-16 md:py-18">
+      <div className="custom-container py-[32px] px-5 md:px-16 md:py-[72px]">
         <div className="flex rounded-lg flex-col w-full shadow-secondary lg:rounded-2xl lg:flex-row">
           <div className="left-top-box py-8 px-7 bg-white lg:max-w-[43%] md:px-12 lg:px-[80px]">
             <div className="flex flex-col justify-center h-full text-center lg:text-left">

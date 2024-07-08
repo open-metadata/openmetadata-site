@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <div className="custom-container mt-3 px-4 md:mt-5 md:px-16 xl:px-28">
+    <div className="custom-container mt-12 px-4 md:mt-5 md:px-16 xl:px-28">
       <h2 className="text-[#292929] text-[32px] font-medium text-center tracking-[-0.01em] lg:text-[48px]">
         Why <span className="text-[#7147E8]">OpenMetadata?</span>
       </h2>
-      <div className="mt-6 lg:mt-28">
+      <div className="mt-2 lg:mt-28">
         {SERVICE_LIST.map((service) => (
           <div
             key={service.serviceName.header1 + service.serviceName.header2}
