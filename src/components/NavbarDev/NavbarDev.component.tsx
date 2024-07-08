@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { OmdLogo } from "../Icons/OmdLogo";
@@ -80,7 +79,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
               </Link>
             </li>
             <li>
-              <Link href="https://open-metadata.org/community">Community</Link>
+              <Link href="/community">Community</Link>
             </li>
             <li>
               <Link
