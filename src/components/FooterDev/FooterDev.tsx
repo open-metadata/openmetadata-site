@@ -7,16 +7,18 @@ const FooterDev = () => {
   return (
     <footer className="pt-24 pb-12 mt-auto w-full bg-[#333333] text-white">
       <div className="custom-container sm:grid sm:gap-5 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 px-8 md:px-20 xl:px-28">
-        <div className="flex flex-col gap-5 col-span-2 xl:col-span-3">
-          <div>
-            <OmdFooterLogo />
-          </div>
-          <div className="font-normal tracking-[-0.02em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
-            Open Standard for Metadata with a centralized Metadata Store.
-            Discover, collaborate and get your Data Right.
-          </div>
-          <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
-            Copyright OpenMetadata {new Date().getFullYear()}
+        <div className="hidden sm:block lg:col-span-2 xl:col-span-3">
+          <div className="flex flex-col gap-5">
+            <div>
+              <OmdFooterLogo />
+            </div>
+            <div className="font-normal tracking-[-0.02em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
+              Open Standard for Metadata with a centralized Metadata Store.
+              Discover, collaborate and get your Data Right.
+            </div>
+            <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
+              Copyright OpenMetadata {new Date().getFullYear()}
+            </div>
           </div>
         </div>
 
@@ -251,7 +253,19 @@ const FooterDev = () => {
             </li>
           </ul>
         </div>
-        <div className="mt-5 lg:ml-5 sm:mt-0">
+        <div className="flex flex-col gap-5 mt-5 sm:hidden">
+          <div>
+            <OmdFooterLogo />
+          </div>
+          <div className="font-normal tracking-[-0.02em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
+            Open Standard for Metadata with a centralized Metadata Store.
+            Discover, collaborate and get your Data Right.
+          </div>
+          <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
+            Copyright OpenMetadata {new Date().getFullYear()}
+          </div>
+        </div>
+        <div className="mt-2 lg:ml-5 sm:mt-0 sm:row-start-1 sm:col-start-2 lg:col-start-auto lg:row-start-auto">
           <div className="text-uppercase text-[8px] text-nowrap text-gray-400 font-medium tracking-[3px] mb-2">
             Developed By
           </div>
