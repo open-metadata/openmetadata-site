@@ -1,11 +1,20 @@
-import Footer from '@/components/Footer/Footer.component';
-import Navbar from '@/components/Navbar/Navbar.component';
+import FooterDev from '@/components/FooterDev/FooterDev';
+import NavbarDev from '@/components/NavbarDev/NavbarDev.component';
+import NavbarStrip from '@/components/NavbarDev/NavbarStrip.component';
 import YoutubeEmbed from '@/components/common/YouTubeEmbed';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Community() {
+
+  const router = useRouter();
+
+  const handleTryOpenMetadataClick = () => {
+    router.push('/#try-openmetadata');
+  }
+
   return (
     <>
       <Head>
@@ -64,17 +73,10 @@ export default function Community() {
       </Head>
       <div id="layoutDefault">
         <div id="layoutDefault_content">
-          <div
-            style={{
-              position: 'fixed',
-              top: 0,
-              right: 0,
-              left: 0,
-              zIndex: 1030,
-            }}
-          >
-            <Navbar />
-          </div>
+        <div className="mx-auto fixed top-0 w-full z-[1030]">
+          <NavbarDev onClick={handleTryOpenMetadataClick} />
+          <NavbarStrip />
+        </div>
 
           <header className="page-header-ui page-header-ui-light bg-white lg:pt-32 max-lg:mt-0">
             <div className="page-header-ui-content pt-5 max-lg:pt-0">
@@ -310,19 +312,9 @@ export default function Community() {
                 </div>
               </div>
             </div>
-            <div className="svg-border-rounded text-dark">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 144.54 17.34"
-                preserveAspectRatio="none"
-                fill="currentColor"
-              >
-                <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-              </svg>
-            </div>
           </section>
         </div>
-        <Footer />
+        <FooterDev />
       </div>
     </>
   );

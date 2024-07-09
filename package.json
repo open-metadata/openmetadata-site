@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@fontsource/metropolis": "^5.0.11",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@types/node": "20.11.24",
     "@types/react": "18.2.62",
