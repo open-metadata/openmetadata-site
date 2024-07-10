@@ -11,7 +11,7 @@ import { ArrowLeft } from "../Icons/ArrowLeft";
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="prev-slick-arrow absolute z-[5] cursor-pointer w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:left-[80px] md:left-[120px] lg:left-[192px]"
+      className="prev-slick-arrow absolute z-[5] cursor-pointer w-[10px] h-[14px] -top-[62px] -left-[14px] sm:w-[14px] sm:h-[20px] sm:left-[70px] md:left-[108px] lg:left-[182px]"
       onClick={onClick}
     >
       <ArrowLeft />
@@ -22,7 +22,7 @@ const PreviousArrow = ({ onClick }: CustomArrowProps) => {
 const NextArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="next-slick-arrow absolute z-[5] cursor-pointer right-2 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[88px] md:right-[128px] lg:right-[200px]"
+      className="next-slick-arrow absolute z-[5] cursor-pointer right-0 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[78px] md:right-[113px] lg:right-[190px]"
       onClick={onClick}
     >
       <ArrowRight />
@@ -80,7 +80,7 @@ const Testimonials = () => {
         <Image
           className="side-block-big -translate-x-1/3"
           height={20}
-          width={400}
+          width={270}
           src="/assets/header/left-box-big.svg"
           alt="left-box-svg"
           loading="eager"
@@ -96,7 +96,11 @@ const Testimonials = () => {
                   <p className="text-[#170E2E] sm:columns-2 sm:gap-x-4 lg:gap-x-8 lg:text-[20px]">
                     "{item.description}"
                   </p>
-                  <div className="mt-5 mx-auto flex items-center justify-center lg:max-w-[600px]">
+                  <div
+                    className={`mt-5 mx-auto flex items-center justify-center lg:max-w-[600px] ${
+                      (item.company === "beeline" || item.company === "Moove") && "mb-6"
+                    }`}
+                  >
                     <Link
                       href={item.url}
                       target="_blank"
@@ -137,7 +141,7 @@ const Testimonials = () => {
         <Image
           className="side-block-big translate-x-1/3"
           height={20}
-          width={400}
+          width={270}
           src="/assets/header/right-box-big.svg"
           alt="right-box-svg"
           loading="eager"
