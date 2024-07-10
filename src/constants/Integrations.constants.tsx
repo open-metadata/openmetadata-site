@@ -356,7 +356,7 @@ export const INTEGRATION_SERVICES = [
     ],
   },
   {
-    connector: "Mlmodel",
+    connector: "ML Model",
     services: [
       {
         href: "https://docs.open-metadata.org/connectors/ml-model/mlflow",

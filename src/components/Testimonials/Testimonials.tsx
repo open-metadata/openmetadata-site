@@ -80,7 +80,7 @@ const Testimonials = () => {
         <Image
           className="side-block-big -translate-x-1/3"
           height={20}
-          width={400}
+          width={270}
           src="/assets/header/left-box-big.svg"
           alt="left-box-svg"
           loading="eager"
@@ -137,7 +137,7 @@ const Testimonials = () => {
         <Image
           className="side-block-big translate-x-1/3"
           height={20}
-          width={400}
+          width={270}
           src="/assets/header/right-box-big.svg"
           alt="right-box-svg"
           loading="eager"
