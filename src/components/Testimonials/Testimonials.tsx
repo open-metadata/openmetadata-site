@@ -96,7 +96,11 @@ const Testimonials = () => {
                   <p className="text-[#170E2E] sm:columns-2 sm:gap-x-4 lg:gap-x-8 lg:text-[20px]">
                     "{item.description}"
                   </p>
-                  <div className="mt-5 mx-auto flex items-center justify-center lg:max-w-[600px]">
+                  <div
+                    className={`mt-5 mx-auto flex items-center justify-center lg:max-w-[600px] ${
+                      item.company === "beeline" || item.company === "Moove" && "mb-6"
+                    }`}
+                  >
                     <Link
                       href={item.url}
                       target="_blank"
