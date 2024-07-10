@@ -98,7 +98,7 @@ const Testimonials = () => {
                   </p>
                   <div
                     className={`mt-5 mx-auto flex items-center justify-center lg:max-w-[600px] ${
-                      item.company === "beeline" || item.company === "Moove" && "mb-6"
+                      (item.company === "beeline" || item.company === "Moove") && "mb-6"
                     }`}
                   >
                     <Link
