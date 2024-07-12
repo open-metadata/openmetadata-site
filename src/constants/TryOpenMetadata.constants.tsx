@@ -2,7 +2,7 @@ const ICON_ROUTE = "/assets/tryOpenMetadata";
 
 export const TRY_OPENMETADATA = [
   {
-    icon: `${ICON_ROUTE}/deploy.svg`,
+    icon: `${ICON_ROUTE}/deploy-card.svg`,
     header: "Deploy",
     description: "Deploy OpenMetadata in your own environment",
     linkText: "Download Now",
@@ -10,7 +10,7 @@ export const TRY_OPENMETADATA = [
     isNew: false
   },
   {
-    icon: `${ICON_ROUTE}/experience.svg`,
+    icon: `${ICON_ROUTE}/experience-card.svg`,
     header: "Experience",
     description: "Experience OpenMetadata with demo data in seconds",
     linkText: "Try Live Sandbox",
@@ -18,7 +18,7 @@ export const TRY_OPENMETADATA = [
     isNew: false
   },
   {
-    icon: `${ICON_ROUTE}/free-saas.svg`,
+    icon: `${ICON_ROUTE}/free-saas-card.svg`,
     header: "Free SaaS",
     description: "Free OpenMetadata cloud service with your own data",
     linkText: "Sign Up Free",
