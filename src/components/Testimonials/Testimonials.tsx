@@ -107,9 +107,9 @@ const Testimonials = () => {
                       className="w-[250px] relative flex items-center"
                     >
                       <Image
-                        className={`text-right ${item.imgSize} absolute right-0`}
-                        width={70}
-                        height={70}
+                        className={`text-right absolute right-0`}
+                        width={item.imgSize.width}
+                        height={item.imgSize.height}
                         src={item.image}
                         alt={item.company}
                         priority
