@@ -27,9 +27,8 @@ const Header = ({ onClick }: { onClick: () => void }) => {
         <div className="pt-32 pb-16 text-center px-6 md:pt-20 lg:px-0">
           <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
             Open and unified metadata platform for data{" "}
-            <span className="text-[#7147E8]">
-              discovery, observability and governance
-            </span>
+            <span className="text-[#7147E8]">discovery, observability,</span> and{" "}
+            <span className="text-[#7147E8]">governance</span>
           </h1>
           <p className="mt-3 mx-auto sm:leading-[26px] max-w-[95%] sm:max-w-[78%] sm:text-lg lg:text-[19px] 2xl:max-w-[90%]">
             A single place for all your data and all your data practitioners to
@@ -42,15 +41,13 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               href="https://slack.open-metadata.org/"
               target="_blank"
             >
-              <JoinSlackIcon />{" "}
-              <span className="mt-[3px]">Join Slack</span>
+              <JoinSlackIcon /> <span className="mt-[3px]">Join Slack</span>
             </Link>
             <button
               onClick={onClick}
               className="uppercase w-full flex justify-center items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:bg-[#6540c8]"
             >
-              <BoltIcon />{" "}
-              <span className="mt-[3px]">Try Openmetadata</span>
+              <BoltIcon /> <span className="mt-[3px]">Try Openmetadata</span>
             </button>
           </div>
           <div className="relative z-[10] top-2 sm:-top-10 md:-top-20">
