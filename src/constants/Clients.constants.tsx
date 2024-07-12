@@ -35,4 +35,14 @@ export const CLIENT_LIST = [
         name: "Moove",
         logo: `${LOGO_ROUTE}/moove.svg`,
     },
+    {
+        name: "Woop",
+        logo: `${LOGO_ROUTE}/woop.webp`,
+        width: 80
+    },
+    {
+        name: "Hoodie Analytics",
+        logo: `${LOGO_ROUTE}/hoodie-analytics.webp`,
+        width: 80
+    },
 ]
