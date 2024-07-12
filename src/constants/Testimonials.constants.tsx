@@ -7,7 +7,10 @@ export const TESTIMONIALS_LIST = [
     company: "beeline",
     url: "http://beeline.ru/",
     title: "Chief Data Officer",
-    imgSize: "w-[50px] h-[50px]",
+    imgSize: {
+      width: 60,
+      height: 50
+    },
   },
   {
     name: "Laila Patel",
@@ -17,7 +20,10 @@ export const TESTIMONIALS_LIST = [
     company: "Moove",
     url: "https://www.moove.io/",
     title: "Data Governance Specialist",
-    imgSize: "w-[200px] h-[39px]",
+    imgSize: {
+      width: 150,
+      height: 50
+    },
   },
   {
     name: "Cade Parker",
@@ -27,7 +33,10 @@ export const TESTIMONIALS_LIST = [
     company: "ZenBusiness",
     url: "https://www.zenbusiness.com",
     title: "Senior Engineering Manager",
-    imgSize: "w-[50px] h-[50px]",
+    imgSize: {
+      width: 70,
+      height: 50
+    },
   },
   {
     name: "Praveen Singh",
@@ -37,7 +46,10 @@ export const TESTIMONIALS_LIST = [
     company: "PayU Finance",
     url: "https://www.payufin.in/",
     title: "Director of Data Engineering",
-    imgSize: "w-[200px] h-[40px]",
+    imgSize: {
+      width: 160,
+      height: 50
+    },
   },
   {
     name: "Liubov Pasechnik",
@@ -47,7 +59,10 @@ export const TESTIMONIALS_LIST = [
     company: "inDrive",
     url: "https://indrive.com/en/home/",
     title: "Senior Data Steward (Data Governance Analyst)",
-    imgSize: "w-[250px] h-[100px]",
+    imgSize: {
+      width: 180,
+      height: 50
+    },
   },
   {
     name: "Haithem Souala",
@@ -57,7 +72,10 @@ export const TESTIMONIALS_LIST = [
     company: "Woop",
     url: "https://www.woopit.fr/",
     title: "Head of Data",
-    imgSize: "w-[200px] h-[50px]",
+    imgSize: {
+      width: 120,
+      height: 50
+    },
   },
   {
     name: "Erica Bertan",
@@ -67,7 +85,10 @@ export const TESTIMONIALS_LIST = [
     company: "Loggi",
     url: "https://www.loggi.com",
     title: "Data Engineer",
-    imgSize: "w-[200px] h-[39px]",
+    imgSize: {
+      width: 130,
+      height: 50
+    },
   },
   {
     name: "Ton Sumawang",
@@ -77,6 +98,10 @@ export const TESTIMONIALS_LIST = [
     company: "SAVii",
     url: "https://savii.io/ph",
     title: "Head of Data Governance and Quality",
+    imgSize: {
+      width: 100,
+      height: 50
+    }
   },
   {
     name: "Abhijit Singh",
@@ -87,7 +112,10 @@ export const TESTIMONIALS_LIST = [
     company: "Intelligaia",
     url: "https://intelligaia.com/",
     title: "Product Manager - Data",
-    imgSize: "w-[250px] h-[39px]",
+    imgSize: {
+      width: 150,
+      height: 50
+    },
   },
   {
     name: "Florian Giroud",
@@ -97,7 +125,10 @@ export const TESTIMONIALS_LIST = [
     company: "Hoodie Analytics",
     url: "https://www.hoodieanalytics.com/",
     title: "Head of Data Engineering",
-    imgSize: "w-[200px] h-[50px]",
+    imgSize: {
+      width: 110,
+      height: 50
+    },
   },
   {
     name: "Sandeep Penmetsa",
@@ -107,7 +138,10 @@ export const TESTIMONIALS_LIST = [
     company: "Physics Wallah",
     url: "https://www.pw.live/",
     title: "Associate Director",
-    imgSize: "w-[50px] h-[50px]",
+    imgSize: {
+      width: 70,
+      height: 50
+    },
   },
   {
     name: "Akash Nawani",
@@ -118,7 +152,10 @@ export const TESTIMONIALS_LIST = [
     company: "Khatabook",
     url: "https://khatabook.com/",
     title: "Lead - Data Platform",
-    imgSize: "w-[250px] h-[39px]",
+    imgSize: {
+      width: 150,
+      height: 50
+    },
   },
   {
     name: "Seungwan Jo",
@@ -129,7 +166,10 @@ export const TESTIMONIALS_LIST = [
     company: "Bucketplace",
     url: "http://bucketplace.net",
     title: "Data Engineer",
-    imgSize: "w-[50px] h-[50px]",
+    imgSize: {
+      width: 50,
+      height: 50
+    },
   },
 ];
 export const TEAMS_LIST = [
