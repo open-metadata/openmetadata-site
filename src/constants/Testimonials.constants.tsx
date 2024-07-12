@@ -2,7 +2,7 @@ export const TESTIMONIALS_LIST = [
   {
     name: "Rinat Abdurakhmanov",
     description:
-      "We came across OpenMetadata as an alternative to heavy, expensive and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. It allowed us not only to cut down the costs but also to quickly and effortlessly adapt the product to the needs of our company which includes hundreds of systems and data sources that require categorization and analysis. Open metadata is a fast-growing product that allows to impact its development through contribution and flawless community  interaction. The best thing so far is how easy it is to implement the solution and start working on your data right away. Every business user is able to track and take care of their metadata and build trustworthy, data-driven products for our customers.  Open metadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community to help you out on your way to befriend your company’s knowledge.",
+      "We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. It allowed us not only to cut down the costs but also to quickly and effortlessly adapt the product to the needs of our company which includes hundreds of systems and data sources that require categorization and analysis. Open metadata is a fast-growing product that allows to impact its development through contribution and flawless community  interaction. The best thing so far is how easy it is to implement the solution and start working on your data right away. Every business user is able to track and take care of their metadata and build trustworthy, data-driven products for our customers.  Open metadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community to help you out on your way to befriend your company’s knowledge.",
     image: "/assets/testimonials/beeline.webp",
     company: "beeline",
     url: "http://beeline.ru/",
@@ -32,7 +32,7 @@ export const TESTIMONIALS_LIST = [
   {
     name: "Praveen Singh",
     description:
-      "In the data world, the scope of metadata is ever-expanding. In today's era where metadata for a large organisation itself becomes big data, it's difficult to curate, organize and manage metadata. OpenMetadata has been a wonderful discovery for the data team at PayU Finance. We truly rely on OpenMetadata to be our Enterprise Metadata Manager. It doesn't only help us quickly solve for discovery, data quality, and observability, but also on collaboration between teams and data assets. The OpenMetadata team supported us at each step to move OpenMetadata to our production environment.",
+      "In the data world, the scope of metadata is ever-expanding. In today's era where metadata for a large organisation itself becomes big data, it's difficult to curate, organize, and manage metadata. OpenMetadata has been a wonderful discovery for the data team at PayU Finance. We truly rely on OpenMetadata to be our Enterprise Metadata Manager. It doesn't only help us quickly solve for discovery, data quality, and observability, but also on collaboration between teams and data assets. The OpenMetadata team supported us at each step to move OpenMetadata to our production environment.",
     image: "/assets/testimonials/payu-finance.webp",
     company: "PayU Finance",
     url: "https://www.payufin.in/",
@@ -42,7 +42,7 @@ export const TESTIMONIALS_LIST = [
   {
     name: "Liubov Pasechnik",
     description:
-      "OpenMetadata helps us to reduce the gap between business users and technical users. The first step in any data-driven digital transformation is to manage your data as an enterprise asset: take inventory of it, assess and maximize its value, providing transparency, and credibility. Data is distributed and diverse across many various departments, services and DWH layers, so it's crucial for us to have a tool with powerful advanced search to filter search results, detailed data lineage and integrated business glossary module.",
+      "OpenMetadata helps us to reduce the gap between business users and technical users. The first step in any data-driven digital transformation is to manage your data as an enterprise asset: take inventory of it, assess, and maximize its value, providing transparency, and credibility. Data is distributed and diverse across many various departments, services and DWH layers, so it's crucial for us to have a tool with powerful advanced search to filter search results, detailed data lineage, and integrated business glossary module.",
     image: "/assets/testimonials/inDrive-logo.webp",
     company: "inDrive",
     url: "https://indrive.com/en/home/",
@@ -52,7 +52,7 @@ export const TESTIMONIALS_LIST = [
   {
     name: "Haithem Souala",
     description:
-      "The integration of OpenMetadata with DBT and Metabase endowed us with abundant data and metadata insights concerning our analytical data entities (such as tables and views), as well as Metabase dashboards. OpenMetadata further offers a visually comprehensive data lineage, depicting the origins, modifications, and destinations of various data assets. OpenMetadata excels notably in its robust search interface, facilitating the discovery of business glossary terms and data assets.",
+      "The integration of OpenMetadata with DBT and Metabase endowed us with abundant data and metadata insights concerning our analytical data entities (such as tables and views), as well as Metabase dashboards. OpenMetadata further offers a visually comprehensive data lineage, depicting the origins, modifications, and destinations of various data assets. OpenMetadata excels notably in its robust search interface, facilitating the discovery of business glossary terms, and data assets.",
     image: "/assets/testimonials/woop-logo.webp",
     company: "Woop",
     url: "https://www.woopit.fr/",
@@ -112,7 +112,7 @@ export const TESTIMONIALS_LIST = [
   {
     name: "Akash Nawani",
     description:
-      "One of the best solutions for metadata management. Solves some of the tough problems for data teams such as: asset documentation, collaboration, discovery & quality, while supporting a wide range of integrations with 3p tools like Airflow, Snowflake, dbt, Redash etc. Super thankful to the OM community for prompt support.",
+      "One of the best solutions for metadata management. Solves some of the tough problems for data teams such as: asset documentation, collaboration, discovery, & quality, while supporting a wide range of integrations with 3p tools like Airflow, Snowflake, dbt, Redash etc. Super thankful to the OM community for prompt support.",
     date: "May 13th, 2022",
     image: "/assets/testimonials/kb.webp",
     company: "Khatabook",

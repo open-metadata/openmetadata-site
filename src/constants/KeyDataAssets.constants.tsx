@@ -19,7 +19,7 @@ export const TABS = [
       imgSrc: "/assets/discovery.webp",
       cases: [
         "80+ Data Connectors for all your data sources",
-        "Search, facet and preview across your data estate",
+        "Search, facet, and preview across your data estate",
         "Collaborate with other data practitioners",
       ],
     },
@@ -33,7 +33,7 @@ export const TABS = [
         highlightedText: "data comes from",
       },
       description:
-        "Column-level lineage maps help you understand your overall data flow. Tier critical and sensitive data to manage its quality, observability and governance.",
+        "Column-level lineage maps help you understand your overall data flow. Tier critical and sensitive data to manage its quality, observability, and governance.",
       imgSrc: "/assets/lineage.webp",
       cases: [
         "End-to-end visibility for faster root cause analysis",
