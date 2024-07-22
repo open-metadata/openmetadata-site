@@ -75,7 +75,7 @@ const FooterDev = () => {
             </li>
             <li>
               <Link
-                href="https://www.getcollate.io/roadmap"
+                href="https://docs.open-metadata.org/roadmap"
                 target="_blank"
                 className="hover:text-gray-500"
               >
