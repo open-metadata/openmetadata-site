@@ -94,9 +94,7 @@ const Testimonials = () => {
                   </button>
                 )}
                 <div
-                  className={`mt-5 mx-auto flex items-center justify-center lg:max-w-[600px] ${
-                    (item.company === "beeline" || item.company === "Moove") && "mb-6"
-                  }`}
+                  className="mt-5 mx-auto flex items-center justify-center lg:max-w-[600px]"
                 >
                   <Link
                     href={item.url}
@@ -117,7 +115,7 @@ const Testimonials = () => {
                     <p className="text-[#382374] tracking-[-0.02em] text-[16px] font-medium">
                       {item.name}
                     </p>
-                    <p className="text-[#888888] tracking-[-0.02em] text-[14px] xl:-mt-4">
+                    <p className="text-[#888888] tracking-[-0.02em] text-[14px] md:h-[20px] xl:-mt-4">
                       {item.title}, {item.company}
                     </p>
                   </div>
