@@ -88,9 +88,9 @@ const Testimonials = () => {
                 {item.description.length > 230 && (
                   <button 
                     onClick={() => handleMoreBtnClick(i)} 
-                    className="relative z-[7] text-[#7147E8] cursor-pointer lg:text-[20px] hover:underline"
+                    className="relative z-[7] text-[#7147E8] cursor-pointer lg:text-[18px] hover:underline"
                   >
-                    {expandedDescription === i ? "Less" : "More"}
+                    read {expandedDescription === i ? "less" : "more"}
                   </button>
                 )}
                 <div
