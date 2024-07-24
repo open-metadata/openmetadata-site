@@ -145,6 +145,14 @@ html {
   background-color: white;
 }
 
+.slick-dots {
+  height: 30px;
+}
+
+.slick-list {
+  height: auto;
+}
+
 @media (min-width: 640px) {
   .slider-container.testimonial-content {
     max-width: 500px;
