@@ -34,7 +34,7 @@ const Testimonials = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [expandedDescription, setExpandedDescription] = useState(-1)
 
-  const handleMoreBtnClick = (index: number) => 
+  const handleMoreLessBtnClick = (index: number) => 
     setExpandedDescription(expandedDescription === index ? -1 : index)
 
   const settings = {
@@ -80,14 +80,14 @@ const Testimonials = () => {
           <Slider {...settings}>
             {TESTIMONIALS_LIST.map((item, i) => (
               <div key={item.company}>
-                <span className="text-[#170E2E] text-justify lg:text-[20px]">
+                <span className="text-[#170E2E] text-justify mr-[10px] lg:text-[20px]">
                   "{expandedDescription !== i && item.description.length > 230 ? (
                     item.description.slice(0, 230) + "..."
-                  ) : item.description}"{"  "}
+                  ) : item.description}"
                 </span>
                 {item.description.length > 230 && (
                   <button 
-                    onClick={() => handleMoreBtnClick(i)} 
+                    onClick={() => handleMoreLessBtnClick(i)} 
                     className="relative z-[7] text-[#7147E8] cursor-pointer lg:text-[18px] hover:underline"
                   >
                     read {expandedDescription === i ? "less" : "more"}
