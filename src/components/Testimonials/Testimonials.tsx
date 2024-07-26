@@ -11,7 +11,7 @@ import { ArrowLeft } from "../Icons/ArrowLeft";
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="prev-slick-arrow absolute z-[5] cursor-pointer w-[10px] h-[14px] -top-[62px] -left-[14px] sm:w-[14px] sm:h-[20px] sm:left-[60px] md:left-[92px] lg:left-[168px]"
+      className="prev-slick-arrow absolute z-[5] -bottom-[6px] cursor-pointer w-[10px] h-[14px] -left-[14px] sm:left-[60px] md:left-[92px] lg:left-[168px]"
       onClick={onClick}
     >
       <ArrowLeft />
@@ -22,7 +22,7 @@ const PreviousArrow = ({ onClick }: CustomArrowProps) => {
 const NextArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="next-slick-arrow absolute z-[5] cursor-pointer right-0 w-[10px] h-[14px] -top-[62px] sm:w-[14px] sm:h-[20px] sm:right-[67px] md:right-[98px] lg:right-[175px]"
+      className="next-slick-arrow absolute z-[5] cursor-pointer -bottom-[6px] right-0 w-[10px] h-[14px] sm:right-[67px] md:right-[98px] lg:right-[180px]"
       onClick={onClick}
     >
       <ArrowRight />
@@ -49,18 +49,9 @@ const Testimonials = () => {
     prevArrow: <PreviousArrow />,
     dotsClass: `slick-dots`,
     beforeChange: (_: number, next: number) => setActiveSlide(next),
-    appendDots: (dots: React.ReactNode) => (
-      <div
-        style={{
-          top: "-60px",
-        }}
-      >
-        <ul> {dots} </ul>
-      </div>
-    ),
     customPaging: (i: number) => (
       <div
-        className="w-[10px] h-[10px] sm:w-[12px] sm:h-[12px]"
+        className="w-[10px] h-[10px]"
         style={{
           borderRadius: "50%",
           backgroundColor: activeSlide === i ? "#7147E8" : "#D8D8D8",
@@ -73,7 +64,7 @@ const Testimonials = () => {
   return (
     <div className="custom-container relative z-[12]">
       <div className="mt-9 mx-auto px-0 md:px-16 md:mt-28 lg:px-0">
-        <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center max-w-[75%] mx-auto text-[32px] leading-[40px] mb-16 lg:text-[48px]">
+        <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center mb-4 max-w-[75%] mx-auto text-[32px] leading-[40px] lg:mb-16 lg:text-[48px]">
           Trusted <span className="text-[#7147E8]">Across Industries</span>
         </h3>
         <div className="slider-container relative z-[4] testimonial-content">
@@ -108,7 +99,7 @@ const Testimonials = () => {
                   </button>
                 )}
                 <div
-                  className="mt-5 text-center"
+                  className="mt-5 mb-[60px] text-center"
                 >
                   <p className="text-[#382374] tracking-[-0.02em] text-[16px] font-medium text-[20px] lg:text-[24px]">
                     {item.name}
