@@ -80,6 +80,19 @@ const Testimonials = () => {
           <Slider {...settings}>
             {TESTIMONIALS_LIST.map((item, i) => (
               <div key={item.company}>
+                <Link
+                  href={item.url}
+                  target="_blank"
+                >
+                  <Image
+                    className={`mx-auto mb-8`}
+                    width={item.imgSize.width}
+                    height={item.imgSize.height}
+                    src={item.image}
+                    alt={item.company}
+                    priority
+                  />
+                </Link>
                 <span className="text-[#170E2E] text-justify mr-[10px] lg:text-[20px]">
                   "{expandedDescription !== i && item.description.length > 230 ? (
                     item.description.slice(0, 230) + "..."
@@ -94,31 +107,14 @@ const Testimonials = () => {
                   </button>
                 )}
                 <div
-                  className="mt-5 mx-auto flex items-center justify-center lg:max-w-[600px]"
+                  className="mt-5 text-center"
                 >
-                  <Link
-                    href={item.url}
-                    target="_blank"
-                    className="w-[250px] relative flex items-center"
-                  >
-                    <Image
-                      className={`text-right absolute right-0`}
-                      width={item.imgSize.width}
-                      height={item.imgSize.height}
-                      src={item.image}
-                      alt={item.company}
-                      priority
-                    />
-                  </Link>
-                  <div className="bg-[#E2DAFA] w-[5px] rounded-full h-[80px] mx-3 sm:mx-4"></div>
-                  <div className="w-[250px] self-center">
-                    <p className="text-[#382374] tracking-[-0.02em] text-[16px] font-medium">
-                      {item.name}
-                    </p>
-                    <p className="text-[#888888] tracking-[-0.02em] text-[14px] md:h-[20px] xl:-mt-4">
-                      {item.title}, {item.company}
-                    </p>
-                  </div>
+                  <p className="text-[#382374] tracking-[-0.02em] text-[16px] font-medium text-[20px] lg:text-[24px]">
+                    {item.name}
+                  </p>
+                  <p className="text-[#888888] tracking-[-0.02em] text-[14px] md:h-[20px] lg:text-[18px] xl:-mt-4">
+                    {item.title}, {item.company}
+                  </p>      
                 </div>
               </div>
             ))}
