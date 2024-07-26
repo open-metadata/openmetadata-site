@@ -83,6 +83,7 @@ const Testimonials = () => {
                 <Link
                   href={item.url}
                   target="_blank"
+                  className="h-[100px]"
                 >
                   <Image
                     className={`mx-auto mb-8`}
