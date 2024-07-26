@@ -65,6 +65,19 @@ export const TESTIMONIALS_LIST = [
     },
   },
   {
+    name: "Mark McAvoy",
+    description:
+      "At Senzai AI, we build SaaS solutions for customers with incredibly varied data. OpenMetadata is a key component for understanding and standardizing this data so that it can be used in our processing and model pipelines. OpenMetadata has saved us a tremendous effort in providing this necessary step thanks to its easy-to-use UI and APIs, through which we can provide automated integrations. We are a small startup, and OpenMetadata came up as the best solution when facing these data issues. We have been using it ever since.",
+    image: "/assets/testimonials/senzai.webp",
+    company: "Senzai AI",
+    url: "https://www.senzai.ai/",
+    title: "Lead R&D Engineer",
+    imgSize: {
+      width: 67,
+      height: 50
+    },
+  },
+  {
     name: "Haithem Souala",
     description:
       "The integration of OpenMetadata with DBT and Metabase endowed us with abundant data and metadata insights concerning our analytical data entities (such as tables and views), as well as Metabase dashboards. OpenMetadata further offers a visually comprehensive data lineage, depicting the origins, modifications, and destinations of various data assets. OpenMetadata excels notably in its robust search interface, facilitating the discovery of business glossary terms, and data assets.",
