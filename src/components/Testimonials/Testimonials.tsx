@@ -64,7 +64,7 @@ const Testimonials = () => {
   return (
     <div className="custom-container relative z-[12]">
       <div className="mt-9 mx-auto px-0 md:px-16 md:mt-28 lg:px-0">
-        <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center mb-4 max-w-[75%] mx-auto text-[32px] leading-[40px] lg:mb-16 lg:text-[48px]">
+        <h3 className="text-[#292929] tracking-[-0.02em] font-medium text-center mb-4 max-w-[75%] mx-auto text-[32px] leading-[40px] lg:text-[48px]">
           Trusted <span className="text-[#7147E8]">Across Industries</span>
         </h3>
         <div className="slider-container relative z-[4] testimonial-content">

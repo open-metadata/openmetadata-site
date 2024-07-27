@@ -73,7 +73,7 @@ export const TESTIMONIALS_LIST = [
     url: "https://www.senzai.ai/",
     title: "Lead R&D Engineer",
     imgSize: {
-      width: 67,
+      width: 66,
       height: 50
     },
   },
