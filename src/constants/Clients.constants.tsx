@@ -45,4 +45,9 @@ export const CLIENT_LIST = [
         logo: `${LOGO_ROUTE}/hoodie-analytics.webp`,
         width: 80
     },
+    {
+        name: "Senzai AI",
+        logo: `${LOGO_ROUTE}/senzai.svg`,
+        width: 50
+    },
 ]
