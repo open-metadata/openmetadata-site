@@ -3,7 +3,7 @@ export const TESTIMONIALS_LIST = [
     name: "Rinat Abdurakhmanov",
     description:
       "We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. It allowed us not only to cut down the costs but also to quickly and effortlessly adapt the product to the needs of our company which includes hundreds of systems and data sources that require categorization and analysis. Open metadata is a fast-growing product that allows to impact its development through contribution and flawless community  interaction. The best thing so far is how easy it is to implement the solution and start working on your data right away. Every business user is able to track and take care of their metadata and build trustworthy, data-driven products for our customers.  Open metadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community to help you out on your way to befriend your company’s knowledge.",
-    image: "/assets/testimonials/beeline.webp",
+    image: "/assets/testimonials/beeline-logo.webp",
     company: "beeline",
     url: "http://beeline.ru/",
     title: "Chief Data Officer",
@@ -21,7 +21,7 @@ export const TESTIMONIALS_LIST = [
     url: "https://www.moove.io/",
     title: "Data Governance Specialist",
     imgSize: {
-      width: 150,
+      width: 170,
       height: 50
     },
   },
@@ -34,7 +34,7 @@ export const TESTIMONIALS_LIST = [
     url: "https://www.zenbusiness.com",
     title: "Senior Engineering Manager",
     imgSize: {
-      width: 70,
+      width: 80,
       height: 50
     },
   },
@@ -47,7 +47,7 @@ export const TESTIMONIALS_LIST = [
     url: "https://www.payufin.in/",
     title: "Director of Data Engineering",
     imgSize: {
-      width: 160,
+      width: 188,
       height: 50
     },
   },
@@ -55,12 +55,25 @@ export const TESTIMONIALS_LIST = [
     name: "Liubov Pasechnik",
     description:
       "OpenMetadata helps us to reduce the gap between business users and technical users. The first step in any data-driven digital transformation is to manage your data as an enterprise asset: take inventory of it, assess, and maximize its value, providing transparency, and credibility. Data is distributed and diverse across many various departments, services and DWH layers, so it's crucial for us to have a tool with powerful advanced search to filter search results, detailed data lineage, and integrated business glossary module.",
-    image: "/assets/testimonials/inDrive-logo.webp",
+    image: "/assets/testimonials/inDrive.webp",
     company: "inDrive",
     url: "https://indrive.com/en/home/",
     title: "Senior Data Steward (Data Governance Analyst)",
     imgSize: {
-      width: 180,
+      width: 212,
+      height: 50
+    },
+  },
+  {
+    name: "Mark McAvoy",
+    description:
+      "At Senzai AI, we build SaaS solutions for customers with incredibly varied data. OpenMetadata is a key component for understanding and standardizing this data so that it can be used in our processing and model pipelines. OpenMetadata has saved us a tremendous effort in providing this necessary step thanks to its easy-to-use UI and APIs, through which we can provide automated integrations. We are a small startup, and OpenMetadata came up as the best solution when facing these data issues. We have been using it ever since.",
+    image: "/assets/testimonials/senzai.webp",
+    company: "Senzai AI",
+    url: "https://www.senzai.ai/",
+    title: "Lead R&D Engineer",
+    imgSize: {
+      width: 66,
       height: 50
     },
   },
@@ -73,7 +86,7 @@ export const TESTIMONIALS_LIST = [
     url: "https://www.woopit.fr/",
     title: "Head of Data",
     imgSize: {
-      width: 120,
+      width: 140,
       height: 50
     },
   },
@@ -86,7 +99,7 @@ export const TESTIMONIALS_LIST = [
     url: "https://www.loggi.com",
     title: "Data Engineer",
     imgSize: {
-      width: 130,
+      width: 212,
       height: 50
     },
   },
@@ -94,12 +107,12 @@ export const TESTIMONIALS_LIST = [
     name: "Ton Sumawang",
     description:
       "We conducted a comprehensive proof of concept and prototyping selection process, evaluating all the leading commercial data governance and quality tools. We chose OpenMetadata due to its native integration with our data technology stack, enabling automated data cataloging, data quality, and data profiling. Furthermore, its cost-efficiency and proven effectiveness as an open-source system makes it the best choice for our organization.",
-    image: "/assets/testimonials/savii.webp",
+    image: "/assets/testimonials/savii-logo.webp",
     company: "SAVii",
     url: "https://savii.io/ph",
     title: "Head of Data Governance and Quality",
     imgSize: {
-      width: 100,
+      width: 180,
       height: 50
     }
   },
@@ -108,12 +121,12 @@ export const TESTIMONIALS_LIST = [
     description:
       "OpenMetadata helped us in democratizing the data which was kept in silos, now we are more analytically productive and it’s helping our data lake to be more accessible to the general audience using user management features, also the feed makes it more collaborative to work. This is a step towards democratizing data, for the community by the community. Thanks to OM team for building such a great product.",
     date: "Nov 9th, 2022",
-    image: "/assets/testimonials/intelligaia.webp",
+    image: "/assets/testimonials/intelligaia-logo.webp",
     company: "Intelligaia",
     url: "https://intelligaia.com/",
     title: "Product Manager - Data",
     imgSize: {
-      width: 150,
+      width: 247,
       height: 50
     },
   },
@@ -121,12 +134,12 @@ export const TESTIMONIALS_LIST = [
     name: "Florian Giroud",
     description:
       "By far the best catalog tool in the market, OpenMetadata has given Hoodie Analytics a comprehensive 360-degree view of our data ecosystem, from ETL jobs to storage and data warehouses. We especially appreciate the robust SDK and the transparency of a truly open-source platform. This tool has significantly enhanced our data management and operational efficiency.",
-    image: "/assets/testimonials/hoodie-analytics.webp",
+    image: "/assets/testimonials/hoodie-analytics-logo.webp",
     company: "Hoodie Analytics",
     url: "https://www.hoodieanalytics.com/",
     title: "Head of Data Engineering",
     imgSize: {
-      width: 110,
+      width: 155,
       height: 50
     },
   },
@@ -134,12 +147,12 @@ export const TESTIMONIALS_LIST = [
     name: "Sandeep Penmetsa",
     description:
       "OpenMetadata played a pivotal role in Data Centralization. The metadata management helped multiple teams (Ops/Analytics) in understanding the nitty-gritty details at a column level. The overall support and documentation was super quick and helpful. Excited to integrate other frameworks like Great Expectations and Prefect",
-    image: "/assets/testimonials/physicsWallah.webp",
+    image: "/assets/testimonials/physicsWallah-logo.webp",
     company: "Physics Wallah",
     url: "https://www.pw.live/",
     title: "Associate Director",
     imgSize: {
-      width: 70,
+      width: 60,
       height: 50
     },
   },
@@ -148,12 +161,12 @@ export const TESTIMONIALS_LIST = [
     description:
       "One of the best solutions for metadata management. Solves some of the tough problems for data teams such as: asset documentation, collaboration, discovery, & quality, while supporting a wide range of integrations with 3p tools like Airflow, Snowflake, dbt, Redash etc. Super thankful to the OM community for prompt support.",
     date: "May 13th, 2022",
-    image: "/assets/testimonials/kb.webp",
+    image: "/assets/testimonials/kb-logo.webp",
     company: "Khatabook",
     url: "https://khatabook.com/",
     title: "Lead - Data Platform",
     imgSize: {
-      width: 150,
+      width: 257,
       height: 50
     },
   },
@@ -162,12 +175,12 @@ export const TESTIMONIALS_LIST = [
     description:
       "It is an excellent tool to help create a data-centric culture by providing metadata management, metadata-based communication, and data lineage management functions.",
     date: "June 13th, 2022",
-    image: "/assets/testimonials/bucketplace.webp",
+    image: "/assets/testimonials/bucketplace-logo.webp",
     company: "Bucketplace",
     url: "http://bucketplace.net",
     title: "Data Engineer",
     imgSize: {
-      width: 50,
+      width: 60,
       height: 50
     },
   },

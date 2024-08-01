@@ -133,7 +133,7 @@ html {
 }
 
 .slider-container.testimonial-content {
-  max-width: 330px;
+  max-width: 350px;
   margin: auto;
   padding: 40px 0;
 }
@@ -143,6 +143,14 @@ html {
   align-items: center;
   height: auto; 
   background-color: white;
+}
+
+.slick-dots {
+  height: 30px;
+}
+
+.slick-list {
+  height: auto;
 }
 
 @media (min-width: 640px) {
