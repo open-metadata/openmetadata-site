@@ -39,15 +39,6 @@ const FooterDev = () => {
             </li>
             <li className="mb-2">
               <Link
-                href="https://docs.open-metadata.org/main-concepts/metadata-standard/schemas"
-                target="_blank"
-                className="hover:text-gray-500"
-              >
-                Schemas
-              </Link>
-            </li>
-            <li className="mb-2">
-              <Link
                 href="https://docs.open-metadata.org/main-concepts/metadata-standard/apis"
                 target="_blank"
                 className="hover:text-gray-500"
