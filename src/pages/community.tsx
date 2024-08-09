@@ -8,12 +8,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function Community() {
-
   const router = useRouter();
 
   const handleTryOpenMetadataClick = () => {
     router.push('/#try-openmetadata');
-  }
+  };
 
   return (
     <>
@@ -73,10 +72,10 @@ export default function Community() {
       </Head>
       <div id="layoutDefault">
         <div id="layoutDefault_content">
-        <div className="mx-auto fixed top-0 w-full z-[1030]">
-          <NavbarDev onClick={handleTryOpenMetadataClick} />
-          <NavbarStrip />
-        </div>
+          <div className="mx-auto fixed top-0 w-full z-[1030]">
+            <NavbarDev onClick={handleTryOpenMetadataClick} />
+            <NavbarStrip />
+          </div>
 
           <header className="page-header-ui page-header-ui-light bg-white lg:pt-32 max-lg:mt-0">
             <div className="page-header-ui-content pt-5 max-lg:pt-0">
@@ -291,9 +290,9 @@ export default function Community() {
                     <div className="col">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="2ZieuqK-UbA" />
+                          <YoutubeEmbed videoId="ZJbGecWFZpg" />
                           <p className="font-semibold mb-0 mt-2">
-                            May 8th, 2024
+                            Aug 7th, 2024
                           </p>
                         </div>
                       </div>
@@ -301,9 +300,9 @@ export default function Community() {
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="7jgtfdpOKwo" />
+                          <YoutubeEmbed videoId="KrED_tfmIhY" />
                           <p className="font-semibold mb-0 mt-2">
-                            Feb 1st, 2024
+                            Spotlight, Aug 7th, 2024
                           </p>
                         </div>
                       </div>
