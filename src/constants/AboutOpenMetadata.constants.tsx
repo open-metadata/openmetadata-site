@@ -25,8 +25,8 @@ export const ABOUT_OPENMETADATA = [
     {
         image: `${IMAGE_ROUTE}/videos-img.webp`,
         header: 'Video',
-        description: 'July Community Meeting',
-        href: 'https://www.youtube.com/watch?v=YyaCtyKjIJA',
+        description: 'August Community Meeting',
+        href: 'https://www.youtube.com/watch?v=ZJbGecWFZpg',
         linkText: "Watch"
     },
 ]
