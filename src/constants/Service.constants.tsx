@@ -21,10 +21,10 @@ export const SERVICE_LIST = [
   {
     serviceName: {
         header1: 'Designed for ',
-        header2: 'simple setup, operations, and usage'
+        header2: 'simple setup, operations, and scalability'
     },
     description:
-      "The streamlined architecture has only four system components, making it easier to deploy, operate, and upgrade compared to other solutions. The simple user experience is designed for technical and non-technical users to collaborate together, while still having robust data practitioner capabilities, all built to meet the security requirements of enterprises.",
+      "The streamlined architecture has only four system components, making it easier to deploy, operate, and upgrade compared to other solutions. The simple user experience is designed for technical and non-technical users to collaborate together, while still having robust data practitioner capabilities, all built to meet the scalability and security requirements of enterprises.",
     icon: "/assets/observability.webp",
   },
 ];
