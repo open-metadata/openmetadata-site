@@ -22,12 +22,12 @@ export const ACHIEVEMENT_LIST = [
         name: 'GitHub Stars'
     },
     {
-        icon: `${ICON_ROUTE}/code-contributors.svg`,
+        icon: `${ICON_ROUTE}/data-assets.svg`,
         count: '2+ Million',
         name: 'Data Assets At Large Deployments'
     },
     {
-        icon: `${ICON_ROUTE}/github-star.svg`,
+        icon: `${ICON_ROUTE}/data-connector.svg`,
         count: '80+',
         name: 'Data Connectors'
     },
