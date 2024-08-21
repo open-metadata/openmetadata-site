@@ -32,7 +32,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           </h1>
           <p className="mt-3 mx-auto sm:leading-[26px] max-w-[95%] sm:max-w-[78%] sm:text-lg lg:text-[19px] 2xl:max-w-[90%]">
             A single place for all your data and all your data practitioners to
-            build and manage high quality data assets. Built by Collate and the
+            build and manage high quality data assets at scale. Built by Collate and the
             founders of Apache Hadoop, Apache Atlas, and Uber Databook.
           </p>
           <div className="relative z-[11] flex flex-col-reverse sm:flex-row justify-center gap-3 items-center mt-12">
