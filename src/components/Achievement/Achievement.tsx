@@ -35,7 +35,7 @@ const Achievement = () => {
                     loading="eager"
                   />
                   <div className="text-[#382374] tracking-wider font-bold text-[40px] sm:text-[32px]">
-                    {item.count}+
+                    {item.count}
                   </div>
                   <div className="uppercase text-[#555555] font-normal leading-[20px] max-w-[78%] tracking-[0.2em] text-[18px] sm:text-[16px]">
                     {item.name}
