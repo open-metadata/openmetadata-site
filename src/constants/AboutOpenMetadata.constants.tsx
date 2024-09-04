@@ -9,10 +9,10 @@ export const ABOUT_OPENMETADATA = [
         linkText: "Read"
     },
     {
-        image: `${IMAGE_ROUTE}/product-news-img.webp`,
+        image: `${IMAGE_ROUTE}/release-1.5.webp`,
         header: 'Product News',
-        description: 'OpenMetadata Release 1.4.0 - Lineage, Bulk Upload',
-        href: 'https://blog.open-metadata.org/openmetadata-release-1-4-0-f6fb11ec34d7',
+        description: 'Announcing OpenMetadata Release 1.5.0',
+        href: 'https://blog.open-metadata.org/announcing-openmetadata-release-1-5-0-2b2fae95ff1c',
         linkText: "Read"
     },
     {
