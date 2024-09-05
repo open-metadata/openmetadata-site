@@ -364,6 +364,12 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/service-icon-flink.png',
         alt: 'service-flink',
       },
+      {
+        name: 'DBT',
+        href: 'https://docs.open-metadata.org/latest/connectors/pipeline/dbtcloud',
+        src: '/assets/services/service-icon-dbt.png',
+        alt: 'service-dbt',
+      },
     ],
   },
   {
