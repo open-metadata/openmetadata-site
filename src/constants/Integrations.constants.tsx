@@ -189,6 +189,12 @@ export const INTEGRATION_SERVICES = [
         name: 'SingleStore',
       },
       {
+        href: 'https://docs.open-metadata.org/latest/connectors/database/teradata',
+        src: '/assets/services/teradata.svg',
+        alt: 'service-teradata',
+        name: 'Teradata',
+      },
+      {
         href: 'https://docs.open-metadata.org/connectors/database/trino',
         src: '/assets/services/trino.webp',
         alt: 'service-trino',
