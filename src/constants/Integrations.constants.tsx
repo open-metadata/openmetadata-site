@@ -3,6 +3,12 @@ export const INTEGRATION_SERVICES = [
     connector: 'Database',
     services: [
       {
+        href: '/',
+        src: '/assets/services/adls.webp',
+        alt: 'service-adls',
+        name: 'ADLS Data Lake',
+      },
+      {
         href: 'https://docs.open-metadata.org/connectors/database/athena',
         src: '/assets/services/athena.webp',
         alt: 'service-athena',
@@ -10,9 +16,9 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/datalake',
-        src: '/assets/services/amazon-s3.webp',
+        src: '/assets/services/amazons3.webp',
         alt: 'service-amazon-s3',
-        name: 'Amazon S3',
+        name: 'AWS S3 Data Lake',
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/azuresql',
@@ -85,6 +91,12 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/gcp.webp',
         alt: 'service-gcp',
         name: 'Google Cloud Service',
+      },
+      {
+        href: '/',
+        src: '/assets/services/service-icon-gcs.png',
+        alt: 'service-gcs',
+        name: 'GCS Data Lake',
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/greenplum',
@@ -433,17 +445,23 @@ export const INTEGRATION_SERVICES = [
     connector: 'Storage',
     services: [
       {
-        name: 'GCS',
+        name: 'Google Cloud Storage',
         href: 'https://docs.open-metadata.org/connectors/storage/gcs',
         src: '/assets/services/service-icon-gcs.png',
         alt: 'service-gcs',
       },
       {
-        name: 'S3',
+        name: 'AWS S3 Storage',
         href: 'https://docs.open-metadata.org/connectors/storage/s3',
-        src: '/assets/services/amazon-s3.webp',
+        src: '/assets/services/amazons3.webp',
         alt: 'service-s3',
       },
+      {
+        href: '/',
+        src: '/assets/services/adls.webp',
+        alt: 'service-adls',
+        name: 'ADLS Data Lake',
+      }
     ],
   },
   {
