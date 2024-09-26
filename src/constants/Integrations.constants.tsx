@@ -455,12 +455,6 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/storage/s3',
         src: '/assets/services/amazons3.webp',
         alt: 'service-s3',
-      },
-      {
-        href: '/',
-        src: '/assets/services/adls.webp',
-        alt: 'service-adls',
-        name: 'ADLS Data Lake',
       }
     ],
   },
