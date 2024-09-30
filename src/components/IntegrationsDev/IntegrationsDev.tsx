@@ -132,7 +132,7 @@ const IntegrationsDev = () => {
                   alt={item.alt}
                   width={1000}
                   className={`h-12 mb-2 w-12 ${
-                    item.name === 'SAP HANA' && 'w-20'
+                    (item.name === 'SAP HANA' || item.name === 'SapErp') && 'w-28'
                   }`}
                   height={1000}
                   src={item.src}
