@@ -3,7 +3,7 @@ export const INTEGRATION_SERVICES = [
     connector: 'Database',
     services: [
       {
-        href: '/',
+        href: 'https://docs.open-metadata.org/latest/connectors/database/adls-datalake',
         src: '/assets/services/adls.webp',
         alt: 'service-adls',
         name: 'ADLS Data Lake',
@@ -15,7 +15,7 @@ export const INTEGRATION_SERVICES = [
         name: 'Athena',
       },
       {
-        href: 'https://docs.open-metadata.org/connectors/database/datalake',
+        href: 'https://docs.open-metadata.org/latest/connectors/database/s3-datalake',
         src: '/assets/services/amazons3.webp',
         alt: 'service-amazon-s3',
         name: 'AWS S3 Data Lake',
@@ -93,7 +93,7 @@ export const INTEGRATION_SERVICES = [
         name: 'Google Cloud Service',
       },
       {
-        href: '/',
+        href: 'https://docs.open-metadata.org/latest/connectors/database/gcs-datalake',
         src: '/assets/services/service-icon-gcs.png',
         alt: 'service-gcs',
         name: 'GCS Data Lake',
