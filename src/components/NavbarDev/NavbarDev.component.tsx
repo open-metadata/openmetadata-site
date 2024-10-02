@@ -90,11 +90,6 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                 Blog
               </Link>
             </li>
-            <li>
-              <Link href="http://getcollate.io/contact" target="_blank">
-                Contact Us
-              </Link>
-            </li>
             <li className="mb-4 lg:mb-0">
               <Link
                 href="https://github.com/open-metadata/OpenMetadata"
