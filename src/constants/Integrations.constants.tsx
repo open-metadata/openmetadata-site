@@ -149,7 +149,7 @@ export const INTEGRATION_SERVICES = [
       {
         name: 'SAP HANA',
         href: 'https://docs.open-metadata.org/connectors/database/sap-hana',
-        src: '/assets/services/sap-hana.webp',
+        src: '/assets/services/sap-hana.png',
         alt: 'service-sap-hana',
       },
       {
@@ -184,7 +184,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/sas',
-        src: '/assets/services/service-icon-sas.webp',
+        src: '/assets/services/sas-viya.svg',
         alt: 'service-sas-viya',
         name: 'SAS Viya',
       },
@@ -236,7 +236,8 @@ export const INTEGRATION_SERVICES = [
         name: 'Iceberg',
       },
       {
-        src: '/assets/services/service-icon-sap-erp.png',
+        href: 'https://docs.open-metadata.org/latest/connectors/database/sap-erp',
+        src: '/assets/services/sap-erp.webp',
         alt: 'service-sap-erp',
         name: 'SapErp',
       },
@@ -455,7 +456,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/storage/s3',
         src: '/assets/services/amazons3.webp',
         alt: 'service-s3',
-      }
+      },
     ],
   },
   {
