@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 interface Service {
+  width?: number;
   href?: string;
   src: string;
   alt: string;
@@ -133,6 +134,8 @@ const IntegrationsDev = () => {
                   className={`h-12 mb-2`}
                   src={item.src}
                   loading="lazy"
+                  width={item.width ? item.width : 50}
+                  height={100}
                 />
                 <p className="mt-2 text-nowrap text-[14px] sm:text-wrap md:text-[16px]">
                   {item.name}
@@ -155,6 +158,8 @@ const IntegrationsDev = () => {
                     className={`h-12 mb-2`}
                     src={item.src}
                     loading="lazy"
+                    width={50}
+                    height={100}
                   />
                   <p className="mt-2 text-nowrap text-[14px] sm:text-wrap md:text-[16px]">
                     {item.name}
