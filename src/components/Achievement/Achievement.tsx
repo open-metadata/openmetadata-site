@@ -16,7 +16,7 @@ const Achievement = () => {
               </h2>
               <p className="text-base tracking-[-0.01em] mt-3 text-[#555555] md:leading-[28px] md:text-[19px]">
                 Driven by an active community of thousands globally,
-                OpenMetadata is becoming a standard for modern data catalogs.
+                OpenMetadata is becoming a standard for unified metadata platforms.
               </p>
             </div>
           </div>
