@@ -13,6 +13,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Script from 'next/script';
+import Head from 'next/head';
 
 config.autoAddCss = false;
 
@@ -26,6 +27,35 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      {/* Google Tag Manager */}
+      <Head>
+        {/* eslint-disable-next-line @next/next/next-script-for-ga */}
+        <script
+          defer
+          id="tag-manager"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-554C968W');
+            `,
+          }}
+        />
+      </Head>
+
+      {/* Tag manager no script */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-554C968W"
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
+        ></iframe>
+      </noscript>
+
+      {/* Tag manager no script */}
       <Script
         src={'https://www.googletagmanager.com/gtag/js?id=G-LBLK284YQW'}
         strategy="afterInteractive"
