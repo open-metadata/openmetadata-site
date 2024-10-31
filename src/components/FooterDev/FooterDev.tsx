@@ -268,7 +268,7 @@ const FooterDev = () => {
         </div>
         <div className="mt-2 lg:ml-5 sm:mt-0 sm:row-start-1 sm:col-start-2 lg:col-start-auto lg:row-start-auto">
           <div className="text-uppercase text-[8px] text-nowrap text-gray-400 font-medium tracking-[3px] mb-2">
-            Developed By
+            Site Hosted By
           </div>
           <Image
             alt="netlify"
