@@ -87,10 +87,11 @@ export const INTEGRATION_SERVICES = [
         name: 'Glue',
       },
       {
-        href: 'https://docs.open-metadata.org/connectors/database/datalake',
+        href: 'https://docs.open-metadata.org/latest/connectors/database/gcs-datalake',
         src: '/assets/services/gcp.webp',
         alt: 'service-gcp',
         name: 'Google Cloud Service',
+        width: 55,
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/gcs-datalake',
@@ -151,6 +152,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/database/sap-hana',
         src: '/assets/services/sap-hana.png',
         alt: 'service-sap-hana',
+        width: 130,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/oracle',
@@ -181,6 +183,7 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/salesforce.webp',
         alt: 'service-salesforce',
         name: 'Salesforce',
+        width: 60,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/sas',
@@ -231,6 +234,7 @@ export const INTEGRATION_SERVICES = [
         name: 'SQL Lite',
       },
       {
+        href: 'https://docs.open-metadata.org/latest/connectors/database/iceberg',
         src: '/assets/services/iceberg.webp',
         alt: 'service-iceberg',
         name: 'Iceberg',
@@ -240,6 +244,7 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/sap-erp.webp',
         alt: 'service-sap-erp',
         name: 'SapErp',
+        width: 80,
       },
     ],
   },
@@ -258,13 +263,6 @@ export const INTEGRATION_SERVICES = [
         alt: 'service-redpanda',
         name: 'Redpanda',
       },
-      {
-        href: 'https://docs.open-metadata.org/connectors/messaging/pulsar',
-        src: '/assets/services/pulsar.webp',
-        alt: 'service-pulsar',
-        name: 'pulsar',
-      },
-
       {
         src: '/assets/services/service-icon-kinesis.webp',
         alt: 'service-icon-kinesis',
@@ -290,7 +288,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         name: 'Lightdash',
-        href: 'https://docs.open-metadata.org/connectors/dashboard/lightdash',
+        href: 'https://docs.open-metadata.org/latest/connectors/dashboard',
         src: '/assets/services/lightdash.webp',
         alt: 'service-lightdash',
       },
@@ -399,6 +397,7 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/mlflow.webp',
         alt: 'service-mlflow',
         name: 'MLflow',
+        width: 55,
       },
       {
         src: '/assets/services/service-icon-sagemaker.webp',
@@ -463,11 +462,13 @@ export const INTEGRATION_SERVICES = [
     connector: 'Others',
     services: [
       {
+        href: 'https://docs.open-metadata.org/latest',
         src: '/assets/services/ldap.webp',
         alt: 'service-ldap',
         name: 'LDAP',
       },
       {
+        href: 'https://docs.open-metadata.org/latest',
         src: '/assets/services/sqlalchemy.webp',
         alt: 'service-sqlalchemy',
         name: 'SQLAlchemy',
