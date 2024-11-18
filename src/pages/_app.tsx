@@ -11,13 +11,20 @@ import '@fontsource/metropolis/700.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Script from 'next/script';
 import Head from 'next/head';
 
 config.autoAddCss = false;
 
 export default function App({ Component, pageProps }: AppProps) {
+  const [storedCookie, setStoredCookie] = useState<string | null>(null);
+
+    useEffect(() => {
+        const userCookie = localStorage.getItem('userCookie')
+        setStoredCookie(userCookie);
+    }, []);
+
   useEffect(() => {
     AOS.init({
       offset: 80,
@@ -27,7 +34,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      {/* Google Tag Manager */}
+      {storedCookie === 'Accept' && (
+        <>
+          {/* Google Tag Manager */}
       <Head>
         {/* eslint-disable-next-line @next/next/next-script-for-ga */}
         <script
@@ -74,6 +83,8 @@ export default function App({ Component, pageProps }: AppProps) {
         id="gtag-init"
         strategy="afterInteractive"
       />
+        </>
+      )}
       <Component {...pageProps} />
     </>
   );
