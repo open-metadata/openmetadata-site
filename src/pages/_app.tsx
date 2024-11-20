@@ -1,6 +1,7 @@
 import '../styles/styles.css';
 import '../styles/globals.css';
 import '../styles/cve-style.css';
+import '../styles/modal.css';
 import type { AppProps } from 'next/app';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import '@fontsource/metropolis';
@@ -21,10 +22,17 @@ config.autoAddCss = false;
 export default function App({ Component, pageProps }: AppProps) {
   const [storedCookie, setStoredCookie] = useState<string | null>(null);
 
-    useEffect(() => {
-        const userCookie = localStorage.getItem('userCookie')
-        setStoredCookie(userCookie);
-    }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const userCookie = window.localStorage.getItem("userCookie");
+      setStoredCookie(userCookie);
+    }
+  }, []);
+
+  const handleButtonClick = (choice: string) => {
+    localStorage.setItem("userCookie", choice);
+    setStoredCookie(choice); 
+  };
 
   useEffect(() => {
     AOS.init({
@@ -86,7 +94,7 @@ export default function App({ Component, pageProps }: AppProps) {
       />
         </>
       )}
-      <CookieModal />
+      {!storedCookie && <CookieModal handleButtonClick={handleButtonClick} />}
       <Component {...pageProps} />
     </>
   );

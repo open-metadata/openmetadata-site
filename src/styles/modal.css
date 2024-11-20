@@ -1,0 +1,10 @@
+.cookie-modal {
+    transform: translateY(100%); 
+    transition: transform 1.2s ease-in-out, visibility 1.2s ease-in-out;
+    visibility: hidden;
+}
+
+.cookie-modal.visible {
+    transform: translateY(0); 
+    visibility: visible;
+}
