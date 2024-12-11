@@ -4,7 +4,7 @@ export const INTEGRATION_SERVICES = [
     services: [
       {
         href: 'https://docs.open-metadata.org/v1.6.x-SNAPSHOT/connectors/api/rest',
-        src: '/assets/services/openAPI.png',
+        src: '/assets/services/openAPI.svg',
         alt: 'service-openai',
         name: 'OpenAPI',
         width: 80,
