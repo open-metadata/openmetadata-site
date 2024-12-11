@@ -1,5 +1,17 @@
 export const INTEGRATION_SERVICES = [
   {
+    connector: 'API',
+    services: [
+      {
+        href: 'https://docs.open-metadata.org/v1.6.x-SNAPSHOT/connectors/api/rest',
+        src: '/assets/services/openAPI.svg',
+        alt: 'service-openai',
+        name: 'OpenAPI',
+        width: 80,
+      },
+    ]
+  },
+  {
     connector: 'Database',
     services: [
       {
@@ -79,6 +91,13 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/dynamodb.webp',
         alt: 'service-dynamodb',
         name: 'DynamoDB',
+      },
+      {
+        href: 'https://docs.open-metadata.org/latest',
+        src: '/assets/services/exasol.png',
+        alt: 'service-exasol',
+        name: 'Exasol',
+        width: 170,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/glue',
@@ -315,6 +334,13 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/redash.webp',
         alt: 'service-redash',
         name: 'Redash',
+      },
+      {
+        href: 'https://docs.open-metadata.org/v1.6.x-SNAPSHOT/connectors/dashboard/sigma',
+        src: '/assets/services/sigma.png',
+        alt: 'service-sigma',
+        name: 'Sigma',
+        width: 90,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/dashboard/superset',
