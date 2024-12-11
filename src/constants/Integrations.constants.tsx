@@ -97,7 +97,7 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/exasol.png',
         alt: 'service-exasol',
         name: 'Exasol',
-        width: 120,
+        width: 170,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/glue',
