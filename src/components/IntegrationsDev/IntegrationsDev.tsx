@@ -121,7 +121,7 @@ const IntegrationsDev = () => {
             </div>
           ))}
         </div>
-        <div className="py-8 px-3 gap-5 w-full hidden overflow-y-scroll justify-center sm:px-8 sm:gap-4 sm:grid grid-cols-2 sm:auto-rows-max md:grid-cols-3 lg:grid-cols-5 lg:px-12 xl:grid-cols-6">
+        <div className="py-8 px-3 gap-[6px] w-full hidden overflow-y-scroll justify-center sm:px-8 sm:grid grid-cols-2 sm:auto-rows-max md:grid-cols-3 lg:grid-cols-5 lg:px-9 xl:grid-cols-6">
           {services.map((item) => (
             <div key={item.name} className="max-h-[110px]">
               <Link
