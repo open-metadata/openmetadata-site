@@ -97,7 +97,7 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/exasol.png',
         alt: 'service-exasol',
         name: 'Exasol',
-        width: 170,
+        width: 400,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/glue',
@@ -242,7 +242,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/pinotdb ',
-        src: '/assets/services/pinot.webp',
+        src: '/assets/services/pinot.png',
         alt: 'service-pinot',
         name: 'Pinot DB',
       },
