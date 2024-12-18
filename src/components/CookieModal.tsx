@@ -23,10 +23,7 @@ const CookieModal = ({ handleButtonClick }: { handleButtonClick: (choice: string
     return (
         <div className="fixed bottom-0 bg-[#F8FBFC] z-[20] p-6 shadow-shadow card sm:m-5 sm:max-w-xl lg:max-w-3xl cookie-modal">
             <p className="text-[#292929] font-light">
-                By clicking &quot;Accept&quot;, you agree to the storing of
-                cookies on your device to enhance site navigation,
-                improve your experience, and assist in our marketing
-                efforts. To learn more, read our Privacy Policy.
+              We use cookies to improve site navigation, analyze site usage, and enhance your user experience. Click &quot;Accept&quot; to enable cookies or &quot;Reject&quot; to reject cookies.
             </p>
 
             <div className="mt-8 flex gap-3 justify-end">
@@ -37,10 +34,10 @@ const CookieModal = ({ handleButtonClick }: { handleButtonClick: (choice: string
                     Accept
                 </button>
                 <button
-                    className="text-[#7147E8] bg-white border border-[#7147E8] rounded-3xl py-2 px-8 text-sm"
+                    className="text-[#7147E8] bg-white border-[1px] border-[#7147E8] rounded-3xl py-2 px-8 text-sm"
                     onClick={() => handleModalClose('Decline')}
                 >
-                    Decline
+                    Reject
                 </button>
             </div>
         </div>        

@@ -22,6 +22,11 @@ config.autoAddCss = false;
 export default function App({ Component, pageProps }: AppProps) {
   const [storedCookie, setStoredCookie] = useState<string | null>(null);
 
+  const handleButtonClick = (choice: string) => {
+    localStorage.setItem("userCookie", choice);
+    setStoredCookie(choice); 
+  };
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       const userCookie = window.localStorage.getItem("userCookie");
@@ -29,10 +34,19 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, []);
 
-  const handleButtonClick = (choice: string) => {
-    localStorage.setItem("userCookie", choice);
-    setStoredCookie(choice); 
-  };
+  useEffect(() => {
+    if (storedCookie === "Decline") {
+      const scriptTags = document.querySelectorAll(
+        'script[src*="googletagmanager"], script#gtag-init, script#tag-manager'
+      );
+      scriptTags.forEach((tag) => tag.remove());
+
+      const iframes = document.querySelectorAll(
+        'iframe[src*="googletagmanager"]'
+      );
+      iframes.forEach((iframe) => iframe.remove());
+    }
+  }, [storedCookie]);
 
   useEffect(() => {
     AOS.init({
@@ -43,7 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      {storedCookie === 'Accept' && (
+      {(!storedCookie || storedCookie === "Accept") && (
         <>
           {/* Google Tag Manager */}
       <Head>
