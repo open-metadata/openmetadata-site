@@ -1,7 +1,7 @@
 import { INTEGRATION_SERVICES } from '@/constants/Integrations.constants';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 interface Service {
   width?: number;
@@ -129,15 +129,13 @@ const IntegrationsDev = () => {
                 target="_blank"
                 className="text-center flex flex-col items-center"
               >
-                <Image
+                <img
                   alt={item.alt}
-                  className={`h-12 mb-2`}
+                  className={`${item.name=== 'Exasol' ? 'h-5 mt-3' : 'h-12'} mb-2`}
                   src={item.src}
                   loading="lazy"
-                  width={item.width ? item.width : 50}
-                  height={100}
                 />
-                <p className="mt-2 text-nowrap text-[14px] sm:text-wrap md:text-[16px]">
+                <p className={`${item.name === 'Exasol' ? 'mt-3' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
                   {item.name}
                 </p>
               </Link>
@@ -153,15 +151,13 @@ const IntegrationsDev = () => {
                   target="_blank"
                   className="text-center flex flex-col items-center"
                 >
-                  <Image
+                  <img
                     alt={item.alt}
-                    className={`h-12 mb-2`}
+                    className={`${item.name=== 'Exasol' ? 'h-5 mt-3' : 'h-12'} mb-2`}
                     src={item.src}
                     loading="lazy"
-                    width={item.width ? item.width : 50}
-                    height={100}
                   />
-                  <p className="mt-2 text-nowrap text-[14px] sm:text-wrap md:text-[16px]">
+                  <p className={`${item.name === 'Exasol' ? 'mt-3' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
                     {item.name}
                   </p>
                 </Link>
