@@ -4,10 +4,9 @@ export const INTEGRATION_SERVICES = [
     services: [
       {
         href: 'https://docs.open-metadata.org/v1.6.x-SNAPSHOT/connectors/api/rest',
-        src: '/assets/services/openAPI.svg',
+        src: '/assets/services/openApi.png',
         alt: 'service-openai',
         name: 'OpenAPI',
-        width: 80,
       },
     ]
   },
@@ -97,7 +96,6 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/exasol.png',
         alt: 'service-exasol',
         name: 'Exasol',
-        width: 400,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/glue',
@@ -110,7 +108,6 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/gcp.webp',
         alt: 'service-gcp',
         name: 'Google Cloud Service',
-        width: 55,
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/gcs-datalake',
@@ -171,7 +168,6 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/database/sap-hana',
         src: '/assets/services/sap-hana.png',
         alt: 'service-sap-hana',
-        width: 130,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/oracle',
@@ -202,7 +198,6 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/salesforce.webp',
         alt: 'service-salesforce',
         name: 'Salesforce',
-        width: 60,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/sas',
@@ -263,7 +258,6 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/sap-erp.webp',
         alt: 'service-sap-erp',
         name: 'SapErp',
-        width: 80,
       },
     ],
   },
@@ -319,7 +313,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/connectors/dashboard/mode',
-        src: '/assets/services/mode.webp',
+        src: '/assets/services/mode.png',
         alt: 'service-mode',
         name: 'Mode',
       },
@@ -337,10 +331,9 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/v1.6.x-SNAPSHOT/connectors/dashboard/sigma',
-        src: '/assets/services/sigma.png',
+        src: '/assets/services/sigma.svg',
         alt: 'service-sigma',
         name: 'Sigma',
-        width: 90,
       },
       {
         href: 'https://docs.open-metadata.org/connectors/dashboard/superset',
@@ -423,7 +416,6 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/mlflow.webp',
         alt: 'service-mlflow',
         name: 'MLflow',
-        width: 55,
       },
       {
         src: '/assets/services/service-icon-sagemaker.webp',
