@@ -164,7 +164,7 @@ export const INTEGRATION_SERVICES = [
         alt: 'service-mongodb',
       },
       {
-        name: 'SAP HANA',
+        name: 'SapHana',
         href: 'https://docs.open-metadata.org/connectors/database/sap-hana',
         src: '/assets/services/sap-hana.png',
         alt: 'service-sap-hana',
