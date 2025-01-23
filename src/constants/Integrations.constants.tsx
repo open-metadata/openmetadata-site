@@ -92,7 +92,7 @@ export const INTEGRATION_SERVICES = [
         name: 'DynamoDB',
       },
       {
-        href: 'https://docs.open-metadata.org/latest',
+        href: 'https://docs.open-metadata.org/latest/connectors/database/exasol',
         src: '/assets/services/exasol.png',
         alt: 'service-exasol',
         name: 'Exasol',
