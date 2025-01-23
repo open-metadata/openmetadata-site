@@ -111,7 +111,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/gcs-datalake',
-        src: '/assets/services/service-icon-gcs.png',
+        src: '/assets/services/service-icon-gcs.webp',
         alt: 'service-gcs',
         name: 'GCS Data Lake',
       },
@@ -397,7 +397,7 @@ export const INTEGRATION_SERVICES = [
       {
         name: 'Flink',
         href: 'https://docs.open-metadata.org/connectors/pipeline/flink',
-        src: '/assets/services/service-icon-flink.png',
+        src: '/assets/services/service-icon-flink.webp',
         alt: 'service-flink',
       },
       {
@@ -442,7 +442,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/connectors/metadata/alationsink',
-        src: '/assets/services/service-icon-alation-sink.png',
+        src: '/assets/services/service-icon-alation-sink.webp',
         alt: 'service-AlationSink',
         name: 'AlationSink',
       },
@@ -465,7 +465,7 @@ export const INTEGRATION_SERVICES = [
       {
         name: 'Google Cloud Storage',
         href: 'https://docs.open-metadata.org/connectors/storage/gcs',
-        src: '/assets/services/service-icon-gcs.png',
+        src: '/assets/services/service-icon-gcs.webp',
         alt: 'service-gcs',
       },
       {

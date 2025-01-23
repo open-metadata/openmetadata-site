@@ -121,23 +121,31 @@ const IntegrationsDev = () => {
             </div>
           ))}
         </div>
-        <div className="py-8 px-3 gap-[6px] w-full hidden overflow-y-scroll justify-center justify-items-center sm:px-8 sm:grid grid-cols-2 sm:auto-rows-max md:grid-cols-3 lg:grid-cols-5 lg:px-9 xl:grid-cols-6">
+        <div className="py-8 px-3 gap-[6px] w-full hidden overflow-y-scroll justify-center justify-items-center gap-y-6 sm:px-8 sm:grid grid-cols-2 sm:auto-rows-max md:grid-cols-3 lg:grid-cols-5 lg:px-9 xl:grid-cols-6">
           {services.map((item) => (
-            <div key={item.name} className="max-h-[110px] max-w-[110px]">
+            <div key={item.name} className="max-h-[110px]">
               <Link
                 href={item.href ?? '#'}
                 target="_blank"
-                className="text-center flex flex-col items-center self-center"
+                rel="noreferrer"
               >
-                <img
-                  alt={item.alt}
-                  className={`${item.name=== 'Exasol' || item.name.includes('Sap') ? 'h-6 mt-3' : 'h-12'} mb-2`}
-                  src={item.src}
-                  loading="lazy"
-                />
+                <div className="text-center flex flex-col items-center self-center">
+                  <div className={`relative ${item.name=== 'Exasol' || item.name.includes('Sap') ? 'h-[15px] mt-3' : 'h-[57px]'} w-[57px]`}>
+                    <Image
+                      alt={item.alt}
+                      src={item.src}
+                      loading="lazy"
+                      fill
+                      sizes="500px"
+                      style={{
+                        objectFit: 'contain',
+                      }}
+                    />
+                  </div>
                 <p className={`${item.name === 'Exasol' || item.name.includes('Sap') ? 'mt-3' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
                   {item.name}
                 </p>
+                </div>
               </Link>
             </div>
           ))}
@@ -145,21 +153,29 @@ const IntegrationsDev = () => {
         <div className="sm:hidden">
           <div className="py-8 px-3 gap-5 w-full overflow-y-scroll justify-center justify-items-center grid grid-cols-2">
             {mobileServices.map((item) => (
-              <div key={item.name} className="max-h-[110px] max-w-[110px]">
+              <div key={item.name} className="max-h-[110px]">
                 <Link
                   href={item.href ?? '#'}
                   target="_blank"
                   className="text-center flex flex-col items-center"
                 >
-                  <img
-                    alt={item.alt}
-                    className={`${item.name=== 'Exasol' || item.name.includes('Sap') ? 'h-5 mt-3' : 'h-12'} mb-2`}
-                    src={item.src}
-                    loading="lazy"
-                  />
-                  <p className={`${item.name === 'Exasol' || item.name.includes('Sap') ? 'mt-3' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
-                    {item.name}
-                  </p>
+                  <div className="text-center flex flex-col items-center self-center">
+                    <div className={`relative ${item.name=== 'Exasol' || item.name.includes('Sap') ? 'h-[15px] mt-3' : 'h-[57px]'} w-[57px]`}>
+                      <Image
+                        alt={item.alt}
+                        src={item.src}
+                        loading="lazy"
+                        fill
+                        sizes="500px"
+                        style={{
+                          objectFit: 'contain',
+                        }}
+                      />
+                    </div>
+                    <p className={`${item.name === 'Exasol' || item.name.includes('Sap') ? 'mt-3' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
+                      {item.name}
+                    </p>
+                  </div>
                 </Link>
               </div>
             ))}
