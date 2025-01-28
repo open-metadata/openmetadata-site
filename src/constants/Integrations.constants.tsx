@@ -164,7 +164,7 @@ export const INTEGRATION_SERVICES = [
         alt: 'service-mongodb',
       },
       {
-        name: 'SapHana',
+        name: 'SAP HANA',
         href: 'https://docs.open-metadata.org/connectors/database/sap-hana',
         src: '/assets/services/sap-hana.png',
         alt: 'service-sap-hana',
@@ -179,7 +179,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/database/postgres',
         src: '/assets/services/postgres.webp',
         alt: 'service-postgres',
-        name: 'Postgres',
+        name: 'PostgreSQL',
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/presto',
@@ -245,7 +245,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/database/sqlite ',
         src: '/assets/services/sqllite.webp',
         alt: 'service-sqlite',
-        name: 'SQL Lite',
+        name: 'SQLite',
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/iceberg',
@@ -257,7 +257,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/latest/connectors/database/sap-erp',
         src: '/assets/services/sap-erp.webp',
         alt: 'service-sap-erp',
-        name: 'SapErp',
+        name: 'SAP ERP',
       },
     ],
   },

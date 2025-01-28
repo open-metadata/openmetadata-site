@@ -130,7 +130,7 @@ const IntegrationsDev = () => {
                 rel="noreferrer"
               >
                 <div className="text-center flex flex-col items-center self-center">
-                  <div className={`relative ${item.name=== 'Exasol' || item.name.includes('Sap') ? 'h-[15px] mt-3' : 'h-[57px]'} w-[57px]`}>
+                  <div className={`relative ${item.name=== 'Exasol' || item.name.includes('SAP') ? 'h-[15px] mt-3' : 'h-[57px]'} w-[57px]`}>
                     <Image
                       alt={item.alt}
                       src={item.src}
@@ -142,7 +142,7 @@ const IntegrationsDev = () => {
                       }}
                     />
                   </div>
-                <p className={`${item.name === 'Exasol' || item.name.includes('Sap') ? 'mt-8' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
+                <p className={`${item.name === 'Exasol' || item.name.includes('SAP') ? 'mt-8' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
                   {item.name}
                 </p>
                 </div>
@@ -160,7 +160,7 @@ const IntegrationsDev = () => {
                   className="text-center flex flex-col items-center"
                 >
                   <div className="text-center flex flex-col items-center self-center">
-                    <div className={`relative ${item.name=== 'Exasol' || item.name.includes('Sap') ? 'h-[15px] mt-3' : 'h-[57px]'} w-[57px]`}>
+                    <div className={`relative ${item.name=== 'Exasol' || item.name.includes('SAP') ? 'h-[15px] mt-3' : 'h-[57px]'} w-[57px]`}>
                       <Image
                         alt={item.alt}
                         src={item.src}
@@ -172,7 +172,7 @@ const IntegrationsDev = () => {
                         }}
                       />
                     </div>
-                    <p className={`${item.name === 'Exasol' || item.name.includes('Sap') ? 'mt-6' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
+                    <p className={`${item.name === 'Exasol' || item.name.includes('SAP') ? 'mt-6' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
                       {item.name}
                     </p>
                   </div>
