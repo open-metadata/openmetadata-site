@@ -111,7 +111,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/gcs-datalake',
-        src: '/assets/services/service-icon-gcs.png',
+        src: '/assets/services/service-icon-gcs.webp',
         alt: 'service-gcs',
         name: 'GCS Data Lake',
       },
@@ -179,7 +179,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/database/postgres',
         src: '/assets/services/postgres.webp',
         alt: 'service-postgres',
-        name: 'Postgres',
+        name: 'PostgreSQL',
       },
       {
         href: 'https://docs.open-metadata.org/connectors/database/presto',
@@ -245,7 +245,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/database/sqlite ',
         src: '/assets/services/sqllite.webp',
         alt: 'service-sqlite',
-        name: 'SQL Lite',
+        name: 'SQLite',
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/iceberg',
@@ -257,7 +257,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/latest/connectors/database/sap-erp',
         src: '/assets/services/sap-erp.webp',
         alt: 'service-sap-erp',
-        name: 'SapErp',
+        name: 'SAP ERP',
       },
     ],
   },
@@ -397,7 +397,7 @@ export const INTEGRATION_SERVICES = [
       {
         name: 'Flink',
         href: 'https://docs.open-metadata.org/connectors/pipeline/flink',
-        src: '/assets/services/service-icon-flink.png',
+        src: '/assets/services/service-icon-flink.webp',
         alt: 'service-flink',
       },
       {
@@ -442,7 +442,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/connectors/metadata/alationsink',
-        src: '/assets/services/service-icon-alation-sink.png',
+        src: '/assets/services/service-icon-alation-sink.webp',
         alt: 'service-AlationSink',
         name: 'AlationSink',
       },
@@ -465,7 +465,7 @@ export const INTEGRATION_SERVICES = [
       {
         name: 'Google Cloud Storage',
         href: 'https://docs.open-metadata.org/connectors/storage/gcs',
-        src: '/assets/services/service-icon-gcs.png',
+        src: '/assets/services/service-icon-gcs.webp',
         alt: 'service-gcs',
       },
       {
