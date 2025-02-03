@@ -1,7 +1,7 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component"
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component"
-import { TY_PAGE } from "@/constants/TyPage.constants";
+import { TY_PAGE } from "@/constants/LandingPage.constants";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
