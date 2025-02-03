@@ -177,6 +177,18 @@ html {
   }
 }
 
+.landing-page {
+  background: linear-gradient(180deg, #F1EDFD 0%, #FFFFFF 100%);
+}
+
+.landing-page-card {
+  background: linear-gradient(118.15deg, #F2F7F9 32.05%, #FBF4F4 81.44%);
+}
+
+.lp-card:hover .header-text {
+  text-decoration: underline;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
