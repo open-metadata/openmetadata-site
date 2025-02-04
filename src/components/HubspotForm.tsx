@@ -9,7 +9,7 @@ const HubspotForm = ({ id }: { id: string }) => {
         if (typeof window !== "undefined" && "hbspt" in window) {
             (window as any).hbspt.forms.create({
               portalId: "21369141",
-              formId: "ca4f7460-c6c2-40a3-8e65-66ab65fac5a9",
+              formId: "e4594b9d-72ed-4e25-845d-86aabdcc7898",
               target: `#${id}`,
             });
         }
