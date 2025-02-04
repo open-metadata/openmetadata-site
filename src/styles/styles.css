@@ -213,7 +213,8 @@ html {
   margin-right: 0 !important;
 }
 
-#hubspotForm .hs-form-booleancheckbox label {
+#hubspotFormMobile .hs-form-booleancheckbox label,
+#hubspotFormDesktop .hs-form-booleancheckbox label {
   text-transform: none;
   display: flex;
   justify-content: flex-start;
@@ -221,18 +222,21 @@ html {
   margin-top: 1rem; 
 }
 
-#hubspotForm .hs-form-booleancheckbox label span {
+#hubspotFormMobile .hs-form-booleancheckbox label span,
+#hubspotFormDesktop .hs-form-booleancheckbox label span {
   font-size: 14px;
   color: #555555;
   font-weight: 400;
 }
 
-#hubspotForm input[type="checkbox"] {
+#hubspotFormMobile input[type="checkbox"],
+#hubspotFormDesktop input[type="checkbox"] {
   width: 1.25rem !important; 
   height: 1.25rem !important;
 }
 
-#hubspotForm .hs_submit {
+#hubspotFormMobile .hs_submit,
+#hubspotFormDesktop .hs_submit {
   text-align: center;
   margin-top: 2rem;
   width: 100%;

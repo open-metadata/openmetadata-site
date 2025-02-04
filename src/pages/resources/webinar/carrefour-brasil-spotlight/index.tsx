@@ -31,7 +31,7 @@ const CarrefourPage = () => {
                                 <Image src='/assets/landingPage/carrefour-brasil.svg' alt="Carrefour Brasil" width={200} height={65} />
                             </div>
                             <div className="lg:hidden">
-                                <HubspotForm />
+                                <HubspotForm id='hubspotFormMobile' />
                             </div>
                             <p className="text-[#292929] tracking-[-0.02em] mt-16 text-center md:text-lg lg:text-left lg:mt-0">The OpenMetadata Community Meeting was held on January 15th, 2025. In the Community Spotlight, the Carrefour Brazil data team of Ronnie Santos, Brenda Barcelos, Vládia Beserra, and Kelly Rocha shared their journey with OpenMetadata. Topics covered included data estate, team structure, stakeholder challenges, data strategy, certification, quality tests, and more.</p>
                             <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-y-5">
@@ -49,7 +49,7 @@ const CarrefourPage = () => {
                             </div>
                         </div>
                         <div className="mt-8 hidden lg:block">
-                            <HubspotForm />
+                            <HubspotForm id='hubspotFormDesktop' />
                         </div>
                     </div>
                 </div>
