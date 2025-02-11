@@ -39,10 +39,10 @@ const CarrefourTy = () => {
                         <div className="mt-4 flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-col gap-4">
                             {TY_PAGE.map((item, i) => (
                                 <div key={i} className="lp-card shadow-card rounded bg-white">
-                                    <a href={item.href} target={item.isExternalLink ? '_blank' : '_self'}>
+                                    <a href={item.href} target='_blank'>
                                         <div className="grid grid-cols-5">
-                                            <div className="landing-page-card rounded-l flex justify-center items-center col-span-2">
-                                                <Image src={item.image} alt={item.header} width={200} height={140} className="p-3" />
+                                            <div className="landing-page-card relative rounded-l flex justify-center items-center col-span-2">
+                                                <Image src={item.image} alt={item.header} fill className="p-3 object-contain" />
                                             </div>
                                             <div className="py-3 px-4 col-span-3">
                                                 <div className="header-text text-[#474E71] text-sm sm:text-base font-medium mb-1">{item.header}</div>

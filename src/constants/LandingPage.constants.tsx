@@ -23,35 +23,31 @@ export const SPEAKERS = [
 
 export const TY_PAGE = [
     {
-        image: '/assets/landingPage/free-managed-om.png',
-        header: 'Announcing Free Managed OpenMetadata: Unify Data...',
+        image: '/assets/landingPage/data-quality.png',
+        header: 'AI-Powered Data Quality',
         description:
-            'Collate is excited to announce the launch of our free tier...',
-        href: '/',
-        isExternalLink: false,
+            'Tired of data quality issues or broken ETL pipelines derailing your day?',
+        href: 'https://www.meetup.com/openmetadata-meetup-group/events/305498405/',
     },
     {
-        image: '/assets/landingPage/free-managed-om.png',
-        header: 'Announcing Free Managed OpenMetadata: Unify Data...',
+        image: '/assets/landingPage/data-culture.png',
+        header: 'Data Culture Best Practice for Modern Data Teams',
         description:
-            'Collate is excited to announce the launch of our free tier...',
-        href: '/',
-        isExternalLink: false,
+            "Watch Uber's former Chief Data Architect, and founder of the open ...",
+        href: 'https://www.getcollate.io/resources/webinar/data-culture',
     },
     {
-        image: '/assets/landingPage/free-managed-om.png',
-        header: 'Announcing Free Managed OpenMetadata: Unify Data...',
+        image: '/assets/landingPage/governance.png',
+        header: 'Building Scalable Governance with Automation & AI',
         description:
-            'Collate is excited to announce the launch of our free tier...',
-        href: '/',
-        isExternalLink: false,
+            'Watch our webinar on automated data governance for modern data...',
+        href: 'https://www.getcollate.io/resources/webinar/data-governance',
     },
     {
-        image: '/assets/landingPage/free-managed-om.png',
+        image: '/assets/landingPage/free-managed.png',
         header: 'Announcing Free Managed OpenMetadata: Unify Data...',
         description:
             'Collate is excited to announce the launch of our free tier...',
-        href: '/',
-        isExternalLink: false,
+        href: 'https://cloud.getcollate.io/signup/',
     },
 ]
