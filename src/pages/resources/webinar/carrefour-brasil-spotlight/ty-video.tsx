@@ -23,8 +23,8 @@ const CarrefourTy = () => {
                 <div className="grid gap-16 lg:grid-cols-2 xl:grid-cols-3">
                     <div className="text-center lg:text-left xl:col-span-2">
                         <p className="uppercase text-[#7147E8] tracking-[0.04em] text-lg font-medium md:font-bold">on demand webinar video</p>
-                        <h1 className="text-[#292929] tracking-[-0.02em] font-medium my-4 text-5xl md:text-6xl">Thank you for your interest.</h1>
-                        <p className="text-[#292929] tracking-[-0.02em] md:text-lg">You now have access to the webinar. A link to the video will be emailed to you as well.</p>
+                        <h1 className="text-[#292929] tracking-[-0.02em] font-medium mt-4 mb-3 text-5xl md:text-6xl xl:max-w-[85%]">Carrefour Brasil Community Spotlight:</h1>
+                        <p className="text-[#292929] tracking-[-0.02em] md:text-lg">How OpenMetadata Transforms Data Governance, Quality, and Observability into Actionable Insights.</p>
                         <div className="mt-12 relative pb-[56.25%] h-0">
                             <iframe
                                 className="absolute top-0 left-0 w-full h-full"
