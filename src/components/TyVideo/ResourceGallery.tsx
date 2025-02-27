@@ -1,12 +1,11 @@
-import { TY_PAGE } from "@/constants/LandingPage.constants"
 import Image from "next/image"
 
-const ResourceGallery = () => {
+const ResourceGallery = ({ data }: { data: { image: string, header: string, description: string, href: string }[] }) => {
     return (
         <div className="mt-12">
                         <div className="text-[#292929] tracking-[-0.02em] text-2xl">You might also be interested in...</div>
                         <div className="mt-4 flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-col gap-4">
-                            {TY_PAGE.map((item, i) => (
+                            {data.map((item, i) => (
                                 <div key={i} className="lp-card shadow-card rounded bg-white">
                                     <a href={item.href} target='_blank'>
                                         <div className="grid grid-cols-5">

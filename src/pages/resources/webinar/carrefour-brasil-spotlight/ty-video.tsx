@@ -3,9 +3,8 @@ import NavbarDev from "@/components/NavbarDev/NavbarDev.component"
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component"
 import TyHeader from "@/components/TyVideo/Header";
 import ResourceGallery from "@/components/TyVideo/ResourceGallery";
-import { TY_PAGE } from "@/constants/LandingPage.constants";
-import Image from "next/image";
 import { useRouter } from "next/router";
+import { TY_PAGE_CARREFOUR } from "@/constants/LandingPage.constants";
 
 const CarrefourTy = () => {
     const router = useRouter();
@@ -24,7 +23,7 @@ const CarrefourTy = () => {
             <div className="max-w-[1440px] mx-auto py-28 md:py-20 px-4 md:px-10 xl:px-16">
                 <div className="grid gap-16 lg:grid-cols-2 xl:grid-cols-3">
                     <TyHeader header="Carrefour Brasil Community Spotlight:" description="How OpenMetadata Transforms Data Governance, Quality, and Observability into Actionable Insights." videoSrc="https://www.youtube.com/embed/Un5Sf2hCCrw?si=D54dnczT7mkmBNwu" />
-                    <ResourceGallery />
+                    <ResourceGallery data={TY_PAGE_CARREFOUR} />
                 </div>
             </div>
         </div>
