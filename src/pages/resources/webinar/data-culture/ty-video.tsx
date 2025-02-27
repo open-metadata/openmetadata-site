@@ -4,9 +4,9 @@ import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component"
 import TyHeader from "@/components/TyVideo/Header";
 import ResourceGallery from "@/components/TyVideo/ResourceGallery";
 import { useRouter } from "next/router";
-import { TY_PAGE_CARREFOUR } from "@/constants/LandingPage.constants";
+import { TY_PAGE_DATA_CULTURE } from "@/constants/LandingPage.constants";
 
-const CarrefourTy = () => {
+const DataCultureTy = () => {
     const router = useRouter();
     
       const handleTryOpenMetadataClick = () => {
@@ -22,8 +22,8 @@ const CarrefourTy = () => {
         <div className="landing-page mt-20 md:mt-24 lg:mt-32">
             <div className="max-w-[1440px] mx-auto py-28 md:py-20 px-4 md:px-10 xl:px-16">
                 <div className="grid gap-16 lg:grid-cols-2 xl:grid-cols-3">
-                    <TyHeader header="Carrefour Brasil Community Spotlight:" description="How OpenMetadata Transforms Data Governance, Quality, and Observability into Actionable Insights." videoSrc="https://www.youtube.com/embed/Un5Sf2hCCrw?si=D54dnczT7mkmBNwu" />
-                    <ResourceGallery data={TY_PAGE_CARREFOUR} />
+                    <TyHeader header="Data Culture Best Practices with OpenMetadata" description="Learnings and Insights from the former Chief Data Architect of Uber" videoSrc="https://www.youtube.com/embed/lOQepnTdA58?si=6wF5K6BV14wasqAh" />
+                    <ResourceGallery data={TY_PAGE_DATA_CULTURE} />
                 </div>
             </div>
         </div>
@@ -32,4 +32,4 @@ const CarrefourTy = () => {
     )
 }
 
-export default CarrefourTy
+export default DataCultureTy
