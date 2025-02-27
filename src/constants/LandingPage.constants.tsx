@@ -24,9 +24,9 @@ export const SPEAKERS = [
 export const TY_PAGE = [
     {
         image: '/assets/landingPage/mango-lp.png',
-        header: 'Mango Case Study',
+        header: "Mango's data transformation with Collate",
         description:
-            'Mango drives company-wide data culture in global fashion',
+            'Centralized discovery, observability, & governance for 800+ users',
         href: 'https://www.getcollate.io/resources/ebook/mango-case-study',
     },
     {
