@@ -58,7 +58,7 @@ export const TY_PAGE_DATA_CULTURE = [
         header: 'AI-Powered Data Quality: Observability at Scale',
         description:
             "Learn how to proactively monitor your data and build data trust ...",
-        href: 'https://youtu.be/a3_RJFssQus?si=ZZDqhEhyyTuPT3lc',
+        href: 'https://www.getcollate.io/resources/webinar/data-quality',
     },
     {
         image: '/assets/landingPage/mango-lp.png',
