@@ -23,11 +23,11 @@ export const SPEAKERS = [
 
 export const TY_PAGE = [
     {
-        image: '/assets/landingPage/data-quality.png',
-        header: 'AI-Powered Data Quality',
+        image: '/assets/landingPage/mango-lp.png',
+        header: "Mango's data transformation with Collate",
         description:
-            'Tired of data quality issues or broken ETL pipelines derailing your day?',
-        href: 'https://www.meetup.com/openmetadata-meetup-group/events/305498405/',
+            'Centralized discovery, observability, & governance for 800+ users',
+        href: 'https://www.getcollate.io/resources/ebook/mango-case-study',
     },
     {
         image: '/assets/landingPage/data-culture.png',
