@@ -10,17 +10,17 @@ export const CARREFOUR_CUSTOMER_HEADER = {
 export const CARREFOUR_CUSTOMER_HIGHLIGHTS = [
     {
         id: 1,
-        count: 500,
+        count: '500',
         description: "active platform users achieved within first year on OpenMetadata"
     },
     {
         id: 2,
-        count: 20,
+        count: '20',
         description: "domains and 30+ data owners assigned for data governance"
     },
     {
         id: 3,
-        count: 300,
+        count: '300',
         description: "glossary terms defined and standardized across 700+ tables"
     }
 ];
