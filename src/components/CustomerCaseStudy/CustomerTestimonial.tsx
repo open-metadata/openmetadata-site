@@ -11,7 +11,7 @@ interface CustomerTestimonialProps {
 
 const CustomerTestimonial = ({ testimonial }: CustomerTestimonialProps) => {
     return (
-        <div className="landing-page mt-9">
+        <div className="case-study-testimonial mt-9">
             <div className="max-w-[1440px] text-[#292929] mx-auto text-center py-24 px-4 md:px-10 xl:px-20">
                 <div className="flex justify-center">
                     <Image src="/assets/carrefour-customer/quotes.svg" alt="Quotes" width={40} height={35} />
