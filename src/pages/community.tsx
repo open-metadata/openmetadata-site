@@ -290,9 +290,9 @@ export default function Community() {
                     <div className="col">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="Gbyo_5Tq_lo" />
+                          <YoutubeEmbed videoId="dSNynCcrOD8" />
                           <p className="font-semibold mb-0 mt-2">
-                            October 2024
+                            March 2025
                           </p>
                         </div>
                       </div>
@@ -300,9 +300,9 @@ export default function Community() {
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="cc9ID6jh5NM" />
+                          <YoutubeEmbed videoId="EgPed_N5fQk" />
                           <p className="font-semibold mb-0 mt-2">
-                            Spotlight, September 2024
+                            Spotlight, March 2025
                           </p>
                         </div>
                       </div>
