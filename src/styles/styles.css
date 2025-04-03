@@ -189,6 +189,17 @@ html {
   background: linear-gradient(180deg, #F1EDFD 0%, rgba(241, 237, 253, 0.3) 100%);
 }
 
+.slider-container {
+  background-color: white;
+}
+
+.slick-slider .slick-track {
+  display: flex;
+  gap: 16px;
+  background-color: white;
+  padding: 5px 0px;
+}
+
 .lp-card:hover .header-text {
   text-decoration: underline;
 }

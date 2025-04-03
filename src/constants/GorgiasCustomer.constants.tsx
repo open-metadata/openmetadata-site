@@ -15,7 +15,7 @@ export const GORGIAS_CUSTOMER_HIGHLIGHTS = [
     },
     {
         id: 2,
-        count: '5PB',
+        count: '5',
         description: "petabytes of data processed daily"
     },
     {
