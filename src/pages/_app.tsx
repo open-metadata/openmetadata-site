@@ -61,6 +61,60 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
           {/* Google Tag Manager */}
       <Head>
+      <meta charSet="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="canonical" href="https://www.getcollate.io/" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          name="description"
+          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+        />
+        <meta
+          name="keywords"
+          content="best open-source data catalog community, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool"
+        />
+        <meta name="author" content="open-metadata" />
+        <meta name="publisher" content="Collate" />
+
+        {/* Open Graph tags start  */}
+        <meta
+          property="og:title"
+          content="OpenMetadata: Join the #1 Open Source Data Community"
+        />
+        <meta
+          property="og:description"
+          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+        />
+        <meta
+          property="og:image"
+          content="https://open-metadata.org/assets/favicon.png"
+        />
+        <meta property="og:type" content="metadata tool" />
+        <meta property="og:url" content="https://open-metadata.org" />
+        {/* {/* Open Graph tags end  */}
+
+        {/* {/* Twitter Card start  */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="https://open-metadata.org" />
+        <meta
+          name="twitter:title"
+          content="OpenMetadata: Join the #1 Open Source Data Community"
+        />
+        <meta
+          name="twitter:description"
+          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+        />
+        <meta
+          name="twitter:image"
+          content="https://open-metadata.org/assets/favicon.png"
+        />
+
+        {/* {/* Twitter Card end  */}
+
+        <title>OpenMetadata: Join the #1 Open Source Data Community</title>
         {/* eslint-disable-next-line @next/next/next-script-for-ga */}
         <script
           defer
