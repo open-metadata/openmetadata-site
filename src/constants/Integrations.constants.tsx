@@ -44,10 +44,22 @@ export const INTEGRATION_SERVICES = [
         name: 'BigQuery',
       },
       {
+        href: 'https://docs.open-metadata.org/v1.7.x-SNAPSHOT/connectors/database/cassandra',
+        src: '/assets/services/cassandra.png',
+        alt: 'service-cassandra',
+        name: 'Cassandra',
+      },
+      {
         href: 'https://docs.open-metadata.org/connectors/database/clickhouse',
         src: '/assets/services/clickhouse.webp',
         alt: 'service-clickhouse',
         name: 'ClickHouse',
+      },
+      {
+        href: 'https://docs.open-metadata.org/v1.7.x-SNAPSHOT/connectors/database/cockroach',
+        src: '/assets/services/cockroach.png',
+        alt: 'service-cockroach',
+        name: 'Cockroach',
       },
       {
         name: 'Couchbase',
@@ -456,6 +468,12 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/connectors/search/elasticsearch',
         src: '/assets/services/elasticsearch.webp',
         alt: 'service-elasticsearch',
+      },
+      {
+        name: 'OpenSearch',
+        href: 'https://docs.open-metadata.org/v1.7.x-SNAPSHOT/connectors/search/opensearch',
+        src: '/assets/services/opensearch.png',
+        alt: 'service-opensearch',
       },
     ],
   },
