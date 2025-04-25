@@ -18,10 +18,10 @@ export const ABOUT_OPENMETADATA = [
         isExternal: true
     },
     {
-        image: `${IMAGE_ROUTE}/release-1.6.webp`,
+        image: `${IMAGE_ROUTE}/release-1.7.png`,
         header: 'Product News',
-        description: 'Announcing OpenMetadata Release 1.6.0',
-        href: 'https://blog.open-metadata.org/announcing-openmetadata-release-1-6-f4fdd7f66f72',
+        description: 'Announcing OpenMetadata Release 1.7.0',
+        href: 'https://blog.open-metadata.org/announcing-openmetadata-1-7-9f9778579704',
         linkText: "Read",
         isExternal: true
     },
