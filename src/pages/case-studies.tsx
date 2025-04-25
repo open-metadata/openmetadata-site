@@ -136,6 +136,11 @@ const CaseStudiesPage = () => {
                         </div>
                     </div>
                 </div>
+                <div className="bg-[#DCECF8]">
+                    <div className="max-w-[1440px] mx-auto py-8 md:py-16 px-5 md:px-10 xl:px-20">
+                        <div className="text-black text-2xl md:text-4xl font-medium tracking-[-0.02em] md:max-w-[70%]">Stay up to date on company updates, product announcements, and other important news</div> 
+                    </div>
+                </div>
             </div>
             <FooterDev />
         </div>
