@@ -67,9 +67,9 @@ const CaseStudiesPage = () => {
                                         />
                                     </div>
                                     <div className={`mt-4 font-medium text-black tracking-[-0.02em] px-2 text-2xl ${index > 1 ? 'lg:text-2xl' : 'lg:text-3xl'}`}>{customer.title}</div>
-                                    <Link href='/'>
+                                    <Link href={customer.url}>
                                         <div className="mt-5 mb-2 rounded-[3px] font-medium tracking-[-0.02em] mx-2 border-2 border-[#7147E8] max-w-fit px-4 py-2 text-[#7147E8]">
-                                            Read More
+                                            {customer.buttonText}
                                         </div>
                                     </Link>
                                 </div>
@@ -139,6 +139,8 @@ const CaseStudiesPage = () => {
                 <div className="bg-[#DCECF8]">
                     <div className="max-w-[1440px] mx-auto py-8 md:py-16 px-5 md:px-10 xl:px-20">
                         <div className="text-black text-2xl md:text-4xl font-medium tracking-[-0.02em] md:max-w-[70%]">Stay up to date on company updates, product announcements, and other important news</div> 
+                        <script src="https://js.hsforms.net/forms/embed/21369141.js" defer></script>
+                        <div className="hs-form-frame" data-region="na1" data-form-id="160a8eb9-911f-4d26-abe4-2e4821755a5a" data-portal-id="21369141"></div>
                     </div>
                 </div>
             </div>
