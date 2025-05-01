@@ -14,7 +14,7 @@ const CarrefourPage = () => {
     };
 
     return (
-        <div>
+        <div className="justify-between min-h-screen flex flex-col">
             <div className="mx-auto fixed top-0 w-full z-[1030]">
                 <NavbarDev onClick={handleTryOpenMetadataClick} />
                 <NavbarStrip />
