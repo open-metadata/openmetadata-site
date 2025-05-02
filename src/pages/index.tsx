@@ -18,7 +18,7 @@ const Development = () => {
   }
 
   return (
-    <>
+    <div className="justify-between min-h-screen flex flex-col">
       <Head>
         <link rel="preload" href="/assets/home-section.webp" as="image" />
         <meta charSet="utf-8" />
@@ -87,7 +87,7 @@ const Development = () => {
         <AboutOpenMetadata />
         <FooterDev />
       </div>
-    </>
+    </div>
   );
 };
 
