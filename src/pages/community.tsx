@@ -15,7 +15,7 @@ export default function Community() {
   };
 
   return (
-    <>
+    <div className="justify-between min-h-screen flex flex-col">
       <Head>
         <meta charSet="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -315,6 +315,6 @@ export default function Community() {
         </div>
         <FooterDev />
       </div>
-    </>
+    </div>
   );
 }
