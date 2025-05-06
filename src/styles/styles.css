@@ -316,6 +316,14 @@ html {
   font-size: 0.875rem;
 }
 
+.card-shadow {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.case-study-page {
+  background: linear-gradient(0deg, #F1EDFD 0%, #FFFFFF 100%);
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
