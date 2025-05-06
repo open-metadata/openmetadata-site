@@ -8,7 +8,7 @@ export const ACHIEVEMENT_LIST = [
     },
     {
         icon: `${ICON_ROUTE}/open-source-members.svg`,
-        count: '8,500+',
+        count: '9,000+',
         name: 'Open Source Members'
     },
     {
@@ -18,7 +18,7 @@ export const ACHIEVEMENT_LIST = [
     },
     {
         icon: `${ICON_ROUTE}/github-star.svg`,
-        count: '6,200+',
+        count: '6,500+',
         name: 'GitHub Stars'
     },
     {
