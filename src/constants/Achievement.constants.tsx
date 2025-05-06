@@ -13,7 +13,7 @@ export const ACHIEVEMENT_LIST = [
     },
     {
         icon: `${ICON_ROUTE}/code-contributors.svg`,
-        count: '300+',
+        count: '320+',
         name: 'Code Contributors'
     },
     {
