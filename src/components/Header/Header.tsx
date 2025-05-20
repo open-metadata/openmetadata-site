@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import Clients from "./Clients";
 import { JoinSlackIcon } from "../Icons/JoinSlackIcon";
 import { BoltIcon } from "../Icons/BoltIcon";
+import ParamLink from "../ParamLink";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
@@ -27,22 +27,22 @@ const Header = ({ onClick }: { onClick: () => void }) => {
         <div className="pt-32 pb-16 text-center px-6 md:pt-20 lg:px-0">
           <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
             Open and unified metadata platform for data{" "}
-            <span className="text-[#7147E8]">discovery, observability,</span> and{" "}
-            <span className="text-[#7147E8]">governance</span>
+            <span className="text-[#7147E8]">discovery, observability,</span>{" "}
+            and <span className="text-[#7147E8]">governance</span>
           </h1>
           <p className="mt-3 mx-auto sm:leading-[26px] max-w-[95%] sm:max-w-[78%] sm:text-lg lg:text-[19px] 2xl:max-w-[90%]">
             A single place for all your data and all your data practitioners to
-            build and manage high quality data assets at scale. Built by Collate and the
-            founders of Apache Hadoop, Apache Atlas, and Uber Databook.
+            build and manage high quality data assets at scale. Built by Collate
+            and the founders of Apache Hadoop, Apache Atlas, and Uber Databook.
           </p>
           <div className="relative z-[11] flex flex-col-reverse sm:flex-row justify-center gap-3 items-center mt-12">
-            <Link
-              className="uppercase w-full flex justify-center items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:text-[#6540c8]"
-              href="https://slack.open-metadata.org/"
+            <ParamLink
+              link="https://slack.open-metadata.org/"
               target="_blank"
+              className="uppercase w-full flex justify-center items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:text-[#6540c8]"
             >
               <JoinSlackIcon /> <span className="mt-[3px]">Join Slack</span>
-            </Link>
+            </ParamLink>
             <button
               onClick={onClick}
               className="uppercase w-full flex justify-center items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:bg-[#6540c8]"

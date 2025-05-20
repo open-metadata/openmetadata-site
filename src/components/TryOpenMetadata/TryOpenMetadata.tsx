@@ -1,6 +1,6 @@
 import { TRY_OPENMETADATA } from "@/constants/TryOpenMetadata.constants";
 import Image from "next/image";
-import Link from "next/link";
+import ParamLink from "../ParamLink";
 
 const TryOpenMetadata = () => {
   return (
@@ -23,7 +23,11 @@ const TryOpenMetadata = () => {
               )}
 
               <Image
-                className={`${item.header === "Free SaaS" ? 'w-[85px] h-[75px] -mt-1' : "w-[80px] h-[70px]"}`}
+                className={`${
+                  item.header === "Free SaaS"
+                    ? "w-[85px] h-[75px] -mt-1"
+                    : "w-[80px] h-[70px]"
+                }`}
                 src={item.icon}
                 alt={item.header}
                 width={100}
@@ -37,13 +41,12 @@ const TryOpenMetadata = () => {
               <p className="text-[#777777] font-normal border-b mt-2 border-b-[#D0C2F7] pb-4 text-[20px] lg:-mt-2">
                 {item.description}
               </p>
-              <Link
-                href={item.href}
+              <ParamLink
+                name={item.linkText}
+                link={item.href}
                 target="_blank"
                 className="mt-[28px] w-full block text-center uppercase bg-[#7147E8] border-2 border-[#7147E8] text-white font-bold py-3 rounded-md lg:text-[18px] hover:no-underline hover:bg-[#6541c9]"
-              >
-                {item.linkText}
-              </Link>
+              />
             </div>
           ))}
         </div>

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { CollateLogo } from '../Icons/CollateLogo';
+import ParamLink from "../ParamLink";
 
 const NavbarStrip = () => {
   return (
@@ -11,13 +11,12 @@ const NavbarStrip = () => {
             Try OpenMetadata as a managed service for free, from Collate.
           </span>
           <span className="lg:relative">
-            <Link
+            <ParamLink 
+              name="Get Started" 
+              link="https://cloud.getcollate.io/signup" 
+              target="_blank" 
               className="nav-strip-btn lg:leading-[31.2px] pl-2 text-[14px] md:text-[16px] lg:py-2 lg:px-4 hover:text-[#D3ECF7]"
-              href="https://cloud.getcollate.io/signup"
-              target="_blank"
-            >
-              Get Started
-            </Link>
+            />
           </span>
         </div>
       </div>
