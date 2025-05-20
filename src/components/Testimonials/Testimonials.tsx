@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Slider, { CustomArrowProps } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { TESTIMONIALS_LIST } from "@/constants/Testimonials.constants";
 import { ArrowRight } from "../Icons/ArrowRight";
 import { ArrowLeft } from "../Icons/ArrowLeft";
+import ParamLink from "../ParamLink";
 
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
@@ -32,10 +32,10 @@ const NextArrow = ({ onClick }: CustomArrowProps) => {
 
 const Testimonials = () => {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [expandedDescription, setExpandedDescription] = useState(-1)
+  const [expandedDescription, setExpandedDescription] = useState(-1);
 
-  const handleMoreLessBtnClick = (index: number) => 
-    setExpandedDescription(expandedDescription === index ? -1 : index)
+  const handleMoreLessBtnClick = (index: number) =>
+    setExpandedDescription(expandedDescription === index ? -1 : index);
 
   const settings = {
     arrows: true,
@@ -71,8 +71,8 @@ const Testimonials = () => {
           <Slider {...settings}>
             {TESTIMONIALS_LIST.map((item, i) => (
               <div key={item.company}>
-                <Link
-                  href={item.url}
+                <ParamLink
+                  link={item.url}
                   target="_blank"
                   className="h-[100px]"
                 >
@@ -84,35 +84,35 @@ const Testimonials = () => {
                     alt={item.company}
                     priority
                   />
-                </Link>
+                </ParamLink>
                 <span className="text-[#170E2E] text-justify mr-[10px] lg:text-[20px]">
-                  "{expandedDescription !== i && item.description.length > 230 ? (
-                    item.description.slice(0, 230) + "..."
-                  ) : item.description}"
+                  "
+                  {expandedDescription !== i && item.description.length > 230
+                    ? item.description.slice(0, 230) + "..."
+                    : item.description}
+                  "
                 </span>
                 {item.description.length > 230 && (
-                  <button 
-                    onClick={() => handleMoreLessBtnClick(i)} 
+                  <button
+                    onClick={() => handleMoreLessBtnClick(i)}
                     className="relative z-[7] text-[#7147E8] cursor-pointer lg:text-[18px] hover:underline"
                   >
                     read {expandedDescription === i ? "less" : "more"}
                   </button>
                 )}
-                <div
-                  className="mt-5 mb-[60px] text-center"
-                >
+                <div className="mt-5 mb-[60px] text-center">
                   <p className="text-[#382374] tracking-[-0.02em] text-[16px] font-medium text-[20px] lg:text-[24px]">
                     {item.name}
                   </p>
                   <p className="text-[#888888] tracking-[-0.02em] text-[14px] md:h-[20px] lg:text-[18px] xl:-mt-4">
                     {item.title}, {item.company}
-                  </p>      
+                  </p>
                 </div>
               </div>
             ))}
           </Slider>
         </div>
-      </div>  
+      </div>
     </div>
   );
 };

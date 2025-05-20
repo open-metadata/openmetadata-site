@@ -1,7 +1,7 @@
 import { INTEGRATION_SERVICES } from '@/constants/Integrations.constants';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
+import ParamLink from '../ParamLink';
 
 interface Service {
   width?: number;
@@ -124,10 +124,9 @@ const IntegrationsDev = () => {
         <div className="py-8 px-3 gap-[6px] w-full hidden overflow-y-scroll justify-center justify-items-center gap-y-6 sm:px-8 sm:grid grid-cols-2 sm:auto-rows-max md:grid-cols-3 lg:grid-cols-5 lg:px-9 xl:grid-cols-6">
           {services.map((item) => (
             <div key={item.name} className="max-h-[110px]">
-              <Link
-                href={item.href ?? '#'}
+              <ParamLink
+                link={item.href ?? '#'}
                 target="_blank"
-                rel="noreferrer"
               >
                 <div className="text-center flex flex-col items-center self-center">
                   <div className={`relative ${item.name=== 'Exasol' || item.name.includes('SAP') ? 'h-[15px] mt-3' : 'h-[57px]'} w-[57px]`}>
@@ -146,7 +145,7 @@ const IntegrationsDev = () => {
                   {item.name}
                 </p>
                 </div>
-              </Link>
+              </ParamLink>
             </div>
           ))}
         </div>
@@ -154,8 +153,8 @@ const IntegrationsDev = () => {
           <div className="py-8 px-3 gap-5 w-full overflow-y-scroll justify-center justify-items-center grid grid-cols-2">
             {mobileServices.map((item) => (
               <div key={item.name} className="max-h-[110px]">
-                <Link
-                  href={item.href ?? '#'}
+                <ParamLink
+                  link={item.href ?? '#'}
                   target="_blank"
                   className="text-center flex flex-col items-center"
                 >
@@ -176,7 +175,7 @@ const IntegrationsDev = () => {
                       {item.name}
                     </p>
                   </div>
-                </Link>
+                </ParamLink>
               </div>
             ))}
           </div>
