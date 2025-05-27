@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const useQueryParams = () => {
-  const [queryParams, setQueryParams] = useState<Record<string, string>>({});
+  const [queryParams, setQueryParams] = useState<string>('');
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -11,8 +11,10 @@ const useQueryParams = () => {
       searchParams.forEach((value, key) => {
         params[key] = value;
       });
+
+      const paramString = new URLSearchParams(params).toString();
       
-      setQueryParams(params);
+      setQueryParams(paramString);
     }
   }, []);
 
