@@ -1,44 +1,43 @@
 import { ABOUT_OPENMETADATA } from "@/constants/AboutOpenMetadata.constants";
 import Image from "next/image";
-import Link from "next/link";
 import Slider, { CustomArrowProps } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Arrow } from "../Icons/Arrow";
+import ParamLink from "../ParamLink";
 
 const PreviousArrow = ({ onClick }: CustomArrowProps): JSX.Element => {
   return (
-      <div
-          className="absolute z-[5] -translate-y-1/2 cursor-pointer -left-8 sm:-left-10 lg:-left-14 top-2/4"
-          onClick={onClick}
-      >
-          <Image
-              alt="previous button"
-              src="/assets/icons/previous-arrow.svg"
-              width={24}
-              height={24}
-          />
-      </div>
-  )
-}
+    <div
+      className="absolute z-[5] -translate-y-1/2 cursor-pointer -left-8 sm:-left-10 lg:-left-14 top-2/4"
+      onClick={onClick}
+    >
+      <Image
+        alt="previous button"
+        src="/assets/icons/previous-arrow.svg"
+        width={24}
+        height={24}
+      />
+    </div>
+  );
+};
 
 const NextArrow = ({ onClick }: CustomArrowProps): JSX.Element => {
   return (
-      <div
-          className="absolute z-[5] -translate-y-1/2 cursor-pointer -right-8 sm:-right-10 lg:-right-14 top-2/4"
-          onClick={onClick}
-      >
-          <Image
-              className="text-black"
-              alt="next button"
-              src="/assets/icons/next-arrow.svg"
-              width={24}
-              height={24}
-          />
-      </div>
-  )
-}
-
+    <div
+      className="absolute z-[5] -translate-y-1/2 cursor-pointer -right-8 sm:-right-10 lg:-right-14 top-2/4"
+      onClick={onClick}
+    >
+      <Image
+        className="text-black"
+        alt="next button"
+        src="/assets/icons/next-arrow.svg"
+        width={24}
+        height={24}
+      />
+    </div>
+  );
+};
 
 const AboutOpenMetadata = () => {
   const settings = {
@@ -81,34 +80,36 @@ const AboutOpenMetadata = () => {
       </h3>
       <div className="slider-container about-om mt-12 md:mt-16 mb-5">
         <Slider {...settings}>
-        {ABOUT_OPENMETADATA.map((item) => (
-          <div key={item.header} className="shadow-md rounded-sm">
-            <Link href={item.href} target={item.isExternal ? "_blank" : "_self"}>
-              <div className="bg-gradient-to-tl from-[#0B3547] to-[#176B8F] flex justify-center items-center h-[180px] rounded-t-sm">
-                <Image
-                  className="mx-auto w-[87%] h-[150px] rounded-md"
-                  src={item.image}
-                  alt={item.header}
-                  width={100}
-                  height={100}
-                  loading="lazy"
-                />
-              </div>
-              <div className="px-[24px] py-7 flex flex-col items-between">
-                <p className="text-[24px] text-[#4B2F9B] tracking-[-0.01em] font-semibold -mb-2 md:text-[28px]">
-                  {item.header}
-                </p>
-                <p className="text-[#170E2E] font-medium my-3 min-h-[72px]">
-                  {item.description}
-                </p>
-                <div className="flex items-center gap-2 mt-2 uppercase text-[#5E3BC1] font-bold">
-                  {item.linkText}{" "}
-                  <Arrow />
+          {ABOUT_OPENMETADATA.map((item) => (
+            <div key={item.header} className="shadow-md rounded-sm">
+              <ParamLink
+                href={item.href}
+                target={item.isExternal ? "_blank" : "_self"}
+              >
+                <div className="bg-gradient-to-tl from-[#0B3547] to-[#176B8F] flex justify-center items-center h-[180px] rounded-t-sm">
+                  <Image
+                    className="mx-auto w-[87%] h-[150px] rounded-md"
+                    src={item.image}
+                    alt={item.header}
+                    width={100}
+                    height={100}
+                    loading="lazy"
+                  />
                 </div>
-              </div>
-            </Link>
-          </div>
-        ))}
+                <div className="px-[24px] py-7 flex flex-col items-between">
+                  <p className="text-[24px] text-[#4B2F9B] tracking-[-0.01em] font-semibold -mb-2 md:text-[28px]">
+                    {item.header}
+                  </p>
+                  <p className="text-[#170E2E] font-medium my-3 min-h-[72px]">
+                    {item.description}
+                  </p>
+                  <div className="flex items-center gap-2 mt-2 uppercase text-[#5E3BC1] font-bold">
+                    {item.linkText} <Arrow />
+                  </div>
+                </div>
+              </ParamLink>
+            </div>
+          ))}
         </Slider>
       </div>
     </div>

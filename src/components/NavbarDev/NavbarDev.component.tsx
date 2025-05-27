@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { OmdLogo } from "../Icons/OmdLogo";
 import { GitHubLogo } from "../Icons/GitHubLogo";
+import ParamLink from "../ParamLink";
 
 const NavbarDev = ({ onClick }: { onClick: () => void }) => {
   const [open, setOpen] = useState(false);
@@ -31,9 +31,9 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
     >
       <div className="mx-auto max-w-[1550px] flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-[24px] 2xl:px-0">
         <div className="flex items-center justify-between px-5 py-[12px] lg:px-0 lg:py-[10px]">
-          <Link className="text-primary" href="/">
+          <ParamLink className="text-primary" href="/">
             <OmdLogo />
-          </Link>
+          </ParamLink>
 
           <div
             className="lg:hidden cursor-pointer"
@@ -61,50 +61,39 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
         >
           <ul className="font-medium ml-auto flex flex-col gap-[22px] items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-7 lg:text-[15px]">
             <li>
-              <Link
+              <ParamLink
                 href="https://docs.open-metadata.org/quick-start"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
-                Get Started
-              </Link>
+                name="Get Started"
+              />
             </li>
             <li>
-              <Link
+              <ParamLink
                 href="https://docs.open-metadata.org"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
-                Documentation
-              </Link>
+                name="Documentation"
+              />
             </li>
             <li>
-              <Link href="/community">Community</Link>
+              <ParamLink href="/community" name="Community" />
             </li>
             <li>
-              <Link
+              <ParamLink
                 href="https://blog.open-metadata.org/"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
-                Blog
-              </Link>
+                name="Blog"
+              />
             </li>
             <li>
-              <Link
-                href="/case-studies"
-              >
-                Case Studies
-              </Link>
+              <ParamLink href="/case-studies" name="Case Studies" />
             </li>
             <li className="mb-4 lg:mb-0">
-              <Link
+              <ParamLink
                 href="https://github.com/open-metadata/OpenMetadata"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 <GitHubLogo />
-              </Link>
+              </ParamLink>
             </li>
           </ul>
           <button

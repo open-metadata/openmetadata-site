@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { OmdFooterLogo } from "../Icons/OmdFooterLogo";
+import ParamLink from "../ParamLink";
 
 const FooterDev = () => {
   return (
@@ -29,49 +29,44 @@ const FooterDev = () => {
           </div>
           <ul className="tracking-[-0.02em] text-[14px]">
             <li className="mb-2">
-              <Link
+              <ParamLink
+                name="What is OpenMetadata?"
                 href="https://docs.open-metadata.org/"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                What is OpenMetadata?
-              </Link>
+              />
             </li>
             <li className="mb-2">
-              <Link
+              <ParamLink
+                name="APIs"
                 href="https://docs.open-metadata.org/main-concepts/metadata-standard/apis"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                APIs
-              </Link>
+              />
             </li>
             <li className="mb-2">
-              <Link
+              <ParamLink
+                name="Install"
                 href="https://docs.open-metadata.org/latest/quick-start/local-docker-deployment"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                Install
-              </Link>
+              />
             </li>
             <li className="mb-2">
-              <Link
+              <ParamLink
+                name="Ingestion"
                 href="https://docs.open-metadata.org/connectors/ingestion"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                Ingestion
-              </Link>
+              />
             </li>
             <li>
-              <Link
+              <ParamLink
+                name="Roadmap"
                 href="https://docs.open-metadata.org/roadmap"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                Roadmap
-              </Link>
+              />
             </li>
           </ul>
         </div>
@@ -81,7 +76,7 @@ const FooterDev = () => {
           </div>
           <ul className="text-[14px] tracking-[-0.02em]">
             <li className="mb-1">
-              <Link
+              <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://slack.open-metadata.org/"
                 target="_blank"
@@ -127,10 +122,10 @@ const FooterDev = () => {
                   />
                 </svg>
                 Slack
-              </Link>
+              </ParamLink>
             </li>
             <li className="mb-1">
-              <Link
+              <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://github.com/open-metadata/openmetadata"
                 target="_blank"
@@ -176,10 +171,10 @@ const FooterDev = () => {
                   />
                 </svg>
                 GitHub
-              </Link>
+              </ParamLink>
             </li>
             <li className="mb-1">
-              <Link
+              <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://twitter.com/open_metadata"
                 target="_blank"
@@ -196,10 +191,10 @@ const FooterDev = () => {
                   />
                 </svg>{" "}
                 X (Formerly Twitter)
-              </Link>
+              </ParamLink>
             </li>
             <li className="mb-1">
-              <Link
+              <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://www.meetup.com/openmetadata-meetup-group/"
                 target="_blank"
@@ -221,10 +216,10 @@ const FooterDev = () => {
                   ></path>
                 </svg>{" "}
                 Meetup
-              </Link>
+              </ParamLink>
             </li>
             <li>
-              <Link
+              <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
                 href="https://www.youtube.com/@OpenMetadataChannel/videos"
                 target="_blank"
@@ -245,7 +240,7 @@ const FooterDev = () => {
                   />
                 </svg>{" "}
                 YouTube
-              </Link>
+              </ParamLink>
             </li>
           </ul>
         </div>
