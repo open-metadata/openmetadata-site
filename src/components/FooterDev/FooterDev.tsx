@@ -31,7 +31,7 @@ const FooterDev = () => {
             <li className="mb-2">
               <ParamLink
                 name="What is OpenMetadata?"
-                link="https://docs.open-metadata.org/"
+                href="https://docs.open-metadata.org/"
                 target="_blank"
                 className="hover:text-gray-500"
               />
@@ -39,7 +39,7 @@ const FooterDev = () => {
             <li className="mb-2">
               <ParamLink
                 name="APIs"
-                link="https://docs.open-metadata.org/main-concepts/metadata-standard/apis"
+                href="https://docs.open-metadata.org/main-concepts/metadata-standard/apis"
                 target="_blank"
                 className="hover:text-gray-500"
               />
@@ -47,7 +47,7 @@ const FooterDev = () => {
             <li className="mb-2">
               <ParamLink
                 name="Install"
-                link="https://docs.open-metadata.org/latest/quick-start/local-docker-deployment"
+                href="https://docs.open-metadata.org/latest/quick-start/local-docker-deployment"
                 target="_blank"
                 className="hover:text-gray-500"
               />
@@ -55,7 +55,7 @@ const FooterDev = () => {
             <li className="mb-2">
               <ParamLink
                 name="Ingestion"
-                link="https://docs.open-metadata.org/connectors/ingestion"
+                href="https://docs.open-metadata.org/connectors/ingestion"
                 target="_blank"
                 className="hover:text-gray-500"
               />
@@ -63,7 +63,7 @@ const FooterDev = () => {
             <li>
               <ParamLink
                 name="Roadmap"
-                link="https://docs.open-metadata.org/roadmap"
+                href="https://docs.open-metadata.org/roadmap"
                 target="_blank"
                 className="hover:text-gray-500"
               />
@@ -78,7 +78,7 @@ const FooterDev = () => {
             <li className="mb-1">
               <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
-                link="https://slack.open-metadata.org/"
+                href="https://slack.open-metadata.org/"
                 target="_blank"
               >
                 <svg
@@ -127,7 +127,7 @@ const FooterDev = () => {
             <li className="mb-1">
               <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
-                link="https://github.com/open-metadata/openmetadata"
+                href="https://github.com/open-metadata/openmetadata"
                 target="_blank"
               >
                 <svg
@@ -176,7 +176,7 @@ const FooterDev = () => {
             <li className="mb-1">
               <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
-                link="https://twitter.com/open_metadata"
+                href="https://twitter.com/open_metadata"
                 target="_blank"
               >
                 <svg
@@ -196,7 +196,7 @@ const FooterDev = () => {
             <li className="mb-1">
               <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
-                link="https://www.meetup.com/openmetadata-meetup-group/"
+                href="https://www.meetup.com/openmetadata-meetup-group/"
                 target="_blank"
               >
                 <svg
@@ -221,7 +221,7 @@ const FooterDev = () => {
             <li>
               <ParamLink
                 className="inline-flex items-center gap-x-1 hover:text-gray-500"
-                link="https://www.youtube.com/@OpenMetadataChannel/videos"
+                href="https://www.youtube.com/@OpenMetadataChannel/videos"
                 target="_blank"
               >
                 <svg

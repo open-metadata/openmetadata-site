@@ -31,7 +31,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
     >
       <div className="mx-auto max-w-[1550px] flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-[24px] 2xl:px-0">
         <div className="flex items-center justify-between px-5 py-[12px] lg:px-0 lg:py-[10px]">
-          <ParamLink className="text-primary" link="/">
+          <ParamLink className="text-primary" href="/">
             <OmdLogo />
           </ParamLink>
 
@@ -62,34 +62,34 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
           <ul className="font-medium ml-auto flex flex-col gap-[22px] items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-7 lg:text-[15px]">
             <li>
               <ParamLink
-                link="https://docs.open-metadata.org/quick-start"
+                href="https://docs.open-metadata.org/quick-start"
                 target="_blank"
                 name="Get Started"
               />
             </li>
             <li>
               <ParamLink
-                link="https://docs.open-metadata.org"
+                href="https://docs.open-metadata.org"
                 target="_blank"
                 name="Documentation"
               />
             </li>
             <li>
-              <ParamLink link="/community" name="Community" />
+              <ParamLink href="/community" name="Community" />
             </li>
             <li>
               <ParamLink
-                link="https://blog.open-metadata.org/"
+                href="https://blog.open-metadata.org/"
                 target="_blank"
                 name="Blog"
               />
             </li>
             <li>
-              <ParamLink link="/case-studies" name="Case Studies" />
+              <ParamLink href="/case-studies" name="Case Studies" />
             </li>
             <li className="mb-4 lg:mb-0">
               <ParamLink
-                link="https://github.com/open-metadata/OpenMetadata"
+                href="https://github.com/open-metadata/OpenMetadata"
                 target="_blank"
               >
                 <GitHubLogo />

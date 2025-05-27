@@ -72,7 +72,7 @@ const Testimonials = () => {
             {TESTIMONIALS_LIST.map((item, i) => (
               <div key={item.company}>
                 <ParamLink
-                  link={item.url}
+                  href={item.url}
                   target="_blank"
                   className="h-[100px]"
                 >

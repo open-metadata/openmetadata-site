@@ -37,7 +37,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           </p>
           <div className="relative z-[11] flex flex-col-reverse sm:flex-row justify-center gap-3 items-center mt-12">
             <ParamLink
-              link="https://slack.open-metadata.org/"
+              href="https://slack.open-metadata.org/"
               target="_blank"
               className="uppercase w-full flex justify-center items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:text-[#6540c8]"
             >

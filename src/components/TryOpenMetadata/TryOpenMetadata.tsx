@@ -43,7 +43,7 @@ const TryOpenMetadata = () => {
               </p>
               <ParamLink
                 name={item.linkText}
-                link={item.href}
+                href={item.href}
                 target="_blank"
                 className="mt-[28px] w-full block text-center uppercase bg-[#7147E8] border-2 border-[#7147E8] text-white font-bold py-3 rounded-md lg:text-[18px] hover:no-underline hover:bg-[#6541c9]"
               />

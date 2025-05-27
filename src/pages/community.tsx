@@ -104,7 +104,7 @@ export default function Community() {
                       <br />
                       apart from&nbsp;
                       <ParamLink
-                        link="https://github.com/open-metadata/OpenMetadata"
+                        href="https://github.com/open-metadata/OpenMetadata"
                         name="GitHub"
                         className="text-primary font-medium"
                         target="_blank"
@@ -124,7 +124,7 @@ export default function Community() {
                     <div className="flex flex-col sm:flex-row max-lg:mt-3">
                       <ParamLink
                         className="btn btn-lg btn-outline-primary btn-home-slack font-semibold"
-                        link="https://slack.open-metadata.org/"
+                        href="https://slack.open-metadata.org/"
                         target="_blank"
                       >
                         <Image
@@ -173,7 +173,7 @@ export default function Community() {
                   </p>
                   <ParamLink
                     className="btn btn-primary"
-                    link="https://www.meetup.com/openmetadata-meetup-group/"
+                    href="https://www.meetup.com/openmetadata-meetup-group/"
                     target="_blank"
                     name="Join OpenMetadata Meetup Group"
                   />
@@ -273,7 +273,7 @@ export default function Community() {
                     You can watch all of our previous meetings on&nbsp;
                     <ParamLink
                       className="text-primary font-medium"
-                      link="https://www.youtube.com/c/OpenMetadataChannel"
+                      href="https://www.youtube.com/c/OpenMetadataChannel"
                       target="_blank"
                       name="YouTube"
                     />

@@ -125,7 +125,7 @@ const IntegrationsDev = () => {
           {services.map((item) => (
             <div key={item.name} className="max-h-[110px]">
               <ParamLink
-                link={item.href ?? '#'}
+                href={item.href ?? '#'}
                 target="_blank"
               >
                 <div className="text-center flex flex-col items-center self-center">
@@ -154,7 +154,7 @@ const IntegrationsDev = () => {
             {mobileServices.map((item) => (
               <div key={item.name} className="max-h-[110px]">
                 <ParamLink
-                  link={item.href ?? '#'}
+                  href={item.href ?? '#'}
                   target="_blank"
                   className="text-center flex flex-col items-center"
                 >

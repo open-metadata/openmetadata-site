@@ -3,17 +3,17 @@ import Link from "next/link";
 
 interface ParamLinkProps {
   name?: string;
-  link: string;
+  href: string;
   target?: string;
   className?: string;
   children?: React.ReactNode;
 }
 
-const ParamLink = ({ name, link, target = "_self", className, children }: ParamLinkProps) => {
+const ParamLink = ({ name, href, target = "_self", className, children }: ParamLinkProps) => {
   const params = useQueryParams();
 
   return (
-    <Link href={`${link}?${params}`} prefetch={false} legacyBehavior>
+    <Link href={`${href}?${params}`} prefetch={false} legacyBehavior>
       <a
         target={target}
         rel="noopener noreferrer"

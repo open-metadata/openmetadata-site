@@ -97,7 +97,7 @@ const CaseStudiesPage = () => {
                   >
                     {customer.title}
                   </div>
-                  <ParamLink link={customer.url}>
+                  <ParamLink href={customer.url}>
                     <div className="mt-5 mb-2 rounded-[3px] font-medium tracking-[-0.02em] mx-2 border-2 border-[#7147E8] max-w-fit px-4 py-2 text-[#7147E8]">
                       {customer.buttonText}
                     </div>

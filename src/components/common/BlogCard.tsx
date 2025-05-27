@@ -18,7 +18,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
   return (
     <div className="bg-white mb-4 flex flex-col hover:shadow-lg cursor-pointer hover:-translate-y-1 transition ease-in-out">
       <ParamLink
-        link={blogLink}
+        href={blogLink}
         target="_blank"
         className="block relative h-48 rounded overflow-hidden"
       >
@@ -39,12 +39,12 @@ const BlogCard: React.FC<BlogCardProps> = ({
       <div className="flex justify-between items-center border-top px-5 py-3">
         <ParamLink
           name="Read more here"
-          link={blogLink}
+          href={blogLink}
           target="_blank"
           className="text-primary inline-flex items-center text-[14px] hover:no-underline"
         />
         <ParamLink
-          link={blogLink}
+          href={blogLink}
           target="_blank"
           className="text-primary inline-flex items-center"
         >

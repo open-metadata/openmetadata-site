@@ -83,7 +83,7 @@ const AboutOpenMetadata = () => {
           {ABOUT_OPENMETADATA.map((item) => (
             <div key={item.header} className="shadow-md rounded-sm">
               <ParamLink
-                link={item.href}
+                href={item.href}
                 target={item.isExternal ? "_blank" : "_self"}
               >
                 <div className="bg-gradient-to-tl from-[#0B3547] to-[#176B8F] flex justify-center items-center h-[180px] rounded-t-sm">

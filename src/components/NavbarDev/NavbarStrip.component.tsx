@@ -13,7 +13,7 @@ const NavbarStrip = () => {
           <span className="lg:relative">
             <ParamLink 
               name="Get Started" 
-              link="https://cloud.getcollate.io/signup" 
+              href="https://cloud.getcollate.io/signup" 
               target="_blank" 
               className="nav-strip-btn lg:leading-[31.2px] pl-2 text-[14px] md:text-[16px] lg:py-2 lg:px-4 hover:text-[#D3ECF7]"
             />
