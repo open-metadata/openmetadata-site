@@ -13,9 +13,8 @@ const ParamLink = ({ name, link, target = "_self", className, children }: ParamL
   const params = useQueryParams();
 
   const isExternal = /^https?:\/\//.test(link);
-  const hasQuery = link.includes("?");
-  const cleanParams = params.replace(/^\?/, "");
-  const href = params ? `${link}${hasQuery ? "&" : "?"}${cleanParams}` : link;
+  const searchString = new URLSearchParams(params).toString()
+const href = searchString ? `${link}?${searchString}` : link
 
   if (isExternal) {
     return (
