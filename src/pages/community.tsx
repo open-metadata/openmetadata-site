@@ -25,11 +25,11 @@ export default function Community() {
         />
         <meta
           name="description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the #1 open source metadata platform with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
         />
         <meta
           name="keywords"
-          content="best open-source data catalog community, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool"
+          content="best open-source data catalog community, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool, best metadata platform, open-source metadata platform, open source metadata"
         />
         <meta name="author" content="open-metadata" />
 
@@ -40,7 +40,7 @@ export default function Community() {
         />
         <meta
           property="og:description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the #1 open source metadata platform with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
         />
         <meta
           property="og:image"
@@ -59,7 +59,7 @@ export default function Community() {
         />
         <meta
           name="twitter:description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the #1 open source metadata platform with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
         />
         <meta
           name="twitter:image"
