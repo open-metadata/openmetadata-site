@@ -31,22 +31,22 @@ const DataCultureTy = () => {
         />
         <meta
           name="description"
-          content="OpenMetadata is the #1 open source data catalog tool. Empower innovation and foster collaboration with the all-in-one platform for data discovery, lineage, data quality, observability, governance, and more."
+          content="OpenMetadata is the #1 open source metadata platform. Empower innovation and foster collaboration with the all-in-one platform for data discovery, lineage, data quality, observability, governance, and more."
         />
         <meta
           name="keywords"
-          content="best open-source data catalog, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool"
+          content="best open-source data catalog, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool, best metadata platform, open-source metadata platform, open source metadata"
         />
         <meta name="author" content="open-metadata" />
 
         {/* Open Graph tags start  */}
         <meta
           property="og:title"
-          content="OpenMetadata: The Best Open Source Data Catalog Solution"
+          content="OpenMetadata: The Best Open Source Metadata Platform"
         />
         <meta
           property="og:description"
-          content="OpenMetadata is the #1 open source data catalog tool. Empower innovation and foster collaboration with the all-in-one platform for data discovery, lineage, data quality, observability, governance, and more."
+          content="OpenMetadata is the #1 open source metadata platform. Empower innovation and foster collaboration with the all-in-one platform for data discovery, lineage, data quality, observability, governance, and more."
         />
         <meta
           property="og:image"
