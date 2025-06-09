@@ -287,17 +287,17 @@ export default function Community() {
                     <div className="col">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="dSNynCcrOD8" />
-                          <p className="font-semibold mb-0 mt-2">March 2025</p>
+                          <YoutubeEmbed videoId="NxqCn-3XkVc" />
+                          <p className="font-semibold mb-0 mt-2">May 2025</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="EgPed_N5fQk" />
+                          <YoutubeEmbed videoId="AuYBaXC8-M4" />
                           <p className="font-semibold mb-0 mt-2">
-                            Spotlight, March 2025
+                            MCP Introduction, May 2025
                           </p>
                         </div>
                       </div>
