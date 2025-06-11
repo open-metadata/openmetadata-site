@@ -62,7 +62,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
           <ul className="font-medium ml-auto flex flex-col gap-[22px] items-center text-[#272F4D] sm:text-lg lg:flex-row lg:mr-7 lg:text-[15px]">
             <li>
               <ParamLink
-                href="https://docs.open-metadata.org/quick-start"
+                href="https://docs.open-metadata.org/latest/quick-start"
                 target="_blank"
                 name="Get Started"
               />

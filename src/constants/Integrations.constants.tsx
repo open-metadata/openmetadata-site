@@ -74,7 +74,7 @@ export const INTEGRATION_SERVICES = [
         name: 'Delta Lake',
       },
       {
-        href: 'https://docs.open-metadata.org/v1.2.x/latest/connectors/database/doris',
+        href: 'https://docs.open-metadata.org/latest/connectors/database/doris',
         src: '/assets/services/service-icon-doris.webp',
         alt: 'service-doris',
         name: 'Doris',
