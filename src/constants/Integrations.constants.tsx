@@ -3,7 +3,7 @@ export const INTEGRATION_SERVICES = [
     connector: 'API',
     services: [
       {
-        href: 'https://docs.open-metadata.org/latest/latest/connectors/api/rest',
+        href: 'https://docs.open-metadata.org/latest/connectors/api/rest',
         src: '/assets/services/openApi.png',
         alt: 'service-openai',
         name: 'OpenAPI',
