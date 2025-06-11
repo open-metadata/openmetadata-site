@@ -39,7 +39,7 @@ const FooterDev = () => {
             <li className="mb-2">
               <ParamLink
                 name="APIs"
-                href="https://docs.open-metadata.org/main-concepts/metadata-standard/apis"
+                href="https://docs.open-metadata.org/latest/main-concepts/metadata-standard/apis"
                 target="_blank"
                 className="hover:text-gray-500"
               />
@@ -55,7 +55,7 @@ const FooterDev = () => {
             <li className="mb-2">
               <ParamLink
                 name="Ingestion"
-                href="https://docs.open-metadata.org/connectors/ingestion"
+                href="https://docs.open-metadata.org/latest/connectors/ingestion"
                 target="_blank"
                 className="hover:text-gray-500"
               />
@@ -63,7 +63,7 @@ const FooterDev = () => {
             <li>
               <ParamLink
                 name="Roadmap"
-                href="https://docs.open-metadata.org/roadmap"
+                href="https://docs.open-metadata.org/latest/roadmap"
                 target="_blank"
                 className="hover:text-gray-500"
               />
