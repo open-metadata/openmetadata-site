@@ -10,6 +10,14 @@ import Services from "@/components/Service/Service";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
 
+export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
+  return {
+    props: {
+      link: resolvedUrl,
+    },
+  };
+}
+
 const Development = () => {
   const handleTryOpenMetadataClick = () => {
     const element = document.querySelector("#try-openmetadata");

@@ -62,7 +62,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
       <meta charSet="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <link rel="canonical" href="https://www.getcollate.io/" />
+        <link rel="canonical" href={`https://open-metadata.org${pageProps.link}`} />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -92,10 +92,9 @@ export default function App({ Component, pageProps }: AppProps) {
           content="https://open-metadata.org/assets/favicon.png"
         />
         <meta property="og:type" content="metadata tool" />
-        <meta property="og:url" content="https://open-metadata.org" />
-        {/* {/* Open Graph tags end  */}
+        {/* Open Graph tags end */}
 
-        {/* {/* Twitter Card start  */}
+        {/* Twitter Card start */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="https://open-metadata.org" />
         <meta
@@ -110,8 +109,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="twitter:image"
           content="https://open-metadata.org/assets/favicon.png"
         />
-
-        {/* {/* Twitter Card end  */}
+        {/* Twitter Card end */}
 
         <title>OpenMetadata: Join the #1 Open Source Data Community</title>
         {/* eslint-disable-next-line @next/next/next-script-for-ga */}

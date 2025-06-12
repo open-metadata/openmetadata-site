@@ -6,6 +6,14 @@ import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
+export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
+  return {
+    props: {
+      link: resolvedUrl,
+    },
+  };
+}
+
 export default function Community() {
   const router = useRouter();
 
