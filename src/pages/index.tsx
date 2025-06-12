@@ -9,13 +9,12 @@ import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
 import Services from "@/components/Service/Service";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
-import Head from "next/head";
 
 const Development = () => {
   const handleTryOpenMetadataClick = () => {
     const element = document.querySelector("#try-openmetadata");
-    element?.scrollIntoView({ behavior: "smooth", block: "end" })
-  }
+    element?.scrollIntoView({ behavior: "smooth", block: "end" });
+  };
 
   return (
       <div>

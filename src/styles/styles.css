@@ -185,6 +185,21 @@ html {
   background: linear-gradient(118.15deg, #F2F7F9 32.05%, #FBF4F4 81.44%);
 }
 
+.case-study-testimonial {
+  background: linear-gradient(180deg, #F1EDFD 0%, rgba(241, 237, 253, 0.3) 100%);
+}
+
+.slider-container {
+  background-color: white;
+}
+
+.slick-slider .slick-track {
+  display: flex;
+  gap: 16px;
+  background-color: white;
+  padding: 5px 0px;
+}
+
 .lp-card:hover .header-text {
   text-decoration: underline;
 }
@@ -299,6 +314,14 @@ html {
 .hubspotForm .hs-error-msg {
   color: #ef4444; 
   font-size: 0.875rem;
+}
+
+.card-shadow {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+}
+
+.case-study-page {
+  background: linear-gradient(0deg, #F1EDFD 0%, #FFFFFF 100%);
 }
 
 hr {

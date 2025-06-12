@@ -21,7 +21,7 @@ export const SPEAKERS = [
     },
 ]
 
-export const TY_PAGE = [
+export const TY_PAGE_CARREFOUR = [
     {
         image: '/assets/landingPage/mango-lp.png',
         header: "Mango's data transformation with Collate",
@@ -49,5 +49,71 @@ export const TY_PAGE = [
         description:
             'Collate is excited to announce the launch of our free tier...',
         href: 'https://cloud.getcollate.io/signup/',
+    },
+]
+
+export const TY_PAGE_DATA_CULTURE = [
+    {
+        image: '/assets/landingPage/data-quality.png',
+        header: 'AI-Powered Data Quality: Observability at Scale',
+        description:
+            "Learn how to proactively monitor your data and build data trust ...",
+        href: 'https://www.getcollate.io/resources/webinar/data-quality',
+    },
+    {
+        image: '/assets/landingPage/mango-lp.png',
+        header: "Mango's data transformation with Collate",
+        description:
+            'Centralized discovery, observability, & governance for 800+ users',
+        href: 'https://www.getcollate.io/resources/ebook/mango-case-study',
+    },
+    {
+        image: '/assets/landingPage/governance.png',
+        header: 'Building Scalable Governance with Automation & AI',
+        description:
+            'Watch our webinar on automated data governance for modern data...',
+        href: 'https://www.getcollate.io/resources/webinar/data-governance',
+    },
+    {
+        image: '/assets/landingPage/free-managed.png',
+        header: 'Announcing Free Managed OpenMetadata: Unify Data...',
+        description:
+            'Collate is excited to announce the launch of our free tier...',
+        href: 'https://cloud.getcollate.io/signup/',
+    },
+]
+
+export const TY_PAGE_GORGIAS = [
+    {
+        image: '/assets/landingPage/data-quality.png',
+        header: 'AI-Powered Data Quality: Observability at Scale',
+        description:
+            "Learn how to proactively monitor your data and build data trust ...",
+        href: 'https://www.getcollate.io/resources/webinar/data-quality',
+        isExternal: true,
+    },
+    {
+        image: '/assets/landingPage/carrefour.jpg',
+        header: "Carrefour Brasil: Community Spotlight",
+        description:
+            'How OpenMetadata Transforms Data Governance, Quality, and Observability',
+        href: '/resources/webinar/carrefour-brasil-spotlight/ty-video',
+        isExternal: false,
+    },
+    {
+        image: '/assets/landingPage/governance.png',
+        header: 'Building Scalable Governance with Automation & AI',
+        description:
+            'Watch our webinar on automated data governance for modern data...',
+        href: 'https://www.getcollate.io/resources/webinar/data-governance',
+        isExternal: true,
+    },
+    {
+        image: '/assets/landingPage/free-managed.png',
+        header: 'Announcing Free Managed OpenMetadata: Unify Data...',
+        description:
+            'Collate is excited to announce the launch of our free tier...',
+        href: 'https://cloud.getcollate.io/signup/',
+        isExternal: true,
     },
 ]

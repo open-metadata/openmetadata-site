@@ -1,17 +1,16 @@
-import FooterDev from '@/components/FooterDev/FooterDev';
-import NavbarDev from '@/components/NavbarDev/NavbarDev.component';
-import NavbarStrip from '@/components/NavbarDev/NavbarStrip.component';
-import YoutubeEmbed from '@/components/common/YouTubeEmbed';
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
+import FooterDev from "@/components/FooterDev/FooterDev";
+import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
+import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
+import ParamLink from "@/components/ParamLink";
+import YoutubeEmbed from "@/components/common/YouTubeEmbed";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function Community() {
   const router = useRouter();
 
   const handleTryOpenMetadataClick = () => {
-    router.push('/#try-openmetadata');
+    router.push("/#try-openmetadata");
   };
 
   return (
@@ -48,13 +47,12 @@ export default function Community() {
                       That's where the OpenMetadata enthusiasts are;
                       <br />
                       apart from&nbsp;
-                      <Link
-                        className="text-primary font-medium"
+                      <ParamLink
                         href="https://github.com/open-metadata/OpenMetadata"
+                        name="GitHub"
+                        className="text-primary font-medium"
                         target="_blank"
-                      >
-                        GitHub
-                      </Link>
+                      />
                       , of course.
                     </p>
                     <p>
@@ -68,7 +66,7 @@ export default function Community() {
                       needs!
                     </p>
                     <div className="flex flex-col sm:flex-row max-lg:mt-3">
-                      <Link
+                      <ParamLink
                         className="btn btn-lg btn-outline-primary btn-home-slack font-semibold"
                         href="https://slack.open-metadata.org/"
                         target="_blank"
@@ -81,7 +79,7 @@ export default function Community() {
                           src="/assets/icon-slack.svg"
                         />
                         Join our Slack
-                      </Link>
+                      </ParamLink>
                     </div>
                   </div>
                 </div>
@@ -107,8 +105,7 @@ export default function Community() {
                     Monthly Meetups
                   </h2>
                   <p className="text-[18px]">
-                    Join us&nbsp;
-                    <strong>every month</strong> over Zoom to learn about
+                    Join us&nbsp;<strong>every month</strong> over Zoom to learn about
                     OpenMetadata's progress. Catch up with some exciting news on
                     the upcoming features. Benefit from the informative
                     webinars, watch live demos, ask questions, and share your
@@ -117,13 +114,12 @@ export default function Community() {
                   <p className="text-[18px]">
                     Stay tuned for the latest in Metadata management!
                   </p>
-                  <Link
+                  <ParamLink
                     className="btn btn-primary"
                     href="https://www.meetup.com/openmetadata-meetup-group/"
                     target="_blank"
-                  >
-                    Join OpenMetadata Meetup Group
-                  </Link>
+                    name="Join OpenMetadata Meetup Group"
+                  />
                 </div>
                 <div className="col-lg-6">
                   <Image
@@ -218,13 +214,12 @@ export default function Community() {
                   </h2>
                   <p>
                     You can watch all of our previous meetings on&nbsp;
-                    <Link
+                    <ParamLink
                       className="text-primary font-medium"
                       href="https://www.youtube.com/c/OpenMetadataChannel"
                       target="_blank"
-                    >
-                      YouTube
-                    </Link>
+                      name="YouTube"
+                    />
                     .
                   </p>
                   <p className="mb-5">
@@ -235,19 +230,17 @@ export default function Community() {
                     <div className="col">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="Gbyo_5Tq_lo" />
-                          <p className="font-semibold mb-0 mt-2">
-                            October 2024
-                          </p>
+                          <YoutubeEmbed videoId="dSNynCcrOD8" />
+                          <p className="font-semibold mb-0 mt-2">March 2025</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="cc9ID6jh5NM" />
+                          <YoutubeEmbed videoId="EgPed_N5fQk" />
                           <p className="font-semibold mb-0 mt-2">
-                            Spotlight, September 2024
+                            Spotlight, March 2025
                           </p>
                         </div>
                       </div>

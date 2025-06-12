@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import ParamLink from "../ParamLink";
 
 interface BlogCardProps {
   blogLink: string;
@@ -17,10 +17,10 @@ const BlogCard: React.FC<BlogCardProps> = ({
 }) => {
   return (
     <div className="bg-white mb-4 flex flex-col hover:shadow-lg cursor-pointer hover:-translate-y-1 transition ease-in-out">
-      <Link
-        className="block relative h-48 rounded overflow-hidden"
+      <ParamLink
         href={blogLink}
         target="_blank"
+        className="block relative h-48 rounded overflow-hidden"
       >
         <Image
           alt={title}
@@ -29,7 +29,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           className="object-cover object-center w-full h-full block"
           src={imageLink}
         />
-      </Link>
+      </ParamLink>
       <div className="flex flex-col flex-grow p-4">
         <h3 className="text-gray-900 text-lg font-medium title-font mb-2">
           {title}
@@ -37,17 +37,13 @@ const BlogCard: React.FC<BlogCardProps> = ({
         <p className="text-base flex-grow">{description}</p>
       </div>
       <div className="flex justify-between items-center border-top px-5 py-3">
-        <Link
-          rel="noopener noreferrer"
-          aria-label="Read More here"
-          className="text-primary inline-flex items-center text-[14px] hover:no-underline"
+        <ParamLink
+          name="Read more here"
           href={blogLink}
           target="_blank"
-        >
-          Read more here
-        </Link>
-        <Link
-          aria-label="Read More here"
+          className="text-primary inline-flex items-center text-[14px] hover:no-underline"
+        />
+        <ParamLink
           href={blogLink}
           target="_blank"
           className="text-primary inline-flex items-center"
@@ -63,7 +59,7 @@ const BlogCard: React.FC<BlogCardProps> = ({
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </Link>
+        </ParamLink>
       </div>
     </div>
   );

@@ -1,65 +1,97 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component"
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component"
-import { TY_PAGE } from "@/constants/LandingPage.constants";
-import Image from "next/image";
+import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
+import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
+import TyHeader from "@/components/TyVideo/Header";
+import ResourceGallery from "@/components/TyVideo/ResourceGallery";
 import { useRouter } from "next/router";
+import { TY_PAGE_CARREFOUR } from "@/constants/LandingPage.constants";
+import Head from "next/head";
 
 const CarrefourTy = () => {
-    const router = useRouter();
-    
-      const handleTryOpenMetadataClick = () => {
-        router.push('/#try-openmetadata');
-      };
-      
-    return (
-        <div>
-        <div className="mx-auto fixed top-0 w-full z-[1030]">
-          <NavbarDev onClick={handleTryOpenMetadataClick} />
-          <NavbarStrip />
-        </div>
-        <div className="landing-page mt-20 md:mt-24 lg:mt-32">
-            <div className="max-w-[1440px] mx-auto py-28 md:py-20 px-4 md:px-10 xl:px-16">
-                <div className="grid gap-16 lg:grid-cols-2 xl:grid-cols-3">
-                    <div className="text-center lg:text-left xl:col-span-2">
-                        <p className="uppercase text-[#7147E8] tracking-[0.04em] text-lg font-medium md:font-bold">on demand webinar video</p>
-                        <h1 className="text-[#292929] tracking-[-0.02em] font-medium mt-4 mb-3 text-5xl md:text-6xl xl:max-w-[85%]">Carrefour Brasil Community Spotlight:</h1>
-                        <p className="text-[#292929] tracking-[-0.02em] md:text-lg">How OpenMetadata Transforms Data Governance, Quality, and Observability into Actionable Insights.</p>
-                        <div className="mt-12 relative pb-[56.25%] h-0">
-                            <iframe
-                                className="absolute top-0 left-0 w-full h-full"
-                                src="https://www.youtube.com/embed/Un5Sf2hCCrw?si=D54dnczT7mkmBNwu"
-                                title="YouTube video player"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                    </div>
-                    <div className="mt-12">
-                        <div className="text-[#292929] tracking-[-0.02em] text-2xl">You might also be interested in...</div>
-                        <div className="mt-4 flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-col gap-4">
-                            {TY_PAGE.map((item, i) => (
-                                <div key={i} className="lp-card shadow-card rounded bg-white">
-                                    <a href={item.href} target='_blank'>
-                                        <div className="grid grid-cols-5">
-                                            <div className="landing-page-card relative rounded-l flex justify-center items-center col-span-2">
-                                                <Image src={item.image} alt={item.header} fill className="p-3 object-contain" />
-                                            </div>
-                                            <div className="py-3 px-4 col-span-3">
-                                                <div className="header-text text-[#474E71] text-sm sm:text-base font-medium mb-1">{item.header}</div>
-                                                <div className="text-[#2E3457] text-xs sm:text-sm">{item.description}</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <FooterDev />
-      </div>
-    )
-}
+  const router = useRouter();
 
-export default CarrefourTy
+  const handleTryOpenMetadataClick = () => {
+    router.push("/#try-openmetadata");
+  };
+
+  return (
+    <div>
+      <Head>
+        <link
+          rel="preload"
+          href="/assets/landingPage/carrefour.jpg"
+          as="image"
+        />
+        <meta charSet="utf-8" />
+        <link rel="canonical" href="https://open-metadata.org/" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          name="description"
+          content="OpenMetadata is the #1 open source metadata platform. Empower innovation and foster collaboration with the all-in-one platform for data discovery, lineage, data quality, observability, governance, and more."
+        />
+        <meta
+          name="keywords"
+          content="best open-source data catalog, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool, best metadata platform, open-source metadata platform, open source metadata"
+        />
+        <meta name="author" content="open-metadata" />
+
+        {/* Open Graph tags start  */}
+        <meta
+          property="og:title"
+          content="OpenMetadata: The Best Open Source Data Catalog Solution"
+        />
+        <meta
+          property="og:description"
+          content="OpenMetadata is the #1 open source metadata platform. Empower innovation and foster collaboration with the all-in-one platform for data discovery, lineage, data quality, observability, governance, and more."
+        />
+        <meta
+          property="og:image"
+          content="https://open-metadata.org/assets/favicon.png"
+        />
+        <meta property="og:type" content="metadata tool" />
+        <meta property="og:url" content="https://open-metadata.org" />
+        {/* Open Graph tags end  */}
+
+        {/* Twitter Card start  */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="https://open-metadata.org" />
+        <meta
+          name="twitter:title"
+          content="OpenMetadata: The Best Open Source Data Catalog Solution"
+        />
+        <meta
+          name="twitter:description"
+          content="An end-to-end metadata management solution that includes data discovery, governance, data quality, observability, and people collaboration."
+        />
+        <meta
+          name="twitter:image"
+          content="https://open-metadata.org/assets/favicon.png"
+        />
+        <title>OpenMetadata: Join the #1 Open Source Data Community</title>
+      </Head>
+      <div className="mx-auto fixed top-0 w-full z-[1030]">
+        <NavbarDev onClick={handleTryOpenMetadataClick} />
+        <NavbarStrip />
+      </div>
+      <div className="landing-page mt-20 md:mt-24 lg:mt-32">
+        <div className="max-w-[1440px] mx-auto py-28 md:py-20 px-4 md:px-10 xl:px-16">
+          <div className="grid gap-16 lg:grid-cols-2 xl:grid-cols-3">
+            <TyHeader
+              header="Carrefour Brasil Community Spotlight:"
+              description="How OpenMetadata Transforms Data Governance, Quality, and Observability into Actionable Insights."
+              videoSrc="https://www.youtube.com/embed/Un5Sf2hCCrw?si=D54dnczT7mkmBNwu"
+            />
+            <ResourceGallery data={TY_PAGE_CARREFOUR} />
+          </div>
+        </div>
+      </div>
+      <FooterDev />
+    </div>
+  );
+};
+
+export default CarrefourTy;
