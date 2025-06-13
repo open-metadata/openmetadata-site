@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { OmdFooterLogo } from "../Icons/OmdFooterLogo";
 import { SOCIAL_LINKS } from "@/constants/Footer.constants";
+import ParamLink from "../ParamLink";
 
 const FooterDev = () => {
   return (
@@ -30,40 +30,36 @@ const FooterDev = () => {
           </div>
           <ul className="tracking-[-0.02em] text-[14px]">
             <li className="mb-2">
-              <Link
+              <ParamLink
+                name="What is OpenMetadata?"
                 href="https://docs.open-metadata.org/"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                What is OpenMetadata?
-              </Link>
+              />
             </li>
             <li className="mb-2">
-              <Link
-                href="https://docs.open-metadata.org/main-concepts/metadata-standard/apis"
+              <ParamLink
+                name="APIs"
+                href="https://docs.open-metadata.org/latest/main-concepts/metadata-standard/apis"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                APIs
-              </Link>
+              />
             </li>
             <li className="mb-2">
-              <Link
+              <ParamLink
+                name="Install"
                 href="https://docs.open-metadata.org/latest/quick-start/local-docker-deployment"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                Install
-              </Link>
+              />
             </li>
             <li className="mb-2">
-              <Link
-                href="https://docs.open-metadata.org/connectors/ingestion"
+              <ParamLink
+                name="Ingestion"
+                href="https://docs.open-metadata.org/latest/connectors/ingestion"
                 target="_blank"
                 className="hover:text-gray-500"
-              >
-                Ingestion
-              </Link>
+              />
             </li>
           </ul>
         </div>
@@ -74,7 +70,7 @@ const FooterDev = () => {
           <ul className="relative flex gap-2 items-center">
             {SOCIAL_LINKS.map(item => (
               <li key={item.name} className={`relative self-center ${item.className ?? 'w-[28px] h-[30px]'} mb-2`}>
-                <Link href={item.url} target="_blank">
+                <ParamLink href={item.url} target="_blank">
                   <Image 
                     src={item.icon} 
                     alt={item.name} 
@@ -85,7 +81,7 @@ const FooterDev = () => {
                       objectFit: 'contain',
                     }} 
                   />
-                </Link>
+                </ParamLink>
               </li>
             ))}
           </ul>

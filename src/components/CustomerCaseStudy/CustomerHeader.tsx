@@ -1,4 +1,3 @@
-import { CARREFOUR_CUSTOMER_HIGHLIGHTS } from "@/constants/CarrefourCustomer.constants";
 import Image from "next/image";
 
 interface CustomerHeaderProps {
