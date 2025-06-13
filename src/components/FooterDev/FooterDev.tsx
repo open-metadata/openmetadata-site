@@ -76,7 +76,7 @@ const FooterDev = () => {
                     alt={item.name} 
                     loading="eager"
                     fill
-                    sizes="14px"
+                    sizes="24px"
                     style={{
                       objectFit: 'contain',
                     }} 
