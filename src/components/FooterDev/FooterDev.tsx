@@ -69,7 +69,7 @@ const FooterDev = () => {
           </div>
           <ul className="relative flex gap-2 items-center">
             {SOCIAL_LINKS.map(item => (
-              <li key={item.name} className={`relative self-center ${item.className ?? 'w-[28px] h-[30px]'} mb-2`}>
+              <li key={item.name} className={`relative self-center ${item.className} mb-2`}>
                 <ParamLink href={item.url} target="_blank">
                   <Image 
                     src={item.icon} 
