@@ -13,6 +13,14 @@ import {
 import Head from "next/head";
 import { useRouter } from "next/router";
 
+export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
+  return {
+    props: {
+      link: resolvedUrl,
+    },
+  };
+}
+
 const GorgiasCaseStudyPage = () => {
   const router = useRouter();
 

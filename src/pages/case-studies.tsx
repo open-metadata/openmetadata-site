@@ -11,6 +11,14 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
+export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
+  return {
+    props: {
+      link: resolvedUrl,
+    },
+  };
+}
+
 const CaseStudiesPage = () => {
   const router = useRouter();
   const [activeIndustry, setActiveIndustry] = useState<string>("All");
