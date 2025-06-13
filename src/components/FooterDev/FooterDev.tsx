@@ -65,29 +65,20 @@ const FooterDev = () => {
                 Ingestion
               </Link>
             </li>
-            <li>
-              <Link
-                href="https://docs.open-metadata.org/roadmap"
-                target="_blank"
-                className="hover:text-gray-500"
-              >
-                Roadmap
-              </Link>
-            </li>
           </ul>
         </div>
         <div>
           <div className="text-uppercase text-[16px] font-medium tracking-[4px] mb-4">
             Community
           </div>
-          <ul className="relative flex gap-2">
+          <ul className="relative flex gap-2 items-center">
             {SOCIAL_LINKS.map(item => (
-              <li key={item.name} className="relative w-[24px] h-[28px] mb-2">
+              <li key={item.name} className={`relative self-center ${item.className ?? 'w-[28px] h-[30px]'} mb-2`}>
                 <Link href={item.url} target="_blank">
                   <Image 
                     src={item.icon} 
                     alt={item.name} 
-                    loading="lazy"
+                    loading="eager"
                     fill
                     sizes="14px"
                     style={{

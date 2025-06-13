@@ -18,10 +18,12 @@ export const SOCIAL_LINKS = [
         name: "Meetup",
         url: "https://www.meetup.com/openmetadata-meetup-group/",
         icon: "/assets/logo/meetup.svg",
+        className: "w-[30px] h-[34px]",
     },
     {
         name: "YouTube",
         url: "https://www.youtube.com/@OpenMetadataChannel/videos",
         icon: "/assets/logo/youtube.svg",
+        className: "w-[30px] h-[34px]",
     },  
 ]
