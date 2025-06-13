@@ -69,7 +69,7 @@ const FooterDev = () => {
           </div>
           <ul className="relative flex gap-2 items-center">
             {SOCIAL_LINKS.map(item => (
-              <li key={item.name} className={`relative self-center ${item.className} mb-2`}>
+              <li key={item.name} className={`relative self-center ${item.className} max-w-[34px] max-h-[34px] mb-2`}>
                 <ParamLink href={item.url} target="_blank">
                   <Image 
                     src={item.icon} 
@@ -77,9 +77,7 @@ const FooterDev = () => {
                     loading="eager"
                     fill
                     sizes="24px"
-                    style={{
-                      objectFit: 'contain',
-                    }} 
+                    className="object-contain"
                   />
                 </ParamLink>
               </li>
