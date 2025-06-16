@@ -9,7 +9,7 @@ import {
 } from "@/constants/CustomerGallery.constants";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -31,6 +31,7 @@ const CaseStudiesPage = () => {
   };
 
   const handleIndustryFilter = (industry: string) => {
+    setInputValue("");
     setActiveIndustry(industry);
     if (industry === "All") {
       setCustomers(CUSTOMER_GALLERY);
@@ -40,6 +41,7 @@ const CaseStudiesPage = () => {
       );
       setCustomers(filteredCustomers);
     }
+    setIsDropdownOpen(false);
   };
 
   const handleInputChange = (value: string) => {
@@ -52,6 +54,16 @@ const CaseStudiesPage = () => {
     );
     setCustomers(filteredCustomers);
   };
+
+  useEffect(() => {
+    const existingScript = document.querySelector('script[src*="hsforms.net"]');
+    if (!existingScript) {
+      const script = document.createElement("script");
+      script.src = "https://js.hsforms.net/forms/embed/21369141.js";
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+  }, []);
 
   return (
     <div>
@@ -180,31 +192,37 @@ const CaseStudiesPage = () => {
             </div>
           </div>
           <div className="mt-12">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {customers.map((customer) => (
-                <div
-                  key={customer.company}
-                  className="bg-white rounded-[10px] px-4 py-5 card-shadow"
-                >
-                  <div className="min-h-[100px]">
-                    <Image
-                      className="mb-8"
-                      width={customer.imgSize.width}
-                      height={customer.imgSize.height}
-                      src={customer.logo}
-                      alt={customer.company}
-                      priority
-                    />
+            {customers.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {customers.map((customer) => (
+                  <div
+                    key={customer.company}
+                    className="bg-white rounded-[10px] px-4 py-5 card-shadow"
+                  >
+                    <div className="min-h-[100px]">
+                      <Image
+                        className="mb-8"
+                        width={customer.imgSize.width}
+                        height={customer.imgSize.height}
+                        src={customer.logo}
+                        alt={customer.company}
+                        priority
+                      />
+                    </div>
+                    <div className="tracking-[-0.02em] sm:text-lg text-black min-h-[250px]">
+                      "{customer.testimonial}"
+                    </div>
+                    <div className="text-black mt-4">
+                      - {customer.customerName}, {customer.customerDesignation}
+                    </div>
                   </div>
-                  <div className="tracking-[-0.02em] sm:text-lg text-black min-h-[250px]">
-                    "{customer.testimonial}"
-                  </div>
-                  <div className="text-black mt-4">
-                    - {customer.customerName}, {customer.customerDesignation}
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center text-gray-700 text-2xl mt-8">
+                No case studies found.
+              </div>
+            )}
           </div>
         </div>
         <div className="bg-[#DCECF8]">
@@ -213,10 +231,6 @@ const CaseStudiesPage = () => {
               Stay up to date on company updates, product announcements, and
               other important news
             </div>
-            <script
-              src="https://js.hsforms.net/forms/embed/21369141.js"
-              defer
-            ></script>
             <div
               className="hs-form-frame"
               data-region="na1"
