@@ -33,7 +33,7 @@ export const HEADER_CUSTOMERS = [
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/freenow-bg.svg`,
         logo: `${HEADER_IMAGE_ROUTE}/freenow-logo.svg`,
-        title: '7 business domains, managedwith 30+ analytics process per domain',
+        title: '7 business domains, managed with 30+ analytics process per domain',
         buttonText: 'Read More',
         url: 'https://medium.com/breaking-data-silos-lineage-for-cross-domain/data-management-at-freenow-the-lineage-and-announcements-approach-177f387a9180',
     },
