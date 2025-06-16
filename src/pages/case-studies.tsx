@@ -1,4 +1,5 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
+import HubspotForm from "@/components/HubspotForm";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
 import ParamLink from "@/components/ParamLink";
@@ -9,7 +10,7 @@ import {
 } from "@/constants/CustomerGallery.constants";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -54,16 +55,6 @@ const CaseStudiesPage = () => {
     );
     setCustomers(filteredCustomers);
   };
-
-  useEffect(() => {
-    const existingScript = document.querySelector('script[src*="hsforms.net"]');
-    if (!existingScript) {
-      const script = document.createElement("script");
-      script.src = "https://js.hsforms.net/forms/embed/21369141.js";
-      script.defer = true;
-      document.body.appendChild(script);
-    }
-  }, []);
 
   return (
     <div>
@@ -232,12 +223,7 @@ const CaseStudiesPage = () => {
               Stay up to date on company updates, product announcements, and
               other important news
             </div>
-            <div
-              className="hs-form-frame"
-              data-region="na1"
-              data-form-id="160a8eb9-911f-4d26-abe4-2e4821755a5a"
-              data-portal-id="21369141"
-            ></div>
+            <HubspotForm id='hs-form-frame' formId='160a8eb9-911f-4d26-abe4-2e4821755a5a' />
           </div>
         </div>
       </div>
