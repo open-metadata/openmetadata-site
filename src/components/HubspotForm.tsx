@@ -1,6 +1,6 @@
 import { useEffect } from "react"; 
 
-const HubspotForm = ({ id }: { id: string }) => {
+const HubspotForm = ({ id, formId }: { id: string, formId: string }) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "//js.hsforms.net/forms/embed/v2.js";
@@ -9,7 +9,7 @@ const HubspotForm = ({ id }: { id: string }) => {
         if (typeof window !== "undefined" && "hbspt" in window) {
             (window as any).hbspt.forms.create({
               portalId: "21369141",
-              formId: "e4594b9d-72ed-4e25-845d-86aabdcc7898",
+              formId,
               target: `#${id}`,
             });
         }
