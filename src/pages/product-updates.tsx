@@ -52,6 +52,7 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
         <meta property="og:title" content="Product Updates | OpenMetadata" />
         <meta property="og:description" content="Stay updated with the latest features, improvements, and changes in OpenMetadata" />
         <link rel="canonical" href="https://open-metadata.org/product-updates" />
+        <link rel="alternate" type="application/rss+xml" title="OpenMetadata Product Updates RSS" href="/api/product-updates/rss.xml" />
         <style>{`
           .custom-scrollbar::-webkit-scrollbar {
             width: 6px;
@@ -127,9 +128,22 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
         <div className="max-w-[1440px] mx-auto px-4 md:px-10 xl:px-20 py-8 md:py-12">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-medium tracking-[-0.02em] text-[#292929]">
-              Product Updates
-            </h1>
+            <div className="flex items-center justify-center gap-3">
+              <h1 className="text-4xl md:text-5xl font-medium tracking-[-0.02em] text-[#292929]">
+                Product Updates
+              </h1>
+              <a 
+                href="/api/product-updates/rss.xml" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F1EDFD] hover:bg-[#E2DAFA] transition-colors"
+                title="Subscribe to RSS Feed"
+              >
+                <svg className="w-5 h-5 md:w-6 md:h-6 text-[#7147E8]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M3.429 5.1v2.4c7.248 0 13.114 5.886 13.114 13.142h2.4C18.943 12.066 12 5.1 3.429 5.1zm0 4.8v2.4a4.351 4.351 0 014.343 4.342h2.4c0-3.72-3.023-6.742-6.743-6.742zM6.171 16.485a1.714 1.714 0 11-3.428 0 1.714 1.714 0 013.428 0z"/>
+                </svg>
+              </a>
+            </div>
             <p className="text-lg md:text-xl text-[#767676] mt-4 max-w-3xl mx-auto">
               Stay updated with the latest features, improvements, and changes in OpenMetadata
             </p>
