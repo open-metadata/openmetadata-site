@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import { useRouter } from 'next/router';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -37,6 +38,7 @@ interface ProductUpdatesProps {
 }
 
 const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
+  const router = useRouter();
   const [selectedVersion, setSelectedVersion] = useState(versions[0].version);
   const [activeTab, setActiveTab] = useState<'features' | 'breaking' | 'changelog' | null>(null);
 
@@ -47,6 +49,40 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
   const hasFeatures = selectedData?.hasFeatures || false;
   const hasBreaking = selectedData?.hasBreaking || false;
   const hasChangelog = selectedData?.hasChangelog || false;
+
+  // Handle URL hash on initial load and changes
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1); // Remove #
+      if (!hash) return;
+
+      // Parse hash format: v1.5.5 or v1.5.5-breaking
+      const parts = hash.split('-');
+      const version = parts[0];
+      const section = parts[1];
+
+      // Check if version exists
+      if (versions.some(v => v.version === version)) {
+        setSelectedVersion(version);
+        
+        // Set tab based on section if specified
+        if (section === 'features' && versionData[version]?.hasFeatures) {
+          setActiveTab('features');
+        } else if (section === 'breaking' && versionData[version]?.hasBreaking) {
+          setActiveTab('breaking');
+        } else if (section === 'changelog' && versionData[version]?.hasChangelog) {
+          setActiveTab('changelog');
+        }
+      }
+    };
+
+    // Handle initial load
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [versions, versionData]);
 
   // Set initial active tab based on available content
   useEffect(() => {
@@ -64,10 +100,18 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
     }
   }, [selectedVersion, hasFeatures, hasBreaking, hasChangelog]);
 
-  // Scroll to top when version changes
+  // Update URL when version or tab changes
+  useEffect(() => {
+    if (activeTab) {
+      const hash = activeTab === 'features' ? selectedVersion : `${selectedVersion}-${activeTab}`;
+      window.history.replaceState(null, '', `#${hash}`);
+    }
+  }, [selectedVersion, activeTab]);
+
+  // Handle version change
   const handleVersionChange = (version: string) => {
     setSelectedVersion(version);
-    setActiveTab(null); // Reset tab to trigger useEffect
+    setActiveTab(null); // Reset tab to trigger automatic selection of first available tab
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -309,9 +353,24 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
                   {/* Version Header */}
                   <div className="mb-8 pb-8 border-b border-[#E2DAFA]">
                     <div className="flex items-center justify-between flex-wrap gap-4">
-                      <h2 className="text-3xl md:text-4xl font-medium tracking-[-0.02em] text-[#292929]">
-                        {selectedData.frontMatter.version}
-                      </h2>
+                      <div className="flex items-center gap-3">
+                        <h2 className="text-3xl md:text-4xl font-medium tracking-[-0.02em] text-[#292929]">
+                          {selectedData.frontMatter.version}
+                        </h2>
+                        <button
+                          onClick={() => {
+                            const url = window.location.href;
+                            navigator.clipboard.writeText(url);
+                            // Optional: Add a toast notification here
+                          }}
+                          className="p-2 rounded-lg hover:bg-[#F1EDFD] transition-colors group"
+                          title="Copy link to this version"
+                        >
+                          <svg className="w-5 h-5 text-[#767676] group-hover:text-[#7147E8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                          </svg>
+                        </button>
+                      </div>
                       <span className="text-[#767676] text-lg">{selectedData.frontMatter.date}</span>
                     </div>
                     {selectedData.frontMatter.note && (
