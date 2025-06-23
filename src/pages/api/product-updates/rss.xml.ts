@@ -36,6 +36,7 @@ async function extractDescription(content: string, note?: string): Promise<strin
   }
   
   // Convert to plain text for description
+  const { remark } = await import('remark');
   const plainText = await remark()
     .use(strip)
     .process(content);
