@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import fs from 'fs';
@@ -26,6 +26,9 @@ interface VersionData {
     note?: string;
   };
   mdxSource: MDXRemoteSerializeResult;
+  hasFeatures: boolean;
+  hasChangelog: boolean;
+  hasBreaking: boolean;
 }
 
 interface ProductUpdatesProps {
@@ -35,14 +38,123 @@ interface ProductUpdatesProps {
 
 const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
   const [selectedVersion, setSelectedVersion] = useState(versions[0].version);
+  const [activeTab, setActiveTab] = useState<'features' | 'breaking' | 'changelog' | null>(null);
 
   const selectedData = versionData[selectedVersion];
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  // Determine available tabs based on content
+  const hasFeatures = selectedData?.hasFeatures || false;
+  const hasBreaking = selectedData?.hasBreaking || false;
+  const hasChangelog = selectedData?.hasChangelog || false;
+
+  // Set initial active tab based on available content
+  useEffect(() => {
+    if (activeTab === null || 
+        (activeTab === 'features' && !hasFeatures) || 
+        (activeTab === 'breaking' && !hasBreaking) || 
+        (activeTab === 'changelog' && !hasChangelog)) {
+      if (hasFeatures) {
+        setActiveTab('features');
+      } else if (hasBreaking) {
+        setActiveTab('breaking');
+      } else if (hasChangelog) {
+        setActiveTab('changelog');
+      }
+    }
+  }, [selectedVersion, hasFeatures, hasBreaking, hasChangelog]);
 
   // Scroll to top when version changes
   const handleVersionChange = (version: string) => {
     setSelectedVersion(version);
+    setActiveTab(null); // Reset tab to trigger useEffect
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Handle tab content visibility
+  useEffect(() => {
+    if (!contentRef.current || activeTab === null) return;
+
+    const content = contentRef.current;
+    const allElements = content.querySelectorAll('*');
+    
+    let currentSection = '';
+    let currentSubsection = '';
+    let shouldShowElement = false;
+    let inBreakingSection = false;
+
+    allElements.forEach(el => {
+      const element = el as HTMLElement;
+      
+      // Track current section based on H2
+      if (el.tagName === 'H2') {
+        const text = el.textContent || '';
+        if (text.includes('Features')) {
+          currentSection = 'features';
+          currentSubsection = '';
+          inBreakingSection = false;
+        } else if (text.includes('Breaking')) {
+          currentSection = 'breaking';
+          currentSubsection = '';
+          inBreakingSection = true;
+        } else if (text.includes('Changelog')) {
+          currentSection = 'changelog';
+          currentSubsection = '';
+          inBreakingSection = false;
+        }
+        
+        // For section headers, determine if they should be shown
+        if (activeTab === 'features') {
+          // Hide the Features H2 header when on Features tab
+          shouldShowElement = false;
+        } else if (activeTab === 'breaking') {
+          // Hide the Breaking changes H2 header when on Breaking tab
+          shouldShowElement = false;
+        } else if (activeTab === 'changelog') {
+          // Hide the Changelog H2 header when on Changelog tab
+          shouldShowElement = false;
+        }
+      }
+      
+      // Track subsection based on H3
+      else if (el.tagName === 'H3') {
+        const text = el.textContent || '';
+        if (currentSection === 'changelog' && 
+            (text.includes('Breaking') || text.includes('Incompatible') || text.includes('Backward'))) {
+          currentSubsection = 'breaking';
+          inBreakingSection = true;
+        } else {
+          currentSubsection = 'other';
+          inBreakingSection = false;
+        }
+        
+        // For H3 headers, determine if they should be shown
+        if (activeTab === 'features') {
+          shouldShowElement = currentSection === 'features';
+        } else if (activeTab === 'breaking') {
+          // Show H3 headers when in breaking section or when it's a breaking subsection
+          shouldShowElement = currentSection === 'breaking' || currentSubsection === 'breaking';
+        } else if (activeTab === 'changelog') {
+          shouldShowElement = currentSection === 'changelog';
+        }
+      }
+      
+      // For all other elements
+      else {
+        if (activeTab === 'features') {
+          shouldShowElement = currentSection === 'features';
+        } else if (activeTab === 'breaking') {
+          // Show content when in breaking section (H2) or breaking subsection (H3)
+          shouldShowElement = currentSection === 'breaking' || inBreakingSection;
+        } else if (activeTab === 'changelog') {
+          shouldShowElement = currentSection === 'changelog';
+        }
+      }
+
+      // Apply visibility
+      element.style.display = shouldShowElement ? '' : 'none';
+    });
+  }, [activeTab, selectedData]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -116,6 +228,7 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
           .feature-section.collate {
             @apply bg-gradient-to-r from-[#F1EDFD] to-[#E8E0FC] border-2 border-[#D0C2F7];
           }
+          
         `}</style>
       </Head>
 
@@ -206,8 +319,50 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
                     )}
                   </div>
 
+                  {/* Tabs */}
+                  <div className="mb-8">
+                    <div className="flex flex-wrap gap-2 border-b border-[#E2DAFA]">
+                      {hasFeatures && (
+                        <button
+                          onClick={() => setActiveTab('features')}
+                          className={`px-6 py-3 text-sm md:text-base font-medium border-b-2 transition-colors ${
+                            activeTab === 'features'
+                              ? 'text-[#7147E8] border-[#7147E8]'
+                              : 'text-[#767676] border-transparent hover:text-[#292929]'
+                          }`}
+                        >
+                          ✨ Features
+                        </button>
+                      )}
+                      {hasBreaking && (
+                        <button
+                          onClick={() => setActiveTab('breaking')}
+                          className={`px-6 py-3 text-sm md:text-base font-medium border-b-2 transition-colors ${
+                            activeTab === 'breaking'
+                              ? 'text-[#7147E8] border-[#7147E8]'
+                              : 'text-[#767676] border-transparent hover:text-[#292929]'
+                          }`}
+                        >
+                          ⚠️ Breaking Changes
+                        </button>
+                      )}
+                      {hasChangelog && (
+                        <button
+                          onClick={() => setActiveTab('changelog')}
+                          className={`px-6 py-3 text-sm md:text-base font-medium border-b-2 transition-colors ${
+                            activeTab === 'changelog'
+                              ? 'text-[#7147E8] border-[#7147E8]'
+                              : 'text-[#767676] border-transparent hover:text-[#292929]'
+                          }`}
+                        >
+                          📋 Changelog
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
                   {/* MDX Content */}
-                  <div className="product-updates">
+                  <div className="product-updates" ref={contentRef}>
                     <MDXRemote {...selectedData.mdxSource} components={mdxComponents} />
                   </div>
                 </div>
@@ -254,6 +409,19 @@ export const getStaticProps: GetStaticProps = async () => {
       const fileContent = fs.readFileSync(filePath, 'utf8');
       const { data, content } = matter(fileContent);
       
+      // Check for sections in the raw markdown content
+      const hasFeatures = content.includes('## Features');
+      const hasChangelog = content.includes('## Changelog');
+      
+      // Check for breaking changes in section headers (H2 or H3 level)
+      const lines = content.split('\n');
+      const hasBreaking = lines.some(line => 
+        (line.startsWith('##') || line.startsWith('###')) && 
+        (line.includes('Breaking') || 
+         line.includes('Incompatible') || 
+         line.includes('Backward'))
+      );
+      
       const mdxSource = await serialize(content);
       
       versionData[version.version] = {
@@ -264,6 +432,9 @@ export const getStaticProps: GetStaticProps = async () => {
           note: data.note || null,
         },
         mdxSource,
+        hasFeatures,
+        hasChangelog,
+        hasBreaking,
       };
     }
   }

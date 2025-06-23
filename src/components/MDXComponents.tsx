@@ -16,7 +16,7 @@ const H2 = ({ children, ...props }: any) => {
   const isChangelog = children === 'Changelog';
   
   return (
-    <h2 {...props} className="text-xl md:text-2xl font-semibold text-[#292929] mb-6 flex items-center">
+    <h2 {...props} className="text-xl md:text-2xl font-semibold text-[#292929] mb-6 flex items-center" data-section-type={isFeatures ? 'features' : isChangelog ? 'changelog' : 'other'}>
       {isFeatures && <span className="mr-3">✨</span>}
       {isChangelog && <span className="mr-3">📋</span>}
       {children}
