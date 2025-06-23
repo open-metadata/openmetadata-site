@@ -2,7 +2,6 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { remark } from 'remark';
 import strip from 'strip-markdown';
 
 interface VersionData {
@@ -104,7 +103,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           const htmlContent = await markdownToHTML(content);
           
           const pubDate = parseDate(version.date);
-          const link = `https://openmetadata.org/product-updates#${version.version}`;
+          const link = `https://open-metadata.org/product-updates#${version.version}`;
           
           return `
     <item>
@@ -126,11 +125,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>OpenMetadata Product Updates</title>
-    <link>https://openmetadata.org/product-updates</link>
+    <link>https://open-metadata.org/product-updates</link>
     <description>Stay updated with the latest features, improvements, and releases from OpenMetadata</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <atom:link href="https://openmetadata.org/api/product-updates/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://open-metadata.org/api/product-updates/rss.xml" rel="self" type="application/rss+xml"/>
     ${rssItems.filter(item => item).join('')}
   </channel>
 </rss>`;

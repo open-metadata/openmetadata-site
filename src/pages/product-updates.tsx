@@ -444,7 +444,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const versionsData = JSON.parse(fs.readFileSync(versionsFile, 'utf8'));
   
   // Sort versions in descending order (latest first)
-  const versions = versionsData.sort((a: any, b: any) => {
+  const versions = [...versionsData].sort((a: any, b: any) => {
     const versionA = a.version.replace('v', '').split('.').map(Number);
     const versionB = b.version.replace('v', '').split('.').map(Number);
     

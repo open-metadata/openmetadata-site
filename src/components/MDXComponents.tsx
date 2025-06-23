@@ -28,9 +28,12 @@ const H3 = ({ children, ...props }: any) => {
   const text = typeof children === 'string' ? children : children?.[0];
   const isCollate = text && text.includes('(Collate)');
   
-  // Simple h3 for changelog sections without feature-section wrapper
+  // Simple h3 for changelog sections with optional collate styling
   return (
-    <h3 {...props} className="text-lg md:text-xl font-semibold text-[#292929] mb-4 mt-8 first:mt-0">
+    <h3
+      {...props}
+      className={`text-lg md:text-xl font-semibold text-[#292929] mb-4 mt-8 first:mt-0 ${isCollate ? 'collate' : ''}`}
+    >
       {children}
     </h3>
   );
