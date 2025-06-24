@@ -279,11 +279,11 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
         <NavbarStrip />
       </div>
 
-      <main className="mt-20 md:mt-24 lg:mt-32 bg-white min-h-screen">
+      <main className="mt-36 bg-white min-h-screen">
         <div className="max-w-[1440px] mx-auto px-4 md:px-10 xl:px-20 py-8 md:py-12">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="flex items-center justify-center gap-3">
+            <div className="flex items-center justify-center gap-1 sm:gap-3 sm:flex-row flex-col">
               <h1 className="text-4xl md:text-5xl font-medium tracking-[-0.02em] text-[#292929]">
                 Product Updates
               </h1>
