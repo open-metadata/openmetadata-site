@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import { useRouter } from 'next/router';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -38,7 +37,6 @@ interface ProductUpdatesProps {
 }
 
 const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
-  const router = useRouter();
   const [selectedVersion, setSelectedVersion] = useState(versions[0].version);
   const [activeTab, setActiveTab] = useState<'features' | 'breaking' | 'changelog' | null>(null);
 
@@ -132,7 +130,7 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
       
       // Track current section based on H2
       if (el.tagName === 'H2') {
-        const text = el.textContent || '';
+        const text = el.textContent ?? '';
         if (text.includes('Features')) {
           currentSection = 'features';
           currentSubsection = '';
@@ -162,7 +160,7 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
       
       // Track subsection based on H3
       else if (el.tagName === 'H3') {
-        const text = el.textContent || '';
+        const text = el.textContent ?? '';
         if (currentSection === 'changelog' && 
             (text.includes('Breaking') || text.includes('Incompatible') || text.includes('Backward'))) {
           currentSubsection = 'breaking';
@@ -281,11 +279,11 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
         <NavbarStrip />
       </div>
 
-      <main className="mt-20 md:mt-24 lg:mt-32 bg-white min-h-screen">
+      <main className="mt-36 bg-white min-h-screen">
         <div className="max-w-[1440px] mx-auto px-4 md:px-10 xl:px-20 py-8 md:py-12">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="flex items-center justify-center gap-3">
+            <div className="flex items-center justify-center gap-3 sm:flex-row flex-col">
               <h1 className="text-4xl md:text-5xl font-medium tracking-[-0.02em] text-[#292929]">
                 Product Updates
               </h1>
@@ -310,7 +308,7 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Sidebar - Version List */}
             <aside className="lg:w-64 flex-shrink-0">
-              <div className="lg:sticky lg:top-32">
+              <div className="lg:sticky lg:top-36">
                 <h2 className="text-lg font-semibold text-[#292929] mb-4">Versions</h2>
                 <div className="lg:hidden mb-4">
                   <select
