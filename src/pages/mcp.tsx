@@ -199,7 +199,7 @@ export default function Community() {
                 <div className="max-w-lg">
                   <div className="card">
                     <div className="card-body">
-                      <YoutubeEmbed videoId="Ad3PCGb7abw" />
+                      <YoutubeEmbed videoId="Yrv86hSmeME" />
                       <p className="font-semibold mb-0 mt-2">
                         OpenMetadata Release v1.8.0 Overview!
                       </p>
