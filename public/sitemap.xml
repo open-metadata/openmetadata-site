@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://open-metadata.org</loc><lastmod>2025-06-19T19:18:01.491Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/case-studies</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/case-study/carrefour-brazil</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/case-study/gorgias</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/community</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/cve-list</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/mcp</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/resources/webinar/carrefour-brasil-spotlight</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/resources/webinar/carrefour-brasil-spotlight/ty-video</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/resources/webinar/data-culture/ty-video</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://open-metadata.org/resources/webinar/gorgias-spotlight/ty-video</loc><lastmod>2025-06-19T19:18:01.492Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org</loc><lastmod>2025-06-26T19:57:44.565Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/case-studies</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/case-study/carrefour-brazil</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/case-study/gorgias</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/community</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/cve-list</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/mcp</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/resources/webinar/carrefour-brasil-spotlight</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/resources/webinar/carrefour-brasil-spotlight/ty-video</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/resources/webinar/data-culture/ty-video</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://open-metadata.org/resources/webinar/gorgias-spotlight/ty-video</loc><lastmod>2025-06-26T19:57:44.566Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

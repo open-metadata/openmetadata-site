@@ -100,21 +100,21 @@ export default function Community() {
                       OpenMetadata: Now with MCP Server!
                     </h1>
                     <p className="page-header-ui-text mb-2 max-md:mt-2">
-                      A new, open protocol for AI agent communication
+                      The first Enterprise-grade MCP server for metadata
                       <br />
-                      is revolutionizing AI agent interaction with metadata!
+                      from OpenMetadata is revolutionizing AI-driven governance!
                     </p>
                     <p>
-                      LLMs lack the crucial context of your business —
+                      LLMs lack the crucial context of your business -
                       your data's unique structure, lineage, critical 
-                      business glossaries... all information readily available
+                      business glossaries - all information readily available
                        within metadata. With OpenMetadata's new MCP server, 
                       LLMs & agents can take action on your data systems
                       by leveraging OpenMetadata's Unified Knowledge Graph 
                       for intelligent data mangement and automated data operations!
                     </p>
                     <p>
-                      Check out of introduction to OpenMetadata's MCP Server!
+                      Check out our introduction to OpenMetadata's MCP Server!
                     </p>
                     <div className="flex flex-col sm:flex-row max-lg:mt-3">
                       <ParamLink
@@ -153,15 +153,15 @@ export default function Community() {
                     uses the same Authorization engine we have for the OpenMetadata APIs. 
                     This enables any MCP client (such as Claude, Cursor, or OpenAI) to read 
                     from or write to the integrations you already have set up in OpenMetadata, 
-                    and assume any role or policy you have defined, giving agents the proper 
+                    and assume any role or policy you define, giving agents the proper 
                     access to the right data and functional logic to automate data operations.
                   </p>
                   <p className="text-[18px]">
-                    Check out our Getting started guide!
+                    Check out our Getting Started guide!
                   </p>
                   <ParamLink
                     className="btn btn-primary"
-                    href="https://www.meetup.com/openmetadata-meetup-group/"
+                    href="https://docs.open-metadata.org/latest/how-to-guides/mcp/claude"
                     target="_blank"
                     name="Getting started with MCP on Claude Desktop"
                   />
@@ -199,9 +199,9 @@ export default function Community() {
                 <div className="max-w-lg">
                   <div className="card">
                     <div className="card-body">
-                      <YoutubeEmbed videoId="AuYBaXC8-M4" />
+                      <YoutubeEmbed videoId="Ad3PCGb7abw" />
                       <p className="font-semibold mb-0 mt-2">
-                        Introducting OpenMetadata's MCP Server!
+                        OpenMetadata Release v1.8.0 Overview!
                       </p>
                     </div>
                   </div>
@@ -209,9 +209,29 @@ export default function Community() {
                 <div className="max-w-lg">
                   <div className="card">
                     <div className="card-body">
-                      <YoutubeEmbed videoId="FUlxf-LMxdU" />
+                      <YoutubeEmbed videoId="Ad3PCGb7abw" />
                       <p className="font-semibold mb-0 mt-2">
-                        OpenMetadata MCP Update!
+                        Intelligent pipeline monitoring!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="max-w-lg">
+                  <div className="card">
+                    <div className="card-body">
+                      <YoutubeEmbed videoId="5FqK3Cr9fXI" />
+                      <p className="font-semibold mb-0 mt-2">
+                        Generating dashboards from metadata analysis!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="max-w-lg">
+                  <div className="card">
+                    <div className="card-body">
+                      <YoutubeEmbed videoId="ZVMFa2OvU9U" />
+                      <p className="font-semibold mb-0 mt-2">
+                        Automated data glossary creation!
                       </p>
                     </div>
                   </div>
@@ -220,7 +240,14 @@ export default function Community() {
               <div className="mt-6 flex justify-center">
                 <div className="col-lg-8 items-center justify-items-center text-center">
                   <p className="text-[18px]">
-                    Keep an eye out on the OpenMetadata Meetup Group and our 
+                    Keep an eye out on the&nbsp;
+                    <ParamLink
+                      className="text-primary font-medium"
+                      href="https://www.meetup.com/openmetadata-meetup-group/"
+                      target="_blank"
+                      name="OpenMetadata Meetup Group "
+                    />
+                     and our 
                     MCP Spotlights as we continue to discover the revolutionary
                     capabilities of this new integration!
                   </p>
