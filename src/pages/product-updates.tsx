@@ -1,15 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Head from 'next/head';
-import { GetStaticProps } from 'next';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
-import { serialize } from 'next-mdx-remote/serialize';
-import NavbarDev from '../components/NavbarDev/NavbarDev.component';
-import NavbarStrip from '../components/NavbarDev/NavbarStrip.component';
-import FooterDev from '../components/FooterDev/FooterDev';
-import { mdxComponents } from '../components/MDXComponents';
+import React, { useState, useEffect, useRef } from "react";
+import Head from "next/head";
+import { GetStaticProps } from "next";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
+import NavbarDev from "../components/NavbarDev/NavbarDev.component";
+import NavbarStrip from "../components/NavbarDev/NavbarStrip.component";
+import FooterDev from "../components/FooterDev/FooterDev";
+import { mdxComponents } from "../components/MDXComponents";
 
 interface VersionInfo {
   version: string;
@@ -38,7 +38,9 @@ interface ProductUpdatesProps {
 
 const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
   const [selectedVersion, setSelectedVersion] = useState(versions[0].version);
-  const [activeTab, setActiveTab] = useState<'features' | 'breaking' | 'changelog' | null>(null);
+  const [activeTab, setActiveTab] = useState<
+    "features" | "breaking" | "changelog" | null
+  >(null);
 
   const selectedData = versionData[selectedVersion];
   const contentRef = useRef<HTMLDivElement>(null);
@@ -55,21 +57,27 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
       if (!hash) return;
 
       // Parse hash format: v1.5.5 or v1.5.5-breaking
-      const parts = hash.split('-');
+      const parts = hash.split("-");
       const version = parts[0];
       const section = parts[1];
 
       // Check if version exists
-      if (versions.some(v => v.version === version)) {
+      if (versions.some((v) => v.version === version)) {
         setSelectedVersion(version);
-        
+
         // Set tab based on section if specified
-        if (section === 'features' && versionData[version]?.hasFeatures) {
-          setActiveTab('features');
-        } else if (section === 'breaking' && versionData[version]?.hasBreaking) {
-          setActiveTab('breaking');
-        } else if (section === 'changelog' && versionData[version]?.hasChangelog) {
-          setActiveTab('changelog');
+        if (section === "features" && versionData[version]?.hasFeatures) {
+          setActiveTab("features");
+        } else if (
+          section === "breaking" &&
+          versionData[version]?.hasBreaking
+        ) {
+          setActiveTab("breaking");
+        } else if (
+          section === "changelog" &&
+          versionData[version]?.hasChangelog
+        ) {
+          setActiveTab("changelog");
         }
       }
     };
@@ -78,22 +86,24 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
     handleHashChange();
 
     // Listen for hash changes
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
   }, [versions, versionData]);
 
   // Set initial active tab based on available content
   useEffect(() => {
-    if (activeTab === null || 
-        (activeTab === 'features' && !hasFeatures) || 
-        (activeTab === 'breaking' && !hasBreaking) || 
-        (activeTab === 'changelog' && !hasChangelog)) {
+    if (
+      activeTab === null ||
+      (activeTab === "features" && !hasFeatures) ||
+      (activeTab === "breaking" && !hasBreaking) ||
+      (activeTab === "changelog" && !hasChangelog)
+    ) {
       if (hasFeatures) {
-        setActiveTab('features');
+        setActiveTab("features");
       } else if (hasBreaking) {
-        setActiveTab('breaking');
+        setActiveTab("breaking");
       } else if (hasChangelog) {
-        setActiveTab('changelog');
+        setActiveTab("changelog");
       }
     }
   }, [selectedVersion, hasFeatures, hasBreaking, hasChangelog]);
@@ -101,8 +111,11 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
   // Update URL when version or tab changes
   useEffect(() => {
     if (activeTab) {
-      const hash = activeTab === 'features' ? selectedVersion : `${selectedVersion}-${activeTab}`;
-      window.history.replaceState(null, '', `#${hash}`);
+      const hash =
+        activeTab === "features"
+          ? selectedVersion
+          : `${selectedVersion}-${activeTab}`;
+      window.history.replaceState(null, "", `#${hash}`);
     }
   }, [selectedVersion, activeTab]);
 
@@ -110,7 +123,7 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
   const handleVersionChange = (version: string) => {
     setSelectedVersion(version);
     setActiveTab(null); // Reset tab to trigger automatic selection of first available tab
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // Handle tab content visibility
@@ -118,83 +131,89 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
     if (!contentRef.current || activeTab === null) return;
 
     const content = contentRef.current;
-    const allElements = content.querySelectorAll('*');
-    
-    let currentSection = '';
-    let currentSubsection = '';
+    const allElements = content.querySelectorAll("*");
+
+    let currentSection = "";
+    let currentSubsection = "";
     let shouldShowElement = false;
     let inBreakingSection = false;
 
-    allElements.forEach(el => {
+    allElements.forEach((el) => {
       const element = el as HTMLElement;
-      
+
       // Track current section based on H2
-      if (el.tagName === 'H2') {
-        const text = el.textContent ?? '';
-        if (text.includes('Features')) {
-          currentSection = 'features';
-          currentSubsection = '';
+      if (el.tagName === "H2") {
+        const text = el.textContent ?? "";
+        if (text.includes("Features")) {
+          currentSection = "features";
+          currentSubsection = "";
           inBreakingSection = false;
-        } else if (text.includes('Breaking')) {
-          currentSection = 'breaking';
-          currentSubsection = '';
+        } else if (text.includes("Breaking")) {
+          currentSection = "breaking";
+          currentSubsection = "";
           inBreakingSection = true;
-        } else if (text.includes('Changelog')) {
-          currentSection = 'changelog';
-          currentSubsection = '';
+        } else if (text.includes("Changelog")) {
+          currentSection = "changelog";
+          currentSubsection = "";
           inBreakingSection = false;
         }
-        
+
         // For section headers, determine if they should be shown
-        if (activeTab === 'features') {
+        if (activeTab === "features") {
           // Hide the Features H2 header when on Features tab
           shouldShowElement = false;
-        } else if (activeTab === 'breaking') {
+        } else if (activeTab === "breaking") {
           // Hide the Breaking changes H2 header when on Breaking tab
           shouldShowElement = false;
-        } else if (activeTab === 'changelog') {
+        } else if (activeTab === "changelog") {
           // Hide the Changelog H2 header when on Changelog tab
           shouldShowElement = false;
         }
       }
-      
+
       // Track subsection based on H3
-      else if (el.tagName === 'H3') {
-        const text = el.textContent ?? '';
-        if (currentSection === 'changelog' && 
-            (text.includes('Breaking') || text.includes('Incompatible') || text.includes('Backward'))) {
-          currentSubsection = 'breaking';
+      else if (el.tagName === "H3") {
+        const text = el.textContent ?? "";
+        if (
+          currentSection === "changelog" &&
+          (text.includes("Breaking") ||
+            text.includes("Incompatible") ||
+            text.includes("Backward"))
+        ) {
+          currentSubsection = "breaking";
           inBreakingSection = true;
         } else {
-          currentSubsection = 'other';
+          currentSubsection = "other";
           inBreakingSection = false;
         }
-        
+
         // For H3 headers, determine if they should be shown
-        if (activeTab === 'features') {
-          shouldShowElement = currentSection === 'features';
-        } else if (activeTab === 'breaking') {
+        if (activeTab === "features") {
+          shouldShowElement = currentSection === "features";
+        } else if (activeTab === "breaking") {
           // Show H3 headers when in breaking section or when it's a breaking subsection
-          shouldShowElement = currentSection === 'breaking' || currentSubsection === 'breaking';
-        } else if (activeTab === 'changelog') {
-          shouldShowElement = currentSection === 'changelog';
+          shouldShowElement =
+            currentSection === "breaking" || currentSubsection === "breaking";
+        } else if (activeTab === "changelog") {
+          shouldShowElement = currentSection === "changelog";
         }
       }
-      
+
       // For all other elements
       else {
-        if (activeTab === 'features') {
-          shouldShowElement = currentSection === 'features';
-        } else if (activeTab === 'breaking') {
+        if (activeTab === "features") {
+          shouldShowElement = currentSection === "features";
+        } else if (activeTab === "breaking") {
           // Show content when in breaking section (H2) or breaking subsection (H3)
-          shouldShowElement = currentSection === 'breaking' || inBreakingSection;
-        } else if (activeTab === 'changelog') {
-          shouldShowElement = currentSection === 'changelog';
+          shouldShowElement =
+            currentSection === "breaking" || inBreakingSection;
+        } else if (activeTab === "changelog") {
+          shouldShowElement = currentSection === "changelog";
         }
       }
 
       // Apply visibility
-      element.style.display = shouldShowElement ? '' : 'none';
+      element.style.display = shouldShowElement ? "" : "none";
     });
   }, [activeTab, selectedData]);
 
@@ -202,11 +221,25 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
     <div className="flex flex-col min-h-screen">
       <Head>
         <title>Product Updates | OpenMetadata</title>
-        <meta name="description" content="Stay updated with the latest features, improvements, and changes in OpenMetadata" />
+        <meta
+          name="description"
+          content="Stay updated with the latest features, improvements, and changes in OpenMetadata"
+        />
         <meta property="og:title" content="Product Updates | OpenMetadata" />
-        <meta property="og:description" content="Stay updated with the latest features, improvements, and changes in OpenMetadata" />
-        <link rel="canonical" href="https://open-metadata.org/product-updates" />
-        <link rel="alternate" type="application/rss+xml" title="OpenMetadata Product Updates RSS" href="/api/product-updates/rss.xml" />
+        <meta
+          property="og:description"
+          content="Stay updated with the latest features, improvements, and changes in OpenMetadata"
+        />
+        <link
+          rel="canonical"
+          href="https://open-metadata.org/product-updates"
+        />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="OpenMetadata Product Updates RSS"
+          href="/api/product-updates/rss.xml"
+        />
         <style>{`
           .custom-scrollbar::-webkit-scrollbar {
             width: 6px;
@@ -270,7 +303,10 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
           .feature-section.collate {
             @apply bg-gradient-to-r from-[#F1EDFD] to-[#E8E0FC] border-2 border-[#D0C2F7];
           }
-          
+          .product-updates li::before {
+            content: "•";
+            @apply pl-2;
+          }
         `}</style>
       </Head>
 
@@ -287,20 +323,25 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
               <h1 className="text-4xl md:text-5xl font-medium tracking-[-0.02em] text-[#292929]">
                 Product Updates
               </h1>
-              <a 
-                href="/api/product-updates/rss.xml" 
+              <a
+                href="/api/product-updates/rss.xml"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F1EDFD] hover:bg-[#E2DAFA] transition-colors"
                 title="Subscribe to RSS Feed"
               >
-                <svg className="w-5 h-5 md:w-6 md:h-6 text-[#7147E8]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M3.429 5.1v2.4c7.248 0 13.114 5.886 13.114 13.142h2.4C18.943 12.066 12 5.1 3.429 5.1zm0 4.8v2.4a4.351 4.351 0 014.343 4.342h2.4c0-3.72-3.023-6.742-6.743-6.742zM6.171 16.485a1.714 1.714 0 11-3.428 0 1.714 1.714 0 013.428 0z"/>
+                <svg
+                  className="w-5 h-5 md:w-6 md:h-6 text-[#7147E8]"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M3.429 5.1v2.4c7.248 0 13.114 5.886 13.114 13.142h2.4C18.943 12.066 12 5.1 3.429 5.1zm0 4.8v2.4a4.351 4.351 0 014.343 4.342h2.4c0-3.72-3.023-6.742-6.743-6.742zM6.171 16.485a1.714 1.714 0 11-3.428 0 1.714 1.714 0 013.428 0z" />
                 </svg>
               </a>
             </div>
             <p className="text-lg md:text-xl text-[#767676] mt-4 max-w-3xl mx-auto">
-              Stay updated with the latest features, improvements, and changes in OpenMetadata
+              Stay updated with the latest features, improvements, and changes
+              in OpenMetadata
             </p>
           </div>
 
@@ -309,7 +350,9 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
             {/* Sidebar - Version List */}
             <aside className="lg:w-64 flex-shrink-0">
               <div className="lg:sticky lg:top-36">
-                <h2 className="text-lg font-semibold text-[#292929] mb-4">Versions</h2>
+                <h2 className="text-lg font-semibold text-[#292929] mb-4">
+                  Versions
+                </h2>
                 <div className="lg:hidden mb-4">
                   <select
                     value={selectedVersion}
@@ -318,25 +361,31 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
                   >
                     {versions.map((version) => (
                       <option key={version.version} value={version.version}>
-                        {version.version} - {version.date.replace('Released on ', '')}
+                        {version.version} -{" "}
+                        {version.date.replace("Released on ", "")}
                       </option>
                     ))}
                   </select>
                 </div>
-                <nav className="space-y-2 hidden lg:block overflow-y-auto pr-2 custom-scrollbar" style={{ maxHeight: 'calc(100vh - 16rem)' }}>
+                <nav
+                  className="space-y-2 hidden lg:block overflow-y-auto pr-2 custom-scrollbar"
+                  style={{ maxHeight: "calc(100vh - 16rem)" }}
+                >
                   {versions.map((version) => (
                     <button
                       key={version.version}
                       onClick={() => handleVersionChange(version.version)}
                       className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 ${
                         selectedVersion === version.version
-                          ? 'bg-[#F1EDFD] text-[#7147E8] font-medium border-l-4 border-[#7147E8]'
-                          : 'text-[#767676] hover:bg-gray-50 hover:text-[#292929]'
+                          ? "bg-[#F1EDFD] text-[#7147E8] font-medium border-l-4 border-[#7147E8]"
+                          : "text-[#767676] hover:bg-gray-50 hover:text-[#292929]"
                       }`}
                     >
                       <div className="flex flex-col">
                         <span className="text-base">{version.version}</span>
-                        <span className="text-sm opacity-75">{version.date.replace('Released on ', '')}</span>
+                        <span className="text-sm opacity-75">
+                          {version.date.replace("Released on ", "")}
+                        </span>
                       </div>
                     </button>
                   ))}
@@ -364,15 +413,29 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
                           className="p-2 rounded-lg hover:bg-[#F1EDFD] transition-colors group"
                           title="Copy link to this version"
                         >
-                          <svg className="w-5 h-5 text-[#767676] group-hover:text-[#7147E8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                          <svg
+                            className="w-5 h-5 text-[#767676] group-hover:text-[#7147E8]"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                            />
                           </svg>
                         </button>
                       </div>
-                      <span className="text-[#767676] text-lg">{selectedData.frontMatter.date}</span>
+                      <span className="text-[#767676] text-lg">
+                        {selectedData.frontMatter.date}
+                      </span>
                     </div>
                     {selectedData.frontMatter.note && (
-                      <p className="mt-4 text-[#767676] text-lg">{selectedData.frontMatter.note}</p>
+                      <p className="mt-4 text-[#767676] text-lg">
+                        {selectedData.frontMatter.note}
+                      </p>
                     )}
                   </div>
 
@@ -381,11 +444,11 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
                     <div className="flex flex-wrap gap-2 border-b border-[#E2DAFA]">
                       {hasFeatures && (
                         <button
-                          onClick={() => setActiveTab('features')}
+                          onClick={() => setActiveTab("features")}
                           className={`px-6 py-3 text-sm md:text-base font-medium border-b-2 transition-colors ${
-                            activeTab === 'features'
-                              ? 'text-[#7147E8] border-[#7147E8]'
-                              : 'text-[#767676] border-transparent hover:text-[#292929]'
+                            activeTab === "features"
+                              ? "text-[#7147E8] border-[#7147E8]"
+                              : "text-[#767676] border-transparent hover:text-[#292929]"
                           }`}
                         >
                           ✨ Features
@@ -393,11 +456,11 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
                       )}
                       {hasBreaking && (
                         <button
-                          onClick={() => setActiveTab('breaking')}
+                          onClick={() => setActiveTab("breaking")}
                           className={`px-6 py-3 text-sm md:text-base font-medium border-b-2 transition-colors ${
-                            activeTab === 'breaking'
-                              ? 'text-[#7147E8] border-[#7147E8]'
-                              : 'text-[#767676] border-transparent hover:text-[#292929]'
+                            activeTab === "breaking"
+                              ? "text-[#7147E8] border-[#7147E8]"
+                              : "text-[#767676] border-transparent hover:text-[#292929]"
                           }`}
                         >
                           ⚠️ Breaking Changes
@@ -405,11 +468,11 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
                       )}
                       {hasChangelog && (
                         <button
-                          onClick={() => setActiveTab('changelog')}
+                          onClick={() => setActiveTab("changelog")}
                           className={`px-6 py-3 text-sm md:text-base font-medium border-b-2 transition-colors ${
-                            activeTab === 'changelog'
-                              ? 'text-[#7147E8] border-[#7147E8]'
-                              : 'text-[#767676] border-transparent hover:text-[#292929]'
+                            activeTab === "changelog"
+                              ? "text-[#7147E8] border-[#7147E8]"
+                              : "text-[#767676] border-transparent hover:text-[#292929]"
                           }`}
                         >
                           📋 Changelog
@@ -420,7 +483,10 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
 
                   {/* MDX Content */}
                   <div className="product-updates" ref={contentRef}>
-                    <MDXRemote {...selectedData.mdxSource} components={mdxComponents} />
+                    <MDXRemote
+                      {...selectedData.mdxSource}
+                      components={mdxComponents}
+                    />
                   </div>
                 </div>
               )}
@@ -428,24 +494,28 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
           </div>
         </div>
       </main>
-      
+
       <FooterDev />
     </div>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const contentDirectory = path.join(process.cwd(), 'content', 'product-updates');
-  
+  const contentDirectory = path.join(
+    process.cwd(),
+    "content",
+    "product-updates"
+  );
+
   // Read versions.json
-  const versionsFile = path.join(contentDirectory, 'versions.json');
-  const versionsData = JSON.parse(fs.readFileSync(versionsFile, 'utf8'));
-  
+  const versionsFile = path.join(contentDirectory, "versions.json");
+  const versionsData = JSON.parse(fs.readFileSync(versionsFile, "utf8"));
+
   // Sort versions in descending order (latest first)
   const versions = [...versionsData].sort((a: any, b: any) => {
-    const versionA = a.version.replace('v', '').split('.').map(Number);
-    const versionB = b.version.replace('v', '').split('.').map(Number);
-    
+    const versionA = a.version.replace("v", "").split(".").map(Number);
+    const versionB = b.version.replace("v", "").split(".").map(Number);
+
     for (let i = 0; i < 3; i++) {
       if (versionA[i] !== versionB[i]) {
         return versionB[i] - versionA[i];
@@ -460,27 +530,28 @@ export const getStaticProps: GetStaticProps = async () => {
   for (const version of versions) {
     const fileName = `${version.version}.md`;
     const filePath = path.join(contentDirectory, fileName);
-    
+
     // Check if file exists
     if (fs.existsSync(filePath)) {
-      const fileContent = fs.readFileSync(filePath, 'utf8');
+      const fileContent = fs.readFileSync(filePath, "utf8");
       const { data, content } = matter(fileContent);
-      
+
       // Check for sections in the raw markdown content
-      const hasFeatures = content.includes('## Features');
-      const hasChangelog = content.includes('## Changelog');
-      
+      const hasFeatures = content.includes("## Features");
+      const hasChangelog = content.includes("## Changelog");
+
       // Check for breaking changes in section headers (H2 or H3 level)
-      const lines = content.split('\n');
-      const hasBreaking = lines.some(line => 
-        (line.startsWith('##') || line.startsWith('###')) && 
-        (line.includes('Breaking') || 
-         line.includes('Incompatible') || 
-         line.includes('Backward'))
+      const lines = content.split("\n");
+      const hasBreaking = lines.some(
+        (line) =>
+          (line.startsWith("##") || line.startsWith("###")) &&
+          (line.includes("Breaking") ||
+            line.includes("Incompatible") ||
+            line.includes("Backward"))
       );
-      
+
       const mdxSource = await serialize(content);
-      
+
       versionData[version.version] = {
         frontMatter: {
           id: data.id,
