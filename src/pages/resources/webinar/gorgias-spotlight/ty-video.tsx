@@ -5,6 +5,7 @@ import TyHeader from "@/components/TyVideo/Header";
 import ResourceGallery from "@/components/TyVideo/ResourceGallery";
 import { useRouter } from "next/router";
 import { TY_PAGE_GORGIAS } from "@/constants/LandingPage.constants";
+import Head from "next/head";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -22,6 +23,10 @@ const GorgiasTy = () => {
   };
 
   return (
+    <>
+    <Head>
+      <title>Gorgias Data Management Journey with OpenMetadata | Access</title>
+    </Head>
     <div>
       <div className="mx-auto fixed top-0 w-full z-[1030]">
         <NavbarDev onClick={handleTryOpenMetadataClick} />
@@ -41,6 +46,7 @@ const GorgiasTy = () => {
       </div>
       <FooterDev />
     </div>
+    </>
   );
 };
 
