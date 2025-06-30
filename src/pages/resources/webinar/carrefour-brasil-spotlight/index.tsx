@@ -3,7 +3,6 @@ import HubspotForm from "@/components/HubspotForm";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
 import { SPEAKERS } from "@/constants/LandingPage.constants";
-import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -11,6 +10,7 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
     props: {
       link: resolvedUrl,
+      title: "Carrefour Brasil's Data Journey with OpenMetadata | Access",
     },
   };
 }
@@ -23,10 +23,6 @@ const CarrefourPage = () => {
   };
 
   return (
-    <>
-    <Head>
-      <title>Carrefour Brasil's Data Journey with OpenMetadata | Access</title>
-    </Head>
     <div>
       <div className="mx-auto fixed top-0 w-full z-[1030]">
         <NavbarDev onClick={handleTryOpenMetadataClick} />
@@ -104,7 +100,6 @@ const CarrefourPage = () => {
       </div>
       <FooterDev />
     </div>
-    </>
   );
 };
 

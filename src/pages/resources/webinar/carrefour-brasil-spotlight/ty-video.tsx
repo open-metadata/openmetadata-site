@@ -5,12 +5,12 @@ import TyHeader from "@/components/TyVideo/Header";
 import ResourceGallery from "@/components/TyVideo/ResourceGallery";
 import { useRouter } from "next/router";
 import { TY_PAGE_CARREFOUR } from "@/constants/LandingPage.constants";
-import Head from "next/head";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
     props: {
       link: resolvedUrl,
+      title: "Carrefour Brasil's Data Journey with OpenMetadata",
     },
   };
 }
@@ -23,10 +23,6 @@ const CarrefourTy = () => {
   };
 
   return (
-    <>
-    <Head>
-      <title>Carrefour Brasil's Data Journey with OpenMetadata </title>
-    </Head>
     <div>
       <div className="mx-auto fixed top-0 w-full z-[1030]">
         <NavbarDev onClick={handleTryOpenMetadataClick} />
@@ -46,7 +42,6 @@ const CarrefourTy = () => {
       </div>
       <FooterDev />
     </div>
-    </>
   );
 };
 
