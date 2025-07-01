@@ -3,7 +3,6 @@ import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
 import ParamLink from "@/components/ParamLink";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
-import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -16,60 +15,6 @@ export default function Community() {
 
   return (
     <div className="justify-between min-h-screen flex flex-col">
-      <Head>
-        <meta charSet="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta
-          name="description"
-          content="OpenMetadata is the #1 open source metadata platform with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
-        />
-        <meta
-          name="keywords"
-          content="best open-source data catalog community, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool, best metadata platform, open-source metadata platform, open source metadata"
-        />
-        <meta name="author" content="open-metadata" />
-
-        {/* Open Graph tags start  */}
-        <meta
-          property="og:title"
-          content="OpenMetadata: Join the #1 Open Source Data Community"
-        />
-        <meta
-          property="og:description"
-          content="OpenMetadata is the #1 open source metadata platform with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
-        />
-        <meta
-          property="og:image"
-          content="https://open-metadata.org/assets/favicon.png"
-        />
-        <meta property="og:type" content="metadata tool" />
-        <meta property="og:url" content="https://open-metadata.org" />
-        {/* {/* Open Graph tags end  */}
-
-        {/* {/* Twitter Card start  */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="https://open-metadata.org" />
-        <meta
-          name="twitter:title"
-          content="OpenMetadata: Join the #1 Open Source Data Community"
-        />
-        <meta
-          name="twitter:description"
-          content="OpenMetadata is the #1 open source metadata platform with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
-        />
-        <meta
-          name="twitter:image"
-          content="https://open-metadata.org/assets/favicon.png"
-        />
-
-        {/* {/* Twitter Card end  */}
-
-        <title>OpenMetadata: Join the #1 Open Source Data Community</title>
-      </Head>
       <div id="layoutDefault">
         <div id="layoutDefault_content">
           <div className="mx-auto fixed top-0 w-full z-[1030]">
