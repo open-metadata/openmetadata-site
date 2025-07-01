@@ -37,7 +37,7 @@ export default function Community() {
                       width={1000}
                       className="w-full"
                       height={1000}
-                      src="/assets/openmetadata-mcp.webp"
+                      src="/assets/omd-mcp.webp"
                     />
                   </div>
                   <div className="col-lg-6" data-aos="fade-up">
