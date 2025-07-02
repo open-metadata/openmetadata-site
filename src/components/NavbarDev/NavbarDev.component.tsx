@@ -90,6 +90,9 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
             <li>
               <ParamLink href="/case-studies" name="Case Studies" />
             </li>
+            <li>
+              <ParamLink href="/product-updates" name="Product Updates" />
+            </li>
             <li className="mb-4 lg:mb-0">
               <ParamLink
                 href="https://github.com/open-metadata/OpenMetadata"

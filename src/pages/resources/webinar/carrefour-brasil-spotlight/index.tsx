@@ -10,6 +10,7 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
     props: {
       link: resolvedUrl,
+      title: "Carrefour Brasil's Data Journey with OpenMetadata | Access",
     },
   };
 }
@@ -58,7 +59,7 @@ const CarrefourPage = () => {
                 />
               </div>
               <div className="lg:hidden">
-                <HubspotForm id="hubspotFormMobile" />
+                <HubspotForm id="hubspotFormMobile" formId="e4594b9d-72ed-4e25-845d-86aabdcc7898" />
               </div>
               <p className="text-[#292929] tracking-[-0.02em] mt-16 text-center md:text-lg lg:text-left lg:mt-0">
                 The OpenMetadata Community Meeting was held on January 15th,
@@ -92,7 +93,7 @@ const CarrefourPage = () => {
               </div>
             </div>
             <div className="mt-8 hidden lg:block">
-              <HubspotForm id="hubspotFormDesktop" />
+              <HubspotForm id="hubspotFormDesktop" formId="e4594b9d-72ed-4e25-845d-86aabdcc7898" />
             </div>
           </div>
         </div>
