@@ -78,6 +78,9 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
               <ParamLink href="/community" name="Community" />
             </li>
             <li>
+              <ParamLink href="/mcp" name="MCP" />
+            </li>
+            <li>
               <ParamLink
                 href="https://blog.open-metadata.org/"
                 target="_blank"
