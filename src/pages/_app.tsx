@@ -111,7 +111,9 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         {/* Twitter Card end */}
 
-        <title>OpenMetadata: Join the #1 Open Source Data Community</title>
+        <title>
+          {pageProps.title ?? "OpenMetadata: Join the #1 Open Source Data Community"}
+        </title>
         {(!storedCookie || storedCookie === "Accept") && (
           <>
             {/* Google Tag Manager */}

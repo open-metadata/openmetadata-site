@@ -10,6 +10,7 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
     props: {
       link: resolvedUrl,
+      title: "Data Culture with Uber's Former Chief Architect | Access",
     },
   };
 }

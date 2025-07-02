@@ -10,6 +10,7 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
     props: {
       link: resolvedUrl,
+      title: "Carrefour Brasil's Data Journey with OpenMetadata | Access",
     },
   };
 }
