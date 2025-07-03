@@ -47,6 +47,14 @@ const FooterDev = () => {
             </li>
             <li className="mb-2">
               <ParamLink
+                name="Schema"
+                href="https://open-metadata.org/schema/"
+                target="_blank"
+                className="hover:text-gray-500"
+              />
+            </li>
+            <li className="mb-2">
+              <ParamLink
                 name="Install"
                 href="https://docs.open-metadata.org/latest/quick-start/local-docker-deployment"
                 target="_blank"
