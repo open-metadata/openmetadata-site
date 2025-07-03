@@ -10,6 +10,7 @@ This directory contains markdown files for OpenMetadata product updates/release 
 ## Adding a New Version
 
 1. Add the version metadata to `versions.json`:
+
 ```json
 {
   "version": "v1.8.0",
@@ -20,6 +21,7 @@ This directory contains markdown files for OpenMetadata product updates/release 
 ```
 
 2. Create a markdown file named `v1.8.0.md` with the following frontmatter:
+
 ```markdown
 ---
 id: 80
@@ -32,6 +34,7 @@ note: "Optional note"
 3. Add content sections as needed:
 
 ### Features Section
+
 ```markdown
 ## Features
 
@@ -45,14 +48,17 @@ Long description with more details about the feature.
 ```
 
 ### Changelog Section
+
 ```markdown
 ## Changelog
 
 ### 🔧 Fixes
+
 - Fix item 1
 - Fix item 2
 
 ### ✨ Improvements
+
 - Improvement 1
 - Improvement 2
 ```
@@ -62,6 +68,7 @@ Long description with more details about the feature.
 For features that are only available in Collate, include "Collate" in the feature title. The system will automatically add the Collate badge and styling.
 
 Example:
+
 ```markdown
 ### Automatically Propagate Collate Metadata into Your Data Platforms
 ```
@@ -69,14 +76,32 @@ Example:
 ## YouTube Videos
 
 To embed YouTube videos, use the custom YouTube component:
+
 ```markdown
 <YouTube videoId="5iiN2gtJzwo" />
 ```
 
 Extract the video ID from the YouTube URL:
+
 - Full URL: `https://www.youtube.com/watch?v=5iiN2gtJzwo`
 - Embed URL: `https://www.youtube.com/embed/5iiN2gtJzwo`
 - Video ID: `5iiN2gtJzwo`
+
+## Inline Images
+
+To display small images inline with text (like favicons or small icons), use the CollateImage component:
+
+```markdown
+- Feature description <CollateImage src="https://example.com/icon.png" alt="icon description" />
+```
+
+The CollateImage component will render the image inline with the text, sized at 16px x 16px with proper spacing.
+
+Example:
+
+```markdown
+- Export PDF for custom dashboards improvements <CollateImage src="https://www.getcollate.io/images/favicon.ico" alt="collate" />
+```
 
 ## Emoji Reference for Changelog Sections
 
