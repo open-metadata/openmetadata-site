@@ -23,6 +23,6 @@ export const TRY_OPENMETADATA = [
     description: 'Free OpenMetadata cloud service with your own data',
     linkText: 'Sign Up Free',
     href: 'https://cloud.getcollate.io/signup',
-    isNew: true,
+    isNew: false,
   },
 ];
