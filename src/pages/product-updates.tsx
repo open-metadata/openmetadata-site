@@ -281,10 +281,12 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
           }
           .product-updates ul li {
             @apply text-[#767676] text-sm md:text-base leading-relaxed pl-7 relative;
+            margin-bottom: 6px;
           }
           .product-updates ul li::before {
             content: "•";
             @apply text-[#7147E8] absolute left-2 top-0;
+            margin-right: 10px;
           }
           .product-updates li p {
             @apply mb-0;

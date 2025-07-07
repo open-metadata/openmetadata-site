@@ -7,7 +7,6 @@ export const TRY_OPENMETADATA = [
     description: 'Deploy OpenMetadata in your own environment',
     linkText: 'Download Now',
     href: 'https://docs.open-metadata.org/latest/quick-start/local-docker-deployment',
-    isNew: false,
   },
   {
     icon: `${ICON_ROUTE}/experience-card.svg`,
@@ -15,7 +14,6 @@ export const TRY_OPENMETADATA = [
     description: 'Experience OpenMetadata with demo data in seconds',
     linkText: 'Try Live Sandbox',
     href: 'https://sandbox.open-metadata.org/',
-    isNew: false,
   },
   {
     icon: `${ICON_ROUTE}/free-saas-card.svg`,
@@ -23,6 +21,5 @@ export const TRY_OPENMETADATA = [
     description: 'Free OpenMetadata cloud service with your own data',
     linkText: 'Sign Up Free',
     href: 'https://cloud.getcollate.io/signup',
-    isNew: true,
   },
 ];

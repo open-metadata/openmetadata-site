@@ -16,12 +16,6 @@ const TryOpenMetadata = () => {
               key={item.header}
               className="border border-[#D0C2F7] bg-white p-5 rounded shadow-md relative"
             >
-              {item.isNew && (
-                <div className="tag absolute right-3 top-[26px] text-[#333333] font-bold bg-[#E2DAFA] text-center py-2 px-2 rotate-45 text-[20px]">
-                  NEW!
-                </div>
-              )}
-
               <Image
                 className={`${
                   item.header === "Free SaaS"
