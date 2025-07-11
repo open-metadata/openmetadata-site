@@ -6,6 +6,7 @@ import ParamLink from "../ParamLink";
 const NavbarDev = ({ onClick }: { onClick: () => void }) => {
   const [open, setOpen] = useState(false);
   const [scrolledNav, setScrolledNav] = useState(false);
+  const [communityDropdownOpen, setCommunityDropdownOpen] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 25) {
@@ -18,8 +19,18 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
 
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.relative.group')) {
+        setCommunityDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
     return () => {
       window.removeEventListener("scroll", changeBackground);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, []);
 
@@ -74,8 +85,51 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                 name="Documentation"
               />
             </li>
-            <li>
-              <ParamLink href="/community" name="Community" />
+            <li className="relative group">
+              <div 
+                className="flex items-center gap-1 cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setCommunityDropdownOpen(!communityDropdownOpen);
+                }}
+              >
+                <span className="hover:text-primary">Community</span>
+                <svg
+                  className={`w-4 h-4 transition-transform ${communityDropdownOpen ? 'rotate-180' : ''} group-hover:rotate-180`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <ul className={`absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg transition-all duration-200 z-50 ${
+                communityDropdownOpen ? 'block opacity-100 visible' : 'lg:opacity-0 lg:invisible'
+              } lg:group-hover:opacity-100 lg:group-hover:visible lg:block max-lg:${communityDropdownOpen ? 'block' : 'hidden'}`}>
+                <li>
+                  <ParamLink 
+                    href="/community" 
+                    name="Slack" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-t-md"
+                  />
+                </li>
+                <li>
+                  <ParamLink 
+                    href="/events" 
+                    name="Events" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  />
+                </li>
+                <li>
+                  <ParamLink 
+                    href="https://www.youtube.com/@OpenMetadataChannel" 
+                    target="_blank"
+                    name="YouTube" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-b-md"
+                  />
+                </li>
+              </ul>
             </li>
             <li>
               <ParamLink href="/mcp" name="MCP" />
