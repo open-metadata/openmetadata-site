@@ -64,10 +64,10 @@ export default function Community() {
                     <div className="flex flex-col sm:flex-row max-lg:mt-3">
                       <ParamLink
                         className="btn btn-lg btn-outline-primary btn-home-slack font-semibold"
-                        href="https://www.youtube.com/watch?v=AuYBaXC8-M4"
+                        href="https://blog.open-metadata.org/introducing-the-model-context-protocol-mcp-in-openmetadata-e757385f4fb2"
                         target="_blank"
                       >
-                        Watch on YouTube
+                        Read the blog
                       </ParamLink>
                     </div>
                   </div>
@@ -216,7 +216,7 @@ export default function Community() {
               <div className="row gx-5 justify-content-center">
                 <div className="col-lg-12 text-center">
                   <h2 className="section-header font-semibold mb-4 leading-8">
-                    Missed a Community Meeting? Access it Anytime
+                    MCP at our Meetups
                   </h2>
                   <p>
                     You can watch all of our previous meetups on&nbsp;
@@ -229,24 +229,23 @@ export default function Community() {
                     .
                   </p>
                   <p className="mb-5">
-                    You'll also find some short feature videos there. Here's
-                    what's most recent. Take a look!
+                    Here are some recent meetup sessions on MCP and OpenMetadata. Take a look!
                   </p>
                   <div className="row gx-5">
                     <div className="col">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="e0IDbuBsInY" />
-                          <p className="font-semibold mb-0 mt-2">June 2025</p>
+                          <YoutubeEmbed videoId="AuYBaXC8-M4" />
+                          <p className="font-semibold mb-0 mt-2">MCP Introduction, May 2025</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="ErYPOBBiAAA" />
+                          <YoutubeEmbed videoId="FUlxf-LMxdU" />
                           <p className="font-semibold mb-0 mt-2">
-                            Data Contracts, June 2025
+                            MCP Update, June 2025
                           </p>
                         </div>
                       </div>
