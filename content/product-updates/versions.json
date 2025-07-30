@@ -1,5 +1,10 @@
 [
   {
+    "version": "v1.8.8",
+    "date": "Released on 30th July 2025.",
+    "hasFeatures": false
+  },
+  {
     "version": "v1.8.7",
     "date": "Released on 24th July 2025.",
     "hasFeatures": false
