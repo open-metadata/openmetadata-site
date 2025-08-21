@@ -26,6 +26,8 @@ export default function App({ Component, pageProps }: AppProps) {
     setStoredCookie(choice);
   };
 
+  const canonicalUrl = pageProps.link?.split("?")[0]
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       const userCookie = window.localStorage.getItem("userCookie");
@@ -61,7 +63,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link
           rel="canonical"
-          href={`https://open-metadata.org${pageProps.link}`}
+          href={`https://open-metadata.org${canonicalUrl}`}
         />
         <meta
           name="viewport"
