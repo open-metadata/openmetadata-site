@@ -10,17 +10,17 @@ export const GORGIAS_CUSTOMER_HEADER = {
 export const GORGIAS_CUSTOMER_HIGHLIGHTS = [
     {
         id: 1,
-        count: '1400',
+        count: '1400+',
         description: "dbt models built daily, across 5 projects with different applications"
     },
     {
         id: 2,
-        count: '5',
+        count: '5+',
         description: "petabytes of data processed daily"
     },
     {
         id: 3,
-        count: '45K',
+        count: '45K+',
         description: "Data assets cataloged across diverse tools and sources"
     }
 ];

@@ -20,8 +20,8 @@ export const HEADER_CUSTOMERS = [
         backgroundImage: `${HEADER_IMAGE_ROUTE}/loggi-bg.svg`,
         logo: `${HEADER_IMAGE_ROUTE}/loggi-logo.svg`,
         title: 'Loggi 16,000 dashboards removed for huge cost savings',
-        buttonText: 'Watch Now',
-        url: 'https://youtu.be/cc9ID6jh5NM?si=y06QXNAi_dEPYXLl',
+        buttonText: 'Learn More',
+        url: '/case-study/loggi',
     },
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/gorgias-bg.svg`,
