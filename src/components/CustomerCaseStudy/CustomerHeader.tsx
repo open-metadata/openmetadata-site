@@ -6,7 +6,7 @@ interface CustomerHeaderProps {
         description: string;
         industry: string;
         technologies: string;
-        image: string;
+        image?: string;
     },
     highlights: {
         id: number;
@@ -25,14 +25,30 @@ const CustomerHeader = ({ customerHeader, highlights }: CustomerHeaderProps) => 
                     <div className="grid gap-4 mt-5 sm:grid-cols-3">
                         {highlights.map(item => (
                             <div className="text-[#292929]" key={item.id}>
-                                <div className="text-[26px] font-bold text-[#7147E8]">{item.count}+</div>
+                                <div className="text-[26px] font-bold text-[#7147E8]">{item.count}</div>
                                 <p className="text-[18px]">{item.description}</p>
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className="justify-self-center">
-                    <Image src={customerHeader.image} alt="Header" width={500} height={500} className="rounded-lg" />
+                <div className="justify-self-center self-center">
+                    {customerHeader.image ? (
+                        <Image 
+                            src={customerHeader.image} 
+                            alt="Header" 
+                            width={500} 
+                            height={500} 
+                            className="rounded-lg" 
+                        />
+                    ) : ( 
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/cc9ID6jh5NM?si=uQ0g-8bzg4fpx_DY" 
+                            title="YouTube video player" 
+                            allowFullScreen
+                        ></iframe>
+                    )}
                 </div>
             </div>
             <div className="grid gap-y-12 mt-[40px] text-[#292929] text-[18px] sm:text-[20px] sm:grid-cols-2 lg:gap-y-0 lg:gap-3 lg:grid-cols-5">
