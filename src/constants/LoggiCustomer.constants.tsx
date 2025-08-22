@@ -14,7 +14,7 @@ export const LOGGI_CUSTOMER_HIGHLIGHTS = [
     },
     {
         id: 2,
-        count: '~89%',
+        count: '89%',
         description: "fewer Looker dashboards to mitigate data sprawl"
     },
     {
