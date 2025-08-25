@@ -60,7 +60,7 @@ const IntegrationsDev = () => {
         Integrations
       </h3>
       <p className="text-[#382374] max-w-[80%] mt-2 font-normal text-center mx-auto tracking-[-0.02em] text-[16px] lg:mt-0 lg:text-[#555555] lg:text-[20px] lg:max-w-[54%]">
-        OpenMetadata's ingestion framework supports connectors for 80+ data services, 
+        OpenMetadata's ingestion framework supports connectors for 90+ data services, 
         with more added every release.
       </p>
       <div className="mt-[48px] overflow-y-scroll relative shadow-primary rounded-lg md:rounded-2xl sm:flex sm:h-[890px] md:h-[956px]">
