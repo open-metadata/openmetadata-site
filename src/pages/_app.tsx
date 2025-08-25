@@ -83,7 +83,7 @@ export default function App({ Component, pageProps }: AppProps) {
         {/* Open Graph tags start  */}
         <meta
           property="og:title"
-          content="OpenMetadata: Join the #1 Open Source Data Community"
+          content="OpenMetadata: #1 Open Source Metadata Platform"
         />
         <meta
           property="og:description"
@@ -101,7 +101,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:site" content="https://open-metadata.org" />
         <meta
           name="twitter:title"
-          content="OpenMetadata: Join the #1 Open Source Data Community"
+          content="OpenMetadata: #1 Open Source Metadata Platform"
         />
         <meta
           name="twitter:description"
@@ -114,7 +114,7 @@ export default function App({ Component, pageProps }: AppProps) {
         {/* Twitter Card end */}
 
         <title>
-          {pageProps.title ?? "OpenMetadata: Join the #1 Open Source Data Community"}
+          {pageProps.title ?? "OpenMetadata: #1 Open Source Metadata Platform"}
         </title>
         {(!storedCookie || storedCookie === "Accept") && (
           <>

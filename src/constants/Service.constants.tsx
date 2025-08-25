@@ -6,7 +6,7 @@ export const SERVICE_LIST = [
         header3: ' for all your use cases'
     },
     description:
-      "Get complete data context unified across data discovery, observability, and governance, made possible with a Unified Metadata Graph that centralizes all metadata for all data assets. 80+ turnkey connectors make it easy to collect all your metadata and power a unified experience designed to bring data teams together in shared responsibility and contribution.",
+      "Get complete data context unified across data discovery, observability, and governance, made possible with a Unified Metadata Graph that centralizes all metadata for all data assets. 90+ turnkey connectors make it easy to collect all your metadata and power a unified experience designed to bring data teams together in shared responsibility and contribution.",
     icon: "/assets/unified-platform.svg",
   },
   {
