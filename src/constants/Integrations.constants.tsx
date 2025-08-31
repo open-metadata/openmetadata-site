@@ -300,6 +300,12 @@ export const INTEGRATION_SERVICES = [
     connector: 'Dashboard',
     services: [
       {
+        href: 'https://docs.open-metadata.org/latest/connectors/dashboard/grafana',
+        src: '/assets/services/grafana.png',
+        alt: 'service-grafana',
+        name: 'Grafana',
+      },
+      {
         href: 'https://docs.open-metadata.org/latest/connectors/dashboard/looker',
         src: '/assets/services/looker.webp',
         alt: 'service-looker',
