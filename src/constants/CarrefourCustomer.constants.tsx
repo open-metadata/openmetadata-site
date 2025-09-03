@@ -3,7 +3,7 @@ export const CARREFOUR_CUSTOMER_HEADER = {
     description: "Carrefour Brazil is Brazil's largest retail company. They have over 130,000 employees across more than 1,180 stores serving over 60 million customers monthly, with brands including Carrefour, Atacadão, and Sam's Club. With a large and complex data environment, Carrefour Brazil’s data platform and governance team received CDO executive sponsorship to transform how they engaged with the many different data teams they supported throughout the company, through both technical and business changes.  By implementing OpenMetadata (internally white-labeled as C4Data), they created a unified metadata platform for managing data discovery, observability, and governance at an enterprise scale, to improve data trust and drive data democratization.",
     industry: "Retail",
     technologies: "Google Cloud Platform, BigQuery, Tableau, Kubernetes, JIRA",
-    image: "/assets/carrefour-customer/carrefour-header.png"
+    videoUrl: "jEBN2CNTvBo?si=pYbTaf7cjOFUEEoA"
 }
 
 

@@ -3,7 +3,7 @@ export const GORGIAS_CUSTOMER_HEADER = {
     description: "Gorgias is a conversational AI platform for ecommerce that drives sales and resolves support inquiries. Trusted by over 15,000 ecommerce brands, Gorgias supports growing independent shops to globally recognizable brands powering over one billion conversations for 275 million shoppers globally. As their internal data environment scaled to over 1,400 dbt models and five petabytes of daily warehouse processing, their data team faced growing challenges with discoverability, clarity, and governance. By adopting OpenMetadata, Gorgias gained an open source platform that automates their metadata management. This simplified infrastructure, enabled Slack-based AI discovery agents, and helped analysts quickly find and trust the data they need. The result? More collaboration, more productivity, and a cleaner, more efficient data landscape.",
     industry: "E-commerce / Retail",
     technologies: "Google Cloud Platform, BigQuery, DBT, Kafka, Kestra, Airbyte, Kubernetes, Metaplane, Datadog, Slack",
-    image: "/assets/gorgias-customer/gorgias-header.webp"
+    videoUrl: "bJB20qtzZEY?si=jegLme1GwhQKN_xU"
 }
 
 

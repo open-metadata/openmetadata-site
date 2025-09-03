@@ -6,7 +6,7 @@ interface CustomerHeaderProps {
         description: string;
         industry: string;
         technologies: string;
-        image?: string;
+        videoUrl: string;
     },
     highlights: {
         id: number;
@@ -32,28 +32,18 @@ const CustomerHeader = ({ customerHeader, highlights }: CustomerHeaderProps) => 
                     </div>
                 </div>
                 <div className="justify-self-center self-center">
-                    {customerHeader.image ? (
-                        <Image 
-                            src={customerHeader.image} 
-                            alt="Header" 
-                            width={500} 
-                            height={500} 
-                            className="rounded-lg" 
-                        />
-                    ) : ( 
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/cc9ID6jh5NM?si=uQ0g-8bzg4fpx_DY" 
-                            title="YouTube video player" 
-                            allowFullScreen
-                        ></iframe>
-                    )}
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src={`https://www.youtube.com/embed/${customerHeader.videoUrl}`} 
+                        title="YouTube video player" 
+                        allowFullScreen
+                    ></iframe>
                 </div>
             </div>
             <div className="grid gap-y-12 mt-[40px] text-[#292929] text-[18px] sm:text-[20px] sm:grid-cols-2 lg:gap-y-0 lg:gap-3 lg:grid-cols-5">
-                <div className="sm:col-span-2 lg:col-span-3">
-                    {customerHeader.description}
+                <div className="sm:col-span-2 lg:col-span-3 whitespace-pre-line">
+                    <div dangerouslySetInnerHTML={{ __html: customerHeader.description }} />
                 </div>
                 <div className="lg:justify-self-center">
                     <div className="font-bold uppercase">Industry</div>

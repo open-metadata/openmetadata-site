@@ -5,11 +5,11 @@ import FooterDev from "@/components/FooterDev/FooterDev";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
 import { 
-  LOGGI_CUSTOMER_CHALLENGES, 
-  LOGGI_CUSTOMER_HEADER, 
-  LOGGI_CUSTOMER_HIGHLIGHTS, 
-  LOGGI_CUSTOMER_TESTIMONIAL 
-} from "@/constants/LoggiCustomer.constants";
+    FREENOW_CUSTOMER_CHALLENGES, 
+    FREENOW_CUSTOMER_HEADER, 
+    FREENOW_CUSTOMER_HIGHLIGHTS, 
+    FREENOW_CUSTOMER_TESTIMONIAL 
+} from "@/constants/FreenowCustomer.constants";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -21,7 +21,7 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   };
 }
 
-const LoggiCaseStudyPage = () => {
+const FreeNowCaseStudyPage = () => {
   const router = useRouter();
 
   const handleTryOpenMetadataClick = () => {
@@ -31,8 +31,11 @@ const LoggiCaseStudyPage = () => {
   return (
     <>
       <Head>
-        <title>Loggi’s data delivers 30% faster with OpenMetadata</title>
-        <meta name="description" content="Loggi saves $24K annually with OpenMetadata. Cut dashboards from 18K  to 2K with streamlined data governance" />
+        <title>FREENOW: OpenMetadata powered Data Announcement Engine</title>
+        <meta 
+            name="description" 
+            content="Discover how FREENOW built an OpenMetadata-powered system to automate data communications across 17k assets and 300+ downstream dependencies" 
+        />
       </Head>
       <div>
         <div className="mx-auto fixed top-0 w-full z-[1030]">
@@ -41,11 +44,11 @@ const LoggiCaseStudyPage = () => {
         </div>
         <div className="mt-20 md:mt-24 lg:mt-32">
           <CustomerHeader
-            customerHeader={LOGGI_CUSTOMER_HEADER}
-            highlights={LOGGI_CUSTOMER_HIGHLIGHTS}
+            customerHeader={FREENOW_CUSTOMER_HEADER}
+            highlights={FREENOW_CUSTOMER_HIGHLIGHTS}
           />
-          <CustomerTestimonial testimonial={LOGGI_CUSTOMER_TESTIMONIAL} />
-          <CustomerChallenges data={LOGGI_CUSTOMER_CHALLENGES} />
+          <CustomerTestimonial testimonial={FREENOW_CUSTOMER_TESTIMONIAL} />
+          <CustomerChallenges data={FREENOW_CUSTOMER_CHALLENGES} />
         </div>
         <FooterDev />
       </div>
@@ -53,4 +56,4 @@ const LoggiCaseStudyPage = () => {
   );
 };
 
-export default LoggiCaseStudyPage;
+export default FreeNowCaseStudyPage;

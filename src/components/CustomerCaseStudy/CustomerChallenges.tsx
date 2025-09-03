@@ -16,7 +16,7 @@ const CustomerChallenges = ({ data }: CustomerChallengesProps) => {
                 {data.map(item => (
                     <div key={item.title} className="text-[#292929]">
                         <div className="font-medium tracking-[-0.02em] text-[32px] leading-[38px] mt-12 mb-6 sm:mt-20 sm:mb-8 sm:text-[46px] sm:leading-[52px]">{item.title}</div>
-                        <div className="sm:text-[20px]">{item.description}</div>
+                        <div className="sm:text-[20px] whitespace-pre-line">{item.description}</div>
                         <div className="my-8 flex flex-col gap-5 sm:my-12">
                             {item.challenges.map(challenge => (
                                 <div key={challenge.header} className="sm:text-[20px]">
