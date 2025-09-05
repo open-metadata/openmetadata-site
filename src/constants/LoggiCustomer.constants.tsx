@@ -3,6 +3,7 @@ export const LOGGI_CUSTOMER_HEADER = {
     description: "Loggi is one of Brazil’s largest logistics companies, delivering over 300,000 packages per day across all 27 states—including hard-to-reach regions like Manaus in the Amazon. With more than 2,000 employees producing and consuming data across a sprawling operation, the company faced mounting challenges in data discoverability, trust, and reporting accuracy. OpenMetadata provided the open-source foundation Loggi needed to organize ownership, surface data lineage, and clean up their environment. Loggi streamlined their data infrastructure by reducing Looker dashboards from 18,000 to 2,000 and eliminating 7,000 Redshift tables, which significantly lowered the human costs associated with discovery, maintenance, and the analysis of outdated information. Today, OpenMetadata powers a more transparent and governable data practice at Loggi—one built for scale, community, and long-term clarity.",
     industry: "Logistics / Supply Chain",
     technologies: "Redshift, dbt, Looker, OpenMetadata",
+    videoUrl: 'A_RFjnjPOjk?si=86yJjGt4y4sJwh9e'
 }
 
 

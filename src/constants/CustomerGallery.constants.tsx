@@ -7,14 +7,16 @@ export const HEADER_CUSTOMERS = [
         logo: `${HEADER_IMAGE_ROUTE}/mango-logo.svg`,
         title: 'Mango increases productivity of data teams up to 20%',
         buttonText: 'Read More',
-        url: 'https://www.getcollate.io/customers/mango'
+        url: 'https://www.getcollate.io/customers/mango',
+        isExternal: true
     },
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/carrefour-bg.svg`,
         logo: `${HEADER_IMAGE_ROUTE}/carrefour-logo.svg`,
         title: 'Carrefour Brazil Automates Data Governance For 500+ Active Users',
         buttonText: 'Read More',
-        url: '/case-study/carrefour-brazil'
+        url: '/case-study/carrefour-brazil',
+        isExternal: false
     },
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/loggi-bg.svg`,
@@ -22,6 +24,7 @@ export const HEADER_CUSTOMERS = [
         title: 'Loggi 16,000 dashboards removed for huge cost savings',
         buttonText: 'Learn More',
         url: '/case-study/loggi',
+        isExternal: false
     },
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/gorgias-bg.svg`,
@@ -29,13 +32,18 @@ export const HEADER_CUSTOMERS = [
         title: 'Gorgias 45K+ Data assets cataloged',
         buttonText: 'Read More',
         url: '/case-study/gorgias',
+        isExternal: false
     },
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/freenow-bg.svg`,
         logo: `${HEADER_IMAGE_ROUTE}/freenow-logo.svg`,
         title: '7 business domains, managed with 30+ analytics process per domain',
-        buttonText: 'Read More',
+        buttonText: 'FREENOW Blog',
         url: 'https://medium.com/breaking-data-silos-lineage-for-cross-domain/data-management-at-freenow-the-lineage-and-announcements-approach-177f387a9180',
+        button2Text: 'Read More',
+        url2: '/case-study/freenow',
+        isExternal: true,
+        isExternal2: false
     },
 ]
 
