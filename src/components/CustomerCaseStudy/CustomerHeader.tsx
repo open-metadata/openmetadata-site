@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ParamLink from "../ParamLink";
 
 interface CustomerHeaderProps {
     customerHeader: {
@@ -7,6 +8,10 @@ interface CustomerHeaderProps {
         industry: string;
         technologies: string;
         videoUrl: string;
+        blog?: {
+            url: string;
+            text: string;
+        }
     },
     highlights: {
         id: number;
@@ -42,8 +47,15 @@ const CustomerHeader = ({ customerHeader, highlights }: CustomerHeaderProps) => 
                 </div>
             </div>
             <div className="grid gap-y-12 mt-[40px] text-[#292929] text-[18px] sm:text-[20px] sm:grid-cols-2 lg:gap-y-0 lg:gap-3 lg:grid-cols-5">
-                <div className="sm:col-span-2 lg:col-span-3 whitespace-pre-line">
-                    <div dangerouslySetInnerHTML={{ __html: customerHeader.description }} />
+                <div className="sm:col-span-2 lg:col-span-3 relative">
+                    <div>{customerHeader.description}</div>
+                    {customerHeader?.blog && (
+                        <ParamLink 
+                            href={customerHeader?.blog?.url} 
+                            name={customerHeader?.blog?.text} 
+                            className="relative top-5 text-[#7147E8] hover:underline" 
+                        />
+                    )}
                 </div>
                 <div className="lg:justify-self-center">
                     <div className="font-bold uppercase">Industry</div>

@@ -1,8 +1,10 @@
 export const FREENOW_CUSTOMER_HEADER = {
     title: "Driving Smarter Data Communication: How FREENOW Built a Custom Asset Announcement Engine with OpenMetadata",
-    description: `FREENOW is a leading multi-mobility provider operating across 150+ cities in 9 countries, partnering with major services like Hertz and Dott. With over 150,000 drivers and hundreds of thousands micromobility assets—including 160k+ eScooters, 40k+ eBikes, and 30k+ car shares—FREENOW manages a decentralized but high-stakes data environment. At this scale, ensuring timely, consistent communication around critical data asset changes—without overwhelming stakeholders—was a growing challenge. By building on OpenMetadata's open source foundation, they developed a Slack-integrated, lineage-aware announcement system. Communication is now so streamlined that a single update can cascade across more than 300 downstream asset dependencies.
-
-<a href="https://medium.com/breaking-data-silos-lineage-for-cross-domain/data-management-at-freenow-the-lineage-and-announcements-approach-177f387a9180" target="_blank" rel="noopener noreferrer" style="color: #7147E8; text-decoration: none;" onMouseOver="this.style.textDecoration='underline'" onMouseOut="this.style.textDecoration='none'">Read FreeNOW's blog on adopting OpenMetadata</a>`,
+    description: "FREENOW is a leading multi-mobility provider operating across 150+ cities in 9 countries, partnering with major services like Hertz and Dott. With over 150,000 drivers and hundreds of thousands micromobility assets—including 160k+ eScooters, 40k+ eBikes, and 30k+ car shares—FREENOW manages a decentralized but high-stakes data environment. At this scale, ensuring timely, consistent communication around critical data asset changes—without overwhelming stakeholders—was a growing challenge. By building on OpenMetadata's open source foundation, they developed a Slack-integrated, lineage-aware announcement system. Communication is now so streamlined that a single update can cascade across more than 300 downstream asset dependencies",
+    blog: {
+        url: 'https://medium.com/breaking-data-silos-lineage-for-cross-domain/data-management-at-freenow-the-lineage-and-announcements-approach-177f387a9180',
+        text: "Read FreeNOW's blog on adopting OpenMetadata"
+    },
     industry: "Mobility-as-a-Service (MaaS), Ridesharing",
     technologies: "Slack, Python Flask, OpenMetadata API",
     videoUrl: 'OyD3DgEv8hM?si=vpsc4Uzx2sV-UOXB'
