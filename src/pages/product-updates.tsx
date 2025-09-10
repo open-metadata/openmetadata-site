@@ -10,6 +10,7 @@ import NavbarDev from "../components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "../components/NavbarDev/NavbarStrip.component";
 import FooterDev from "../components/FooterDev/FooterDev";
 import { mdxComponents } from "../components/MDXComponents";
+import Image from "next/image";
 
 interface VersionInfo {
   version: string;
@@ -332,13 +333,7 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
                 className="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#F1EDFD] hover:bg-[#E2DAFA] transition-colors"
                 title="Subscribe to RSS Feed"
               >
-                <svg
-                  className="w-5 h-5 md:w-6 md:h-6 text-[#7147E8]"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M3.429 5.1v2.4c7.248 0 13.114 5.886 13.114 13.142h2.4C18.943 12.066 12 5.1 3.429 5.1zm0 4.8v2.4a4.351 4.351 0 014.343 4.342h2.4c0-3.72-3.023-6.742-6.743-6.742zM6.171 16.485a1.714 1.714 0 11-3.428 0 1.714 1.714 0 013.428 0z" />
-                </svg>
+                 <Image src='/assets/product_update.png' alt="Product Update" width={24} height={24} />
               </a>
             </div>
             <p className="text-lg md:text-xl text-[#767676] mt-4 max-w-3xl mx-auto">
