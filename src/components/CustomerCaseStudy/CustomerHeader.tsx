@@ -7,7 +7,8 @@ interface CustomerHeaderProps {
         description: string;
         industry: string;
         technologies: string;
-        videoUrl: string;
+        videoUrl?: string;
+        image?: string;
         blog?: {
             url: string;
             text: string;
@@ -37,13 +38,23 @@ const CustomerHeader = ({ customerHeader, highlights }: CustomerHeaderProps) => 
                     </div>
                 </div>
                 <div className="justify-self-center self-center">
-                    <iframe 
-                        width="560" 
-                        height="315" 
-                        src={`https://www.youtube.com/embed/${customerHeader.videoUrl}`} 
-                        title="YouTube video player" 
-                        allowFullScreen
-                    ></iframe>
+                    {customerHeader?.image ? (
+                        <Image 
+                            src={customerHeader.image} 
+                            alt={customerHeader.title} 
+                            width={500} 
+                            height={500} 
+                            className="rounded-lg"
+                        />
+                ) : (
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src={`https://www.youtube.com/embed/${customerHeader.videoUrl}`} 
+                            title="YouTube video player" 
+                            allowFullScreen
+                        ></iframe>
+                    )} 
                 </div>
             </div>
             <div className="grid gap-y-12 mt-[40px] text-[#292929] text-[18px] sm:text-[20px] sm:grid-cols-2 lg:gap-y-0 lg:gap-3 lg:grid-cols-5">
