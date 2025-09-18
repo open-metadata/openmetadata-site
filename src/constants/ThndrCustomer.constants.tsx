@@ -16,7 +16,7 @@ export const THNDR_CUSTOMER_HIGHLIGHTS = [
     {
         id: 2,
         count: '6',
-        description: "fdata team members seamlessly managing enterprise-scale governance"
+        description: "data team members seamlessly managing enterprise-scale governance"
     }
 ];
 
@@ -24,7 +24,7 @@ export const THNDR_CUSTOMER_TESTIMONIAL = {
     content: "We chose OpenMetadata because it’s open source and you can easily deploy it. It’s a single solution for all your data cataloging, data governance, and data quality needs. And the community support is instant. If you reach out to them on Slack, they instantly solve your problem.",
     name: "Fizza Abid",
     title: "Data Platform Engineer at Thndr",
-    logo: "/assets/thndr-customer/thndr.png"
+    logo: "/assets/testimonials/thndr.png"
 }
 
 export const THNDR_CUSTOMER_CHALLENGES = [
