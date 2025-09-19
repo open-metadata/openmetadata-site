@@ -216,6 +216,9 @@ const CaseStudiesPage = () => {
                     <div className="text-black mt-4">
                       - {customer.customerName}, {customer.customerDesignation}
                     </div>
+                    {customer?.link && (
+                      <ParamLink name="Read More" href={customer.link} className="inline-block text-lg mt-4 text-[#7147E8] hover:underline" />
+                    )}
                   </div>
                 ))}
               </div>
