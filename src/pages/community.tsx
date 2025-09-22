@@ -151,68 +151,6 @@ export default function Community() {
             </div>
           </section>
 
-          <section className="bg-white py-10">
-            <div className="container px-10">
-              <div className="text-center mb-5">
-                <h2 className="section-header font-semibold">
-                  OpenMetadata Webinars
-                </h2>
-              </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
-                <div className="max-w-lg">
-                  <div className="card">
-                    <div className="card-body">
-                      <YoutubeEmbed videoId="ihwtuNHt1kI" />
-                      <p className="font-semibold mb-0 mt-2">
-                        Here's a Webinar on Data Quality Simplified:
-                        Effortlessly Build, Deploy, Monitor, &amp; Configure
-                        Alerts with our No-Code Platform. Watch Teddy Crépineau,
-                        Founding Software Engineer at Collate demo the
-                        easy-to-use and extensible data quality features to get
-                        to reliable data faster.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="max-w-lg">
-                  <div className="card">
-                    <div className="card-body">
-                      <YoutubeEmbed videoId="lOQepnTdA58" />
-                      <p className="font-semibold mb-0 mt-2">
-                        Learn to proactively hone the data culture of your
-                        company. With a built-in goal-setting and tracking
-                        mechanism in Data Insights, you can now set targets,
-                        monitor, and boost teams to accomplish data goals to
-                        foster a healthy data culture using OpenMetadata.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-6 flex justify-center">
-                <div className="col-lg-8 items-center justify-items-center text-center">
-                  <p className="text-[18px]">
-                    Watch out for an end-to-end coverage on everything you need
-                    to know about Data Lineage, Data Quality &amp; Profiler,
-                    Roles &amp; Policies, Custom Connectors, Data Culture,
-                    Storage Services, Setting up Integrations for Metadata
-                    Ingestion, Data Discovery, and a lot more.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="svg-border-rounded text-light">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 144.54 17.34"
-                preserveAspectRatio="none"
-                fill="currentColor"
-              >
-                <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-              </svg>
-            </div>
-          </section>
-
           <section className="bg-light py-10">
             <div className="container px-10">
               <div className="row gx-5 justify-content-center">
