@@ -84,6 +84,19 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/thndr'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/inDrive.webp`,
+        industry: 'Transportation',
+        testimonial: "OpenMetadata helps us to reduce the gap between business users and technical users. It's crucial for us to have a tool with powerful advanced search to filter search results, detailed data lineage, and integrated business glossary module.",
+        customerName: 'Liubov Pasechnik',
+        customerDesignation: 'Senior Data Steward (Data Governance Analyst)',
+        company: 'inDrive',
+        imgSize: {
+            width: 212,
+            height: 50
+        },
+        link: '/case-study/indrive'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,
         industry: 'Technology',
         testimonial: 'We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. OpenMetadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community.',
@@ -128,18 +141,6 @@ export const CUSTOMER_GALLERY = [
         company: 'PayU Finance',
         imgSize: {
             width: 188,
-            height: 50
-        },
-    },
-    {
-        logo: `${GALLERY_IMAGE_ROUTE}/inDrive.webp`,
-        industry: 'Transportation',
-        testimonial: "OpenMetadata helps us to reduce the gap between business users and technical users. It's crucial for us to have a tool with powerful advanced search to filter search results, detailed data lineage, and integrated business glossary module.",
-        customerName: 'Liubov Pasechnik',
-        customerDesignation: 'Senior Data Steward (Data Governance Analyst)',
-        company: 'inDrive',
-        imgSize: {
-            width: 212,
             height: 50
         },
     },
