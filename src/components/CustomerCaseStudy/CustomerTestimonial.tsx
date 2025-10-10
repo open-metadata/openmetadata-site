@@ -20,7 +20,7 @@ const CustomerTestimonial = ({ testimonial }: CustomerTestimonialProps) => {
                 <div className="mt-8 text-[18px] font-bold">{testimonial.name}</div>
                 <div className="text-[18px]">{testimonial.title}</div>
                 <div className="mt-8 flex justify-center">
-                    <Image src={testimonial.logo} alt="Logo" width={200} height={40} />
+                    <Image src={testimonial.logo} alt="Logo" width={160} height={40} />
                 </div>
             </div>
         </div>

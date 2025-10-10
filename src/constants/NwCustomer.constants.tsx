@@ -5,7 +5,7 @@ export const NW_CUSTOMER_HEADER = {
 Yet, as NW expanded its clean energy infrastructure, data governance fell behind. Manual lineage, scattered ownership, and outdated tags slowed insights and undermined trust in data. Partnering with Collate, NW replaced this patchwork of silos with a governed ecosystem with the help of OpenMetadata. OpenMetadata now automates ingestion, lineage, and ownership tagging, while the Model Context Protocol (MCP) brings AI-driven capabilities, like prompt-based queries and dashboard generation, into the mix, ensuring NW’s approach to data governance scales with its clean energy mission.`,
     industry: "Renewable Energy, Electric Mobility",
     technologies: "Kafka, PostgreSQL, BigQuery, Power BI, MCP, Grafana",
-    videoUrl: "jEBN2CNTvBo?si=pYbTaf7cjOFUEEoA"
+    videoUrl: "c_xegr1fflY?si=-NW0QiAEG3PVxAra"
 }
 
 export const NW_CUSTOMER_HIGHLIGHTS = [
