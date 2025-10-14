@@ -105,8 +105,8 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                 </svg>
               </div>
               <ul className={`absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg transition-all duration-200 z-50 ${
-                communityDropdownOpen ? 'block opacity-100 visible' : 'lg:opacity-0 lg:invisible'
-              } lg:group-hover:opacity-100 lg:group-hover:visible lg:block max-lg:${communityDropdownOpen ? 'block' : 'hidden'}`}>
+                communityDropdownOpen ? 'block' : 'hidden'
+              } lg:hidden lg:opacity-0 lg:invisible lg:group-hover:block lg:group-hover:opacity-100 lg:group-hover:visible`}>
                 <li>
                   <ParamLink 
                     href="/community" 

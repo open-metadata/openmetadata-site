@@ -97,6 +97,19 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/indrive'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/nw-logo.jpeg`,
+        industry: 'Renewable Energy, Electric Mobility',
+        testimonial: "For us, governance isn’t just about control — it’s also about trust. OpenMetadata gives us a single source of truth that’s automated, scalable, and trusted, so our teams can move faster with confidence.",
+        customerName: 'Aimen Denche',
+        customerDesignation: 'Data Engineer',
+        company: 'NW',
+        imgSize: {
+            width: 50,
+            height: 50
+        },
+        link: '/case-study/nw'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,
         industry: 'Technology',
         testimonial: 'We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. OpenMetadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community.',
