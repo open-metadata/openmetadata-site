@@ -37,24 +37,25 @@ const CustomerHeader = ({ customerHeader, highlights }: CustomerHeaderProps) => 
                         ))}
                     </div>
                 </div>
-                <div className="justify-self-center self-center">
+                <div className="justify-self-center self-center w-full max-w-[560px]">
                     {customerHeader?.image ? (
-                        <Image 
-                            src={customerHeader.image} 
-                            alt={customerHeader.title} 
-                            width={500} 
-                            height={500} 
+                        <Image
+                            src={customerHeader.image}
+                            alt={customerHeader.title}
+                            width={500}
+                            height={500}
                             className="rounded-lg"
                         />
                 ) : (
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src={`https://www.youtube.com/embed/${customerHeader.videoUrl}`} 
-                            title="YouTube video player" 
-                            allowFullScreen
-                        ></iframe>
-                    )} 
+                        <div className="relative w-full aspect-video">
+                            <iframe
+                                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                                src={`https://www.youtube.com/embed/${customerHeader.videoUrl}`}
+                                title="YouTube video player"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className="grid gap-y-12 mt-[40px] text-[#292929] text-[18px] sm:text-[20px] sm:grid-cols-2 lg:gap-y-0 lg:gap-3 lg:grid-cols-5">
