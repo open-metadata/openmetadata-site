@@ -155,21 +155,18 @@ export default function Community() {
             <div className="container px-10">
               <div className="text-center mb-5">
                 <h2 className="section-header font-semibold">
-                  OpenMetadata Webinars
+                  OpenMetadata Community Spotlights
                 </h2>
               </div>
               <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
                 <div className="max-w-lg">
                   <div className="card">
                     <div className="card-body">
-                      <YoutubeEmbed videoId="ihwtuNHt1kI" />
+                      <YoutubeEmbed videoId="fVqEiftzSxM" />
                       <p className="font-semibold mb-0 mt-2">
-                        Here's a Webinar on Data Quality Simplified:
-                        Effortlessly Build, Deploy, Monitor, &amp; Configure
-                        Alerts with our No-Code Platform. Watch Teddy Crépineau,
-                        Founding Software Engineer at Collate demo the
-                        easy-to-use and extensible data quality features to get
-                        to reliable data faster.
+                        In this video, Antoine Glacet, Kansai Airport's 
+                        Data & Innovation Manager, discusses the ongoing 
+                        adoption of OpenMetadata at Kansai Airports! Thank you, Antoine!!                       
                       </p>
                     </div>
                   </div>
@@ -177,13 +174,11 @@ export default function Community() {
                 <div className="max-w-lg">
                   <div className="card">
                     <div className="card-body">
-                      <YoutubeEmbed videoId="lOQepnTdA58" />
+                      <YoutubeEmbed videoId="6MEy4qNAJw8" />
                       <p className="font-semibold mb-0 mt-2">
-                        Learn to proactively hone the data culture of your
-                        company. With a built-in goal-setting and tracking
-                        mechanism in Data Insights, you can now set targets,
-                        monitor, and boost teams to accomplish data goals to
-                        foster a healthy data culture using OpenMetadata.
+                        In this video, Nancy Amandi, Data Engineer @ Moniepoint, 
+                        shares her journey into becoming an OpenMetadata contributor! 
+                        Thank you, Nancy!!
                       </p>
                     </div>
                   </div>
@@ -192,11 +187,10 @@ export default function Community() {
               <div className="mt-6 flex justify-center">
                 <div className="col-lg-8 items-center justify-items-center text-center">
                   <p className="text-[18px]">
-                    Watch out for an end-to-end coverage on everything you need
-                    to know about Data Lineage, Data Quality &amp; Profiler,
-                    Roles &amp; Policies, Custom Connectors, Data Culture,
-                    Storage Services, Setting up Integrations for Metadata
-                    Ingestion, Data Discovery, and a lot more.
+                    Developers are constantly building amazing things with
+                    OpenMetadata! In these Community Spotlights, hear from
+                    engineers that are using OpenMetadata redefine what it 
+                    means to build and manage high quality data assets at scale!
                   </p>
                 </div>
               </div>
@@ -238,17 +232,17 @@ export default function Community() {
                     <div className="col">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="NxqCn-3XkVc" />
-                          <p className="font-semibold mb-0 mt-2">May 2025</p>
+                          <YoutubeEmbed videoId="w1GBD1bU1B8" />
+                          <p className="font-semibold mb-0 mt-2">September 2025</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="AuYBaXC8-M4" />
+                          <YoutubeEmbed videoId="wcis1hwaDHw" />
                           <p className="font-semibold mb-0 mt-2">
-                            MCP Introduction, May 2025
+                            OpenMetadata 1.10 Updates, September 2025
                           </p>
                         </div>
                       </div>
