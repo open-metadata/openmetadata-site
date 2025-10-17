@@ -28,7 +28,7 @@ const CustomerHeader = ({ customerHeader, highlights }: CustomerHeaderProps) => 
                 <div className="text-center lg:text-left">
                     <p className="text-[#7147E8] tracking-[0.04em] uppercase font-bold text-[16px] sm:text-[20px]">Community Case Study</p>
                     <h1 className="text-[#292929] tracking-[-0.02em] font-medium my-4 text-[40px] leading-[48px] sm:text-[46px] sm:leading-[54px] xl:text-[52px] xl:leading-[62px]">{customerHeader.title}</h1>
-                    <div className="grid gap-4 mt-5 sm:grid-cols-3">
+                    <div className={`grid gap-4 mt-5 sm:grid-cols-${highlights.length}`}>
                         {highlights.map(item => (
                             <div className="text-[#292929]" key={item.id}>
                                 <div className="text-[26px] font-bold text-[#7147E8]">{item.count}</div>
@@ -37,29 +37,30 @@ const CustomerHeader = ({ customerHeader, highlights }: CustomerHeaderProps) => 
                         ))}
                     </div>
                 </div>
-                <div className="justify-self-center self-center">
+                <div className="justify-self-center self-center w-full max-w-[560px]">
                     {customerHeader?.image ? (
-                        <Image 
-                            src={customerHeader.image} 
-                            alt={customerHeader.title} 
-                            width={500} 
-                            height={500} 
+                        <Image
+                            src={customerHeader.image}
+                            alt={customerHeader.title}
+                            width={500}
+                            height={500}
                             className="rounded-lg"
                         />
                 ) : (
-                        <iframe 
-                            width="560" 
-                            height="315" 
-                            src={`https://www.youtube.com/embed/${customerHeader.videoUrl}`} 
-                            title="YouTube video player" 
-                            allowFullScreen
-                        ></iframe>
-                    )} 
+                        <div className="relative w-full aspect-video">
+                            <iframe
+                                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                                src={`https://www.youtube.com/embed/${customerHeader.videoUrl}`}
+                                title="YouTube video player"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className="grid gap-y-12 mt-[40px] text-[#292929] text-[18px] sm:text-[20px] sm:grid-cols-2 lg:gap-y-0 lg:gap-3 lg:grid-cols-5">
                 <div className="sm:col-span-2 lg:col-span-3 relative">
-                    <div>{customerHeader.description}</div>
+                    <div className="whitespace-pre-line">{customerHeader.description}</div>
                     {customerHeader?.blog && (
                         <ParamLink 
                             href={customerHeader?.blog?.url} 

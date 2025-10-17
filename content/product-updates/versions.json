@@ -1,5 +1,25 @@
 [
   {
+    "version": "v1.10.1",
+    "date": "Released on 10th October 2025.",
+    "hasFeatures": false
+  },
+  {
+    "version": "v1.10.0",
+    "date": "Released on 8th October 2025.",
+    "hasFeatures": true
+  },
+  {
+    "version": "v1.9.12",
+    "date": "Released on 2nd October 2025.",
+    "hasFeatures": false
+  },
+  {
+    "version": "v1.9.10",
+    "date": "Released on 24th September 2025.",
+    "hasFeatures": false
+  },
+  {
     "version": "v1.9.9",
     "date": "Released on 19th September 2025.",
     "hasFeatures": false
