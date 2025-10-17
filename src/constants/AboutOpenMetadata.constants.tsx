@@ -18,10 +18,10 @@ export const ABOUT_OPENMETADATA = [
         isExternal: true
     },
     {
-        image: `${IMAGE_ROUTE}/release-1.9.png`,
+        image: `${IMAGE_ROUTE}/release-1.10.png`,
         header: 'Product News',
-        description: 'Announcing OpenMetadata Release 1.9.0',
-        href: 'https://blog.open-metadata.org/announcing-openmetadata-1-9-68b63005bb25',
+        description: 'Announcing OpenMetadata Release 1.10.0',
+        href: 'https://medium.com/p/67250f268d3d',
         linkText: "Read",
         isExternal: true
     },
@@ -36,8 +36,8 @@ export const ABOUT_OPENMETADATA = [
     {
         image: `${IMAGE_ROUTE}/videos-img.webp`,
         header: 'Video',
-        description: 'August Community Meeting',
-        href: 'https://www.youtube.com/watch?v=JeVRjYgU1dM',
+        description: 'September Community Meeting',
+        href: 'https://www.youtube.com/watch?v=w1GBD1bU1B8',
         linkText: "Watch",
         isExternal: true
     },

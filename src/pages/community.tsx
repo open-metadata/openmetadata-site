@@ -151,6 +151,62 @@ export default function Community() {
             </div>
           </section>
 
+          <section className="bg-white py-10">
+            <div className="container px-10">
+              <div className="text-center mb-5">
+                <h2 className="section-header font-semibold">
+                  OpenMetadata Community Spotlights
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
+                <div className="max-w-lg">
+                  <div className="card">
+                    <div className="card-body">
+                      <YoutubeEmbed videoId="fVqEiftzSxM" />
+                      <p className="font-semibold mb-0 mt-2">
+                        In this video, Antoine Glacet, Kansai Airport's 
+                        Data & Innovation Manager, discusses the ongoing 
+                        adoption of OpenMetadata at Kansai Airports! Thank you, Antoine!!                       
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="max-w-lg">
+                  <div className="card">
+                    <div className="card-body">
+                      <YoutubeEmbed videoId="6MEy4qNAJw8" />
+                      <p className="font-semibold mb-0 mt-2">
+                        In this video, Nancy Amandi, Data Engineer @ Moniepoint, 
+                        shares her journey into becoming an OpenMetadata contributor! 
+                        Thank you, Nancy!!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-6 flex justify-center">
+                <div className="col-lg-8 items-center justify-items-center text-center">
+                  <p className="text-[18px]">
+                    Developers are constantly building amazing things with
+                    OpenMetadata! In these Community Spotlights, hear from
+                    engineers that are using OpenMetadata redefine what it 
+                    means to build and manage high quality data assets at scale!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="svg-border-rounded text-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 144.54 17.34"
+                preserveAspectRatio="none"
+                fill="currentColor"
+              >
+                <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+              </svg>
+            </div>
+          </section>
+
           <section className="bg-light py-10">
             <div className="container px-10">
               <div className="row gx-5 justify-content-center">
@@ -176,17 +232,17 @@ export default function Community() {
                     <div className="col">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="JeVRjYgU1dM" />
-                          <p className="font-semibold mb-0 mt-2">August 2025</p>
+                          <YoutubeEmbed videoId="w1GBD1bU1B8" />
+                          <p className="font-semibold mb-0 mt-2">September 2025</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="sz2XUEQHp08" />
+                          <YoutubeEmbed videoId="wcis1hwaDHw" />
                           <p className="font-semibold mb-0 mt-2">
-                            Data Contracts, August 2025
+                            OpenMetadata 1.10 Updates, September 2025
                           </p>
                         </div>
                       </div>
