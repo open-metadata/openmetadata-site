@@ -2,7 +2,7 @@ import Image from "next/image";
 
 interface CustomerChallengesProps {
     data: {
-        image: string;
+        image?: string;
         title: string;
         description: string;
         description2?: string;
@@ -31,7 +31,7 @@ const CustomerChallenges = ({ data }: CustomerChallengesProps) => {
                             ))}
                         </div>
                         {item.description2 && <div className="sm:text-[20px] whitespace-pre-line mb-5">{item.description2}</div>}
-                        <Image src={item.image} alt={item.title} width={1000} height={1000} />
+                        {item.image && <Image src={item.image} alt={item.title} width={1000} height={1000} />}
                     </div>
                 ))}
             </div>

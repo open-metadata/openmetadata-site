@@ -28,7 +28,7 @@ export const ACHIEVEMENT_LIST = [
     },
     {
         icon: `${ICON_ROUTE}/data-connector.svg`,
-        count: '90+',
+        count: '100+',
         name: 'Data Connectors'
     },
 ]
