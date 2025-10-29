@@ -21,7 +21,7 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   };
 }
 
-const WoopCaseStudyPage = () => {
+const NwCaseStudyPage = () => {
   const router = useRouter();
 
   const handleTryOpenMetadataClick = () => {
@@ -53,4 +53,4 @@ const WoopCaseStudyPage = () => {
   );
 };
 
-export default WoopCaseStudyPage;
+export default NwCaseStudyPage;

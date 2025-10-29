@@ -18,7 +18,7 @@ export const TABS = [
         "Get the right data to the right people to do their work. OpenMetadata delivers a single source of truth for all your data sources, data pipelines, and data products.",
       imgSrc: "/assets/discovery.webp",
       cases: [
-        "90+ Data Connectors for all your data sources",
+        "100+ Data Connectors for all your data sources",
         "Search, facet, and preview across your data estate",
         "Collaborate with other data practitioners",
       ],

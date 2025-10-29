@@ -110,6 +110,19 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/nw'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/kansai-airport-logo.png`,
+        industry: 'Transportation / Aviation',
+        testimonial: "OpenMetadata is really easy to spin up, a true plug-and-play solution. Business value is visible to stakeholders within weeks, making onboarding straightforward even for non-technical users.",
+        customerName: 'Antoine Glacet',
+        customerDesignation: 'Data and Innovation Manager',
+        company: 'Kansai Airports',
+        imgSize: {
+            width: 150,
+            height: 50
+        },
+        link: '/case-study/kansai-airports'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,
         industry: 'Technology',
         testimonial: 'We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. OpenMetadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community.',
