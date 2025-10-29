@@ -38,7 +38,7 @@ const CaseStudiesPage = () => {
       setCustomers(CUSTOMER_GALLERY);
     } else {
       const filteredCustomers = CUSTOMER_GALLERY.filter(
-        (customer) => customer.industry === industry
+        (customer) => customer.industry.includes(industry)
       );
       setCustomers(filteredCustomers);
     }
