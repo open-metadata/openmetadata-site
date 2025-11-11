@@ -104,7 +104,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </div>
-              <ul className={`absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg transition-all duration-200 z-50 ${
+              <ul className={`absolute left-0 mt-2 py-2 top-5 w-48 bg-white border border-gray-200 rounded-md shadow-lg transition-all duration-200 z-50 ${
                 communityDropdownOpen ? 'block' : 'hidden'
               } lg:hidden lg:opacity-0 lg:invisible lg:group-hover:block lg:group-hover:opacity-100 lg:group-hover:visible`}>
                 <li>
