@@ -236,6 +236,12 @@ export const INTEGRATION_SERVICES = [
         name: 'Teradata',
       },
       {
+        href: 'https://docs.open-metadata.org/latest/connectors/database/timescale',
+        src: '/assets/services/timescale.png',
+        alt: 'service-timescale',
+        name: 'TimescaleDB',
+      },
+      {
         href: 'https://docs.open-metadata.org/latest/connectors/database/trino',
         src: '/assets/services/trino.webp',
         alt: 'service-trino',
