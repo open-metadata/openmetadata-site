@@ -237,8 +237,8 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/timescale',
-        src: '/assets/services/timescale.webp',
-        alt: 'service-trino',
+        src: '/assets/services/timescale.png',
+        alt: 'service-timescale',
         name: 'TimescaleDB',
       },
       {
