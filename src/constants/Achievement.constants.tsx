@@ -3,22 +3,22 @@ const ICON_ROUTE = '/assets/achievement'
 export const ACHIEVEMENT_LIST = [
     {
         icon: `${ICON_ROUTE}/deployment.svg`,
-        count: '2,000+',
+        count: '3,000+',
         name: 'Enterprise Deployments'
     },
     {
         icon: `${ICON_ROUTE}/open-source-members.svg`,
-        count: '10,000+',
+        count: '11,000+',
         name: 'Open Source Members'
     },
     {
         icon: `${ICON_ROUTE}/code-contributors.svg`,
-        count: '340+',
+        count: '370+',
         name: 'Code Contributors'
     },
     {
         icon: `${ICON_ROUTE}/github-star.svg`,
-        count: '7,100+',
+        count: '8,000+',
         name: 'GitHub Stars'
     },
     {
