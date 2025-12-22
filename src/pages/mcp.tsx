@@ -59,8 +59,8 @@ export default function Community() {
                     </p>
                     <p>
                       LLMs lack the crucial context of your business without
-                      your data's unique structure, lineage, critical 
-                      business glossaries that is readily available
+                      your data's unique structure, lineage, and critical 
+                      business glossaries that are readily available
                        within metadata. With OpenMetadata's new MCP server, 
                       LLMs & agents can take action on your data systems
                       by leveraging OpenMetadata's Unified Knowledge Graph 
