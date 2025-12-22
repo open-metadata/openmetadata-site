@@ -19,11 +19,10 @@ const FooterDev = () => {
               quality, observability, and people collaboration.
             </div>
             <div className="text-[12px] tracking-[-0.02em] font-normal">
-              Copyright OpenMetadata {new Date().getFullYear()}
+              Copyright OpenMetadata
             </div>
             <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
-              OpenMetadata® is a registered trademark of Collate, Inc.{" "}
-              {new Date().getFullYear()}
+              OpenMetadata® is a registered trademark of Collate, Inc.
             </div>
           </div>
         </div>
