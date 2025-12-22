@@ -58,9 +58,9 @@ export default function Community() {
                       from OpenMetadata is revolutionizing AI-driven governance!
                     </p>
                     <p>
-                      LLMs lack the crucial context of your business -
+                      LLMs lack the crucial context of your business without
                       your data's unique structure, lineage, critical 
-                      business glossaries - all information readily available
+                      business glossaries that is readily available
                        within metadata. With OpenMetadata's new MCP server, 
                       LLMs & agents can take action on your data systems
                       by leveraging OpenMetadata's Unified Knowledge Graph 
