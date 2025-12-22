@@ -18,8 +18,11 @@ const FooterDev = () => {
               management solution that includes data discovery, governance, data
               quality, observability, and people collaboration.
             </div>
+            <div className="text-[12px] tracking-[-0.02em] font-normal">
+              Copyright OpenMetadata
+            </div>
             <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
-              Copyright OpenMetadata {new Date().getFullYear()}
+              OpenMetadata® is a registered trademark of Collate, Inc.
             </div>
           </div>
         </div>
@@ -76,12 +79,17 @@ const FooterDev = () => {
             Community
           </div>
           <ul className="relative flex gap-2 items-center">
-            {SOCIAL_LINKS.map(item => (
-              <li key={item.name} className={`relative self-center ${item.className ? item.className : 'w-[28px] h-[30px]'} mb-2`}>
+            {SOCIAL_LINKS.map((item) => (
+              <li
+                key={item.name}
+                className={`relative self-center ${
+                  item.className ? item.className : "w-[28px] h-[30px]"
+                } mb-2`}
+              >
                 <ParamLink href={item.url} target="_blank">
-                  <Image 
-                    src={item.icon} 
-                    alt={item.name} 
+                  <Image
+                    src={item.icon}
+                    alt={item.name}
                     loading="eager"
                     fill
                     sizes="24px"
