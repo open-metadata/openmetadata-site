@@ -64,7 +64,7 @@ export default function Community() {
                        within metadata. With OpenMetadata's new MCP server, 
                       LLMs & agents can take action on your data systems
                       by leveraging OpenMetadata's Unified Knowledge Graph 
-                      for intelligent data mangement and automated data operations!
+                      for intelligent data management and automated data operations!
                     </p>
                     <p>
                       Check out our introduction to OpenMetadata's MCP Server!
