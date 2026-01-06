@@ -18,11 +18,10 @@ const FooterDev = () => {
               management solution that includes data discovery, governance, data
               quality, observability, and people collaboration.
             </div>
-            <div className="text-[12px] tracking-[-0.02em] font-normal">
-              Copyright OpenMetadata
-            </div>
             <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
-              OpenMetadata® is a registered trademark of Collate, Inc.
+              OpenMetadata® and the OpenMetadata logo are trademarks of Collate,
+              Inc. <br /> Copyright © OpenMetadata.
+              All rights reserved.
             </div>
           </div>
         </div>
