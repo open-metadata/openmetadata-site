@@ -20,7 +20,7 @@ const FooterDev = () => {
             </div>
             <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
               OpenMetadata® and the OpenMetadata logo are trademarks of Collate,
-              Inc. Copyright © OpenMetadata. <br />
+              Inc. <br /> Copyright © OpenMetadata.
               All rights reserved.
             </div>
           </div>
