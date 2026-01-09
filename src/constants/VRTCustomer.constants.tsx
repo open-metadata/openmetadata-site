@@ -44,10 +44,11 @@ To ensure data quality at VRT gets resolved as quickly as possible, Dataroots bu
             },
             {
                 header: 'Managing metadata across multiple touchpoints',
-                description: 'With a single CMS powering content for a streaming service, news site, and many other touchpoints, VRT needs consistent and accurate metadata to prevent errors, like content showing up in the wrong UI location, from disrupting the customer experience.',
- 
+                description: 'With a single CMS powering content for a streaming service, news site, and many other touchpoints, VRT needs consistent and accurate metadata to prevent errors, like content showing up in the wrong UI location, from disrupting the customer experience.', 
             },
+
        ]
+    },
     {
         title: 'Enabling self-service data quality resolutions',
         description: `VRT needed a solution that was accessible to non-technical users. OpenMetadata fit the requirements: a centralized, point-of-truth system for data observability that was easy to deploy, user-friendly, and could all stay within their data ecosystem.`,
