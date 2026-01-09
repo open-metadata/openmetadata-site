@@ -55,7 +55,7 @@ To ensure data quality at VRT gets resolved as quickly as possible, Dataroots bu
         challenges: [
             {
                 header: 'Growing test cases',
-                description: 'Integrating test cases from dbt, OpenMetadata, and custom-built tests increases VRT coverage, but their initial alerts were being sent directly to Data Engineers, who would work with the data's stakeholders to implement a fix.',
+                description: 'Integrating test cases from dbt, OpenMetadata, and custom-built tests increases VRT coverage, but their initial alerts were being sent directly to Data Engineers, who would work with data owners to implement a fix.',
             },
             {
                 header: 'Self-service prevented costly bottlenecks',
