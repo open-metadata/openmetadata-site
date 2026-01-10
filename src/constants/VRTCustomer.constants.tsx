@@ -69,7 +69,7 @@ To ensure data quality at VRT gets resolved as quickly as possible, Dataroots bu
         challenges: [
             {
                 header: 'Reducing time and steps to resolution',
-                description: 'Through Lambda functions, Dataroots would parse alerts coming from OpenMetadata and recreate the incident in Athena and store results in an bucket that is mailed to the asset's owner.',
+                description: 'Through Lambda functions, Dataroots would parse alerts coming from OpenMetadata and recreate the incident in Athena and store results in an bucket that is mailed to the asset owner.',
             },
             {
                 header: '30 seconds to a custom alert',
