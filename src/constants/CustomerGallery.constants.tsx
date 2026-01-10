@@ -84,7 +84,7 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/thndr'
     },
     {
-        logo: `${GALLERY_IMAGE_ROUTE}/vrt.webp`,
+        logo: `${GALLERY_IMAGE_ROUTE}/vrt-logo.svg`,
         industry: 'Other',
         testimonial: "Before, the Data Engineer was the middleman. With OpenMetadata, they are freed up to focus on their core tasks, and the number of steps to resolve a data quality issue is way less than before.",
         customerName: 'David Backx',
