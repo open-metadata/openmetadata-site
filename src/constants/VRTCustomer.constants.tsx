@@ -73,7 +73,7 @@ To ensure data quality at VRT gets resolved as quickly as possible, Dataroots bu
             },
             {
                 header: '30 seconds to a custom alert',
-                description: 'Dataroots was able to scale this configuration for every data quality test in seconds with OpenMetadata's easy alerting configurations.',
+                description: 'Dataroots was able to scale this configuration for every data quality test in seconds with the  easy alerting configurations available in OpenMetadata.',
             },
             {
                 header: 'Dynamic, multifunctional mail with all relevant information',
