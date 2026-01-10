@@ -25,7 +25,7 @@ export const VRT_CUSTOMER_HIGHLIGHTS = [
 ];
 
 export const VRT_CUSTOMER_TESTIMONIAL = {
-    content: "Before, the data engineer was the middleman. With OpenMetadata, they are freed up to focus on their core tasks, and the number of steps to resolve a data quality issue is way less than before.",
+    content: "Before, the Data Engineer was the middleman. With OpenMetadata, they are freed up to focus on their core tasks, and the number of steps to resolve a data quality issue is way less than before.",
     name: "David Backx",
     title: "Data Engineer at Dataroots",
     logo: "/assets/testimonials/dataroots-logo.png"
