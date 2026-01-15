@@ -69,7 +69,7 @@ const CaseStudiesPage = () => {
               Success Stories & Case Studies
             </h1>
             <div className="text-black mt-4 md:text-lg md:max-w-[72%]">
-              With over 2000+ enterprise deployments, OpenMetadata is
+              With over 3,000+ enterprise deployments, OpenMetadata is
               transforming how data teams work together and manage their data
               assets. From self-service analytics at Fortune 500 enterprises to
               data readiness for AI at innovative startups, explore how our
