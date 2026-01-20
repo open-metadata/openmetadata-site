@@ -26,14 +26,6 @@ export const ABOUT_OPENMETADATA = [
         isExternal: true
     },
     {
-        image: `${IMAGE_ROUTE}/release-1.10.png`,
-        header: 'Product News',
-        description: 'Announcing OpenMetadata Release 1.10.0',
-        href: 'https://medium.com/p/67250f268d3d',
-        linkText: "Read",
-        isExternal: true
-    },
-    {
         image: `${IMAGE_ROUTE}/blog-img.webp`,
         header: 'Blog',
         description: 'Leveraging OpenMetadata’s Data Quality Framework',
