@@ -2,6 +2,14 @@ const IMAGE_ROUTE = '/assets/aboutOpenMetadata'
 
 export const ABOUT_OPENMETADATA = [
     {
+        image: `${IMAGE_ROUTE}/release-1.11.png`,
+        header: 'Product News',
+        description: 'Announcing OpenMetadata Release 1.11.0',
+        href: 'https://blog.open-metadata.org/announcing-openmetadata-1-11-38e79cfe5e15',
+        linkText: "Read",
+        isExternal: true
+    },
+    {
         image: `/assets/carrefour-customer/carrefour-header.png`,
         header: 'Case Study',
         description: 'Carrefour Brazil Automates Data Governance For 500+ Active Users',
