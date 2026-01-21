@@ -82,9 +82,9 @@ const IntegrationsDev = () => {
             <path
               d="M17.5 2L9.5 10L1.5 2"
               stroke="#5E3BC1"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>

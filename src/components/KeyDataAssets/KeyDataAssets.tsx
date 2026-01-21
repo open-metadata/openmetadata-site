@@ -14,6 +14,7 @@ const KeyDataAssets = () => {
       <div className="flex justify-between overflow-x-scroll gap-3 pb-3 lg:gap-5">
         {TABS.map((item) => (
           <div
+            key={item.name}
             className={`flex items-center cursor-pointer text-[#4B2F9B] border-2 border-[#4B2F9B] rounded-full px-12 py-1 ${
               item.name === openTab && "bg-[#4B2F9B] text-white"
             } md:px-9`}

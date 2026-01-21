@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import Slider, { CustomArrowProps } from "react-slick";
+import Slider, { CustomArrowProps } from "@/components/SlickSlider/SlickSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { TESTIMONIALS_LIST } from "@/constants/Testimonials.constants";
@@ -101,7 +101,7 @@ const Testimonials = () => {
                   </button>
                 )}
                 <div className="mt-5 mb-[60px] text-center">
-                  <p className="text-[#382374] tracking-[-0.02em] text-[16px] font-medium text-[20px] lg:text-[24px]">
+                  <p className="text-[#382374] tracking-[-0.02em] font-medium text-[20px] lg:text-[24px]">
                     {item.name}
                   </p>
                   <p className="text-[#888888] tracking-[-0.02em] text-[14px] md:h-[20px] lg:text-[18px] xl:-mt-4">
