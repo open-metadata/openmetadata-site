@@ -1,6 +1,6 @@
 import { ABOUT_OPENMETADATA } from "@/constants/AboutOpenMetadata.constants";
 import Image from "next/image";
-import Slider, { CustomArrowProps } from "react-slick";
+import Slider, { CustomArrowProps } from "@/components/SlickSlider/SlickSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Arrow } from "../Icons/Arrow";
