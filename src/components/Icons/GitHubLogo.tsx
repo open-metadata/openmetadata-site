@@ -111,7 +111,7 @@ export const GitHubLogo = () => {
   }, []);
 
   return (
-    <div className="flex items-center gap-1 bg-black rounded-md px-1 py-1">
+    <div className="flex items-center gap-[2px] bg-black rounded-md px-1 py-1">
       <div>{gitHubLogo}</div>
       <div className="text-[10px] font-semibold text-white mr-[4px]">
         OPENMETADATA
