@@ -123,6 +123,19 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/kansai-airports'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/aspire.webp`,
+        industry: 'Financial',
+        testimonial: "OpenMetadata helped us turn tribal knowledge into shared knowledge, making it easy for team members to understand and use data as the organization scales.",
+        customerName: 'Vinol Joy D’souza',
+        customerDesignation: 'Head of Data',
+        company: 'aspire',
+        imgSize: {
+            width: 212,
+            height: 50
+        },
+        link: '/case-study/aspire'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,
         industry: 'Technology',
         testimonial: 'We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. OpenMetadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community.',
