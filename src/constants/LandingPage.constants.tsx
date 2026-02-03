@@ -31,7 +31,7 @@ export const TY_PAGE_CARREFOUR = [
     },
     {
         image: '/assets/landingPage/data-culture.png',
-        header: 'Data Culture Best Practice for Modern Data Teams',
+        header: 'Data Culture Best Practices for Modern Data Teams',
         description:
             "Watch Uber's former Chief Data Architect, and founder of the open ...",
         href: 'https://www.getcollate.io/resources/webinar/data-culture',
