@@ -33,6 +33,7 @@ export const VRT_CUSTOMER_TESTIMONIAL = {
 
 export const VRT_CUSTOMER_CHALLENGES = [
     {
+        image: '/assets/vrt/vrt1.png',
         title: 'Inconsistent metadata can impact customer experience',
         description: `VRT has a vast library of content viewed by millions of people everyday. A Content Management System (CMS) with inconsistent, missing, or incorrect metadata could directly affect the end-user experience for a wide variety of audiences.
 
@@ -50,6 +51,7 @@ To ensure data quality at VRT gets resolved as quickly as possible, Dataroots bu
        ]
     },
     {
+        image: '/assets/vrt/vrt1.png',
         title: 'Enabling self-service data quality resolutions',
         description: `VRT needed a solution that was accessible to non-technical users. OpenMetadata fit the requirements: a centralized, point-of-truth system for data observability that was easy to deploy, user-friendly, and could all stay within their data ecosystem.`,
         challenges: [
