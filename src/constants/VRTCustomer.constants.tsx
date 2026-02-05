@@ -66,8 +66,8 @@ To ensure data quality at VRT gets resolved as quickly as possible, Dataroots bu
         ]
     },
     {
-        title: 'Developing scalable and customizable alerts without maintainence fatigue',
-        description: 'With OpenMetadata, Dataroots provides the right alerts to the right stakeholders as soon as they appeared, but their ideal solution would go even further, with immediate fixes to new issues. This pipeline freed up time that the VRT team could use for core tasks while giving owners responsibility, agency, and paths to resoultion in a shortened time with a reduced number of steps.',
+        title: 'Developing scalable and customizable alerts without maintenance fatigue',
+        description: 'With OpenMetadata, Dataroots provides the right alerts to the right stakeholders as soon as they appeared, but their ideal solution would go even further, with immediate fixes to new issues. This pipeline freed up time that the VRT team could use for core tasks while giving owners responsibility, agency, and paths to resolution in a shortened time with a reduced number of steps.',
         challenges: [
             {
                 header: 'Reducing time and steps to resolution',
@@ -75,7 +75,7 @@ To ensure data quality at VRT gets resolved as quickly as possible, Dataroots bu
             },
             {
                 header: '30 seconds to a custom alert',
-                description: 'Dataroots has scaled there data quality alerting configuration for every data quality test, taking just seconds to add new tests with the easy alerting setup available in OpenMetadata.',
+                description: 'Dataroots has scaled their data quality alerting configuration for every data quality test, taking just seconds to add new tests with the easy alerting setup available in OpenMetadata.',
             },
             {
                 header: 'Dynamic, multifunctional mail with all relevant information',
