@@ -145,8 +145,8 @@ export default function Community() {
                   OpenMetadata Data Contracts
                 </h2>
               </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
-                <div className="max-w-lg">
+              <div className="flex justify-center text-center">
+                <div className="w-full max-w-xl">
                   <div className="card">
                     <div className="card-body">
                       <YoutubeEmbed videoId="9CAy_kNvenA" />

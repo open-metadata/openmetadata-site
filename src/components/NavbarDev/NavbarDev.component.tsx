@@ -7,6 +7,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
   const [open, setOpen] = useState(false);
   const [scrolledNav, setScrolledNav] = useState(false);
   const [communityDropdownOpen, setCommunityDropdownOpen] = useState(false);
+  const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 25) {
@@ -21,8 +22,15 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
 
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      if (!target.closest('.relative.group')) {
+
+      const isInsideCommunityDropdown = target.closest('[data-dropdown="community"]');
+      const isInsideResourcesDropdown = target.closest('[data-dropdown="resources"]');
+      
+      if (!isInsideCommunityDropdown) {
         setCommunityDropdownOpen(false);
+      }
+      if (!isInsideResourcesDropdown) {
+        setResourcesDropdownOpen(false);
       }
     };
 
@@ -78,14 +86,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                 name="Get Started"
               />
             </li>
-            <li>
-              <ParamLink
-                href="https://docs.open-metadata.org"
-                target="_blank"
-                name="Documentation"
-              />
-            </li>
-            <li className="relative group">
+            <li className="relative group" data-dropdown="community">
               <div 
                 className="flex items-center gap-1 cursor-pointer"
                 onClick={(e) => {
@@ -95,7 +96,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
               >
                 <span className="hover:text-primary">Community</span>
                 <svg
-                  className={`w-4 h-4 transition-transform ${communityDropdownOpen ? 'rotate-180' : ''} group-hover:rotate-180`}
+                  className={`w-4 h-4 transition-transform ${communityDropdownOpen ? 'rotate-180' : ''} lg:group-hover:rotate-180`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -104,9 +105,14 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </div>
-              <ul className={`absolute left-0 mt-2 py-2 top-5 w-48 bg-white border border-gray-200 rounded-md shadow-lg transition-all duration-200 z-50 ${
-                communityDropdownOpen ? 'block' : 'hidden'
-              } lg:hidden lg:opacity-0 lg:invisible lg:group-hover:block lg:group-hover:opacity-100 lg:group-hover:visible`}>
+              <ul 
+                className={`absolute left-0 mt-2 py-2 top-5 w-48 bg-white border border-gray-200 rounded-md shadow-lg transition-all duration-200 z-50 ${
+                  communityDropdownOpen ? 'block' : 'hidden'
+                } ${communityDropdownOpen ? 'lg:block lg:opacity-100 lg:visible' : 'lg:hidden lg:opacity-0 lg:invisible'} lg:group-hover:block lg:group-hover:opacity-100 lg:group-hover:visible`}
+                data-dropdown-menu="community"
+                onClick={(e) => e.stopPropagation()}
+                onMouseDown={(e) => e.stopPropagation()}
+              >
                 <li>
                   <ParamLink 
                     href="/community" 
@@ -137,18 +143,64 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
             <li>
               <ParamLink href="/datacontracts" name="Data Contracts" />
             </li>
-            <li>
-              <ParamLink
-                href="https://blog.open-metadata.org/"
-                target="_blank"
-                name="Blog"
-              />
-            </li>
-            <li>
-              <ParamLink href="/case-studies" name="Case Studies" />
-            </li>
-            <li>
-              <ParamLink href="/product-updates" name="Product Updates" />
+            <li className="relative group" data-dropdown="resources">
+              <div 
+                className="flex items-center gap-1 cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setResourcesDropdownOpen(!resourcesDropdownOpen);
+                }}
+              >
+                <span className="hover:text-primary">Resources</span>
+                <svg
+                  className={`w-4 h-4 transition-transform ${resourcesDropdownOpen ? 'rotate-180' : ''} lg:group-hover:rotate-180`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+              <ul 
+                className={`absolute left-0 mt-2 py-2 top-5 w-48 bg-white border border-gray-200 rounded-md shadow-lg transition-all duration-200 z-50 ${
+                  resourcesDropdownOpen ? 'block' : 'hidden'
+                } ${resourcesDropdownOpen ? 'lg:block lg:opacity-100 lg:visible' : 'lg:hidden lg:opacity-0 lg:invisible'} lg:group-hover:block lg:group-hover:opacity-100 lg:group-hover:visible`}
+                data-dropdown-menu="resources"
+                onClick={(e) => e.stopPropagation()}
+                onMouseDown={(e) => e.stopPropagation()}
+              >
+                <li>
+                  <ParamLink 
+                    href="https://docs.open-metadata.org"
+                    target="_blank"
+                    name="Documentation" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-t-md"
+                  />
+                </li>
+                <li>
+                  <ParamLink 
+                    href="/case-studies"
+                    name="Case Studies" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  />
+                </li>
+                <li>
+                  <ParamLink 
+                    href="https://blog.open-metadata.org/" 
+                    target="_blank"
+                    name="Blog" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-b-md"
+                  />
+                </li>
+                <li>
+                  <ParamLink 
+                    href="/product-updates"
+                    name="Product Updates" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  />
+                </li>
+              </ul>
             </li>
             <li className="mb-4 lg:mb-0">
               <ParamLink
