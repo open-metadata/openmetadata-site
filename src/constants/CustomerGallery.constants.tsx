@@ -91,8 +91,8 @@ export const CUSTOMER_GALLERY = [
         customerDesignation: 'Data Engineer (Dataroots)',
         company: 'VRT',
         imgSize: {
-            width: 212,
-            height: 50
+            width: 100,
+            height: 20
         },
         link: '/case-study/vrt'
     },
