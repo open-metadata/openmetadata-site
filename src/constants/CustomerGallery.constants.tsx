@@ -84,6 +84,19 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/thndr'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/vrt-logo.svg`,
+        industry: 'Other',
+        testimonial: "Before, the Data Engineer was the middleman. With OpenMetadata, they are freed up to focus on their core tasks, and the number of steps to resolve a data quality issue is way less than before.",
+        customerName: 'David Backx',
+        customerDesignation: 'Data Engineer (Dataroots)',
+        company: 'VRT',
+        imgSize: {
+            width: 100,
+            height: 20
+        },
+        link: '/case-study/vrt'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/inDrive.webp`,
         industry: 'Transportation',
         testimonial: "OpenMetadata helps us to reduce the gap between business users and technical users. It's crucial for us to have a tool with powerful advanced search to filter search results, detailed data lineage, and integrated business glossary module.",
