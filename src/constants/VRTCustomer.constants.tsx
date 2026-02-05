@@ -51,7 +51,7 @@ To ensure data quality at VRT gets resolved as quickly as possible, Dataroots bu
        ]
     },
     {
-        image: '/assets/vrt/vrt1.png',
+        image: '/assets/vrt/vrt2.png',
         title: 'Enabling self-service data quality resolutions',
         description: `VRT needed a solution that was accessible to non-technical users. OpenMetadata fit the requirements: a centralized, point-of-truth system for data observability that was easy to deploy, user-friendly, and could all stay within their data ecosystem.`,
         challenges: [
