@@ -111,7 +111,7 @@ export const CUSTOMER_GALLERY = [
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/nw-logo.jpeg`,
-        industry: 'Renewable Energy, Electric Mobility',
+        industry: 'Other',
         testimonial: "For us, governance isn’t just about control — it’s also about trust. OpenMetadata gives us a single source of truth that’s automated, scalable, and trusted, so our teams can move faster with confidence.",
         customerName: 'Aimen Denche',
         customerDesignation: 'Data Engineer',
@@ -124,7 +124,7 @@ export const CUSTOMER_GALLERY = [
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/kansai-airport-logo.png`,
-        industry: 'Transportation / Aviation',
+        industry: 'Transportation',
         testimonial: "OpenMetadata is really easy to spin up, a true plug-and-play solution. Business value is visible to stakeholders within weeks, making onboarding straightforward even for non-technical users.",
         customerName: 'Antoine Glacet',
         customerDesignation: 'Data and Innovation Manager',
@@ -147,6 +147,19 @@ export const CUSTOMER_GALLERY = [
             height: 50
         },
         link: '/case-study/aspire'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/forter.png`,
+        industry: 'Other',
+        testimonial: "We looked at other alternatives, but OpenMetadata stood out for its flexibility and maturity. The solution allowed us to address our S3 metadata requirements in a way that actually works for the size of our data environment.",
+        customerName: 'Christian Calugaru',
+        customerDesignation: 'Software Engineer',
+        company: 'forter',
+        imgSize: {
+            width: 212,
+            height: 50
+        },
+        link: '/case-study/forter'
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,
