@@ -162,6 +162,19 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/forter'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/wix.png`,
+        industry: 'Technology',
+        testimonial: "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
+        customerName: 'Sapir Hirshberg',
+        customerDesignation: 'Data Product Manager',
+        company: 'wix',
+        imgSize: {
+            width: 100,
+            height: 20
+        },
+        link: '/case-study/wix'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,
         industry: 'Technology',
         testimonial: 'We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. OpenMetadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community.',
