@@ -28,7 +28,7 @@ export const WIX_CUSTOMER_HIGHLIGHTS = [
 export const WIX_CUSTOMER_TESTIMONIAL = {
     content: "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
     name: "Sapir Hirshberg",
-    title: "Data Product Manager at Wix",
+    title: "Senior Data Product Manager at Wix",
     logo: "/assets/testimonials/wix.png"
 }
 
