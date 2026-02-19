@@ -1,6 +1,6 @@
 export const WIX_CUSTOMER_HEADER = {
     title: "Wix Powers AI-Driven Product Decisions in Minutes with OpenMetadata",
-    description: "Wix supports more than 200 million users worldwide, where speed and accuracy directly shape product decisions. As AI agents began playing a larger role across analytics, business intelligence (BI), and internal decision workflows, Wix faced a critical challenge. These agents needed fast, trusted, and highly contextual metadata to operate effectively at scale. Wix adopted OpenMetadata as an open source foundation for powering AI-ready data. What began as a metadata catalog evolved into a central system that feeds their AI agents through APIs and MCPs—enabling agents to discover tables, understand schemas, apply the right queries, and return answers in minutes rather than hours. Now, this metadata foundation underpins in-production AI systems like AirBot. This internal AI-powered on-call assistant relies on OpenMetadata to understand ownership, lineage, schemas, and data quality when investigating incidents and answering complex questions. By combining real-time ingestion, governed data warehouse tiers, and community-built extensibility, OpenMetadata helps teams move faster and scale AI-driven decision-making across the organization.",
+    description: "Wix is a website builder that supports more than 200 million users worldwide, where speed and accuracy directly shape product decisions. As AI agents began playing a larger role across analytics, business intelligence (BI), and internal decision workflows, Wix faced a critical challenge. These agents needed fast, trusted, and highly contextual metadata to operate effectively at scale. Wix adopted OpenMetadata as an open-source foundation for powering AI-ready data. What began as a metadata catalog evolved into a central system that feeds their AI agents through APIs and MCPs that enable agents to discover tables, understand schemas, apply the right queries, and return answers in minutes rather than hours. Now, this metadata foundation underpins in-production AI systems like AirBot. This internal AI-powered on-call assistant relies on OpenMetadata to understand ownership, lineage, schemas, and data quality when investigating incidents and answering complex questions to save Wix hundreds of Engineering Hours every month. By combining real-time ingestion, governed data warehouse tiers, and community-built extensibility, OpenMetadata helps teams move faster and scale AI-driven decision-making across the organization.",
     industry: "Technology, Website Builder",
     technologies: "Google Cloud Platform, Trino, OpenMetadata, Apache Kafka, Great Expectations, AI agents (MCP-based)",
     image: '/assets/wix-customer/wix-header.png'
@@ -15,12 +15,12 @@ export const WIX_CUSTOMER_HIGHLIGHTS = [
     },
     {
         id: 2,
-        count: '130+',
+        count: '130,000+',
         description: "Lineage connections powering governed analytics and AI agents"
     },
     {
         id: 3,
-        count: '6k',
+        count: '6,000',
         description: "Great Expectations data quality tests executed and surfaced in metadata"
     }
 ];
@@ -28,7 +28,7 @@ export const WIX_CUSTOMER_HIGHLIGHTS = [
 export const WIX_CUSTOMER_TESTIMONIAL = {
     content: "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
     name: "Sapir Hirshberg",
-    title: "Data Product Manager at Wix",
+    title: "Senior Data Product Manager at Wix",
     logo: "/assets/testimonials/wix.png"
 }
 
@@ -38,7 +38,7 @@ export const WIX_CUSTOMER_CHALLENGES = [
         title: 'Traditional documentation slowed decision making',
         description: `As Wix continued to scale its data platform, metadata became foundational to how teams worked. Wix operates a large, fast-moving analytics environment supporting business analysts, data engineers, data scientists, BI tools, and, increasingly, AI agents that need immediate access to trusted context. Wix’s cloud platform generates billions of HTTP transactions every day, feeding a 7-petabyte data lake, making ad hoc context gathering increasingly unsustainable. Existing internal tools struggled to keep up with the pace or scale of change. Documentation lagged behind reality, lineage was incomplete, and metadata updates were too slow for teams that relied on real-time accuracy. 
         
-This meant engineers often had to act as “human error parsers”, manually digging through alerts, logs, schemas, and upstream dependencies just to understand what went wrong. This manual effort significantly increased time to understand issues before they could even begin fixing them. To support both human users and emerging AI-driven workflows, Wix needed an open, extensible metadata system that could ingest at scale, stay continuously fresh, and serve as a reliable source of truth across the organization.`,
+This meant engineers often had to act as “human error parsers”, manually digging through alerts, logs, schemas, and upstream dependencies just to understand what went wrong. This manual effort significantly increased time to understand issues before they could even begin fixing them. To support both users and AI agents, Wix needed an open, extensible metadata system that could ingest at scale, stay continuously fresh, and serve as a reliable source of truth across the organization.`,
         challenges: [
             {
                 header: 'Metadata sprawl at massive scale',
@@ -65,7 +65,7 @@ This meant engineers often had to act as “human error parsers”, manually dig
     {
         image: '/assets/wix-customer/ai-powered.png',
         title: 'Powering AI-ready data through an open, extensible metadata foundation',
-        description: "To support faster, data-driven decisions across their business, Wix adopted OpenMetadata as the system of record for metadata—built on an open-source foundation that their team could extend and operationalize over time. What began as a search for a better way to document assets quickly grew into a full production platform that sits in the middle of Wix’s data ecosystem. OpenMetadata ingests metadata continuously, enriches it with governance and quality signals, and serves it back to internal BI tools and AI agents.",
+        description: "To support faster, data-driven decisions across their business, Wix adopted OpenMetadata as the system of record for metadata in order to build on an open-source foundation that their team could extend and operationalize over time. What began as a search for a better way to document assets quickly grew into a full production platform that sits in the middle of Wix’s data ecosystem. OpenMetadata ingests metadata continuously, enriches it with governance and quality signals, and serves it back to internal BI tools and AI agents.",
         challenges: [
             {
                 header: 'Always-on, production deployment',
@@ -81,7 +81,7 @@ This meant engineers often had to act as “human error parsers”, manually dig
             },
             {
                 header: 'Integrated data quality signals',
-                description: 'Great Expectations (GX) test results are ingested into OpenMetadata so users can see failures and validation context alongside each asset.',
+                description: 'Great Expectations (GX) test results are ingested into OpenMetadata so users can see data quality failures and validation context alongside each asset.',
             },
             {
                 header: 'Governed, certified datasets as a shared standard',
@@ -93,7 +93,7 @@ This meant engineers often had to act as “human error parsers”, manually dig
             },
             {
                 header: 'MCP-enabled delivery to AI agents',
-                description: "Wix uses OpenMetadata MCPs to provide agents the specific slices of metadata they need (descriptions, columns, queries, etc.) without over-fetching irrelevant context.",
+                description: "Wix uses [OpenMetadata's MCP Server](https://open-metadata.org/mcp) to provide agents the specific slices of metadata they need (descriptions, columns, queries, etc.) without over-fetching irrelevant context.",
             },
             {
                 header: 'Open-source extensibility without lock-in',
@@ -122,7 +122,7 @@ Instead, trusted metadata flows directly into BI tools and AI agents, enabling f
             },
             {
                 header: 'Operational readiness for AI',
-                description: 'Wix reports 70–80% completeness across descriptions, queries, and metadata. It’s enough for AI agents to operate effectively even before perfection, accelerating adoption.',
+                description: 'Wix reports 70–80% completeness across descriptions, queries, and metadata, enabling AI agents to operate effectively and accelerating adoption.',
             },
             {
                 header: 'Higher-quality shared data assets',
