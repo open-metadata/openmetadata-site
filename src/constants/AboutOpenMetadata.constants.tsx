@@ -2,10 +2,10 @@ const IMAGE_ROUTE = '/assets/aboutOpenMetadata'
 
 export const ABOUT_OPENMETADATA = [
     {
-        image: `${IMAGE_ROUTE}/release-1.11.png`,
+        image: `${IMAGE_ROUTE}/release-1.12.png`,
         header: 'Product News',
-        description: 'Announcing OpenMetadata Release 1.11.0',
-        href: 'https://blog.open-metadata.org/announcing-openmetadata-1-11-38e79cfe5e15',
+        description: 'Announcing OpenMetadata Release 1.12.0',
+        href: 'https://blog.open-metadata.org/announcing-openmetadata-1-12-9e15b66e7748',
         linkText: "Read",
         isExternal: true
     },

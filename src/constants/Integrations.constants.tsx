@@ -32,6 +32,12 @@ export const INTEGRATION_SERVICES = [
         name: 'AWS S3 Data Lake',
       },
       {
+        href: 'https://docs.open-metadata.org/latest/connectors/database/redshift',
+        src: '/assets/services/aws-redshift.svg',
+        alt: 'service-redshift',
+        name: 'AWS Redshift Serverless',
+      },
+      {
         href: 'https://docs.open-metadata.org/latest/connectors/database/azuresql',
         src: '/assets/services/azuresql.webp',
         alt: 'service-azuresql',
@@ -228,6 +234,12 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/singlestore.webp',
         alt: 'service-singlestore',
         name: 'SingleStore',
+      },
+      {
+        href: 'https://docs.open-metadata.org/latest/connectors/database/starrocks',
+        src: '/assets/services/starrocks.png',
+        alt: 'service-starrocks',
+        name: 'StarRocks',
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/teradata',
@@ -447,6 +459,17 @@ export const INTEGRATION_SERVICES = [
         name: 'SageMaker',
         href: 'https://docs.open-metadata.org/latest/connectors/ml-model/sagemaker',
       },
+    ],
+  },
+  {
+    connector: 'Drive',
+    services: [
+      {
+        href: 'https://docs.open-metadata.org/latest/connectors/drive/sftp',
+        src: '/assets/services/sftp.svg',
+        alt: 'service-sftp',
+        name: 'SFTP',
+      }
     ],
   },
   {

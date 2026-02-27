@@ -63,7 +63,7 @@ const IntegrationsDev = () => {
         OpenMetadata's ingestion framework supports connectors for 100+ data services, 
         with more added every release.
       </p>
-      <div className="mt-[48px] overflow-y-scroll relative shadow-primary rounded-lg md:rounded-2xl sm:flex sm:h-[890px] md:h-[956px]">
+      <div className="mt-[48px] overflow-y-scroll relative shadow-primary rounded-lg md:rounded-2xl sm:flex sm:h-[974px] md:h-[1044px]">
         <button
           onClick={() => setIsDropdownVisible((prev) => !prev)}
           className="py-[32px] w-full sticky top-0 bg-white z-[15] flex items-center border-b border-[#E3DAFA] justify-center gap-2 text-[#5E3BC1] text-[20px] font-normal tracking-[-0.02em] sm:hidden"

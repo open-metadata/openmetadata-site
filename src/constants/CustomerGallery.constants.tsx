@@ -166,7 +166,7 @@ export const CUSTOMER_GALLERY = [
         industry: 'Technology',
         testimonial: "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
         customerName: 'Sapir Hirshberg',
-        customerDesignation: 'Data Product Manager',
+        customerDesignation: 'Senior Data Product Manager',
         company: 'wix',
         imgSize: {
             width: 100,
