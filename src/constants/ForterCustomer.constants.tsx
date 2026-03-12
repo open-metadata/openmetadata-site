@@ -17,7 +17,7 @@ export const FORTER_CUSTOMER_HIGHLIGHTS = [
 export const FORTER_CUSTOMER_TESTIMONIAL = {
     content: "We looked at other alternatives, but OpenMetadata stood out for its flexibility and maturity. The solution allowed us to address our S3 metadata requirements in a way that actually works for the size of our data environment.",
     name: "Christian Calugaru",
-    title: "Software Engineer at Aspire",
+    title: "Software Engineer at Forter",
     logo: "/assets/testimonials/forter.png"
 }
 
