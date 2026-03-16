@@ -93,7 +93,7 @@ This meant engineers often had to act as “human error parsers”, manually dig
             },
             {
                 header: 'MCP-enabled delivery to AI agents',
-                description: "Wix uses [OpenMetadata's MCP Server](https://open-metadata.org/mcp) to provide agents the specific slices of metadata they need (descriptions, columns, queries, etc.) without over-fetching irrelevant context.",
+                description: <>Wix uses <a href="/mcp" className="text-[#7147E8] underline hover:underline">OpenMetadata's MCP Server</a> to provide agents the specific slices of metadata they need (descriptions, columns, queries, etc.) without over-fetching irrelevant context.</>,
             },
             {
                 header: 'Open-source extensibility without lock-in',
