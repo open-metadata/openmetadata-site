@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 
 interface CustomerChallengesProps {
@@ -7,7 +8,7 @@ interface CustomerChallengesProps {
         description: string;
         description2?: string;
         image2?: string;
-        challenges: { header: string; description: string }[];
+        challenges: { header: string; description: string | React.ReactNode }[];
     }[];
 }
 
