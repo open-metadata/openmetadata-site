@@ -27,11 +27,11 @@ export const HEADER_CUSTOMERS = [
         isExternal: false
     },
     {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/gorgias-bg.svg`,
-        logo: `${HEADER_IMAGE_ROUTE}/gorgias-logo.svg`,
-        title: 'Gorgias 45K+ Data assets cataloged',
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/wix-bg.webp`,
+        logo: `${HEADER_IMAGE_ROUTE}/wix-logo.webp`,
+        title: 'Wix Saves 675 Engineering Hours Monthly with AI-Ready Metadata',
         buttonText: 'Read More',
-        url: '/case-study/gorgias',
+        url: '/case-study/wix',
         isExternal: false
     },
     {
@@ -162,17 +162,17 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/forter'
     },
     {
-        logo: `${GALLERY_IMAGE_ROUTE}/wix.png`,
-        industry: 'Technology',
-        testimonial: "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
-        customerName: 'Sapir Hirshberg',
-        customerDesignation: 'Senior Data Product Manager',
-        company: 'wix',
+        logo: `${HEADER_IMAGE_ROUTE}/gorgias-logo.svg`,
+        industry: 'Retail',
+        testimonial: "OpenMetadata offers us a strong layer of discovery. It saves our data analysts a lot of time and has helped us clean up our warehouse by identifying unused models and tables. Overall, it’s been a very successful year.",
+        customerName: 'Antoine Balliet',
+        customerDesignation: 'Senior Data Engineer',
+        company: 'gorgias',
         imgSize: {
-            width: 100,
-            height: 20
+            width: 150,
+            height: 40
         },
-        link: '/case-study/wix'
+        link: '/case-study/gorgias'
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,
