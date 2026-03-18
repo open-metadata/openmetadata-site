@@ -41,7 +41,7 @@ export default function Events() {
             <div className="max-w-4xl mx-auto">
               <div className="relative w-full overflow-hidden rounded-lg" style={{ height: '800px' }}>
                 <iframe
-                  src="https://lu.ma/embed/calendar/cal-vu0BP4BUofmA5oU/events"
+                  src="https://luma.com/embed/calendar/cal-Wq6s2FC1w6jrjuk/events"
                   className="absolute top-0 left-0 w-full h-full"
                   frameBorder="0"
                   style={{ 
