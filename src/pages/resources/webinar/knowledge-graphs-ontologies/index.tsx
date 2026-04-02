@@ -103,31 +103,15 @@ const KnowledgeGraphsWebinar = () => {
                 />
               </div>
               <p className="leading-relaxed my-8">
-                Please join us for our next OpenMetadata Community Meetup,
-                &ldquo;Knowledge Graphs &amp; Ontologies in OpenMetadata!&rdquo; Join
-                us as we introduce new semantic web standards for linked metadata
-                and knowledge graphs. Plus, look out for a demo of MCP Toolbox,
-                an open source MCP server for databases developed by Google, and
-                how it can be combined with OpenMetadata to build better agents
-                for services like Looker!
+                OpenMetadata is an open-source project that is driving open metadata standards for data. By centralizing all your metadata in a single place in a unified metadata graph, data teams can have a unified, open platform for data discovery, observability, and governance.
               </p>
 
+              <div className="mb-6">
+                Please join our <a href="https://slack.open-metadata.org/" target="_blank" className="text-[#8E52F0]">Slack</a>, we have a very active and growing community providing support, and discussing about the great new features to add. We also run a monthly online community meeting, and you can see the recordings on the <a href="https://www.youtube.com/@OpenMetadataChannel" target="_blank" className="text-[#8E52F0]">Youtube channel</a>.
+              </div>
+
               <div className="mb-12">
-                <div className="mb-4 font-bold">
-                  Agenda Highlights:
-                </div>
-                <ul className="space-y-2">
-                  {AGENDA.map((item) => (
-                    <li key={item} className="flex items-start gap-2">
-                      <span>-</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                  <li className="flex items-center gap-2">
-                    <span className="font-bold text-xl">+</span>
-                    <span>And More!</span>
-                  </li>
-                </ul>
+                Most importantly, show your love for the project and the community by giving us a Star on our <a href="https://github.com/open-metadata/OpenMetadata/" target="_blank" className="text-[#8E52F0]">GitHub repo</a>.
               </div>
 
               {/* Speakers */}
