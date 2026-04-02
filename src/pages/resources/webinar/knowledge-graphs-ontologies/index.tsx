@@ -151,7 +151,7 @@ const KnowledgeGraphsWebinar = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-2xl sm:p-4 relative lg:-top-80">
+            <div className="bg-white rounded-2xl shadow-2xl sm:p-4 relative lg:-top-80 z-20">
               <HubspotFormNew
                 portalId="21369141"
                 formId="7fa761f3-d0df-46ea-be80-da6bcb8c4d49"
