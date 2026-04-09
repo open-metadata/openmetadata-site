@@ -84,6 +84,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     }
 }
 
+const toId = (children: React.ReactNode): string =>
+    String(children ?? '')
+        .toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w-]/g, '')
+
 const LearningCenterArticle = ({ article, mdxSource, isRightPanelVisible, link }: Props) => {
     const router = useRouter()
     const clusterSlug = article.cluster
@@ -134,16 +140,16 @@ const LearningCenterArticle = ({ article, mdxSource, isRightPanelVisible, link }
                                     components={{
                                         ...mdxComponents,
                                         h1: ({ children }) => (
-                                            <h1 className="lc-h1">{children}</h1>
+                                            <h1 id={toId(children)} className="lc-h1">{children}</h1>
                                         ),
                                         h2: ({ children }) => (
-                                            <h2 className="lc-h2">{children}</h2>
+                                            <h2 id={toId(children)} className="lc-h2">{children}</h2>
                                         ),
                                         h3: ({ children }) => (
-                                            <h3 className="lc-h3">{children}</h3>
+                                            <h3 id={toId(children)} className="lc-h3">{children}</h3>
                                         ),
                                         h4: ({ children }) => (
-                                            <h4 className="lc-h4">{children}</h4>
+                                            <h4 id={toId(children)} className="lc-h4">{children}</h4>
                                         ),
                                         p: ({ children }) => (
                                             <p className="lc-p">{children}</p>

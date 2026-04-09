@@ -170,7 +170,7 @@ const LearningCenterFiltered = ({ initialTopic, initialResourceType, initialPage
                                                         />
                                                     </div>
                                                 </div>
-                                                <div className="px-2 pt-8 flex flex-col flex-grow">
+                                                <div className="px-2 pt-6 flex flex-col flex-grow">
                                                     <div className="mb-3 text-gray-500">
                                                         {item.cluster}
                                                     </div>

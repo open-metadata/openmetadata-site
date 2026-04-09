@@ -182,6 +182,7 @@ p{
     color: #000 !important;
     margin-top: 0 !important;
     margin-bottom: 0.5rem !important;
+    scroll-margin-top: 9rem !important;
 }
 
 .lc-article-body .lc-h2 {
@@ -191,6 +192,7 @@ p{
     color: #000 !important;
     margin-top: 2.5rem !important;
     margin-bottom: 1.25rem !important;
+    scroll-margin-top: 9rem !important;
 }
 
 .lc-article-body .lc-h3 {
@@ -200,6 +202,7 @@ p{
     color: #000 !important;
     margin-top: 2rem !important;
     margin-bottom: 0.75rem !important;
+    scroll-margin-top: 9rem !important;
 }
 
 .lc-article-body .lc-h4 {
@@ -208,6 +211,7 @@ p{
     color: #000 !important;
     margin-top: 1.5rem !important;
     margin-bottom: 0.5rem !important;
+    scroll-margin-top: 9rem !important;
 }
 
 .lc-article-body .lc-p {

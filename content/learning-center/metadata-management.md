@@ -2,7 +2,7 @@
 title: Metadata Management in 2026 - Processes, Use Cases & Technologies
 description: Metadata management is the process of organizing, controlling, and utilizing data about data (metadata) to provide context, improve access, ensure quality, and enable governance across an organization, helping users find, understand, and trust information assets for better decisions and compliance.
 cluster: Metadata Management
-image: /images/learning-center/banner/metadata-management.png
+image: /assets/learning-center/banner/metadata-management.png
 ---
 
 # Metadata Management in 2026: Processes, Use Cases, and Technologies

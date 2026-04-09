@@ -130,7 +130,7 @@ const LearningCenterPage = () => {
                                                         />
                                                     </div>
                                                 </div>
-                                                <div className="px-2 pt-8 flex flex-col flex-grow">
+                                                <div className="px-2 pt-6 flex flex-col flex-grow">
                                                     <div className="mb-3 text-[#484357] text-sm">
                                                         {item.cluster}
                                                     </div>
