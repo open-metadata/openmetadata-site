@@ -4,8 +4,6 @@ import FooterDev from "@/components/FooterDev/FooterDev";
 import Header from "@/components/Header/Header";
 import IntegrationsDev from "@/components/IntegrationsDev/IntegrationsDev";
 import KeyDataAssets from "@/components/KeyDataAssets/KeyDataAssets";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
 import Services from "@/components/Service/Service";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
@@ -26,10 +24,6 @@ const Development = () => {
 
   return (
       <div>
-        <div className="mx-auto fixed top-0 w-full z-[1030]">
-          <NavbarDev onClick={handleTryOpenMetadataClick} />
-          <NavbarStrip />
-        </div>
         <Header onClick={handleTryOpenMetadataClick} />
         <Achievement />
         <Services />

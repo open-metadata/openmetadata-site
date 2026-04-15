@@ -1,10 +1,7 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
 import ParamLink from "@/components/ParamLink";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -15,20 +12,9 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
 }
 
 export default function Community() {
-  const router = useRouter();
-
-  const handleTryOpenMetadataClick = () => {
-    router.push("/#try-openmetadata");
-  };
-
   return (
       <div id="layoutDefault">
         <div id="layoutDefault_content">
-          <div className="mx-auto fixed top-0 w-full z-[1030]">
-            <NavbarDev onClick={handleTryOpenMetadataClick} />
-            <NavbarStrip />
-          </div>
-
           <header className="page-header-ui page-header-ui-light bg-white lg:pt-32 max-lg:mt-0">
             <div className="page-header-ui-content pt-5 max-lg:pt-0">
               <div className="container px-10">

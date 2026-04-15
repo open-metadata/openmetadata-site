@@ -15,6 +15,7 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import CookieModal from "@/components/CookieModal";
+import Layout from "@/components/Layout/Layout";
 
 config.autoAddCss = false;
 
@@ -136,8 +137,10 @@ export default function App({ Component, pageProps }: AppProps) {
           </>
         )}
       </Head>
-      {!storedCookie && <CookieModal handleButtonClick={handleButtonClick} />}
-      <Component {...pageProps} />
+      <Layout>
+        {!storedCookie && <CookieModal handleButtonClick={handleButtonClick} />}
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
