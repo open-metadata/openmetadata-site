@@ -2,17 +2,13 @@ import CustomerChallenges from "@/components/CustomerCaseStudy/CustomerChallenge
 import CustomerHeader from "@/components/CustomerCaseStudy/CustomerHeader";
 import CustomerTestimonial from "@/components/CustomerCaseStudy/CustomerTestimonial";
 import FooterDev from "@/components/FooterDev/FooterDev";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
-import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
-import { 
+import {
   WOOP_CUSTOMER_CHALLENGES, 
   WOOP_CUSTOMER_HEADER, 
   WOOP_CUSTOMER_HIGHLIGHTS, 
   WOOP_CUSTOMER_TESTIMONIAL 
 } from "@/constants/WoopCustomer.constants";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -23,12 +19,6 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
 }
 
 const WoopCaseStudyPage = () => {
-  const router = useRouter();
-
-  const handleTryOpenMetadataClick = () => {
-    router.push("/#try-openmetadata");
-  };
-
   return (
     <>
       <Head>
@@ -36,11 +26,6 @@ const WoopCaseStudyPage = () => {
         <meta name="description" content="See how logistics platform Woop's 2-person data team manages 1,600+ assets for 100+ users with OpenMetadata's automated governance and self-service discovery." />
       </Head>
       <div>
-        <div className="mx-auto fixed top-0 w-full z-[1030]">
-          <SummitBanner />
-          <NavbarDev onClick={handleTryOpenMetadataClick} />
-          <NavbarStrip />
-        </div>
         <div className="mt-20 md:mt-24 lg:mt-32">
           <CustomerHeader
             customerHeader={WOOP_CUSTOMER_HEADER}

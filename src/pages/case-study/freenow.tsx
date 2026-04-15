@@ -2,17 +2,13 @@ import CustomerChallenges from "@/components/CustomerCaseStudy/CustomerChallenge
 import CustomerHeader from "@/components/CustomerCaseStudy/CustomerHeader";
 import CustomerTestimonial from "@/components/CustomerCaseStudy/CustomerTestimonial";
 import FooterDev from "@/components/FooterDev/FooterDev";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
-import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
-import { 
+import {
     FREENOW_CUSTOMER_CHALLENGES, 
     FREENOW_CUSTOMER_HEADER, 
     FREENOW_CUSTOMER_HIGHLIGHTS, 
     FREENOW_CUSTOMER_TESTIMONIAL 
 } from "@/constants/FreenowCustomer.constants";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -23,12 +19,6 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
 }
 
 const FreeNowCaseStudyPage = () => {
-  const router = useRouter();
-
-  const handleTryOpenMetadataClick = () => {
-    router.push("/#try-openmetadata");
-  };
-
   return (
     <>
       <Head>
@@ -39,11 +29,6 @@ const FreeNowCaseStudyPage = () => {
         />
       </Head>
       <div>
-        <div className="mx-auto fixed top-0 w-full z-[1030]">
-          <SummitBanner />
-          <NavbarDev onClick={handleTryOpenMetadataClick} />
-          <NavbarStrip />
-        </div>
         <div className="mt-20 md:mt-24 lg:mt-32">
           <CustomerHeader
             customerHeader={FREENOW_CUSTOMER_HEADER}

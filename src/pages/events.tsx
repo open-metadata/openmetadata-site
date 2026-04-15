@@ -1,10 +1,6 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
-import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
 import ParamLink from "@/components/ParamLink";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
-import { useRouter } from "next/router";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -15,21 +11,9 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
 }
 
 export default function Events() {
-  const router = useRouter();
-
-  const handleTryOpenMetadataClick = () => {
-    router.push("/#try-openmetadata");
-  };
-
   return (
     <div id="layoutDefault">
       <div id="layoutDefault_content">
-        <div className="mx-auto fixed top-0 w-full z-[1030]">
-          <SummitBanner />
-          <NavbarDev onClick={handleTryOpenMetadataClick} />
-          <NavbarStrip />
-        </div>
-
         <section className="bg-white lg:pt-40 max-lg:pt-24 pt-20">
           <div className="container px-10 py-10">
             <div className="text-center mb-8 max-w-4xl mx-auto">

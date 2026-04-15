@@ -1,11 +1,7 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
 import HubspotForm from "@/components/HubspotForm";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
-import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
 import { SPEAKERS } from "@/constants/LandingPage.constants";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -17,19 +13,8 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
 }
 
 const CarrefourPage = () => {
-  const router = useRouter();
-
-  const handleTryOpenMetadataClick = () => {
-    router.push("/#try-openmetadata");
-  };
-
   return (
     <div>
-      <div className="mx-auto fixed top-0 w-full z-[1030]">
-        <SummitBanner />
-        <NavbarDev onClick={handleTryOpenMetadataClick} />
-        <NavbarStrip />
-      </div>
       <div className="landing-page mt-20 md:mt-24 lg:mt-32">
         <div className="max-w-[1440px] mx-auto py-28 md:py-20 px-4 md:px-10 xl:px-16">
           <div className="grid gap-16 lg:grid-cols-2 xl:grid-cols-3">

@@ -1,8 +1,5 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
 import HubspotForm from "@/components/HubspotForm";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
-import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
 import ParamLink from "@/components/ParamLink";
 import {
   CUSTOMER_GALLERY,
@@ -10,7 +7,6 @@ import {
   INDUSTRY_LIST,
 } from "@/constants/CustomerGallery.constants";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import { useState } from "react";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
@@ -22,15 +18,10 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
 }
 
 const CaseStudiesPage = () => {
-  const router = useRouter();
   const [activeIndustry, setActiveIndustry] = useState<string>("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const [customers, setCustomers] = useState(CUSTOMER_GALLERY);
   const [inputValue, setInputValue] = useState<string>("");
-
-  const handleTryOpenMetadataClick = () => {
-    router.push("/#try-openmetadata");
-  };
 
   const handleIndustryFilter = (industry: string) => {
     setInputValue("");
@@ -59,11 +50,6 @@ const CaseStudiesPage = () => {
 
   return (
     <div>
-      <div className="mx-auto fixed top-0 w-full z-[1030]">
-        <SummitBanner />
-        <NavbarDev onClick={handleTryOpenMetadataClick} />
-        <NavbarStrip />
-      </div>
       <div className="mt-20 md:mt-24 lg:mt-32">
         <div className="case-study-page">
           <div className="max-w-[1440px] mx-auto py-28 md:py-20 px-5 md:px-10 xl:px-20">
