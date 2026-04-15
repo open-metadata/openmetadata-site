@@ -4,6 +4,7 @@ import CustomerTestimonial from "@/components/CustomerCaseStudy/CustomerTestimon
 import FooterDev from "@/components/FooterDev/FooterDev";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
+import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
 import { 
     NW_CUSTOMER_CHALLENGES, 
     NW_CUSTOMER_HEADER, 
@@ -36,6 +37,7 @@ const NwCaseStudyPage = () => {
       </Head>
       <div>
         <div className="mx-auto fixed top-0 w-full z-[1030]">
+          <SummitBanner />
           <NavbarDev onClick={handleTryOpenMetadataClick} />
           <NavbarStrip />
         </div>

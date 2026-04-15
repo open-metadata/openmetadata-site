@@ -8,6 +8,7 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import NavbarDev from "../components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "../components/NavbarDev/NavbarStrip.component";
+import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
 import FooterDev from "../components/FooterDev/FooterDev";
 import { mdxComponents } from "../components/MDXComponents";
 import Image from "next/image";
@@ -314,6 +315,7 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
       </Head>
 
       <div className="mx-auto fixed top-0 w-full z-[1030]">
+        <SummitBanner />
         <NavbarDev onClick={() => {}} />
         <NavbarStrip />
       </div>

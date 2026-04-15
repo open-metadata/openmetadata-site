@@ -1,6 +1,7 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
+import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
 import ParamLink from "@/components/ParamLink";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import { useRouter } from "next/router";
@@ -24,6 +25,7 @@ export default function Events() {
     <div id="layoutDefault">
       <div id="layoutDefault_content">
         <div className="mx-auto fixed top-0 w-full z-[1030]">
+          <SummitBanner />
           <NavbarDev onClick={handleTryOpenMetadataClick} />
           <NavbarStrip />
         </div>

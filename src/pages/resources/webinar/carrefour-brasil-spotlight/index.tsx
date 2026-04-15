@@ -2,6 +2,7 @@ import FooterDev from "@/components/FooterDev/FooterDev";
 import HubspotForm from "@/components/HubspotForm";
 import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
 import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
+import SummitBanner from "@/components/NavbarDev/SummitBanner.component";
 import { SPEAKERS } from "@/constants/LandingPage.constants";
 import Image from "next/image";
 import { useRouter } from "next/router";
@@ -25,6 +26,7 @@ const CarrefourPage = () => {
   return (
     <div>
       <div className="mx-auto fixed top-0 w-full z-[1030]">
+        <SummitBanner />
         <NavbarDev onClick={handleTryOpenMetadataClick} />
         <NavbarStrip />
       </div>
