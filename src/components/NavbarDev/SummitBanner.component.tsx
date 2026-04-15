@@ -9,7 +9,7 @@ const SummitBanner = () => {
           name="Register Now for Collate Summit '26"
           href="https://www.getcollate.io/summit2026"
           target="_blank"
-          className="underline"
+          className="underline font-semibold"
         />{" "}
         🚀
       </span>
