@@ -41,7 +41,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               target="_blank"
               className="uppercase w-full flex justify-center items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:text-[#6540c8]"
             >
-              <JoinSlackIcon /> <span className="mt-[3px]">Join Slack</span>
+              <img src="/assets/logo/slack.webp" alt="Slack" className="w-[18px] h-[18px]" /> <span className="mt-[3px]">Join Slack</span>
             </ParamLink>
             <button
               onClick={onClick}
