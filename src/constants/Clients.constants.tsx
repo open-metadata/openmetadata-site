@@ -22,7 +22,7 @@ export const CLIENT_LIST = [
     },
     {
         name: "Carrefour",
-        logo: `/assets/customer-gallery/header/carrefour-logo.svg`,
+        logo: `${LOGO_ROUTE}/carrefour.svg`,
         width: 100
     },
     {
@@ -117,7 +117,7 @@ export const CLIENT_LIST = [
     },
     {
         name: "Gorgias",
-        logo: `/assets/customer-gallery/header/gorgias-logo.svg`,
+        logo: `/assets/gorgias-customer/gorgias-logo.webp`,
         width: 100
     },
 ]
