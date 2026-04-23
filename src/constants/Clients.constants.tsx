@@ -2,6 +2,11 @@ const LOGO_ROUTE = '/assets/clients'
 
 export const CLIENT_LIST = [
     {
+        name: "OpenAI",
+        logo: `${LOGO_ROUTE}/openai.svg`,
+        width: 100
+    },
+    {
         name: "inDrive",
         logo: `${LOGO_ROUTE}/inDrive.svg`,
     },
