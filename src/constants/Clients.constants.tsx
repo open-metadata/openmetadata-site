@@ -6,6 +6,16 @@ export const CLIENT_LIST = [
         logo: `${LOGO_ROUTE}/inDrive.svg`,
     },
     {
+        name: "Wix",
+        logo: `/assets/testimonials/wix.png`,
+        width: 60
+    },
+    {
+        name: "Carrefour",
+        logo: `/assets/customer-gallery/header/carrefour-logo.svg`,
+        width: 100
+    },
+    {
         name: "Intelligaia",
         logo: `${LOGO_ROUTE}/intelligaia.svg`,
     },
@@ -69,5 +79,35 @@ export const CLIENT_LIST = [
         name: "Senzai AI",
         logo: `${LOGO_ROUTE}/senzai.svg`,
         width: 50
+    },
+    {
+        name: "NW",
+        logo: `/assets/testimonials/nw-logo.jpeg`,
+        width: 60
+    },
+    {
+        name: "FREENOW",
+        logo: `/assets/testimonials/freenow-logo.png`,
+        width: 120
+    },
+    {
+        name: "VRT",
+        logo: `/assets/testimonials/vrt-logo.svg`,
+        width: 80
+    },
+    {
+        name: "Thndr",
+        logo: `/assets/testimonials/thndr.png`,
+        width: 80
+    },
+    {
+        name: "Forter",
+        logo: `/assets/testimonials/forter.png`,
+        width: 80
+    },
+    {
+        name: "Gorgias",
+        logo: `/assets/customer-gallery/header/gorgias-logo.svg`,
+        width: 100
     },
 ]

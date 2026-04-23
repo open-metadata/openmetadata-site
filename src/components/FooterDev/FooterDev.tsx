@@ -14,9 +14,10 @@ const FooterDev = () => {
               <OmdFooterLogo />
             </div>
             <div className="font-normal tracking-[-0.005em] text-[14px] md:max-w-[80%] xl:max-w-[50%]">
-              Unlock the value of data assets with an end-to-end metadata
-              management solution that includes data discovery, governance, data
-              quality, observability, and people collaboration.
+              Unlock the value of data assets with an open-source AI context
+              layer — powered by semantics — that includes data discovery,
+              governance, data quality, observability, lineage, and shared
+              semantic context for people and AI.
             </div>
             <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
               OpenMetadata® and the OpenMetadata logo are trademarks of Collate,
@@ -104,8 +105,10 @@ const FooterDev = () => {
             <OmdFooterLogo />
           </div>
           <div className="font-normal tracking-[-0.02em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
-            Open Standard for Metadata with a centralized Metadata Store.
-            Discover, collaborate and get your Data Right.
+            Open-source AI context layer — powered by semantics. Shared
+            understanding for people and AI agents across data discovery,
+            quality, observability, governance, lineage, collaboration &amp;
+            more.
           </div>
           <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
             Copyright OpenMetadata {new Date().getFullYear()}

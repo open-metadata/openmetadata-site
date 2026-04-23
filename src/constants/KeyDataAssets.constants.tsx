@@ -11,11 +11,11 @@ export const TABS = [
     icon: SearchIcon,
     useCases: {
       header: {
-        text: "Enable teams to find ",
+        text: "Help people and agents find ",
         highlightedText: "key data assets",
       },
       description:
-        "Get the right data to the right people to do their work. OpenMetadata delivers a single source of truth for all your data sources, data pipelines, and data products.",
+        "Get the right data to the right people and agents to do their work. OpenMetadata delivers a single source of truth for all your data sources, data pipelines, and data products, with rich semantic context attached to every asset.",
       imgSrc: "/assets/discovery.webp",
       cases: [
         "120+ Data Connectors for all your data sources",

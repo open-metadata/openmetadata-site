@@ -1,21 +1,22 @@
 export const SERVICE_LIST = [
   {
     serviceName: {
-        header1: 'The only ',
-        header2: 'unified platform',
-        header3: ' for all your use cases'
+        header1: '',
+        header2: 'Semantic context',
+        header3: ' your AI agents and people can act on'
     },
     description:
-      "Get complete data context unified across data discovery, observability, and governance, made possible with a Unified Metadata Graph that centralizes all metadata for all data assets. 120+ turnkey connectors make it easy to collect all your metadata and power a unified experience designed to bring data teams together in shared responsibility and contribution.",
+      "OpenMetadata builds a living knowledge graph of your data — what it means, how it connects, and whether it can be trusted. Open semantic standards and a SPARQL-queryable graph give both people and AI agents the shared context they need to work on your data reliably. Get complete data understanding across all your data use cases, made possible with a Semantic Context Graph.",
     icon: "/assets/unified-platform.svg",
   },
   {
     serviceName: {
-        header1: 'Built from the ground up for ',
-        header2: 'modern data teams'
+        header1: 'API-first and ',
+        header2: 'schema-first',
+        header3: ', by design'
     },
     description:
-      "OpenMetadata's API and schema-first architecture provides you metadata control and customization. Extensible metadata entities and relationships tailor the Unified Metadata Graph to your specific data needs. This enables data collaboration workflows between data producers and consumers for a more data-driven culture at your organization.",
+      "OpenMetadata's schema-first architecture — with 700+ open specifications in JSON Schema and RDF/JSON-LD — makes metadata programmable and extensible. Plug into your existing stack, customize your metadata model, and build data and AI workflows that scale with your organization.",
     icon: "/assets/modern-teams.svg",
   },
   {
