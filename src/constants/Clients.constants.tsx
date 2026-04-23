@@ -11,6 +11,11 @@ export const CLIENT_LIST = [
         width: 60
     },
     {
+        name: "Yelp",
+        logo: `${LOGO_ROUTE}/yelp.png`,
+        width: 70
+    },
+    {
         name: "Carrefour",
         logo: `/assets/customer-gallery/header/carrefour-logo.svg`,
         width: 100
