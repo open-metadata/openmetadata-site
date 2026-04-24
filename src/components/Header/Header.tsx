@@ -32,11 +32,11 @@ const Header = ({ onClick }: { onClick: () => void }) => {
             <span className="text-[#7147E8]">semantic intelligence</span>
           </h1>
           <p className="mt-3 mx-auto sm:leading-[26px] max-w-[95%] sm:max-w-[78%] sm:text-lg lg:text-[19px] 2xl:max-w-[90%]">
-            A single place for all your data and all your data practitioners to
-            build and manage high quality, semantically-rich metadata assets
-            that give both people and AI agents shared context at scale. Built
-            by Collate and the founders of Apache Hadoop, Apache Atlas, and
-            Uber Databook.
+            A single place for all your data, AI agents, and data practitioners
+            to build and manage high quality, semantically-rich metadata assets
+            that give both people and agents shared context at scale. Built by
+            Collate and the founders of Apache Hadoop, Apache Atlas, and Uber
+            Databook.
           </p>
           <div className="relative z-[11] flex flex-col-reverse sm:flex-row justify-center gap-3 items-center mt-12">
             <ParamLink

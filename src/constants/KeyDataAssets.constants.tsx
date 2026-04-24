@@ -1,3 +1,4 @@
+import { AIIcon } from "@/components/Icons/AI";
 import { CollaborationIcon } from "@/components/Icons/Collaboration";
 import { EyeIcon } from "@/components/Icons/Eye";
 import { FingerPrintIcon } from "@/components/Icons/FingerPrint";
@@ -6,6 +7,24 @@ import { QualityIcon } from "@/components/Icons/Quality";
 import { SearchIcon } from "@/components/Icons/Search";
 
 export const TABS = [
+  {
+    name: "AI Readiness",
+    icon: AIIcon,
+    useCases: {
+      header: {
+        text: "Give your AI agents ",
+        highlightedText: "trusted, understood data",
+      },
+      description:
+        "AI agents are only as good as the data they act on. OpenMetadata's Semantic Context Graph gives every agent the context it needs — what a dataset means, where it came from, and whether it can be trusted — accessible with a native MCP server and AI SDK.",
+      imgSrc: "/assets/omd-mcp.webp",
+      cases: [
+        "MCP server for direct agent-to-context integration",
+        "AI SDK lets external agents call OpenMetadata capabilities programmatically",
+        "Policies and tags sync back to source systems (Snowflake, BigQuery, and more)",
+      ],
+    },
+  },
   {
     name: "Discovery",
     icon: SearchIcon,

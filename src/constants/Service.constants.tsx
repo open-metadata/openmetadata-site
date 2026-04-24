@@ -6,7 +6,7 @@ export const SERVICE_LIST = [
         header3: ' your AI agents and people can act on'
     },
     description:
-      "OpenMetadata builds a living knowledge graph of your data — what it means, how it connects, and whether it can be trusted. Open semantic standards and a SPARQL-queryable graph give both people and AI agents the shared context they need to work on your data reliably. Get complete data understanding across all your data use cases, made possible with a Semantic Context Graph.",
+      "OpenMetadata builds a living knowledge graph of your data — what it means, how it connects, and whether it can be trusted. Context drawn from data assets, documents, and organizational policies flows into a single Semantic Context Graph, giving both people and AI agents the shared understanding they need to work on your data.",
     icon: "/assets/unified-platform.svg",
   },
   {
