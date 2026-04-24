@@ -2,8 +2,28 @@ const LOGO_ROUTE = '/assets/clients'
 
 export const CLIENT_LIST = [
     {
+        name: "OpenAI",
+        logo: `${LOGO_ROUTE}/openai.svg`,
+        width: 100
+    },
+    {
         name: "inDrive",
         logo: `${LOGO_ROUTE}/inDrive.svg`,
+    },
+    {
+        name: "Wix",
+        logo: `/assets/testimonials/wix.png`,
+        width: 60
+    },
+    {
+        name: "Yelp",
+        logo: `${LOGO_ROUTE}/yelp.png`,
+        width: 70
+    },
+    {
+        name: "Carrefour",
+        logo: `${LOGO_ROUTE}/carrefour.svg`,
+        width: 100
     },
     {
         name: "Intelligaia",
@@ -69,5 +89,35 @@ export const CLIENT_LIST = [
         name: "Senzai AI",
         logo: `${LOGO_ROUTE}/senzai.svg`,
         width: 50
+    },
+    {
+        name: "NW",
+        logo: `/assets/testimonials/nw-logo.jpeg`,
+        width: 60
+    },
+    {
+        name: "FREENOW",
+        logo: `/assets/testimonials/freenow-logo.png`,
+        width: 120
+    },
+    {
+        name: "VRT",
+        logo: `/assets/testimonials/vrt-logo.svg`,
+        width: 80
+    },
+    {
+        name: "Thndr",
+        logo: `/assets/testimonials/thndr.png`,
+        width: 80
+    },
+    {
+        name: "Forter",
+        logo: `/assets/testimonials/forter.png`,
+        width: 80
+    },
+    {
+        name: "Gorgias",
+        logo: `/assets/gorgias-customer/gorgias-logo.webp`,
+        width: 100
     },
 ]

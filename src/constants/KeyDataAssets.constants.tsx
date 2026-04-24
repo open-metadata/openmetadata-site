@@ -1,3 +1,4 @@
+import { AIIcon } from "@/components/Icons/AI";
 import { CollaborationIcon } from "@/components/Icons/Collaboration";
 import { EyeIcon } from "@/components/Icons/Eye";
 import { FingerPrintIcon } from "@/components/Icons/FingerPrint";
@@ -7,15 +8,33 @@ import { SearchIcon } from "@/components/Icons/Search";
 
 export const TABS = [
   {
+    name: "AI Readiness",
+    icon: AIIcon,
+    useCases: {
+      header: {
+        text: "Give your AI agents ",
+        highlightedText: "trusted, understood data",
+      },
+      description:
+        "AI agents are only as good as the data they act on. OpenMetadata's Semantic Context Graph gives every agent the context it needs — what a dataset means, where it came from, and whether it can be trusted — accessible with a native MCP server and AI SDK.",
+      imgSrc: "/assets/omd-mcp.webp",
+      cases: [
+        "MCP server for direct agent-to-context integration",
+        "AI SDK lets external agents call OpenMetadata capabilities programmatically",
+        "Policies and tags sync back to source systems (Snowflake, BigQuery, and more)",
+      ],
+    },
+  },
+  {
     name: "Discovery",
     icon: SearchIcon,
     useCases: {
       header: {
-        text: "Enable teams to find ",
+        text: "Help people and agents find ",
         highlightedText: "key data assets",
       },
       description:
-        "Get the right data to the right people to do their work. OpenMetadata delivers a single source of truth for all your data sources, data pipelines, and data products.",
+        "Get the right data to the right people and agents to do their work. OpenMetadata delivers a single source of truth for all your data sources, data pipelines, and data products, with rich semantic context attached to every asset.",
       imgSrc: "/assets/discovery.webp",
       cases: [
         "120+ Data Connectors for all your data sources",
