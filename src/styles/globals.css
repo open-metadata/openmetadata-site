@@ -165,3 +165,38 @@ p{
     max-width: 1440px;
   }
 }
+
+.summitHubspotForm {
+  padding: 20px 12px;
+}
+
+.summitHubspotForm h1 span {
+  font-size: 40px !important;
+}
+
+.summitHubspotForm .hs-email,
+.summitHubspotForm .hs-company {
+  margin: 16px 0;
+}
+
+.summitHubspotForm .hs-email .hs-input,
+.summitHubspotForm .hs-company .hs-input {
+  border-radius: 5px;
+  padding: 10px 0.75rem;
+  width: 100% !important;
+  border: 1px solid #c2c5d5;
+}
+
+.summitHubspotForm .form-columns-2 {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.summitHubspotForm .hs-button {
+  background-color: #e4233d;
+  color: white;
+  padding: 8px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: -10px !important;
+}
