@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { OmdLogo } from "@/components/Icons/OmdLogo";
-import HubspotForm from "@/components/HubspotForm";
 
-const SUMMIT_FORM_ID = "efc08db1-6ca0-4cd0-91e0-6ff6c94e6943";
 const TARGET_DATE = new Date("2026-06-10T16:00:00Z");
 
 function useCountdown() {
@@ -29,7 +27,6 @@ function useCountdown() {
 
 const SummitBanner = () => {
   const { days, hours, minutes } = useCountdown();
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const requiredTime = [
     { label: "d", value: days },
@@ -103,27 +100,6 @@ const SummitBanner = () => {
           </div>
         </div>
       </div>
-
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
-          onClick={() => setIsModalOpen(false)}
-        >
-          <div className="absolute inset-0 bg-black/50" />
-          <div
-            className="relative bg-white px-5 sm:px-10 pt-6 pb-0 box-border rounded-3xl w-full max-w-lg max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="absolute top-4 right-5 text-gray-500 hover:text-black text-2xl leading-none"
-              onClick={() => setIsModalOpen(false)}
-            >
-              &times;
-            </button>
-            <HubspotForm id="summitHubspotForm" formId={SUMMIT_FORM_ID} />
-          </div>
-        </div>
-      )}
     </>
   );
 };
