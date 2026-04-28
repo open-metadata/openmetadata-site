@@ -50,6 +50,12 @@ export const INTEGRATION_SERVICES = [
         name: 'BigQuery',
       },
       {
+        href: 'https://docs.open-metadata.org/v1.12.x/connectors/database/burstiq',
+        src: '/assets/services/burstiq.svg',
+        alt: 'service-burstiq',
+        name: 'BurstIQ',
+      },
+      {
         href: 'https://docs.open-metadata.org/latest/connectors/database/cassandra',
         src: '/assets/services/cassandra.png',
         alt: 'service-cassandra',
@@ -162,6 +168,12 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/mariadb.webp',
         alt: 'service-mariadb',
         name: 'MariaDB',
+      },
+      {
+        href: 'https://docs.open-metadata.org/latest/connectors/database',
+        src: '/assets/services/microsoft-fabric.svg',
+        alt: 'service-fabric',
+        name: 'Microsoft Fabric Database',
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/mssql',
@@ -295,6 +307,12 @@ export const INTEGRATION_SERVICES = [
     connector: 'Messaging',
     services: [
       {
+        href: 'https://docs.open-metadata.org/latest/connectors/messaging',
+        src: '/assets/services/google-pub.svg',
+        alt: 'service-google-pub',
+        name: 'Google Pub/Sub',
+      },
+      {
         href: 'https://docs.open-metadata.org/latest/connectors/messaging/kafka',
         src: '/assets/services/kafka.webp',
         alt: 'service-kafka',
@@ -372,6 +390,12 @@ export const INTEGRATION_SERVICES = [
         name: 'Sigma',
       },
       {
+        href: 'https://docs.open-metadata.org/latest/connectors/dashboard/ssrs',
+        src: '/assets/services/ssrs.svg',
+        alt: 'service-ssrs',
+        name: 'SSRS',
+      },
+      {
         href: 'https://docs.open-metadata.org/latest/connectors/dashboard/superset',
         src: '/assets/services/superset.webp',
         alt: 'service-superset',
@@ -395,9 +419,21 @@ export const INTEGRATION_SERVICES = [
     connector: 'Pipeline',
     services: [
       {
+        href: 'https://docs.open-metadata.org/latest/connectors/pipeline',
+        src: '/assets/services/microsoft-fabric.svg',
+        alt: 'service-fabric',
+        name: 'Microsoft Fabric Pipeline',
+      },
+      {
         href: 'https://docs.open-metadata.org/latest/connectors/pipeline/airflow',
         src: '/assets/services/airflow.webp',
         alt: 'service-airflow',
+        name: 'Airflow Rest API',
+      },
+      {
+        href: 'https://docs.open-metadata.org/latest/connectors/pipeline/airflow',
+        src: '/assets/services/airflow.webp',
+        alt: 'service-airflow-api',
         name: 'Airflow',
       },
       {
@@ -417,6 +453,12 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/fivetran.webp',
         alt: 'service-Fivetran',
         name: 'Fivetran',
+      },
+      {
+        href: 'https://docs.open-metadata.org/latest/connectors/pipeline',
+        src: '/assets/services/matillion.svg',
+        alt: 'service-matillion',
+        name: 'Matillion Data Cloud',
       },
       {
         src: '/assets/services/apachenifi.webp',
@@ -445,6 +487,17 @@ export const INTEGRATION_SERVICES = [
     ],
   },
   {
+    connector: 'MCP',
+    services: [
+      {
+        name: 'MCP',
+        src: '/images/integration/mcp-connector.svg',
+        href: 'https://docs.open-metadata.org/latest/how-to-guides/mcp/connect',
+        alt: 'service-mcp'
+      }
+    ],
+  },
+  {
     connector: 'ML Model',
     services: [
       {
@@ -464,6 +517,12 @@ export const INTEGRATION_SERVICES = [
   {
     connector: 'Drive',
     services: [
+      {
+        href: 'https://docs.open-metadata.org/latest/connectors/drive',
+        src: '/assets/services/drive.webp',
+        alt: 'service-drive',
+        name: 'Google Drive',
+      },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/drive/sftp',
         src: '/assets/services/sftp.svg',
