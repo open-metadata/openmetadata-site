@@ -63,7 +63,7 @@ const SummitBanner = () => {
               >
                 Register Now
               </a>
-              <div className="flex items-center gap-4 mt-6">
+              <div className="flex flex-wrap sm:flex-nowrap items-center gap-4 mt-6">
                 <div className="text-lg font-normal text-black">
                   Reserve your spot for{" "}
                   <span className="text-[#7147E8]">
@@ -87,14 +87,9 @@ const SummitBanner = () => {
             </div>
             <div className="rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none overflow-hidden w-full lg:w-auto">
               <img
-                src="/assets/summit/summit-banner-mobile.svg"
-                alt="Collate Summit 2026"
-                className="block lg:hidden w-full h-auto"
-              />
-              <img
                 src="/assets/summit/summit-banner.svg"
                 alt="Collate Summit 2026"
-                className="hidden lg:block h-full w-auto"
+                className="h-full w-auto"
               />
             </div>
           </div>
