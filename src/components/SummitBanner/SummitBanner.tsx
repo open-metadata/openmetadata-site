@@ -87,7 +87,7 @@ const SummitBanner = () => {
             </div>
             <div
               className="rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0"
-              style={{ backgroundImage: "url('/assets/summit/summit_banner.svg')", backgroundSize: "110%", backgroundPosition: "center" }}
+              style={{ backgroundImage: "url('/assets/summit/summit_banner.svg')", backgroundSize: "120%", backgroundPosition: "center" }}
               role="img"
               aria-label="Collate Summit 2026"
             />
