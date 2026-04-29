@@ -42,7 +42,7 @@ const SummitBanner = () => {
             <div
               className="rounded-t-[20px] lg:rounded-tl-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none lg:rounded-br-none p-6 lg:p-10 lg:pr-16 flex-1 bg-[#F9F6FF]"
             >
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-3 items-center">
                 <img src="/assets/collate-logo.svg" alt="Collate" width={169} height={39} />
                 <span className="text-gray-400 text-xl font-light">×</span>
                 <OmdLogo />
@@ -50,7 +50,7 @@ const SummitBanner = () => {
               <div className="text-white text-sm py-1 px-3 max-w-fit rounded-full my-3 bg-[#181D27]">
                 VIRTUAL
               </div>
-              <h2 className="text-4xl lg:text-6xl font-medium text-[#222244]">
+              <h2 className="text-4xl lg:text-6xl font-normal text-[#222244]">
                 Collate Summit &apos;<span className="text-[#7147E8]">26</span>
               </h2>
               <div className="text-lg mb-3 text-[#414651]">
@@ -85,13 +85,12 @@ const SummitBanner = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none overflow-hidden w-full lg:w-auto">
-              <img
-                src="/assets/summit/summit-banner.svg"
-                alt="Collate Summit 2026"
-                className="h-full w-auto"
-              />
-            </div>
+            <div
+              className="rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0"
+              style={{ backgroundImage: "url('/assets/summit/summit_banner.svg')", backgroundSize: "110%", backgroundPosition: "center" }}
+              role="img"
+              aria-label="Collate Summit 2026"
+            />
           </div>
         </div>
       </div>
