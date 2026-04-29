@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { OmdLogo } from "@/components/Icons/OmdLogo";
 
 const TARGET_DATE = new Date("2026-06-10T16:00:00Z");
@@ -85,12 +86,15 @@ const SummitBanner = () => {
                 </div>
               </div>
             </div>
-            <div
-              className="rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0"
-              style={{ backgroundImage: "url('/assets/summit/summit_banner.svg')", backgroundSize: "120%", backgroundPosition: "center" }}
-              role="img"
-              aria-label="Collate Summit 2026"
-            />
+            <div className="relative rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0 overflow-hidden">
+              <Image
+                src="/assets/summit/summit_banner.svg"
+                alt="Collate Summit 2026"
+                fill
+                priority
+                className="object-cover object-center scale-[1.2]"
+              />
+            </div>
           </div>
         </div>
       </div>
