@@ -63,7 +63,7 @@ const IntegrationsDev = () => {
         OpenMetadata's ingestion framework supports connectors for 120+ data services,
         with more added every release.
       </p>
-      <div className="mt-[48px] overflow-y-scroll relative shadow-primary rounded-lg md:rounded-2xl sm:flex sm:h-[974px] md:h-[1044px]">
+      <div className="mt-[48px] overflow-y-scroll relative shadow-primary rounded-lg md:rounded-2xl sm:flex sm:h-[1050px] md:h-[1124px]">
         <button
           onClick={() => setIsDropdownVisible((prev) => !prev)}
           className="py-[32px] w-full bg-white z-[15] flex items-center border-b border-[#E3DAFA] justify-center gap-2 text-[#5E3BC1] text-[20px] font-normal tracking-[-0.02em] sm:hidden"
@@ -143,7 +143,7 @@ const IntegrationsDev = () => {
                     />
                   </div>
                   <p
-                    className={`${item.name === "Exasol" || item.name.includes("SAP") ? "mt-8" : "mt-2"} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}
+                    className={`${item.name === "Exasol" || item.name.includes("SAP") ? "mt-8" : "mt-2"} text-wrap text-[14px] sm:text-wrap md:text-[16px]`}
                   >
                     {item.name}
                   </p>
@@ -174,7 +174,7 @@ const IntegrationsDev = () => {
                         }}
                       />
                     </div>
-                    <p className={`${item.name === 'Exasol' || item.name.includes('SAP') ? 'mt-6' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
+                    <p className={`${item.name === 'Exasol' || item.name.includes('SAP') ? 'mt-6' : 'mt-2'} text-wrap text-[14px] sm:text-wrap md:text-[16px]`}>
                       {item.name}
                     </p>
                   </div>
