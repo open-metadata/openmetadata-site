@@ -5,6 +5,7 @@ import Header from "@/components/Header/Header";
 import IntegrationsDev from "@/components/IntegrationsDev/IntegrationsDev";
 import KeyDataAssets from "@/components/KeyDataAssets/KeyDataAssets";
 import Services from "@/components/Service/Service";
+import SummitBanner from "@/components/SummitBanner/SummitBanner";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
 
@@ -25,6 +26,7 @@ const Development = () => {
   return (
       <div>
         <Header onClick={handleTryOpenMetadataClick} />
+        <SummitBanner />
         <Achievement />
         <Services />
         <KeyDataAssets />
