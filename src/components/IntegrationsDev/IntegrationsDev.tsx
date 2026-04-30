@@ -143,7 +143,7 @@ const IntegrationsDev = () => {
                     />
                   </div>
                   <p
-                    className={`${item.name === "Exasol" || item.name.includes("SAP") ? "mt-8" : "mt-2"} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}
+                    className={`${item.name === "Exasol" || item.name.includes("SAP") ? "mt-8" : "mt-2"} text-wrap text-[14px] sm:text-wrap md:text-[16px]`}
                   >
                     {item.name}
                   </p>
@@ -174,7 +174,7 @@ const IntegrationsDev = () => {
                         }}
                       />
                     </div>
-                    <p className={`${item.name === 'Exasol' || item.name.includes('SAP') ? 'mt-6' : 'mt-2'} text-nowrap text-[14px] sm:text-wrap md:text-[16px]`}>
+                    <p className={`${item.name === 'Exasol' || item.name.includes('SAP') ? 'mt-6' : 'mt-2'} text-wrap text-[14px] sm:text-wrap md:text-[16px]`}>
                       {item.name}
                     </p>
                   </div>

@@ -171,7 +171,7 @@ export const INTEGRATION_SERVICES = [
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database',
-        src: '/assets/services/microsoft-fabric.svg',
+        src: '/assets/services/fabric-database.svg',
         alt: 'service-fabric',
         name: 'Microsoft Fabric Database',
       },
@@ -420,7 +420,7 @@ export const INTEGRATION_SERVICES = [
     services: [
       {
         href: 'https://docs.open-metadata.org/latest/connectors/pipeline',
-        src: '/assets/services/microsoft-fabric.svg',
+        src: '/assets/services/fabric-pipeline.svg',
         alt: 'service-fabric',
         name: 'Microsoft Fabric Pipeline',
       },
@@ -491,7 +491,7 @@ export const INTEGRATION_SERVICES = [
     services: [
       {
         name: 'MCP',
-        src: '/images/integration/mcp-connector.svg',
+        src: '/assets/services/mcp-connector.svg',
         href: 'https://docs.open-metadata.org/latest/how-to-guides/mcp/connect',
         alt: 'service-mcp'
       }
