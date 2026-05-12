@@ -16,66 +16,37 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           alt="left-box-svg"
           loading="eager"
         />
-        <Image
-          className="side-block-big -translate-x-1/3 h-[600px] -mt-10"
-          height={20}
-          width={200}
-          src="/assets/header/left-box-big.svg"
-          alt="left-box-svg"
-          loading="eager"
-        />
         <div className="pt-32 pb-16 text-center px-6 md:pt-20 lg:px-0">
-          <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px]">
-            Open and unified metadata platform for data{" "}
-            <span className="text-[#7147E8]">discovery, observability,</span>{" "}
-            and <span className="text-[#7147E8]">governance</span>
+          <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px] lg:max-w-[75%] mx-auto mt-5">
+            The open-source AI context layer, powered by{" "}
+            <span className="text-[#7147E8]">semantic intelligence</span>
           </h1>
-          <p className="mt-3 mx-auto sm:leading-[26px] max-w-[95%] sm:max-w-[78%] sm:text-lg lg:text-[19px] 2xl:max-w-[90%]">
-            A single place for all your data and all your data practitioners to
-            build and manage high quality data assets at scale. Built by Collate
-            and the founders of Apache Hadoop, Apache Atlas, and Uber Databook.
+          <p className="mt-3 mx-auto sm:leading-[26px] max-w-[88%] sm:text-lg text-[#333]">
+            A single place for all your data, AI agents, and data practitioners to build and manage high quality, semantically-rich metadata assets that give both people and agents shared context at scale. Built by Collate and the founders of Apache Hadoop, Apache Atlas, and Uber Databook.
           </p>
-          <div className="relative z-[11] flex flex-col-reverse sm:flex-row justify-center gap-3 items-center mt-12">
-            <ParamLink
-              href="https://slack.open-metadata.org/"
-              target="_blank"
-              className="uppercase w-full flex justify-center items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:text-[#6540c8]"
-            >
-              <img src="/assets/logo/slack.webp" alt="Slack" className="w-[18px] h-[18px]" /> <span className="mt-[3px]">Join Slack</span>
-            </ParamLink>
+          <div className="relative z-[11] flex flex-col sm:flex-row justify-center gap-3 items-center mt-8 mb-16">
             <button
               onClick={onClick}
-              className="uppercase w-full flex justify-center items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] sm:px-14 py-[14px] sm:w-auto hover:bg-[#6540c8]"
+              className="uppercase w-full flex justify-center items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] sm:px-8 py-[12px] sm:w-auto hover:bg-[#6540c8]"
             >
               <BoltIcon /> <span className="mt-[3px]">Try Openmetadata</span>
             </button>
+            <ParamLink
+              href="https://slack.open-metadata.org/"
+              target="_blank"
+              className="uppercase w-full flex justify-center items-center gap-2 text-[#7147E8] font-semibold border-[1px] border-[#7147E8] sm:px-8 py-[12px] sm:w-auto hover:text-[#6540c8]"
+            >
+              <img src="/assets/logo/slack.webp" alt="Slack" className="w-[18px] h-[18px]" /> <span className="mt-[3px]">Join Slack</span>
+            </ParamLink>
           </div>
-          <div className="relative z-[10] top-2 sm:-top-10 md:-top-20">
+          <div className="overflow-hidden aspect-[1000/385]">
             <Image
-              height={800}
+              height={500}
               width={1200}
-              src="/assets/header/shadow.svg"
-              alt="shadow-svg"
+              src="/assets/header/hero-image.webp"
+              alt="header-svg"
               loading="eager"
             />
-            <div className="absolute top-8 sm:top-24 md:top-32">
-              <Image
-                className="hidden md:block"
-                height={600}
-                width={1200}
-                src="/assets/header/header.webp"
-                alt="header-svg"
-                loading="eager"
-              />
-              <Image
-                className="md:hidden"
-                height={200}
-                width={800}
-                src="/assets/header/header-mobile.webp"
-                alt="header-svg"
-                loading="eager"
-              />
-            </div>
           </div>
         </div>
         <Image
@@ -83,14 +54,6 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           height={20}
           width={180}
           src="/assets/header/right-box.svg"
-          alt="right-box-svg"
-          loading="eager"
-        />
-        <Image
-          className="side-block-big translate-x-1/3 h-[700px]"
-          height={20}
-          width={340}
-          src="/assets/header/right-box-big.svg"
           alt="right-box-svg"
           loading="eager"
         />
