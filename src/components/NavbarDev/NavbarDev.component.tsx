@@ -46,7 +46,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
     <nav
       className={`relative top-0 z-50 w-full duration-400 ${
         scrolledNav ? "bg-white shadow-custom" : "bg-white"
-      }`}
+      } shadow-sm`}
     >
       <div className="mx-auto max-w-[1550px] flex justify-between items-center lg:px-5 lg:gap-3 max-lg:contents xl:px-[24px] 2xl:px-0">
         <div className="flex items-center justify-between px-5 py-[12px] lg:px-0 lg:py-[10px]">

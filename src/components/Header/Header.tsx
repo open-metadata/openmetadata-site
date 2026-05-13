@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Clients from "./Clients";
-import { JoinSlackIcon } from "../Icons/JoinSlackIcon";
 import { BoltIcon } from "../Icons/BoltIcon";
 import ParamLink from "../ParamLink";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
-    <div className="relative w-full max-w-[1500px] mx-auto mt-20 md:mt-24 lg:mt-36">
+    <div className="relative w-full max-w-[1500px] mx-auto mt-20 md:mt-24">
       <div className="relative z-[1] flex justify-between items-start gap-4 xl:gap-10 2xl:gap-0">
         <Image
           className="side-block"
@@ -17,7 +16,25 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           loading="eager"
         />
         <div className="pt-32 pb-16 text-center px-6 md:pt-20 lg:px-0">
-          <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px] lg:max-w-[75%] mx-auto mt-5">
+          <div
+            className="inline-flex items-center gap-[10px] bg-[#222244] text-white text-sm rounded-[10px] p-[10px]"
+          >
+            <span className="flex items-center justify-center w-7 h-7 bg-white rounded-lg shrink-0 overflow-hidden">
+              <img src="/assets/collate.svg" alt="Collate" className="w-5 h-5" />
+            </span>
+            <span>
+              Managed service via Collate —{" "}
+              <a 
+                href="https://cloud.getcollate.io/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold underline underline-offset-2 hover:text-gray-200"
+              >
+                Get started free →
+              </a>
+            </span>
+          </div>
+          <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px] lg:max-w-[75%] mx-auto mt-4">
             The open-source AI context layer, powered by{" "}
             <span className="text-[#7147E8]">semantic intelligence</span>
           </h1>
