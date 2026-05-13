@@ -33,6 +33,7 @@ export const EDNON_CUSTOMER_TESTIMONIAL = {
 
 export const EDNON_CUSTOMER_CHALLENGES = [
     {
+        image: '/assets/ednon-customer/ednon1.png',
         title: 'A critical data infrastructure with virtually no documentation',
         description: `When Ednon began working with Deputación Provincial da Coruña, the organization faced common obstacles that had long plagued legacy public sector organizations. Deputación operated two mission-critical platforms serving millions of citizens: SUBTEL, an Oracle-based grants and aid processing system with 8 schemas and 620 tables, and the Provincial Electronic Registry, a PostgreSQL-based 24/7 document submission platform with 4 schemas and 411 tables.
 
@@ -57,6 +58,7 @@ Despite the critical nature of these systems, the data infrastructure remained o
         ]
     },
     {
+        image: '/assets/ednon-customer/ednon2.png',
         title: 'A flexible, open source foundation for sustainable governance',
         description: `Ednon recommended OpenMetadata, an open and unified metadata platform for data discovery, observability, and governance. The technical consultancy knew its client would benefit from a platform that could handle complex integrations across multiple databases, support both technical and business users, encourage automation at scale, and align with public sector values of transparency and vendor independence.
 
@@ -89,6 +91,7 @@ Despite the critical nature of these systems, the data infrastructure remained o
         ]
     },
     {
+        image: '/assets/ednon-customer/ednon3.png',
         title: 'From information chaos to trusted, governed data',
         description: `Ednon's implementation of OpenMetadata transformed Deputación Provincial da Coruña's data landscape into a trusted governance foundation that continues to expand. Within two years, the organization moved from data chaos to a mature governance practice with documented assets, standardized business terminology, quality controls, and automated workflows.`,
         challenges: [
