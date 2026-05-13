@@ -175,6 +175,32 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/gorgias'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/ednon-logo.png`,
+        industry: 'Other',
+        testimonial: "OpenMetadata delivered beyond our expectations, giving us complete control through APIs and Python while remaining accessible to non-technical users. In two years, we took a provincial government from virtually zero documentation to a fully governed, AI-ready data infrastructure.",
+        customerName: 'Nicolás Gutiérrez García',
+        customerDesignation: 'Project Manager, Data Governance (Ednon)',
+        company: 'Ednon',
+        imgSize: {
+            width: 112,
+            height: 50
+        },
+        link: '/case-study/ednon'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/solocal-logo.svg`,
+        industry: 'Other',
+        testimonial: "The biggest benefit of OpenMetadata is simplification. We’ve significantly improved the dialogue with the business by helping everyone understand which data products and tables really matter.",
+        customerName: 'Gaétan Soulas',
+        customerDesignation: 'SAS and Certified Google Cloud Data Architect',
+        company: 'Solocal',
+        imgSize: {
+            width: 210,
+            height: 50
+        },
+        link: '/case-study/solocal'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,
         industry: 'Technology',
         testimonial: 'We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. OpenMetadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community.',
