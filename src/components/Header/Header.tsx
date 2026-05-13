@@ -6,8 +6,8 @@ import ParamLink from "../ParamLink";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
-    <div className="w-full max-w-[1500px] mx-auto mt-20 md:mt-24 lg:mt-36">
-      <div className="flex justify-between items-start gap-4 xl:gap-10 2xl:gap-0">
+    <div className="relative w-full max-w-[1500px] mx-auto mt-20 md:mt-24 lg:mt-36">
+      <div className="relative z-[1] flex justify-between items-start gap-4 xl:gap-10 2xl:gap-0">
         <Image
           className="side-block"
           height={20}
@@ -39,14 +39,24 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               <img src="/assets/logo/slack.webp" alt="Slack" className="w-[18px] h-[18px]" /> <span className="mt-[3px]">Join Slack</span>
             </ParamLink>
           </div>
-          <div className="overflow-hidden aspect-[1000/385]">
+          <div className="relative overflow-hidden">
             <Image
-              height={500}
-              width={1200}
-              src="/assets/header/hero-image.webp"
-              alt="header-svg"
-              loading="eager"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full pointer-events-none select-none z-0"
+              src="/assets/header/bg_gradient.webp"
+              alt=""
+              width={1300}
+              height={800}
+              priority
             />
+            <div className="relative z-[1] overflow-hidden aspect-[1000/385]">
+              <Image
+                height={500}
+                width={1200}
+                src="/assets/header/hero-image.webp"
+                alt="header-svg"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
         <Image
