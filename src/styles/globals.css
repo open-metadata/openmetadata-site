@@ -49,6 +49,10 @@ p{
   @apply max-w-[1440px] mx-auto;
 }
 
+.usecase-gradient {
+  background: linear-gradient(360deg, #AD94F3 -63.65%, #FFFFFF 51.76%);
+}
+
 .shadow-bg {
   @apply bg-gradient-to-b from-[#F1EDFD] to-white
 }
