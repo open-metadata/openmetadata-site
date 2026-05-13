@@ -1,6 +1,6 @@
 export const SOLOCAL_CUSTOMER_HEADER = {
     title: "Solocal turns cloud data into trusted insights for France’s local businesses with OpenMetadata",
-    description: "Solocal, operator of PagesJaunes, powers one of France’s most-visited local business platforms, serving more than 260,000 small and medium-sized businesses and attracting over 15 million monthly users. As Solocal migrated its large-scale analytics ecosystem to Google Cloud, its data footprint expanded rapidly. Tens of thousands of tables improved analytical depth—but also created complexity. By implementing OpenMetadata as an open, self-hosted governance layer, Solocal transformed a fragmented technical environment into a curated portfolio of trusted, business-ready data products—strengthening governance while dramatically simplifying access for business users.",
+    description: "Solocal, operator of PagesJaunes, powers one of France’s most-visited local business platforms, serving more than 260,000 small and medium-sized businesses and attracting over 15 million monthly users. As Solocal migrated its large-scale analytics ecosystem to Google Cloud, its data footprint expanded rapidly. Tens of thousands of tables improved analytical depth, but also created complexity. By implementing OpenMetadata as an open, self-hosted governance layer, Solocal transformed a fragmented technical environment into a curated portfolio of trusted, business-ready data products, strengthening governance while dramatically simplifying access for business users.",
     industry: "Digital Advertising and Marketing",
     technologies: "Google Cloud Platform (GCP), BigQuery, Kubernetes (GKE), Helm, Apache Airflow, dbt, MySQL, Elasticsearch, Power BI",
     image: "/assets/solocal-customer/solocal-header.png"
@@ -34,7 +34,7 @@ export const SOLOCAL_CUSTOMER_TESTIMONIAL = {
 export const SOLOCAL_CUSTOMER_CHALLENGES = [
     {
         image: '/assets/solocal-customer/solocal1.png',
-        title: 'Rapid cloud migration created scale—and complexity',
+        title: 'Rapid cloud migration created scale, and complexity',
         description: `As Solocal migrated its analytics ecosystem from on-premise systems to Google Cloud and BigQuery, the scale and complexity of its data environment grew quickly. High website traffic, diverse digital products, and deep coverage of small and medium-sized businesses across France generated massive volumes of data. While this data was critical to sales performance and customer intelligence, it became difficult for teams to safely govern and share it with the rest of the business. Solocal needed a way to simplify access without sacrificing control, while creating a shared understanding between data teams and business users.`,
         challenges: [
             {
@@ -97,7 +97,7 @@ Rather than overwhelming users with thousands of technical tables, Solocal now p
             },
             {
                 header: 'Improved business onboarding',
-                description: 'Data analysts can quickly identify which data products matter, who owns them, and how they should be used—shortening ramp-up time and reducing reliance on informal knowledge sharing.',
+                description: 'Data analysts can quickly identify which data products matter, who owns them, and how they should be used, shortening ramp-up time and reducing reliance on informal knowledge sharing.',
             },
             {
                 header: 'Clearer ownership and accountability',

@@ -97,7 +97,7 @@ Despite the critical nature of these systems, the data infrastructure remained o
         challenges: [
             {
                 header: 'Dramatic documentation improvement',
-                description: 'Documentation coverage increased from less than 1% to 41% of all cataloged tables—a 41x improvement in just two years. The organization now maintains 1,412 cataloged assets with ongoing growth.',
+                description: 'Documentation coverage increased from less than 1% to 41% of all cataloged tables, a 41x improvement in just two years. The organization now maintains 1,412 cataloged assets with ongoing growth.',
             },
             {
                 header: 'Comprehensive business context',
@@ -105,7 +105,7 @@ Despite the critical nature of these systems, the data infrastructure remained o
             },
             {
                 header: 'Democratized BI with quality controls',
-                description: '41 dashboards are now cataloged with full lineage tracking—ensuring only high-quality, validated reports are democratized across the organization.',
+                description: '41 dashboards are now cataloged with full lineage tracking, ensuring only high-quality, validated reports are democratized across the organization.',
             },
             {
                 header: 'Reduced technical dependency',
