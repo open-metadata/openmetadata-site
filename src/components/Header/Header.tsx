@@ -41,7 +41,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           <p className="mt-3 mx-auto sm:leading-[26px] max-w-[88%] sm:text-lg text-[#333]">
             A single place for all your data, AI agents, and data practitioners to build and manage high quality, semantically-rich metadata assets that give both people and agents shared context at scale. Built by Collate and the founders of Apache Hadoop, Apache Atlas, and Uber Databook.
           </p>
-          <div className="relative z-[11] flex flex-col sm:flex-row justify-center gap-3 items-center mt-8 mb-16">
+          <div className="relative z-[11] flex flex-col sm:flex-row justify-center gap-3 items-center mt-8">
             <button
               onClick={onClick}
               className="uppercase w-full flex justify-center items-center gap-2 font-semibold border-[1px] border-[#7147E8] text-white bg-[#7147E8] sm:px-8 py-[12px] sm:w-auto hover:bg-[#6540c8]"
@@ -57,19 +57,11 @@ const Header = ({ onClick }: { onClick: () => void }) => {
             </ParamLink>
           </div>
           <div className="relative overflow-hidden">
-            <Image
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full pointer-events-none select-none z-0"
-              src="/assets/header/bg_gradient.webp"
-              alt=""
-              width={1300}
-              height={800}
-              priority
-            />
-            <div className="relative z-[1] overflow-hidden aspect-[1000/385]">
+            <div className="relative z-[1] overflow-hidden aspect-[1000/457]">
               <Image
                 height={500}
                 width={1200}
-                src="/assets/header/hero-image.webp"
+                src="/assets/header/hero-header.webp"
                 alt="header-svg"
                 loading="eager"
               />
