@@ -6,16 +6,16 @@ import ParamLink from "../ParamLink";
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
     <div className="relative w-full max-w-[1500px] mx-auto mt-20 md:mt-24">
-      <div className="relative z-[1] flex justify-between items-start gap-4 xl:gap-10 2xl:gap-0">
+      <div className="relative z-[1]">
         <Image
-          className="side-block"
+          className="side-block absolute left-0 top-0 z-10"
           height={20}
           width={140}
           src="/assets/header/left-box.svg"
           alt="left-box-svg"
           loading="eager"
         />
-        <div className="pt-32 pb-16 text-center px-6 md:pt-20 lg:px-0">
+        <div className="w-full pt-32 text-center px-6 md:pt-20 lg:px-0">
           <div
             className="inline-flex items-center gap-[10px] bg-[#222244] text-white text-sm rounded-[10px] p-[10px]"
           >
@@ -24,7 +24,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
             </span>
             <span>
               Managed service via Collate —{" "}
-              <a 
+              <a
                 href="https://cloud.getcollate.io/signup"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -34,11 +34,11 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               </a>
             </span>
           </div>
-          <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px] lg:max-w-[75%] mx-auto mt-4">
+          <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px] lg:max-w-[55%] mx-auto mt-4">
             The open-source AI context layer, powered by{" "}
             <span className="text-[#7147E8]">semantic intelligence</span>
           </h1>
-          <p className="mt-3 mx-auto sm:leading-[26px] max-w-[88%] sm:text-lg text-[#333]">
+          <p className="mt-3 mx-auto sm:leading-[26px] max-w-[88%] sm:text-lg text-[#333] lg:max-w-[63%]">
             A single place for all your data, AI agents, and data practitioners to build and manage high quality, semantically-rich metadata assets that give both people and agents shared context at scale. Built by Collate and the founders of Apache Hadoop, Apache Atlas, and Uber Databook.
           </p>
           <div className="relative z-[11] flex flex-col sm:flex-row justify-center gap-3 items-center mt-8">
@@ -56,20 +56,19 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               <img src="/assets/logo/slack.webp" alt="Slack" className="w-[18px] h-[18px]" /> <span className="mt-[3px]">Join Slack</span>
             </ParamLink>
           </div>
-          <div className="relative overflow-hidden">
-            <div className="relative z-[1] overflow-hidden aspect-[1000/457]">
-              <Image
-                height={500}
-                width={1200}
-                src="/assets/header/hero-header.webp"
-                alt="header-svg"
-                loading="eager"
-              />
-            </div>
-          </div>
+        </div>
+        <div className="w-full overflow-hidden max-h-[660px]">
+          <Image
+            className="w-full h-auto block"
+            height={500}
+            width={1500}
+            src="/assets/header/hero-header.webp"
+            alt="header-svg"
+            loading="eager"
+          />
         </div>
         <Image
-          className="side-block"
+          className="side-block absolute right-0 top-0 z-10"
           height={20}
           width={180}
           src="/assets/header/right-box.svg"
