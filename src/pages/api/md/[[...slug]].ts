@@ -75,7 +75,8 @@ export default async function handler(
         ".announcement-banner",
         ".table-of-contents",
         ".toc",
-        "[data-nomd]",
+        ".summit-bg",
+        ".nav-strip",
       ].join(",")
     ).remove();
 
