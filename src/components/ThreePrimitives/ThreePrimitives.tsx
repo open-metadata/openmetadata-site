@@ -11,8 +11,9 @@ const ThreePrimitives = () => {
         {PRIMITIVES_LIST.map((item) => (
           <div
             key={item.name}
-            className="bg-white border border-[#E3DAFA] rounded-lg p-8 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow"
+            className="bg-white border border-[#E3DAFA] rounded-lg p-8 flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow"
           >
+            <item.icon color="#7147E8" />
             <h3 className="text-[24px] font-semibold text-[#7147E8] tracking-[-0.01em]">
               {item.name}
             </h3>
