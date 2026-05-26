@@ -9,13 +9,13 @@ const Achievement = () => {
           <div className="left-top-box py-8 px-7 lg:max-w-[43%] md:px-12 lg:px-[50px] xl:px-[80px]">
             <div className="flex flex-col justify-center h-full text-center lg:text-left">
               <h2 className="text-[32px] font-semibold tracking-[-0.01em] leading-[38px] lg:text-[38px] xl:text-[44px] xl:leading-[52px]">
-                Fastest Growing{" "}
+                Largest &amp; Fastest Growing{" "}
                 <span className="text-[#7147E8]">
-                  Open Source Metadata Platform
+                  Open Source Context Layer
                 </span>
               </h2>
               <p className="text-base tracking-[-0.01em] mt-3 text-[#555555] md:leading-[28px] md:text-[19px]">
-                Driven by an active community of thousands globally, OpenMetadata is the #1 open-source context layer for AI.
+                Driven by an active community of thousands globally, OpenMetadata is the #1 open-source project for AI context, data cataloging, and metadata management.
               </p>
             </div>
           </div>

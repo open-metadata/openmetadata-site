@@ -36,12 +36,12 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               </span>
             </div>
             <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px] lg:max-w-[55%] mx-auto mt-4">
-              OpenMetadata: The #1 <span className="text-[#7147E8]">open context layer</span> for
+              The #1 <span className="text-[#7147E8]">open context layer</span> for
               <br />
               humans, AI assistants, and agents.
             </h1>
             <p className="mt-3 mx-auto sm:leading-[26px] max-w-[88%] sm:text-lg text-[#333] lg:max-w-[63%]">
-              Unify technical context, business semantics, and organizational memory into one context graph — so AI agents and humans reason from the same trusted foundation. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook.
+              Unify technical context, business semantics, and organizational memory into one graph — so AI agents and humans reason from the same trusted foundation. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook.
             </p>
             <div className="relative z-[11] flex flex-col sm:flex-row justify-center gap-3 items-center mt-8">
               <button
