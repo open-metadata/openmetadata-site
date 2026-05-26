@@ -14,10 +14,10 @@ const FooterDev = () => {
               <OmdFooterLogo />
             </div>
             <div className="font-normal tracking-[-0.005em] text-[14px] md:max-w-[80%] xl:max-w-[50%]">
-              The open context layer for humans, AI assistants, and agents —
-              unifying technical context, business semantics, and
-              organizational memory across data discovery, governance, quality,
-              observability, lineage, and collaboration.
+              Unlock the value of data assets with an open-source AI context
+              layer — that includes data cataloging, discovery, governance,
+              data quality, observability, lineage, semantics, and memory for
+              people and AI.
             </div>
             <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
               OpenMetadata® and the OpenMetadata logo are trademarks of Collate,
@@ -105,9 +105,10 @@ const FooterDev = () => {
             <OmdFooterLogo />
           </div>
           <div className="font-normal tracking-[-0.02em] text-[14px] md:max-w-[80%] xl:max-w-[40%]">
-            The open context layer for humans, AI assistants, and agents.
-            Shared, trusted context across data discovery, quality,
-            observability, governance, lineage, collaboration &amp; more.
+            Unlock the value of data assets with an open-source AI context
+            layer — that includes data cataloging, discovery, governance, data
+            quality, observability, lineage, semantics, and memory for people
+            and AI.
           </div>
           <div className="text-[12px] tracking-[-0.02em] font-normal mb-5">
             Copyright OpenMetadata {new Date().getFullYear()}

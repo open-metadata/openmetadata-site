@@ -40,7 +40,7 @@ export const TABS = [
     name: "Lineage",
     icon: FingerPrintIcon,
     useCases: {
-      header: "Know where your data comes from",
+      header: "Open Source Data Catalog: Know where your data comes from",
       description:
         "Column-level lineage maps help you understand your overall data flow. Tier critical and sensitive data to manage its quality, observability, and governance.",
       imgSrc: "/assets/lineage.webp",
@@ -70,7 +70,7 @@ export const TABS = [
     name: "Quality",
     icon: QualityIcon,
     useCases: {
-      header: "Trusted and reliable data for the business",
+      header: "Trusted and reliable AI data management for the business",
       description:
         "Proactively manage the data quality of your most business-critical data assets and ensure they receive priority operations and infrastructure.",
       imgSrc: "/assets/quality.webp",

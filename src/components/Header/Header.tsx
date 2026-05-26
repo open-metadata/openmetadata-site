@@ -36,7 +36,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
               </span>
             </div>
             <h1 className="text-[40px] leading-[44px] text-[#292929] font-medium lg:leading-[54px] lg:text-[50px] lg:max-w-[55%] mx-auto mt-4">
-              The <span className="text-[#7147E8]">open context layer</span> for
+              OpenMetadata: The #1 <span className="text-[#7147E8]">open context layer</span> for
               <br />
               humans, AI assistants, and agents.
             </h1>

@@ -15,7 +15,7 @@ const Achievement = () => {
                 </span>
               </h2>
               <p className="text-base tracking-[-0.01em] mt-3 text-[#555555] md:leading-[28px] md:text-[19px]">
-                Driven by an active community of thousands globally, OpenMetadata is becoming the standard open context layer for data and AI.
+                Driven by an active community of thousands globally, OpenMetadata is the #1 open-source context layer for AI.
               </p>
             </div>
           </div>
