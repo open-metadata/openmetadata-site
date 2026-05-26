@@ -28,6 +28,10 @@ export default function App({ Component, pageProps }: AppProps) {
   };
 
   const canonicalUrl = pageProps.link?.split("?")[0]
+  const markdownUrl =
+    !canonicalUrl || canonicalUrl === "/"
+      ? "https://open-metadata.org/index.md"
+      : `https://open-metadata.org${canonicalUrl.replace(/\/$/, "")}.md`
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -66,6 +70,9 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="canonical"
           href={`https://open-metadata.org${canonicalUrl}`}
         />
+        {markdownUrl && (
+          <link rel="alternate" type="text/markdown" href={markdownUrl} />
+        )}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"

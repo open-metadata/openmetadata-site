@@ -63,6 +63,10 @@ p{
   @apply bg-gradient-to-b from-[#F1EDFD] to-white
 }
 
+.summit-bg {
+  background: linear-gradient(270deg, #ECE5FF 39.9%, #7147E8 114.41%);
+}
+
 .nav-strip-btn {
   border: none;
   text-decoration: underline;
