@@ -13,7 +13,7 @@ export const TABS = [
       header: "Give your AI agents trusted, understood data",
       description:
         "AI agents are only as good as the data they act on. OpenMetadata's Semantic Context Graph gives every agent the context it needs — what a dataset means, where it came from, and whether it can be trusted — accessible with a native MCP server and AI SDK.",
-      imgSrc: "/assets/ai-platform.webp",
+      imgSrc: "/assets/ai-readiness.webp",
       cases: [
         "MCP server for direct agent-to-context integration",
         "AI SDK lets external agents call OpenMetadata capabilities programmatically",

@@ -2,12 +2,12 @@ import { PRIMITIVES_LIST } from "@/constants/ThreePrimitives.constants";
 
 const ThreePrimitives = () => {
   return (
-    <div className="custom-container mt-20 mb-16 px-4 md:px-16 xl:px-28">
+    <div className="custom-container mt-20 mb-24 px-4 md:px-16 xl:px-28">
       <h2 className="text-[#292929] text-[32px] font-medium text-center tracking-[-0.01em] lg:text-[48px]">
         Three primitives in one{" "}
         <span className="text-[#7147E8]">open Semantic Context Graph</span>
       </h2>
-      <div className="mt-10 lg:mt-16 grid gap-6 md:grid-cols-3">
+      <div className="mt-9 grid gap-6 md:grid-cols-3">
         {PRIMITIVES_LIST.map((item) => (
           <div
             key={item.name}
