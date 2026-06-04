@@ -5,7 +5,7 @@ export const SERVICE_LIST = [
         header2: 'and people can act on'
     },
     description:
-      "OpenMetadata builds a living knowledge graph of your data for AI — what it means, how it connects, and whether it can be trusted. Context drawn from data assets, documents, and organizational policies flows into a single Semantic Context Graph, giving both people and AI agents the shared understanding they need to work on your data.",
+      "OpenMetadata builds a living knowledge graph of your data for AI — what it means, how it connects, and whether it can be trusted. Context drawn from data assets, memories, documents, and organizational policies flows into a single Semantic Context Graph, giving both people and AI agents the shared understanding they need to work on your data.",
     icon: "/assets/semantic-context-service.webp",
   },
   {

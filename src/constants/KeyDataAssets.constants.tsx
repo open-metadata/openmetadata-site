@@ -17,7 +17,7 @@ export const TABS = [
       cases: [
         "MCP server for direct agent-to-context integration",
         "AI SDK lets external agents call OpenMetadata capabilities programmatically",
-        "Policies and tags sync back to source systems (Snowflake, BigQuery, and more)",
+        "Context Center to centralize articles, documents, and memories for AI and humans",
       ],
     },
   },
