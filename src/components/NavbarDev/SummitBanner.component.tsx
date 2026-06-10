@@ -6,7 +6,7 @@ const SummitBanner = () => {
       <span className="text-black text-sm">
         OpenMetadata production stories from OpenAI, Yelp, Rakuten &amp; more —{" "}
         <ParamLink
-          name="Register Now for Collate Summit '26"
+          name="Learn More about Collate Summit '26"
           href="https://www.getcollate.io/summit2026"
           target="_blank"
           className="underline font-semibold"
