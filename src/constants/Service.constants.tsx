@@ -1,22 +1,21 @@
 export const SERVICE_LIST = [
   {
     serviceName: {
-        header1: 'The only ',
-        header2: 'unified platform',
-        header3: ' for all your use cases'
+        header1: 'Semantic context your AI agents ',
+        header2: 'and people can act on'
     },
     description:
-      "Get complete data context unified across data discovery, observability, and governance, made possible with a Unified Metadata Graph that centralizes all metadata for all data assets. 130+ turnkey connectors make it easy to collect all your metadata and power a unified experience designed to bring data teams together in shared responsibility and contribution.",
-    icon: "/assets/unified-platform.svg",
+      "OpenMetadata builds a living knowledge graph of your data for AI — what it means, how it connects, and whether it can be trusted. Context drawn from data assets, memories, documents, and organizational policies flows into a single Semantic Context Graph, giving both people and AI agents the shared understanding they need to work on your data.",
+    icon: "/assets/semantic-context-service.webp",
   },
   {
     serviceName: {
-        header1: 'Built from the ground up for ',
-        header2: 'modern data teams'
+        header1: 'API-first and schema-first, ',
+        header2: 'by design'
     },
     description:
-      "OpenMetadata's API and schema-first architecture provides you metadata control and customization. Extensible metadata entities and relationships tailor the Unified Metadata Graph to your specific data needs. This enables data collaboration workflows between data producers and consumers for a more data-driven culture at your organization.",
-    icon: "/assets/modern-teams.svg",
+      "OpenMetadata's schema-first architecture — with 700+ open specifications in JSON Schema and RDF/JSON-LD — makes metadata programmable and extensible. Plug into your existing stack, customize your metadata model, and build data and AI workflows that scale with your organization.",
+    icon: "/assets/api-first.webp",
   },
   {
     serviceName: {
@@ -25,6 +24,6 @@ export const SERVICE_LIST = [
     },
     description:
       "The streamlined architecture has only four system components, making it easier to deploy, operate, and upgrade compared to other solutions. The simple user experience is designed for technical and non-technical users to collaborate together, while still having robust data practitioner capabilities, all built to meet the scalability and security requirements of enterprises.",
-    icon: "/assets/simple-setup.svg",
+    icon: "/assets/simple-setup.webp",
   },
 ];

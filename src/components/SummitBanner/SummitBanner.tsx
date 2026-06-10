@@ -37,7 +37,7 @@ const SummitBanner = () => {
 
   return (
     <>
-      <div className="bg-[linear-gradient(0deg,_#FFF_-13.37%,_#A585FF_181.46%)]">
+      <div className="bg-[linear-gradient(0deg,_#FFF_-3.19%,_#A585FF_281.53%)]">
         <div className="max-w-[1300px] mx-auto py-8 lg:py-16 px-4 w-full">
           <div className="flex flex-col lg:flex-row rounded-[20px] overflow-hidden">
             <div

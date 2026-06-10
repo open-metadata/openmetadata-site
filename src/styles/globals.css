@@ -49,6 +49,16 @@ p{
   @apply max-w-[1440px] mx-auto;
 }
 
+.usecase-gradient {
+  background: linear-gradient(360deg, #AD94F3 -63.65%, #FFFFFF 51.76%);
+}
+
+@media (min-width: 1500px) {
+  .hero-header {
+    background: linear-gradient(360deg, #8E6CED -63.65%, #FFFFFF 51.76%);
+  }
+}
+
 .shadow-bg {
   @apply bg-gradient-to-b from-[#F1EDFD] to-white
 }
@@ -64,23 +74,7 @@ p{
   text-underline-offset: 3px;
 }
 
-.side-block-big {
-  display: none;
-}
-
-@media (min-width: 1501px) {
-  .side-block-big {
-    display: block;
-  }
-}
-
 @media (max-width: 799px) {
-  .side-block {
-    display: none;
-  }
-}
-
-@media (min-width: 1500px) {
   .side-block {
     display: none;
   }
@@ -93,7 +87,7 @@ p{
   }
 }
 
-@media (min-width: 800px) and (max-width: 1500px) {
+@media (min-width: 800px) {
   .side-block {
     display: block;
   }

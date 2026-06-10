@@ -1,0 +1,60 @@
+export const SemanticsIcon = ({ color }: { color: string }) => {
+  return (
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 9 C6 7.9 6.9 7 8 7 H19 V32 H8 C6.9 32 6 31.1 6 30 V9Z"
+        stroke={color}
+        strokeWidth="2"
+        fill="none"
+      />
+      <path
+        d="M34 9 C34 7.9 33.1 7 32 7 H21 V32 H32 C33.1 32 34 31.1 34 30 V9Z"
+        stroke={color}
+        strokeWidth="2"
+        fill="none"
+      />
+      <line
+        x1="10"
+        y1="13"
+        x2="15"
+        y2="13"
+        stroke={color}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <line
+        x1="10"
+        y1="18"
+        x2="15"
+        y2="18"
+        stroke={color}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <line
+        x1="25"
+        y1="13"
+        x2="30"
+        y2="13"
+        stroke={color}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <line
+        x1="25"
+        y1="18"
+        x2="30"
+        y2="18"
+        stroke={color}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};

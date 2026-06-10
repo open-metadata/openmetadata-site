@@ -79,11 +79,11 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           name="description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the open-source AI context layer — powered by metadata, semantics, and memory that give people and AI a shared, rich understanding of your data. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook. The unified platform for data cataloging, discovery, quality, observability, governance, lineage, collaboration &amp; more."
         />
         <meta
           name="keywords"
-          content="best open-source data catalog community, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool"
+          content="open source data catalog, #1 open source data catalog, enterprise data catalog, AI data catalog, data governance, data lineage, data quality, data discovery, metadata management, metadata platform, data intelligence platform, knowledge graph, data observability, GraphRAG, AI-ready data, open metadata standard, semantic data catalog, open source context layer, AI context layer, semantic context graph, context layer for AI agents"
         />
         <meta name="author" content="open-metadata" />
         <meta name="publisher" content="Collate" />
@@ -91,11 +91,11 @@ export default function App({ Component, pageProps }: AppProps) {
         {/* Open Graph tags start  */}
         <meta
           property="og:title"
-          content="OpenMetadata: #1 Open Source Metadata Platform"
+          content="OpenMetadata: #1 Open Source Context Layer"
         />
         <meta
           property="og:description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the open-source AI context layer — powered by metadata, semantics, and memory that give people and AI a shared, rich understanding of your data. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook. The unified platform for data cataloging, discovery, quality, observability, governance, lineage, collaboration &amp; more."
         />
         <meta
           property="og:image"
@@ -109,11 +109,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:site" content="https://open-metadata.org" />
         <meta
           name="twitter:title"
-          content="OpenMetadata: #1 Open Source Metadata Platform"
+          content="OpenMetadata: #1 Open Source Context Layer"
         />
         <meta
           name="twitter:description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the open-source AI context layer — powered by metadata, semantics, and memory that give people and AI a shared, rich understanding of your data. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook. The unified platform for data cataloging, discovery, quality, observability, governance, lineage, collaboration &amp; more."
         />
         <meta
           name="twitter:image"
@@ -122,7 +122,7 @@ export default function App({ Component, pageProps }: AppProps) {
         {/* Twitter Card end */}
 
         <title>
-          {pageProps.title ?? "OpenMetadata: #1 Open Source Metadata Platform"}
+          {pageProps.title ?? "OpenMetadata: #1 Open Source Context Layer"}
         </title>
         {(!storedCookie || storedCookie === "Accept") && (
           <>

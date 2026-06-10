@@ -11,7 +11,7 @@ import ParamLink from "../ParamLink";
 const PreviousArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="prev-slick-arrow absolute z-[5] -bottom-[6px] cursor-pointer w-[10px] h-[14px] -left-[14px] sm:left-[60px] md:left-[92px] lg:left-[168px]"
+      className="prev-slick-arrow absolute z-[5] -bottom-[6px] cursor-pointer w-[10px] h-[14px] -left-[14px] sm:left-[60px] md:left-[92px] lg:left-[156px]"
       onClick={onClick}
     >
       <ArrowLeft />
@@ -22,7 +22,7 @@ const PreviousArrow = ({ onClick }: CustomArrowProps) => {
 const NextArrow = ({ onClick }: CustomArrowProps) => {
   return (
     <div
-      className="next-slick-arrow absolute z-[5] cursor-pointer -bottom-[6px] right-0 w-[10px] h-[14px] sm:right-[67px] md:right-[98px] lg:right-[180px]"
+      className="next-slick-arrow absolute z-[5] cursor-pointer -bottom-[6px] right-0 w-[10px] h-[14px] sm:right-[67px] md:right-[98px] lg:right-[168px]"
       onClick={onClick}
     >
       <ArrowRight />
