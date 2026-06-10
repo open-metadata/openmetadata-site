@@ -27,10 +27,11 @@ const SummitBanner = () => {
               <a
                 href="https://www.getcollate.io/summit2026"
                 target="_blank"
-                className="cursor-pointer px-5 py-2 block w-fit rounded-[8px] font-medium text-lg my-4 transition-colors bg-[#7147E8] border border-[#7147E8] text-white hover:bg-[#6d3eef]"
+                className="cursor-pointer px-5 py-2 block w-fit rounded-[8px] font-medium text-lg mt-4 transition-colors bg-[#7147E8] border border-[#7147E8] text-white hover:bg-[#6d3eef]"
               >
                 Learn More
               </a>
+              <div className="text-black text-lg mt-3">Recordings will be available shortly.</div>
             </div>
             <div className="relative rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0 overflow-hidden">
               <Image
