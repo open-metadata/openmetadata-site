@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { OmdLogo } from "@/components/Icons/OmdLogo";
 
-const TARGET_DATE = new Date("2026-06-10T16:00:00Z");
+const TARGET_DATE = new Date("2026-06-10T15:00:00Z");
 
 function useCountdown() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
