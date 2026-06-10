@@ -1,40 +1,7 @@
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import { OmdLogo } from "@/components/Icons/OmdLogo";
 
-const TARGET_DATE = new Date("2026-06-10T15:00:00Z");
-
-function useCountdown() {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
-
-  useEffect(() => {
-    function calc() {
-      const diff = TARGET_DATE.getTime() - Date.now();
-      if (diff <= 0) return { days: 0, hours: 0, minutes: 0 };
-      const totalMinutes = Math.floor(diff / 60000);
-      return {
-        days: Math.floor(totalMinutes / 1440),
-        hours: Math.floor((totalMinutes % 1440) / 60),
-        minutes: totalMinutes % 60,
-      };
-    }
-    setTimeLeft(calc());
-    const id = setInterval(() => setTimeLeft(calc()), 60000);
-    return () => clearInterval(id);
-  }, []);
-
-  return timeLeft;
-}
-
 const SummitBanner = () => {
-  const { days, hours, minutes } = useCountdown();
-
-  const requiredTime = [
-    { label: "d", value: days },
-    { label: "h", value: hours },
-    { label: "m", value: minutes },
-  ];
-
   return (
     <>
       <div className="bg-[linear-gradient(0deg,_#FFF_-3.19%,_#A585FF_281.53%)]">
@@ -64,26 +31,18 @@ const SummitBanner = () => {
               >
                 Register Now
               </a>
-              <div className="flex flex-wrap sm:flex-nowrap items-center gap-4 mt-6">
-                <div className="text-lg font-normal text-black">
-                  Reserve your spot for{" "}
-                  <span className="text-[#7147E8]">
-                    June 10th
-                  </span>
-                  .
+              <div className="text-lg sm:flex gap-2 items-center bg-white w-fit border !border-[#FF7B7B] rounded-[10px] px-3 py-1.5">
+                <div className="flex gap-2 items-center">
+                  <div className="relative flex items-center justify-center w-5 h-5 shrink-0">
+                    <span className="animate-live-ring absolute top-1/2 left-1/2 h-3 w-3 rounded-full bg-red-400"></span>
+                    <span className="relative h-3 w-3 rounded-full bg-[#E11E29]"></span>
+                  </div>
+                  <div className="font-bold text-[#E11E29]">LIVE NOW</div>
                 </div>
-                <div className="flex gap-3">
-                  {requiredTime.map(({ label, value }) => (
-                    <div key={label} className="text-center">
-                      <div
-                        className="text-[28px] font-medium text-black rounded-md px-4 py-2 border-2 border-[#2B5999]"
-                      >
-                        {String(value).padStart(2, "0")}
-                        {label}
-                      </div>
-                    </div>
-                  ))}
+                <div className="relative hidden sm:block">
+                  <img src='/assets/divider.svg' alt="Divider" className="w-2 h-8" />
                 </div>
+                <div className="text-[#252B37]">Join the summit happening now.</div>
               </div>
             </div>
             <div className="relative rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0 overflow-hidden">
