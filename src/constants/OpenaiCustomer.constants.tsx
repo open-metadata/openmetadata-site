@@ -38,10 +38,10 @@ export const OPENAI_CUSTOMER_TESTIMONIAL = {
 
 export const OPENAI_CUSTOMER_CHALLENGES = [
     {
-        image: '/assets/openai-customer/context-layers.png',
+        image: '/assets/openai-customer/context-data-agent-works.png',
         image2: '/assets/openai-customer/wildly-wrong-answers.png',
         title: 'Days of Searching, Multi-Team Threads, and Wildly Wrong Answers',
-        description: `Eighty percent of OpenAI's employees rely on the data platform every day. As the product scaled, so did the complexity of the questions being asked. Going from "how many users do we have?" to "how many daily active instant-checkout users do we have in New York?" scaled the cost of getting a response, as well as the difficulty of getting the answer correct. Tables proliferated, semantics drifted, and the institutional knowledge needed to use them stayed locked in Slack threads and engineers' heads. For OpenAI's Data Productivity team, four challenges defined the gap:`,
+        description: `Eighty percent of OpenAI's employees rely on the data platform every day. As the product scaled, so did the complexity of the questions being asked. Going from "how many users do we have?" to "how many daily active instant-checkout users do we have in New York?" scaled the cost of getting a response, as well as the difficulty of getting the answer correct. Tables proliferated, semantics drifted, and the institutional knowledge needed to use them stayed locked in Slack threads and engineers' heads. OpenAI's Data Productivity team had different challenges to solve:`,
         challenges: [
             {
                 header: 'Confidently Wrong, by Orders of Magnitude',
@@ -62,7 +62,7 @@ export const OPENAI_CUSTOMER_CHALLENGES = [
         ]
     },
     {
-        image: '/assets/openai-customer/six-layer-context.png',
+        image: '/assets/openai-customer/context-layers.png',
         title: 'An AI Data Agent on the Open Context Layer',
         description: `OpenAI's Data Productivity team built Kepler, an internal AI data agent that surfaces wherever the work happens (Slack, the IDE, web agents, workflows) and answers business questions in minutes. Instead of building a metadata layer from scratch, they put OpenMetadata on top of the data warehouse and let it carry the rich context the agent needs to reason. The architecture organizes context into six layers that the agent draws on per query:`,
         challenges: [
