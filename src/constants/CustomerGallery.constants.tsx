@@ -3,12 +3,12 @@ const GALLERY_IMAGE_ROUTE = '/assets/testimonials';
 
 export const HEADER_CUSTOMERS = [
     {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/mango-bg.svg`,
-        logo: `${HEADER_IMAGE_ROUTE}/mango-logo.svg`,
-        title: 'Mango increases productivity of data teams up to 20%',
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/openai-bg.png`,
+        logo: `${HEADER_IMAGE_ROUTE}/openai-logo.svg`,
+        title: "OpenAI's internal AI data agent serves 3,500+ employees on OpenMetadata",
         buttonText: 'Read More',
-        url: 'https://www.getcollate.io/customers/mango',
-        isExternal: true
+        url: '/case-study/openai',
+        isExternal: false
     },
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/carrefour-bg.svg`,
