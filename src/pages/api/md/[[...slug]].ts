@@ -2,6 +2,12 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import * as cheerio from "cheerio";
 import TurndownService from "turndown";
 
+const SITE_ORIGIN =
+  process.env.SITE_URL?.replace(/\/$/, "") || "https://open-metadata.org";
+
+// Only allow path segments that contain safe URL characters (no traversal, no protocol)
+const SAFE_SEGMENT = /^[a-zA-Z0-9._~%-]+$/;
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -12,6 +18,14 @@ export default async function handler(
     s.endsWith(".md") ? s.slice(0, -3) : s
   );
 
+  if (cleanSlug.some((s) => !SAFE_SEGMENT.test(s))) {
+    res
+      .status(400)
+      .setHeader("Content-Type", "text/plain; charset=utf-8")
+      .send("Invalid path");
+    return;
+  }
+
   const isIndex =
     cleanSlug.length === 1 && cleanSlug[0] === "index";
 
@@ -20,16 +34,7 @@ export default async function handler(
       ? "/"
       : `/${cleanSlug.join("/")}`;
 
-  const protocol =
-    (req.headers["x-forwarded-proto"] as string) || "http";
-
-  const host = (req.headers.host as string) || "open-metadata.org";
-
-  const siteUrl = host.startsWith("http")
-    ? host
-    : `${protocol}://${host}`;
-
-  const fetchUrl = `${siteUrl}${path}`;
+  const fetchUrl = `${SITE_ORIGIN}${path}`;
 
   try {
     const response = await fetch(fetchUrl);
