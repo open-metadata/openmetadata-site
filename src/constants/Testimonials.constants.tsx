@@ -2,7 +2,7 @@ export const TESTIMONIALS_LIST = [
   {
     name: "Bonnie Xu",
     description:
-      "Agents without context can give wildly wrong answers. Memory is the mechanism that helps the agent continuously improve and learn. Use OpenMetadata for metadata as part of the context layer.",
+      "At that scale, the hard part is not just about finding the right table or writing SQL, it's about getting the right context, knowing what data exists, what it means, and how it relates to the business. This is where OpenMetadata has been so foundational. It's an important part of our six-layer context model so that the agent can reason more like a real analyst.",
     image: "/assets/testimonials/openai.webp",
     company: "OpenAI",
     url: "https://openai.com",
