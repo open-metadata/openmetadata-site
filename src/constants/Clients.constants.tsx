@@ -6,6 +6,10 @@ export const CLIENT_LIST = [
         logo: `${LOGO_ROUTE}/freenow.webp`,
     },
     {
+        name: "OpenAI",
+        logo: `${LOGO_ROUTE}/openai.webp`,
+    },
+    {
         name: "Gorgias",
         logo: `${LOGO_ROUTE}/gorgias.webp`,
     },
@@ -84,10 +88,6 @@ export const CLIENT_LIST = [
     {
         name: "Carrefour",
         logo: `${LOGO_ROUTE}/carrefour.webp`,
-    },
-    {
-        name: "OpenAI",
-        logo: `${LOGO_ROUTE}/openai.webp`,
     },
     {
         name: "Loggi",
