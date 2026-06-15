@@ -58,6 +58,10 @@ export const OPENAI_CUSTOMER_CHALLENGES = [
             {
                 header: 'No Memory Across Conversations',
                 description: "Without a memory layer, every correction had to be relearned. Team-specific definitions, edge-case filters, and learned corrections evaporated the moment a session ended.",
+            },
+            {
+                header: "Sensitive Data, Permissions That Don't Stop at the Table",
+                description: "OpenAI's data includes information that not every user should be able to see. An agent ranging across all of it had to respect who could access what without leaking sensitive context through query history or shared chats. Permission checks needed to extend to retrieval, sanitized queries, and chain-of-thought, not just row-level table access.",
             }
         ]
     },
