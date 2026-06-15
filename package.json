@@ -19,12 +19,12 @@
     "autoprefixer": "10.4.18",
     "cheerio": "^1.2.0",
     "eslint": "8.57.0",
-    "eslint-config-next": "15.5.16",
+    "eslint-config-next": "15.5.19",
     "gray-matter": "^4.0.3",
-    "next": "15.5.16",
+    "next": "15.5.19",
     "next-mdx-remote": "^6.0.0",
     "next-sitemap": "^4.2.3",
-    "postcss": "8.4.35",
+    "postcss": "^8.5.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-lite-youtube-embed": "^2.4.0",
@@ -41,5 +41,8 @@
     "@types/aos": "^3.0.7",
     "@types/react-slick": "^0.23.13",
     "@types/turndown": "^5.0.6"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
   }
 }
