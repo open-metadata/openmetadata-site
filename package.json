@@ -22,7 +22,7 @@
     "eslint-config-next": "15.5.16",
     "gray-matter": "^4.0.3",
     "next": "15.5.16",
-    "next-mdx-remote": "^5.0.0",
+    "next-mdx-remote": "^6.0.0",
     "next-sitemap": "^4.2.3",
     "postcss": "8.4.35",
     "react": "18.2.0",
