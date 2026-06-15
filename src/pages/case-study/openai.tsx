@@ -9,6 +9,7 @@ import {
     OPENAI_CUSTOMER_TESTIMONIAL
 } from "@/constants/OpenaiCustomer.constants";
 import Head from "next/head";
+import Image from "next/image";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
   return {
@@ -32,6 +33,15 @@ const OpenAICaseStudyPage = () => {
             highlights={OPENAI_CUSTOMER_HIGHLIGHTS}
           />
           <CustomerTestimonial testimonial={OPENAI_CUSTOMER_TESTIMONIAL} />
+          <div className="max-w-[800px] mx-auto px-4 mt-12 md:mt-24">
+            <Image
+              src="/assets/openai-customer/data-platform-stats.png"
+              alt="OpenAI data platform at a glance: 3,500+ users, 15 tools, 580+ PB, 70K datasets"
+              width={1000}
+              height={1000}
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
           <CustomerChallenges data={OPENAI_CUSTOMER_CHALLENGES} />
         </div>
         <FooterDev />
