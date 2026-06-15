@@ -13,6 +13,11 @@ interface CustomerHeaderProps {
             url: string;
             text: string;
         }
+        attribution?: {
+            text: string;
+            linkText: string;
+            linkUrl: string;
+        }
     },
     highlights: {
         id: number;
@@ -61,11 +66,25 @@ const CustomerHeader = ({ customerHeader, highlights }: CustomerHeaderProps) => 
             <div className="grid gap-y-12 mt-[40px] text-[#292929] text-[18px] sm:text-[20px] sm:grid-cols-2 lg:gap-y-0 lg:gap-3 lg:grid-cols-5">
                 <div className="sm:col-span-2 lg:col-span-3 relative">
                     <div className="whitespace-pre-line">{customerHeader.description}</div>
+                    {customerHeader?.attribution && (
+                        <p className="italic mt-4 text-[16px] sm:text-[18px] text-[#292929]">
+                            {customerHeader.attribution.text}
+                            <a
+                                href={customerHeader.attribution.linkUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#7147E8] hover:underline"
+                            >
+                                {customerHeader.attribution.linkText}
+                            </a>
+                            .
+                        </p>
+                    )}
                     {customerHeader?.blog && (
-                        <ParamLink 
-                            href={customerHeader?.blog?.url} 
-                            name={customerHeader?.blog?.text} 
-                            className="relative top-5 text-[#7147E8] hover:underline" 
+                        <ParamLink
+                            href={customerHeader?.blog?.url}
+                            name={customerHeader?.blog?.text}
+                            className="relative top-5 text-[#7147E8] hover:underline"
                         />
                     )}
                 </div>

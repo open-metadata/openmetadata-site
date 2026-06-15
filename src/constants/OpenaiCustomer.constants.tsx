@@ -1,9 +1,14 @@
 export const OPENAI_CUSTOMER_HEADER = {
     title: "How OpenAI Built Their Self-Service AI Data Agent for 3,500+ Employees on OpenMetadata",
-    description: `OpenAI's data platform serves 80% of the company, roughly 3,500 internal users on 15 tools, with 580+ petabytes of data processed daily across 70,000 datasets. At that scale, simple questions like "How many ChatGPT Pro users do we have in Italy?" routinely cost analysts hours of table discovery, multiple code deep-dives, and several cross-team Slack threads, and could still return answers off by orders of magnitude. OpenAI's Data Productivity team built Kepler, an internal AI data agent, on top of OpenMetadata as the open context layer that grounds every response. The result: self-service analytics across the company, with repeat queries down from 22 minutes to under 90 seconds. This case study is adapted from Bonnie Xu's Summit '26 keynote.`,
+    description: `OpenAI's data platform serves 80% of the company, roughly 3,500 internal users on 15 tools, with 580+ petabytes of data processed daily across 70,000 datasets. At that scale, simple questions like "How many ChatGPT Pro users do we have in Italy?" routinely cost analysts hours of table discovery, multiple code deep-dives, and several cross-team Slack threads, and could still return answers off by orders of magnitude. OpenAI's Data Productivity team built Kepler, an internal AI data agent, on top of OpenMetadata as the open context layer that grounds every response. The result: self-service analytics across the company, with repeat queries down from 22 minutes to under 90 seconds.`,
     industry: "AI Research and Deployment",
     technologies: "OpenMetadata, Spark, Airflow, Notion, Slack, OpenAI Responses API, OpenAI Embeddings API, OpenAI Evals, Codex",
-    videoUrl: "-6czrxuHJLg"
+    videoUrl: "-6czrxuHJLg",
+    attribution: {
+        text: "This case study is adapted from Bonnie Xu's ",
+        linkText: "Summit '26 keynote",
+        linkUrl: "https://youtu.be/-6czrxuHJLg"
+    }
 }
 
 export const OPENAI_CUSTOMER_HIGHLIGHTS = [
