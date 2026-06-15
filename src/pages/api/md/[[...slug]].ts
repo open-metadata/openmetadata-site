@@ -34,10 +34,18 @@ export default async function handler(
       ? "/"
       : `/${cleanSlug.join("/")}`;
 
-  const fetchUrl = `${SITE_ORIGIN}${path}`;
+  const fetchUrl = new URL(path, SITE_ORIGIN);
+  // Guard against any edge case where the constructed URL drifts off SITE_ORIGIN.
+  if (fetchUrl.origin !== new URL(SITE_ORIGIN).origin) {
+    res
+      .status(400)
+      .setHeader("Content-Type", "text/plain; charset=utf-8")
+      .send("Invalid path");
+    return;
+  }
 
   try {
-    const response = await fetch(fetchUrl);
+    const response = await fetch(fetchUrl.href);
 
     if (!response.ok) {
       res
