@@ -35,15 +35,12 @@ export const HEADER_CUSTOMERS = [
         isExternal: false
     },
     {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/freenow-bg.svg`,
-        logo: `${HEADER_IMAGE_ROUTE}/freenow-logo.svg`,
-        title: '7 business domains, managed with 30+ analytics process per domain',
-        buttonText: 'FREENOW Blog',
-        url: 'https://medium.com/breaking-data-silos-lineage-for-cross-domain/data-management-at-freenow-the-lineage-and-announcements-approach-177f387a9180',
-        button2Text: 'Read More',
-        url2: '/case-study/freenow',
-        isExternal: true,
-        isExternal2: false
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/mango-bg.svg`,
+        logo: `${HEADER_IMAGE_ROUTE}/mango-logo.svg`,
+        title: 'Mango increases productivity of data teams up to 20%',
+        buttonText: 'Read More',
+        url: 'https://www.getcollate.io/customers/mango',
+        isExternal: true
     },
 ]
 
@@ -57,6 +54,19 @@ export const INDUSTRY_LIST = [
 ]
 
 export const CUSTOMER_GALLERY = [
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/freenow-logo.png`,
+        industry: 'Transportation',
+        testimonial: "We’re not trying to communicate more—we’re trying to communicate better and more efficiently. With OpenMetadata, we’ve created a centralized, automated communication hub that gives full visibility into data asset changes and their impact across the organization.",
+        customerName: 'Mehak Roha',
+        customerDesignation: 'Data Platform Engineer',
+        company: 'FreeNow',
+        imgSize: {
+            width: 150,
+            height: 50
+        },
+        link: '/case-study/freenow'
+    },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/woop-logo.webp`,
         industry: 'Transportation',
