@@ -45,7 +45,7 @@ export const OPENAI_CUSTOMER_CHALLENGES = [
         challenges: [
             {
                 header: 'Confidently Wrong by Orders of Magnitude',
-                description: `With 70,000 datasets across 15 tools, analysts faced a haystack of similar-sounding tables with subtle, consequential differences. Some tables had encrypted IDs, some didn't. Some adjusted for fraud, some didn't. Some pre-filtered for feedback, some didn't. Missing one nuance (a single column difference, a missing filter) could produce answers off by orders of magnitude. In a real life example, when asked how many ChatGPT users there are, an AI agent incorrectly answered 5,062,338. The real number, announced at DevDay 2025: 800 million.`,
+                description: `With 70,000 datasets across 15 tools, analysts faced a haystack of similar-sounding tables with subtle, consequential differences. Some tables had encrypted IDs, some didn't. Some adjusted for fraud, some didn't. Some pre-filtered for feedback, some didn't. Missing one nuance (a single column difference, a missing filter) could produce answers off by orders of magnitude. In a real life example, when asked how many ChatGPT users there are, an AI agent incorrectly answered 5,062,338. The real number: 800 million.`,
             },
             {
                 header: 'Simple Questions, Expensive Answers',
@@ -80,7 +80,7 @@ export const OPENAI_CUSTOMER_CHALLENGES = [
             },
             {
                 header: 'Codex Enrichment, Institutional Knowledge, and Runtime Calls',
-                description: `Three more layers add additional context for understanding. Codex offline jobs crawl the codebase to explain why each table exists (purpose, downstream usage, exact grain, primary keys), so the agent doesn't just see a table for ChatGPT analytics, but knows it includes only first-party ChatGPT traffic enriched by trusted sources. Institutional knowledge from Slack threads and Notion docs feeds the agent permission-gated context on tribal knowledge and business meaning. Runtime calls to Spark, Airflow, and OpenMetadata fill in additional details in real time.`,
+                description: `Three more layers add additional context for understanding. Codex (OpenAI's coding agent) reads the actual pipeline code that builds each data table in offline jobs in order explain why each table exists (purpose, downstream usage, primary keys), providing additional context to Kepler so the AI agent understands a table's true meaning, not just its name. Institutional knowledge from Slack threads and Notion docs feeds the agent permission-gated context on tribal knowledge and business meaning. Runtime calls to Spark, Airflow, and OpenMetadata fill in additional details in real time.`,
             },
             {
                 header: 'A Memory Layer That Compounds',
@@ -115,7 +115,7 @@ export const OPENAI_CUSTOMER_CHALLENGES = [
             },
             {
                 header: 'An Open Context Layer for Every Data Team',
-                description: `When asked how a smaller data team should start, Bonnie's answer was three lines: leverage existing APIs (OpenAI Responses, embeddings, evals); use OpenMetadata for metadata as part of the context layer; and use Codex to iterate quickly. The OpenMetadata foundation OpenAI selected for Kepler is the same open standard available to any team that wants to ship an AI data agent on a context layer they own, without any proprietary lock-in.`,
+                description: `When asked how a smaller data team should start, Bonnie's answer was three lines: leverage existing APIs (OpenAI Responses, embeddings, evals); use Codex to iterate quickly; and use OpenMetadata for the context layer. The OpenMetadata foundation OpenAI selected for Kepler is the same open standard available to any team that wants to ship an AI data agent on a context layer they own, without any proprietary lock-in.`,
             }
         ]
     }
