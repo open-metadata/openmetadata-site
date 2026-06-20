@@ -1,7 +1,19 @@
 const HEADER_IMAGE_ROUTE = '/assets/customer-gallery/header';
 const GALLERY_IMAGE_ROUTE = '/assets/testimonials';
 
-export const HEADER_CUSTOMERS = [
+type HeaderCustomer = {
+    backgroundImage: string;
+    logo: string;
+    title: string;
+    buttonText: string;
+    url: string;
+    isExternal: boolean;
+    button2Text?: string;
+    url2?: string;
+    isExternal2?: boolean;
+};
+
+export const HEADER_CUSTOMERS: HeaderCustomer[] = [
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/openai-bg.png`,
         logo: `${HEADER_IMAGE_ROUTE}/openai-logo.svg`,
