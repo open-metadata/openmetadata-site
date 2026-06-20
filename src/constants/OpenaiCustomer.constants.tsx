@@ -80,7 +80,7 @@ export const OPENAI_CUSTOMER_CHALLENGES = [
             },
             {
                 header: 'Codex Enrichment, Institutional Knowledge, and Runtime Calls',
-                description: `Three more layers add additional context for understanding. Codex (OpenAI's coding agent) reads the actual pipeline code that builds each data table in offline jobs in order explain why each table exists (purpose, downstream usage, primary keys), providing additional context to Kepler so the AI agent understands a table's true meaning, not just its name. Institutional knowledge from Slack threads and Notion docs feeds the agent permission-gated context on tribal knowledge and business meaning. Runtime calls to Spark, Airflow, and OpenMetadata fill in additional details in real time.`,
+                description: `Three more layers add additional context for understanding. Codex (OpenAI's coding agent) reads the actual pipeline code that builds each data table in offline jobs in order to explain why each table exists (purpose, downstream usage, primary keys), providing additional context to Kepler so the AI agent understands a table's true meaning, not just its name. Institutional knowledge from Slack threads and Notion docs feeds the agent permission-gated context on tribal knowledge and business meaning. Runtime calls to Spark, Airflow, and OpenMetadata fill in additional details in real time.`,
             },
             {
                 header: 'A Memory Layer That Compounds',
