@@ -1,5 +1,18 @@
 export const TESTIMONIALS_LIST = [
   {
+    name: "Bonnie Xu",
+    description:
+      "At that scale, the hard part is not just about finding the right table or writing SQL, it's about getting the right context, knowing what data exists, what it means, and how it relates to the business. This is where OpenMetadata has been so foundational. It's an important part of our six-layer context model so that the agent can reason more like a real analyst.",
+    image: "/assets/testimonials/openai.webp",
+    company: "OpenAI",
+    url: "https://openai.com",
+    title: "Tech Lead, Data Productivity",
+    imgSize: {
+      width: 184,
+      height: 50
+    },
+  },
+  {
     name: "Sapir Hirshberg",
     description:
       "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
