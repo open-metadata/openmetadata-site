@@ -16,7 +16,14 @@ export const LEARNING_CENTER_DATA: LearningCenterItem[] = [
         cluster: 'Metadata Management',
         resourceType: 'Articles',
     },
-    
+    {
+        id: 1,
+        title: 'Metadata Search: How It Works, Types & Best Practices',
+        image: `${IMAGE_PATH}/metadata-search.png`,
+        slug: 'metadata-search',
+        cluster: 'Metadata Management',
+        resourceType: 'Articles',
+    },
 ]
 
 export const CATEGORY_LIST: CategoryItem[] = [
