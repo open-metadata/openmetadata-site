@@ -24,6 +24,14 @@ export const LEARNING_CENTER_DATA: LearningCenterItem[] = [
         cluster: 'Metadata Management',
         resourceType: 'Articles',
     },
+    {
+        id: 2,
+        title: 'Metadata Automation: Process, Use Cases & Best Practices',
+        image: `${IMAGE_PATH}/metadata-automation.png`,
+        slug: 'metadata-automation',
+        cluster: 'Metadata Management',
+        resourceType: 'Articles',
+    },
 ]
 
 export const CATEGORY_LIST: CategoryItem[] = [
