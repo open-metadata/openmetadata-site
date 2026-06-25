@@ -43,9 +43,9 @@ const SummitBanner = () => {
     <>
       <div className="bg-[linear-gradient(0deg,_#FFF_-3.19%,_#A585FF_281.53%)]">
         <div className="max-w-[1350px] mx-auto py-8 lg:py-16 px-4 w-full">
-          <div className="grid lg:grid-cols-5 rounded-[20px] overflow-hidden">
+          <div className="grid lg:grid-cols-5 lg:rounded-[20px] overflow-hidden">
             <div
-              className="lg:col-span-3 rounded-t-[20px] lg:rounded-tl-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none lg:rounded-br-none p-6 lg:p-10 lg:pr-16 flex-1 bg-[#F9F6FF] min-h-[400px]"
+              className="lg:col-span-3 lg:rounded-tl-[20px] lg:rounded-bl-[20px] lg:rounded-tr-none lg:rounded-br-none p-6 lg:p-8 lg:pr-16 flex-1 bg-[#F9F6FF] min-h-[400px]"
             >
               <div className="flex gap-3 items-center">
                 <img src="/assets/collate-logo.svg" alt="Collate" width={169} height={39} />
@@ -75,7 +75,7 @@ const SummitBanner = () => {
                 <div className="text-[#7147E8] text-lg font-medium">& more.</div>
               </div>
             </div>
-            <div className="lg:col-span-2 relative rounded-b-[20px] lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0 overflow-hidden">
+            <div className="lg:col-span-2 relative lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0 overflow-hidden">
               <Image
                 src="/assets/summit-banner/banner-bg.png"
                 alt="Collate Summit 2026"
@@ -85,7 +85,7 @@ const SummitBanner = () => {
               />
               <div className="text-white relative z-10 sm:max-w-[55%] mx-auto lg:max-w-full lg:w-full p-6 lg:p-10 summit-banner-form">
                 <div className="text-[28px] font-semibold">Watch on Demand for free</div>
-                <div className="mb-5 mt-1 md:text-lg">Sign up to start watching</div>
+                <div className="mb-4 mt-1 md:text-lg">Sign up to start watching</div>
                 <div id={SUMMIT_ON_DEMAND_FORM_TARGET}></div>
               </div>
             </div>
