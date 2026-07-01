@@ -1,4 +1,4 @@
-const LOGO_ROUTE = '/assets/clients'
+const LOGO_ROUTE = '/assets/client'
 
 export const CLIENT_LIST = [
     {
