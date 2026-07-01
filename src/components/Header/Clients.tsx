@@ -50,13 +50,12 @@ const Clients = () => {
         {CLIENT_LIST.map((client) => (
           <div
             key={client.name}
-            className="slide-item h-[60px] w-[150px]"
+            className="slide-item h-[60px] w-auto relative"
           >
             <Image
               src={client.logo}
               alt={client.name}
-              width={100}
-              height={100}
+              fill
               loading="eager"
             />
           </div>
