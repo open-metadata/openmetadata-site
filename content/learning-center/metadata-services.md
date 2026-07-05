@@ -158,6 +158,8 @@ During audits, teams can quickly answer questions about data origin, transformat
 
 #### 1. OpenMetadata
 
+<img src="/assets/learning-center/metadata-services/openmetadata-logo.png" alt="Open MetaData logo" width="90" height="90" />
+
 OpenMetadata is an open-source metadata platform and AI context layer that organizes technical and business metadata into a single, queryable knowledge graph. It provides end-to-end metadata management across catalog, lineage, quality, governance, and AI context.
 
 Key features include:
@@ -167,7 +169,13 @@ Key features include:
 - Built-in data quality and observability: Test suites, profilers, and incident workflows run alongside catalog functions, so observability is part of the platform rather than a separate tool.  
 - Column-level lineage and impact analysis: Lineage is captured from SQL queries, ETL jobs, and orchestrators with column-level granularity to support downstream impact tracking.  
 - Apache 2.0 licensed and community-driven: Open source under Apache 2.0, with an active community contributing connectors, schemas, and integrations.
+
+<img src="/assets/learning-center/metadata-services/openmetadata-screenshot.png" alt="Open MetaData interface" width="800" height="523" />
+
+Source: [Open MetaData](https://open-metadata.org/)
 #### 2. Collate
+
+<img src="/assets/learning-center/metadata-services/collate-logo.png" alt="Collate logo" width="153" height="80" />
 
 Collate is the AI for Data platform built on OpenMetadata. It extends the open metadata standard with managed deployment, enterprise governance, conversational AI, code & no code agents, and an AI native experience.
 
@@ -179,7 +187,12 @@ Key features include:
 - Memory, skills, and automations: Every approval, tag, and steward decision is captured as a permanent, attributable record that feeds back into governance reporting and agent learning.  
 - Data marketplace and data products: Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows.
 
+<img src="/assets/learning-center/metadata-services/collate-screenshot.png" alt="Collate interface" width="800" height="821" />
+
+Source: [Collate](https://www.getcollate.io/)
 #### 3. DataHub
+
+<img src="/assets/learning-center/metadata-services/datahub-logo.png" alt="Datahub logo" width="152" height="80" />
 
 DataHub is an open-source metadata platform that acts as a central system for managing and understanding data across complex environments. It connects to multiple data systems and continuously collects metadata to build a unified view of data assets and their relationships.
 
@@ -191,7 +204,12 @@ DataHub is an open-source metadata platform that acts as a central system for ma
 * **Column-level lineage tracking:** Captures lineage at a fine-grained level, showing how individual fields move across systems.  
 * **Flexible metadata ingestion framework:** Supports push and pull ingestion models with over 80 connectors.
 
+<img src="/assets/learning-center/metadata-services/datahub-screenshot.png" alt="Datahub interface" width="800" height="449" />
+
+Source: [Datahub](https://datahub.com/)
 #### 4. Apache Atlas
+
+<img src="/assets/learning-center/metadata-services/apache-atlas-logo.png" alt="Apache Atlas logo" width="120" height="90" />
 
 Apache Atlas is an open metadata and governance platform for managing, classifying, and controlling data across Hadoop and enterprise ecosystems. It provides a framework for defining metadata models, tracking data movement, and enforcing governance policies.
 
@@ -205,7 +223,12 @@ Apache Atlas is an open metadata and governance platform for managing, classifyi
 
 ### Cloud Instance Metadata
 
+<img src="/assets/learning-center/metadata-services/apache-atlas-screenshot.png" alt="Apache Atlas interface" width="800" height="375" />
+
+Source: [Apache Atlas](https://atlas.apache.org/)
 #### 5. AWS EC2 Instance Metadata Service
+
+<img src="/assets/learning-center/metadata-services/aws-ec2-logo.png" alt="Amazon Web Services logo" width="185" height="80" />
 
 The AWS EC2 Instance Metadata Service (IMDS) provides access to runtime metadata about an EC2 instance from within the instance. This includes instance identity, network configuration, and security credentials. It supports IMDSv1 and IMDSv2, with IMDSv2 using session-based access.
 
@@ -217,7 +240,12 @@ The AWS EC2 Instance Metadata Service (IMDS) provides access to runtime metadata
 * **Instance-specific token security:** Tokens are bound to a specific EC2 instance.  
 * **Standard HTTP access methods:** Supports GET, HEAD, and PUT requests.
 
+<img src="/assets/learning-center/metadata-services/aws-ec2-screenshot.png" alt="Amazon Web Services interface" width="800" height="348" />
+
+Source: [Amazon Web Services](https://aws.amazon.com/)
 #### 6. Azure Instance Metadata Service
+
+<img src="/assets/learning-center/metadata-services/azure-logo.png" alt="Azure logo" width="234" height="80" />
 
 Azure Instance Metadata Service (IMDS) is a REST API that provides metadata about a running Azure virtual machine or scale set instance. It exposes compute, storage, network, identity, load balancer, and maintenance information from inside the VM.
 
@@ -229,7 +257,12 @@ Azure Instance Metadata Service (IMDS) is a REST API that provides metadata abou
 * **Compute metadata:** Provides VM details such as name, region, VM size, OS type, image details, tags, and security profile.  
 * **Storage metadata:** Returns OS disk and data disk information, including size, caching mode, and disk IDs.
 
+<img src="/assets/learning-center/metadata-services/azure-screenshot.png" alt="Azure interface" width="800" height="454" />
+
+Source: [Azure](https://azure.microsoft.com/)
 #### 7. Google Cloud VM Metadata
+
+<img src="/assets/learning-center/metadata-services/google-cloud-logo.png" alt="Google Cloud logo" width="192" height="80" />
 
 Google Cloud VM Metadata provides runtime information for Compute Engine VM instances through a local metadata server. Each VM can access this metadata without extra authorization. Metadata is stored as case-sensitive key-value pairs and organized into directories for project, zonal, and instance-level data.
 
@@ -245,3 +278,6 @@ Google Cloud VM Metadata provides runtime information for Compute Engine VM inst
 
 Metadata services are fundamental for managing the modern, distributed data estate. They establish trust, enable robust governance, and drive self-service analytics by centralizing context. By unifying schemas, lineage, and policies, these services ensure data is discoverable, compliant, and ready for advanced applications like AI agents and machine learning workflows.
 
+<img src="/assets/learning-center/metadata-services/google-cloud-screenshot.png" alt="Google Cloud interface" width="800" height="522" />
+
+Source: [Google Cloud](https://cloud.google.com/)
