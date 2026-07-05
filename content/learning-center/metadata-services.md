@@ -185,7 +185,7 @@ Key features include:
 - Memory, skills, and automations: Every approval, tag, and steward decision is captured as a permanent, attributable record that feeds back into governance reporting and agent learning.  
 - Data marketplace and data products: Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows.
 
-<img src="/assets/learning-center/metadata-services/collate-screenshot.png" alt="Collate interface" width="800" height="821" />
+<img src="/assets/learning-center/metadata-services/collate-screenshot.png" alt="Collate AI Studio" width="800" height="561" />
 
 Source: [Collate](https://www.getcollate.io/)
 #### 3. DataHub
