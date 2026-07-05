@@ -20,8 +20,6 @@ These services integrate with various data sources, applications, and storage sy
 * **Data catalog/management services (e.g., OpenMetadata, Apache Atlas):** Centralizes metadata for tables, databases, and pipelines for discovery and governance.  
 * **Cloud instance metadata (e.g., AWS IMDS, Akamai/Linode):** Provides instance-specific data (IP addresses, security groups) to running virtual machines via a local API, enabling automated configuration and security.
 
-This is part of a series of articles about [metadata management](https://www.getcollate.io/learning-center/metadata-management)
-
 **In this article:**
 
 * [Data Catalog vs. Cloud Instance Metadata Services](#data-catalog-vs-cloud-instance-metadata-services)  
