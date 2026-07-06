@@ -31,7 +31,7 @@ A metadata platform is a centralized system that catalogs, manages, and analyzes
 
 Metadata platforms are used to make data systems easier to understand, control, and operate. They centralize metadata such as lineage, ownership, and usage, which allows teams to track how data moves, who uses it, and how reliable it is. This supports governance, improves access to data, and reduces operational friction across analytics and engineering workflows.
 
-Common use cases include:
+**Common use cases include:**
 
 * **Regulatory compliance and auditing:** Track data origin, ownership, and lineage to show how data is collected and used. Maintain change history to trace access, modifications, and downstream impact for audits.
 * **Analyst self-serve discovery:** Provide a searchable catalog with dataset descriptions, ownership, and usage patterns. Surface trusted and frequently used assets to reduce duplication and support consistent analysis.
@@ -103,19 +103,21 @@ Collaboration features enable users to rate, review, or request changes to data 
 
 ### Metadata Platform vs. Data Platform
 
-A metadata platform focuses on managing information about data rather than the data itself. It provides insight into where data comes from, how it is structured, who uses it, and how it moves through systems. In contrast, a data platform stores, processes, and serves data, such as databases, data lakes, or data warehouses. While data platforms power analytics and operational workloads, metadata platforms provide the context required to use data responsibly.
+**A metadata platform** focuses on managing information about data rather than the data itself. It provides insight into where data comes from, how it is structured, who uses it, and how it moves through systems. In contrast, **a data platform** stores, processes, and serves data, such as databases, data lakes, or data warehouses. While data platforms power analytics and operational workloads, metadata platforms provide the context required to use data responsibly.
 
 The distinction is important because organizations often conflate the two. Data platforms enable users to query and analyze data, but without metadata, users may not understand the data's meaning, quality, or relevance. Metadata platforms bridge this gap by offering search, lineage, governance, and quality features that overlay data platforms. The connection between both platforms is important for getting value from data while maintaining control and compliance.
 
 ### Metadata Platform vs. Data Catalog
 
-A data catalog is an application that provides an organized inventory of data assets, often featuring search, tagging, and basic lineage. It helps users discover and understand datasets by indexing metadata and exposing it through a user interface. Data catalogs typically focus on usability and collaboration, offering features like dataset descriptions, ownership attribution, and popularity rankings.
+**A [data catalog](https://www.getcollate.io/learning-center/data-catalog)** is an application that provides an organized inventory of data assets, often featuring search, tagging, and basic lineage. It helps users discover and understand datasets by indexing metadata and exposing it through a user interface. Data catalogs typically focus on usability and collaboration, offering features like dataset descriptions, ownership attribution, and popularity rankings.
 
-A metadata platform serves as a broader infrastructure layer. It supports cataloging and integrates with data systems to collect, store, and process metadata continuously. Metadata platforms provide APIs, support event-driven metadata updates, enable advanced lineage and impact analysis, and power governance and observability tools. In this sense, a data catalog is often a component or frontend of a metadata platform.
+**A metadata platform** serves as a broader infrastructure layer. It supports cataloging and integrates with data systems to collect, store, and process metadata continuously. Metadata platforms provide APIs, support event-driven metadata updates, enable advanced lineage and impact analysis, and power governance and observability tools. In this sense, a data catalog is often a component or frontend of a metadata platform.
 
 ## Notable Metadata Management Platforms
 
 #### 1. OpenMetadata
+
+<img src="/assets/learning-center/metadata-platform/openmetadata-logo.png" alt="OpenMetadata logo" width="90" height="90" />
 
 OpenMetadata is an open-source metadata platform and AI context layer that unifies technical and business metadata into a single, queryable knowledge graph. It uses a formal ontology and 130+ native connectors to address fragmentation across modern data stacks, giving teams one place to discover, govern, and trust their data.
 
@@ -125,9 +127,13 @@ OpenMetadata is an open-source metadata platform and AI context layer that unifi
 * **130+ native connectors:** Ships with connectors for databases, warehouses, BI tools, pipelines, and ML systems that ingest schema, lineage, ownership, and usage without custom code.
 * **Built-in quality and observability:** Test suites, profilers, and incident workflows run alongside catalog functions, so quality and freshness are part of the same metadata graph.
 * **Column-level lineage:** Captures lineage from SQL queries, ETL pipelines, and orchestrators at column-level granularity for impact analysis and debugging.
-* **Apache 2.0 licensed:** Fully open source with an active community contributing connectors, schemas, and integrations across hundreds of platforms.
+* **Apache 2.0 licensed:** Open source with an active community contributing connectors, schemas, and integrations across hundreds of platforms.
+
+<img src="/assets/learning-center/metadata-platform/openmetadata-screenshot.png" alt="OpenMetadata interface" width="800" height="523" />
 
 #### 2. Collate
+
+<img src="/assets/learning-center/metadata-platform/collate-logo.png" alt="Collate logo" width="124" height="90" />
 
 Collate is the AI for Data platform built on OpenMetadata. It extends the open metadata standard with managed deployment, enterprise governance, conversational AI, code & no code agents, and an AI native experience.
 
@@ -139,7 +145,11 @@ Collate is the AI for Data platform built on OpenMetadata. It extends the open m
 * **AI agents ecosystem:** Pre-built agents and a no-code AI Studio automate documentation, tiering, classification, and data quality at scale, with an AI SDK for custom AI applications.
 * **Memory, skills, and automations:** Every approval, tag, and steward decision is captured as a permanent, attributable record that feeds back into governance reporting and agent learning.
 
+<img src="/assets/learning-center/metadata-platform/collate-screenshot.png" alt="AskCollate + AI Studio" width="800" height="561" />
+
 #### 3. Apache Atlas
+
+<img src="/assets/learning-center/metadata-platform/apache-atlas-logo.png" alt="Apache Atlas logo" width="151" height="80" />
 
 Apache Atlas is an open source metadata governance platform that helps organizations manage, classify, and track data assets across data ecosystems, particularly those built around Hadoop. It provides a framework for metadata management, allowing teams to catalog data assets, define governance rules, and monitor data movement. Atlas supports extensible metadata models and integrates with enterprise tools.
 
@@ -151,7 +161,11 @@ Apache Atlas is an open source metadata governance platform that helps organizat
 * **Dynamic data classification:** Enables users to define classifications such as PII or sensitive data.
 * **Classification propagation through lineage:** Propagates classifications as data moves through pipelines.
 
+<img src="/assets/learning-center/metadata-platform/apache-atlas-screenshot.png" alt="Apache Atlas interface" width="800" height="375" />
+
 #### 4. DataHub
+
+<img src="/assets/learning-center/metadata-platform/datahub-logo.png" alt="DataHub logo" width="220" height="65" />
 
 DataHub is an open source metadata platform built around a scalable metadata graph. It connects datasets, pipelines, dashboards, and machine learning assets to capture relationships, lineage, and usage patterns. Organizations use DataHub to improve data discovery, ensure data reliability, and enforce governance policies. A managed SaaS version, DataHub Cloud, is also available.
 
@@ -163,7 +177,11 @@ DataHub is an open source metadata platform built around a scalable metadata gra
 * **Metadata enrichment and documentation:** Enriches metadata using automation and AI-generated documentation.
 * **Data observability and quality monitoring:** Tracks data freshness, schema changes, and quality checks.
 
+<img src="/assets/learning-center/metadata-platform/datahub-screenshot.png" alt="DataHub interface" width="800" height="420" />
+
 #### 5. Atlan Data Catalog
+
+<img src="/assets/learning-center/metadata-platform/atlan-logo.png" alt="Atlan logo" width="142" height="80" />
 
 Atlan is a data catalog that connects metadata from data warehouses, BI tools, pipelines, and business applications into a unified enterprise data graph. This graph captures technical and business context, enabling users to discover and understand data assets. Atlan includes AI-assisted documentation and governance workflows.
 
@@ -175,7 +193,11 @@ Atlan is a data catalog that connects metadata from data warehouses, BI tools, p
 * **AI-assisted metadata enrichment:** Generates asset descriptions and links datasets to glossary terms.
 * **Context pipeline for data knowledge:** Combines automated metadata extraction with human review.
 
+<img src="/assets/learning-center/metadata-platform/atlan-screenshot.png" alt="Atlan interface" width="800" height="441" />
+
 #### 6. Amundsen
+
+<img src="/assets/learning-center/metadata-platform/amundsen-logo.png" alt="Amundsen logo" width="220" height="66" />
 
 Amundsen is an open source data discovery and metadata platform created at Lyft. It focuses on helping analysts, data scientists, and engineers find and understand datasets and dashboards. Amundsen aggregates metadata from data warehouses, pipelines, and analytics tools to provide searchable context about data assets.
 
@@ -187,7 +209,11 @@ Amundsen is an open source data discovery and metadata platform created at Lyft.
 * **Data lineage and pipeline context:** Links datasets to ETL jobs and code that generate them.
 * **Collaborative metadata editing:** Allows users to add or update descriptions for tables and columns.
 
+<img src="/assets/learning-center/metadata-platform/amundsen-screenshot.png" alt="Amundsen interface" width="800" height="356" />
+
 #### 7. Marquez
+
+<img src="/assets/learning-center/metadata-platform/marquez-logo.png" alt="Marquez logo" width="220" height="55" />
 
 Marquez is an open source metadata service that collects, stores, and visualizes data lineage using the OpenLineage standard. It captures metadata from data pipelines and processing jobs in real time. By aggregating lineage metadata from tools such as Apache Airflow, Apache Spark, and dbt, Marquez provides a view of how datasets are produced and consumed.
 
@@ -198,6 +224,8 @@ Marquez is an open source metadata service that collects, stores, and visualizes
 * **Unified lineage visualization:** Displays dataset dependencies, job relationships, and pipeline flows.
 * **Dataset and job exploration:** Allows users to browse inputs, outputs, and execution details.
 * **Lineage API for automation:** Provides APIs to query lineage information programmatically.
+
+<img src="/assets/learning-center/metadata-platform/marquez-screenshot.png" alt="Marquez interface" width="800" height="522" />
 
 ## Conclusion
 
