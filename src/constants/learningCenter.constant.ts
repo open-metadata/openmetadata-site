@@ -56,6 +56,14 @@ export const LEARNING_CENTER_DATA: LearningCenterItem[] = [
         cluster: 'Metadata Management',
         resourceType: 'Articles',
     },
+    {
+        id: 6,
+        title: 'Metadata Platforms: Use Cases, Components, and 7 Notable Solutions',
+        image: `${IMAGE_PATH}/metadata-platform.png`,
+        slug: 'metadata-platform',
+        cluster: 'Metadata Management',
+        resourceType: 'Articles',
+    },
 ]
 
 export const CATEGORY_LIST: CategoryItem[] = [
