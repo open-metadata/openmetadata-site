@@ -7,8 +7,6 @@ image: /assets/learning-center/banner/metadata-solutions.png
 
 # Metadata Solutions: Capabilities, Architecture & Use Cases
 
-This is part of a series of articles about <a href="/learning-center/metadata-management" className="md-link">metadata management</a>.
-
 ## What Is a Metadata Solution? 
 
 A metadata solution is a specialized software platform designed to collect, store, organize, and manage metadata across an organization’s data ecosystem. Metadata, often described as “data about data,” includes information such as data source, format, lineage, ownership, usage, and business context. 

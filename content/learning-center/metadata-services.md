@@ -160,13 +160,13 @@ During audits, teams can quickly answer questions about data origin, transformat
 
 OpenMetadata is an open-source metadata platform and AI context layer that organizes technical and business metadata into a single, queryable knowledge graph. It provides end-to-end metadata management across catalog, lineage, quality, governance, and AI context.
 
-Key features include:
+**Key features include:**
 
-- Open metadata standard: OpenMetadata defines an open schema for tables, dashboards, ML models, lineage, and ownership, with W3C support including MCP, RDF, DCAT, DPROD, ODCS, and OpenLineage.  
-- Native connectors at scale: 130+ connectors for databases, warehouses, BI tools, pipelines, and ML systems ingest metadata automatically without custom integration work.  
-- Built-in data quality and observability: Test suites, profilers, and incident workflows run alongside catalog functions, so observability is part of the platform rather than a separate tool.  
-- Column-level lineage and impact analysis: Lineage is captured from SQL queries, ETL jobs, and orchestrators with column-level granularity to support downstream impact tracking.  
-- Apache 2.0 licensed and community-driven: Open source under Apache 2.0, with an active community contributing connectors, schemas, and integrations.
+- **Open metadata standard:** OpenMetadata defines an open schema for tables, dashboards, ML models, lineage, and ownership, with W3C support including MCP, RDF, DCAT, DPROD, ODCS, and OpenLineage.  
+- **Native connectors at scale:** 130+ connectors for databases, warehouses, BI tools, pipelines, and ML systems ingest metadata automatically without custom integration work.  
+- **Built-in data quality and observability:** Test suites, profilers, and incident workflows run alongside catalog functions, so observability is part of the platform rather than a separate tool.  
+- **Column-level lineage and impact analysis:** Lineage is captured from SQL queries, ETL jobs, and orchestrators with column-level granularity to support downstream impact tracking.  
+- **Apache 2.0 licensed and community-driven:** Open source under Apache 2.0, with an active community contributing connectors, schemas, and integrations.
 
 <img src="/assets/learning-center/metadata-services/openmetadata-screenshot.png" alt="Open MetaData interface" width="800" height="523" />
 
@@ -177,13 +177,13 @@ Source: [Open MetaData](https://open-metadata.org/)
 
 Collate is the AI for Data platform built on OpenMetadata. It extends the open metadata standard with managed deployment, enterprise governance, conversational AI, code & no code agents, and an AI native experience.
 
-Key features include:
+**Key features include:**
 
-- Built on OpenMetadata: Collate inherits the open standard, native connectors, and ontology of OpenMetadata while adding features for enterprise product deployments at scale.  
-- Collate AI conversational interface: Users ask natural-language questions in web, Slack, or Teams and get governed, sourced answers grounded in their own data.  
-- AI agents ecosystem: Pre-built agents and a no-code AI Studio automate documentation, tiering, classification, and data quality at scale, with an AI SDK for custom AI applications.  
-- Memory, skills, and automations: Every approval, tag, and steward decision is captured as a permanent, attributable record that feeds back into governance reporting and agent learning.  
-- Data marketplace and data products: Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows.
+- **Built on OpenMetadata:** Collate inherits the open standard, native connectors, and ontology of OpenMetadata while adding features for enterprise product deployments at scale.  
+- **Collate AI conversational interface:** Users ask natural-language questions in web, Slack, or Teams and get governed, sourced answers grounded in their own data.  
+- **AI agents ecosystem:** Pre-built agents and a no-code AI Studio automate documentation, tiering, classification, and data quality at scale, with an AI SDK for custom AI applications.  
+- **Memory, skills, and automations:** Every approval, tag, and steward decision is captured as a permanent, attributable record that feeds back into governance reporting and agent learning.  
+- **Data marketplace and data products:** Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows.
 
 <img src="/assets/learning-center/metadata-services/collate-screenshot.png" alt="Collate AI Studio" width="800" height="561" />
 
