@@ -272,10 +272,8 @@ Google Cloud VM Metadata provides runtime information for Compute Engine VM inst
 * **Custom metadata keys:** Users can define their own key-value pairs at the VM or project level. Custom metadata is useful for passing configuration values, environment settings, or script parameters to VMs.  
 * **Startup and shutdown script support:** Metadata can be used by startup and shutdown scripts to configure VMs automatically. For example, a script can retrieve the VM’s external IP address or custom configuration values during boot.
 
+<img src="/assets/learning-center/metadata-services/google-cloud-screenshot.png" alt="Google Cloud interface" width="800" height="522" />
+
 ## Conclusion
 
 Metadata services are fundamental for managing the modern, distributed data estate. They establish trust, enable robust governance, and drive self-service analytics by centralizing context. By unifying schemas, lineage, and policies, these services ensure data is discoverable, compliant, and ready for advanced applications like AI agents and machine learning workflows.
-
-<img src="/assets/learning-center/metadata-services/google-cloud-screenshot.png" alt="Google Cloud interface" width="800" height="522" />
-
-Source: [Google Cloud](https://cloud.google.com/)

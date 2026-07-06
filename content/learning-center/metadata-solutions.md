@@ -211,16 +211,11 @@ OpenMetadata is an open-source metadata platform and AI context layer that unifi
 
 **Key features include:**
 
-* **Open metadata standard**  
-   OpenMetadata defines a formal schema for tables, dashboards, ML models, lineage, and ownership, with W3C support including MCP, RDF, DCAT, DPROD, ODCS, and OpenLineage. This shared ontology lets organizations integrate tools without translation layers and gives downstream systems a consistent way to consume metadata.  
-* **130+ native connectors**  
-   OpenMetadata ships with connectors for databases, warehouses, lakehouses, BI tools, pipelines, and ML systems. Each connector ingests deep metadata, including schemas, lineage, usage, and ownership, with no custom code required.  
-* **Built-in data quality and observability**  
-   Test suites, profilers, and incident workflows run alongside catalog functions. Quality scores, test results, and freshness signals become part of the metadata graph, making observability a property of the catalog rather than a separate tool.  
-* **Column-level lineage and impact analysis**  
-   Lineage is captured automatically from SQL queries, ETL/ELT pipelines, and orchestrators. Column-level granularity supports downstream impact analysis, debugging, and audit workflows across the data estate.  
-* **Apache 2.0 licensed and community-driven**  
-   OpenMetadata is fully open source under Apache 2.0. The community maintains connectors, schemas, and integrations, and a large contributor base provides extensions and customizations without vendor lock-in.
+* **Open metadata standard:** OpenMetadata defines a formal schema for tables, dashboards, ML models, lineage, and ownership, with W3C support including MCP, RDF, DCAT, DPROD, ODCS, and OpenLineage. This shared ontology lets organizations integrate tools without translation layers and gives downstream systems a consistent way to consume metadata.  
+* **130+ native connectors:** OpenMetadata ships with connectors for databases, warehouses, lakehouses, BI tools, pipelines, and ML systems. Each connector ingests deep metadata, including schemas, lineage, usage, and ownership, with no custom code required.  
+* **Built-in data quality and observability:** Test suites, profilers, and incident workflows run alongside catalog functions. Quality scores, test results, and freshness signals become part of the metadata graph, making observability a property of the catalog rather than a separate tool.  
+* **Column-level lineage and impact analysis:** Lineage is captured automatically from SQL queries, ETL/ELT pipelines, and orchestrators. Column-level granularity supports downstream impact analysis, debugging, and audit workflows across the data estate.  
+* **Apache 2.0 licensed and community-driven:** OpenMetadata is fully open source under Apache 2.0. The community maintains connectors, schemas, and integrations, and a large contributor base provides extensions and customizations without vendor lock-in.
 
 <img src="/assets/learning-center/metadata-solutions/openmetadata-screenshot.png" alt="OpenMetadata interface" width="800" height="523" />
 
@@ -232,16 +227,11 @@ DataHub is an open-source metadata platform that centralizes metadata from acros
 
 **Key features include:**
 
-* **Open-source and vendor-neutral**  
-   Released under the Apache 2.0 license, DataHub is community-driven and avoids vendor lock-in. Organizations can customize and extend the platform while benefiting from contributions across a large ecosystem.  
-* **Unified metadata graph**  
-   At its core, DataHub models metadata as a graph that connects datasets, pipelines, dashboards, users, and policies. This structure allows users to explore relationships, trace dependencies, and perform impact analysis across the entire data landscape.  
-* **Real-time and batch metadata ingestion**  
-   DataHub supports both streaming and batch ingestion methods to collect metadata. Streaming (via Kafka) enables near real-time updates, while batch ingestion ensures broad compatibility with systems that update less frequently.  
-* **Extensive Connector ecosystem**  
-   The platform includes 80+ production-ready connectors that integrate with data warehouses, BI tools, orchestration systems, and more. These connectors extract detailed metadata such as schema, lineage, usage patterns, and quality metrics.  
-* **Deep metadata extraction**  
-   Beyond basic metadata, DataHub captures column-level lineage, dataset profiling statistics, ownership information, and usage data. This depth improves understanding of how data is structured and used.
+* **Open-source and vendor-neutral:** Released under the Apache 2.0 license, DataHub is community-driven and avoids vendor lock-in. Organizations can customize and extend the platform while benefiting from contributions across a large ecosystem.  
+* **Unified metadata graph:** At its core, DataHub models metadata as a graph that connects datasets, pipelines, dashboards, users, and policies. This structure allows users to explore relationships, trace dependencies, and perform impact analysis across the entire data landscape.  
+* **Real-time and batch metadata ingestion:** DataHub supports both streaming and batch ingestion methods to collect metadata. Streaming (via Kafka) enables near real-time updates, while batch ingestion ensures broad compatibility with systems that update less frequently.  
+* **Extensive Connector ecosystem:** The platform includes 80+ production-ready connectors that integrate with data warehouses, BI tools, orchestration systems, and more. These connectors extract detailed metadata such as schema, lineage, usage patterns, and quality metrics.  
+* **Deep metadata extraction:** Beyond basic metadata, DataHub captures column-level lineage, dataset profiling statistics, ownership information, and usage data. This depth improves understanding of how data is structured and used.
 
 <img src="/assets/learning-center/metadata-solutions/datahub-screenshot.png" alt="DataHub interface" width="800" height="449" />
 
@@ -271,22 +261,17 @@ Collate is the AI for Data platform built on OpenMetadata. It extends the open m
 
 **Key features include:**
 
-* **Built on OpenMetadata**  
-   Collate inherits the open standard, ontology, and 130+ native connectors of OpenMetadata. It adds managed hosting, SSO, role-based access controls, SOC 2 Type II compliance, and enterprise SLAs for production deployments at scale.  
-* **Collate AI conversational interface**  
-   Users ask natural-language questions in web, Slack, or Teams and get governed, sourced answers grounded in their own data. Collate AI returns the metric, the source, the lineage, and the freshness, anchored to approved definitions rather than free-form interpretation.  
-* **Data marketplace and data products**  
-   Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows tied to owners and governance policies.  
-* **AI agents ecosystem**  
-   Pre-built agents automate documentation, tiering, classification, and data quality at scale, with a no-code AI Studio for custom agents and an AI SDK for custom AI applications. Feedback loops let steward decisions train future agent behavior.  
-* **Memory, skills, and automations**  
-   Every approval, classification, and annotation is captured as a permanent, attributable record. The audit trail supports compliance reporting and creates feedback loops that improve classifiers and documentation agents over time.
+* **Built on OpenMetadata:** Collate inherits the open standard, ontology, and 130+ native connectors of OpenMetadata. It adds managed hosting, SSO, role-based access controls, SOC 2 Type II compliance, and enterprise SLAs for production deployments at scale.  
+* **Collate AI conversational interface:** Users ask natural-language questions in web, Slack, or Teams and get governed, sourced answers grounded in their own data. Collate AI returns the metric, the source, the lineage, and the freshness, anchored to approved definitions rather than free-form interpretation.  
+* **Data marketplace and data products:** Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows tied to owners and governance policies.  
+* **AI agents ecosystem:** Pre-built agents automate documentation, tiering, classification, and data quality at scale, with a no-code AI Studio for custom agents and an AI SDK for custom AI applications. Feedback loops let steward decisions train future agent behavior.  
+* **Memory, skills, and automations:** Every approval, classification, and annotation is captured as a permanent, attributable record. The audit trail supports compliance reporting and creates feedback loops that improve classifiers and documentation agents over time.
 
 <img src="/assets/learning-center/metadata-solutions/collate-screenshot.png" alt="Collate AI Studio" width="800" height="561" />
 
 #### 5. Alation Metadata Management
 
-<img src="/assets/learning-center/metadata-solutions/alation-logo.png" alt="Alation logo" width="180" height="37" />
+<img src="/assets/learning-center/metadata-solutions/alation-logo.png" alt="Alation logo" width="220" height="45" />
 
 Alation Metadata Management is a platform to activate metadata by connecting, enriching, and operationalizing it for analytics and governance. It combines technical metadata with behavioral signals to help users discover, understand, and trust data. By integrating with commonly used tools and aligning with a central business glossary, Alation enables organizations to build a data fabric where metadata is continuously updated and accessible. 
 
@@ -318,37 +303,37 @@ Atlan is a metadata management platform focused on building and operationalizing
 
 #### 7. Collibra
 
-<img src="/assets/learning-center/metadata-solutions/collibra-logo.png" alt="Collibra logo" width="180" height="50" />
+<img src="/assets/learning-center/metadata-solutions/collibra-logo.png" alt="Collibra logo" width="220" height="61" />
 
 Collibra is a platform focused on unified governance for data and AI, providing a centralized layer to manage data context, policies, quality, and usage across complex environments. It emphasizes creating well-governed data that can support analytics and AI use cases at scale, including handling unstructured data and ensuring compliance across distributed systems.
 
 **Key features include:**
 
-* **Unified governance for data and AI**: Provides a centralized framework to manage data governance, AI governance, quality, lineage, and access across the organization.  
-* **Context and policy engine**: Acts as a core layer that connects data context with governance policies to ensure consistent control and usage.  
-* **Unstructured data processing**: Supports transformation of unstructured data (e.g., documents, emails) into structured, AI-ready assets through automated mapping, filtering, and enrichment.  
-* **Sensitive data detection and control**: Identifies and manages sensitive information at scale to support compliance and secure data usage.  
-* **Automated data refresh and reliability**: Keeps datasets up to date to maintain accuracy and reliability for analytics and AI systems.  
-* **AI system governance**: Enables cataloging, monitoring, and traceability of AI systems, helping reduce risk and improve oversight.  
-* **Regulatory compliance support**: Automates risk reporting and provides visibility across data sources to support audits and regulatory requirements.
+* **Unified governance for data and AI:** Provides a centralized framework to manage data governance, AI governance, quality, lineage, and access across the organization.  
+* **Context and policy engine:** Acts as a core layer that connects data context with governance policies to ensure consistent control and usage.  
+* **Unstructured data processing:** Supports transformation of unstructured data (e.g., documents, emails) into structured, AI-ready assets through automated mapping, filtering, and enrichment.  
+* **Sensitive data detection and control:** Identifies and manages sensitive information at scale to support compliance and secure data usage.  
+* **Automated data refresh and reliability:** Keeps datasets up to date to maintain accuracy and reliability for analytics and AI systems.  
+* **AI system governance:** Enables cataloging, monitoring, and traceability of AI systems, helping reduce risk and improve oversight.  
+* **Regulatory compliance support:** Automates risk reporting and provides visibility across data sources to support audits and regulatory requirements.
 
 <img src="/assets/learning-center/metadata-solutions/collibra-screenshot.png" alt="Collibra interface" width="800" height="583" />
 
 #### 8. Informatica
 
-<img src="/assets/learning-center/metadata-solutions/informatica-logo.png" alt="Informatica logo" width="180" height="50" />
+<img src="/assets/learning-center/metadata-solutions/informatica-logo.png" alt="Informatica logo" width="220" height="61" />
 
 Informatica provides a cloud-based platform for managing the data lifecycle, combining metadata management with data integration, quality, governance, and AI capabilities. Its Intelligent Data Management Cloud (IDMC) uses AI to automate processes, improve data accessibility, and ensure that data is trusted, secure, and ready for analytics and AI workloads across hybrid and multi-cloud environments.
 
 **Key features include:**
 
-* **Intelligent Data Management Cloud (IDMC)**: A unified platform that manages data across its lifecycle, from ingestion to governance and consumption.  
-* **AI-powered automation (CLAIRE AI)**: Uses AI to automate metadata-driven tasks, simplify data access, and improve operational efficiency.  
-* **Metadata-aware connectivity**: Supports a large number of connections across systems, enabling consistent metadata integration across environments.  
-* **End-to-end data management**: Combines data integration, quality, governance, MDM, and metadata management in a single platform.  
-* **Multi-cloud and hybrid support**: Operates across distributed environments with scalability and flexibility.  
-* **Data quality and observability**: Embeds data quality controls directly into workflows to ensure reliable and trusted data.  
-* **Security and compliance**: Provides enterprise-grade controls to manage data privacy, access, and regulatory requirements.
+* **Intelligent Data Management Cloud (IDMC):** A unified platform that manages data across its lifecycle, from ingestion to governance and consumption.  
+* **AI-powered automation (CLAIRE AI):** Uses AI to automate metadata-driven tasks, simplify data access, and improve operational efficiency.  
+* **Metadata-aware connectivity:** Supports a large number of connections across systems, enabling consistent metadata integration across environments.  
+* **End-to-end data management:** Combines data integration, quality, governance, MDM, and metadata management in a single platform.  
+* **Multi-cloud and hybrid support:** Operates across distributed environments with scalability and flexibility.  
+* **Data quality and observability:** Embeds data quality controls directly into workflows to ensure reliable and trusted data.  
+* **Security and compliance:** Provides enterprise-grade controls to manage data privacy, access, and regulatory requirements.
 
 <img src="/assets/learning-center/metadata-solutions/informatica-screenshot.png" alt="Informatica interface" width="800" height="287" />
 
