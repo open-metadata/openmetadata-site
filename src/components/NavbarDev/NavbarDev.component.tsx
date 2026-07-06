@@ -200,6 +200,13 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   />
                 </li>
+                <li>
+                  <ParamLink 
+                    href="/learning-center"
+                    name="Learning Center" 
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  />
+                </li>
               </ul>
             </li>
             <li className="mb-4 lg:mb-0">
