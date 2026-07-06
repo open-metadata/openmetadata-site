@@ -7,18 +7,30 @@ import { SearchIcon } from "@/components/Icons/Search";
 
 export const TABS = [
   {
+    name: "AI Readiness",
+    icon: SearchIcon,
+    useCases: {
+      header: "Give your AI agents trusted, understood data",
+      description:
+        "AI agents are only as good as the data they act on. OpenMetadata's Semantic Context Graph gives every agent the context it needs — what a dataset means, where it came from, and whether it can be trusted — accessible with a native MCP server and AI SDK.",
+      imgSrc: "/assets/ai-readiness.webp",
+      cases: [
+        "MCP server for direct agent-to-context integration",
+        "AI SDK lets external agents call OpenMetadata capabilities programmatically",
+        "Context Center to centralize articles, documents, and memories for AI and humans",
+      ],
+    },
+  },
+  {
     name: "Discovery",
     icon: SearchIcon,
     useCases: {
-      header: {
-        text: "Enable teams to find ",
-        highlightedText: "key data assets",
-      },
+      header: "Help people and agents find key data assets",
       description:
-        "Get the right data to the right people to do their work. OpenMetadata delivers a single source of truth for all your data sources, data pipelines, and data products.",
+        "Get the right data to the right people and agents to do their work. OpenMetadata delivers a single source of truth for all your data sources, data pipelines, and data products, with rich semantic context attached to every asset.",
       imgSrc: "/assets/discovery.webp",
       cases: [
-        "100+ Data Connectors for all your data sources",
+        "130+ Data Connectors for all your data sources",
         "Search, facet, and preview across your data estate",
         "Collaborate with other data practitioners",
       ],
@@ -28,10 +40,7 @@ export const TABS = [
     name: "Lineage",
     icon: FingerPrintIcon,
     useCases: {
-      header: {
-        text: "Know where your ",
-        highlightedText: "data comes from",
-      },
+      header: "Open Source Data Catalog: Know where your data comes from",
       description:
         "Column-level lineage maps help you understand your overall data flow. Tier critical and sensitive data to manage its quality, observability, and governance.",
       imgSrc: "/assets/lineage.webp",
@@ -46,10 +55,7 @@ export const TABS = [
     name: "Observability",
     icon: EyeIcon,
     useCases: {
-      header: {
-        text: "See changes to ",
-        highlightedText: "your data sooner",
-      },
+      header: "See changes to your data sooner",
       description:
         "Be the first to know about data schema changes, volume fluctuation, data distribution, pipeline issues, and test failures in order to proactively get ahead of the problem.",
       imgSrc: "/assets/observability.webp",
@@ -64,10 +70,7 @@ export const TABS = [
     name: "Quality",
     icon: QualityIcon,
     useCases: {
-      header: {
-        text: "Trusted and reliable data ",
-        highlightedText: "for the business",
-      },
+      header: "Trusted and reliable AI data management for the business",
       description:
         "Proactively manage the data quality of your most business-critical data assets and ensure they receive priority operations and infrastructure.",
       imgSrc: "/assets/quality.webp",
@@ -82,10 +85,7 @@ export const TABS = [
     name: "Collaboration",
     icon: CollaborationIcon,
     useCases: {
-      header: {
-        text: "Transform your data ",
-        highlightedText: "culture and teams",
-      },
+      header: "Transform your data culture and teams",
       description:
         "Shared workspaces and workflows foster shared responsibilities and ownership among data producers and consumers across your organization.",
       imgSrc: "/assets/collaboration.webp",
@@ -100,10 +100,7 @@ export const TABS = [
     name: "Governance",
     icon: GovernanceIcon,
     useCases: {
-      header: {
-        text: "Collectively manage ",
-        highlightedText: "risk and compliance",
-      },
+      header: "Collectively manage risk and compliance",
       description:
         "Gain visibility and control across your entire data estate with a centralized metadata platform for managing data governance, compliance, security, and privacy.",
       imgSrc: "/assets/governance.webp",

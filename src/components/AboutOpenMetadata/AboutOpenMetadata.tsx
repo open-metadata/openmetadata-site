@@ -88,7 +88,7 @@ const AboutOpenMetadata = () => {
               >
                 <div className="bg-gradient-to-tl from-[#0B3547] to-[#176B8F] flex justify-center items-center h-[180px] rounded-t-sm">
                   <Image
-                    className="mx-auto w-[87%] h-[150px] rounded-md"
+                    className="mx-auto w-[92%] h-[150px] rounded-md"
                     src={item.image}
                     alt={item.header}
                     width={100}

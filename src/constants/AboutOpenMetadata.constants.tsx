@@ -2,10 +2,10 @@ const IMAGE_ROUTE = '/assets/aboutOpenMetadata'
 
 export const ABOUT_OPENMETADATA = [
     {
-        image: `${IMAGE_ROUTE}/release-1.12.png`,
+        image: `${IMAGE_ROUTE}/release-1.13.png`,
         header: 'Product News',
-        description: 'Announcing OpenMetadata Release 1.12.0',
-        href: 'https://blog.open-metadata.org/announcing-openmetadata-1-12-9e15b66e7748',
+        description: 'Announcing OpenMetadata Release 1.13.0',
+        href: 'https://blog.open-metadata.org/announcing-openmetadata-1-13-123d66609468',
         linkText: "Read",
         isExternal: true
     },
@@ -36,8 +36,8 @@ export const ABOUT_OPENMETADATA = [
     {
         image: `${IMAGE_ROUTE}/videos-img.webp`,
         header: 'Video',
-        description: 'September Community Meeting',
-        href: 'https://www.youtube.com/watch?v=w1GBD1bU1B8',
+        description: 'April 2026 Community Meeting',
+        href: 'https://www.youtube.com/watch?v=7zJ4iiG8sQo',
         linkText: "Watch",
         isExternal: true
     },

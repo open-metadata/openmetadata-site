@@ -4,7 +4,7 @@ import ParamLink from "../ParamLink";
 
 const TryOpenMetadata = () => {
   return (
-    <div className="shadow-bg mt-20" id="try-openmetadata">
+    <div className="shadow-bg mt-20 scroll-mt-32" id="try-openmetadata">
       <div className="custom-container py-16 px-4 md:px-16 xl:px-32">
         <h3 className="text-[#292929] font-medium tracking-[-0.02em] text-center text-[32px] leading-[40px] max-w-[85%] mx-auto lg:text-[48px]">
           Different ways to try out{" "}

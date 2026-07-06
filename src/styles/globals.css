@@ -49,8 +49,22 @@ p{
   @apply max-w-[1440px] mx-auto;
 }
 
+.usecase-gradient {
+  background: linear-gradient(360deg, #AD94F3 -63.65%, #FFFFFF 51.76%);
+}
+
+@media (min-width: 1500px) {
+  .hero-header {
+    background: linear-gradient(360deg, #8E6CED -63.65%, #FFFFFF 51.76%);
+  }
+}
+
 .shadow-bg {
   @apply bg-gradient-to-b from-[#F1EDFD] to-white
+}
+
+.summit-bg {
+  background: linear-gradient(270deg, #ECE5FF 39.9%, #7147E8 114.41%);
 }
 
 .nav-strip-btn {
@@ -60,23 +74,7 @@ p{
   text-underline-offset: 3px;
 }
 
-.side-block-big {
-  display: none;
-}
-
-@media (min-width: 1501px) {
-  .side-block-big {
-    display: block;
-  }
-}
-
 @media (max-width: 799px) {
-  .side-block {
-    display: none;
-  }
-}
-
-@media (min-width: 1500px) {
   .side-block {
     display: none;
   }
@@ -84,12 +82,12 @@ p{
 
 @media (min-width: 1024px) {
   .nav-strip-btn {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #162044;
     text-decoration: none;
   }
 }
 
-@media (min-width: 800px) and (max-width: 1500px) {
+@media (min-width: 800px) {
   .side-block {
     display: block;
   }
@@ -155,6 +153,14 @@ p{
     max-width: 1140px !important;
   }
 }
+@keyframes live-ring {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+  50% { transform: translate(-50%, -50%) scale(1.8); opacity: 0; }
+}
+.animate-live-ring {
+  animation: live-ring 1.5s ease-in-out infinite;
+}
+
 @media (min-width: 1500px) {
   .container-xxl,
   .container-xl,
@@ -250,4 +256,59 @@ p{
 .lc-article-body .lc-strong {
     font-weight: 700 !important;
     color: #000 !important;
+}
+
+.summit-banner-form .hs-form {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0px !important;
+}
+
+.summit-banner-form {
+    width: 100%;
+}
+
+.summit-banner-form input {
+    padding: 10px 14px;
+    border-radius: 8px;
+    outline: none;
+    color: black;
+    width: 100% !important;
+}
+
+.summit-banner-form .hs-error-msg {
+    color: rgb(252, 163, 163);
+    font-size: 12px;
+}
+
+.summit-banner-form fieldset {
+    margin-bottom: 22px !important;
+    width: 100%;
+    display: flex;
+    gap: 16px !important;
+}
+
+.summit-banner-form fieldset>.hs-form-field {
+    flex: 1 1 0%;
+}
+
+.summit-banner-form fieldset .input {
+    margin-right: 0px !important;
+}
+
+.summit-banner-form fieldset:has(> .hs-form-field[style*="display: none"]) {
+    display: none !important;
+}
+
+.summit-banner-form input[type="submit"] {
+    background-color: #FBE200;
+    width: 100%;
+    margin-top: 12px;
+    color: #181D27;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.summit-banner-form input[type="submit"]:hover {
+    background-color: #FFDA33;
 }

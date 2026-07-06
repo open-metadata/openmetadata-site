@@ -6,8 +6,6 @@ import path from "path";
 import matter from "gray-matter";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
-import NavbarDev from "../components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "../components/NavbarDev/NavbarStrip.component";
 import FooterDev from "../components/FooterDev/FooterDev";
 import { mdxComponents } from "../components/MDXComponents";
 import Image from "next/image";
@@ -312,11 +310,6 @@ const ProductUpdates = ({ versions, versionData }: ProductUpdatesProps) => {
           }
         `}</style>
       </Head>
-
-      <div className="mx-auto fixed top-0 w-full z-[1030]">
-        <NavbarDev onClick={() => {}} />
-        <NavbarStrip />
-      </div>
 
       <main className="mt-36 bg-white min-h-screen">
         <div className="max-w-[1440px] mx-auto px-4 md:px-10 xl:px-20 py-8 md:py-12">

@@ -1,7 +1,5 @@
 import FooterDev from "@/components/FooterDev/FooterDev";
 import HubspotForm from "@/components/HubspotForm";
-import NavbarDev from "@/components/NavbarDev/NavbarDev.component";
-import NavbarStrip from "@/components/NavbarDev/NavbarStrip.component";
 import ParamLink from "@/components/ParamLink";
 import {
   CUSTOMER_GALLERY,
@@ -9,7 +7,6 @@ import {
   INDUSTRY_LIST,
 } from "@/constants/CustomerGallery.constants";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import { useState } from "react";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
@@ -21,15 +18,10 @@ export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
 }
 
 const CaseStudiesPage = () => {
-  const router = useRouter();
   const [activeIndustry, setActiveIndustry] = useState<string>("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
   const [customers, setCustomers] = useState(CUSTOMER_GALLERY);
   const [inputValue, setInputValue] = useState<string>("");
-
-  const handleTryOpenMetadataClick = () => {
-    router.push("/#try-openmetadata");
-  };
 
   const handleIndustryFilter = (industry: string) => {
     setInputValue("");
@@ -58,10 +50,6 @@ const CaseStudiesPage = () => {
 
   return (
     <div>
-      <div className="mx-auto fixed top-0 w-full z-[1030]">
-        <NavbarDev onClick={handleTryOpenMetadataClick} />
-        <NavbarStrip />
-      </div>
       <div className="mt-20 md:mt-24 lg:mt-32">
         <div className="case-study-page">
           <div className="max-w-[1440px] mx-auto py-28 md:py-20 px-5 md:px-10 xl:px-20">
@@ -115,7 +103,7 @@ const CaseStudiesPage = () => {
                         {customer.buttonText}
                       </div>
                     </ParamLink>
-                    {customer.button2Text && (
+                    {customer.button2Text && customer.url2 && (
                       <ParamLink href={customer.url2} target={customer.isExternal2 ? '_blank' : '_self'}>
                         <div className="mt-5 mb-2 rounded-[3px] font-medium tracking-[-0.02em] mx-2 border-2 border-[#7147E8] max-w-fit px-4 py-2 text-[#7147E8] whitespace-nowrap">
                           {customer.button2Text}
