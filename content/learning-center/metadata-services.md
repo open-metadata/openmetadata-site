@@ -173,7 +173,7 @@ OpenMetadata is an open-source metadata platform and AI context layer that organ
 Source: [Open MetaData](https://open-metadata.org/)
 #### 2. Collate
 
-<img src="/assets/learning-center/metadata-services/collate-logo.png" alt="Collate logo" width="153" height="80" />
+<img src="/assets/learning-center/metadata-services/collate-logo.png" alt="Collate logo" width="220" height="36" />
 
 Collate is the AI for Data platform built on OpenMetadata. It extends the open metadata standard with managed deployment, enterprise governance, conversational AI, code & no code agents, and an AI native experience.
 

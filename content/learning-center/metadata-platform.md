@@ -133,7 +133,7 @@ OpenMetadata is an open-source metadata platform and AI context layer that unifi
 
 #### 2. Collate
 
-<img src="/assets/learning-center/metadata-platform/collate-logo.png" alt="Collate logo" width="124" height="90" />
+<img src="/assets/learning-center/metadata-platform/collate-logo.png" alt="Collate logo" width="220" height="36" />
 
 Collate is the AI for Data platform built on OpenMetadata. It extends the open metadata standard with managed deployment, enterprise governance, conversational AI, code & no code agents, and an AI native experience.
 
@@ -181,7 +181,7 @@ DataHub is an open source metadata platform built around a scalable metadata gra
 
 #### 5. Atlan Data Catalog
 
-<img src="/assets/learning-center/metadata-platform/atlan-logo.png" alt="Atlan logo" width="142" height="80" />
+<img src="/assets/learning-center/metadata-platform/atlan-logo.png" alt="Atlan logo" width="152" height="80" />
 
 Atlan is a data catalog that connects metadata from data warehouses, BI tools, pipelines, and business applications into a unified enterprise data graph. This graph captures technical and business context, enabling users to discover and understand data assets. Atlan includes AI-assisted documentation and governance workflows.
 

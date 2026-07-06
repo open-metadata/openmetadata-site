@@ -228,7 +228,7 @@ Apache Atlas is an open-source metadata management and governance platform that 
 
 #### 4. Collate
 
-<img src="/assets/learning-center/metadata-management-tools/collate-logo.png" alt="Collate logo" width="153" height="80" />
+<img src="/assets/learning-center/metadata-management-tools/collate-logo.png" alt="Collate logo" width="220" height="36" />
 
 Collate is the AI for Data platform built on OpenMetadata. It extends the open metadata standard with managed deployment, enterprise governance, conversational AI, code & no code agents, and an AI native experience.
 
