@@ -271,7 +271,7 @@ Collate is the AI for Data platform built on OpenMetadata. It extends the open m
 
 #### 5. Alation Metadata Management
 
-<img src="/assets/learning-center/metadata-solutions/alation-logo.png" alt="Alation logo" width="220" height="45" />
+<img src="/assets/learning-center/metadata-solutions/alation-logo.svg" alt="Alation logo" width="220" height="35" />
 
 Alation Metadata Management is a platform to activate metadata by connecting, enriching, and operationalizing it for analytics and governance. It combines technical metadata with behavioral signals to help users discover, understand, and trust data. By integrating with commonly used tools and aligning with a central business glossary, Alation enables organizations to build a data fabric where metadata is continuously updated and accessible. 
 
@@ -321,7 +321,7 @@ Collibra is a platform focused on unified governance for data and AI, providing 
 
 #### 8. Informatica
 
-<img src="/assets/learning-center/metadata-solutions/informatica-logo.png" alt="Informatica logo" width="220" height="61" />
+<img src="/assets/learning-center/metadata-solutions/informatica-logo.png" alt="Informatica logo" width="220" height="80" />
 
 Informatica provides a cloud-based platform for managing the data lifecycle, combining metadata management with data integration, quality, governance, and AI capabilities. Its Intelligent Data Management Cloud (IDMC) uses AI to automate processes, improve data accessibility, and ensure that data is trusted, secure, and ready for analytics and AI workloads across hybrid and multi-cloud environments.
 
