@@ -219,11 +219,12 @@ Apache Atlas is an open metadata and governance platform for managing, classifyi
 * **Dynamic data classification:** Supports classifications such as PII or sensitive data with custom attributes.  
 * **Classification propagation through lineage:** Propagates classifications automatically along data lineage.
 
-### Cloud Instance Metadata
-
 <img src="/assets/learning-center/metadata-services/apache-atlas-screenshot.png" alt="Apache Atlas interface" width="800" height="375" />
 
 Source: [Apache Atlas](https://atlas.apache.org/)
+
+### Cloud Instance Metadata
+
 #### 5. AWS EC2 Instance Metadata Service
 
 <img src="/assets/learning-center/metadata-services/aws-ec2-logo.png" alt="Amazon Web Services logo" width="185" height="80" />
