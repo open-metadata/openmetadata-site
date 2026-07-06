@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import Image from 'next/image'
 import FooterDev from '@/components/FooterDev/FooterDev'
 import NavbarDev from '@/components/NavbarDev/NavbarDev.component'
-import NavbarStrip from '@/components/NavbarDev/NavbarStrip.component'
 import ParamLink from '@/components/ParamLink'
 import Filters from '@/components/learning-center/Filters'
 import { LEARNING_CENTER_DATA } from '@/constants/learningCenter.constant'
@@ -80,7 +79,6 @@ const LearningCenterPage = () => {
         <div>
             <div className="mx-auto fixed top-0 w-full z-[1030]">
                 <NavbarDev onClick={() => router.push('/#try-openmetadata')} />
-                <NavbarStrip />
             </div>
             <div className="bg-gradient-to-t from-[#f2edfd] to-white mt-20 md:mt-24 lg:mt-32">
                 {/* Hero */}

@@ -7,7 +7,6 @@ import { serialize } from 'next-mdx-remote/serialize'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import NavbarDev from '@/components/NavbarDev/NavbarDev.component'
-import NavbarStrip from '@/components/NavbarDev/NavbarStrip.component'
 import FooterDev from '@/components/FooterDev/FooterDev'
 import ParamLink from '@/components/ParamLink'
 import DetailsPageRightPanel from '@/components/learning-center/DetailsPageRightPanel'
@@ -102,7 +101,6 @@ const LearningCenterArticle = ({ article, mdxSource, isRightPanelVisible, link }
         <div>
             <div className="mx-auto fixed top-0 w-full z-[1030]">
                 <NavbarDev onClick={() => router.push('/#try-openmetadata')} />
-                <NavbarStrip />
             </div>
 
             <div className="mt-20 md:mt-24 lg:mt-32 bg-gradient-to-t from-[#f2edfd] to-white min-h-screen">
