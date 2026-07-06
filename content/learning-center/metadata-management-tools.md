@@ -56,13 +56,13 @@ As organizations adopt retrieval-augmented generation (RAG) and agent-based work
 
 Metadata management tools address operational and governance challenges that come with growing data environments. They provide structure and visibility, making it easier for teams to find, trust, and use data:
 
-* **Improved data discovery**: Centralized metadata catalogs make it easier for users to find relevant data assets. Search, tagging, and classification reduce time spent looking for data and increase reuse.  
-* **Stronger data governance**: These tools enforce consistent policies for data ownership, access, and usage.  
-* **Better data quality**: Metadata provides context about data sources, transformations, and usage.  
-* **End-to-end data lineage**: Tracking how data moves across systems helps users understand dependencies and impacts.  
-* **Reduced data silos**: By integrating metadata across systems, these tools create a unified view of the data landscape.  
-* **Operational efficiency**: Automation of metadata collection and updates reduces manual effort.  
-* **Enhanced decision-making**: With clear, reliable metadata, both technical and business users can make informed decisions faster.
+* **Improved data discovery:** Centralized metadata catalogs make it easier for users to find relevant data assets. Search, tagging, and classification reduce time spent looking for data and increase reuse.  
+* **Stronger data governance:** These tools enforce consistent policies for data ownership, access, and usage.  
+* **Better data quality:** Metadata provides context about data sources, transformations, and usage.  
+* **End-to-end data lineage:** Tracking how data moves across systems helps users understand dependencies and impacts.  
+* **Reduced data silos:** By integrating metadata across systems, these tools create a unified view of the data landscape.  
+* **Operational efficiency:** Automation of metadata collection and updates reduces manual effort.  
+* **Enhanced decision-making:** With clear, reliable metadata, both technical and business users can make informed decisions faster.
 
 ## Metadata Management for AI: Context for RAG and Agents
 
@@ -178,77 +178,101 @@ Buyers often evaluate metadata tools by how quickly they deliver value and how w
 
 #### 1. OpenMetadata
 
+<img src="/assets/learning-center/metadata-management-tools/openmetadata-logo.png" alt="OpenMetadata logo" width="90" height="90" />
+
 OpenMetadata is an open-source metadata platform and AI context layer that unifies technical and business metadata into a single, queryable knowledge graph. It uses a formal ontology and 130+ native connectors to address fragmentation across modern data stacks, giving teams one place to discover, govern, and trust their data.
 
 **Key features include:**
 
-* **Open metadata standard**: Defines a formal schema for tables, dashboards, ML models, lineage, and ownership, with W3C support including MCP, RDF, DCAT, DPROD, ODCS, and OpenLineage, so vendors and downstream tools implement a common ontology consistently.  
-* **130+ native connectors**: Ships with connectors for databases, warehouses, BI tools, pipelines, and ML systems that ingest schema, lineage, ownership, and usage without custom code.  
-* **Built-in quality and observability**: Test suites, profilers, and incident workflows run alongside catalog functions, so quality and freshness are part of the same metadata graph.  
-* **Column-level lineage**: Captures lineage from SQL queries, ETL pipelines, and orchestrators at column-level granularity for impact analysis and debugging.  
-* **Apache 2.0 licensed**: Fully open source with an active community contributing connectors, schemas, and integrations across hundreds of platforms.
+* **Open metadata standard:** Defines a formal schema for tables, dashboards, ML models, lineage, and ownership, with W3C support including MCP, RDF, DCAT, DPROD, ODCS, and OpenLineage, so vendors and downstream tools implement a common ontology consistently.  
+* **130+ native connectors:** Ships with connectors for databases, warehouses, BI tools, pipelines, and ML systems that ingest schema, lineage, ownership, and usage without custom code.  
+* **Built-in quality and observability:** Test suites, profilers, and incident workflows run alongside catalog functions, so quality and freshness are part of the same metadata graph.  
+* **Column-level lineage:** Captures lineage from SQL queries, ETL pipelines, and orchestrators at column-level granularity for impact analysis and debugging.  
+* **Apache 2.0 licensed:** Fully open source with an active community contributing connectors, schemas, and integrations across hundreds of platforms.
+
+<img src="/assets/learning-center/metadata-management-tools/openmetadata-screenshot.png" alt="OpenMetadata interface" width="800" height="523" />
 
 #### 2. DataHub
+
+<img src="/assets/learning-center/metadata-management-tools/datahub-logo.png" alt="DataHub logo" width="152" height="80" />
 
 DataHub is an open-source metadata management platform that serves as a central layer for connecting, organizing, and governing metadata across modern data stacks. It addresses fragmentation by integrating metadata from multiple systems into a unified, continuously updated graph. This allows teams to understand how data assets relate to each other, track lineage, and enforce governance policies. 
 
 **Key features include:**
 
-* **Unified metadata graph**: Builds a graph-based model that captures relationships between datasets, pipelines, dashboards, and users.  
-* **Real-time and batch metadata ingestion**: Supports streaming and batch ingestion models to collect metadata from connected systems.  
-* **Extensive connector ecosystem**: Provides over 80 production-ready connectors for systems like data warehouses, BI tools, and pipelines.  
-* **Advanced data discovery**: Includes a universal search capability to locate datasets, dashboards, or other assets across connected platforms.  
-* **Fine-grained data lineage**: Tracks data flow at a detailed level, including column-level lineage.
+* **Unified metadata graph:** Builds a graph-based model that captures relationships between datasets, pipelines, dashboards, and users.  
+* **Real-time and batch metadata ingestion:** Supports streaming and batch ingestion models to collect metadata from connected systems.  
+* **Extensive connector ecosystem:** Provides over 80 production-ready connectors for systems like data warehouses, BI tools, and pipelines.  
+* **Advanced data discovery:** Includes a universal search capability to locate datasets, dashboards, or other assets across connected platforms.  
+* **Fine-grained data lineage:** Tracks data flow at a detailed level, including column-level lineage.
+
+<img src="/assets/learning-center/metadata-management-tools/datahub-screenshot.png" alt="DataHub interface" width="800" height="449" />
 
 #### 3. Apache Atlas
+
+<img src="/assets/learning-center/metadata-management-tools/apache-atlas-logo.png" alt="Apache Atlas logo" width="120" height="90" />
 
 Apache Atlas is an open-source metadata management and governance platform that helps organizations manage data assets across Hadoop and enterprise ecosystems. It provides a scalable and extensible framework for building a centralized metadata catalog, defining data classifications, and enforcing governance policies. 
 
 **Key features include:**
 
-* **Extensible metadata model**: Supports predefined metadata types for Hadoop and non-Hadoop systems, while allowing users to define custom types.  
-* **Metadata entities and relationships**: Represents real-world data objects as entities, capturing metadata and relationships between them.  
-* **Comprehensive REST APIs**: Provides APIs to create, manage, and query metadata types and entities.  
-* **Dynamic data classification**: Allows creation of custom classifications such as PII, sensitive data, or data quality tags.  
-* **Classification propagation**: Automatically propagates classifications through data lineage.
+* **Extensible metadata model:** Supports predefined metadata types for Hadoop and non-Hadoop systems, while allowing users to define custom types.  
+* **Metadata entities and relationships:** Represents real-world data objects as entities, capturing metadata and relationships between them.  
+* **Comprehensive REST APIs:** Provides APIs to create, manage, and query metadata types and entities.  
+* **Dynamic data classification:** Allows creation of custom classifications such as PII, sensitive data, or data quality tags.  
+* **Classification propagation:** Automatically propagates classifications through data lineage.
+
+<img src="/assets/learning-center/metadata-management-tools/apache-atlas-screenshot.png" alt="Apache Atlas interface" width="800" height="375" />
 
 ### Enterprise Metadata Tools
 
 #### 4. Collate
 
+<img src="/assets/learning-center/metadata-management-tools/collate-logo.png" alt="Collate logo" width="153" height="80" />
+
 Collate is the AI for Data platform built on OpenMetadata. It extends the open metadata standard with managed deployment, enterprise governance, conversational AI, code & no code agents, and an AI native experience.
 
 **Key features include:**
 
-* **Built on OpenMetadata**: Inherits the open standard, 130+ connectors, and ontology of OpenMetadata while adding managed hosting, SSO, RBAC, and enterprise SLAs.  
-* **Collate AI conversational interface**: Users ask natural-language questions in web, Slack, or Teams and get governed, sourced answers grounded in their own data.  
-* **Data marketplace and data products**: Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows.  
-* **AI agents ecosystem**: Pre-built agents and a no-code AI Studio automate documentation, tiering, classification, and data quality at scale, with an AI SDK for custom AI applications.  
-* **Memory, skills, and automations**: Every approval, tag, and steward decision is captured as a permanent, attributable record that feeds back into governance reporting and agent learning.
+* **Built on OpenMetadata:** Inherits the open standard, 130+ connectors, and ontology of OpenMetadata while adding managed hosting, SSO, RBAC, and enterprise SLAs.  
+* **Collate AI conversational interface:** Users ask natural-language questions in web, Slack, or Teams and get governed, sourced answers grounded in their own data.  
+* **Data marketplace and data products:** Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows.  
+* **AI agents ecosystem:** Pre-built agents and a no-code AI Studio automate documentation, tiering, classification, and data quality at scale, with an AI SDK for custom AI applications.  
+* **Memory, skills, and automations:** Every approval, tag, and steward decision is captured as a permanent, attributable record that feeds back into governance reporting and agent learning.
+
+<img src="/assets/learning-center/metadata-management-tools/collate-screenshot.png" alt="Collate AI Studio" width="800" height="561" />
 
 #### 5. Alation Metadata Management
+
+<img src="/assets/learning-center/metadata-management-tools/alation-logo.svg" alt="Alation logo" width="220" height="35" />
 
 Alation Metadata Management is a platform that activates and operationalizes metadata across an organization’s data ecosystem. It enriches metadata with behavioral insights, allowing teams to understand how data is used and accessed. By connecting metadata from multiple sources and aligning it with a central business glossary, Alation helps organizations support analytics, governance, and decision-making.
 
 **Key features include:**
 
-* **Active metadata and data fabric integration**: Connects and enriches metadata from various data sources and aligns technical metadata with a central business glossary.  
-* **Behavioral metadata analysis**: Uses a Behavioral Analysis Engine to capture usage patterns such as data popularity, search relevance, and access trends.  
-* **Embedded metadata in workflows**: Surfaces metadata within tools like Slack, Microsoft Teams, and Tableau.  
-* **Improved data discovery and trust**: Provides an interface to search and evaluate data assets.  
-* **End-to-end data lineage**: Tracks how data moves and transforms across systems over time.
+* **Active metadata and data fabric integration:** Connects and enriches metadata from various data sources and aligns technical metadata with a central business glossary.  
+* **Behavioral metadata analysis:** Uses a Behavioral Analysis Engine to capture usage patterns such as data popularity, search relevance, and access trends.  
+* **Embedded metadata in workflows:** Surfaces metadata within tools like Slack, Microsoft Teams, and Tableau.  
+* **Improved data discovery and trust:** Provides an interface to search and evaluate data assets.  
+* **End-to-end data lineage:** Tracks how data moves and transforms across systems over time.
+
+<img src="/assets/learning-center/metadata-management-tools/alation-screenshot.png" alt="Alation interface" width="800" height="451" />
 
 #### 6. Collibra Data Catalog
+
+<img src="/assets/learning-center/metadata-management-tools/collibra-logo.png" alt="Collibra logo" width="180" height="80" />
 
 Collibra Data Catalog is a metadata management platform that helps organizations build a centralized and trusted view of their data landscape. It focuses on improving data clarity, consistency, and accessibility by combining automated metadata curation, business context, and governance signals.
 
 **Key features include:**
 
-* **Centralized data inventory**: Creates a unified view of data assets across the organization.  
-* **Broad data source integration**: Connects to over 100 data sources, including cloud platforms, databases, BI tools, enterprise applications, and legacy systems.  
-* **Automated data discovery and classification**: Uses automated classification to label data, including sensitive types like PII and PHI.  
-* **Data profiling and insight generation**: Provides visibility into data structure and patterns through profiling statistics and data samples.  
-* **Automated curation and enrichment**: Automatically generates descriptions and enriches metadata with context.
+* **Centralized data inventory:** Creates a unified view of data assets across the organization.  
+* **Broad data source integration:** Connects to over 100 data sources, including cloud platforms, databases, BI tools, enterprise applications, and legacy systems.  
+* **Automated data discovery and classification:** Uses automated classification to label data, including sensitive types like PII and PHI.  
+* **Data profiling and insight generation:** Provides visibility into data structure and patterns through profiling statistics and data samples.  
+* **Automated curation and enrichment:** Automatically generates descriptions and enriches metadata with context.
+
+<img src="/assets/learning-center/metadata-management-tools/collibra-screenshot.png" alt="Collibra interface" width="800" height="583" />
 
 ## Conclusion
 
