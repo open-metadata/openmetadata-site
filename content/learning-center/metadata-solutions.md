@@ -286,6 +286,8 @@ Collate is the AI for Data platform built on OpenMetadata. It extends the open m
 
 #### 5. Alation Metadata Management
 
+<img src="/assets/learning-center/metadata-solutions/alation-logo.png" alt="Alation logo" width="180" height="37" />
+
 Alation Metadata Management is a platform to activate metadata by connecting, enriching, and operationalizing it for analytics and governance. It combines technical metadata with behavioral signals to help users discover, understand, and trust data. By integrating with commonly used tools and aligning with a central business glossary, Alation enables organizations to build a data fabric where metadata is continuously updated and accessible. 
 
 **Key features include:**
@@ -296,7 +298,11 @@ Alation Metadata Management is a platform to activate metadata by connecting, en
 * **Improved data discovery and trust:** Users can find and evaluate data assets based on context, usage, and documentation. Behavioral signals and metadata enrichment help users select reliable datasets.  
 * **Embedded metadata in everyday tools:** Bi-directional connectors surface metadata directly within tools like Slack, Microsoft Teams, and Tableau. This allows users to access governed data context without leaving their workflows.
 
+<img src="/assets/learning-center/metadata-solutions/alation-screenshot.png" alt="Alation interface" width="800" height="451" />
+
 #### 6. Atlan
+
+<img src="/assets/learning-center/metadata-solutions/atlan-logo.png" alt="Atlan logo" width="222" height="80" />
 
 Atlan is a metadata management platform focused on building and operationalizing a shared context layer for data and AI systems. It helps organizations capture business logic, data meaning, and institutional knowledge, and make that context accessible across tools and AI agents.
 
@@ -308,7 +314,11 @@ Atlan is a metadata management platform focused on building and operationalizing
 * **Metadata lakehouse architecture:** The platform is built on an open, high-performance architecture that includes a knowledge graph for business domains, vector storage, and analytics capabilities, forming the foundation for metadata and context management.  
 * **Context pipeline:** Atlan uses a pipeline approach to collect, refine, and distribute context. Metadata and knowledge flow through this pipeline and improve over time based on usage, evaluations, and feedback.
 
+<img src="/assets/learning-center/metadata-solutions/atlan-screenshot.png" alt="Atlan interface" width="800" height="455" />
+
 #### 7. Collibra
+
+<img src="/assets/learning-center/metadata-solutions/collibra-logo.png" alt="Collibra logo" width="180" height="50" />
 
 Collibra is a platform focused on unified governance for data and AI, providing a centralized layer to manage data context, policies, quality, and usage across complex environments. It emphasizes creating well-governed data that can support analytics and AI use cases at scale, including handling unstructured data and ensuring compliance across distributed systems.
 
@@ -322,7 +332,11 @@ Collibra is a platform focused on unified governance for data and AI, providing 
 * **AI system governance**: Enables cataloging, monitoring, and traceability of AI systems, helping reduce risk and improve oversight.  
 * **Regulatory compliance support**: Automates risk reporting and provides visibility across data sources to support audits and regulatory requirements.
 
+<img src="/assets/learning-center/metadata-solutions/collibra-screenshot.png" alt="Collibra interface" width="800" height="583" />
+
 #### 8. Informatica
+
+<img src="/assets/learning-center/metadata-solutions/informatica-logo.png" alt="Informatica logo" width="180" height="50" />
 
 Informatica provides a cloud-based platform for managing the data lifecycle, combining metadata management with data integration, quality, governance, and AI capabilities. Its Intelligent Data Management Cloud (IDMC) uses AI to automate processes, improve data accessibility, and ensure that data is trusted, secure, and ready for analytics and AI workloads across hybrid and multi-cloud environments.
 
@@ -335,6 +349,8 @@ Informatica provides a cloud-based platform for managing the data lifecycle, com
 * **Multi-cloud and hybrid support**: Operates across distributed environments with scalability and flexibility.  
 * **Data quality and observability**: Embeds data quality controls directly into workflows to ensure reliable and trusted data.  
 * **Security and compliance**: Provides enterprise-grade controls to manage data privacy, access, and regulatory requirements.
+
+<img src="/assets/learning-center/metadata-solutions/informatica-screenshot.png" alt="Informatica interface" width="800" height="287" />
 
 ## Conclusion
 
