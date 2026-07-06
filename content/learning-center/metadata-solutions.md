@@ -25,8 +25,7 @@ It does this by offering tools for data discovery, lineage tracking, governance,
 * [Use Cases for Metadata Solutions](#use-cases-for-metadata-solutions)  
 * [Notable Metadata Solutions](#notable-metadata-solutions)
 
-## How a Metadata Solution Works  {#how-a-metadata-solution-works}
-
+## How a Metadata Solution Works
 A metadata solution connects to data sources across the stack (databases, data warehouses, data lakes, BI tools, and pipelines) using connectors or APIs:
 
 1. It scans these systems to extract technical metadata such as schemas, table structures, query logs, and job definitions. Some platforms also ingest operational metadata like run times and usage patterns, along with business metadata from glossaries or manual inputs.  
@@ -203,8 +202,7 @@ Metadata solutions are widely used to enforce data governance policies and meet 
 * They make it easier to demonstrate compliance with regulations such as GDPR, HIPAA, or CCPA.   
 * Teams can quickly generate reports showing where data resides, how it flows, and who has interacted with it, reducing the effort required for audits and reviews.
 
-## Notable Metadata Solutions  {#notable-metadata-solutions}
-
+## Notable Metadata Solutions
 ### Open Source Metadata Platforms
 
 #### 1. OpenMetadata
