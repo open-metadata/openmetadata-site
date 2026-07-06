@@ -287,7 +287,7 @@ Alation Metadata Management is a platform to activate metadata by connecting, en
 
 #### 6. Atlan
 
-<img src="/assets/learning-center/metadata-solutions/atlan-logo.png" alt="Atlan logo" width="222" height="80" />
+<img src="/assets/learning-center/metadata-solutions/atlan-logo.png" alt="Atlan logo" width="152" height="80" />
 
 Atlan is a metadata management platform focused on building and operationalizing a shared context layer for data and AI systems. It helps organizations capture business logic, data meaning, and institutional knowledge, and make that context accessible across tools and AI agents.
 
@@ -303,7 +303,7 @@ Atlan is a metadata management platform focused on building and operationalizing
 
 #### 7. Collibra
 
-<img src="/assets/learning-center/metadata-solutions/collibra-logo.png" alt="Collibra logo" width="220" height="61" />
+<img src="/assets/learning-center/metadata-solutions/collibra-logo.png" alt="Collibra logo" width="180" height="80" />
 
 Collibra is a platform focused on unified governance for data and AI, providing a centralized layer to manage data context, policies, quality, and usage across complex environments. It emphasizes creating well-governed data that can support analytics and AI use cases at scale, including handling unstructured data and ensuring compliance across distributed systems.
 
