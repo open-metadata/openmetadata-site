@@ -5,8 +5,6 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
-import NavbarDev from '@/components/NavbarDev/NavbarDev.component'
 import FooterDev from '@/components/FooterDev/FooterDev'
 import ParamLink from '@/components/ParamLink'
 import DetailsPageRightPanel from '@/components/learning-center/DetailsPageRightPanel'
@@ -90,7 +88,6 @@ const toId = (children: React.ReactNode): string =>
         .replace(/[^\w-]/g, '')
 
 const LearningCenterArticle = ({ article, mdxSource, isRightPanelVisible, link }: Props) => {
-    const router = useRouter()
     const clusterSlug = article.cluster
         ?.split('&')[0]
         .trim()
@@ -99,10 +96,6 @@ const LearningCenterArticle = ({ article, mdxSource, isRightPanelVisible, link }
 
     return (
         <div>
-            <div className="mx-auto fixed top-0 w-full z-[1030]">
-                <NavbarDev onClick={() => router.push('/#try-openmetadata')} />
-            </div>
-
             <div className="mt-20 md:mt-24 lg:mt-32 bg-gradient-to-t from-[#f2edfd] to-white min-h-screen">
                 <div className="max-w-[1440px] mx-auto py-20 px-5 md:px-10 xl:px-16">
                     <div
