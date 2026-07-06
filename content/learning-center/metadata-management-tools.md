@@ -256,7 +256,7 @@ Alation Metadata Management is a platform that activates and operationalizes met
 * **Improved data discovery and trust:** Provides an interface to search and evaluate data assets.  
 * **End-to-end data lineage:** Tracks how data moves and transforms across systems over time.
 
-<img src="/assets/learning-center/metadata-management-tools/alation-screenshot.png" alt="Alation interface" width="800" height="451" />
+<img src="/assets/learning-center/metadata-management-tools/alation-screenshot.png" alt="Alation interface" width="800" height="476" />
 
 #### 6. Collibra Data Catalog
 
@@ -272,7 +272,7 @@ Collibra Data Catalog is a metadata management platform that helps organizations
 * **Data profiling and insight generation:** Provides visibility into data structure and patterns through profiling statistics and data samples.  
 * **Automated curation and enrichment:** Automatically generates descriptions and enriches metadata with context.
 
-<img src="/assets/learning-center/metadata-management-tools/collibra-screenshot.png" alt="Collibra interface" width="800" height="583" />
+<img src="/assets/learning-center/metadata-management-tools/collibra-screenshot.png" alt="Collibra interface" width="800" height="444" />
 
 ## Conclusion
 

@@ -283,7 +283,7 @@ Alation Metadata Management is a platform to activate metadata by connecting, en
 * **Improved data discovery and trust:** Users can find and evaluate data assets based on context, usage, and documentation. Behavioral signals and metadata enrichment help users select reliable datasets.  
 * **Embedded metadata in everyday tools:** Bi-directional connectors surface metadata directly within tools like Slack, Microsoft Teams, and Tableau. This allows users to access governed data context without leaving their workflows.
 
-<img src="/assets/learning-center/metadata-solutions/alation-screenshot.png" alt="Alation interface" width="800" height="451" />
+<img src="/assets/learning-center/metadata-solutions/alation-screenshot.png" alt="Alation interface" width="800" height="476" />
 
 #### 6. Atlan
 
@@ -317,7 +317,7 @@ Collibra is a platform focused on unified governance for data and AI, providing 
 * **AI system governance:** Enables cataloging, monitoring, and traceability of AI systems, helping reduce risk and improve oversight.  
 * **Regulatory compliance support:** Automates risk reporting and provides visibility across data sources to support audits and regulatory requirements.
 
-<img src="/assets/learning-center/metadata-solutions/collibra-screenshot.png" alt="Collibra interface" width="800" height="583" />
+<img src="/assets/learning-center/metadata-solutions/collibra-screenshot.png" alt="Collibra interface" width="800" height="444" />
 
 #### 8. Informatica
 
