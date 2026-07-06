@@ -40,6 +40,14 @@ export const LEARNING_CENTER_DATA: LearningCenterItem[] = [
         cluster: 'Metadata Management',
         resourceType: 'Articles',
     },
+    {
+        id: 4,
+        title: 'Metadata Solutions: Capabilities, Architecture & Use Cases',
+        image: `${IMAGE_PATH}/metadata-solutions.png`,
+        slug: 'metadata-solutions',
+        cluster: 'Metadata Management',
+        resourceType: 'Articles',
+    },
 ]
 
 export const CATEGORY_LIST: CategoryItem[] = [
