@@ -205,6 +205,8 @@ Metadata solutions are widely used to enforce data governance policies and meet 
 
 #### 1. OpenMetadata
 
+<img src="/assets/learning-center/metadata-solutions/openmetadata-logo.png" alt="OpenMetadata logo" width="90" height="90" />
+
 OpenMetadata is an open-source metadata platform and AI context layer that unifies technical and business metadata into a single, queryable knowledge graph. To address fragmented data ecosystems and inconsistent metadata across tools, it combines a formal ontology with native ingestion connectors and AI-ready APIs.
 
 **Key features include:**
@@ -220,7 +222,11 @@ OpenMetadata is an open-source metadata platform and AI context layer that unifi
 * **Apache 2.0 licensed and community-driven**  
    OpenMetadata is fully open source under Apache 2.0. The community maintains connectors, schemas, and integrations, and a large contributor base provides extensions and customizations without vendor lock-in.
 
+<img src="/assets/learning-center/metadata-solutions/openmetadata-screenshot.png" alt="OpenMetadata interface" width="800" height="523" />
+
 #### 2. DataHub
+
+<img src="/assets/learning-center/metadata-solutions/datahub-logo.png" alt="DataHub logo" width="152" height="80" />
 
 DataHub is an open-source metadata platform that centralizes metadata from across a fragmented data ecosystem into a single, connected system. To address challenges in discovering, understanding, and governing data spread across many tools, it uses a unified metadata graph combined with real-time and batch ingestion.
 
@@ -237,7 +243,11 @@ DataHub is an open-source metadata platform that centralizes metadata from acros
 * **Deep metadata extraction**  
    Beyond basic metadata, DataHub captures column-level lineage, dataset profiling statistics, ownership information, and usage data. This depth improves understanding of how data is structured and used.
 
+<img src="/assets/learning-center/metadata-solutions/datahub-screenshot.png" alt="DataHub interface" width="800" height="449" />
+
 #### 3. Apache Atlas
+
+<img src="/assets/learning-center/metadata-solutions/apache-atlas-logo.png" alt="Apache Atlas logo" width="120" height="90" />
 
 Apache Atlas is an open-source metadata governance platform to help organizations manage, classify, and govern data across Hadoop and enterprise data ecosystems. It provides a centralized framework for defining metadata models, capturing relationships between data assets, and enforcing governance policies. 
 
@@ -249,9 +259,13 @@ Apache Atlas is an open-source metadata governance platform to help organization
 * **Dynamic data classification:** Users can create and manage classifications such as PII, sensitive data, or data quality tags. Classifications can include attributes (e.g., expiration dates), allowing more granular tagging and policy enforcement.  
 * **Multi-classification support:** A single data entity can have multiple classifications applied simultaneously. This allows richer context for discovery, governance, and access control decisions.
 
+<img src="/assets/learning-center/metadata-solutions/apache-atlas-screenshot.png" alt="Apache Atlas interface" width="800" height="375" />
+
 ### Managed / Enterprise Metadata Platforms
 
 #### 4. Collate
+
+<img src="/assets/learning-center/metadata-solutions/collate-logo.png" alt="Collate logo" width="153" height="80" />
 
 Collate is the AI for Data platform built on OpenMetadata. It extends the open metadata standard with managed deployment, enterprise governance, conversational AI, code & no code agents, and an AI native experience. The result is a single context layer that both human teams and AI agents query for trusted answers about data.
 
@@ -267,6 +281,8 @@ Collate is the AI for Data platform built on OpenMetadata. It extends the open m
    Pre-built agents automate documentation, tiering, classification, and data quality at scale, with a no-code AI Studio for custom agents and an AI SDK for custom AI applications. Feedback loops let steward decisions train future agent behavior.  
 * **Memory, skills, and automations**  
    Every approval, classification, and annotation is captured as a permanent, attributable record. The audit trail supports compliance reporting and creates feedback loops that improve classifiers and documentation agents over time.
+
+<img src="/assets/learning-center/metadata-solutions/collate-screenshot.png" alt="Collate AI Studio" width="800" height="561" />
 
 #### 5. Alation Metadata Management
 
