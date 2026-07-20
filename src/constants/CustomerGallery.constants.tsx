@@ -67,6 +67,19 @@ export const INDUSTRY_LIST = [
 
 export const CUSTOMER_GALLERY = [
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/yelp-logo.webp`,
+        industry: 'Technology',
+        testimonial: "For us, the foundation of data discovery is good search, and that's why we picked OpenMetadata. The fact that it's open source and extensible let us bring our own search algorithm and contribute fixes back upstream.",
+        customerName: 'Amy Forest',
+        customerDesignation: 'Software Engineer, Analytics Engineering',
+        company: 'Yelp',
+        imgSize: {
+            width: 120,
+            height: 45
+        },
+        link: '/case-study/yelp'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/freenow-logo.png`,
         industry: 'Transportation',
         testimonial: "We’re not trying to communicate more—we’re trying to communicate better and more efficiently. With OpenMetadata, we’ve created a centralized, automated communication hub that gives full visibility into data asset changes and their impact across the organization.",
