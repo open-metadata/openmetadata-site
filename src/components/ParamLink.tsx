@@ -17,15 +17,15 @@ const ParamLink = ({ name, href, target = "_self", className, children }: ParamL
     }, [])
 
   return (
-    <Link href={`${href}${searchParams}`} prefetch={false} legacyBehavior>
-      <a
-        target={target}
-        rel="noopener noreferrer"
-        aria-label={name}
-        className={className}
-      >
-        {name ?? children}
-      </a>
+    <Link
+      href={`${href}${searchParams}`}
+      prefetch={false}
+      target={target}
+      rel="noopener noreferrer"
+      aria-label={name}
+      className={className}
+    >
+      {name ?? children}
     </Link>
   );
 };

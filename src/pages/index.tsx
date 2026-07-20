@@ -7,6 +7,7 @@ import KeyDataAssets from "@/components/KeyDataAssets/KeyDataAssets";
 import Services from "@/components/Service/Service";
 import SummitBanner from "@/components/SummitBanner/SummitBanner";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import ThreePrimitives from "@/components/ThreePrimitives/ThreePrimitives";
 import TryOpenMetadata from "@/components/TryOpenMetadata/TryOpenMetadata";
 
 export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
@@ -28,6 +29,7 @@ const Development = () => {
         <Header onClick={handleTryOpenMetadataClick} />
         <SummitBanner />
         <Achievement />
+        <ThreePrimitives />
         <Services />
         <KeyDataAssets />
         <IntegrationsDev />

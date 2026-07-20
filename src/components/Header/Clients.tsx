@@ -45,20 +45,17 @@ const Clients = () => {
   };
 
   return (
-    <div className="slider-container mt-[35%] mb-12 px-4 md:mt-[16px] md:px-16">
+    <div className="slider-container mb-12 px-4 md:mt-[16px] md:px-16">
       <Slider {...settings}>
         {CLIENT_LIST.map((client) => (
           <div
             key={client.name}
-            className={`slide-item opacity-50 h-[60px] ${
-              client.width ? "w-[70px]" : "w-[150px]"
-            }`}
+            className="slide-item h-[60px] w-auto relative"
           >
             <Image
               src={client.logo}
               alt={client.name}
-              width={client.width ? client.width : 100}
-              height={100}
+              fill
               loading="eager"
             />
           </div>

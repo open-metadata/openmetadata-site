@@ -440,6 +440,18 @@ a:hover {
   color: #004ec2;
 }
 
+/* .md-link is used by inline cross-links in Learning Center article bodies
+   (e.g. "This is part of a series of articles about <a className="md-link">metadata management</a>").
+   Convention borrowed from getcollate LC; adding here so OMD LC renders the same. */
+.md-link {
+  color: #0061f2;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.md-link:hover {
+  color: #004ec2;
+}
+
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
   color: inherit;
@@ -2751,7 +2763,7 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  print-color-adjust: exact;
 }
 .form-check-input[type='checkbox'] {
   border-radius: 0.25em;

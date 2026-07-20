@@ -1,5 +1,31 @@
 export const TESTIMONIALS_LIST = [
   {
+    name: "Bonnie Xu",
+    description:
+      "At that scale, the hard part is not just about finding the right table or writing SQL, it's about getting the right context, knowing what data exists, what it means, and how it relates to the business. This is where OpenMetadata has been so foundational. It's an important part of our six-layer context model so that the agent can reason more like a real analyst.",
+    image: "/assets/testimonials/openai.webp",
+    company: "OpenAI",
+    url: "https://openai.com",
+    title: "Tech Lead, Data Productivity",
+    imgSize: {
+      width: 184,
+      height: 50
+    },
+  },
+  {
+    name: "Sapir Hirshberg",
+    description:
+      "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
+    image: "/assets/testimonials/wix.png",
+    company: "Wix",
+    url: "https://www.wix.com",
+    title: "Senior Data Product Manager",
+    imgSize: {
+      width: 80,
+      height: 50
+    },
+  },
+  {
     name: "Rinat Abdurakhmanov",
     description:
       "We came across OpenMetadata as an alternative to heavy, expensive, and rigid proprietary products without proper customer support and little chance of adapting to the ever changing market needs. It allowed us not only to cut down the costs but also to quickly and effortlessly adapt the product to the needs of our company which includes hundreds of systems and data sources that require categorization and analysis. OpenMetadata is a fast-growing product that allows to impact its development through contribution and flawless community  interaction. The best thing so far is how easy it is to implement the solution and start working on your data right away. Every business user is able to track and take care of their metadata and build trustworthy, data-driven products for our customers.  OpenMetadata offers some of the easiest, versatile methods for data-handling and data-consumption as well as the most supportive community to help you out on your way to befriend your company’s knowledge.",

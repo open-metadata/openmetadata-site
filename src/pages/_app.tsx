@@ -14,6 +14,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import Script from "next/script";
 import CookieModal from "@/components/CookieModal";
 import Layout from "@/components/Layout/Layout";
 
@@ -28,6 +29,10 @@ export default function App({ Component, pageProps }: AppProps) {
   };
 
   const canonicalUrl = pageProps.link?.split("?")[0]
+  const markdownUrl =
+    !canonicalUrl || canonicalUrl === "/"
+      ? "https://open-metadata.org/index.md"
+      : `https://open-metadata.org${canonicalUrl.replace(/\/$/, "")}.md`
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -66,17 +71,20 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="canonical"
           href={`https://open-metadata.org${canonicalUrl}`}
         />
+        {markdownUrl && (
+          <link rel="alternate" type="text/markdown" href={markdownUrl} />
+        )}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <meta
           name="description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the open-source AI context layer — powered by metadata, semantics, and memory that give people and AI a shared, rich understanding of your data. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook. The unified platform for data cataloging, discovery, quality, observability, governance, lineage, collaboration &amp; more."
         />
         <meta
           name="keywords"
-          content="best open-source data catalog community, #1 open source data catalog, enterprise data catalog, data governance solutions, centralized metadata platform, best data discovery tool, data collaboration platform, modern data catalog, data catalog data lineage, best metadata management tool"
+          content="open source data catalog, #1 open source data catalog, enterprise data catalog, AI data catalog, data governance, data lineage, data quality, data discovery, metadata management, metadata platform, data intelligence platform, knowledge graph, data observability, GraphRAG, AI-ready data, open metadata standard, semantic data catalog, open source context layer, AI context layer, semantic context graph, context layer for AI agents"
         />
         <meta name="author" content="open-metadata" />
         <meta name="publisher" content="Collate" />
@@ -84,11 +92,11 @@ export default function App({ Component, pageProps }: AppProps) {
         {/* Open Graph tags start  */}
         <meta
           property="og:title"
-          content="OpenMetadata: #1 Open Source Metadata Platform"
+          content="OpenMetadata: #1 Open Source Context Layer"
         />
         <meta
           property="og:description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the open-source AI context layer — powered by metadata, semantics, and memory that give people and AI a shared, rich understanding of your data. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook. The unified platform for data cataloging, discovery, quality, observability, governance, lineage, collaboration &amp; more."
         />
         <meta
           property="og:image"
@@ -102,11 +110,11 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:site" content="https://open-metadata.org" />
         <meta
           name="twitter:title"
-          content="OpenMetadata: #1 Open Source Metadata Platform"
+          content="OpenMetadata: #1 Open Source Context Layer"
         />
         <meta
           name="twitter:description"
-          content="OpenMetadata is the #1 open source data catalog tool with the all-in-one platform for data discovery, quality, governance, collaboration &amp; more. Join our community to stay updated."
+          content="OpenMetadata is the open-source AI context layer — powered by metadata, semantics, and memory that give people and AI a shared, rich understanding of your data. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook. The unified platform for data cataloging, discovery, quality, observability, governance, lineage, collaboration &amp; more."
         />
         <meta
           name="twitter:image"
@@ -115,28 +123,24 @@ export default function App({ Component, pageProps }: AppProps) {
         {/* Twitter Card end */}
 
         <title>
-          {pageProps.title ?? "OpenMetadata: #1 Open Source Metadata Platform"}
+          {pageProps.title ?? "OpenMetadata: #1 Open Source Context Layer"}
         </title>
-        {(!storedCookie || storedCookie === "Accept") && (
-          <>
-            {/* Google Tag Manager */}
-            {/* eslint-disable-next-line @next/next/next-script-for-ga */}
-            <script
-              defer
-              id="tag-manager"
-              dangerouslySetInnerHTML={{
-                __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                })(window,document,'script','dataLayer','GTM-554C968W');
-            `,
-              }}
-            />
-          </>
-        )}
       </Head>
+      {(!storedCookie || storedCookie === "Accept") && (
+        <Script
+          id="tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-554C968W');
+        `,
+          }}
+        />
+      )}
       <Layout>
         {!storedCookie && <CookieModal handleButtonClick={handleButtonClick} />}
         <Component {...pageProps} />
