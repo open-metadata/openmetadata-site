@@ -148,11 +148,10 @@ export default function Community() {
                 <div className="max-w-lg">
                   <div className="card">
                     <div className="card-body">
-                      <YoutubeEmbed videoId="fVqEiftzSxM" />
+                      <YoutubeEmbed videoId="DxAKTRLFouU" />
                       <p className="font-semibold mb-0 mt-2">
-                        In this video, Antoine Glacet, Kansai Airport's 
-                        Data & Innovation Manager, discusses the ongoing 
-                        adoption of OpenMetadata at Kansai Airports! Thank you, Antoine!!                       
+                        In this video, the Fire Department of New York
+                        discusses the ongoing adoption of OpenMetadata at FDNY!                       
                       </p>
                     </div>
                   </div>
@@ -160,11 +159,10 @@ export default function Community() {
                 <div className="max-w-lg">
                   <div className="card">
                     <div className="card-body">
-                      <YoutubeEmbed videoId="6MEy4qNAJw8" />
+                      <YoutubeEmbed videoId="96yAQVZ2D5s" />
                       <p className="font-semibold mb-0 mt-2">
-                        In this video, Nancy Amandi, Data Engineer @ Moniepoint, 
-                        shares her journey into becoming an OpenMetadata contributor! 
-                        Thank you, Nancy!!
+                        In this video, Sapir Hirshberg, a Sr. Data Product Manager at Wix 
+                        showcases how her team uses OpenMetadata to strengthen data asset management!
                       </p>
                     </div>
                   </div>
@@ -218,18 +216,16 @@ export default function Community() {
                     <div className="col">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="w1GBD1bU1B8" />
-                          <p className="font-semibold mb-0 mt-2">September 2025</p>
+                          <YoutubeEmbed videoId="D7rVMmFqlZA" />
+                          <p className="font-semibold mb-0 mt-2">March 2026</p>
                         </div>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-4">
                       <div className="card">
                         <div className="card-body">
-                          <YoutubeEmbed videoId="wcis1hwaDHw" />
-                          <p className="font-semibold mb-0 mt-2">
-                            OpenMetadata 1.10 Updates, September 2025
-                          </p>
+                          <YoutubeEmbed videoId="7zJ4iiG8sQo" />
+                          <p className="font-semibold mb-0 mt-2">April 2026</p>
                         </div>
                       </div>
                     </div>
