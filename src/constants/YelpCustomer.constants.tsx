@@ -3,7 +3,12 @@ export const YELP_CUSTOMER_HEADER = {
     description: `Yelp connects people with local businesses, and its Analytics Engineering team runs the platforms its data practitioners depend on, including data quality, monitoring, cataloging, and lineage. As AI agents became pervasive across the company, the team faced a discovery problem: a data catalog crowded with duplicates, thin documentation, and no way to weigh trust signals in search. To solve this, they scaled OpenMetadata from a small proof-of-concept to a production deployment of ~100,000 assets, then engineered a custom search layer, persona-based policies, and a token-efficient in-house MCP server, Yelp's first upstream OpenMetadata contribution. The team turned OpenMetadata into an open context layer: the trusted, governed source its people and its AI agents both draw on to find and understand the right data, not just any data.`,
     industry: "Consumer Internet / Local Commerce",
     technologies: "OpenMetadata, Amazon Athena, Amazon Redshift, dbt, Apache Spark, Apache Kafka, Apache Flink, OpenLineage, Streamlit, OpenSearch, LiteLLM",
-    image: '/assets/yelp-customer/yelp-header.png'
+    videoUrl: "HLFyqQ96IUo",
+    attribution: {
+        text: "This case study is adapted from Amy Forest's ",
+        linkText: "Summit '26 talk",
+        linkUrl: "https://youtu.be/HLFyqQ96IUo"
+    }
 }
 
 export const YELP_CUSTOMER_HIGHLIGHTS = [
