@@ -34,7 +34,7 @@ const CarrefourCaseStudyPage = () => {
                     />
                     <CustomerTestimonial testimonial={CARREFOUR_CUSTOMER_TESTIMONIAL} />
                     <CustomerChallenges data={CARREFOUR_CUSTOMER_CHALLENGES} />
-                    <div className="max-w-[800px] px-4 mx-auto font-bold mb-8 border-l-4">
+                    <div className="max-w-[800px] px-4 mx-auto font-bold mb-16 border-l-4">
                         <em>With thanks to the Carrefour Brazil data platform and governance team — Brenda Barcelos, Djeizi Erat, Jennifer Evangelista, Kelly Ponzetta, Ronnie Santos, and Vládia Beserra — whose work made this data transformation possible.</em>
                     </div>
                 </div>
