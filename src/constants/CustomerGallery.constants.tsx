@@ -68,7 +68,7 @@ export const INDUSTRY_LIST = [
 export const CUSTOMER_GALLERY = [
     {
         logo: `${GALLERY_IMAGE_ROUTE}/tabby.webp`,
-        industry: 'Fintech',
+        industry: 'Financial',
         testimonial: "In the new era of AI, we still need to provide the context, the metadata, and the physical data to the LLM. If you want the right insights about your data, your business, and your product, OpenMetadata is how we give our agents that context.",
         customerName: 'Maksim Zolotarev',
         customerDesignation: 'Head of Data Platform & ML',
