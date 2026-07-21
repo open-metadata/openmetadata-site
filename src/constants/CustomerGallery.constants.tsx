@@ -67,6 +67,19 @@ export const INDUSTRY_LIST = [
 
 export const CUSTOMER_GALLERY = [
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/tabby.webp`,
+        industry: 'Financial',
+        testimonial: "In the new era of AI, we still need to provide the context, the metadata, and the physical data to the LLM. If you want the right insights about your data, your business, and your product, OpenMetadata is how we give our agents that context.",
+        customerName: 'Maksim Zolotarev',
+        customerDesignation: 'Head of Data Platform & ML',
+        company: 'Tabby',
+        imgSize: {
+            width: 130,
+            height: 50
+        },
+        link: '/case-study/tabby'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/freenow-logo.png`,
         industry: 'Transportation',
         testimonial: "We’re not trying to communicate more—we’re trying to communicate better and more efficiently. With OpenMetadata, we’ve created a centralized, automated communication hub that gives full visibility into data asset changes and their impact across the organization.",
