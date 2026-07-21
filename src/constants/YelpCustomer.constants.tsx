@@ -38,7 +38,7 @@ export const YELP_CUSTOMER_TESTIMONIAL = {
 
 export const YELP_CUSTOMER_CHALLENGES = [
     {
-        image: '/assets/yelp-customer/section-1.png',
+        image: '/assets/yelp-customer/section-1.webp',
         title: 'Governing discovery when duplicates and thin docs erode trust',
         description: `Before OpenMetadata, Yelp's internal catalog made the last mile of analysis the hardest part. Data flowed from Athena into Redshift, fanning the same tables across multiple clusters, so a single search returned many near-identical results, often with only one (or none) documented. Analysts couldn't tell what was canonical, and as AI agents entered the workflow, the same ambiguity tripped them up faster and more expensively. The catalog suffered from trust decay stemming from compounding causes: subpar search relevance, excessive duplication, lacking documentation, and limited write licenses. High-quality search was essential, but the catalog wasn't delivering it where it mattered.`,
         challenges: [
@@ -65,7 +65,7 @@ export const YELP_CUSTOMER_CHALLENGES = [
         ]
     },
     {
-        image: '/assets/yelp-customer/section-2.png',
+        image: '/assets/yelp-customer/section-2.webp',
         title: 'A trust-first, persona-aware discovery layer on OpenMetadata',
         description: `Yelp picked OpenMetadata for three reasons: (1) search customization to be able to bring their own ranking; (2) broad API support so they could integrate it everywhere in their data stack; and (3) open source extensibility so they could customize it and contribute fixes back upstream. On that foundation, the Yelp Analytics Engineering team treated discovery as a product, building a custom search layer for their human and AI data teams.`,
         challenges: [
@@ -96,7 +96,7 @@ export const YELP_CUSTOMER_CHALLENGES = [
         ]
     },
     {
-        image: '/assets/yelp-customer/section-3.png',
+        image: '/assets/yelp-customer/section-3.webp',
         title: 'Data discovery that both people and agents can trust',
         description: `Yelp moved from a duplicate-ridden catalog its own engineering teams didn't trust to a production OpenMetadata deployment where the canonical, best-documented asset rises to the top for humans and agents alike, and where the platform team's improvements loop back to strengthen the wider data community.`,
         challenges: [
