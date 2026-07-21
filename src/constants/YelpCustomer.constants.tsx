@@ -33,7 +33,7 @@ export const YELP_CUSTOMER_TESTIMONIAL = {
     content: "Our data catalog had a lot of duplicates, and maybe only one of them was documented, or worse, none of them were. What it really suffered from was trust decay: I wasn't sure what I should use, or even how to search for it. For us, the foundation of data discovery is good search, and that's why we picked OpenMetadata. The focus on search, broad and accessible API support, and the fact that it's open source and extensible let us bring our own search algorithm and contribute fixes back upstream.",
     name: "Amy Forest",
     title: "Software Engineer, Analytics Engineering at Yelp",
-    logo: "/assets/yelp-customer/yelp-logo.webp"
+    logo: "/assets/testimonials/yelp-logo.webp"
 }
 
 export const YELP_CUSTOMER_CHALLENGES = [
