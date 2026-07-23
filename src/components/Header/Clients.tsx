@@ -1,66 +1,25 @@
 import Image from "next/image";
-import Slider from "@/components/SlickSlider/SlickSlider";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { CLIENT_LIST } from "@/constants/Clients.constants";
 
 const Clients = () => {
-  const settings = {
-    className: "slider slick-track variable-width",
-    pauseOnHover: false,
-    arrows: false,
-    dots: false,
-    infinite: true,
-    slidesToShow: 8,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1284,
-        settings: {
-          slidesToShow: 6,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-    ],
-  };
-
   return (
-    <div className="slider-container mb-12 px-4 md:mt-[16px] md:px-16">
-      <Slider {...settings}>
-        {CLIENT_LIST.map((client) => (
+    <div className="slider-container overflow-hidden px-4 my-[16px] md:px-16">
+      <div className="logo-marquee flex w-max gap-4">
+        {[...CLIENT_LIST, ...CLIENT_LIST].map((client, index) => (
           <div
-            key={client.name}
-            className="slide-item h-[60px] w-auto relative"
+            key={`${client.name}-${index}`}
+            className="slide-item relative h-[60px] w-[160px] shrink-0"
           >
             <Image
               src={client.logo}
               alt={client.name}
               fill
+              className="object-contain"
               loading="eager"
             />
           </div>
         ))}
-      </Slider>
+      </div>
     </div>
   );
 };

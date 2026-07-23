@@ -79,7 +79,7 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           />
         </div>
       </div>
-      <div className="max-w-[1500px]">
+      <div className="max-w-[1500px] mx-auto">
         <Clients />
       </div>
     </div>
