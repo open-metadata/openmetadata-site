@@ -2,6 +2,10 @@ const LOGO_ROUTE = '/assets/client'
 
 export const CLIENT_LIST = [
     {
+        name: "Wix",
+        logo: `${LOGO_ROUTE}/wix.webp`,
+    },
+    {
         name: "FreeNow",
         logo: `${LOGO_ROUTE}/freenow.webp`,
     },
@@ -16,10 +20,6 @@ export const CLIENT_LIST = [
     {
         name: "Woop",
         logo: `${LOGO_ROUTE}/woop.webp`,
-    },
-    {
-        name: "Wix",
-        logo: `${LOGO_ROUTE}/wix.webp`,
     },
     {
         name: "inDrive",
