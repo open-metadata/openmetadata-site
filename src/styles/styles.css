@@ -6092,6 +6092,19 @@ fieldset:disabled .btn {
   align-items: center;
 }
 
+.logo-marquee {
+  animation: logo-marquee-scroll 60s linear infinite;
+}
+
+@keyframes logo-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .fade {
   transition: opacity 0.15s linear;
 }
