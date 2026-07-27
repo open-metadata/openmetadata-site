@@ -14,7 +14,7 @@ export default function Events() {
   return (
     <div id="layoutDefault">
       <div id="layoutDefault_content">
-        <section className="bg-white lg:pt-40 max-lg:pt-24 pt-20">
+        <section className="bg-white pt-9 lg:pt-16">
           <div className="container px-10 py-10">
             <div className="text-center mb-8 max-w-4xl mx-auto">
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 leading-tight">

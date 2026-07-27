@@ -26,7 +26,7 @@ const VRTCaseStudyPage = () => {
         <meta name="description" content="Discover how Belgian public media broadcaster VRT established true ownership of data quality fixes at scale through their data transformation partners at Dataroots and OpenMetadata!" />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={VRT_CUSTOMER_HEADER}
             highlights={VRT_CUSTOMER_HIGHLIGHTS}

@@ -5,7 +5,7 @@ import ParamLink from "../ParamLink";
 
 const Header = ({ onClick }: { onClick: () => void }) => {
   return (
-    <div className="relative w-full mx-auto mt-20 md:mt-24">
+    <div className="relative w-full mx-auto mt-9 md:mt-16">
       <div className="hero-header">
         <div className="relative z-[1] max-w-[1500px] mx-auto">
           <Image

@@ -50,7 +50,7 @@ const CaseStudiesPage = () => {
 
   return (
     <div>
-      <div className="mt-20 md:mt-24 lg:mt-32">
+      <div className="mt-9 md:mt-16">
         <div className="case-study-page">
           <div className="max-w-[1440px] mx-auto py-28 md:py-20 px-5 md:px-10 xl:px-20">
             <h1 className="font-medium text-[#292929] tracking-[-0.02em] text-4xl md:text-5xl">

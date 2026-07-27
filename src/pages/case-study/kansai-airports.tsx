@@ -26,7 +26,7 @@ const KansaiCaseStudyPage = () => {
         <meta name="description" content="Discover how Kansai Airports modernized its aviation data operations, breaking down silos across dashboards and systems, reducing metadata management effort by 67%, and enabling faster, trusted insights for 50M+ passengers annually." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={KANSAI_CUSTOMER_HEADER}
             highlights={KANSAI_CUSTOMER_HIGHLIGHTS}

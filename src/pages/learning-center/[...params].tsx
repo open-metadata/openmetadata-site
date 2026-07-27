@@ -116,7 +116,7 @@ const LearningCenterFiltered = ({ initialTopic, initialResourceType, initialPage
 
     return (
         <div>
-            <div className="bg-gradient-to-t from-[#f2edfd] to-white mt-20 md:mt-24 lg:mt-32">
+            <div className="bg-gradient-to-t from-[#f2edfd] to-white mt-9 md:mt-16">
                 {/* Hero */}
                 <div className="py-24 px-6 md:px-10 xl:px-24 text-black max-w-[1440px] mx-auto">
                     <h1 className="text-[52px] leading-[56px] tracking-[-0.01em]">Learning Center</h1>

@@ -27,7 +27,7 @@ const CarrefourCaseStudyPage = () => {
                 </title>
             </Head>
             <div>
-                <div className="mt-20 md:mt-24">
+                <div className="mt-9 md:mt-16">
                     <CustomerHeader
                         customerHeader={CARREFOUR_CUSTOMER_HEADER}
                         highlights={CARREFOUR_CUSTOMER_HIGHLIGHTS}

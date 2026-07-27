@@ -26,7 +26,7 @@ const WoopCaseStudyPage = () => {
         <meta name="description" content="See how logistics platform Woop's 2-person data team manages 1,600+ assets for 100+ users with OpenMetadata's automated governance and self-service discovery." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={WOOP_CUSTOMER_HEADER}
             highlights={WOOP_CUSTOMER_HIGHLIGHTS}

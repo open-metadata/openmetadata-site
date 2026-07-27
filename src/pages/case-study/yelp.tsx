@@ -26,7 +26,7 @@ const YelpCaseStudyPage = () => {
         <meta name="description" content="See how Yelp's Analytics Engineering team scaled OpenMetadata to ~100,000 assets and built a trust-first, persona-aware discovery layer with a custom search algorithm and a token-efficient in-house MCP server, turning OpenMetadata into an open context layer that people and AI agents can trust." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={YELP_CUSTOMER_HEADER}
             highlights={YELP_CUSTOMER_HIGHLIGHTS}

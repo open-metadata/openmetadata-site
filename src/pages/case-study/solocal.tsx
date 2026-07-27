@@ -26,7 +26,7 @@ const SolocalCaseStudyPage = () => {
         <meta name="description" content="Learn how Solocal, operator of PagesJaunes, uses OpenMetadata to deliver trusted analytics for France’s most-visited local business platform." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={SOLOCAL_CUSTOMER_HEADER}
             highlights={SOLOCAL_CUSTOMER_HIGHLIGHTS}

@@ -26,7 +26,7 @@ const LoggiCaseStudyPage = () => {
         <meta name="description" content="Loggi saves $24K annually with OpenMetadata. Cut dashboards from 18K  to 2K with streamlined data governance" />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={LOGGI_CUSTOMER_HEADER}
             highlights={LOGGI_CUSTOMER_HIGHLIGHTS}
