@@ -26,7 +26,7 @@ const ThndrCaseStudyPage = () => {
         <meta name="description" content="See how fintech Thndr's 6-person data team scales governance for 3M+ investor accounts with OpenMetadata's automated PII detection and real-time quality monitoring" />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={THNDR_CUSTOMER_HEADER}
             highlights={THNDR_CUSTOMER_HIGHLIGHTS}

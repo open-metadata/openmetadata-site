@@ -26,7 +26,7 @@ const AspireCaseStudyPage = () => {
         <meta name="description" content="Learn how Aspire unified metadata across its finance platform using OpenMetadata, replacing manual documentation with a trusted system of record, standardizing data quality, and enabling faster, self-serve analytics across 1,700+ tables and 6,100+ quality checks." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={ASPIRE_CUSTOMER_HEADER}
             highlights={ASPIRE_CUSTOMER_HIGHLIGHTS}

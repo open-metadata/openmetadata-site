@@ -26,7 +26,7 @@ const NwCaseStudyPage = () => {
         <meta name="description" content="See how NW implemented OpenMetadata to centralize governance: automating lineage, enriching metadata, and scaling insights across 90+ connectors." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={NW_CUSTOMER_HEADER}
             highlights={NW_CUSTOMER_HIGHLIGHTS}

@@ -26,7 +26,7 @@ const IndriveCaseStudyPage = () => {
         <meta name="description" content="See how inDrive tracks and governs 100+ AWS-hosted databases for global teams, enabling faster analytics, automated compliance, and trusted data at scale." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={INDRIVE_CUSTOMER_HEADER}
             highlights={INDRIVE_CUSTOMER_HIGHLIGHTS}

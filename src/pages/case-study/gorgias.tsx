@@ -25,7 +25,7 @@ const GorgiasCaseStudyPage = () => {
         <title>Gorgias: Data Discovery Automation with OpenMetadata</title>
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={GORGIAS_CUSTOMER_HEADER}
             highlights={GORGIAS_CUSTOMER_HIGHLIGHTS}

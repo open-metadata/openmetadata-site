@@ -96,7 +96,7 @@ const LearningCenterArticle = ({ article, mdxSource, isRightPanelVisible, link }
 
     return (
         <div>
-            <div className="mt-20 md:mt-24 lg:mt-32 bg-gradient-to-t from-[#f2edfd] to-white min-h-screen">
+            <div className="mt-9 md:mt-16 bg-gradient-to-t from-[#f2edfd] to-white min-h-screen">
                 <div className="max-w-[1440px] mx-auto py-20 px-5 md:px-10 xl:px-16">
                     <div
                         className={

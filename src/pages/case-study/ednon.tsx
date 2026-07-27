@@ -26,7 +26,7 @@ const EdnonCaseStudyPage = () => {
         <meta name="description" content="See how Ednon deployed OpenMetadata to help Deputación da Coruña catalog 1,400+ assets, improve documentation 40+ PP, and implement governance for millions of citizens." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={EDNON_CUSTOMER_HEADER}
             highlights={EDNON_CUSTOMER_HIGHLIGHTS}

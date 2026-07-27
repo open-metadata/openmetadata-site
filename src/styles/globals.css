@@ -117,9 +117,21 @@ p{
   }
 }
 
-@media (max-width: 767px) {
+.slick-slider .slick-dots li {
+  margin: 0px;
+}
+
+@media (max-width: 500px) {
   .slick-slider .slick-dots li {
-    margin: 0 2px;
+    margin: 0px -1px;
+  }
+
+  .testimonial-content .prev-slick-arrow {
+    left: 8px;
+  }
+
+  .testimonial-content .next-slick-arrow {
+    right: 20px;
   }
 }
 

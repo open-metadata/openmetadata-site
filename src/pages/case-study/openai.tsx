@@ -27,7 +27,7 @@ const OpenAICaseStudyPage = () => {
         <meta name="description" content="See how OpenAI's Data Productivity team built Kepler, an internal AI data agent serving 3,500+ employees, on OpenMetadata as the open context layer. Repeat queries dropped from 22 minutes to under 90 seconds." />
       </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={OPENAI_CUSTOMER_HEADER}
             highlights={OPENAI_CUSTOMER_HIGHLIGHTS}
