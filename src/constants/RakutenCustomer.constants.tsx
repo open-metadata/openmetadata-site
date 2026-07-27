@@ -3,11 +3,11 @@ export const RAKUTEN_CUSTOMER_HEADER = {
     description: `Rakuten runs one of the world's largest digital ecosystems, a company founded in Japan in 1997 that now spans more than 30 countries and regions, over 70 services, and more than 2.1 billion users across e-commerce, mobile, fintech, and media, with global gross transaction value exceeding 48 trillion yen. Beneath that ecosystem sit many independent data platforms, each maintained by its own engineering team, with catalogs fractured across Excel files, Confluence pages, and bespoke web apps. To consolidate discovery, governance, and utilization across the group, and to build a foundation ready for AI use cases, Rakuten's Data Platform team adopted OpenMetadata as a single, group-wide catalog.`,
     industry: "Internet Services / E-commerce (global technology ecosystem)",
     technologies: "OpenMetadata, MySQL, PostgreSQL, Cassandra, MongoDB, Apache Kafka, Apache Spark, Apache Airflow, Kubernetes",
-    image: "/assets/rakuten-customer/rakuten-header.webp",
+    videoUrl: "_JPPMuLtuds",
     attribution: {
         text: "This case study is adapted from Muqtafi Akhmad's ",
         linkText: "Collate Summit '26 talk",
-        linkUrl: "https://www.getcollate.io/summit2026"
+        linkUrl: "https://youtu.be/_JPPMuLtuds"
     }
 }
 
