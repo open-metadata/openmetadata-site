@@ -8,7 +8,7 @@ import Filters from '@/components/learning-center/Filters'
 import { LEARNING_CENTER_DATA } from '@/constants/learningCenter.constant'
 import { getFilteredData, buildLearningCenterPath } from '@/utils/filterUtils'
 import { getPageNumbers } from '@/utils/paginationUtils'
-import { slugToText, textToSlug } from '@/utils/slugUtils'
+import { slugToText } from '@/utils/slugUtils'
 
 const PAGE_SIZE = 9
 
@@ -32,32 +32,7 @@ function parseFilterParams(segments: string[]) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const topics = Array.from(
-        new Set(LEARNING_CENTER_DATA.flatMap((item) => item.cluster.split(' & ').map((c) => c.trim())))
-    )
-    const resourceTypes = Array.from(new Set(LEARNING_CENTER_DATA.map((item) => item.resourceType)))
-
-    const paths: { params: { params: string[] } }[] = []
-
-    const addPathsFor = (topic?: string, resource?: string) => {
-        const filtered = getFilteredData(LEARNING_CENTER_DATA, topic ?? 'All', resource ?? 'All', '')
-        const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE))
-
-        for (let page = 1; page <= totalPages; page++) {
-            const segments: string[] = []
-            if (topic) segments.push('topic', textToSlug(topic))
-            if (resource) segments.push('resource', textToSlug(resource))
-            if (page > 1) segments.push('page', String(page))
-            if (segments.length > 0) paths.push({ params: { params: segments } })
-        }
-    }
-
-    addPathsFor()
-    topics.forEach((topic) => addPathsFor(topic))
-    resourceTypes.forEach((resource) => addPathsFor(undefined, resource))
-    topics.forEach((topic) => resourceTypes.forEach((resource) => addPathsFor(topic, resource)))
-
-    return { paths, fallback: 'blocking' }
+    return { paths: [], fallback: 'blocking' }
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
