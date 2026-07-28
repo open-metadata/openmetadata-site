@@ -10,14 +10,6 @@ import {
 } from "@/constants/EdnonCustomer.constants";
 import Head from "next/head";
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
-
 const EdnonCaseStudyPage = () => {
   return (
     <>

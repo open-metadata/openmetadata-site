@@ -11,14 +11,6 @@ import {
 import Head from "next/head";
 import Image from "next/image";
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
-
 const OpenAICaseStudyPage = () => {
   return (
     <>

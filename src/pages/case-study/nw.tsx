@@ -10,14 +10,6 @@ import {
 } from "@/constants/NwCustomer.constants";
 import Head from "next/head";
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
-
 const NwCaseStudyPage = () => {
   return (
     <>

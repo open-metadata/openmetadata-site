@@ -4,23 +4,21 @@ import "../styles/cve-style.css";
 import "../styles/modal.css";
 import type { AppProps } from "next/app";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "@fontsource/metropolis";
-import "@fontsource/metropolis/400-italic.css";
-import "@fontsource/metropolis/500.css";
-import "@fontsource/metropolis/600.css";
-import "@fontsource/metropolis/700.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Script from "next/script";
+import { useRouter } from "next/router";
 import CookieModal from "@/components/CookieModal";
 import Layout from "@/components/Layout/Layout";
+import metropolis from "@/fonts/metropolis";
 
 config.autoAddCss = false;
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
   const [storedCookie, setStoredCookie] = useState<string | null>(null);
 
   const handleButtonClick = (choice: string) => {
@@ -28,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
     setStoredCookie(choice);
   };
 
-  const canonicalUrl = pageProps.link?.split("?")[0]
+  const canonicalUrl = (pageProps.link ?? router.asPath).split("?")[0]
   const markdownUrl =
     !canonicalUrl || canonicalUrl === "/"
       ? "https://open-metadata.org/index.md"
@@ -141,10 +139,12 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         />
       )}
-      <Layout>
-        {!storedCookie && <CookieModal handleButtonClick={handleButtonClick} />}
-        <Component {...pageProps} />
-      </Layout>
+      <div className={`${metropolis.variable} ${metropolis.className}`}>
+        <Layout>
+          {!storedCookie && <CookieModal handleButtonClick={handleButtonClick} />}
+          <Component {...pageProps} />
+        </Layout>
+      </div>
     </>
   );
 }

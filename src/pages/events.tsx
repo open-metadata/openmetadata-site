@@ -2,14 +2,6 @@ import FooterDev from "@/components/FooterDev/FooterDev";
 import ParamLink from "@/components/ParamLink";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
-
 export default function Events() {
   return (
     <div id="layoutDefault">

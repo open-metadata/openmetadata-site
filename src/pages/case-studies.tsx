@@ -9,14 +9,6 @@ import {
 import Image from "next/image";
 import { useState } from "react";
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
-
 const CaseStudiesPage = () => {
   const [activeIndustry, setActiveIndustry] = useState<string>("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);

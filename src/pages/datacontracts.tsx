@@ -2,14 +2,6 @@ import FooterDev from "@/components/FooterDev/FooterDev";
 import ParamLink from "@/components/ParamLink";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Image from "next/image";
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
-
 export default function Community() {
   return (
     <div className="justify-between min-h-screen flex flex-col">

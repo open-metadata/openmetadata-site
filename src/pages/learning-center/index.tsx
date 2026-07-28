@@ -10,12 +10,6 @@ import { getPageNumbers } from '@/utils/paginationUtils'
 
 const PAGE_SIZE = 9
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-    return {
-        props: { link: resolvedUrl },
-    }
-}
-
 const LearningCenterPage = () => {
     const router = useRouter()
 
