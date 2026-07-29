@@ -3,15 +3,6 @@ import TyHeader from "@/components/TyVideo/Header";
 import ResourceGallery from "@/components/TyVideo/ResourceGallery";
 import { TY_PAGE_GORGIAS } from "@/constants/LandingPage.constants";
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-      title: "Gorgias Data Management Journey with OpenMetadata | Access",
-    },
-  };
-}
-
 const GorgiasTy = () => {
   return (
     <div>

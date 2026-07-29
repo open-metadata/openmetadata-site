@@ -8,23 +8,10 @@ import {
     EDNON_CUSTOMER_HIGHLIGHTS,
     EDNON_CUSTOMER_TESTIMONIAL
 } from "@/constants/EdnonCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const EdnonCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>Ednon Eliminated Data Silos for 80+ Municipalities with OpenMetadata</title>
-        <meta name="description" content="See how Ednon deployed OpenMetadata to help Deputación da Coruña catalog 1,400+ assets, improve documentation 40+ PP, and implement governance for millions of citizens." />
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader

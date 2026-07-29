@@ -8,24 +8,11 @@ import {
     OPENAI_CUSTOMER_HIGHLIGHTS,
     OPENAI_CUSTOMER_TESTIMONIAL
 } from "@/constants/OpenaiCustomer.constants";
-import Head from "next/head";
 import Image from "next/image";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const OpenAICaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>How OpenAI Built a Self-Service AI Data Agent on OpenMetadata</title>
-        <meta name="description" content="See how OpenAI's Data Productivity team built Kepler, an internal AI data agent serving 3,500+ employees, on OpenMetadata as the open context layer. Repeat queries dropped from 22 minutes to under 90 seconds." />
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader

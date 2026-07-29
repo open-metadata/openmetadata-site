@@ -3,14 +3,6 @@ import ParamLink from "@/components/ParamLink";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Image from "next/image";
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
-
 export default function Community() {
   return (
       <div id="layoutDefault">

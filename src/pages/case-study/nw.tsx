@@ -8,23 +8,10 @@ import {
     NW_CUSTOMER_HIGHLIGHTS, 
     NW_CUSTOMER_TESTIMONIAL 
 } from "@/constants/NwCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const NwCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>NW: Driving Clean Energy With Data Governance Powered By OpenMetadata</title>
-        <meta name="description" content="See how NW implemented OpenMetadata to centralize governance: automating lineage, enriching metadata, and scaling insights across 90+ connectors." />
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader

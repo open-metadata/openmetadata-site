@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useRouter } from 'next/router'
-import { GetServerSideProps } from 'next'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import Image from 'next/image'
 import FooterDev from '@/components/FooterDev/FooterDev'
 import ParamLink from '@/components/ParamLink'
@@ -31,7 +31,11 @@ function parseFilterParams(segments: string[]) {
     return { topic, resource, page }
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getStaticPaths: GetStaticPaths = async () => {
+    return { paths: [], fallback: 'blocking' }
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
     const segments = (context.params?.params as string[]) || []
     const { topic, resource, page } = parseFilterParams(segments)
 
@@ -45,7 +49,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
             initialTopic: topic ? slugToText(topic) : 'All',
             initialResourceType: resource ? slugToText(resource) : 'All',
             initialPage: page,
-            link: context.resolvedUrl,
         },
     }
 }

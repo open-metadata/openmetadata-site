@@ -8,24 +8,10 @@ import {
     CARREFOUR_CUSTOMER_HIGHLIGHTS,
     CARREFOUR_CUSTOMER_TESTIMONIAL,
 } from "@/constants/CarrefourCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-    return {
-        props: {
-            link: resolvedUrl,
-        },
-    };
-}
 
 const CarrefourCaseStudyPage = () => {
     return (
         <>
-            <Head>
-                <title>
-                    Carrefour Brazil: Data Governance Success with OpenMetadata
-                </title>
-            </Head>
             <div>
                 <div className="mt-9 md:mt-16">
                     <CustomerHeader

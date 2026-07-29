@@ -5,6 +5,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import Image from 'next/image'
+import Head from 'next/head'
 import FooterDev from '@/components/FooterDev/FooterDev'
 import ParamLink from '@/components/ParamLink'
 import DetailsPageRightPanel from '@/components/learning-center/DetailsPageRightPanel'
@@ -96,6 +97,9 @@ const LearningCenterArticle = ({ article, mdxSource, isRightPanelVisible, link }
 
     return (
         <div>
+            <Head>
+                <title>{`${article.title} | OpenMetadata Learning Center`}</title>
+            </Head>
             <div className="mt-9 md:mt-16 bg-gradient-to-t from-[#f2edfd] to-white min-h-screen">
                 <div className="max-w-[1440px] mx-auto py-20 px-5 md:px-10 xl:px-16">
                     <div

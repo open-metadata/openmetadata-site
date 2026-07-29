@@ -8,23 +8,10 @@ import {
   WOOP_CUSTOMER_HIGHLIGHTS, 
   WOOP_CUSTOMER_TESTIMONIAL 
 } from "@/constants/WoopCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const WoopCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>Woop Enables Self-Service Data Discovery with OpenMetadata</title>
-        <meta name="description" content="See how logistics platform Woop's 2-person data team manages 1,600+ assets for 100+ users with OpenMetadata's automated governance and self-service discovery." />
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader

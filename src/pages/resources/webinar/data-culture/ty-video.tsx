@@ -3,15 +3,6 @@ import TyHeader from "@/components/TyVideo/Header";
 import ResourceGallery from "@/components/TyVideo/ResourceGallery";
 import { TY_PAGE_DATA_CULTURE } from "@/constants/LandingPage.constants";
 
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-      title: "Data Culture with Uber's Former Chief Architect | Access",
-    },
-  };
-}
-
 const DataCultureTy = () => {
   return (
     <div>

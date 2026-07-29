@@ -8,23 +8,10 @@ import {
     SOLOCAL_CUSTOMER_HIGHLIGHTS,
     SOLOCAL_CUSTOMER_TESTIMONIAL
 } from "@/constants/SolocalCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const SolocalCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>Solocal Delivers Trusted Analytics to 260K+ Local Businesses with OpenMetadata</title>
-        <meta name="description" content="Learn how Solocal, operator of PagesJaunes, uses OpenMetadata to deliver trusted analytics for France’s most-visited local business platform." />
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader

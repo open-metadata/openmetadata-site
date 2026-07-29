@@ -8,22 +8,10 @@ import {
   GORGIAS_CUSTOMER_HIGHLIGHTS,
   GORGIAS_CUSTOMER_TESTIMONIAL,
 } from "@/constants/GorgiasCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const GorgiasCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>Gorgias: Data Discovery Automation with OpenMetadata</title>
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader
