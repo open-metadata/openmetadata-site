@@ -128,6 +128,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
         <title>{pageTitle}</title>
       </Head>
+      <style jsx global>{`
+        :root {
+          --font-metropolis: ${metropolis.style.fontFamily};
+        }
+      `}</style>
       {(!storedCookie || storedCookie === "Accept") && (
         <Script
           id="tag-manager"
@@ -143,12 +148,10 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         />
       )}
-      <div className={`${metropolis.variable} ${metropolis.className}`}>
-        <Layout>
-          {!storedCookie && <CookieModal handleButtonClick={handleButtonClick} />}
-          <Component {...pageProps} />
-        </Layout>
-      </div>
+      <Layout>
+        {!storedCookie && <CookieModal handleButtonClick={handleButtonClick} />}
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

@@ -28,7 +28,6 @@ const metropolis = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-metropolis",
   display: "swap",
 });
 
