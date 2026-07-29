@@ -8,15 +8,10 @@ import {
     VRT_CUSTOMER_HIGHLIGHTS, 
     VRT_CUSTOMER_TESTIMONIAL 
 } from "@/constants/VRTCustomer.constants";
-import Head from "next/head";
 
 const VRTCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>Enabling real data ownership at VRT with OpenMetadata</title>
-        <meta name="description" content="Discover how Belgian public media broadcaster VRT established true ownership of data quality fixes at scale through their data transformation partners at Dataroots and OpenMetadata!" />
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader

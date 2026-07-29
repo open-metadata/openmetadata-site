@@ -14,8 +14,13 @@ import { useRouter } from "next/router";
 import CookieModal from "@/components/CookieModal";
 import Layout from "@/components/Layout/Layout";
 import metropolis from "@/fonts/metropolis";
+import { PAGE_METADATA } from "@/constants/pageMetadata";
 
 config.autoAddCss = false;
+
+const DEFAULT_TITLE = "OpenMetadata: #1 Open Source Context Layer";
+const DEFAULT_DESCRIPTION =
+  "OpenMetadata is the open-source AI context layer — powered by metadata, semantics, and memory that give people and AI a shared, rich understanding of your data. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook. The unified platform for data cataloging, discovery, quality, observability, governance, lineage, collaboration & more.";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -25,6 +30,10 @@ export default function App({ Component, pageProps }: AppProps) {
     localStorage.setItem("userCookie", choice);
     setStoredCookie(choice);
   };
+
+  const pageMeta = PAGE_METADATA[router.pathname];
+  const pageTitle = pageMeta?.title ?? DEFAULT_TITLE;
+  const pageDescription = pageMeta?.description ?? DEFAULT_DESCRIPTION;
 
   const canonicalUrl = (pageProps.link ?? router.asPath).split("?")[0]
   const markdownUrl =
@@ -76,10 +85,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta
-          name="description"
-          content="OpenMetadata is the open-source AI context layer — powered by metadata, semantics, and memory that give people and AI a shared, rich understanding of your data. Built by the founders of Apache Hadoop, Apache Atlas, and Uber Databook. The unified platform for data cataloging, discovery, quality, observability, governance, lineage, collaboration &amp; more."
-        />
+        <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
           content="open source data catalog, #1 open source data catalog, enterprise data catalog, AI data catalog, data governance, data lineage, data quality, data discovery, metadata management, metadata platform, data intelligence platform, knowledge graph, data observability, GraphRAG, AI-ready data, open metadata standard, semantic data catalog, open source context layer, AI context layer, semantic context graph, context layer for AI agents"
@@ -120,9 +126,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         {/* Twitter Card end */}
 
-        <title>
-          {pageProps.title ?? "OpenMetadata: #1 Open Source Context Layer"}
-        </title>
+        <title>{pageTitle}</title>
       </Head>
       {(!storedCookie || storedCookie === "Accept") && (
         <Script

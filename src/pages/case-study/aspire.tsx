@@ -8,15 +8,10 @@ import {
     ASPIRE_CUSTOMER_HIGHLIGHTS, 
     ASPIRE_CUSTOMER_TESTIMONIAL 
 } from "@/constants/AspireCustomer.constants";
-import Head from "next/head";
 
 const AspireCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>Aspire Builds a Trusted Metadata Foundation With OpenMetadata</title>
-        <meta name="description" content="Learn how Aspire unified metadata across its finance platform using OpenMetadata, replacing manual documentation with a trusted system of record, standardizing data quality, and enabling faster, self-serve analytics across 1,700+ tables and 6,100+ quality checks." />
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader

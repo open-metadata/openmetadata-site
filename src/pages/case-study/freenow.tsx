@@ -8,18 +8,10 @@ import {
     FREENOW_CUSTOMER_HIGHLIGHTS, 
     FREENOW_CUSTOMER_TESTIMONIAL 
 } from "@/constants/FreenowCustomer.constants";
-import Head from "next/head";
 
 const FreeNowCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>FREENOW: OpenMetadata powered Data Announcement Engine</title>
-        <meta 
-            name="description" 
-            content="Discover how FREENOW built an OpenMetadata-powered system to automate data communications across 17k assets and 300+ downstream dependencies" 
-        />
-      </Head>
       <div>
         <div className="mt-9 md:mt-16">
           <CustomerHeader
