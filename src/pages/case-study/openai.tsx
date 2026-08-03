@@ -1,0 +1,40 @@
+import CustomerChallenges from "@/components/CustomerCaseStudy/CustomerChallenges";
+import CustomerHeader from "@/components/CustomerCaseStudy/CustomerHeader";
+import CustomerTestimonial from "@/components/CustomerCaseStudy/CustomerTestimonial";
+import FooterDev from "@/components/FooterDev/FooterDev";
+import {
+    OPENAI_CUSTOMER_CHALLENGES,
+    OPENAI_CUSTOMER_HEADER,
+    OPENAI_CUSTOMER_HIGHLIGHTS,
+    OPENAI_CUSTOMER_TESTIMONIAL
+} from "@/constants/OpenaiCustomer.constants";
+import Image from "next/image";
+
+const OpenAICaseStudyPage = () => {
+  return (
+    <>
+      <div>
+        <div className="mt-9 md:mt-16">
+          <CustomerHeader
+            customerHeader={OPENAI_CUSTOMER_HEADER}
+            highlights={OPENAI_CUSTOMER_HIGHLIGHTS}
+          />
+          <CustomerTestimonial testimonial={OPENAI_CUSTOMER_TESTIMONIAL} />
+          <div className="max-w-[800px] mx-auto px-4 mt-12 md:mt-24">
+            <Image
+              src="/assets/openai-customer/data-platform-stats.png"
+              alt="OpenAI data platform at a glance: 3,500+ users, 15 tools, 580+ PB, 70K datasets"
+              width={1000}
+              height={1000}
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+          <CustomerChallenges data={OPENAI_CUSTOMER_CHALLENGES} />
+        </div>
+        <FooterDev />
+      </div>
+    </>
+  );
+};
+
+export default OpenAICaseStudyPage;

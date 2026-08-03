@@ -8,25 +8,12 @@ import {
     VRT_CUSTOMER_HIGHLIGHTS, 
     VRT_CUSTOMER_TESTIMONIAL 
 } from "@/constants/VRTCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const VRTCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>Enabling real data ownership at VRT with OpenMetadata</title>
-        <meta name="description" content="Discover how Belgian public media broadcaster VRT established true ownership of data quality fixes at scale through their data transformation partners at Dataroots and OpenMetadata!" />
-      </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={VRT_CUSTOMER_HEADER}
             highlights={VRT_CUSTOMER_HIGHLIGHTS}

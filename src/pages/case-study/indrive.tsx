@@ -8,25 +8,12 @@ import {
     INDRIVE_CUSTOMER_HIGHLIGHTS, 
     INDRIVE_CUSTOMER_TESTIMONIAL 
 } from "@/constants/IndriveCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const IndriveCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>inDrive Scales Global Data Governance with OpenMetadata</title>
-        <meta name="description" content="See how inDrive tracks and governs 100+ AWS-hosted databases for global teams, enabling faster analytics, automated compliance, and trusted data at scale." />
-      </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={INDRIVE_CUSTOMER_HEADER}
             highlights={INDRIVE_CUSTOMER_HIGHLIGHTS}

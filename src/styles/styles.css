@@ -60,7 +60,7 @@
   --bs-info-soft: #daf2f8;
   --bs-warning-soft: #f2eee3;
   --bs-danger-soft: #f1e0e3;
-  --bs-font-sans-serif: 'Metropolis', -apple-system, BlinkMacSystemFont,
+  --bs-font-sans-serif: var(--font-metropolis), -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
@@ -88,7 +88,7 @@
 
 body {
   margin: 0;
-  font-family: 'Metropolis', sans-serif;
+  font-family: var(--font-metropolis), sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -437,6 +437,18 @@ a {
   text-decoration: none;
 }
 a:hover {
+  color: #004ec2;
+}
+
+/* .md-link is used by inline cross-links in Learning Center article bodies
+   (e.g. "This is part of a series of articles about <a className="md-link">metadata management</a>").
+   Convention borrowed from getcollate LC; adding here so OMD LC renders the same. */
+.md-link {
+  color: #0061f2;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.md-link:hover {
   color: #004ec2;
 }
 
@@ -2751,7 +2763,7 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  print-color-adjust: exact;
 }
 .form-check-input[type='checkbox'] {
   border-radius: 0.25em;
@@ -6078,6 +6090,19 @@ fieldset:disabled .btn {
   display: flex !important;
   justify-content: center;
   align-items: center;
+}
+
+.logo-marquee {
+  animation: logo-marquee-scroll 60s linear infinite;
+}
+
+@keyframes logo-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .fade {

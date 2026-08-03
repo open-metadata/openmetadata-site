@@ -8,25 +8,12 @@ import {
     FORTER_CUSTOMER_HIGHLIGHTS, 
     FORTER_CUSTOMER_TESTIMONIAL 
 } from "@/constants/ForterCustomer.constants";
-import Head from "next/head";
-
-export function getServerSideProps({ resolvedUrl }: { resolvedUrl: string }) {
-  return {
-    props: {
-      link: resolvedUrl,
-    },
-  };
-}
 
 const ForterCaseStudyPage = () => {
   return (
     <>
-      <Head>
-        <title>Forter Scaled Metadata for Enterprise Fraud Prevention</title>
-        <meta name="description" content="Discover how Forter built a centralized metadata foundation to manage sensitive, high-volume data while deterring malicious behavior for enterprise merchants." />
-      </Head>
       <div>
-        <div className="mt-20 md:mt-24 lg:mt-32">
+        <div className="mt-9 md:mt-16">
           <CustomerHeader
             customerHeader={FORTER_CUSTOMER_HEADER}
             highlights={FORTER_CUSTOMER_HIGHLIGHTS}

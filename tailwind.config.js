@@ -10,7 +10,8 @@ module.exports = {
       boxShadow: {
         "primary": '0px 4px 44px 0px rgba(0, 0, 0, 0.12)',
         "secondary": '0px 0px 28px 0px rgba(0, 0, 0, 0.08)',
-        "card": '0px 4px 12px 0px rgba(0, 0, 0, 0.12)'
+        "card": '0px 4px 12px 0px rgba(0, 0, 0, 0.12)',
+        'summit-logo': '0 12px 16px -4px rgba(10, 13, 18, 0.08), 0 4px 6px -2px rgba(10, 13, 18, 0.03), 0 2px 2px -1px rgba(10, 13, 18, 0.04)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

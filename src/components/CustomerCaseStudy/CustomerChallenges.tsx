@@ -21,7 +21,7 @@ const CustomerChallenges = ({ data }: CustomerChallengesProps) => {
                         <div className="font-medium tracking-[-0.02em] text-[32px] leading-[38px] mt-12 mb-6 sm:mt-20 sm:mb-8 sm:text-[46px] sm:leading-[52px]">{item.title}</div>
                         <div className="sm:text-[20px] whitespace-pre-line">{item.description}</div>
                         {item.image2 && (
-                            <Image src={item.image2} alt={item.title} width={1000} height={1000} />
+                            <Image src={item.image2} alt={item.title} width={1000} height={1000} className="w-full h-auto rounded-lg my-8" />
                         )}
                         <div className="my-8 flex flex-col gap-5 sm:my-12">
                             {item.challenges.map(challenge => (
@@ -32,7 +32,7 @@ const CustomerChallenges = ({ data }: CustomerChallengesProps) => {
                             ))}
                         </div>
                         {item.description2 && <div className="sm:text-[20px] whitespace-pre-line mb-5">{item.description2}</div>}
-                        {item.image && <Image src={item.image} alt={item.title} width={1000} height={1000} />}
+                        {item.image && <Image src={item.image} alt={item.title} width={1000} height={1000} className="w-full h-auto rounded-lg my-8" />}
                     </div>
                 ))}
             </div>

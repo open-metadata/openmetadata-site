@@ -1,14 +1,26 @@
 const HEADER_IMAGE_ROUTE = '/assets/customer-gallery/header';
 const GALLERY_IMAGE_ROUTE = '/assets/testimonials';
 
-export const HEADER_CUSTOMERS = [
+type HeaderCustomer = {
+    backgroundImage: string;
+    logo: string;
+    title: string;
+    buttonText: string;
+    url: string;
+    isExternal: boolean;
+    button2Text?: string;
+    url2?: string;
+    isExternal2?: boolean;
+};
+
+export const HEADER_CUSTOMERS: HeaderCustomer[] = [
     {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/mango-bg.svg`,
-        logo: `${HEADER_IMAGE_ROUTE}/mango-logo.svg`,
-        title: 'Mango increases productivity of data teams up to 20%',
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/openai-bg.png`,
+        logo: `${HEADER_IMAGE_ROUTE}/openai-logo.svg`,
+        title: "OpenAI's internal AI data agent serves 3,500+ employees on OpenMetadata",
         buttonText: 'Read More',
-        url: 'https://www.getcollate.io/customers/mango',
-        isExternal: true
+        url: '/case-study/openai',
+        isExternal: false
     },
     {
         backgroundImage: `${HEADER_IMAGE_ROUTE}/carrefour-bg.svg`,
@@ -35,15 +47,12 @@ export const HEADER_CUSTOMERS = [
         isExternal: false
     },
     {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/freenow-bg.svg`,
-        logo: `${HEADER_IMAGE_ROUTE}/freenow-logo.svg`,
-        title: '7 business domains, managed with 30+ analytics process per domain',
-        buttonText: 'FREENOW Blog',
-        url: 'https://medium.com/breaking-data-silos-lineage-for-cross-domain/data-management-at-freenow-the-lineage-and-announcements-approach-177f387a9180',
-        button2Text: 'Read More',
-        url2: '/case-study/freenow',
-        isExternal: true,
-        isExternal2: false
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/mango-bg.svg`,
+        logo: `${HEADER_IMAGE_ROUTE}/mango-logo.svg`,
+        title: 'Mango increases productivity of data teams up to 20%',
+        buttonText: 'Read More',
+        url: 'https://www.getcollate.io/customers/mango',
+        isExternal: true
     },
 ]
 
@@ -57,6 +66,45 @@ export const INDUSTRY_LIST = [
 ]
 
 export const CUSTOMER_GALLERY = [
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/rakuten-logo.webp`,
+        industry: 'Technology',
+        testimonial: "OpenMetadata offers the technical metadata, business metadata, quality, and observability that we are looking for. We see that OpenMetadata is a complete package solution for Rakuten Group.",
+        customerName: 'Muqtafi Akhmad',
+        customerDesignation: 'Assistant Manager, Data Pipeline Platform Team',
+        company: 'Rakuten',
+        imgSize: {
+            width: 130,
+            height: 39
+        },
+        link: '/case-study/rakuten'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/yelp-logo.webp`,
+        industry: 'Technology',
+        testimonial: "For us, the foundation of data discovery is good search, and that's why we picked OpenMetadata. The fact that it's open source and extensible let us bring our own search algorithm and contribute fixes back upstream.",
+        customerName: 'Amy Forest',
+        customerDesignation: 'Software Engineer, Analytics Engineering',
+        company: 'Yelp',
+        imgSize: {
+            width: 120,
+            height: 45
+        },
+        link: '/case-study/yelp'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/freenow-logo.png`,
+        industry: 'Transportation',
+        testimonial: "We’re not trying to communicate more—we’re trying to communicate better and more efficiently. With OpenMetadata, we’ve created a centralized, automated communication hub that gives full visibility into data asset changes and their impact across the organization.",
+        customerName: 'Mehak Roha',
+        customerDesignation: 'Data Platform Engineer',
+        company: 'FreeNow',
+        imgSize: {
+            width: 150,
+            height: 50
+        },
+        link: '/case-study/freenow'
+    },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/woop-logo.webp`,
         industry: 'Transportation',
@@ -173,6 +221,32 @@ export const CUSTOMER_GALLERY = [
             height: 40
         },
         link: '/case-study/gorgias'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/ednon-logo.png`,
+        industry: 'Other',
+        testimonial: "OpenMetadata delivered beyond our expectations, giving us complete control through APIs and Python while remaining accessible to non-technical users. In two years, we took a provincial government from virtually zero documentation to a fully governed, AI-ready data infrastructure.",
+        customerName: 'Nicolás Gutiérrez García',
+        customerDesignation: 'Project Manager, Data Governance (Ednon)',
+        company: 'Ednon',
+        imgSize: {
+            width: 112,
+            height: 50
+        },
+        link: '/case-study/ednon'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/solocal-logo.svg`,
+        industry: 'Other',
+        testimonial: "The biggest benefit of OpenMetadata is simplification. We’ve significantly improved the dialogue with the business by helping everyone understand which data products and tables really matter.",
+        customerName: 'Gaétan Soulas',
+        customerDesignation: 'SAS and Certified Google Cloud Data Architect',
+        company: 'Solocal',
+        imgSize: {
+            width: 210,
+            height: 50
+        },
+        link: '/case-study/solocal'
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/beeline-logo.webp`,

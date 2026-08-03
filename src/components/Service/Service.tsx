@@ -21,12 +21,11 @@ const Services = () => {
               loading="eager"
             />
             <div className="text-left mx-auto md:max-w-[95%]">
-              <h3 className="font-medium text-[24px] tracking-[-0.02em] leading-[30px] md:leading-[40px] md:text-3xl lg:max-w-[90%] xl:text-[34px]">
+              <h3 className="font-medium text-[24px] text-[#8E52F0] tracking-[-0.02em] leading-[30px] md:leading-[40px] md:text-3xl lg:max-w-[90%] xl:text-[34px]">
                 {service.serviceName.header1}
-                <span className="text-[#7147E8]">
+                <span className="text-[#292929]">
                   {service.serviceName.header2}
                 </span>
-                {service.serviceName.header3 && service.serviceName.header3}
               </h3>
               <p className="mt-2 font-light text-[16px] tracking-[-0.01em] lg:max-w-[95%] xl:text-[18px]">
                 {service.description}
