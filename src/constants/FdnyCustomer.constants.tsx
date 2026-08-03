@@ -14,7 +14,7 @@ export const FDNY_CUSTOMER_HIGHLIGHTS = [
     },
     {
         id: 2,
-        count: '15,582',
+        count: '15,000+',
         description: "active Fire and EMS personnel schedules now analyzed through natural-language queries"
     },
     {
@@ -35,7 +35,7 @@ export const FDNY_CUSTOMER_CHALLENGES = [
     {
         image: '/assets/fdny-customer/governing-critical-data.png',
         title: 'Governing critical data without a data engineering team',
-        description: `FDNY's IT department of roughly 60 staff, including application developers, database developers, business analysts, and QA, has long excelled at building operational systems: a computer-aided dispatch platform central to NYC's 911 response, a mobile incident command application, and a custom electronic health records system tracking the duty status and medical leave of every active fire and EMS member. The team had no formal data engineering function, and no scalable way to document, govern, or surface the institutional knowledge locked inside three decades of Oracle data.`,
+        description: `FDNY's IT department, including application developers, database developers, business analysts, and QA, has long excelled at building operational systems: a computer-aided dispatch platform central to NYC's 911 response, a mobile incident command application, and a custom electronic health records system tracking the duty status and medical leave of every active fire and EMS member. The team had no formal data engineering function, and no scalable way to document, govern, or surface the institutional knowledge locked inside three decades of Oracle data.`,
         challenges: [
             {
                 header: 'Three decades of undocumented data',
@@ -92,7 +92,7 @@ export const FDNY_CUSTOMER_CHALLENGES = [
                 description: "Connected to Claude via the OpenMetadata MCP, FDNY's analytics team explores the department's data estate in natural language. The snowstorm staffing analysis, a query that would have previously required a developer, a two-to-three-week lead time, and custom SQL, completed in a single Claude session with no code written.",
             },
             {
-                header: 'Operational insight across 15,582 personnel records',
+                header: 'Operational insight across 15,000+ personnel records',
                 description: 'With duty status, medical leave, and scheduling data for all active fire and EMS members documented and accessible, FDNY can analyze workforce patterns in real time. Investigations that once required bespoke developer work, like understanding how a weather event affected staffing across two divisions, are now within reach of any analyst.',
             },
             {
