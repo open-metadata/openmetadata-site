@@ -67,6 +67,19 @@ export const INDUSTRY_LIST = [
 
 export const CUSTOMER_GALLERY = [
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/rakuten-logo.webp`,
+        industry: 'Technology',
+        testimonial: "OpenMetadata offers the technical metadata, business metadata, quality, and observability that we are looking for. We see that OpenMetadata is a complete package solution for Rakuten Group.",
+        customerName: 'Muqtafi Akhmad',
+        customerDesignation: 'Assistant Manager, Data Pipeline Platform Team',
+        company: 'Rakuten',
+        imgSize: {
+            width: 130,
+            height: 39
+        },
+        link: '/case-study/rakuten'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/yelp-logo.webp`,
         industry: 'Technology',
         testimonial: "For us, the foundation of data discovery is good search, and that's why we picked OpenMetadata. The fact that it's open source and extensible let us bring our own search algorithm and contribute fixes back upstream.",
