@@ -79,7 +79,7 @@ export const FDNY_CUSTOMER_CHALLENGES = [
         ]
     },
     {
-        image: '/assets/fdny-customer/self-service-analytics.png',
+        image: '/assets/fdny-customer/self-service-tools.webp',
         title: 'Empowering first responders with self-service analytics',
         description: `OpenMetadata gave FDNY's 30-year Oracle database something it never had: a readable record of what the data means. Documentation that lived in individuals' memories and spreadsheet cells now lives in a governed, version-controlled catalog that updates nightly as the database changes. Business users who once waited weeks for developer-compiled datasets can now explore data on their own, and developers focus on enriching the data estate rather than fielding recurring analytics requests.`,
         challenges: [
