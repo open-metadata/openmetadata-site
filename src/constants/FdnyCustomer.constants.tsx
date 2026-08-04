@@ -56,7 +56,7 @@ export const FDNY_CUSTOMER_CHALLENGES = [
         ]
     },
     {
-        image: '/assets/fdny-customer/ai-ready-governance.png',
+        image: '/assets/fdny-customer/why-openmetadata.webp',
         title: 'AI-ready data governance with OpenMetadata',
         description: `After a two-month evaluation of platforms including Alation, DataHub, and others, FDNY selected OpenMetadata for its rapid deployment path, open source accessibility, active community, and on-premise deployment support, a firm requirement for operationally sensitive data. Within weeks of standing up a Kubernetes environment, the team had a working instance. OpenMetadata became one tool in a broader chain: Obsidian for markdown-based documentation, OpenCode as an AI co-pilot inside Obsidian, GitHub for version control, and Claude connected via the OpenMetadata MCP for natural-language data exploration. New documentation drafted in Obsidian writes back directly to the relevant assets in OpenMetadata.`,
         challenges: [
@@ -79,7 +79,7 @@ export const FDNY_CUSTOMER_CHALLENGES = [
         ]
     },
     {
-        image: '/assets/fdny-customer/self-service-tools.webp',
+        image: '/assets/fdny-customer/ai-ready-governance.png',
         title: 'Empowering first responders with self-service analytics',
         description: `OpenMetadata gave FDNY's 30-year Oracle database something it never had: a readable record of what the data means. Documentation that lived in individuals' memories and spreadsheet cells now lives in a governed, version-controlled catalog that updates nightly as the database changes. Business users who once waited weeks for developer-compiled datasets can now explore data on their own, and developers focus on enriching the data estate rather than fielding recurring analytics requests.`,
         challenges: [
