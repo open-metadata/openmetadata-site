@@ -3,7 +3,7 @@ export const FDNY_CUSTOMER_HEADER = {
     description: "With more than 17,000 uniformed and civilian employees responding to over 1.6 million emergencies each year, the Fire Department of New York is the largest fire department in the United States and the second largest in the world. Behind every dispatch decision, duty status check, and medical leave record sits a 30-year-old Oracle database that FDNY's IT department built, maintained, and extended without ever fully governing it. When leadership wanted AI-powered analytics at scale, FDNY turned to OpenMetadata to convert decades of siloed institutional knowledge into a living, AI-ready semantic layer, then connected it directly to Claude for natural-language data exploration.",
     industry: "Public Safety / Government",
     technologies: "Oracle, Postgres, MySQL, GitHub, Obsidian, OpenCode",
-    image: '/assets/fdny-customer/fdny-header.webp'
+    videoUrl: 'DxAKTRLFouU'
 }
 
 export const FDNY_CUSTOMER_HIGHLIGHTS = [
@@ -33,7 +33,7 @@ export const FDNY_CUSTOMER_TESTIMONIAL = {
 
 export const FDNY_CUSTOMER_CHALLENGES = [
     {
-        image: '/assets/fdny-customer/governing-critical-data.png',
+        image: '/assets/fdny-customer/data-governance-challenges.webp',
         title: 'Governing critical data without a data engineering team',
         description: `FDNY's IT department, including application developers, database developers, business analysts, and QA, has long excelled at building operational systems: a computer-aided dispatch platform central to NYC's 911 response, a mobile incident command application, and a custom electronic health records system tracking the duty status and medical leave of every active fire and EMS member. The team had no formal data engineering function, and no scalable way to document, govern, or surface the institutional knowledge locked inside three decades of Oracle data.`,
         challenges: [

@@ -25,7 +25,7 @@ const FdnyCaseStudyPage = () => {
         <title>FDNY: Governing Mission-Critical Data with OpenMetadata</title>
         <meta
           name="description"
-          content="Learn how the Fire Department of New York used OpenMetadata to convert 30 years of Oracle data into an AI-ready semantic layer, connected to Claude via MCP for natural-language analytics across 15,582 active fire and EMS personnel records."
+          content="Learn how the Fire Department of New York used OpenMetadata to convert 30 years of Oracle data into an AI-ready semantic layer, connected to Claude via MCP for natural-language analytics across 15,000+ active fire and EMS personnel records."
         />
       </Head>
       <div>
