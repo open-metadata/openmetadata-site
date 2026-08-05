@@ -80,6 +80,19 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/rakuten'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/fdny-logo.webp`,
+        industry: 'Public Safety',
+        testimonial: "Once we enriched the underlying data model with OpenMetadata and connected to Claude, all of a sudden it clicked.",
+        customerName: 'Wes Fang',
+        customerDesignation: 'Deputy Director, IT',
+        company: 'FDNY',
+        imgSize: {
+            width: 52,
+            height: 61
+        },
+        link: '/case-study/fdny'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/yelp-logo.webp`,
         industry: 'Technology',
         testimonial: "For us, the foundation of data discovery is good search, and that's why we picked OpenMetadata. The fact that it's open source and extensible let us bring our own search algorithm and contribute fixes back upstream.",
