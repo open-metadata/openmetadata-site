@@ -93,6 +93,58 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/fdny'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/scout24-logo.webp`,
+        industry: 'Technology',
+        testimonial: "We all talk about AI, but the real product is not AI. Context is the real product. AI just multiplies it.",
+        customerName: 'Angelita Frozza Sanches',
+        customerDesignation: 'Head of Core Data Platform',
+        company: 'Scout24',
+        imgSize: {
+            width: 120,
+            height: 37
+        },
+        link: 'https://www.getcollate.io/customers/scout24'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/union-bank-dark.svg`,
+        industry: 'Banking',
+        testimonial: "In a highly regulated industry, data governance is not simply a documentation exercise. It impacts regulatory compliance, operational resilience, audit readiness, and customer trust.",
+        customerName: 'Cirene Simon R. Simbahan',
+        customerDesignation: 'Head of Data Trust and Governance Office',
+        company: 'UnionBank of the Philippines',
+        imgSize: {
+            width: 130,
+            height: 40
+        },
+        link: 'https://www.getcollate.io/customers/unionbank'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/ambry-logo.webp`,
+        industry: 'Healthcare',
+        testimonial: "Using Collate, we were able to define this PHI environment, which involved metadata ingestion for six PHI-free MySQL DBs, a little over 11,000 total data assets.",
+        customerName: 'Dan Kostecki',
+        customerDesignation: 'Data Engineer',
+        company: 'Ambry Genetics',
+        imgSize: {
+            width: 140,
+            height: 25
+        },
+        link: 'https://www.getcollate.io/customers/ambry'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/fundcraft-logo.webp`,
+        industry: 'Financial Services',
+        testimonial: "Collate has been a game changer for us. What truly sets Collate apart is the team: during onboarding and day-to-day, they understood our use case and helped us reach our business goals faster.",
+        customerName: 'Victor Martin',
+        customerDesignation: 'Co-Founder and CTO',
+        company: 'fundcraft',
+        imgSize: {
+            width: 150,
+            height: 25
+        },
+        link: 'https://www.getcollate.io/customers/fundcraft'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/yelp-logo.webp`,
         industry: 'Technology',
         testimonial: "For us, the foundation of data discovery is good search, and that's why we picked OpenMetadata. The fact that it's open source and extensible let us bring our own search algorithm and contribute fixes back upstream.",
