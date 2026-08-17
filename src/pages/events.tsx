@@ -112,17 +112,17 @@ export default function Events() {
                   <div className="col-lg-6 mb-4">
                     <div className="card">
                       <div className="card-body">
-                        <YoutubeEmbed videoId="NxqCn-3XkVc" />
-                        <p className="font-semibold mb-0 mt-2">May 2025</p>
+                        <YoutubeEmbed videoId="mRSXQHvHRBs" />
+                        <p className="font-semibold mb-0 mt-2">July 2026</p>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-6 mb-4">
                     <div className="card">
                       <div className="card-body">
-                        <YoutubeEmbed videoId="AuYBaXC8-M4" />
+                        <YoutubeEmbed videoId="3JTfIHJMotM" />
                         <p className="font-semibold mb-0 mt-2">
-                          MCP Introduction, May 2025
+                          From Knowledge Graph to Context, July 2026
                         </p>
                       </div>
                     </div>
