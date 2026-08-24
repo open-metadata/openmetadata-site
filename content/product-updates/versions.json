@@ -1,5 +1,10 @@
 [
   {
+    "version": "v2.0.0",
+    "date": "Released on 24th August 2026.",
+    "hasFeatures": true
+  },
+  {
     "version": "v1.13.4",
     "date": "Released on 21st August 2026.",
     "hasFeatures": false
