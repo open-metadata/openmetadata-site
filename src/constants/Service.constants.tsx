@@ -1,7 +1,7 @@
 export const SERVICE_LIST = [
   {
     serviceName: {
-        header1: 'Semantic context your AI agents ',
+        header1: 'Context your AI agents ',
         header2: 'and people can act on'
     },
     description:

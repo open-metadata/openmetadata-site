@@ -10,10 +10,10 @@ export const PRIMITIVES_LIST = [
       "Schemas, tables, columns, dashboards, pipelines, ML models, owners, lineage, and classifications — captured in one open metadata graph.",
   },
   {
-    name: "Semantics",
+    name: "Ontology",
     icon: SemanticsIcon,
     description:
-      "Glossary terms, metric definitions, ontologies, and W3C-standard relationships (RDF, OWL, DCAT, Schema.org) that give your data shared business meaning.",
+      "Glossary terms, metric definitions, semantics, and W3C-standard relationships (RDF, OWL, DCAT, Schema.org) that give your data shared business meaning.",
   },
   {
     name: "Memory",
