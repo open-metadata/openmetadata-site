@@ -501,18 +501,19 @@ export const getStaticProps: GetStaticProps = async () => {
   const versionsFile = path.join(contentDirectory, "versions.json");
   const versionsData = JSON.parse(fs.readFileSync(versionsFile, "utf8"));
 
-  // Sort versions in descending order (latest first)
-  const versions = [...versionsData].sort((a: any, b: any) => {
-    const versionA = a.version.replace("v", "").split(".").map(Number);
-    const versionB = b.version.replace("v", "").split(".").map(Number);
+  // Sort versions by release date, most recent first
+  const parseReleaseDate = (dateStr: string): number => {
+    const match = dateStr.match(
+      /(\d+)(?:st|nd|rd|th)\s+(\w+)\s+(\d{4})/
+    );
+    if (!match) return 0;
+    const [, day, month, year] = match;
+    return new Date(`${month} ${day}, ${year}`).getTime();
+  };
 
-    for (let i = 0; i < 3; i++) {
-      if (versionA[i] !== versionB[i]) {
-        return versionB[i] - versionA[i];
-      }
-    }
-    return 0;
-  });
+  const versions = [...versionsData].sort(
+    (a: any, b: any) => parseReleaseDate(b.date) - parseReleaseDate(a.date)
+  );
 
   // Read and process markdown files
   const versionData: { [key: string]: VersionData } = {};

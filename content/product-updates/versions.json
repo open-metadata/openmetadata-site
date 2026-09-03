@@ -1,527 +1,532 @@
 [
   {
+    "version": "v1.13.5",
+    "date": "Released on 3rd September 2026",
+    "hasFeatures": false
+  },
+  {
     "version": "v2.0.1",
     "date": "Released on 2nd September 2026",
     "hasFeatures": false
   },
   {
     "version": "v2.0.0",
-    "date": "Released on 24th August 2026.",
+    "date": "Released on 24th August 2026",
     "hasFeatures": true
   },
   {
     "version": "v1.13.4",
-    "date": "Released on 21st August 2026.",
+    "date": "Released on 21st August 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.13.3",
-    "date": "Released on 31st July 2026.",
+    "date": "Released on 31st July 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.13.2",
-    "date": "Released on 30th July 2026.",
+    "date": "Released on 30th July 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.14",
-    "date": "Released on 28th July 2026.",
+    "date": "Released on 28th July 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.13",
-    "date": "Released on 6th July 2026.",
+    "date": "Released on 6th July 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.13.1",
-    "date": "Released on 27th June 2026.",
+    "date": "Released on 27th June 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.13.0",
-    "date": "Released on 8th June 2026.",
+    "date": "Released on 8th June 2026",
     "hasFeatures": true
   },
   {
     "version": "v1.12.12",
-    "date": "Released on 24th June 2026.",
+    "date": "Released on 24th June 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.11",
-    "date": "Released on 12th June 2026.",
+    "date": "Released on 12th June 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.10",
-    "date": "Released on 3rd June 2026.",
+    "date": "Released on 3rd June 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.9",
-    "date": "Released on 28th May 2026.",
+    "date": "Released on 28th May 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.8",
-    "date": "Released on 13th May 2026.",
+    "date": "Released on 13th May 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.7",
-    "date": "Released on 12th May 2026.",
+    "date": "Released on 12th May 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.6",
-    "date": "Released on 22nd April 2026.",
+    "date": "Released on 22nd April 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.5",
-    "date": "Released on 13th April 2026.",
+    "date": "Released on 13th April 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.4",
-    "date": "Released on 31st March 2026.",
+    "date": "Released on 31st March 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.3",
-    "date": "Released on 19th March 2026.",
+    "date": "Released on 19th March 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.11.12",
-    "date": "Released on 5th March 2026.",
+    "date": "Released on 5th March 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.12.1",
-    "date": "Released on 24th February 2026.",
+    "date": "Released on 24th February 2026",
     "hasFeatures": true
   },
   {
     "version": "v1.11.11",
-    "date": "Released on 25th February 2026.",
+    "date": "Released on 25th February 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.11.10",
-    "date": "Released on 18th February 2026.",
+    "date": "Released on 18th February 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.11.9",
-    "date": "Released on 16th February 2026.",
+    "date": "Released on 16th February 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.11.8",
-    "date": "Released on 4th February 2026.",
+    "date": "Released on 4th February 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.11.7",
-    "date": "Released on 28th January 2026.",
+    "date": "Released on 28th January 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.11.6",
-    "date": "Released on 21st January 2026.",
+    "date": "Released on 21st January 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.11.5",
-    "date": "Released on 14th January 2026.",
+    "date": "Released on 14th January 2026",
     "hasFeatures": false
   },
   {
     "version": "v1.11.4",
-    "date": "Released on 24th December 2025.",
+    "date": "Released on 24th December 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.16",
-    "date": "Released on 19th December 2025.",
+    "date": "Released on 19th December 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.11.3",
-    "date": "Released on 17th December 2025.",
+    "date": "Released on 17th December 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.11.2",
-    "date": "Released on 12th December 2025.",
+    "date": "Released on 12th December 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.11.1",
-    "date": "Released on 11th December 2025.",
+    "date": "Released on 11th December 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.11.0",
-    "date": "Released on 3rd December 2025.",
+    "date": "Released on 3rd December 2025",
     "hasFeatures": true
   },
   {
     "version": "v1.10.12",
-    "date": "Released on 3rd December 2025.",
+    "date": "Released on 3rd December 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.11",
-    "date": "Released on 2nd December 2025.",
+    "date": "Released on 2nd December 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.9",
-    "date": "Released on 27th November 2025.",
+    "date": "Released on 27th November 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.8",
-    "date": "Released on 21st November 2025.",
+    "date": "Released on 21st November 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.7",
-    "date": "Released on 18th November 2025.",
+    "date": "Released on 18th November 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.6",
-    "date": "Released on 18th November 2025.",
+    "date": "Released on 18th November 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.15",
-    "date": "Released on 11th November 2025.",
+    "date": "Released on 11th November 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.5",
-    "date": "Released on 10th November 2025.",
+    "date": "Released on 10th November 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.4",
-    "date": "Released on 31st October 2025.",
+    "date": "Released on 31st October 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.3",
-    "date": "Released on 22nd October 2025.",
+    "date": "Released on 22nd October 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.2",
-    "date": "Released on 20th October 2025.",
+    "date": "Released on 20th October 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.1",
-    "date": "Released on 10th October 2025.",
+    "date": "Released on 10th October 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.10.0",
-    "date": "Released on 8th October 2025.",
+    "date": "Released on 8th October 2025",
     "hasFeatures": true
   },
   {
     "version": "v1.9.12",
-    "date": "Released on 2nd October 2025.",
+    "date": "Released on 2nd October 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.10",
-    "date": "Released on 24th September 2025.",
+    "date": "Released on 24th September 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.9",
-    "date": "Released on 19th September 2025.",
+    "date": "Released on 19th September 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.8",
-    "date": "Released on 17th September 2025.",
+    "date": "Released on 17th September 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.7",
-    "date": "Released on 5th September 2025.",
+    "date": "Released on 5th September 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.5",
-    "date": "Released on 1st September 2025.",
+    "date": "Released on 1st September 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.4",
-    "date": "Released on 27th August 2025.",
+    "date": "Released on 27th August 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.2",
-    "date": "Released on 21st August 2025.",
+    "date": "Released on 21st August 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.9.0",
-    "date": "Released on 8th August 2025.",
+    "date": "Released on 8th August 2025",
     "hasFeatures": true
   },
   {
     "version": "v1.8.10",
-    "date": "Released on 5th August 2025.",
+    "date": "Released on 5th August 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.8.9",
-    "date": "Released on 1st August 2025.",
+    "date": "Released on 1st August 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.8.8",
-    "date": "Released on 30th July 2025.",
+    "date": "Released on 30th July 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.8.7",
-    "date": "Released on 24th July 2025.",
+    "date": "Released on 24th July 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.8.6",
-    "date": "Released on 18th July 2025.",
+    "date": "Released on 18th July 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.8.3",
-    "date": "Released on 10th July 2025.",
+    "date": "Released on 10th July 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.8.2",
-    "date": "Released on 9th July 2025.",
+    "date": "Released on 9th July 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.8.1",
-    "date": "Released on 30th June 2025.",
+    "date": "Released on 30th June 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.8.0",
-    "date": "Released on 22nd June 2025.",
+    "date": "Released on 22nd June 2025",
     "hasFeatures": true
   },
   {
     "version": "v1.7.5",
-    "date": "Released on 20th June 2025.",
+    "date": "Released on 20th June 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.7.4",
-    "date": "Released on 17th June 2025.",
+    "date": "Released on 17th June 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.7.3",
-    "date": "Released on 13th June 2025.",
+    "date": "Released on 13th June 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.7.2",
-    "date": "Released on 10th June 2025.",
+    "date": "Released on 10th June 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.7.1",
-    "date": "Released on 22nd May 2025.",
+    "date": "Released on 22nd May 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.7.0",
-    "date": "Released on 15th April 2025.",
+    "date": "Released on 15th April 2025",
     "hasFeatures": true
   },
   {
     "version": "v1.6.11",
-    "date": "Released on 28th April 2025.",
+    "date": "Released on 28th April 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.10",
-    "date": "Released on 23rd April 2025.",
+    "date": "Released on 23rd April 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.9",
-    "date": "Released on 17th April 2025.",
+    "date": "Released on 17th April 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.8",
-    "date": "Released on 8th April 2025.",
+    "date": "Released on 8th April 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.7",
-    "date": "Released on 28th March 2025.",
+    "date": "Released on 28th March 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.6",
-    "date": "Released on 14th March 2025.",
+    "date": "Released on 14th March 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.5",
-    "date": "Released on 27th February 2025.",
+    "date": "Released on 27th February 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.4",
-    "date": "Released on 19th February 2025.",
+    "date": "Released on 19th February 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.3",
-    "date": "Released on 29th January 2025.",
+    "date": "Released on 29th January 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.2",
-    "date": "Released on 10th January 2025.",
+    "date": "Released on 10th January 2025",
     "hasFeatures": false
   },
   {
     "version": "v1.6.1",
-    "date": "Released on 10th December 2024.",
+    "date": "Released on 10th December 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.6.0",
-    "date": "Released on 10th December 2024.",
+    "date": "Released on 10th December 2024",
     "hasFeatures": true
   },
   {
     "version": "v1.5.15",
-    "date": "Released on 16th December 2024.",
+    "date": "Released on 16th December 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.12",
-    "date": "Released on 25th November 2024.",
+    "date": "Released on 25th November 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.11",
-    "date": "Released on 15th November 2024.",
+    "date": "Released on 15th November 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.10",
-    "date": "Released on 31st October 2024.",
+    "date": "Released on 31st October 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.9",
-    "date": "Released on 29th October 2024.",
+    "date": "Released on 29th October 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.8",
-    "date": "Released on 24th October 2024.",
+    "date": "Released on 24th October 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.7",
-    "date": "Released on 17th October 2024.",
+    "date": "Released on 17th October 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.6",
-    "date": "Released on 3rd October 2024.",
+    "date": "Released on 3rd October 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.5",
-    "date": "Released on 23rd September 2024.",
+    "date": "Released on 23rd September 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.4",
-    "date": "Released on 12th September 2024.",
+    "date": "Released on 12th September 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.3",
-    "date": "Released on 10th September 2024.",
+    "date": "Released on 10th September 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.2",
-    "date": "Released on 2nd September 2024.",
+    "date": "Released on 2nd September 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.5.0",
-    "date": "Released on 26th August 2024.",
+    "date": "Released on 26th August 2024",
     "hasFeatures": true
   },
   {
     "version": "v1.4.8",
-    "date": "Released on 21st August 2024.",
+    "date": "Released on 21st August 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.4.7",
-    "date": "Released on 7th August 2024.",
+    "date": "Released on 7th August 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.4.6",
-    "date": "Released on 29th July 2024.",
+    "date": "Released on 29th July 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.4.5",
-    "date": "Released on 9th July 2024.",
+    "date": "Released on 9th July 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.4.4",
-    "date": "Released on 3rd July 2024.",
+    "date": "Released on 3rd July 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.4.3",
-    "date": "Released on 15th June 2024.",
+    "date": "Released on 15th June 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.4.2",
-    "date": "Released on 10th June 2024.",
+    "date": "Released on 10th June 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.4.1",
-    "date": "Released on 27th May 2024.",
+    "date": "Released on 27th May 2024",
     "hasFeatures": false
   },
   {
     "version": "v1.4.0",
-    "date": "Released on 21st May 2024.",
+    "date": "Released on 21st May 2024",
     "hasFeatures": true
   }
 ]
