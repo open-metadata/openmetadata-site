@@ -414,7 +414,7 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/latest/connectors/dashboard/quicksight',
       },
       {
-        href: 'https://docs.open-metadata.org/latest/connectors',
+        href: 'https://docs.open-metadata.org/latest/connectors/dashboard/omni',
         src: '/assets/services/omni.webp',
         alt: 'service-omni',
         name: 'Omni',
@@ -491,7 +491,7 @@ export const INTEGRATION_SERVICES = [
         alt: 'service-dbt',
       },
       {
-        href: 'https://docs.open-metadata.org/latest/connectors',
+        href: 'https://docs.open-metadata.org/latest/connectors/pipeline/prefect',
         src: '/assets/services/prefect.webp',
         alt: 'service-prefect',
         name: 'Prefect',
