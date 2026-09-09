@@ -67,6 +67,19 @@ export const INDUSTRY_LIST = [
 
 export const CUSTOMER_GALLERY = [
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/unity-dark.svg`,
+        industry: 'Gaming / Technology',
+        testimonial: "For years, our metadata was something people read, not something a system could call. With Dax, our Slack bot built on Collate, you ask in a thread and get a verdict in about seven minutes, down from what used to take days.",
+        customerName: 'Jeppe Johansen',
+        customerDesignation: 'Senior Manager, Data Platform',
+        company: 'Unity',
+        imgSize: {
+            width: 110,
+            height: 40
+        },
+        link: 'https://www.getcollate.io/customers/unity'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/rakuten-logo.webp`,
         industry: 'Technology',
         testimonial: "OpenMetadata offers the technical metadata, business metadata, quality, and observability that we are looking for. We see that OpenMetadata is a complete package solution for Rakuten Group.",
