@@ -93,6 +93,19 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/fdny'
     },
     {
+        logo: `${GALLERY_IMAGE_ROUTE}/unity-dark.svg`,
+        industry: 'Gaming / Technology',
+        testimonial: "For years, our metadata was something people read, not something a system could call. With Dax, our Slack bot built on Collate, you ask in a thread and get a verdict in about seven minutes, down from what used to take days.",
+        customerName: 'Jeppe Johansen',
+        customerDesignation: 'Senior Manager, Data Platform',
+        company: 'Unity',
+        imgSize: {
+            width: 110,
+            height: 40
+        },
+        link: 'https://www.getcollate.io/customers/unity'
+    },
+    {
         logo: `${GALLERY_IMAGE_ROUTE}/scout24-logo.webp`,
         industry: 'Technology',
         testimonial: "We all talk about AI, but the real product is not AI. Context is the real product. AI just multiplies it.",
