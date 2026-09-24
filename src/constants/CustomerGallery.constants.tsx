@@ -15,43 +15,43 @@ type HeaderCustomer = {
 
 export const HEADER_CUSTOMERS: HeaderCustomer[] = [
     {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/openai-bg.png`,
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/openai-bg.webp`,
         logo: `${HEADER_IMAGE_ROUTE}/openai-logo.svg`,
-        title: "OpenAI's internal AI data agent serves 3,500+ employees on OpenMetadata",
+        title: "OpenAI's internal AI data agent serves 3,500+ employees",
         buttonText: 'Read More',
         url: '/case-study/openai',
         isExternal: false
     },
     {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/carrefour-bg.svg`,
-        logo: `${HEADER_IMAGE_ROUTE}/carrefour-logo.svg`,
-        title: 'Carrefour Brazil Automates Data Governance For 500+ Active Users',
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/scout24-bg.webp`,
+        logo: `${HEADER_IMAGE_ROUTE}/scout24-logo.webp`,
+        title: 'Scout24 goes from POC to production AI context catalog in under 10 weeks',
         buttonText: 'Read More',
-        url: '/case-study/carrefour-brazil',
+        url: 'https://www.getcollate.io/customers/scout24',
+        isExternal: true
+    },
+    {
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/rakuten-bg.webp`,
+        logo: `${HEADER_IMAGE_ROUTE}/rakuten-logo.webp`,
+        title: 'Rakuten cuts data discovery from months to under an hour',
+        buttonText: 'Read More',
+        url: '/case-study/rakuten',
         isExternal: false
     },
     {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/loggi-bg.svg`,
-        logo: `${HEADER_IMAGE_ROUTE}/loggi-logo.svg`,
-        title: 'Loggi 16,000 dashboards removed for huge cost savings',
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/yelp-bg.webp`,
+        logo: `${HEADER_IMAGE_ROUTE}/yelp-logo.webp`,
+        title: 'Yelp replaces its legacy catalog with 100K+ entities on OpenMetadata',
+        buttonText: 'Read More',
+        url: '/case-study/yelp',
+        isExternal: false
+    },
+    {
+        backgroundImage: `${HEADER_IMAGE_ROUTE}/ratp-bg.webp`,
+        logo: `${HEADER_IMAGE_ROUTE}/ratp.webp`,
+        title: "AI across 14 data products powering Europe's largest transit network",
         buttonText: 'Learn More',
-        url: '/case-study/loggi',
-        isExternal: false
-    },
-    {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/wix-bg.webp`,
-        logo: `${HEADER_IMAGE_ROUTE}/wix-logo.webp`,
-        title: 'Wix Saves 675 Engineering Hours Monthly with AI-Ready Metadata',
-        buttonText: 'Read More',
-        url: '/case-study/wix',
-        isExternal: false
-    },
-    {
-        backgroundImage: `${HEADER_IMAGE_ROUTE}/mango-bg.svg`,
-        logo: `${HEADER_IMAGE_ROUTE}/mango-logo.svg`,
-        title: 'Mango increases productivity of data teams up to 20%',
-        buttonText: 'Read More',
-        url: 'https://www.getcollate.io/customers/mango',
+        url: 'https://www.getcollate.io/blog/ratp-metadata-strategic-asset',
         isExternal: true
     },
 ]
@@ -73,24 +73,17 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Jeppe Johansen',
         customerDesignation: 'Senior Manager, Data Platform',
         company: 'Unity',
-        imgSize: {
-            width: 110,
-            height: 40
-        },
-        link: 'https://www.getcollate.io/customers/unity'
+        link: 'https://www.getcollate.io/customers/unity',
+        isExternal: true
     },
     {
-        logo: `${GALLERY_IMAGE_ROUTE}/rakuten-logo.webp`,
-        industry: 'Technology',
-        testimonial: "OpenMetadata offers the technical metadata, business metadata, quality, and observability that we are looking for. We see that OpenMetadata is a complete package solution for Rakuten Group.",
-        customerName: 'Muqtafi Akhmad',
-        customerDesignation: 'Assistant Manager, Data Pipeline Platform Team',
-        company: 'Rakuten',
-        imgSize: {
-            width: 130,
-            height: 39
-        },
-        link: '/case-study/rakuten'
+        logo: `/assets/carrefour-customer/carrefour-logo.svg`,
+        industry: 'Retail',
+        testimonial: "Our mission is to democratize data throughout our company. We partner with all our data teams, and have achieved incredible engagement with creating more trust across our data governance lifecycle with OpenMetadata, with even more to come.",
+        customerName: 'Ronnie Santos',
+        customerDesignation: 'Data Platform Manager',
+        company: 'Carrefour Brazil',
+        link: '/case-study/carrefour-brazil'
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/fdny-logo.webp`,
@@ -99,24 +92,17 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Wes Fang',
         customerDesignation: 'Deputy Director, IT',
         company: 'FDNY',
-        imgSize: {
-            width: 52,
-            height: 61
-        },
         link: '/case-study/fdny'
     },
     {
-        logo: `${GALLERY_IMAGE_ROUTE}/scout24-logo.webp`,
-        industry: 'Technology',
-        testimonial: "We all talk about AI, but the real product is not AI. Context is the real product. AI just multiplies it.",
-        customerName: 'Angelita Frozza Sanches',
-        customerDesignation: 'Head of Core Data Platform',
-        company: 'Scout24',
-        imgSize: {
-            width: 120,
-            height: 37
-        },
-        link: 'https://www.getcollate.io/customers/scout24'
+        logo: `${GALLERY_IMAGE_ROUTE}/mango-logo.png`,
+        industry: 'Retail',
+        testimonial: "Collate has proven to be the cornerstone of our data strategy, so that our data teams can easily find, understand, and trust the data they need to be successful.",
+        customerName: 'Jordi Orriols Torras',
+        customerDesignation: 'Head of Data Governance',
+        company: 'Mango',
+        link: 'https://www.getcollate.io/customers/mango',
+        isExternal: true
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/union-bank-dark.svg`,
@@ -125,11 +111,8 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Cirene Simon R. Simbahan',
         customerDesignation: 'Head of Data Trust and Governance Office',
         company: 'UnionBank of the Philippines',
-        imgSize: {
-            width: 130,
-            height: 40
-        },
-        link: 'https://www.getcollate.io/customers/unionbank'
+        link: 'https://www.getcollate.io/customers/unionbank',
+        isExternal: true
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/ambry-logo.webp`,
@@ -138,11 +121,8 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Dan Kostecki',
         customerDesignation: 'Data Engineer',
         company: 'Ambry Genetics',
-        imgSize: {
-            width: 140,
-            height: 25
-        },
-        link: 'https://www.getcollate.io/customers/ambry'
+        link: 'https://www.getcollate.io/customers/ambry',
+        isExternal: true
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/fundcraft-logo.webp`,
@@ -151,24 +131,17 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Victor Martin',
         customerDesignation: 'Co-Founder and CTO',
         company: 'fundcraft',
-        imgSize: {
-            width: 150,
-            height: 25
-        },
-        link: 'https://www.getcollate.io/customers/fundcraft'
+        link: 'https://www.getcollate.io/customers/fundcraft',
+        isExternal: true
     },
     {
-        logo: `${GALLERY_IMAGE_ROUTE}/yelp-logo.webp`,
-        industry: 'Technology',
-        testimonial: "For us, the foundation of data discovery is good search, and that's why we picked OpenMetadata. The fact that it's open source and extensible let us bring our own search algorithm and contribute fixes back upstream.",
-        customerName: 'Amy Forest',
-        customerDesignation: 'Software Engineer, Analytics Engineering',
-        company: 'Yelp',
-        imgSize: {
-            width: 120,
-            height: 45
-        },
-        link: '/case-study/yelp'
+        logo: `${GALLERY_IMAGE_ROUTE}/loggi-logo.webp`,
+        industry: 'Transportation',
+        testimonial: "OpenMetadata’s data quality feature helps us proactively monitor key data sources, enabling faster incident response and improving data reliability—critical for maintaining efficient operations and accurate delivery schedules.",
+        customerName: 'Erica Bertan',
+        customerDesignation: 'Analytics Engineering Manager',
+        company: 'Loggi',
+        link: '/case-study/loggi'
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/freenow-logo.png`,
@@ -177,10 +150,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Mehak Roha',
         customerDesignation: 'Data Platform Engineer',
         company: 'FreeNow',
-        imgSize: {
-            width: 150,
-            height: 50
-        },
         link: '/case-study/freenow'
     },
     {
@@ -190,10 +159,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Haithem Souala',
         customerDesignation: 'Head of Data',
         company: 'Woop',
-        imgSize: {
-            width: 140,
-            height: 50
-        },
         link: '/case-study/woop'
     },
     {
@@ -203,10 +168,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Fizza Abid',
         customerDesignation: 'Data Platform Engineer',
         company: 'Thndr',
-        imgSize: {
-            width: 140,
-            height: 50
-        },
         link: '/case-study/thndr'
     },
     {
@@ -216,10 +177,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'David Backx',
         customerDesignation: 'Data Engineer (Dataroots)',
         company: 'VRT',
-        imgSize: {
-            width: 100,
-            height: 20
-        },
         link: '/case-study/vrt'
     },
     {
@@ -229,10 +186,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Liubov Pasechnik',
         customerDesignation: 'Senior Data Steward (Data Governance Analyst)',
         company: 'inDrive',
-        imgSize: {
-            width: 212,
-            height: 50
-        },
         link: '/case-study/indrive'
     },
     {
@@ -242,10 +195,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Aimen Denche',
         customerDesignation: 'Data Engineer',
         company: 'NW',
-        imgSize: {
-            width: 50,
-            height: 50
-        },
         link: '/case-study/nw'
     },
     {
@@ -255,10 +204,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Antoine Glacet',
         customerDesignation: 'Data and Innovation Manager',
         company: 'Kansai Airports',
-        imgSize: {
-            width: 150,
-            height: 50
-        },
         link: '/case-study/kansai-airports'
     },
     {
@@ -268,10 +213,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Vinol Joy D’souza',
         customerDesignation: 'Head of Data',
         company: 'aspire',
-        imgSize: {
-            width: 212,
-            height: 50
-        },
         link: '/case-study/aspire'
     },
     {
@@ -281,11 +222,16 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Christian Calugaru',
         customerDesignation: 'Software Engineer',
         company: 'forter',
-        imgSize: {
-            width: 212,
-            height: 50
-        },
         link: '/case-study/forter'
+    },
+    {
+        logo: `${GALLERY_IMAGE_ROUTE}/wix.png`,
+        industry: 'Technology',
+        testimonial: "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
+        customerName: 'Sapir Hirshberg',
+        customerDesignation: 'Data Product Manager',
+        company: 'Wix',
+        link: '/case-study/wix'
     },
     {
         logo: `${HEADER_IMAGE_ROUTE}/gorgias-logo.svg`,
@@ -294,10 +240,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Antoine Balliet',
         customerDesignation: 'Senior Data Engineer',
         company: 'gorgias',
-        imgSize: {
-            width: 150,
-            height: 40
-        },
         link: '/case-study/gorgias'
     },
     {
@@ -307,10 +249,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Nicolás Gutiérrez García',
         customerDesignation: 'Project Manager, Data Governance (Ednon)',
         company: 'Ednon',
-        imgSize: {
-            width: 112,
-            height: 50
-        },
         link: '/case-study/ednon'
     },
     {
@@ -320,10 +258,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Gaétan Soulas',
         customerDesignation: 'SAS and Certified Google Cloud Data Architect',
         company: 'Solocal',
-        imgSize: {
-            width: 210,
-            height: 50
-        },
         link: '/case-study/solocal'
     },
     {
@@ -333,10 +267,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Rinat Abdurakhmanov',
         customerDesignation: 'Chief Data Officer',
         company: 'Beeline',
-        imgSize: {
-            width: 60,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/moove-logo.webp`,
@@ -345,10 +275,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Laila Patel',
         customerDesignation: 'Data Governance Specialist',
         company: 'Moove',
-        imgSize: {
-            width: 170,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/zen-business.webp`,
@@ -357,10 +283,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Cade Parker',
         customerDesignation: 'Senior Engineering Manager',
         company: 'Zen Business',
-        imgSize: {
-            width: 80,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/payu-finance.webp`,
@@ -369,10 +291,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Praveen Singh',
         customerDesignation: 'Director of Data Engineering',
         company: 'PayU Finance',
-        imgSize: {
-            width: 188,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/senzai.webp`,
@@ -381,10 +299,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Mark McAvoy',
         customerDesignation: 'Lead R&D Engineer',
         company: 'Senzai AI',
-        imgSize: {
-            width: 66,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/savii-logo.webp`,
@@ -393,10 +307,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Ton Sumawang',
         customerDesignation: 'Head of Data Governance and Quality',
         company: 'Savii',
-        imgSize: {
-            width: 120,
-            height: 50
-        }
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/intelligaia-logo.webp`,
@@ -405,10 +315,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Abhijit Singh',
         customerDesignation: 'Product Manager - Data',
         company: 'Intelligaia',
-        imgSize: {
-            width: 247,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/hoodie-analytics-logo.webp`,
@@ -417,10 +323,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Florian Giroud',
         customerDesignation: 'Head of Data Engineering',
         company: 'Hoodie Analytics',
-        imgSize: {
-            width: 155,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/physicsWallah-logo.webp`,
@@ -429,10 +331,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Sandeep Penmetsa',
         customerDesignation: 'Associate Director',
         company: 'Physics Wallah',
-        imgSize: {
-            width: 60,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/kb-logo.webp`,
@@ -441,10 +339,6 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Akash Nawani',
         customerDesignation: 'Lead - Data Platform',
         company: 'Khatabook',
-        imgSize: {
-            width: 257,
-            height: 50
-        },
     },
     {
         logo: `${GALLERY_IMAGE_ROUTE}/bucketplace-logo.webp`,
@@ -453,9 +347,5 @@ export const CUSTOMER_GALLERY = [
         customerName: 'Seungwan Jo',
         customerDesignation: 'Data Engineer',
         company: 'Bucketplace',
-        imgSize: {
-            width: 60,
-            height: 50
-        },
     }
 ]

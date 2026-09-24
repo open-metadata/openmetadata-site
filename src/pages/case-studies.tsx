@@ -64,22 +64,28 @@ const CaseStudiesPage = () => {
                   }`}
                 >
                   <div className="relative">
-                    <Image
-                      src={customer.backgroundImage}
-                      alt={customer.title}
-                      width={100}
-                      height={100}
-                      className={`w-full object-cover rounded-lg h-[150px] ${
+                    <div
+                      className={`relative w-full h-[150px] ${
                         index > 1 ? "md:h-[200px]" : "md:h-[300px]"
                       }`}
-                    />
-                    <Image
-                      src={customer.logo}
-                      alt={customer.title}
-                      width={100}
-                      height={100}
-                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60%] sm:w-[45%]"
-                    />
+                    >
+                      <Image
+                        src={customer.backgroundImage}
+                        alt={customer.title}
+                        fill
+                        className="object-cover rounded-lg"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[55%] h-[60px] md:h-[80px]">
+                      <Image
+                        src={customer.logo}
+                        alt={customer.title}
+                        fill
+                        className="object-contain"
+                        sizes="55vw"
+                      />
+                    </div>
                   </div>
                   <div
                     className={`mt-4 font-medium text-black tracking-[-0.02em] px-2 text-2xl ${
@@ -175,19 +181,19 @@ const CaseStudiesPage = () => {
           <div className="mt-12">
             {customers.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {customers.map((customer) => (
+                {customers.map((customer, index) => (
                   <div
                     key={customer.company}
                     className="bg-white rounded-[10px] px-4 py-5 card-shadow"
                   >
-                    <div className="min-h-[100px]">
+                    <div className="relative h-9 w-full max-w-[180px] mb-8">
                       <Image
-                        className="mb-8"
-                        width={customer.imgSize.width}
-                        height={customer.imgSize.height}
+                        className="object-contain object-left"
+                        fill
+                        sizes="180px"
                         src={customer.logo}
                         alt={customer.company}
-                        priority
+                        priority={index < 3}
                       />
                     </div>
                     <div className="tracking-[-0.02em] sm:text-lg text-black min-h-[250px]">
@@ -197,7 +203,12 @@ const CaseStudiesPage = () => {
                       - {customer.customerName}, {customer.customerDesignation}
                     </div>
                     {customer?.link && (
-                      <ParamLink name="Read More" href={customer.link} className="inline-block text-lg mt-4 text-[#7147E8] hover:underline" />
+                      <ParamLink
+                        name="Read More"
+                        href={customer.link}
+                        target={customer.isExternal ? "_blank" : "_self"}
+                        className="inline-block text-lg mt-4 text-[#7147E8] hover:underline"
+                      />
                     )}
                   </div>
                 ))}
