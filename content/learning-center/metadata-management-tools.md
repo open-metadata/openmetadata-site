@@ -2,7 +2,7 @@
 title: 'Metadata Management Tools: Buyer''s Guide and 6 Solutions to Watch'
 description: Metadata management tools centralize schemas, definitions, and ownership across your data stack. Explore capabilities, buying criteria, and 6 notable solutions.
 cluster: Metadata Management
-image: /assets/learning-center/banner/metadata-management-tools.png
+image: /assets/learning-center/banner/metadata-management-tools.webp
 ---
 
 # Metadata Management Tools: Buyer's Guide and 6 Solutions to Watch

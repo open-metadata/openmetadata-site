@@ -2,7 +2,7 @@
 title: 'Metadata Automation: Process, Use Cases & Best Practices'
 description: Metadata automation uses AI and rules-based systems to capture, classify, enrich, and manage data context, eliminating manual tagging and improving governance.
 cluster: Metadata Management
-image: /assets/learning-center/banner/metadata-automation.png
+image: /assets/learning-center/banner/metadata-automation.webp
 ---
 
 # Metadata Automation: Process, Use Cases & Best Practices
