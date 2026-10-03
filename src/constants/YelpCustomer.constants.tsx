@@ -20,7 +20,7 @@ export const YELP_CUSTOMER_HIGHLIGHTS = [
     {
         id: 2,
         count: '95.2%',
-        description: "payload reduction from the search optimization Yelp contributed upstream"
+        description: "payload reduction from search optimization Yelp contributed"
     },
     {
         id: 3,
