@@ -25,7 +25,7 @@ export const YELP_CUSTOMER_HIGHLIGHTS = [
     {
         id: 3,
         count: '7.8x',
-        description: "faster median search latency in Yelp's production deployment"
+        description: "faster search latency in Yelp's production deployment"
     }
 ];
 
