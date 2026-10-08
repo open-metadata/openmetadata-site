@@ -503,12 +503,12 @@ export const getStaticProps: GetStaticProps = async () => {
 
   // Sort versions by release date, most recent first
   const parseReleaseDate = (dateStr: string): number => {
-    const match = dateStr.match(
-      /(\d+)(?:st|nd|rd|th)\s+(\w+)\s+(\d{4})/
-    );
-    if (!match) return 0;
-    const [, day, month, year] = match;
-    return new Date(`${month} ${day}, ${year}`).getTime();
+    const cleanDate = dateStr
+      .replace("Released on ", "")
+      .replace(/(\d+)(?:st|nd|rd|th)/, "$1");
+    const timestamp = Date.parse(cleanDate);
+
+    return Number.isNaN(timestamp) ? 0 : timestamp;
   };
 
   const versions = [...versionsData].sort(
