@@ -2,7 +2,7 @@
 title: 'Metadata Search: How It Works, Types & Best Practices'
 description: Metadata search finds information based on data describing other data (titles, authors, tags, lineage), rather than searching within the content itself.
 cluster: Metadata Management
-image: /assets/learning-center/banner/metadata-search.png
+image: /assets/learning-center/banner/metadata-search.webp
 ---
 
 # Metadata Search: How It Works, Types & Best Practices

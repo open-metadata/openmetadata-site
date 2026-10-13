@@ -2,7 +2,7 @@
 title: 'Metadata Services: 7 Key Capabilities and 6 Notable Solutions'
 description: A metadata service provides structured information about resources like cloud instances, data assets, or authenticators. Learn key capabilities and 6 notable solutions.
 cluster: Metadata Management
-image: /assets/learning-center/banner/metadata-services.png
+image: /assets/learning-center/banner/metadata-services.webp
 ---
 
 # Metadata Services: 7 Key Capabilities and 6 Notable Solutions

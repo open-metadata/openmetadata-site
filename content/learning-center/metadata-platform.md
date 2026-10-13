@@ -2,7 +2,7 @@
 title: 'Metadata Platforms: Use Cases, Components, and 7 Notable Solutions'
 description: A metadata platform is a centralized system that catalogs, manages, and analyzes data about data, providing context, lineage, and structure for data assets across an organization.
 cluster: Metadata Management
-image: /assets/learning-center/banner/metadata-platform.png
+image: /assets/learning-center/banner/metadata-platform.webp
 ---
 
 # Metadata Platforms: Use Cases, Components, and 7 Notable Solutions
