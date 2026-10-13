@@ -15,6 +15,11 @@ export const SOCIAL_LINKS = [
         icon: "/assets/logo/x.svg",
     },
     {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/company/openmetadata/",
+        icon: "/assets/logo/linkedin.svg",
+    },
+    {
         name: "Meetup",
         url: "https://www.meetup.com/openmetadata-meetup-group/",
         icon: "/assets/logo/meetup.svg",
