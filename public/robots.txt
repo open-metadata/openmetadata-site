@@ -25,7 +25,6 @@ Crawl-delay: 1
 # Default rules for all other crawlers
 User-agent: *
 Allow: /
-Disallow: /schema/
 
 Host: https://open-metadata.org
 Sitemap: https://open-metadata.org/sitemap.xml
