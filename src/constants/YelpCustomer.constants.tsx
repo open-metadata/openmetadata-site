@@ -1,6 +1,6 @@
 export const YELP_CUSTOMER_HEADER = {
     title: "Yelp Builds a Trust-First Discovery Layer on OpenMetadata for an Agentic Workplace",
-    description: `Yelp connects people with local businesses, and its Analytics Engineering team runs the platforms its data practitioners depend on, including data quality, monitoring, cataloging, and lineage. As AI agents became pervasive across the company, the team faced a discovery problem: a data catalog crowded with duplicates, thin documentation, and no way to weigh trust signals in search. To solve this, they scaled OpenMetadata from a small proof-of-concept to a production deployment of ~100,000 assets, then engineered a custom search layer, persona-based policies, and a token-efficient in-house MCP server, Yelp's first upstream OpenMetadata contribution. The team turned OpenMetadata into an open context layer: the trusted, governed source its people and its AI agents both draw on to find and understand the right data, not just any data.`,
+    description: `Yelp connects people with local businesses, and its Analytics Engineering team runs the platforms its data practitioners depend on, including data quality, monitoring, cataloging, and lineage. As AI agents became pervasive across the company, the team faced a discovery problem: a data catalog crowded with duplicates, thin documentation, and no way to weigh trust signals in search. To solve this, they scaled OpenMetadata from a small proof-of-concept to a production deployment of ~100,000 assets, then engineered a custom search layer, persona-based policies, and a token-efficient in-house MCP server, and contributed their search-payload optimization upstream to OpenMetadata. The team turned OpenMetadata into an open context layer: the trusted, governed source its people and its AI agents both draw on to find and understand the right data, not just any data.`,
     industry: "Consumer Internet / Local Commerce",
     technologies: "OpenMetadata, Amazon Athena, Amazon Redshift, dbt, Apache Spark, Apache Kafka, Apache Flink, OpenLineage, Streamlit, OpenSearch, LiteLLM",
     videoUrl: "HLFyqQ96IUo",
@@ -19,13 +19,13 @@ export const YELP_CUSTOMER_HIGHLIGHTS = [
     },
     {
         id: 2,
-        count: '~66%',
-        description: "improved token economy on Yelp's core search"
+        count: '95.2%',
+        description: "payload reduction from search optimization Yelp contributed"
     },
     {
         id: 3,
-        count: '~80%',
-        description: "payload reduction for large context bundles"
+        count: '7.8x',
+        description: "faster search latency in Yelp's production deployment"
     }
 ];
 
@@ -91,7 +91,7 @@ export const YELP_CUSTOMER_CHALLENGES = [
             },
             {
                 header: 'Guardrails for agentic search',
-                description: `To adjust to the unique search behavior of agents on the open context layer, Yelp encoded search methodology into agent skills that enforce a strict discovery flow across glossaries, assets, and queries. These guardrails helped cut per-tool docstring tokens by ~66%.`,
+                description: `To adjust to the unique search behavior of agents on the open context layer, Yelp encoded search methodology into agent skills that enforce a strict discovery flow across glossaries, assets, and queries. These guardrails kept per-tool docstring overhead low and made agent retrieval more predictable.`,
             }
         ]
     },
@@ -110,11 +110,11 @@ export const YELP_CUSTOMER_CHALLENGES = [
             },
             {
                 header: 'Agent-safe discovery',
-                description: `The structured skills and improved search give agents reliable results up front, cut large-context payloads by ~80%, and guard against failure modes like keyword over-stuffing, premature "no data," and context blow-ups, helping keep search latencies and token cost in check.`,
+                description: `The structured skills and improved search give agents reliable results up front, cut large-context payloads by over 80% in production, and guard against failure modes like keyword over-stuffing, premature "no data," and context blow-ups, helping keep search latencies and token cost in check.`,
             },
             {
                 header: 'Contributing back to the community',
-                description: `The in-house OpenMetadata MCP became Yelp's first upstream contribution to the project, alongside OpenLineage support for Spark pipelines and search-performance fixes that trimmed oversized payloads. It is this ecosystem of community contributions to the open source project that has helped OpenMetadata grow and innovate.`,
+                description: `Yelp's first upstream contributions to OpenMetadata were search-performance improvements, including an option to omit source fields from search previews that cut response payloads by 95.2% and improved median latency 7.8x (17.8x at P99). In Yelp's production deployment, excluding query bodies took responses from 1.188s to 0.377s and payloads from 5.68MB to 1.13MB. They also contributed OpenLineage support for Spark pipelines. The read-only MCP server is Yelp's own internal build. It is this ecosystem of community contributions to the open source project that has helped OpenMetadata grow and innovate.`,
             },
             {
                 header: 'Going from search to data foundation',
