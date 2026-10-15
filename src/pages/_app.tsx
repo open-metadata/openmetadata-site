@@ -1,6 +1,5 @@
 import "../styles/styles.css";
 import "../styles/globals.css";
-import "../styles/cve-style.css";
 import "../styles/modal.css";
 import type { AppProps } from "next/app";
 import "@fortawesome/fontawesome-svg-core/styles.css";
