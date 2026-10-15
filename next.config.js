@@ -5,6 +5,16 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/cve-list",
+        destination:
+          "https://github.com/open-metadata/OpenMetadata/security/advisories",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {

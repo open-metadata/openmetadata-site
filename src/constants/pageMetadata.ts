@@ -21,9 +21,6 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
   "/case-studies": {
     title: "Success Stories & Case Studies | OpenMetadata",
   },
-  "/cve-list": {
-    title: "OpenMetadata Security Vulnerabilities | Changelog",
-  },
   "/learning-center": {
     title: "Learning Center | OpenMetadata",
   },
