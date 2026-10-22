@@ -4,13 +4,13 @@ import { SemanticsIcon } from "@/components/Icons/Semantics";
 
 export const PRIMITIVES_LIST = [
   {
-    name: "Context",
+    name: "Metadata",
     icon: ContextIcon,
     description:
       "Schemas, tables, columns, dashboards, pipelines, ML models, owners, lineage, and classifications — captured in one open metadata graph.",
   },
   {
-    name: "Ontology",
+    name: "Meaning",
     icon: SemanticsIcon,
     description:
       "Glossary terms, metric definitions, semantics, and W3C-standard relationships (RDF, OWL, DCAT, Schema.org) that give your data shared business meaning.",

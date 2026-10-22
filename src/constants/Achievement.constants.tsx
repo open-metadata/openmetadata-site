@@ -13,12 +13,12 @@ export const ACHIEVEMENT_LIST = [
     },
     {
         icon: `${ICON_ROUTE}/code-contributors.svg`,
-        count: '450+',
+        count: '500+',
         name: 'Code Contributors'
     },
     {
         icon: `${ICON_ROUTE}/github-star.svg`,
-        count: '15,000+',
+        count: '15,500+',
         name: 'GitHub Stars'
     },
     {
