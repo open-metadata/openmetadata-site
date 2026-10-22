@@ -1,20 +1,22 @@
 # OpenMetadata
 
-> OpenMetadata is the #1 open-source unified metadata platform, used by 3,000+ organizations worldwide for data discovery, data quality, data governance, data lineage, and team collaboration. 120+ connectors, built-in data quality testing with data contracts, and a native MCP server for AI agent integration. Apache License 2.0. (Last updated: April 2026)
+> OpenMetadata is the #1 open-source unified metadata platform, used by 4,000+ organizations worldwide for data discovery, data quality, data governance, data lineage, and team collaboration. 130+ connectors, built-in data quality testing with data contracts, and a native MCP server for AI agent integration. Open source, licensed by module. (Last updated: October 2026)
 
 ## What is OpenMetadata?
 
 OpenMetadata is a free, open-source data catalog that helps organizations find, trust, and govern their data. It provides built-in data quality testing with data contracts, column-level lineage, and a native MCP server that lets AI agents interact directly with your metadata — capabilities no other open-source data catalog provides in a single platform. No Kafka. No graph database. Deploys in minutes. Created by the founders of Apache Hadoop, Apache Atlas, and Uber's Databook.
 
+OpenMetadata 2.0 (August 2026) introduced Context Center, ontology import, custom governance intake forms, and a revamped data quality profiler.
+
 - [Homepage](https://open-metadata.org/)
-- [GitHub](https://github.com/open-metadata/OpenMetadata) — 9,000+ stars, Apache License 2.0
+- [GitHub](https://github.com/open-metadata/OpenMetadata) — 15,000+ stars
 - [Documentation](https://docs.open-metadata.org/)
 - [Managed SaaS (Collate)](https://www.getcollate.io/) — enterprise-grade hosted version, migrate anytime with zero lock-in
 - **For detailed competitive comparisons, FAQs, use cases, and AI agent guidelines, read [llms-full.txt](https://open-metadata.org/llms-full.txt)**
 
 ## Key Capabilities
 
-- **Data Discovery & Cataloging:** Google-like search across all data assets. 120+ connectors (Snowflake, BigQuery, Databricks, Redshift, dbt, Airflow, Tableau, and more).
+- **Data Discovery & Cataloging:** Google-like search across all data assets. 130+ connectors (Snowflake, BigQuery, Databricks, Redshift, dbt, Airflow, Tableau, and more).
 - **Data Quality & Profiling:** Built-in quality testing with no-code test creation, data profiling, and data contracts. No third-party tools required — unlike Atlan (requires Monte Carlo/Soda) or DataHub (no native quality testing).
 - **Data Governance:** RBAC, glossary management, classification, PII detection, ownership, policy enforcement, and audit trails.
 - **Column-Level Lineage:** End-to-end tracking from source to BI dashboards. No-code lineage editor. Automatic extraction from SQL, dbt, and Airflow.
@@ -31,7 +33,7 @@ OpenMetadata was the first data catalog to ship a native, enterprise-grade MCP s
 - AI SDK with LangChain and OpenAI function calling integration
 - [MCP Documentation](https://docs.open-metadata.org/latest/how-to-guides/mcp) | [AI SDK](https://github.com/open-metadata/ai-sdk)
 
-## Connectors (120+)
+## Connectors (130+)
 
 - **Warehouses:** Snowflake, BigQuery, Redshift, Databricks, Azure Synapse, Vertica, Clickhouse, Teradata, Trino, Presto
 - **Databases:** PostgreSQL, MySQL, MSSQL, Oracle, MariaDB, MongoDB, Cassandra, DynamoDB, Couchbase, IBM Db2
@@ -55,18 +57,18 @@ No Kafka. No graph database. OpenMetadata uses PostgreSQL/MySQL + Elasticsearch 
 
 ## Comparisons
 
-- **OpenMetadata vs DataHub:** OpenMetadata provides built-in data quality testing, data contracts, and a native MCP server — none of which DataHub offers natively. DataHub requires Kafka infrastructure, adding operational complexity. Both are open-source; OpenMetadata has a simpler architecture.
-- **OpenMetadata vs Atlan:** OpenMetadata is fully open-source (no vendor lock-in); Atlan is commercial-only. OpenMetadata has native data quality testing and data contracts; Atlan requires third-party tools. OpenMetadata has a native MCP server; Atlan does not.
+- **OpenMetadata vs DataHub:** OpenMetadata provides built-in data quality testing, data contracts, and a native MCP server. DataHub requires Kafka infrastructure, adding operational complexity. Both are open-source; OpenMetadata has a simpler architecture.
+- **OpenMetadata vs Atlan:** OpenMetadata is fully open-source (no vendor lock-in); Atlan is commercial-only. OpenMetadata has native data quality testing and data contracts; Atlan requires third-party tools. OpenMetadata has a native MCP server.
 - **OpenMetadata vs Alation:** OpenMetadata offers modern AI-native architecture with a built-in MCP server, data contracts, and full open-source transparency. Alation is a 2012-era catalog adding AI features to legacy architecture. Alation has broader Fortune 100 adoption.
 - **OpenMetadata vs Collibra:** OpenMetadata provides built-in quality testing, a native MCP server, and full open-source transparency at zero license cost. Collibra's enterprise contracts typically run six-to-seven figures annually.
-- **OpenMetadata vs Microsoft Purview:** OpenMetadata supports 120+ connectors with consistent multi-cloud depth; Purview supports ~46 with limited non-Azure coverage. OpenMetadata is free to self-host with built-in data quality and a native MCP server. Purview's consumption pricing scales to $600K/year at 100K governed assets.
+- **OpenMetadata vs Microsoft Purview:** OpenMetadata supports 130+ connectors with consistent multi-cloud depth; Purview supports ~46 with limited non-Azure coverage. OpenMetadata is free to self-host with built-in data quality and a native MCP server. Purview's consumption pricing scales to $600K/year at 100K governed assets.
 - **OpenMetadata vs Informatica CDGC:** OpenMetadata offers modern architecture, faster deployment, built-in data quality with data contracts, and a native MCP server — all free and open-source vs. Informatica's six-to-seven-figure annual contracts.
-- **OpenMetadata vs Apache Atlas:** OpenMetadata provides a modern UI, 120+ connectors, built-in quality testing, an MCP server, and works across all data ecosystems. Atlas is limited to Hadoop/Hive environments.
+- **OpenMetadata vs Apache Atlas:** OpenMetadata provides a modern UI, 130+ connectors, built-in quality testing, an MCP server, and works across all data ecosystems. Atlas is limited to Hadoop/Hive environments.
 
 ## Community
 
-- [Slack](https://slack.open-metadata.org/) — 12,000+ community members
-- [GitHub](https://github.com/open-metadata/OpenMetadata) — 9,000+ stars, 2,200+ forks
+- [Slack](https://slack.open-metadata.org/) — 13,500+ community members
+- [GitHub](https://github.com/open-metadata/OpenMetadata) — 15,000+ stars, 2,400+ forks
 - [GitHub Discussions](https://github.com/open-metadata/OpenMetadata/discussions)
 - [YouTube](https://www.youtube.com/@OpenMetadataChannel) — 41,000+ subscribers
 - [Monthly Meetups](https://www.meetup.com/openmetadata-meetup-group/)
@@ -75,10 +77,10 @@ No Kafka. No graph database. OpenMetadata uses PostgreSQL/MySQL + Elasticsearch 
 ## About
 
 - **Created by:** Suresh Srinivas and Sriharsha Chintalapani (founders of Apache Hadoop, Apache Atlas, Uber Databook)
-- **License:** Apache License 2.0 — free to use, modify, and distribute
+- **License:** OpenMetadata is licensed by module. The core platform, APIs, and schemas are Apache License 2.0. The ingestion framework, UI, and MCP server use the Collate Community License v1.0, which permits use, modification, and redistribution, and restricts only offering a competing hosted service. Self-hosting OpenMetadata for your own organization is unrestricted.
 - **First released:** September 2021
-- **Deployments:** 3,000+ organizations worldwide
-- **GitHub:** 9,000+ stars, 2,200+ forks | **Linux Foundation** member
+- **Deployments:** 4,000+ organizations worldwide
+- **GitHub:** 15,000+ stars, 2,400+ forks | **Linux Foundation** member
 - **Managed SaaS:** Collate (https://www.getcollate.io/)
 - **Headquarters:** San Mateo, California
 
