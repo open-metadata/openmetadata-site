@@ -11,7 +11,7 @@ const Achievement = () => {
               <h2 className="text-[32px] font-semibold tracking-[-0.01em] leading-[38px] lg:text-[38px] xl:text-[44px] xl:leading-[52px]">
                 Largest &amp; Fastest Growing{" "}
                 <span className="text-[#7147E8]">
-                  Open Source Context Layer
+                  Open Source Context Platform
                 </span>
               </h2>
               <p className="text-base tracking-[-0.01em] mt-3 text-[#555555] md:leading-[28px] md:text-[19px]">
