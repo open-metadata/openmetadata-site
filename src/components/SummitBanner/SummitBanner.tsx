@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { OmdLogo } from "@/components/Icons/OmdLogo";
 import { SUMMIT_COMPANIES } from "@/constants/Summit.constants";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const SUMMIT_ON_DEMAND_FORM_TARGET = 'summit-on-demand-form'
 
 const SummitBanner = () => {
+  const formRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
     const createForm = () => {
       if ((window as any).hbspt) {
@@ -26,17 +28,31 @@ const SummitBanner = () => {
       }
     }
 
-    if ((window as any).hbspt) {
-      createForm()
-      return
+    const loadForm = () => {
+      if ((window as any).hbspt) {
+        createForm()
+        return
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://js.hsforms.net/forms/embed/v2.js'
+      script.charset = 'utf-8'
+      script.type = 'text/javascript'
+      script.onload = createForm
+      document.body.appendChild(script)
     }
 
-    const script = document.createElement('script')
-    script.src = 'https://js.hsforms.net/forms/embed/v2.js'
-    script.charset = 'utf-8'
-    script.type = 'text/javascript'
-    script.onload = createForm
-    document.body.appendChild(script)
+    // The HubSpot embed is ~200 KB of JS, so it waits until the form is about to scroll into view.
+    const target = formRef.current
+    if (!target) return
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        observer.disconnect()
+        loadForm()
+      }
+    }, { rootMargin: '300px' })
+    observer.observe(target)
+    return () => observer.disconnect()
   }, [])
 
   return (
@@ -68,6 +84,8 @@ const SummitBanner = () => {
                     <img
                       src={item.logo}
                       alt={item.name}
+                      width={item.width}
+                      height={item.height}
                       className={`${['Airbus', 'Scout24'].includes(item.name) ? 'h-3 md:h-3.5' : 'h-4 md:h-5'} w-auto object-contain`}
                     />
                   </div>
@@ -77,16 +95,15 @@ const SummitBanner = () => {
             </div>
             <div className="lg:col-span-2 relative lg:rounded-tr-[20px] lg:rounded-br-[20px] lg:rounded-tl-none lg:rounded-bl-none w-full min-h-[260px] lg:w-[480px] shrink-0 overflow-hidden">
               <Image
-                src="/assets/summit-banner/banner-bg.png"
+                src="/assets/summit-banner/banner-bg.webp"
                 alt="Collate Summit 2026"
                 fill
-                priority
                 className="object-cover object-center scale-[1.2]"
               />
               <div className="text-white relative z-10 sm:max-w-[55%] mx-auto lg:max-w-full lg:w-full p-6 lg:p-10 summit-banner-form">
                 <div className="text-[28px] font-semibold">Watch on Demand for free</div>
                 <div className="mb-4 mt-1 md:text-lg">Sign up to start watching</div>
-                <div id={SUMMIT_ON_DEMAND_FORM_TARGET}></div>
+                <div id={SUMMIT_ON_DEMAND_FORM_TARGET} ref={formRef}></div>
               </div>
             </div>
           </div>
