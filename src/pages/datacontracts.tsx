@@ -2,7 +2,10 @@ import FooterDev from "@/components/FooterDev/FooterDev";
 import ParamLink from "@/components/ParamLink";
 import YoutubeEmbed from "@/components/common/YouTubeEmbed";
 import Image from "next/image";
+import { useAos } from "@/hooks/useAos";
 export default function Community() {
+  useAos();
+
   return (
     <div className="justify-between min-h-screen flex flex-col">
       <div id="layoutDefault">
