@@ -2,10 +2,6 @@ import "../styles/styles.css";
 import "../styles/globals.css";
 import "../styles/modal.css";
 import type { AppProps } from "next/app";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
@@ -13,8 +9,6 @@ import CookieModal from "@/components/CookieModal";
 import Layout from "@/components/Layout/Layout";
 import metropolis from "@/fonts/metropolis";
 import { PAGE_METADATA } from "@/constants/pageMetadata";
-
-config.autoAddCss = false;
 
 const GTM_ID = "GTM-554C968W";
 // GTM waits for the first interaction (or the fallback timer) so its tags stay off the initial load.
@@ -108,13 +102,6 @@ export default function App({ Component, pageProps }: AppProps) {
     timer = setTimeout(trigger, GTM_FALLBACK_DELAY_MS);
     return stop;
   }, [gtmAllowed]);
-
-  useEffect(() => {
-    AOS.init({
-      offset: 80,
-      once: true,
-    });
-  }, []);
 
   return (
     <>
