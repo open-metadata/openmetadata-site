@@ -3,3 +3,8 @@
   X-Frame-Options: SAMEORIGIN
   Permissions-Policy: geolocation=*
   Referrer-Policy: no-referrer
+
+# Asset filenames aren't content-hashed and do get replaced in place (e.g. hero-header.webp),
+# so cache for a day and revalidate in the background rather than marking them immutable.
+/assets/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
