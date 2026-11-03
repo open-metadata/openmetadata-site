@@ -60,16 +60,13 @@ const Header = ({ onClick }: { onClick: () => void }) => {
             </div>
           </div>
           <div className="w-full overflow-hidden max-h-[660px]">
-            {/* Plain img for srcSet: next/image can't generate one while images.unoptimized is on. */}
-            <img
+            <Image
               className="w-full h-auto block"
-              width={3472}
-              height={1748}
-              src="/assets/header/hero-header-1500.webp"
-              srcSet="/assets/header/hero-header-640.webp 640w, /assets/header/hero-header-1000.webp 1000w, /assets/header/hero-header-1500.webp 1500w, /assets/header/hero-header-2400.webp 2400w, /assets/header/hero-header.webp 3472w"
-              sizes="(min-width: 1500px) 1500px, 100vw"
+              height={1007}
+              width={2000}
+              src="/assets/header/hero-header.webp"
               alt="header-svg"
-              fetchPriority="high"
+              priority
             />
           </div>
           <Image
