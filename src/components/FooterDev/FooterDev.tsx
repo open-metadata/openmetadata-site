@@ -90,7 +90,6 @@ const FooterDev = () => {
                   <Image
                     src={item.icon}
                     alt={item.name}
-                    loading="eager"
                     fill
                     sizes="24px"
                     className="object-contain"
@@ -123,7 +122,6 @@ const FooterDev = () => {
             width={100}
             height={30}
             src="/assets/netlify.webp"
-            priority
           />
         </div>
       </div>

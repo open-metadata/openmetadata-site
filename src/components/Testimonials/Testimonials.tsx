@@ -82,7 +82,7 @@ const Testimonials = () => {
                     height={item.imgSize.height}
                     src={item.image}
                     alt={item.company}
-                    priority
+                    loading="eager"
                   />
                 </ParamLink>
                 <span className="text-[#170E2E] text-justify mr-[10px] lg:text-[20px]">

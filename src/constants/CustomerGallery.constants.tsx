@@ -225,7 +225,7 @@ export const CUSTOMER_GALLERY = [
         link: '/case-study/forter'
     },
     {
-        logo: `${GALLERY_IMAGE_ROUTE}/wix.png`,
+        logo: `${GALLERY_IMAGE_ROUTE}/wix.webp`,
         industry: 'Technology',
         testimonial: "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
         customerName: 'Sapir Hirshberg',

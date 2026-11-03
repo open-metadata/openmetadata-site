@@ -62,11 +62,11 @@ const Header = ({ onClick }: { onClick: () => void }) => {
           <div className="w-full overflow-hidden max-h-[660px]">
             <Image
               className="w-full h-auto block"
-              height={500}
-              width={1500}
+              height={1007}
+              width={2000}
               src="/assets/header/hero-header.webp"
               alt="header-svg"
-              loading="eager"
+              priority
             />
           </div>
           <Image

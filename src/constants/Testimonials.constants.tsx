@@ -16,7 +16,7 @@ export const TESTIMONIALS_LIST = [
     name: "Sapir Hirshberg",
     description:
       "OpenMetadata gives us a trusted foundation for AI-driven decision-making, letting our teams innovate faster and more confidently across the business.",
-    image: "/assets/testimonials/wix.png",
+    image: "/assets/testimonials/wix.webp",
     company: "Wix",
     url: "https://www.wix.com",
     title: "Senior Data Product Manager",

@@ -96,7 +96,6 @@ const KeyDataAssets = () => {
                   alt={`Use case: ${openTab}`}
                   width={1000}
                   height={600}
-                  priority
                 />
               </div>
             )}
