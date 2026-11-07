@@ -68,6 +68,12 @@ export const INTEGRATION_SERVICES = [
         name: 'ClickHouse',
       },
       {
+        href: 'https://docs.open-metadata.org/v2.1.x-SNAPSHOT/connectors/database/clickzetta',
+        src: '/assets/services/clickzetta.webp',
+        alt: 'service-clickzetta',
+        name: 'ClickZetta',
+      },
+      {
         href: 'https://docs.open-metadata.org/latest/connectors/database/cockroach',
         src: '/assets/services/cockroach.png',
         alt: 'service-cockroach',
@@ -78,6 +84,12 @@ export const INTEGRATION_SERVICES = [
         href: 'https://docs.open-metadata.org/latest/connectors/database/couchbase',
         alt: 'service-couchbase',
         src: '/assets/services/couchbase.webp',
+      },
+      {
+        href: 'https://docs.open-metadata.org/v2.1.x-SNAPSHOT/connectors/database/databend',
+        src: '/assets/services/databend.webp',
+        alt: 'service-databend',
+        name: 'Databend',
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/deltalake',
@@ -194,6 +206,12 @@ export const INTEGRATION_SERVICES = [
         alt: 'service-mongodb',
       },
       {
+        href: 'https://docs.open-metadata.org/v2.1.x-SNAPSHOT/connectors/database/neo4j',
+        src: '/assets/services/neo4j.webp',
+        alt: 'service-neo4j',
+        name: 'Neo4j',
+      },
+      {
         name: 'SAP HANA',
         href: 'https://docs.open-metadata.org/latest/connectors/database/sap-hana',
         src: '/assets/services/sap-hana.png',
@@ -228,6 +246,12 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/salesforce.webp',
         alt: 'service-salesforce',
         name: 'Salesforce',
+      },
+      {
+        href: 'https://docs.open-metadata.org/v2.1.x-SNAPSHOT/connectors/database/data360',
+        src: '/assets/services/salesforce-database.webp',
+        alt: 'service-salesforce-data-360',
+        name: 'Salesforce Data 360',
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/database/sas',
@@ -330,6 +354,12 @@ export const INTEGRATION_SERVICES = [
         name: 'Kinesis',
         href: 'https://docs.open-metadata.org/latest/connectors/messaging/kinesis',
       },
+      {
+        href: 'https://docs.open-metadata.org/v2.1.x-SNAPSHOT/connectors/messaging/nats',
+        src: '/assets/services/nats-jetstream.webp',
+        alt: 'service-nats-jetstream',
+        name: 'NATS JetStream',
+      },
     ],
   },
   {
@@ -382,6 +412,12 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/redash.webp',
         alt: 'service-redash',
         name: 'Redash',
+      },
+      {
+        href: 'https://docs.open-metadata.org/v2.1.x-SNAPSHOT/connectors/dashboard/rill',
+        src: '/assets/services/rill.webp',
+        alt: 'service-rill',
+        name: 'Rill',
       },
       {
         href: 'https://docs.open-metadata.org/latest/connectors/dashboard/sigma',
@@ -495,6 +531,18 @@ export const INTEGRATION_SERVICES = [
         src: '/assets/services/prefect.webp',
         alt: 'service-prefect',
         name: 'Prefect',
+      },
+      {
+        href: 'https://docs.open-metadata.org/v2.1.x-SNAPSHOT/connectors/pipeline/data360-pipeline',
+        src: '/assets/services/salesforce-pipeline.webp',
+        alt: 'service-salesforce-data-360-pipeline',
+        name: 'Salesforce Data 360 Pipeline',
+      },
+      {
+        href: 'https://docs.open-metadata.org/v2.1.x-SNAPSHOT/connectors/pipeline/tableau-pipeline',
+        src: '/assets/services/tableau-pipeline.webp',
+        alt: 'service-tableau-pipeline',
+        name: 'Tableau Pipeline',
       },
     ],
   },
