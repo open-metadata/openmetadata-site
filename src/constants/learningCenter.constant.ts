@@ -64,6 +64,14 @@ export const LEARNING_CENTER_DATA: LearningCenterItem[] = [
         cluster: 'Metadata Management',
         resourceType: 'Articles',
     },
+    {
+        id: 7,
+        title: 'OpenMetadata vs DataHub: When Is OpenMetadata a Better Fit?',
+        image: `${IMAGE_PATH}/openmetadata-vs-datahub.webp`,
+        slug: 'openmetadata-vs-datahub',
+        cluster: 'Data Catalog',
+        resourceType: 'Articles',
+    },
 ]
 
 export const CATEGORY_LIST: CategoryItem[] = [
@@ -72,7 +80,7 @@ export const CATEGORY_LIST: CategoryItem[] = [
     },
     {
         header: 'Topics',
-        items: ['Metadata Management'],
+        items: ['Metadata Management', 'Data Catalog'],
     },
     {
         header: 'Resource Types',

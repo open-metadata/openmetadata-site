@@ -3,7 +3,7 @@ export const WIX_CUSTOMER_HEADER = {
     description: "Wix is a website builder that supports more than 200 million users worldwide, where speed and accuracy directly shape product decisions. As AI agents began playing a larger role across analytics, business intelligence (BI), and internal decision workflows, Wix faced a critical challenge. These agents needed fast, trusted, and highly contextual metadata to operate effectively at scale. Wix adopted OpenMetadata as an open-source foundation for powering AI-ready data. What began as a metadata catalog evolved into a central system that feeds their AI agents through APIs and MCPs that enable agents to discover tables, understand schemas, apply the right queries, and return answers in minutes rather than hours. Now, this metadata foundation underpins in-production AI systems like AirBot. This internal AI-powered on-call assistant relies on OpenMetadata to understand ownership, lineage, schemas, and data quality when investigating incidents and answering complex questions to save Wix hundreds of Engineering Hours every month. By combining real-time ingestion, governed data warehouse tiers, and community-built extensibility, OpenMetadata helps teams move faster and scale AI-driven decision-making across the organization.",
     industry: "Technology, Website Builder",
     technologies: "Google Cloud Platform, Trino, OpenMetadata, Apache Kafka, Great Expectations, AI agents (MCP-based)",
-    image: '/assets/wix-customer/wix-header.png'
+    image: '/assets/wix-customer/wix-header.webp'
 }
 
 
@@ -34,7 +34,7 @@ export const WIX_CUSTOMER_TESTIMONIAL = {
 
 export const WIX_CUSTOMER_CHALLENGES = [
     {
-        image: '/assets/wix-customer/traditional-documentation.png',
+        image: '/assets/wix-customer/traditional-documentation.webp',
         title: 'Traditional documentation slowed decision making',
         description: `As Wix continued to scale its data platform, metadata became foundational to how teams worked. Wix operates a large, fast-moving analytics environment supporting business analysts, data engineers, data scientists, BI tools, and, increasingly, AI agents that need immediate access to trusted context. Wix’s cloud platform generates billions of HTTP transactions every day, feeding a 7-petabyte data lake, making ad hoc context gathering increasingly unsustainable. Existing internal tools struggled to keep up with the pace or scale of change. Documentation lagged behind reality, lineage was incomplete, and metadata updates were too slow for teams that relied on real-time accuracy. 
         
@@ -63,7 +63,7 @@ This meant engineers often had to act as “human error parsers”, manually dig
         ]
     },
     {
-        image: '/assets/wix-customer/ai-powered.png',
+        image: '/assets/wix-customer/ai-powered.webp',
         title: 'Powering AI-ready data through an open, extensible metadata foundation',
         description: "To support faster, data-driven decisions across their business, Wix adopted OpenMetadata as the system of record for metadata in order to build on an open-source foundation that their team could extend and operationalize over time. What began as a search for a better way to document assets quickly grew into a full production platform that sits in the middle of Wix’s data ecosystem. OpenMetadata ingests metadata continuously, enriches it with governance and quality signals, and serves it back to internal BI tools and AI agents.",
         challenges: [
@@ -102,7 +102,7 @@ This meant engineers often had to act as “human error parsers”, manually dig
         ]
     },
     {
-        image: '/assets/wix-customer/faster-decisions.png',
+        image: '/assets/wix-customer/faster-decisions.webp',
         title: 'Faster product decisions and AI-driven insights at scale',
         description: `For a digital platform serving hundreds of millions of users, speed and accuracy are competitive advantages. By operationalizing OpenMetadata as a production-grade foundation for both analytics and AI agents, Wix transformed metadata from a passive catalog into an active driver of business outcomes. Teams no longer spend time hunting for the right tables or validating freshness.
         
