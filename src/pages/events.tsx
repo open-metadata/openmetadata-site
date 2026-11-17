@@ -112,17 +112,17 @@ export default function Events() {
                   <div className="col-lg-6 mb-4">
                     <div className="card">
                       <div className="card-body">
-                        <YoutubeEmbed videoId="mRSXQHvHRBs" />
-                        <p className="font-semibold mb-0 mt-2">July 2026</p>
+                        <YoutubeEmbed videoId="McvMg-m-bGU" />
+                        <p className="font-semibold mb-0 mt-2">October 2026: OpenMetadata 2.1 Preview</p>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-6 mb-4">
                     <div className="card">
                       <div className="card-body">
-                        <YoutubeEmbed videoId="3JTfIHJMotM" />
+                        <YoutubeEmbed videoId="WXYS2QtxiKk" />
                         <p className="font-semibold mb-0 mt-2">
-                          From Knowledge Graph to Context, July 2026
+                          Your Data, Your Agents, One Context Platform, September 2026
                         </p>
                       </div>
                     </div>
