@@ -21197,3 +21197,14 @@ a:hover {
 .selected-connector-category > h5 {
   color: #7147e8;
 }
+
+/* Product updates: red links for the breaking changes and full changelog references, matching getcollate */
+.product-updates a[href*="breaking-changes/overview"],
+.product-updates a[href*="/compare/"] {
+  color: #e4233d;
+  text-decoration: underline;
+}
+.product-updates a[href*="breaking-changes/overview"]:hover,
+.product-updates a[href*="/compare/"]:hover {
+  color: #a02e3c;
+}
