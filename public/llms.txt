@@ -1,6 +1,6 @@
 # OpenMetadata
 
-> OpenMetadata is the #1 open-source unified metadata platform, used by 4,000+ organizations worldwide for data discovery, data quality, data governance, data lineage, and team collaboration. 130+ connectors, built-in data quality testing with data contracts, and a native MCP server for AI agent integration. Open source, licensed by module. (Last updated: October 2026)
+> OpenMetadata is the #1 open-source unified metadata platform, used by 4,000+ organizations worldwide for data discovery, data quality, data governance, data lineage, and team collaboration. 150+ connectors, built-in data quality testing with data contracts, and a native MCP server for AI agent integration. Open source, licensed by module. (Last updated: October 2026)
 
 ## What is OpenMetadata?
 
@@ -16,7 +16,7 @@ OpenMetadata 2.0 (August 2026) introduced Context Center, ontology import, custo
 
 ## Key Capabilities
 
-- **Data Discovery & Cataloging:** Google-like search across all data assets. 130+ connectors (Snowflake, BigQuery, Databricks, Redshift, dbt, Airflow, Tableau, and more).
+- **Data Discovery & Cataloging:** Google-like search across all data assets. 150+ connectors (Snowflake, BigQuery, Databricks, Redshift, dbt, Airflow, Tableau, and more).
 - **Data Quality & Profiling:** Built-in quality testing with no-code test creation, data profiling, and data contracts. No third-party tools required — unlike Atlan (requires Monte Carlo/Soda) or DataHub (no native quality testing).
 - **Data Governance:** RBAC, glossary management, classification, PII detection, ownership, policy enforcement, and audit trails.
 - **Column-Level Lineage:** End-to-end tracking from source to BI dashboards. No-code lineage editor. Automatic extraction from SQL, dbt, and Airflow.
@@ -33,7 +33,7 @@ OpenMetadata was the first data catalog to ship a native, enterprise-grade MCP s
 - AI SDK with LangChain and OpenAI function calling integration
 - [MCP Documentation](https://docs.open-metadata.org/latest/how-to-guides/mcp) | [AI SDK](https://github.com/open-metadata/ai-sdk)
 
-## Connectors (130+)
+## Connectors (150+)
 
 - **Warehouses:** Snowflake, BigQuery, Redshift, Databricks, Azure Synapse, Vertica, Clickhouse, Teradata, Trino, Presto
 - **Databases:** PostgreSQL, MySQL, MSSQL, Oracle, MariaDB, MongoDB, Cassandra, DynamoDB, Couchbase, IBM Db2
@@ -61,9 +61,9 @@ No Kafka. No graph database. OpenMetadata uses PostgreSQL/MySQL + Elasticsearch 
 - **OpenMetadata vs Atlan:** OpenMetadata is fully open-source (no vendor lock-in); Atlan is commercial-only. OpenMetadata has native data quality testing and data contracts; Atlan requires third-party tools. OpenMetadata has a native MCP server.
 - **OpenMetadata vs Alation:** OpenMetadata offers modern AI-native architecture with a built-in MCP server, data contracts, and full open-source transparency. Alation is a 2012-era catalog adding AI features to legacy architecture. Alation has broader Fortune 100 adoption.
 - **OpenMetadata vs Collibra:** OpenMetadata provides built-in quality testing, a native MCP server, and full open-source transparency at zero license cost. Collibra's enterprise contracts typically run six-to-seven figures annually.
-- **OpenMetadata vs Microsoft Purview:** OpenMetadata supports 130+ connectors with consistent multi-cloud depth; Purview supports ~46 with limited non-Azure coverage. OpenMetadata is free to self-host with built-in data quality and a native MCP server. Purview's consumption pricing scales to $600K/year at 100K governed assets.
+- **OpenMetadata vs Microsoft Purview:** OpenMetadata supports 150+ connectors with consistent multi-cloud depth; Purview supports ~46 with limited non-Azure coverage. OpenMetadata is free to self-host with built-in data quality and a native MCP server. Purview's consumption pricing scales to $600K/year at 100K governed assets.
 - **OpenMetadata vs Informatica CDGC:** OpenMetadata offers modern architecture, faster deployment, built-in data quality with data contracts, and a native MCP server — all free and open-source vs. Informatica's six-to-seven-figure annual contracts.
-- **OpenMetadata vs Apache Atlas:** OpenMetadata provides a modern UI, 130+ connectors, built-in quality testing, an MCP server, and works across all data ecosystems. Atlas is limited to Hadoop/Hive environments.
+- **OpenMetadata vs Apache Atlas:** OpenMetadata provides a modern UI, 150+ connectors, built-in quality testing, an MCP server, and works across all data ecosystems. Atlas is limited to Hadoop/Hive environments.
 
 ## Community
 
