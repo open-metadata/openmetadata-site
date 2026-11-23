@@ -163,7 +163,7 @@ OpenMetadata is an open-source metadata platform and AI context layer that organ
 **Key features include:**
 
 - **Open metadata standard:** OpenMetadata defines an open schema for tables, dashboards, ML models, lineage, and ownership, with W3C support including MCP, RDF, DCAT, DPROD, ODCS, and OpenLineage.  
-- **Native connectors at scale:** 130+ connectors for databases, warehouses, BI tools, pipelines, and ML systems ingest metadata automatically without custom integration work.  
+- **Native connectors at scale:** 150+ connectors for databases, warehouses, BI tools, pipelines, and ML systems ingest metadata automatically without custom integration work.  
 - **Built-in data quality and observability:** Test suites, profilers, and incident workflows run alongside catalog functions, so observability is part of the platform rather than a separate tool.  
 - **Column-level lineage and impact analysis:** Lineage is captured from SQL queries, ETL jobs, and orchestrators with column-level granularity to support downstream impact tracking.  
 - **Apache 2.0 licensed and community-driven:** Open source under Apache 2.0, with an active community contributing connectors, schemas, and integrations.
