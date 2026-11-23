@@ -212,7 +212,7 @@ OpenMetadata is an open-source metadata platform and AI context layer that unifi
 **Key features include:**
 
 * **Open metadata standard:** OpenMetadata defines a formal schema for tables, dashboards, ML models, lineage, and ownership, with W3C support including MCP, RDF, DCAT, DPROD, ODCS, and OpenLineage. This shared ontology lets organizations integrate tools without translation layers and gives downstream systems a consistent way to consume metadata.  
-* **130+ native connectors:** OpenMetadata ships with connectors for databases, warehouses, lakehouses, BI tools, pipelines, and ML systems. Each connector ingests deep metadata, including schemas, lineage, usage, and ownership, with no custom code required.  
+* **150+ native connectors:** OpenMetadata ships with connectors for databases, warehouses, lakehouses, BI tools, pipelines, and ML systems. Each connector ingests deep metadata, including schemas, lineage, usage, and ownership, with no custom code required.  
 * **Built-in data quality and observability:** Test suites, profilers, and incident workflows run alongside catalog functions. Quality scores, test results, and freshness signals become part of the metadata graph, making observability a property of the catalog rather than a separate tool.  
 * **Column-level lineage and impact analysis:** Lineage is captured automatically from SQL queries, ETL/ELT pipelines, and orchestrators. Column-level granularity supports downstream impact analysis, debugging, and audit workflows across the data estate.  
 * **Apache 2.0 licensed and community-driven:** OpenMetadata is fully open source under Apache 2.0. The community maintains connectors, schemas, and integrations, and a large contributor base provides extensions and customizations without vendor lock-in.
@@ -261,7 +261,7 @@ Collate is the AI for Data platform built on OpenMetadata. It extends the open m
 
 **Key features include:**
 
-* **Built on OpenMetadata:** Collate inherits the open standard, ontology, and 130+ native connectors of OpenMetadata. It adds managed hosting, SSO, role-based access controls, SOC 2 Type II compliance, and enterprise SLAs for production deployments at scale.  
+* **Built on OpenMetadata:** Collate inherits the open standard, ontology, and 150+ native connectors of OpenMetadata. It adds managed hosting, SSO, role-based access controls, SOC 2 Type II compliance, and enterprise SLAs for production deployments at scale.  
 * **Collate AI conversational interface:** Users ask natural-language questions in web, Slack, or Teams and get governed, sourced answers grounded in their own data. Collate AI returns the metric, the source, the lineage, and the freshness, anchored to approved definitions rather than free-form interpretation.  
 * **Data marketplace and data products:** Collate exposes trusted data products through a marketplace UI so business users self-serve, with integrated data access request workflows tied to owners and governance policies.  
 * **AI agents ecosystem:** Pre-built agents automate documentation, tiering, classification, and data quality at scale, with a no-code AI Studio for custom agents and an AI SDK for custom AI applications. Feedback loops let steward decisions train future agent behavior.  
