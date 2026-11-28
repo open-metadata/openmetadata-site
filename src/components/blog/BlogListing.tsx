@@ -62,12 +62,16 @@ const BlogListing = ({ posts, featured, tags, series, selectedTag, selectedSerie
                 <ParamLink
                   key={f.id}
                   href={`/blog/${f.slug}`}
-                  className="learning-center-card relative block rounded-[10px] overflow-hidden aspect-[4/3] bg-black"
+                  className="learning-center-card flex flex-col group"
                 >
-                  {f.coverImage && <Image src={f.coverImage} alt={f.title} fill className="object-cover opacity-70" />}
-                  <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                    {f.seriesName && <div className="text-sm text-white/80 mb-1">{f.seriesName}</div>}
-                    <div className="text-white text-xl font-medium leading-tight">{f.title}</div>
+                  <div className="relative w-full aspect-[4/3] rounded-[10px] overflow-hidden bg-black">
+                    {f.coverImage && (
+                      <Image src={f.coverImage} alt="" fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+                    )}
+                  </div>
+                  <div className="pt-5 px-1">
+                    {f.seriesName && <div className="text-sm text-[#484357] mb-1">{f.seriesName}</div>}
+                    <div className="text-black text-xl font-medium leading-snug tracking-[-0.01em]">{f.title}</div>
                   </div>
                 </ParamLink>
               ))}
