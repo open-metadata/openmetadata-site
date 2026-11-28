@@ -21,21 +21,21 @@ const FeaturedArticles = ({ items, heading = "Featured" }: { items: BlogPostSumm
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-6">
         <ParamLink href={`/blog/${lead.slug}`} className="flex flex-col group">
-          <div className="relative w-full aspect-[1200/630] rounded-2xl overflow-hidden bg-gray-100">
+          <div className="relative w-full aspect-[1200/630] rounded-2xl overflow-hidden bg-[#f2edfd]">
             {lead.coverImage && (
               <Image
                 src={lead.coverImage}
                 alt=""
                 fill
-                className="object-cover scale-[1.025]"
+                className="object-contain"
                 sizes="(max-width: 767px) 100vw, 60vw"
                 priority
               />
             )}
           </div>
-          <div className="pt-6 px-1 lg:px-4">
+          <div className="pt-8 px-1 lg:px-4">
             {lead.seriesName && <Tag label={lead.seriesName} />}
-            <div className="text-2xl md:text-3xl lg:text-[34px] font-semibold tracking-[-0.01em] leading-[1.2] text-black">
+            <div className="text-2xl md:text-3xl lg:text-[34px] font-semibold tracking-[-0.01em] leading-snug text-black">
               {lead.title}
             </div>
             <div className="mt-5 inline-block px-5 py-3 bg-[#f2edfd] group-hover:bg-[#7147E8] group-hover:text-white duration-200 rounded-[8px] text-black font-semibold text-base">
@@ -47,21 +47,21 @@ const FeaturedArticles = ({ items, heading = "Featured" }: { items: BlogPostSumm
         <div className="flex flex-col gap-8">
           {rest.map((item) => (
             <ParamLink key={item.id} href={`/blog/${item.slug}`} className="flex flex-col group">
-              <div className="relative w-full aspect-[1200/630] rounded-2xl overflow-hidden bg-gray-100">
+              <div className="relative w-full aspect-[1200/630] rounded-2xl overflow-hidden bg-[#f2edfd]">
                 {item.coverImage && (
                   <Image
                     src={item.coverImage}
                     alt=""
                     fill
-                    className="object-cover scale-[1.025]"
+                    className="object-contain"
                     sizes="(max-width: 767px) 100vw, 30vw"
                     priority
                   />
                 )}
               </div>
-              <div className="pt-5 px-1 lg:px-4">
+              <div className="pt-6 px-1 lg:px-4">
                 {item.seriesName && <Tag label={item.seriesName} />}
-                <div className="text-lg md:text-xl font-semibold tracking-[-0.01em] leading-[1.3] text-black">
+                <div className="text-lg md:text-xl font-semibold tracking-[-0.01em] leading-snug text-black">
                   {item.title}
                 </div>
                 <div className="mt-5 md:mt-2 inline-block px-5 py-3 md:p-0 bg-[#f2edfd] group-hover:bg-[#7147E8] group-hover:text-white md:bg-transparent md:group-hover:bg-transparent md:text-[#7147E8] md:group-hover:underline duration-200 rounded-[8px] text-black font-semibold text-base">
