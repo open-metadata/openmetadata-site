@@ -187,8 +187,7 @@ const NavbarDev = ({ onClick }: { onClick: () => void }) => {
                 </li>
                 <li>
                   <ParamLink 
-                    href="https://blog.open-metadata.org/" 
-                    target="_blank"
+                    href="/blog" 
                     name="Blog" 
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-b-md"
                   />
