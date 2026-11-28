@@ -96,7 +96,7 @@ const BlogPostPage = ({ post, html, toc, related, link }: Props) => {
         <aside className="lg:col-span-2 lg:sticky lg:top-28 self-start">
           {toc.length > 0 && (
             <div className="learning-center-card bg-white border border-white rounded-3xl p-7">
-              <div className="text-black font-semibold text-xl">Table of Contents</div>
+              <div className="text-black font-semibold text-xl leading-snug">Table of Contents</div>
               <div className="flex flex-col gap-4 mt-5 text-black lg:max-h-[calc(100vh-18rem)] lg:overflow-y-auto">
                 {toc.map((t) => (
                   <a key={t.id} href={`#${t.id}`} className="border-b border-gray-300 pb-3">
