@@ -109,7 +109,9 @@ const BlogIndex = (props: Props) => {
         title={
           search.isActive
             ? `Search results for “${search.query}”`
-            : `Page ${pagination.currentPage} of OpenMetadata Blog`
+            : pagination.currentPage === 1
+              ? "Latest posts"
+              : `Page ${pagination.currentPage} of OpenMetadata Blog`
         }
       />
       <FooterDev />
