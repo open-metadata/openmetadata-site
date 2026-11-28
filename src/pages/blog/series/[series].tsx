@@ -1,65 +1,120 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import Head from "next/head";
 import FooterDev from "@/components/FooterDev/FooterDev";
 import BlogListing from "@/components/blog/BlogListing";
+import BlogMeta from "@/components/blog/BlogMeta";
 import {
-  BlogFilterOption,
-  BlogPostSummary,
-  buildSeriesOptions,
-  buildTagOptions,
-  getAllPosts,
+  BLOG_SITE_HOST,
+  HASHNODE_SERIES_POSTS_QUERY,
+  POST_COUNT_PER_PAGE,
+} from "@/constants/blog.constants";
+import { usePagination } from "@/hooks/usePagination";
+import { useBlogSearch } from "@/hooks/useBlogSearch";
+import {
+  BlogTag,
+  FeaturedItem,
+  HashnodePostNode,
+  SeriesNode,
+  getBlogFilters,
+  getFeaturedBlogPosts,
+  getSeriesPostCount,
+  getSeriesPosts,
 } from "@/lib/hashnode";
-import { BLOG_TITLE } from "@/constants/blog.constants";
 
 interface Props {
-  posts: BlogPostSummary[];
-  tags: BlogFilterOption[];
-  series: BlogFilterOption[];
-  seriesSlug: string;
-  seriesName: string;
+  featuredPosts: FeaturedItem[];
+  initialPosts: HashnodePostNode[];
+  initialTotalPosts: number;
+  selectedSeriesData: SeriesNode;
+  initialSeries: SeriesNode[];
+  blogTags: BlogTag[];
   link: string;
+  host: string;
 }
 
-export const getStaticPaths: GetStaticPaths = async () => ({ paths: [], fallback: "blocking" });
+export const getStaticPaths: GetStaticPaths = async () => ({
+  paths: [],
+  fallback: "blocking",
+});
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const seriesSlug = params?.series as string;
+  const seriesSlug = String(params?.series || "");
+
   try {
-    const all = await getAllPosts();
-    const posts = all.filter((p) => p.seriesSlug === seriesSlug);
-    if (posts.length === 0) return { notFound: true, revalidate: 60 };
+    const [{ featuredPosts }, filters] = await Promise.all([
+      getFeaturedBlogPosts(),
+      getBlogFilters(),
+    ]);
+
+    const selectedSeriesData = filters.initialSeries.find((s: SeriesNode) => s.slug === seriesSlug);
+    if (!selectedSeriesData) {
+      return { notFound: true };
+    }
+
+    const [postsResponse, totalPosts] = await Promise.all([
+      getSeriesPosts(HASHNODE_SERIES_POSTS_QUERY(), {
+        seriesSlug,
+        first: POST_COUNT_PER_PAGE,
+      }),
+      getSeriesPostCount(seriesSlug),
+    ]);
+    const postsData = postsResponse?.data?.publication?.series?.posts;
+
     return {
       props: {
-        posts,
-        tags: buildTagOptions(all),
-        series: buildSeriesOptions(all),
-        seriesSlug,
-        seriesName: posts[0].seriesName ?? seriesSlug,
+        featuredPosts,
+        initialPosts: (postsData?.edges || []).map((edge: { node: HashnodePostNode }) => edge.node),
+        initialTotalPosts: totalPosts,
+        selectedSeriesData,
+        ...filters,
         link: `/blog/series/${seriesSlug}`,
+        host: BLOG_SITE_HOST,
       },
       revalidate: 60,
     };
-  } catch (e) {
-    console.error("blog series: Hashnode fetch failed", e);
-    return { notFound: true, revalidate: 10 };
+  } catch (error) {
+    console.error("Error fetching series page data:", error);
+    return { notFound: true };
   }
 };
 
-const BlogSeriesPage = ({ posts, tags, series, seriesSlug, seriesName }: Props) => (
-  <div>
-    <Head>
-      <title>{`${seriesName} | ${BLOG_TITLE}`}</title>
-    </Head>
-    <BlogListing
-      posts={posts}
-      featured={[]}
-      tags={tags}
-      series={series}
-      selectedSeries={seriesSlug}
-      title={seriesName}
-    />
-    <FooterDev />
-  </div>
-);
+const BlogSeriesPage = (props: Props) => {
+  const { selectedSeriesData } = props;
+  const search = useBlogSearch({ seriesSlug: selectedSeriesData.slug });
+  const pagination = usePagination(
+    "seriesPosts",
+    { seriesSlug: selectedSeriesData.slug },
+    1,
+    selectedSeriesData,
+    props.initialPosts,
+    props.initialTotalPosts
+  );
+
+  return (
+    <div className="mt-16 md:mt-20">
+      <BlogMeta
+        link={props.link}
+        host={props.host}
+        metaData={{
+          title: `${selectedSeriesData.name} | OpenMetadata Blog`,
+          description: `Posts in the ${selectedSeriesData.name} series`,
+        }}
+      />
+      <BlogListing
+        featuredPosts={props.featuredPosts}
+        series={props.initialSeries}
+        tags={props.blogTags}
+        selectedSeries={selectedSeriesData}
+        search={search}
+        pagination={pagination}
+        title={
+          search.isActive
+            ? `Search results for “${search.query}” in ${selectedSeriesData.name}`
+            : `${selectedSeriesData.name} Series - Page ${pagination.currentPage}`
+        }
+      />
+      <FooterDev />
+    </div>
+  );
+};
 
 export default BlogSeriesPage;

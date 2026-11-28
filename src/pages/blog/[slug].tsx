@@ -1,38 +1,71 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import FooterDev from "@/components/FooterDev/FooterDev";
 import ParamLink from "@/components/ParamLink";
-import BlogCard from "@/components/blog/BlogCard";
-import { BlogPostDetails, BlogPostSummary, getAllPosts, getPostBySlug } from "@/lib/hashnode";
-import { BLOG_TITLE } from "@/constants/blog.constants";
+import BlogMeta from "@/components/blog/BlogMeta";
+import KeepReading from "@/components/blog/KeepReading";
+import LeftPanel from "@/components/blog/LeftPanel";
+import StructuredData from "@/components/blog/StructuredData";
+import {
+  BLOG_SITE_HOST,
+  BLOG_TITLE,
+  HASHNODE_MAX_PAGE_SIZE,
+  HASHNODE_POST_QUERY,
+} from "@/constants/blog.constants";
+import { BlogPostDetails, getPostBySlug, getPosts } from "@/lib/hashnode";
 import { extractH2s, renderBlogMarkdown } from "@/utils/blogMarkdown";
 
 interface Props {
   post: BlogPostDetails;
   html: string;
   toc: { title: string; id: string }[];
-  related: BlogPostSummary[];
   link: string;
+  host: string;
 }
 
-export const getStaticPaths: GetStaticPaths = async () => ({ paths: [], fallback: "blocking" });
+export const getStaticPaths: GetStaticPaths = async () => {
+  try {
+    const slugs: string[] = [];
+    let after: string | null = null;
+    let hasNextPage = true;
+
+    while (hasNextPage) {
+      const response = await getPosts(HASHNODE_POST_QUERY(), {
+        first: HASHNODE_MAX_PAGE_SIZE,
+        after,
+      });
+      const posts = response?.data?.publication?.posts;
+      const edges = posts?.edges || [];
+      slugs.push(...edges.map((edge: { node: { slug: string } }) => edge.node.slug).filter(Boolean));
+      hasNextPage = posts?.pageInfo?.hasNextPage || false;
+      after = posts?.pageInfo?.endCursor || null;
+    }
+
+    return {
+      paths: slugs.map((slug) => ({ params: { slug } })),
+      fallback: "blocking",
+    };
+  } catch (error) {
+    console.error("Error fetching blog paths from Hashnode:", error);
+    return { paths: [], fallback: "blocking" };
+  }
+};
 
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const slug = params?.slug as string;
+  const slug = String(params?.slug || "");
+  if (!slug) return { notFound: true };
+
   try {
     const post = await getPostBySlug(slug);
     if (!post) return { notFound: true, revalidate: 60 };
-    const all = await getAllPosts();
-    const sameSeries = post.seriesSlug ? all.filter((p) => p.seriesSlug === post.seriesSlug) : all;
-    const related = sameSeries.filter((p) => p.slug !== slug).slice(0, 3);
+
     return {
       props: {
         post,
         html: renderBlogMarkdown(post.markdown),
         toc: extractH2s(post.markdown),
-        related,
         link: `/blog/${slug}`,
+        host: BLOG_SITE_HOST,
       },
       revalidate: 60,
     };
@@ -45,30 +78,59 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 const fmtDate = (iso: string) =>
   new Date(iso).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
 
-const BlogPostPage = ({ post, html, toc, related, link }: Props) => {
-  const shareUrl = encodeURIComponent(`https://open-metadata.org${link}`);
+const BlogPostPage = ({ post, html, toc, link, host }: Props) => {
+  const title = `${post.seo?.title || post.title} | ${BLOG_TITLE}`;
+  const description = post.seo?.description || undefined;
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    datePublished: post.publishedAt,
+    image: post.coverImage || undefined,
+    author: post.author
+      ? { "@type": "Person", name: post.author.name }
+      : { "@type": "Organization", name: "OpenMetadata" },
+    publisher: {
+      "@type": "Organization",
+      name: "OpenMetadata",
+      url: host,
+    },
+    mainEntityOfPage: `${host}${link}`,
+    description,
+  };
+
   return (
     <div>
-      <Head>
-        <title>{`${post.seoTitle || post.title} | ${BLOG_TITLE}`}</title>
-        {post.seoDescription && <meta name="description" content={post.seoDescription} />}
-        {post.coverImage && <meta property="og:image" content={post.coverImage} />}
-      </Head>
+      <BlogMeta
+        link={link}
+        host={host}
+        metaData={{
+          title,
+          description,
+          ogimage: post.coverImage || undefined,
+          keywords: post.tags.map((t) => t.slug).join(", "),
+        }}
+      />
+      <StructuredData data={structuredData} />
 
       <header className="bg-gradient-to-t from-[#f2edfd] to-white mt-9 md:mt-16">
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 xl:px-16 py-16 grid gap-8 md:grid-cols-2 items-center">
           <div>
             <nav className="flex gap-4 text-gray-500 items-center text-sm" aria-label="Breadcrumb">
-              <ParamLink href="/blog" className="border border-gray-400 py-1 px-2 rounded-[6px] hover:underline">
+              <ParamLink
+                href="/blog"
+                className="border border-gray-400 py-1 px-2 rounded-[6px] hover:underline"
+              >
                 Blog
               </ParamLink>
-              {post.seriesName && post.seriesSlug && (
-                <ParamLink href={`/blog/series/${post.seriesSlug}`} className="hover:underline">
-                  {post.seriesName}
+              {post.series && (
+                <ParamLink href={`/blog/series/${post.series.slug}`} className="hover:underline">
+                  {post.series.name}
                 </ParamLink>
               )}
             </nav>
-            <h1 className="text-4xl lg:text-[48px] lg:leading-[52px] text-black tracking-[-0.01em] mt-8 mb-4">
+            <h1 className="text-4xl lg:text-[48px] lg:leading-[52px] text-black tracking-[-0.01em] mt-8 mb-4 leading-snug">
               {post.title}
             </h1>
             <div className="text-black">
@@ -78,7 +140,13 @@ const BlogPostPage = ({ post, html, toc, related, link }: Props) => {
             {post.author && (
               <div className="flex items-center gap-3 mt-5">
                 {post.author.profilePicture && (
-                  <Image src={post.author.profilePicture} alt={post.author.name} width={48} height={48} className="rounded-full" />
+                  <Image
+                    src={post.author.profilePicture}
+                    alt={post.author.name}
+                    width={48}
+                    height={48}
+                    className="rounded-full"
+                  />
                 )}
                 <span className="text-xl font-semibold text-black">{post.author.name}</span>
               </div>
@@ -94,33 +162,7 @@ const BlogPostPage = ({ post, html, toc, related, link }: Props) => {
 
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-7 gap-8 py-10 px-6 md:px-10 xl:px-16">
         <aside className="lg:col-span-2 lg:sticky lg:top-28 self-start">
-          {toc.length > 0 && (
-            <div className="learning-center-card bg-white border border-white rounded-3xl p-7">
-              <div className="text-black font-semibold text-xl leading-snug">Table of Contents</div>
-              <div className="flex flex-col gap-4 mt-5 text-black lg:max-h-[calc(100vh-18rem)] lg:overflow-y-auto">
-                {toc.map((t) => (
-                  <a key={t.id} href={`#${t.id}`} className="border-b border-gray-300 pb-3">
-                    {t.title}
-                  </a>
-                ))}
-              </div>
-            </div>
-          )}
-          <div className="mt-8 pl-2">
-            <div className="text-xl text-black font-semibold mb-3">Share this article</div>
-            <div className="flex gap-4 text-[#7147E8] font-medium">
-              <a href={`https://twitter.com/intent/post?url=${shareUrl}`} target="_blank" rel="noreferrer">
-                X
-              </a>
-              <a
-                href={`https://www.linkedin.com/feed/?shareActive=true&shareUrl=${shareUrl}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
-              </a>
-            </div>
-          </div>
+          <LeftPanel h2List={toc} slug={post.slug} />
         </aside>
 
         <article className="lg:col-span-5">
@@ -142,24 +184,13 @@ const BlogPostPage = ({ post, html, toc, related, link }: Props) => {
               ))}
             </div>
           )}
+          <div className="md:hidden">
+            <LeftPanel h2List={[]} slug={post.slug} />
+          </div>
         </article>
       </div>
 
-      {related.length > 0 && (
-        <section className="max-w-[1440px] mx-auto px-6 md:px-10 xl:px-16 pb-20">
-          <div className="flex justify-between items-center">
-            <h2 className="text-black text-4xl tracking-[-0.03em]">Keep Reading</h2>
-            <ParamLink href="/blog" className="text-[#7147E8] underline">
-              View All
-            </ParamLink>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10">
-            {related.map((p) => (
-              <BlogCard key={p.id} post={p} />
-            ))}
-          </div>
-        </section>
-      )}
+      <KeepReading series={post.series?.slug ?? null} slug={post.slug} />
       <FooterDev />
     </div>
   );

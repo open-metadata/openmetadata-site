@@ -324,3 +324,67 @@ p{
 .summit-banner-form input[type="submit"]:hover {
     background-color: #FFDA33;
 }
+
+/* Blog loader (ported from getcollate, OMD purple) */
+.blog-loader {
+    width: 80px;
+    height: 50px;
+    position: relative;
+}
+
+.blog-loader-text {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: #7147E8;
+    animation: blog_text_713 3.5s ease both infinite;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.blog-load {
+    background-color: #f2edfd;
+    border-radius: 50px;
+    display: block;
+    height: 16px;
+    width: 16px;
+    bottom: 0;
+    position: absolute;
+    transform: translateX(64px);
+    animation: blog_loading_713 3.5s ease both infinite;
+}
+
+.blog-load::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #7147E8;
+    border-radius: inherit;
+    animation: blog_loading2_713 3.5s ease both infinite;
+}
+
+@keyframes blog_text_713 {
+    0% { letter-spacing: 1px; transform: translateX(0px); }
+    40% { letter-spacing: 2px; transform: translateX(26px); }
+    80% { letter-spacing: 1px; transform: translateX(32px); }
+    90% { letter-spacing: 2px; transform: translateX(0px); }
+    100% { letter-spacing: 1px; transform: translateX(0px); }
+}
+
+@keyframes blog_loading_713 {
+    0% { width: 16px; transform: translateX(0px); }
+    40% { width: 100%; transform: translateX(0px); }
+    80% { width: 16px; transform: translateX(64px); }
+    90% { width: 100%; transform: translateX(0px); }
+    100% { width: 16px; transform: translateX(0px); }
+}
+
+@keyframes blog_loading2_713 {
+    0% { transform: translateX(0px); width: 16px; }
+    40% { transform: translateX(0%); width: 80%; }
+    80% { width: 100%; transform: translateX(0px); }
+    90% { width: 80%; transform: translateX(0px); }
+    100% { transform: translateX(0px); width: 16px; }
+}
