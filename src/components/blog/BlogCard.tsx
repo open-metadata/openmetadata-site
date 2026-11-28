@@ -3,28 +3,24 @@ import ParamLink from "@/components/ParamLink";
 import { BlogPostSummary } from "@/lib/hashnode";
 
 const BlogCard = ({ post }: { post: BlogPostSummary }) => (
-  <ParamLink
-    href={`/blog/${post.slug}`}
-    className="learning-center-card border border-white bg-white p-6 rounded-[10px] flex flex-col h-full"
-  >
-    {post.coverImage && (
-      <div className="relative w-full aspect-[40/22]">
-        <Image src={post.coverImage} alt={post.title} fill className="object-cover rounded-[6px]" />
-      </div>
-    )}
-    <div className="px-2 pt-6 flex flex-col flex-grow">
-      <div className="mb-3 text-[#484357] text-sm">{post.seriesName ?? "OpenMetadata"}</div>
-      <div className="text-lg md:text-xl font-medium tracking-[-0.01em] leading-[1.2] text-black">
-        {post.title}
-      </div>
-      <p className="text-[#484357] mt-3 line-clamp-3">{post.brief}</p>
-      <div className="mt-auto pt-6">
-        <span className="inline-block border-2 border-[#7147E8] text-[#7147E8] font-semibold text-base px-6 py-2 rounded-[3px]">
-          Read More
-        </span>
-      </div>
-    </div>
-  </ParamLink>
+  <div className="rounded-md shadow-md p-4 flex flex-col w-full bg-white h-full">
+    <ParamLink href={`/blog/${post.slug}`} className="flex flex-col flex-grow">
+      {post.coverImage && (
+        <div className="relative w-full aspect-[500/275] overflow-hidden rounded-md bg-gray-100">
+          <Image
+            src={post.coverImage}
+            alt=""
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+      )}
+      <div className="text-[#484357] mt-8 text-sm">{post.seriesName ?? "OpenMetadata"}</div>
+      <h2 className="text-[22px] font-semibold tracking-[0.01em] mt-2 text-black leading-snug">{post.title}</h2>
+      {post.brief && <p className="text-[#484357] mt-2 line-clamp-3">{post.brief}</p>}
+    </ParamLink>
+  </div>
 );
 
 export default BlogCard;
