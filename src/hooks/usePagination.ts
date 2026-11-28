@@ -27,7 +27,10 @@ export const usePagination = (
 ) => {
   const router = useRouter();
   const [posts, setPosts] = useState<HashnodePostNode[]>(initialPosts);
-  const [isFetching, setIsFetching] = useState(false);
+  // Paginated SEO routes (e.g. /blog/page/2) ship with empty initialPosts and
+  // load client-side — start fetching so SSR/hydration show the loader, not
+  // an empty grid.
+  const [isFetching, setIsFetching] = useState(initialPosts.length === 0);
   const [totalPosts, setTotalPosts] = useState(initialTotalPosts);
   const [gridMinHeight, setGridMinHeight] = useState<number | null>(() => pendingGridHeight);
 

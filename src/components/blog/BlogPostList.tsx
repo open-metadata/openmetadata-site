@@ -50,10 +50,6 @@ const BlogPostList = ({
           <div className="text-center text-gray-500 col-span-full">
             <Loader />
           </div>
-        ) : posts.length === 0 ? (
-          <div className="text-center text-2xl font-medium text-black py-16 col-span-full">
-            No posts found
-          </div>
         ) : (
           posts.map((post) => <BlogCard post={post} key={post.id} />)
         )}
